@@ -77,6 +77,52 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW.get());
 
 
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HATCHING.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_FRAME.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE.get());
+
+
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_SIDE_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW.get());
+
+
                 output.accept(ModBlocks.ASPHALT_BLOCK.get());
                 output.accept(ModBlocks.WHITE_ASPHALT.get());
                 output.accept(ModBlocks.LIGHT_GRAY_ASPHALT.get());

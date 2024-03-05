@@ -7,15 +7,18 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import xxrexraptorxx.citycraft.utils.Config;
 
 
-public class AsphaltBlock extends Block {
+public class AsphaltBlock extends HorizontalDirectionalBlock {
 
 	public AsphaltBlock() {
 		super(Properties.of()
@@ -41,6 +44,18 @@ public class AsphaltBlock extends Block {
 				livingentity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, Config.SPEED_EFFECT_AMPLIFIER.get(), false, false, true));
 			}
 		}
+	}
+
+
+	@Override
+	public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(FACING);
+	}
+
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
 	}
 
 }

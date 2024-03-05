@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "citycraft:block/asphalt_with_white_side_dots"
+    "down": "citycraft:block/asphalt_with_white_side_dots",
+    "east": "citycraft:block/asphalt",
+    "north": "citycraft:block/asphalt_with_white_side_dots",
+    "particle": "citycraft:block/asphalt",
+    "south": "citycraft:block/asphalt_with_white_side_dots",
+    "up": "citycraft:block/asphalt_with_white_side_dots",
+    "west": "citycraft:block/asphalt"
   }
 }

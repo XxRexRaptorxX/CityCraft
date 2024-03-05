@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "citycraft:block/asphalt_with_white_side_dots",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "citycraft:block/asphalt_with_white_side_dots",
+      "y": 180
+    },
+    "facing=south": {
       "model": "citycraft:block/asphalt_with_white_side_dots"
+    },
+    "facing=west": {
+      "model": "citycraft:block/asphalt_with_white_side_dots",
+      "y": 90
     }
   }
 }

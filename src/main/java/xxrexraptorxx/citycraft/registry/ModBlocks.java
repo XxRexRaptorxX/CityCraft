@@ -72,6 +72,37 @@ public class ModBlocks {
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_EDGE = registerBlock("asphalt_with_white_thick_edge", AsphaltBlock::new);
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_HATCHING = registerBlock("asphalt_with_white_thick_hatching", AsphaltBlock::new);
 
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE = registerBlock("asphalt_with_yellow_broken_middle_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_MIDDLE_LINE = registerBlock("asphalt_with_yellow_middle_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE = registerBlock("asphalt_with_yellow_middle_double_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE = registerBlock("asphalt_with_yellow_solid_and_broken_middle_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE = registerBlock("asphalt_with_yellow_broken_side_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_SIDE_LINE = registerBlock("asphalt_with_yellow_side_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE = registerBlock("asphalt_with_yellow_broken_diagonal_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_DIAGONAL_LINE = registerBlock("asphalt_with_yellow_diagonal_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE = registerBlock("asphalt_with_yellow_diagonal_double_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_HATCHING = registerBlock("asphalt_with_yellow_hatching", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_SIDE_DOTS = registerBlock("asphalt_with_yellow_side_dots", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE = registerBlock("asphalt_with_yellow_thick_broken_side_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_SIDE_LINE = registerBlock("asphalt_with_yellow_thick_side_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_FRAME = registerBlock("asphalt_with_yellow_frame", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_EDGE = registerBlock("asphalt_with_yellow_edge", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_STRAIGHT_ARROW = registerBlock("asphalt_with_yellow_straight_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_SIDE_ARROW = registerBlock("asphalt_with_yellow_side_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_STRAIGHT_AND_SIDE_ARROW = registerBlock("asphalt_with_yellow_straight_and_side_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW = registerBlock("asphalt_with_yellow_double_side_arrow", AsphaltBlock::new);
+
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE = registerBlock("asphalt_with_yellow_thick_broken_middle_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE = registerBlock("asphalt_with_yellow_thick_middle_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE = registerBlock("asphalt_with_yellow_thick_middle_double_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE = registerBlock("asphalt_with_yellow_thick_solid_and_broken_middle_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE = registerBlock("asphalt_with_yellow_thick_broken_diagonal_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE = registerBlock("asphalt_with_yellow_thick_diagonal_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE = registerBlock("asphalt_with_yellow_thick_diagonal_double_line", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_FRAME = registerBlock("asphalt_with_yellow_thick_frame", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_EDGE = registerBlock("asphalt_with_yellow_thick_edge", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_HATCHING = registerBlock("asphalt_with_yellow_thick_hatching", AsphaltBlock::new);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

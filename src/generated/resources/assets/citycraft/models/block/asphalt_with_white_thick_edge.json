@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "citycraft:block/asphalt_with_white_thick_edge"
+    "down": "citycraft:block/asphalt_with_white_thick_edge",
+    "east": "citycraft:block/asphalt",
+    "north": "citycraft:block/asphalt_with_white_thick_edge",
+    "particle": "citycraft:block/asphalt",
+    "south": "citycraft:block/asphalt_with_white_thick_edge",
+    "up": "citycraft:block/asphalt_with_white_thick_edge",
+    "west": "citycraft:block/asphalt"
   }
 }
