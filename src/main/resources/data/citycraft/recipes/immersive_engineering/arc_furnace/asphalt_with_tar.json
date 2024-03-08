@@ -1,0 +1,38 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "item": "forge:sand",
+      "count": 2
+    },
+    {
+      "item": "forge:gravel",
+      "count": 2
+    }
+  ],
+
+  "energy": 50000,
+  "input": {
+    "base_ingredient": {
+      "item": "citycraft:coal_tar"
+    },
+    "count": 4
+  },
+
+  "results": [
+    {
+      "base_ingredient": {
+        "item": "citycraft:asphalt"
+      },
+      "count": 8
+    }
+  ],
+  "time": 100
+}

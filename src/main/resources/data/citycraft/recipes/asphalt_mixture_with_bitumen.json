@@ -1,0 +1,47 @@
+{
+  "conditions": [
+    {
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:bitumen"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "tag": "forge:bitumen"
+    },
+    {
+      "tag": "forge:bitumen"
+    },
+    {
+      "tag": "forge:bitumen"
+    },
+    {
+      "tag": "forge:bitumen"
+    },
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "tag": "forge:gravel"
+    },
+    {
+      "tag": "forge:gravel"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:asphalt_mixture",
+    "count": 8
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values":
+  [
+    {
+      "id": "assemblylinemachines:oil_bucket",
+      "required": false
+    },
+    {
+      "id": "pneunmaticcraft:oil_bucket",
+      "required": false
+    },
+    {
+      "id": "voluminousenergy:crude_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "ad_astra:oil_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:crude_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "immersivepetroleum:crudeoil_bucket",
+      "required": false
+    }
+  ]
+}

@@ -22,6 +22,11 @@ public class BlockStateGen extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         simpleBlock(ModBlocks.ASPHALT_BLOCK.get());
+        simpleBlock(ModBlocks.CRACKED_ASPHALT.get());
+        simpleBlock(ModBlocks.POTHOLE_ASPHALT.get());
+        simpleBlock(ModBlocks.MOSSY_ASPHALT.get());
+        simpleBlock(ModBlocks.DIRTY_ASPHALT.get());
+
         simpleBlock(ModBlocks.WHITE_ASPHALT.get());
         simpleBlock(ModBlocks.ORANGE_ASPHALT.get());
         simpleBlock(ModBlocks.MAGENTA_ASPHALT.get());
@@ -101,6 +106,11 @@ public class BlockStateGen extends BlockStateProvider {
 
         //ITEM BLOCK MODELS
         makeBlockItemFromExistingModel(ModBlocks.ASPHALT_BLOCK.get());
+        makeBlockItemFromExistingModel(ModBlocks.CRACKED_ASPHALT.get());
+        makeBlockItemFromExistingModel(ModBlocks.POTHOLE_ASPHALT.get());
+        makeBlockItemFromExistingModel(ModBlocks.MOSSY_ASPHALT.get());
+        makeBlockItemFromExistingModel(ModBlocks.DIRTY_ASPHALT.get());
+
         makeBlockItemFromExistingModel(ModBlocks.WHITE_ASPHALT.get());
         makeBlockItemFromExistingModel(ModBlocks.ORANGE_ASPHALT.get());
         makeBlockItemFromExistingModel(ModBlocks.MAGENTA_ASPHALT.get());

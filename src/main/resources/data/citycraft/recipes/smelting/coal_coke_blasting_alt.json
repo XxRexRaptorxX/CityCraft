@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:tag_empty",
+      "tag": "forge:coal_coke"
+    }
+  ],
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 1500,
+  "experience": 9.0,
+
+  "ingredient": {
+    "item": "minecraft:coal_block"
+  },
+
+  "result": "citycraft:coal_coke",
+  "count": 9
+}

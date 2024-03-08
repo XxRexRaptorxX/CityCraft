@@ -41,6 +41,12 @@ public class ModBlocks {
     public static final RegistryObject<AsphaltBlock> BROWN_ASPHALT = registerBlock("brown_asphalt", AsphaltBlock::new);
     public static final RegistryObject<AsphaltBlock> GREEN_ASPHALT = registerBlock("green_asphalt", AsphaltBlock::new);
     public static final RegistryObject<AsphaltBlock> RED_ASPHALT = registerBlock("red_asphalt", AsphaltBlock::new);
+
+    public static final RegistryObject<AsphaltBlock> CRACKED_ASPHALT = registerBlock("cracked_asphalt", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> POTHOLE_ASPHALT = registerBlock("pothole_asphalt", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> MOSSY_ASPHALT = registerBlock("mossy_asphalt", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> DIRTY_ASPHALT = registerBlock("dirty_asphalt", AsphaltBlock::new);
+
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE = registerBlock("asphalt_with_white_broken_middle_line", AsphaltBlock::new);
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_MIDDLE_LINE = registerBlock("asphalt_with_white_middle_line", AsphaltBlock::new);
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE = registerBlock("asphalt_with_white_middle_double_line", AsphaltBlock::new);

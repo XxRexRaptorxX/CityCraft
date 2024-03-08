@@ -1,0 +1,41 @@
+{
+  "conditions": [
+    {
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:buckets/oil"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:buckets/oil"
+    },
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "tag": "forge:gravel"
+    },
+    {
+      "tag": "forge:gravel"
+    },
+    {
+      "tag": "forge:gravel"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:asphalt_mixture",
+    "count": 6
+  }
+}

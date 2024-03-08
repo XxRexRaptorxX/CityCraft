@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_asphalt",
+  "ingredients": [
+    {
+      "tag": "forge:asphalt"
+    },
+    {
+      "tag": "forge:dyes/purple"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:purple_asphalt"
+  }
+}

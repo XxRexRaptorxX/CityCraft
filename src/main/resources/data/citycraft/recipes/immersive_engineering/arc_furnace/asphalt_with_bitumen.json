@@ -1,0 +1,45 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    },
+    {
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:bitumen"
+      },
+      "type": "forge:not"
+    }
+  ],
+
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "item": "forge:sand",
+      "count": 2
+    },
+    {
+      "item": "forge:gravel",
+      "count": 2
+    }
+  ],
+
+  "energy": 50000,
+  "input": {
+    "base_ingredient": {
+      "item": "forge:bitumen"
+    },
+    "count": 4
+  },
+
+  "results": [
+    {
+      "base_ingredient": {
+        "item": "citycraft:asphalt"
+      },
+      "count": 8
+    }
+  ],
+  "time": 100
+}

@@ -2,7 +2,18 @@
     "itemGroup.citycraft.main_tab": "City Craft",
     "itemGroup.citycraft.road_tab": "City Craft - Straßen",
 
+    "message.citycraft.speed_tooltip": "Increased movement speed",
+
+    "item.citycraft.coal_coke": "Coal Coke",
+    "item.citycraft.coal_tar": "Coal Tar",
+    "item.citycraft.asphalt_mixture": "Asphalt Mixture",
+
     "block.citycraft.asphalt": "Asphalt",
+    "block.citycraft.cracked_asphalt":  "Cracked Asphalt",
+    "block.citycraft.pothole_asphalt": "Asphalt with Pothole",
+    "block.citycraft.mossy_asphalt":  "Mossy Asphalt",
+    "block.citycraft.dirty_asphalt": "Dirty Asphalt",
+
     "block.citycraft.white_asphalt": "White Asphalt",
     "block.citycraft.orange_asphalt": "Orange Asphalt",
     "block.citycraft.magenta_asphalt": "Magenta Asphalt",
@@ -47,6 +58,36 @@
     "block.citycraft.asphalt_with_white_thick_diagonal_double_line": "Asphalt with White thick Diagonal Double Line",
     "block.citycraft.asphalt_with_white_thick_frame": "Asphalt with White thick Frame",
     "block.citycraft.asphalt_with_white_thick_edge": "Asphalt with White thick Edge",
-    "block.citycraft.asphalt_with_white_thick_hatching": "Asphalt with white thick Hatching"
+    "block.citycraft.asphalt_with_white_thick_hatching": "Asphalt with white thick Hatching",
+
+    "block.citycraft.asphalt_with_yellow_broken_middle_line": "Asphalt with Yellow broken Middle Line",
+    "block.citycraft.asphalt_with_yellow_middle_line": "Asphalt with Yellow Middle Line",
+    "block.citycraft.asphalt_with_yellow_middle_double_line": "Asphalt with Yellow Double Middle Line",
+    "block.citycraft.asphalt_with_yellow_solid_and_broken_middle_line": "Asphalt with Yellow solid & broken Middle Line",
+    "block.citycraft.asphalt_with_yellow_broken_side_line": "Asphalt with Yellow broken Side Line",
+    "block.citycraft.asphalt_with_yellow_side_line": "Asphalt with Yellow Side Line",
+    "block.citycraft.asphalt_with_yellow_broken_diagonal_line": "Asphalt with Yellow broken Diagonal Line",
+    "block.citycraft.asphalt_with_yellow_diagonal_line": "Asphalt with Yellow Diagonal Line",
+    "block.citycraft.asphalt_with_yellow_diagonal_double_line": "Asphalt with Yellow Diagonal Double Line",
+    "block.citycraft.asphalt_with_yellow_hatching": "Asphalt with Yellow Hatching",
+    "block.citycraft.asphalt_with_yellow_side_dots": "Asphalt with Yellow Side Dots",
+    "block.citycraft.asphalt_with_yellow_thick_broken_side_line": "Asphalt with Yellow thick broken Side Line",
+    "block.citycraft.asphalt_with_yellow_thick_side_line": "Asphalt with Yellow thick Side Line",
+    "block.citycraft.asphalt_with_yellow_frame": "Asphalt with Yellow Frame",
+    "block.citycraft.asphalt_with_yellow_edge": "Asphalt with Yellow Edge",
+    "block.citycraft.asphalt_with_yellow_straight_arrow": "Asphalt white Yellow Arrow",
+    "block.citycraft.asphalt_with_yellow_side_arrow": "Asphalt with Yellow Side Arrow",
+    "block.citycraft.asphalt_with_yellow_straight_and_side_arrow": "Asphalt with Yellow Straight & Side Arrow",
+    "block.citycraft.asphalt_with_yellow_double_side_arrow": "Asphalt with Yellow Double Arrow",
+    "block.citycraft.asphalt_with_yellow_thick_broken_middle_line": "Asphalt with Yellow thick broken Middle Line",
+    "block.citycraft.asphalt_with_yellow_thick_middle_line": "Asphalt with Yellow thick Middle Line",
+    "block.citycraft.asphalt_with_yellow_thick_middle_double_line": "Asphalt with Yellow thick Middle Double Line",
+    "block.citycraft.asphalt_with_yellow_thick_solid_and_broken_middle_line": "Asphalt with Yellow thick solid & broken Middle Line",
+    "block.citycraft.asphalt_with_yellow_thick_broken_diagonal_line": "Asphalt with Yellow broken Diagonal Line",
+    "block.citycraft.asphalt_with_yellow_thick_diagonal_line": "Asphalt with Yellow thick Diagonal Line",
+    "block.citycraft.asphalt_with_yellow_thick_diagonal_double_line": "Asphalt with Yellow thick Diagonal Double Line",
+    "block.citycraft.asphalt_with_yellow_thick_frame": "Asphalt with Yellow thick Frame",
+    "block.citycraft.asphalt_with_yellow_thick_edge": "Asphalt with Yellow thick Edge",
+    "block.citycraft.asphalt_with_yellow_thick_hatching": "Asphalt with Yellow thick Hatching"
 
 }

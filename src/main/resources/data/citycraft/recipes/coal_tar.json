@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:tag_empty",
+      "tag": "forge:coal_coke"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "citycraft:coal_coke"
+    },
+    {
+      "item": "citycraft:coal_coke"
+    },
+    {
+      "item": "citycraft:coal_coke"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:coal_tar"
+  }
+}

@@ -1,6 +1,10 @@
 {
   "values": [
     "citycraft:asphalt",
+    "citycraft:cracked_asphalt",
+    "citycraft:pothole_asphalt",
+    "citycraft:mossy_asphalt",
+    "citycraft:dirty_asphalt",
     "citycraft:white_asphalt",
     "citycraft:orange_asphalt",
     "citycraft:magenta_asphalt",

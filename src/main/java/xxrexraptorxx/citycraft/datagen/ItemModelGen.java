@@ -6,6 +6,7 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import xxrexraptorxx.citycraft.main.References;
+import xxrexraptorxx.citycraft.registry.ModItems;
 
 public class ItemModelGen extends ItemModelProvider {
 
@@ -16,7 +17,8 @@ public class ItemModelGen extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-
+        itemGenerated(ModItems.COAL_COKE);
+        itemGenerated(ModItems.ASPHALT_MIXTURE);
     }
 
 

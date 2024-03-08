@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "jeed"
+    }
+  ],
+
+  "type": "jeed:effect_provider",
+  "effect":{
+    "id": "minecraft:speed"
+  },
+
+  "providers": [
+    {
+      "tag": "citycraft:asphalt"
+    }
+  ]
+}

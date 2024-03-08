@@ -2,6 +2,11 @@
   "replace": false,
   "values": [
     "#citycraft:blank_asphalt",
-    "#citycraft:asphalt_with_markings"
+    "#citycraft:asphalt_with_markings",
+
+    "citycraft:cracked_asphalt",
+    "citycraft:pothole_asphalt",
+    "citycraft:mossy_asphalt",
+    "citycraft:dirty_asphalt"
   ]
 }

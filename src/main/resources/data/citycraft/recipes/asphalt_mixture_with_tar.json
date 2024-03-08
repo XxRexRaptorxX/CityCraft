@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "citycraft:coal_tar"
+    },
+    {
+      "item": "citycraft:coal_tar"
+    },
+    {
+      "item": "citycraft:coal_tar"
+    },
+    {
+      "item": "citycraft:coal_tar"
+    },
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "tag": "forge:gravel"
+    },
+    {
+      "tag": "forge:gravel"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:asphalt_mixture",
+    "count": 8
+  }
+}

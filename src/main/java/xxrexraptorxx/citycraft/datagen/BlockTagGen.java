@@ -22,6 +22,11 @@ public class BlockTagGen extends BlockTagsProvider {
        tag(BlockTags.MINEABLE_WITH_PICKAXE)
                .add(
                        ModBlocks.ASPHALT_BLOCK.get(),
+                       ModBlocks.CRACKED_ASPHALT.get(),
+                       ModBlocks.POTHOLE_ASPHALT.get(),
+                       ModBlocks.MOSSY_ASPHALT.get(),
+                       ModBlocks.DIRTY_ASPHALT.get(),
+
                        ModBlocks.WHITE_ASPHALT.get(),
                        ModBlocks.ORANGE_ASPHALT.get(),
                        ModBlocks.MAGENTA_ASPHALT.get(),

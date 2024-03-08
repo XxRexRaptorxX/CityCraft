@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_rasphalt",
+  "ingredients": [
+    {
+      "tag": "forge:asphalt"
+    },
+    {
+      "tag": "forge:dyes/red"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:red_asphalt"
+  }
+}
