@@ -1,0 +1,17 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type":"immersiveengineering:crusher",
+  "energy": 2400,
+  "input": {
+    "tag": "forge:asphalt"
+  },
+  "result": {
+    "tag": "forge:dusts/asphalt"
+  },
+  "secondaries":[]
+}

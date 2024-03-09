@@ -1,0 +1,33 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "tag": "forge:dyes/red"
+    }
+  ],
+
+  "energy": 50000,
+  "input": {
+    "base_ingredient": {
+      "tag": "forge:dusts/asphalt"
+    },
+    "count": 1
+  },
+
+  "results": [
+    {
+      "base_ingredient": {
+        "item": "citycraft:red_asphalt"
+      },
+      "count": 1
+    }
+  ],
+  "time": 200
+}

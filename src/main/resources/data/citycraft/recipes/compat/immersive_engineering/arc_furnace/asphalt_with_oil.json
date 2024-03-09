@@ -32,7 +32,7 @@
   "energy": 50000,
   "input": {
     "base_ingredient": {
-      "item": "forge:buckets/oil"
+      "tag": "forge:buckets/oil"
     },
     "count": 1
   },
