@@ -7,7 +7,7 @@
     {
       "value": {
         "type": "forge:tag_empty",
-        "tag": "forge:bitumen"
+        "tag": "forge:buckets/oil"
       },
       "type": "forge:not"
     }
@@ -16,21 +16,25 @@
   "type": "immersiveengineering:arc_furnace",
   "additives": [
     {
-      "item": "forge:sand",
-      "count": 2
+      "tag": "forge:sand"
     },
     {
-      "item": "forge:gravel",
-      "count": 2
+      "tag": "forge:gravel"
+    },
+    {
+      "tag": "forge:sand"
+    },
+    {
+      "tag": "forge:gravel"
     }
   ],
 
   "energy": 50000,
   "input": {
     "base_ingredient": {
-      "item": "forge:bitumen"
+      "item": "forge:buckets/oil"
     },
-    "count": 4
+    "count": 1
   },
 
   "results": [
@@ -38,7 +42,7 @@
       "base_ingredient": {
         "item": "citycraft:asphalt"
       },
-      "count": 8
+      "count": 4
     }
   ],
   "time": 100

@@ -157,7 +157,7 @@ repositories {
 }
 
 dependencies {
-      minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
+    minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
     //Mixin AP
     annotationProcessor "org.spongepowered:mixin:${mixin_version}:processor"
     //JEI
@@ -168,7 +168,10 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:jeed-532286:${jeed_version}")
 	//JADE
     runtimeOnly fg.deobf("curse.maven:jade-324717:${jade_version}")
-
+    //IMMERSIVE ENGINEERING
+    runtimeOnly fg.deobf("curse.maven:ie-231951:${immersive_engineering_version}")
+    //IMMERSIVE PETROLEUM
+    //runtimeOnly fg.deobf("curse.maven:ip-268250:${immersive_petroleum_version}")
 }
 
 // MixinGradle Settings

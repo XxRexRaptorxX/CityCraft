@@ -6,16 +6,16 @@
       "item": "minecraft:water_bucket"
     },
     {
-      "item": "citycraft:coal_tar"
+      "tag": "forge:buckets/coal_tar"
     },
     {
-      "item": "citycraft:coal_tar"
+      "tag": "forge:buckets/coal_tar"
     },
     {
-      "item": "citycraft:coal_tar"
+      "tag": "forge:buckets/coal_tar"
     },
     {
-      "item": "citycraft:coal_tar"
+      "tag": "forge:buckets/coal_tar"
     },
     {
       "tag": "forge:sand"

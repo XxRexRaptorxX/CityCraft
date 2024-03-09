@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values":
+  [
+    {
+      "id": "immersiveengineering:creosote_bucket",
+      "required": false
+    }
+  ]
+}
