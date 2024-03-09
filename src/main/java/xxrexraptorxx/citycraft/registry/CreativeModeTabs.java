@@ -23,6 +23,7 @@ public class CreativeModeTabs {
 
                 output.accept(ModItems.COAL_COKE.get());
                 output.accept(ModItems.ASPHALT_MIXTURE.get());
+                output.accept(ModItems.COAL_TAR.get());
 
             }).build());
 

@@ -18,6 +18,7 @@ public class ItemModelGen extends ItemModelProvider {
     @Override
     protected void registerModels() {
         itemGenerated(ModItems.COAL_COKE);
+        itemGenerated(ModItems.COAL_TAR);
         itemGenerated(ModItems.ASPHALT_MIXTURE);
     }
 

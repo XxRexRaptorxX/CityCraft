@@ -1,6 +1,6 @@
 {
-  "type": "minecraft:smelting",
-  "category": "misc",
+  "type": "minecraft:blasting",
+  "category": "blocks",
   "cookingtime": 100,
   "experience": 1.0,
 

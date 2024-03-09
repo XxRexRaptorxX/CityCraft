@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:asphalt"
+    },
+    {
+      "item": "minecraft:mud"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:dirty_asphalt"
+  }
+}
