@@ -1,7 +1,7 @@
 modLoader="javafml"
 loaderVersion="${loader_version_range}"
 license="${mod_license}"
-issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/citycraft/issues"
+issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/city-craft/issues"
 
 [[mods]]
 modId="${mod_id}"
@@ -9,7 +9,7 @@ version="${mod_version}"
 displayName="${mod_name}"
 itemIcon="citycraft:asphalt_with_white_broken_middle_line"
 updateJSONURL="https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/CityCraft.json"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/citycraft"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/city-craft"
 logoFile="logo.png"
 #credits=""
 authors="${mod_authors}"
