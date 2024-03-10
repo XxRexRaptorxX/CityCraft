@@ -63,8 +63,11 @@ public class ModBlocks {
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_FRAME = registerBlock("asphalt_with_white_frame", AsphaltBlock::new);
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_EDGE = registerBlock("asphalt_with_white_edge", AsphaltBlock::new);
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_STRAIGHT_ARROW = registerBlock("asphalt_with_white_straight_arrow", AsphaltBlock::new);
-    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_SIDE_ARROW = registerBlock("asphalt_with_white_side_arrow", AsphaltBlock::new);
-    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_STRAIGHT_AND_SIDE_ARROW = registerBlock("asphalt_with_white_straight_and_side_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_LEFT_ARROW = registerBlock("asphalt_with_white_left_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW = registerBlock("asphalt_with_white_straight_and_left_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_RIGHT_ARROW = registerBlock("asphalt_with_white_right_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW = registerBlock("asphalt_with_white_straight_and_right_arrow", AsphaltBlock::new);
+
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW = registerBlock("asphalt_with_white_double_side_arrow", AsphaltBlock::new);
 
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE = registerBlock("asphalt_with_white_thick_broken_middle_line", AsphaltBlock::new);
@@ -94,8 +97,11 @@ public class ModBlocks {
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_FRAME = registerBlock("asphalt_with_yellow_frame", AsphaltBlock::new);
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_EDGE = registerBlock("asphalt_with_yellow_edge", AsphaltBlock::new);
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_STRAIGHT_ARROW = registerBlock("asphalt_with_yellow_straight_arrow", AsphaltBlock::new);
-    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_SIDE_ARROW = registerBlock("asphalt_with_yellow_side_arrow", AsphaltBlock::new);
-    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_STRAIGHT_AND_SIDE_ARROW = registerBlock("asphalt_with_yellow_straight_and_side_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_LEFT_ARROW = registerBlock("asphalt_with_yellow_left_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW = registerBlock("asphalt_with_yellow_straight_and_left_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_RIGHT_ARROW = registerBlock("asphalt_with_yellow_right_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW = registerBlock("asphalt_with_yellow_straight_and_right_arrow", AsphaltBlock::new);
+
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW = registerBlock("asphalt_with_yellow_double_side_arrow", AsphaltBlock::new);
 
     public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE = registerBlock("asphalt_with_yellow_thick_broken_middle_line", AsphaltBlock::new);

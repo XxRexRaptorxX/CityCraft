@@ -112,11 +112,17 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW.get());
 
-                output.accept(ModBlocks.ASPHALT_WITH_WHITE_SIDE_ARROW.get());
-                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW.get());
 
-                output.accept(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_SIDE_ARROW.get());
-                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_SIDE_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW.get());
 
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW.get());
