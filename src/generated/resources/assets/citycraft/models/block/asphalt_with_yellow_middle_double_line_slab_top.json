@@ -1,0 +1,12 @@
+{
+  "parent": "citycraft:block/slab_top",
+  "textures": {
+    "down": "citycraft:block/asphalt_with_yellow_middle_double_line",
+    "east": "citycraft:block/asphalt",
+    "north": "citycraft:block/asphalt_with_yellow_middle_double_line",
+    "particle": "citycraft:block/asphalt",
+    "south": "citycraft:block/asphalt_with_yellow_middle_double_line",
+    "up": "citycraft:block/asphalt_with_yellow_middle_double_line",
+    "west": "citycraft:block/asphalt"
+  }
+}

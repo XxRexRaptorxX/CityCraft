@@ -1,9 +1,12 @@
 {
-  "parent": "minecraft:block/slab_top",
+  "parent": "citycraft:block/slab",
   "textures": {
-    "bottom": "citycraft:block/asphalt_with_yellow_edge",
+    "down": "citycraft:block/asphalt_with_yellow_edge",
+    "east": "citycraft:block/asphalt",
+    "north": "citycraft:block/asphalt_with_yellow_edge",
     "particle": "citycraft:block/asphalt",
-    "side": "citycraft:block/asphalt_with_yellow_edge",
-    "top": "citycraft:block/asphalt_with_yellow_edge"
+    "south": "citycraft:block/asphalt_with_yellow_edge",
+    "up": "citycraft:block/asphalt_with_yellow_edge",
+    "west": "citycraft:block/asphalt"
   }
 }

@@ -5,6 +5,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -281,21 +282,41 @@ public class BlockStateGen extends BlockStateProvider {
     }
 
 
-
     private void directionalAsphaltSlab(Block block) {
         String asphaltTexture = BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath().replace("_slab", "");
 
+        ModelFile bottom = models().withExistingParent(blockTexture + "_slab", References.MODID + ":block/slab")
+                .texture("down", "block/" + blockTexture)   //down
+                .texture("up", "block/" + blockTexture)    //up
+                .texture("north", "block/" + blockTexture)  //north
+                .texture("south", "block/" + blockTexture)   //south
+                .texture("east", "block/" + asphaltTexture)   //east
+                .texture("west", "block/" + asphaltTexture)  //west
+                .texture("particle", modLoc("block/" + asphaltTexture));
+
+        ModelFile top = models().withExistingParent(blockTexture + "_slab_top", References.MODID + ":block/slab_top")
+                .texture("down", "block/" + blockTexture)   //down
+                .texture("up", "block/" + blockTexture)    //up
+                .texture("north", "block/" + blockTexture)  //north
+                .texture("south", "block/" + blockTexture)   //south
+                .texture("east", "block/" + asphaltTexture)   //east
+                .texture("west", "block/" + asphaltTexture)  //west
+                .texture("particle", modLoc("block/" + asphaltTexture));
+
+        ModelFile full = models().cube(blockTexture,
+                 modLoc("block/" + blockTexture),   //down
+                 modLoc("block/" + blockTexture),    //up
+                 modLoc("block/" + blockTexture),  //north
+                 modLoc("block/" + blockTexture),   //south
+                 modLoc("block/" + asphaltTexture),   //east
+                 modLoc("block/" + asphaltTexture))  //west
+                .texture("particle", modLoc("block/" + asphaltTexture));
+
         getVariantBuilder(block)
                 .forAllStates(state -> {
 
-                    ModelFile model = models()
-                            .slabTop(blockTexture + "_slab",
-                                    modLoc("block/" + blockTexture),   //side
-                                    modLoc("block/" + blockTexture),    //bottom
-                                    modLoc("block/" + blockTexture))  //top
-                            .texture("particle", modLoc("block/" + asphaltTexture));
-
+                    SlabType type = state.getValue(AsphaltSlabBlock.TYPE);
                     Direction dir = state.getValue(AsphaltSlabBlock.FACING);
                     int x = 0;
                     int y = 0;
@@ -316,8 +337,9 @@ public class BlockStateGen extends BlockStateProvider {
                             break;
                     }
 
+
                     return ConfiguredModel.builder()
-                            .modelFile(model)
+                            .modelFile(type == SlabType.BOTTOM ? bottom : type == SlabType.TOP ? top : full)
                             .rotationX(x)
                             .rotationY(y)
                             .build();
@@ -325,6 +347,7 @@ public class BlockStateGen extends BlockStateProvider {
 
         makeBlockItemFromExistingModel(block);
     }
+
 
 }
 
