@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "citycraft:asphalt_with_white_thick_side_line"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "citycraft:blocks/asphalt_with_white_thick_side_line"
+}
