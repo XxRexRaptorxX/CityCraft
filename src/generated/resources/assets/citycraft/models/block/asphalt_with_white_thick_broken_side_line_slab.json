@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "citycraft:block/asphalt_with_white_thick_broken_side_line",
+    "particle": "citycraft:block/asphalt",
+    "side": "citycraft:block/asphalt_with_white_thick_broken_side_line",
+    "top": "citycraft:block/asphalt_with_white_thick_broken_side_line"
+  }
+}

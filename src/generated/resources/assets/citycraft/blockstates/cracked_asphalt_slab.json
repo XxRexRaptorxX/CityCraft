@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "citycraft:block/cracked_asphalt_slab"
+    },
+    "type=double": {
+      "model": "citycraft:block/cracked_asphalt"
+    },
+    "type=top": {
+      "model": "citycraft:block/cracked_asphalt_slab_top"
+    }
+  }
+}

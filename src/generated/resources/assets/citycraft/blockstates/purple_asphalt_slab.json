@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "citycraft:block/purple_asphalt_slab"
+    },
+    "type=double": {
+      "model": "citycraft:block/purple_asphalt"
+    },
+    "type=top": {
+      "model": "citycraft:block/purple_asphalt_slab_top"
+    }
+  }
+}

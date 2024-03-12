@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "citycraft:block/asphalt_with_white_thick_frame",
+    "particle": "citycraft:block/asphalt",
+    "side": "citycraft:block/asphalt_with_white_thick_frame",
+    "top": "citycraft:block/asphalt_with_white_thick_frame"
+  }
+}

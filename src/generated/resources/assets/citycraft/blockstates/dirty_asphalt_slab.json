@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "citycraft:block/dirty_asphalt_slab"
+    },
+    "type=double": {
+      "model": "citycraft:block/dirty_asphalt"
+    },
+    "type=top": {
+      "model": "citycraft:block/dirty_asphalt_slab_top"
+    }
+  }
+}

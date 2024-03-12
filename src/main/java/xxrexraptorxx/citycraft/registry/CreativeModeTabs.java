@@ -150,5 +150,7 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.MAGENTA_ASPHALT.get());
                 output.accept(ModBlocks.PINK_ASPHALT.get());
 
+                output.accept(ModBlocks.ASPHALT_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get());
             }).build());
 }

@@ -13,7 +13,7 @@
 
   "providers": [
     {
-      "tag": "citycraft:asphalt"
+      "tag": "citycraft:blocks_with_speed_boost"
     }
   ]
 }
