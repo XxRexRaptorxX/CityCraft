@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "tag": "citycraft:white_marked_asphalt"
+    "tag": "citycraft:yellow_marked_asphalt"
   },
   "result": "citycraft:asphalt_with_yellow_thick_diagonal_double_line"
 }
