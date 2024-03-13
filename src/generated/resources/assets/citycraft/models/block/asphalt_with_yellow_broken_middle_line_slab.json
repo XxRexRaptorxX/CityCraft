@@ -1,5 +1,5 @@
 {
-  "parent": "citycraft:block/slab",
+  "parent": "citycraft:block/directional_slab",
   "textures": {
     "down": "citycraft:block/asphalt_with_yellow_broken_middle_line",
     "east": "citycraft:block/asphalt",

@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube",
+  "parent": "citycraft:block/directional_cube",
   "textures": {
     "down": "citycraft:block/asphalt_with_yellow_thick_diagonal_double_line",
     "east": "citycraft:block/asphalt",

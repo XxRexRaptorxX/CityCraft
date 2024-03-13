@@ -232,16 +232,14 @@ public class BlockStateGen extends BlockStateProvider {
         getVariantBuilder(block)
                 .forAllStates(state -> {
 
-                ModelFile model = models()
-                        .cube(blockTexture,
-                                modLoc("block/" + blockTexture),   //down
-                                modLoc("block/" + blockTexture),    //up
-                                modLoc("block/" + blockTexture),  //north
-                                modLoc("block/" + blockTexture),   //south
-                                modLoc("block/" + asphaltTexture),   //east
-                                modLoc("block/" + asphaltTexture))  //west
-
-                        .texture("particle", modLoc("block/" + asphaltTexture));
+                    ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/directional_cube")
+                            .texture("down", "block/" + blockTexture)   //down
+                            .texture("up", "block/" + blockTexture)    //up
+                            .texture("north", "block/" + blockTexture)  //north
+                            .texture("south", "block/" + blockTexture)   //south
+                            .texture("east", "block/" + asphaltTexture)   //east
+                            .texture("west", "block/" + asphaltTexture)  //west
+                            .texture("particle", modLoc("block/" + asphaltTexture));
 
         Direction dir = state.getValue(AsphaltBlock.FACING);
         int x = 0;
@@ -286,7 +284,7 @@ public class BlockStateGen extends BlockStateProvider {
         String asphaltTexture = BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath().replace("_slab", "");
 
-        ModelFile bottom = models().withExistingParent(blockTexture + "_slab", References.MODID + ":block/slab")
+        ModelFile bottom = models().withExistingParent(blockTexture + "_slab", References.MODID + ":block/directional_slab")
                 .texture("down", "block/" + blockTexture)   //down
                 .texture("up", "block/" + blockTexture)    //up
                 .texture("north", "block/" + blockTexture)  //north
@@ -295,7 +293,7 @@ public class BlockStateGen extends BlockStateProvider {
                 .texture("west", "block/" + asphaltTexture)  //west
                 .texture("particle", modLoc("block/" + asphaltTexture));
 
-        ModelFile top = models().withExistingParent(blockTexture + "_slab_top", References.MODID + ":block/slab_top")
+        ModelFile top = models().withExistingParent(blockTexture + "_slab_top", References.MODID + ":block/directional_slab_top")
                 .texture("down", "block/" + blockTexture)   //down
                 .texture("up", "block/" + blockTexture)    //up
                 .texture("north", "block/" + blockTexture)  //north
@@ -304,13 +302,13 @@ public class BlockStateGen extends BlockStateProvider {
                 .texture("west", "block/" + asphaltTexture)  //west
                 .texture("particle", modLoc("block/" + asphaltTexture));
 
-        ModelFile full = models().cube(blockTexture,
-                 modLoc("block/" + blockTexture),   //down
-                 modLoc("block/" + blockTexture),    //up
-                 modLoc("block/" + blockTexture),  //north
-                 modLoc("block/" + blockTexture),   //south
-                 modLoc("block/" + asphaltTexture),   //east
-                 modLoc("block/" + asphaltTexture))  //west
+        ModelFile full = models().withExistingParent(blockTexture, References.MODID + ":block/directional_cube")
+                .texture("down", "block/" + blockTexture)   //down
+                .texture("up", "block/" + blockTexture)    //up
+                .texture("north", "block/" + blockTexture)  //north
+                .texture("south", "block/" + blockTexture)   //south
+                .texture("east", "block/" + asphaltTexture)   //east
+                .texture("west", "block/" + asphaltTexture)  //west
                 .texture("particle", modLoc("block/" + asphaltTexture));
 
         getVariantBuilder(block)
