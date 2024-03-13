@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "citycraft:blue_asphalt"
+  },
+  "result": "citycraft:blue_asphalt_slab"
+}

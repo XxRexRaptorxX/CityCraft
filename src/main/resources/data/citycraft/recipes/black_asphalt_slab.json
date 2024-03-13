@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_asphalt_slab",
+  "ingredients": [
+    {
+      "tag": "forge:asphalt_slab"
+    },
+    {
+      "tag": "forge:dyes/black"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:asphalt_slab"
+  }
+}

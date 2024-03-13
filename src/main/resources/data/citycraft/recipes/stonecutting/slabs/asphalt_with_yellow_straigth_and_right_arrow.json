@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "tag": "citycraft:yellow_marked_asphalt"
+  },
+  "result": "citycraft:asphalt_with_yellow_straight_and_right_arrow_slab"
+}
