@@ -1,0 +1,12 @@
+{
+  "parent": "citycraft:block/directional_cube",
+  "textures": {
+    "down": "citycraft:block/asphalt_with_yellow_m",
+    "east": "citycraft:block/asphalt",
+    "north": "citycraft:block/asphalt_with_yellow_m",
+    "particle": "citycraft:block/asphalt",
+    "south": "citycraft:block/asphalt_with_yellow_m",
+    "up": "citycraft:block/asphalt_with_yellow_m",
+    "west": "citycraft:block/asphalt"
+  }
+}

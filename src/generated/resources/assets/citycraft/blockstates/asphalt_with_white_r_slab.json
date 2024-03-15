@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "facing=east,type=bottom,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r_slab",
+      "y": 270
+    },
+    "facing=east,type=bottom,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r_slab",
+      "y": 270
+    },
+    "facing=east,type=double,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r",
+      "y": 270
+    },
+    "facing=east,type=double,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r",
+      "y": 270
+    },
+    "facing=east,type=top,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r_slab_top",
+      "y": 270
+    },
+    "facing=east,type=top,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r_slab_top",
+      "y": 270
+    },
+    "facing=north,type=bottom,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r_slab",
+      "y": 180
+    },
+    "facing=north,type=bottom,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r_slab",
+      "y": 180
+    },
+    "facing=north,type=double,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r",
+      "y": 180
+    },
+    "facing=north,type=double,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r",
+      "y": 180
+    },
+    "facing=north,type=top,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r_slab_top",
+      "y": 180
+    },
+    "facing=north,type=top,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r_slab_top",
+      "y": 180
+    },
+    "facing=south,type=bottom,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r_slab"
+    },
+    "facing=south,type=bottom,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r_slab"
+    },
+    "facing=south,type=double,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r"
+    },
+    "facing=south,type=double,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r"
+    },
+    "facing=south,type=top,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r_slab_top"
+    },
+    "facing=south,type=top,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r_slab_top"
+    },
+    "facing=west,type=bottom,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r_slab",
+      "y": 90
+    },
+    "facing=west,type=bottom,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r_slab",
+      "y": 90
+    },
+    "facing=west,type=double,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r",
+      "y": 90
+    },
+    "facing=west,type=double,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r",
+      "y": 90
+    },
+    "facing=west,type=top,waterlogged=false": {
+      "model": "citycraft:block/asphalt_with_white_r_slab_top",
+      "y": 90
+    },
+    "facing=west,type=top,waterlogged=true": {
+      "model": "citycraft:block/asphalt_with_white_r_slab_top",
+      "y": 90
+    }
+  }
+}
