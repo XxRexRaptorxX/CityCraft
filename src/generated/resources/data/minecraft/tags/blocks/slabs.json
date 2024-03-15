@@ -81,6 +81,9 @@
     "citycraft:asphalt_with_yellow_thick_diagonal_double_line_slab",
     "citycraft:asphalt_with_yellow_thick_frame_slab",
     "citycraft:asphalt_with_yellow_thick_edge_slab",
-    "citycraft:asphalt_with_yellow_thick_hatching_slab"
+    "citycraft:asphalt_with_yellow_thick_hatching_slab",
+    "citycraft:boost_asphalt_slab",
+    "citycraft:red_bumper_slab",
+    "citycraft:yellow_bumper_slab"
   ]
 }

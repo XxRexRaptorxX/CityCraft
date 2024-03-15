@@ -232,5 +232,10 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.PINK_ASPHALT.get());
                 output.accept(ModBlocks.PINK_ASPHALT_SLAB.get());
 
+                output.accept(ModBlocks.BOOST_ASPHALT.get());
+                output.accept(ModBlocks.BOOST_ASPHALT_SLAB.get());
+                output.accept(ModBlocks.YELLOW_BUMPER_SLAB.get());
+                output.accept(ModBlocks.RED_BUMPER_SLAB.get());
+
             }).build());
 }

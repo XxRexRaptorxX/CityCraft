@@ -216,6 +216,10 @@ public class BlockStateGen extends BlockStateProvider {
         directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get());
         directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get());
         directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get());
+
+        directionalAsphaltBlock(ModBlocks.BOOST_ASPHALT.get());
+        directionalAsphaltSlab(ModBlocks.BOOST_ASPHALT_SLAB.get());
+
     }
 
 

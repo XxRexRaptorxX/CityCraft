@@ -20,6 +20,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Config;
@@ -42,15 +43,19 @@ public class AsphaltBlock extends HorizontalDirectionalBlock {
 
 	@Override
 	public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-		if(!level.isClientSide && Config.ENABLE_ASPHALT_SPEED_EFFECT.get() && this != ModBlocks.POTHOLE_ASPHALT.get()) {
-			if(entity instanceof Player) {
-				Player player = (Player) entity;
-				player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, Config.SPEED_EFFECT_AMPLIFIER.get(), false, false, true));
-			}
+		if (level.isClientSide || entity == null)
+			return;
 
-			if(entity instanceof LivingEntity) {
-				LivingEntity livingentity = (LivingEntity) entity;
-				livingentity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 10, Config.SPEED_EFFECT_AMPLIFIER.get(), false, false, true));
+		boolean isBoostAsphalt = this == ModBlocks.BOOST_ASPHALT.get();
+		boolean isRegularAsphalt = !isBoostAsphalt && Config.ENABLE_ASPHALT_SPEED_EFFECT.get();
+
+		if (isRegularAsphalt || isBoostAsphalt) {
+			int duration = isBoostAsphalt ? 30 : 10;
+			int amplifier = isBoostAsphalt ? Config.BOOST_SPEED_EFFECT_AMPLIFIER.get() : Config.SPEED_EFFECT_AMPLIFIER.get();
+
+			if (entity instanceof LivingEntity) {
+				LivingEntity livingEntity = (LivingEntity) entity;
+				livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, duration, amplifier, false, false, true));
 			}
 		}
 	}

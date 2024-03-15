@@ -192,8 +192,12 @@ public class BlockTagGen extends BlockTagsProvider {
                        ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(),
                        ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get(),
                        ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(),
-                       ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get()
+                       ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(),
 
+                       ModBlocks.BOOST_ASPHALT.get(),
+                       ModBlocks.BOOST_ASPHALT_SLAB.get(),
+                       ModBlocks.RED_BUMPER_SLAB.get(),
+                       ModBlocks.YELLOW_BUMPER_SLAB.get()
                );
 
 
@@ -283,7 +287,12 @@ public class BlockTagGen extends BlockTagsProvider {
                     ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(),
                     ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get(),
                     ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(),
-                    ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get()
+                    ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(),
+
+                    ModBlocks.BOOST_ASPHALT_SLAB.get(),
+                    ModBlocks.RED_BUMPER_SLAB.get(),
+                    ModBlocks.YELLOW_BUMPER_SLAB.get()
+
             );
     }
 }

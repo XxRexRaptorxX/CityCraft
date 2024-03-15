@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "citycraft:block/boost_asphalt",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "citycraft:block/boost_asphalt",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "citycraft:block/boost_asphalt"
+    },
+    "facing=west": {
+      "model": "citycraft:block/boost_asphalt",
+      "y": 90
+    }
+  }
+}

@@ -10,6 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import xxrexraptorxx.citycraft.blocks.AsphaltBlock;
 import xxrexraptorxx.citycraft.blocks.AsphaltSlabBlock;
+import xxrexraptorxx.citycraft.blocks.BumperSlab;
 import xxrexraptorxx.citycraft.main.References;
 
 import java.util.function.Supplier;
@@ -202,6 +203,11 @@ public class ModBlocks {
     public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB = registerBlock("asphalt_with_yellow_thick_frame_slab", AsphaltSlabBlock::new);
     public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB = registerBlock("asphalt_with_yellow_thick_edge_slab", AsphaltSlabBlock::new);
     public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB = registerBlock("asphalt_with_yellow_thick_hatching_slab", AsphaltSlabBlock::new);
+
+    public static final RegistryObject<AsphaltBlock> BOOST_ASPHALT = registerBlock("boost_asphalt", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> BOOST_ASPHALT_SLAB = registerBlock("boost_asphalt_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<BumperSlab> YELLOW_BUMPER_SLAB = registerBlock("yellow_bumper_slab", BumperSlab::new);
+    public static final RegistryObject<BumperSlab> RED_BUMPER_SLAB = registerBlock("red_bumper_slab", BumperSlab::new);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

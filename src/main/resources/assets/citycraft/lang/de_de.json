@@ -179,5 +179,10 @@
     "block.citycraft.asphalt_with_yellow_thick_diagonal_double_line_slab": "Asphalt Stufe mit Gelber dicker diagonaler Doppel-Linie",
     "block.citycraft.asphalt_with_yellow_thick_frame_slab": "Asphalt Stufe mit Gelber dicken Rahmen",
     "block.citycraft.asphalt_with_yellow_thick_edge_slab": "Asphalt Stufe mit Gelber dicken Eck",
-    "block.citycraft.asphalt_with_yellow_thick_hatching_slab": "Asphalt Stufe mit Gelber dicker Schraffur"
+    "block.citycraft.asphalt_with_yellow_thick_hatching_slab": "Asphalt Stufe mit Gelber dicker Schraffur",
+
+    "block.citycraft.boost_asphalt":  "Boost Asphalt",
+    "block.citycraft.boost_asphalt_slab": "Boost Asphalt Stufe",
+    "block.citycraft.red_bumper_slab":  "Roter Bumper",
+    "block.citycraft.yellow_bumper_slab": "Gelber Bumper"
 }

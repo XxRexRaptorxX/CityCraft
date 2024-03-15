@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "citycraft:yellow_asphalt_slab"
+    },
+    "X": {
+      "item": "citycraft:asphalt_slab"
+    }
+  },
+  "pattern": [
+    "#X"
+  ],
+  "result": {
+    "count": 2,
+    "item": "citycraft:yellow_bumper_slab"
+  },
+  "show_notification": true
+}

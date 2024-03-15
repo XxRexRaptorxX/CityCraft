@@ -19,6 +19,7 @@ public class Config {
 
     public static ForgeConfigSpec.BooleanValue ENABLE_ASPHALT_SPEED_EFFECT;
     public static ForgeConfigSpec.IntValue SPEED_EFFECT_AMPLIFIER;
+    public static ForgeConfigSpec.IntValue BOOST_SPEED_EFFECT_AMPLIFIER;
 
     public static void init() {
         initServer();
@@ -48,8 +49,9 @@ public class Config {
         builder.pop();
 
         builder.comment("Road").push(CATEGORY_ROAD);
-        ENABLE_ASPHALT_SPEED_EFFECT = builder.comment("Enables the speed effect you get when you run on asphalt.").define("enable_asphalt_speed_effect", true);
+        ENABLE_ASPHALT_SPEED_EFFECT = builder.comment("Enables the speed effect you get when you run on asphalt. [not boost blocks]").define("enable_asphalt_speed_effect", true);
         SPEED_EFFECT_AMPLIFIER = builder.comment("How strong the speed effect should be.").defineInRange("speed_effect_amplifier", 1, 0, 5);
+        BOOST_SPEED_EFFECT_AMPLIFIER = builder.comment("How strong the speed effect of Boost blocks should be.").defineInRange("boost_speed_effect_amplifier", 3, 0, 5);
         builder.pop();
 
         SERVER_CONFIG = builder.build();

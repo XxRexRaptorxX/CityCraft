@@ -1,24 +1,12 @@
 package xxrexraptorxx.citycraft.blocks;
 
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -26,52 +14,22 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
-import xxrexraptorxx.citycraft.utils.Config;
-
-import java.util.List;
 
 
-public class AsphaltSlabBlock extends SlabBlock {
+public class BumperSlab extends SlabBlock {
 
 	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
 
-	public AsphaltSlabBlock() {
-		super(BlockBehaviour.Properties.copy(ModBlocks.ASPHALT_BLOCK.get())
+	public BumperSlab() {
+		super(Properties.copy(ModBlocks.ASPHALT_BLOCK.get())
 		);
 
 		this.registerDefaultState(this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false)));
 	}
 
 
-	@Override
-	public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-		if (level.isClientSide || entity == null)
-			return;
-
-		boolean isBoostAsphalt = this == ModBlocks.BOOST_ASPHALT_SLAB.get();
-		boolean isRegularAsphalt = !isBoostAsphalt && Config.ENABLE_ASPHALT_SPEED_EFFECT.get();
-
-		if (isRegularAsphalt || isBoostAsphalt) {
-			int duration = isBoostAsphalt ? 30 : 10;
-			int amplifier = isBoostAsphalt ? Config.BOOST_SPEED_EFFECT_AMPLIFIER.get() : Config.SPEED_EFFECT_AMPLIFIER.get();
-
-			if (entity instanceof LivingEntity) {
-				LivingEntity livingEntity = (LivingEntity) entity;
-				livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, duration, amplifier, false, false, true));
-			}
-		}
-	}
-
-
-	@Override
-	public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> list, TooltipFlag flag) {
-		if (Config.ENABLE_ASPHALT_SPEED_EFFECT.get() && this != ModBlocks.POTHOLE_ASPHALT_SLAB.get()) {
-			list.add(Component.translatable("message.citycraft.speed_tooltip").withStyle(ChatFormatting.GRAY));
-		}
-	}
 
 
 	@Override
@@ -96,7 +54,6 @@ public class AsphaltSlabBlock extends SlabBlock {
 			return direction != Direction.DOWN && (direction == Direction.UP || !(context.getClickLocation().y - (double)blockpos.getY() > 0.5D)) ? blockstate1 : blockstate1.setValue(TYPE, SlabType.TOP);
 		}
 	}
-
 
 
 	@Override

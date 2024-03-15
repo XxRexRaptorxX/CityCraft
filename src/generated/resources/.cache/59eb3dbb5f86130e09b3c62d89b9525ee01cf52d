@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-13T00:10:35.7935629	Loot Tables
+// 1.20.1	2024-03-15T15:39:54.8153363	Loot Tables
 cbf19d648ae3a90f9888408a5e3886b68f63efae data/citycraft/loot_tables/blocks/asphalt.json
 73c3da23703e311211b05840d3762074610d688f data/citycraft/loot_tables/blocks/asphalt_slab.json
 04d5a84b4fb310875eb9e7ed5db5d39d50773b7b data/citycraft/loot_tables/blocks/asphalt_with_white_broken_diagonal_line.json
@@ -127,6 +127,8 @@ ba65d473a38fd986906eb031b2a030ba57a5c620 data/citycraft/loot_tables/blocks/aspha
 47e080c77c4870135425ec6b14126f9523181078 data/citycraft/loot_tables/blocks/asphalt_with_yellow_thick_solid_and_broken_middle_line_slab.json
 5a8dc712ac21d9af82fd28b8a76af392a58b3df6 data/citycraft/loot_tables/blocks/blue_asphalt.json
 663f422646352a08ebf2843fef4ffedf5bcf4866 data/citycraft/loot_tables/blocks/blue_asphalt_slab.json
+50a344eeefe492cd2992abed3e2a661e82886952 data/citycraft/loot_tables/blocks/boost_asphalt.json
+2720f476c3d7457525f3dc2df34dfdfe1c531704 data/citycraft/loot_tables/blocks/boost_asphalt_slab.json
 0f9e799d248493895442e9cf95f574ecae162716 data/citycraft/loot_tables/blocks/brown_asphalt.json
 1bbbc1069c1d4dda8e307c42e73fdaeb9f42fb1d data/citycraft/loot_tables/blocks/brown_asphalt_slab.json
 b72c222e2bb35f0a85b72aab03f888ae0e66779c data/citycraft/loot_tables/blocks/cracked_asphalt.json
@@ -159,7 +161,9 @@ ea1a2d8f1e66b29b970a45668a6babfcd30d0528 data/citycraft/loot_tables/blocks/orang
 c1ca4fee4eddcf84cf1bc74ddae8cab29a3c8235 data/citycraft/loot_tables/blocks/purple_asphalt_slab.json
 d32726896d30d8c420a2ecc054f5f6dd79b14503 data/citycraft/loot_tables/blocks/red_asphalt.json
 d54b0af2b734b1673a116708e95be2e8184aaee3 data/citycraft/loot_tables/blocks/red_asphalt_slab.json
+64d0ba09a420f59117ea73c8ce9b99f4b14d9d7d data/citycraft/loot_tables/blocks/red_bumper_slab.json
 e4c2a9b76bbbaa8fe4bc3525a1b115f3c0b7f83b data/citycraft/loot_tables/blocks/white_asphalt.json
 2dba5c37bf89477ba9b012570fe8cb20f51a43e4 data/citycraft/loot_tables/blocks/white_asphalt_slab.json
 1e3b3328fae5db2c15091e9ed7cc9a52dadde98d data/citycraft/loot_tables/blocks/yellow_asphalt.json
 5eedba75d477399c21260e92b7456c82d347b1f5 data/citycraft/loot_tables/blocks/yellow_asphalt_slab.json
+4aa322549456d4521e2c975efb50ddb0760b1f83 data/citycraft/loot_tables/blocks/yellow_bumper_slab.json
