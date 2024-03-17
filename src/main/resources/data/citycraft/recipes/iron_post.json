@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+
+  "pattern": [
+    "I",
+    "I",
+    "I"
+  ],
+
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+
+  "result": {
+    "item": "citycraft:iron_post",
+    "count": 3
+  }
+}

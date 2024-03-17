@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_post",
+  "ingredients": [
+    {
+      "tag": "forge:posts/iron"
+    },
+    {
+      "tag": "forge:dyes/red"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:red_post"
+  }
+}

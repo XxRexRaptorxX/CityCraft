@@ -13,7 +13,7 @@ public class PostBlock extends FenceBlock implements SimpleWaterloggedBlock {
 
 	public PostBlock() {
 		super(Properties.of()
-				.strength(5.0F, 6.0F)
+				.strength(4.0F, 6.0F)
 				.sound(SoundType.METAL)
 				.mapColor(DyeColor.WHITE)
 				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)

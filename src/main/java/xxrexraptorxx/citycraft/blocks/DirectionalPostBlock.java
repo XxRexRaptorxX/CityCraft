@@ -19,7 +19,7 @@ public class DirectionalPostBlock extends FenceBlock implements SimpleWaterlogge
 
 	public DirectionalPostBlock() {
 		super(Properties.of()
-				.strength(5.0F, 6.0F)
+				.strength(4.0F, 6.0F)
 				.sound(SoundType.METAL)
 				.mapColor(MapColor.METAL)
 				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:red_post"
+    },
+    {
+      "item": "citycraft:white_post"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:red_white_post",
+    "count": 2
+  }
+}
