@@ -1,7 +1,34 @@
 {
   "variants": {
-    "": {
+    "facing=east,waterlogged=false": {
+      "model": "citycraft:block/road_edge_post",
+      "y": 270
+    },
+    "facing=east,waterlogged=true": {
+      "model": "citycraft:block/road_edge_post",
+      "y": 270
+    },
+    "facing=north,waterlogged=false": {
+      "model": "citycraft:block/road_edge_post",
+      "y": 180
+    },
+    "facing=north,waterlogged=true": {
+      "model": "citycraft:block/road_edge_post",
+      "y": 180
+    },
+    "facing=south,waterlogged=false": {
       "model": "citycraft:block/road_edge_post"
+    },
+    "facing=south,waterlogged=true": {
+      "model": "citycraft:block/road_edge_post"
+    },
+    "facing=west,waterlogged=false": {
+      "model": "citycraft:block/road_edge_post",
+      "y": 90
+    },
+    "facing=west,waterlogged=true": {
+      "model": "citycraft:block/road_edge_post",
+      "y": 90
     }
   }
 }

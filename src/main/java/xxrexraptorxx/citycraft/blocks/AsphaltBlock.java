@@ -33,11 +33,10 @@ public class AsphaltBlock extends HorizontalDirectionalBlock {
 	public AsphaltBlock() {
 		super(Properties.of()
 				.requiresCorrectToolForDrops()
-				.strength(5.0F, 6.0F)
-				.sound(SoundType.METAL)
-				.mapColor(DyeColor.WHITE)
-				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-
+				.strength(1.6F)
+				.sound(SoundType.STONE)
+				.mapColor(DyeColor.BLACK)
+				.instrument(NoteBlockInstrument.BASEDRUM)
 		);
 	}
 

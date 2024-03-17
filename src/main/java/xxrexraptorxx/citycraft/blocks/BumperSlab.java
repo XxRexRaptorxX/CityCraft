@@ -49,8 +49,8 @@ public class BumperSlab extends SlabBlock {
 
 
 	@Override
-	public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-		pBuilder.add(FACING, TYPE, WATERLOGGED);
+	public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(FACING, TYPE, WATERLOGGED);
 	}
 
 
