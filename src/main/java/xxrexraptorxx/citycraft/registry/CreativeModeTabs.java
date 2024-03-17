@@ -18,7 +18,7 @@ public class CreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> MAIN_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".main", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".main_tab"))
-            .icon(() -> new ItemStack(ModBlocks.ASPHALT_BLOCK.get()))
+            .icon(() -> new ItemStack(ModItems.ASPHALT_MIXTURE.get()))
             .displayItems((params, output) -> {
 
                 output.accept(ModItems.COAL_COKE.get());
@@ -30,7 +30,7 @@ public class CreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> SIGN_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".sign", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".sign_tab"))
-            .icon(() -> new ItemStack(ModBlocks.IRON_POST.get()))
+            .icon(() -> new ItemStack(ModBlocks.ROAD_EDGE_POST.get()))
             .displayItems((params, output) -> {
 
                 output.accept(ModBlocks.IRON_POST.get());
