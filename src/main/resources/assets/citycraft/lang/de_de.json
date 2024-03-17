@@ -1,6 +1,7 @@
 ﻿{
     "itemGroup.citycraft.main_tab": "City Craft",
     "itemGroup.citycraft.road_tab": "City Craft - Straßen",
+    "itemGroup.citycraft.road_tab": "City Craft - Schilder",
 
     "message.citycraft.speed_tooltip": "Erhöhte Bewegungsgeschwindigkeit",
     "message.citycraft.boost_speed_tooltip": "Stark erhöhte Bewegungsgeschwindigkeit",
@@ -293,5 +294,14 @@
     "block.citycraft.boost_asphalt":  "Boost Asphalt",
     "block.citycraft.boost_asphalt_slab": "Boost Asphalt Stufe",
     "block.citycraft.red_bumper_slab":  "Roter Bumper",
-    "block.citycraft.yellow_bumper_slab": "Gelber Bumper"
+    "block.citycraft.yellow_bumper_slab": "Gelber Bumper",
+
+    "block.citycraft.iron_post": "Eisen Pfosten",
+    "block.citycraft.red_post": "Roter Eisen Pfosten",
+    "block.citycraft.white_post": "Weißer Eisen Pfosten",
+    "block.citycraft.yellow_post": "Gelber Eisen Pfosten",
+    "block.citycraft.black_post": "Schwarzer Eisen Pfosten",
+    "block.citycraft.red_white_post": "Rot-Weißer Signal Pfosten",
+    "block.citycraft.yellow_black_post":  "Gelb-Schwarzer Signal Pfosten",
+    "block.citycraft.road_edge_post": "Straßen Leitpfosten"
 }

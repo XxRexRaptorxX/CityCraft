@@ -28,6 +28,23 @@ public class CreativeModeTabs {
             }).build());
 
 
+    public static final RegistryObject<CreativeModeTab> SIGN_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".sign", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + References.MODID + ".sign_tab"))
+            .icon(() -> new ItemStack(ModBlocks.IRON_POST.get()))
+            .displayItems((params, output) -> {
+
+                output.accept(ModBlocks.IRON_POST.get());
+                output.accept(ModBlocks.WHITE_POST.get());
+                output.accept(ModBlocks.RED_POST.get());
+                output.accept(ModBlocks.RED_WHITE_POST.get());
+                output.accept(ModBlocks.YELLOW_POST.get());
+                output.accept(ModBlocks.BLACK_POST.get());
+                output.accept(ModBlocks.YELLOW_BLACK_POST.get());
+                output.accept(ModBlocks.ROAD_EDGE_POST.get());
+
+            }).build());
+
+
     public static final RegistryObject<CreativeModeTab> ROAD_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".road", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".road_tab"))
             .icon(() -> new ItemStack(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE.get()))

@@ -325,6 +325,17 @@ public class BlockStateGen extends BlockStateProvider {
         directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get());
         directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get());
         directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get());
+
+        makeBlockItemFromExistingModel(ModBlocks.RED_BUMPER_SLAB.get());
+        makeBlockItemFromExistingModel(ModBlocks.YELLOW_BUMPER_SLAB.get());
+        makeBlockItemFromExistingModel(ModBlocks.IRON_POST.get());
+        makeBlockItemFromExistingModel(ModBlocks.BLACK_POST.get());
+        makeBlockItemFromExistingModel(ModBlocks.RED_POST.get());
+        makeBlockItemFromExistingModel(ModBlocks.WHITE_POST.get());
+        makeBlockItemFromExistingModel(ModBlocks.YELLOW_POST.get());
+        makeBlockItemFromExistingModel(ModBlocks.ROAD_EDGE_POST.get());
+        makeBlockItemFromExistingModel(ModBlocks.RED_WHITE_POST.get());
+        makeBlockItemFromExistingModel(ModBlocks.YELLOW_BLACK_POST.get());
     }
 
 

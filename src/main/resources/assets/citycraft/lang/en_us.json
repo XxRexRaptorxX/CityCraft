@@ -1,6 +1,7 @@
 {
     "itemGroup.citycraft.main_tab": "City Craft",
     "itemGroup.citycraft.road_tab": "City Craft - Streets",
+    "itemGroup.citycraft.sign_tab": "City Craft - Signs",
 
     "message.citycraft.speed_tooltip": "Increased movement speed",
     "message.citycraft.boost_speed_tooltip": "Greatly increased movement speed",
@@ -293,5 +294,14 @@
     "block.citycraft.boost_asphalt":  "Boost Asphalt",
     "block.citycraft.boost_asphalt_slab": "Boost Asphalt Slab",
     "block.citycraft.red_bumper_slab":  "Red Bumper",
-    "block.citycraft.yellow_bumper_slab": "Yellow Bumper"
+    "block.citycraft.yellow_bumper_slab": "Yellow Bumper",
+
+    "block.citycraft.iron_post": "Iron Post",
+    "block.citycraft.red_post": "Red Iron Post",
+    "block.citycraft.white_post": "White Iron Post",
+    "block.citycraft.yellow_post": "Yellow Iron Post",
+    "block.citycraft.black_post": "Black Iron Post",
+    "block.citycraft.red_white_post": "Red-White Signal Post",
+    "block.citycraft.yellow_black_post":  "Yellow-Black Signal Post",
+    "block.citycraft.road_edge_post": "Road Edge Delineator Post"
 }

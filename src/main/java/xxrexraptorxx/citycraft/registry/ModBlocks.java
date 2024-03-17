@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 import xxrexraptorxx.citycraft.blocks.AsphaltBlock;
 import xxrexraptorxx.citycraft.blocks.AsphaltSlabBlock;
 import xxrexraptorxx.citycraft.blocks.BumperSlab;
+import xxrexraptorxx.citycraft.blocks.PostBlock;
 import xxrexraptorxx.citycraft.main.References;
 
 import java.util.function.Supplier;
@@ -319,12 +320,22 @@ public class ModBlocks {
     public static final RegistryObject<BumperSlab> YELLOW_BUMPER_SLAB = registerBlock("yellow_bumper_slab", BumperSlab::new);
     public static final RegistryObject<BumperSlab> RED_BUMPER_SLAB = registerBlock("red_bumper_slab", BumperSlab::new);
 
+    public static final RegistryObject<PostBlock> IRON_POST = registerBlock("iron_post", PostBlock::new);
+    public static final RegistryObject<PostBlock> RED_POST = registerBlock("red_post", PostBlock::new);
+    public static final RegistryObject<PostBlock> WHITE_POST = registerBlock("white_post", PostBlock::new);
+    public static final RegistryObject<PostBlock> YELLOW_POST = registerBlock("yellow_post", PostBlock::new);
+    public static final RegistryObject<PostBlock> BLACK_POST = registerBlock("black_post", PostBlock::new);
+    public static final RegistryObject<PostBlock> RED_WHITE_POST = registerBlock("red_white_post", PostBlock::new);
+    public static final RegistryObject<PostBlock> YELLOW_BLACK_POST = registerBlock("yellow_black_post", PostBlock::new);
+    public static final RegistryObject<PostBlock> ROAD_EDGE_POST = registerBlock("road_edge_post", PostBlock::new); //delineator post
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
+
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
