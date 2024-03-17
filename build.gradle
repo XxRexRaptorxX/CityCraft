@@ -172,6 +172,9 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:ie-231951:${immersive_engineering_version}")
     //IMMERSIVE PETROLEUM
     //runtimeOnly fg.deobf("curse.maven:ip-268250:${immersive_petroleum_version}")
+    //MORE MCMETA
+    runtimeOnly fg.deobf("curse.maven:moremcmeta-442169:${moremcmeta_version}")
+    runtimeOnly fg.deobf("curse.maven:moremcmeta-emissive-880880:${moremcmeta_emissive_version}")
 }
 
 // MixinGradle Settings
