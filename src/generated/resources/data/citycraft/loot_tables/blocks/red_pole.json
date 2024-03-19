@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "citycraft:iron_post"
+          "name": "citycraft:red_pole"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "citycraft:blocks/iron_post"
+  "random_sequence": "citycraft:blocks/red_pole"
 }

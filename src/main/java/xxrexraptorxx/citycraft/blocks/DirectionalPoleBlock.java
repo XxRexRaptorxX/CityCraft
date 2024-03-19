@@ -13,11 +13,11 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
 
 
-public class DirectionalPostBlock extends FenceBlock implements SimpleWaterloggedBlock {
+public class DirectionalPoleBlock extends FenceBlock implements SimpleWaterloggedBlock {
 
 	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-	public DirectionalPostBlock() {
+	public DirectionalPoleBlock() {
 		super(Properties.of()
 				.strength(4.0F, 6.0F)
 				.sound(SoundType.METAL)

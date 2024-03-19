@@ -33,12 +33,19 @@ public class CreativeModeTabs {
             .icon(() -> new ItemStack(ModBlocks.ROAD_EDGE_POST.get()))
             .displayItems((params, output) -> {
 
-                output.accept(ModBlocks.IRON_POST.get());
+                output.accept(ModBlocks.IRON_POLE.get());
+                output.accept(ModBlocks.STONE_POST.get());
+                output.accept(ModBlocks.WHITE_POLE.get());
                 output.accept(ModBlocks.WHITE_POST.get());
+                output.accept(ModBlocks.RED_POLE.get());
                 output.accept(ModBlocks.RED_POST.get());
+                output.accept(ModBlocks.RED_WHITE_POLE.get());
                 output.accept(ModBlocks.RED_WHITE_POST.get());
+                output.accept(ModBlocks.YELLOW_POLE.get());
                 output.accept(ModBlocks.YELLOW_POST.get());
+                output.accept(ModBlocks.BLACK_POLE.get());
                 output.accept(ModBlocks.BLACK_POST.get());
+                output.accept(ModBlocks.YELLOW_BLACK_POLE.get());
                 output.accept(ModBlocks.YELLOW_BLACK_POST.get());
                 output.accept(ModBlocks.ROAD_EDGE_POST.get());
 

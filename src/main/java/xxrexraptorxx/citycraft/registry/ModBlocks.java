@@ -317,14 +317,22 @@ public class ModBlocks {
     public static final RegistryObject<BumperSlab> YELLOW_BUMPER_SLAB = registerBlock("yellow_bumper_slab", BumperSlab::new);
     public static final RegistryObject<BumperSlab> RED_BUMPER_SLAB = registerBlock("red_bumper_slab", BumperSlab::new);
 
-    public static final RegistryObject<PostBlock> IRON_POST = registerBlock("iron_post", PostBlock::new);
+    public static final RegistryObject<PoleBlock> IRON_POLE = registerBlock("iron_pole", PoleBlock::new);
+    public static final RegistryObject<PoleBlock> RED_POLE = registerBlock("red_pole", PoleBlock::new);
+    public static final RegistryObject<PoleBlock> WHITE_POLE = registerBlock("white_pole", PoleBlock::new);
+    public static final RegistryObject<PoleBlock> YELLOW_POLE = registerBlock("yellow_pole", PoleBlock::new);
+    public static final RegistryObject<PoleBlock> BLACK_POLE = registerBlock("black_pole", PoleBlock::new);
+    public static final RegistryObject<PoleBlock> RED_WHITE_POLE = registerBlock("red_white_pole", PoleBlock::new);
+    public static final RegistryObject<PoleBlock> YELLOW_BLACK_POLE = registerBlock("yellow_black_pole", PoleBlock::new);
+    public static final RegistryObject<DirectionalPoleBlock> ROAD_EDGE_POST = registerBlock("road_edge_post", DirectionalPoleBlock::new); //delineator post
+
+    public static final RegistryObject<PostBlock> STONE_POST = registerBlock("stone_post", PostBlock::new);
     public static final RegistryObject<PostBlock> RED_POST = registerBlock("red_post", PostBlock::new);
     public static final RegistryObject<PostBlock> WHITE_POST = registerBlock("white_post", PostBlock::new);
     public static final RegistryObject<PostBlock> YELLOW_POST = registerBlock("yellow_post", PostBlock::new);
     public static final RegistryObject<PostBlock> BLACK_POST = registerBlock("black_post", PostBlock::new);
     public static final RegistryObject<PostBlock> RED_WHITE_POST = registerBlock("red_white_post", PostBlock::new);
     public static final RegistryObject<PostBlock> YELLOW_BLACK_POST = registerBlock("yellow_black_post", PostBlock::new);
-    public static final RegistryObject<DirectionalPostBlock> ROAD_EDGE_POST = registerBlock("road_edge_post", DirectionalPostBlock::new); //delineator post
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -296,12 +296,20 @@
     "block.citycraft.red_bumper_slab":  "Roter Bumper",
     "block.citycraft.yellow_bumper_slab": "Gelber Bumper",
 
-    "block.citycraft.iron_post": "Eisen Pfosten",
+    "block.citycraft.iron_pole": "Eisen Stange",
+    "block.citycraft.red_pole": "Rote Eisen Stange",
+    "block.citycraft.white_pole": "Weiße Eisen Stange",
+    "block.citycraft.yellow_pole": "Gelbe Eisen Stange",
+    "block.citycraft.black_pole": "Schwarze Eisen Stange",
+    "block.citycraft.red_white_pole": "Rot-Weiße Signal Stange",
+    "block.citycraft.yellow_black_pole":  "Gelb-Schwarze Signal Stange",
+    "block.citycraft.road_edge_post": "Straßen Leitpfosten",
+
+    "block.citycraft.stone_post": "Stein Pfosten",
     "block.citycraft.red_post": "Roter Eisen Pfosten",
     "block.citycraft.white_post": "Weißer Eisen Pfosten",
     "block.citycraft.yellow_post": "Gelber Eisen Pfosten",
     "block.citycraft.black_post": "Schwarzer Eisen Pfosten",
     "block.citycraft.red_white_post": "Rot-Weißer Signal Pfosten",
-    "block.citycraft.yellow_black_post":  "Gelb-Schwarzer Signal Pfosten",
-    "block.citycraft.road_edge_post": "Straßen Leitpfosten"
+    "block.citycraft.yellow_black_post":  "Gelb-Schwarzer Signal Pfosten"
 }

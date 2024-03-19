@@ -1,6 +1,6 @@
 {
   "parent": "citycraft:block/post",
   "textures": {
-    "texture": "citycraft:block/iron_post"
+    "texture": "citycraft:block/stone_post"
   }
 }

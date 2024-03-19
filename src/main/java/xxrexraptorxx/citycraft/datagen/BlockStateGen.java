@@ -24,47 +24,27 @@ public class BlockStateGen extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(ModBlocks.ASPHALT_BLOCK.get());
-        makeBlockItemFromExistingModel(ModBlocks.ASPHALT_BLOCK.get());
-        simpleBlock(ModBlocks.CRACKED_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.CRACKED_ASPHALT.get());
-        simpleBlock(ModBlocks.POTHOLE_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.POTHOLE_ASPHALT.get());
-        simpleBlock(ModBlocks.MOSSY_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.MOSSY_ASPHALT.get());
-        simpleBlock(ModBlocks.DIRTY_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.DIRTY_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.ASPHALT_BLOCK.get());
+        makeSimpleBlock(ModBlocks.CRACKED_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.POTHOLE_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.MOSSY_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.DIRTY_ASPHALT.get());
 
-        simpleBlock(ModBlocks.WHITE_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.WHITE_ASPHALT.get());
-        simpleBlock(ModBlocks.ORANGE_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.ORANGE_ASPHALT.get());
-        simpleBlock(ModBlocks.MAGENTA_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.MAGENTA_ASPHALT.get());
-        simpleBlock(ModBlocks.LIGHT_BLUE_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.LIGHT_BLUE_ASPHALT.get());
-        simpleBlock(ModBlocks.YELLOW_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.YELLOW_ASPHALT.get());
-        simpleBlock(ModBlocks.LIME_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.LIME_ASPHALT.get());
-        simpleBlock(ModBlocks.PINK_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.PINK_ASPHALT.get());
-        simpleBlock(ModBlocks.RED_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.RED_ASPHALT.get());
-        simpleBlock(ModBlocks.GRAY_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.GRAY_ASPHALT.get());
-        simpleBlock(ModBlocks.LIGHT_GRAY_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.LIGHT_GRAY_ASPHALT.get());
-        simpleBlock(ModBlocks.CYAN_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.CYAN_ASPHALT.get());
-        simpleBlock(ModBlocks.PURPLE_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.PURPLE_ASPHALT.get());
-        simpleBlock(ModBlocks.BLUE_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.BLUE_ASPHALT.get());
-        simpleBlock(ModBlocks.BROWN_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.BROWN_ASPHALT.get());
-        simpleBlock(ModBlocks.GREEN_ASPHALT.get());
-        makeBlockItemFromExistingModel(ModBlocks.GREEN_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.WHITE_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.ORANGE_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.MAGENTA_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.LIGHT_BLUE_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.YELLOW_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.LIME_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.PINK_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.RED_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.GRAY_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.LIGHT_GRAY_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.CYAN_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.PURPLE_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.BLUE_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.BROWN_ASPHALT.get());
+        makeSimpleBlock(ModBlocks.GREEN_ASPHALT.get());
 
         directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE.get());
         directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE.get());
@@ -328,20 +308,46 @@ public class BlockStateGen extends BlockStateProvider {
 
         makeBlockItemFromExistingModel(ModBlocks.RED_BUMPER_SLAB.get());
         makeBlockItemFromExistingModel(ModBlocks.YELLOW_BUMPER_SLAB.get());
-        makeBlockItemFromExistingModel(ModBlocks.IRON_POST.get());
-        makeBlockItemFromExistingModel(ModBlocks.BLACK_POST.get());
-        makeBlockItemFromExistingModel(ModBlocks.RED_POST.get());
-        makeBlockItemFromExistingModel(ModBlocks.WHITE_POST.get());
-        makeBlockItemFromExistingModel(ModBlocks.YELLOW_POST.get());
         makeBlockItemFromExistingModel(ModBlocks.ROAD_EDGE_POST.get());
-        makeBlockItemFromExistingModel(ModBlocks.RED_WHITE_POST.get());
-        makeBlockItemFromExistingModel(ModBlocks.YELLOW_BLACK_POST.get());
+
+        makeBlockFromParentModel(ModBlocks.STONE_POST.get(), "post");
+        makeBlockFromParentModel(ModBlocks.BLACK_POST.get(), "post");
+        makeBlockFromParentModel(ModBlocks.RED_POST.get(), "post");
+        makeBlockFromParentModel(ModBlocks.WHITE_POST.get(), "post");
+        makeBlockFromParentModel(ModBlocks.YELLOW_POST.get(), "post");
+        makeBlockFromParentModel(ModBlocks.RED_WHITE_POST.get(), "post");
+        makeBlockFromParentModel(ModBlocks.YELLOW_BLACK_POST.get(), "post");
+
+        makeBlockFromParentModel(ModBlocks.IRON_POLE.get(), "pole");
+        makeBlockFromParentModel(ModBlocks.BLACK_POLE.get(), "pole");
+        makeBlockFromParentModel(ModBlocks.RED_POLE.get(), "pole");
+        makeBlockFromParentModel(ModBlocks.WHITE_POLE.get(), "pole");
+        makeBlockFromParentModel(ModBlocks.YELLOW_POLE.get(), "pole");
+        makeBlockFromParentModel(ModBlocks.RED_WHITE_POLE.get(), "pole");
+        makeBlockFromParentModel(ModBlocks.YELLOW_BLACK_POLE.get(), "pole");
     }
 
 
     private void makeBlockItemFromExistingModel(Block block) {
         final ModelFile model = models().getExistingFile(BuiltInRegistries.BLOCK.getKey(block));
         simpleBlockItem(block, model);
+    }
+
+
+    private void makeBlockFromParentModel(Block block, String parentModel) {
+        String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + parentModel)
+                .texture("texture", "block/" + blockTexture);
+
+        simpleBlock(block, model);
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeSimpleBlock(Block block) {
+        simpleBlock(block);
+        makeBlockItemFromExistingModel(block);
     }
 
 

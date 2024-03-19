@@ -296,12 +296,20 @@
     "block.citycraft.red_bumper_slab":  "Red Bumper",
     "block.citycraft.yellow_bumper_slab": "Yellow Bumper",
 
-    "block.citycraft.iron_post": "Iron Post",
+    "block.citycraft.iron_pole": "Iron Pole",
+    "block.citycraft.red_pole": "Red Iron Pole",
+    "block.citycraft.white_pole": "White Iron Pole",
+    "block.citycraft.yellow_pole": "Yellow Iron Pole",
+    "block.citycraft.black_pole": "Black Iron Pole",
+    "block.citycraft.red_white_pole": "Red-White Signal Pole",
+    "block.citycraft.yellow_black_pole":  "Yellow-Black Signal Pole",
+    "block.citycraft.road_edge_post": "Road Edge Delineator Post",
+
+    "block.citycraft.stone_post": "Stone Post",
     "block.citycraft.red_post": "Red Iron Post",
     "block.citycraft.white_post": "White Iron Post",
     "block.citycraft.yellow_post": "Yellow Iron Post",
     "block.citycraft.black_post": "Black Iron Post",
     "block.citycraft.red_white_post": "Red-White Signal Post",
-    "block.citycraft.yellow_black_post":  "Yellow-Black Signal Post",
-    "block.citycraft.road_edge_post": "Road Edge Delineator Post"
+    "block.citycraft.yellow_black_post":  "Yellow-Black Signal Post"
 }

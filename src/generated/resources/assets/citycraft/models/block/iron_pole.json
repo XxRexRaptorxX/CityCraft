@@ -1,0 +1,6 @@
+{
+  "parent": "citycraft:block/pole",
+  "textures": {
+    "texture": "citycraft:block/iron_pole"
+  }
+}

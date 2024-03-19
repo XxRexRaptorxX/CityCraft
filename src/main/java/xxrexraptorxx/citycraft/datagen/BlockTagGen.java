@@ -303,7 +303,23 @@ public class BlockTagGen extends BlockTagsProvider {
                        ModBlocks.ASPHALT_WITH_YELLOW_W_SLAB.get(),
                        ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(),
                        ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(),
-                       ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get()
+                       ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(),
+
+                       ModBlocks.IRON_POLE.get(),
+                       ModBlocks.RED_POLE.get(),
+                       ModBlocks.WHITE_POLE.get(),
+                       ModBlocks.YELLOW_POLE.get(),
+                       ModBlocks.BLACK_POLE.get(),
+                       ModBlocks.RED_WHITE_POLE.get(),
+                       ModBlocks.YELLOW_BLACK_POLE.get(),
+                       ModBlocks.ROAD_EDGE_POST.get(),
+                       ModBlocks.STONE_POST.get(),
+                       ModBlocks.RED_POST.get(),
+                       ModBlocks.WHITE_POST.get(),
+                       ModBlocks.YELLOW_POST.get(),
+                       ModBlocks.BLACK_POST.get(),
+                       ModBlocks.RED_WHITE_POST.get(),
+                       ModBlocks.YELLOW_BLACK_POST.get()
                );
 
 

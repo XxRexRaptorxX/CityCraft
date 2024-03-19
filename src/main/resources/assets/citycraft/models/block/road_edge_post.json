@@ -1,5 +1,5 @@
 {
-  "parent": "citycraft:block/directional_post",
+  "parent": "citycraft:block/directional_pole",
   "textures": {
     "texture": "citycraft:block/road_edge_post"
   }

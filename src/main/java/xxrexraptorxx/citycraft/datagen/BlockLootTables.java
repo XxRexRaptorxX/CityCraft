@@ -302,7 +302,15 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get()));
         this.add(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get()));
 
-        this.dropSelf(ModBlocks.IRON_POST.get());
+        this.dropSelf(ModBlocks.IRON_POLE.get());
+        this.dropSelf(ModBlocks.YELLOW_POLE.get());
+        this.dropSelf(ModBlocks.BLACK_POLE.get());
+        this.dropSelf(ModBlocks.WHITE_POLE.get());
+        this.dropSelf(ModBlocks.RED_WHITE_POLE.get());
+        this.dropSelf(ModBlocks.YELLOW_BLACK_POLE.get());
+        this.dropSelf(ModBlocks.RED_POLE.get());
+
+        this.dropSelf(ModBlocks.STONE_POST.get());
         this.dropSelf(ModBlocks.YELLOW_POST.get());
         this.dropSelf(ModBlocks.BLACK_POST.get());
         this.dropSelf(ModBlocks.WHITE_POST.get());
@@ -310,7 +318,6 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.YELLOW_BLACK_POST.get());
         this.dropSelf(ModBlocks.RED_POST.get());
         this.dropSelf(ModBlocks.ROAD_EDGE_POST.get());
-
     }
 
 
