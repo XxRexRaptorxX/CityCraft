@@ -1,6 +1,7 @@
 package xxrexraptorxx.citycraft.blocks;
 
 import net.minecraft.core.Direction;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
@@ -19,10 +20,11 @@ public class DirectionalPoleBlock extends FenceBlock implements SimpleWaterlogge
 
 	public DirectionalPoleBlock() {
 		super(Properties.of()
-				.strength(4.0F, 6.0F)
+				.strength(3.0F, 4.0F)
 				.sound(SoundType.METAL)
-				.mapColor(MapColor.METAL)
+				.mapColor(DyeColor.WHITE)
 				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+				.requiresCorrectToolForDrops()
 		);
 	}
 

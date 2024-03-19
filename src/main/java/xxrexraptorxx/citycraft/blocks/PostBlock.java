@@ -19,6 +19,7 @@ public class PostBlock extends WallBlock implements SimpleWaterloggedBlock {
 				.sound(SoundType.STONE)
 				.mapColor(MapColor.STONE)
 				.instrument(NoteBlockInstrument.BASEDRUM)
+				.requiresCorrectToolForDrops()
 		);
 
 	}

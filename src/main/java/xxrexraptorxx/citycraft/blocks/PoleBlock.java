@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 
 
 public class PoleBlock extends FenceBlock implements SimpleWaterloggedBlock {
@@ -15,8 +16,9 @@ public class PoleBlock extends FenceBlock implements SimpleWaterloggedBlock {
 		super(Properties.of()
 				.strength(4.0F, 6.0F)
 				.sound(SoundType.METAL)
-				.mapColor(DyeColor.WHITE)
+				.mapColor(MapColor.METAL)
 				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+				.requiresCorrectToolForDrops()
 		);
 
 	}
