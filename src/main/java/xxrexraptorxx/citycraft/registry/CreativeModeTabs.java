@@ -38,6 +38,7 @@ public class CreativeModeTabs {
             .icon(() -> new ItemStack(ModBlocks.ROAD_EDGE_POST.get()))
             .displayItems((params, output) -> {
 
+                output.accept(ModBlocks.ROAD_EDGE_POST.get());
                 output.accept(ModBlocks.IRON_POLE.get());
                 output.accept(ModBlocks.STONE_POST.get());
                 output.accept(ModBlocks.WHITE_POLE.get());
@@ -52,7 +53,6 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.BLACK_POST.get());
                 output.accept(ModBlocks.YELLOW_BLACK_POLE.get());
                 output.accept(ModBlocks.YELLOW_BLACK_POST.get());
-                output.accept(ModBlocks.ROAD_EDGE_POST.get());
 
             }).build());
 
@@ -61,6 +61,17 @@ public class CreativeModeTabs {
             .title(Component.translatable("itemGroup." + References.MODID + ".road_tab"))
             .icon(() -> new ItemStack(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE.get()))
             .displayItems((params, output) -> {
+
+                output.accept(ModBlocks.ASPHALT_BLOCK.get());
+                output.accept(ModBlocks.ASPHALT_SLAB.get());
+                output.accept(ModBlocks.CRACKED_ASPHALT.get());
+                output.accept(ModBlocks.CRACKED_ASPHALT_SLAB.get());
+                output.accept(ModBlocks.POTHOLE_ASPHALT.get());
+                output.accept(ModBlocks.POTHOLE_ASPHALT_SLAB.get());
+                output.accept(ModBlocks.MOSSY_ASPHALT.get());
+                output.accept(ModBlocks.MOSSY_ASPHALT_SLAB.get());
+                output.accept(ModBlocks.DIRTY_ASPHALT.get());
+                output.accept(ModBlocks.DIRTY_ASPHALT_SLAB.get());
 
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE.get());
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get());
@@ -218,20 +229,13 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW_SLAB.get());
 
+                output.accept(ModBlocks.BOOST_ASPHALT.get());
+                output.accept(ModBlocks.BOOST_ASPHALT_SLAB.get());
+                output.accept(ModBlocks.YELLOW_BUMPER_SLAB.get());
+                output.accept(ModBlocks.RED_BUMPER_SLAB.get());
 
-                output.accept(ModBlocks.ASPHALT_BLOCK.get());
-                output.accept(ModBlocks.ASPHALT_SLAB.get());
-                output.accept(ModBlocks.CRACKED_ASPHALT.get());
-                output.accept(ModBlocks.CRACKED_ASPHALT_SLAB.get());
-                output.accept(ModBlocks.POTHOLE_ASPHALT.get());
-                output.accept(ModBlocks.POTHOLE_ASPHALT_SLAB.get());
-                output.accept(ModBlocks.MOSSY_ASPHALT.get());
-                output.accept(ModBlocks.MOSSY_ASPHALT_SLAB.get());
-                output.accept(ModBlocks.DIRTY_ASPHALT.get());
-                output.accept(ModBlocks.DIRTY_ASPHALT_SLAB.get());
                 output.accept(ModBlocks.WHITE_ASPHALT.get());
                 output.accept(ModBlocks.WHITE_ASPHALT_SLAB.get());
-
                 output.accept(ModBlocks.LIGHT_GRAY_ASPHALT.get());
                 output.accept(ModBlocks.LIGHT_GRAY_ASPHALT_SLAB.get());
                 output.accept(ModBlocks.GRAY_ASPHALT.get());
@@ -260,11 +264,6 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.MAGENTA_ASPHALT_SLAB.get());
                 output.accept(ModBlocks.PINK_ASPHALT.get());
                 output.accept(ModBlocks.PINK_ASPHALT_SLAB.get());
-
-                output.accept(ModBlocks.BOOST_ASPHALT.get());
-                output.accept(ModBlocks.BOOST_ASPHALT_SLAB.get());
-                output.accept(ModBlocks.YELLOW_BUMPER_SLAB.get());
-                output.accept(ModBlocks.RED_BUMPER_SLAB.get());
 
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_A.get());
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get());
