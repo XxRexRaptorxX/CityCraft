@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_chain",
+  "ingredients": [
+    {
+      "tag": "forge:chains"
+    },
+    {
+      "tag": "forge:dyes/yellow"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:yellow_chain"
+  }
+}

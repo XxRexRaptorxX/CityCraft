@@ -3,6 +3,9 @@ package xxrexraptorxx.citycraft.registry;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ChainBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -334,6 +337,10 @@ public class ModBlocks {
     public static final RegistryObject<PostBlock> RED_WHITE_POST = registerBlock("red_white_post", PostBlock::new);
     public static final RegistryObject<PostBlock> YELLOW_BLACK_POST = registerBlock("yellow_black_post", PostBlock::new);
 
+    public static final RegistryObject<ChainBlock> RED_CHAIN = registerBlock("red_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
+    public static final RegistryObject<ChainBlock> WHITE_CHAIN = registerBlock("white_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
+    public static final RegistryObject<ChainBlock> YELLOW_CHAIN = registerBlock("yellow_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
+    public static final RegistryObject<ChainBlock> BLACK_CHAIN = registerBlock("black_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

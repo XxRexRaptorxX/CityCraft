@@ -1,4 +1,8 @@
-// 1.20.1	2024-03-09T00:13:41.4429001	Item Models: citycraft
+// 1.20.1	2024-03-20T21:50:45.3782512	Item Models: citycraft
 7b5af6a3e4b44fd4abf41140a7c4970f7cc7b90e assets/citycraft/models/item/asphalt_mixture.json
+3fc1709a84300ce1e7d899cfb7159917fd547ea6 assets/citycraft/models/item/black_chain.json
 0b4bef31e63713c0cde65f2aadfbf674a5fddea8 assets/citycraft/models/item/coal_coke.json
 54f66d1fb96b3280732b3e72e40746e15461e635 assets/citycraft/models/item/coal_tar.json
+708c155e6fa0afe3516eebc4f302944ba91c7b5b assets/citycraft/models/item/red_chain.json
+3e26f88fadd878a164b56e49d421d73049a785dd assets/citycraft/models/item/white_chain.json
+6a31cb8b5c79e899affca4a8923ae931a884640f assets/citycraft/models/item/yellow_chain.json

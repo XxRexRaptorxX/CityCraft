@@ -306,10 +306,15 @@
     "block.citycraft.road_edge_post": "Straßen Leitpfosten",
 
     "block.citycraft.stone_post": "Stein Pfosten",
-    "block.citycraft.red_post": "Roter Eisen Pfosten",
-    "block.citycraft.white_post": "Weißer Eisen Pfosten",
-    "block.citycraft.yellow_post": "Gelber Eisen Pfosten",
-    "block.citycraft.black_post": "Schwarzer Eisen Pfosten",
+    "block.citycraft.red_post": "Roter Stein Pfosten",
+    "block.citycraft.white_post": "Weißer Stein Pfosten",
+    "block.citycraft.yellow_post": "Gelber Stein Pfosten",
+    "block.citycraft.black_post": "Schwarzer Stein Pfosten",
     "block.citycraft.red_white_post": "Rot-Weißer Signal Pfosten",
-    "block.citycraft.yellow_black_post":  "Gelb-Schwarzer Signal Pfosten"
+    "block.citycraft.yellow_black_post":  "Gelb-Schwarzer Signal Pfosten",
+
+    "block.citycraft.red_chain": "Rote Kette",
+    "block.citycraft.white_chain": "Weiße Kette",
+    "block.citycraft.yellow_chain": "Gelbe Kette",
+    "block.citycraft.black_chain": "Schwarze Kette"
 }

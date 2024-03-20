@@ -1,0 +1,6 @@
+{
+  "parent": "citycraft:block/chain",
+  "textures": {
+    "texture": "citycraft:block/black_chain"
+  }
+}

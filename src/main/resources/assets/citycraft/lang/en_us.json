@@ -306,10 +306,15 @@
     "block.citycraft.road_edge_post": "Road Edge Delineator Post",
 
     "block.citycraft.stone_post": "Stone Post",
-    "block.citycraft.red_post": "Red Iron Post",
-    "block.citycraft.white_post": "White Iron Post",
-    "block.citycraft.yellow_post": "Yellow Iron Post",
-    "block.citycraft.black_post": "Black Iron Post",
+    "block.citycraft.red_post": "Red Stone Post",
+    "block.citycraft.white_post": "White Stone Post",
+    "block.citycraft.yellow_post": "Yellow Stone Post",
+    "block.citycraft.black_post": "Black Stone Post",
     "block.citycraft.red_white_post": "Red-White Signal Post",
-    "block.citycraft.yellow_black_post":  "Yellow-Black Signal Post"
+    "block.citycraft.yellow_black_post":  "Yellow-Black Signal Post",
+
+    "block.citycraft.red_chain": "Red Chain",
+    "block.citycraft.white_chain": "White Chain",
+    "block.citycraft.yellow_chain": "Yellow Chain",
+    "block.citycraft.black_chain": "Black Chain"
 }

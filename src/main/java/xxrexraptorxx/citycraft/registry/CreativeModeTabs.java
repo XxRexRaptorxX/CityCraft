@@ -25,6 +25,11 @@ public class CreativeModeTabs {
                 output.accept(ModItems.ASPHALT_MIXTURE.get());
                 output.accept(ModItems.COAL_TAR.get());
 
+                output.accept(ModBlocks.WHITE_CHAIN.get());
+                output.accept(ModBlocks.RED_CHAIN.get());
+                output.accept(ModBlocks.YELLOW_CHAIN.get());
+                output.accept(ModBlocks.BLACK_CHAIN.get());
+
             }).build());
 
 
