@@ -3,7 +3,7 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "citycraft:white_post"
+      "item": "citycraft:white_pole"
     },
     {
       "tag": "forge:dyes/black"
