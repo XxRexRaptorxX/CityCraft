@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type":"mekanism:combining",
+
+  "extraInput": {
+    "ingredient": {
+      "tag":"forge:dyes/yellow"
+    }
+  },
+
+  "mainInput": {
+    "ingredient": {
+      "tag":"forge:asphalt"
+    }
+  },
+
+  "output": {
+    "count": 1,
+    "item": "citycraft:yellow_asphalt"
+  }
+}

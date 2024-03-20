@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type":"mekanism:combining",
+
+  "extraInput": {
+    "ingredient": {
+      "tag":"forge:dyes/white"
+    }
+  },
+
+  "mainInput": {
+    "ingredient": {
+      "tag":"forge:asphalt"
+    }
+  },
+
+  "output": {
+    "count": 1,
+    "item": "citycraft:white_asphalt"
+  }
+}

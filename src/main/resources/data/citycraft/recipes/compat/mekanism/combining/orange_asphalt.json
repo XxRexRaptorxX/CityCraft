@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type":"mekanism:combining",
+
+  "extraInput": {
+    "ingredient": {
+      "tag":"forge:dyes/orange"
+    }
+  },
+
+  "mainInput": {
+    "ingredient": {
+      "tag":"forge:asphalt"
+    }
+  },
+
+  "output": {
+    "count": 1,
+    "item": "citycraft:orange_asphalt"
+  }
+}

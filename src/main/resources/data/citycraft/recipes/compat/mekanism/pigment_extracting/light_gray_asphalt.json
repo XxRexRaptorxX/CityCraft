@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type":"mekanism:pigment_extracting",
+  
+  "input": {
+    "ingredient": {
+      "item": "citycraft:light_gray_asphalt"
+    }
+  },
+
+  "output": {
+    "amount": 24,
+    "pigment": "mekanism:light_gray"
+  }
+}

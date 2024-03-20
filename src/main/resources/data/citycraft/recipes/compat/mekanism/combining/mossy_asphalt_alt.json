@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type":"mekanism:combining",
+
+  "extraInput": {
+    "ingredient": {
+      "item": "minecraft:vine"
+    }
+  },
+
+  "mainInput": {
+    "ingredient": {
+      "tag": "forge:asphalt"
+    }
+  },
+
+  "output": {
+    "count": 1,
+    "item": "citycraft:mossy_asphalt"
+  }
+}
