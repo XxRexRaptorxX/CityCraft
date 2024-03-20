@@ -15,5 +15,15 @@
           "down": {"uv": [6, 10, 10, 14], "texture": "#texture", "cullface": "down"}
         }
       }
-    ]
+    ],
+    "display": {
+      "ground": {
+        "translation": [0, 3, 0],
+        "scale": [0.25, 0.25, 0.25]
+      },
+      "gui": {
+        "rotation": [30, 225, 0],
+        "scale": [0.625, 0.625, 0.625]
+      }
+    }
 }
