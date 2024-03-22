@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:painting",
+  "chemicalInput": {
+    "amount": 32,
+    "pigment": "mekanism:white"
+  },
+
+  "itemInput": {
+    "ingredient": {
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:chains" },
+      "subtracted": {
+        "item": "citycraft:white_chain"
+      }
+    }
+  },
+
+  "output": {
+    "item": "citycraft:white_chain"
+  }
+}

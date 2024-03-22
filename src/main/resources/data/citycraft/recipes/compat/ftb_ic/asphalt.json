@@ -1,0 +1,22 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ftbic"
+    }
+  ],
+  "type": "ftbic:macerating",
+  "inputItems": [
+    {
+      "ingredient": {
+        "tag": "forge:asphalt"
+      },
+      "count": 1
+    }
+  ],
+  "outputItems": [
+    {
+      "item": "citycraft:asphalt_mixture"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "plaingrinder"
+    }
+  ],
+  "type": "plaingrinder:grinder",
+  "input": {
+    "tag": "forge:asphalt"
+  },
+  "result": {
+    "item": "citycraft:asphalt_mixture",
+    "count": 1
+  }
+}

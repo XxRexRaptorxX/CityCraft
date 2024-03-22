@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "indreb"
+    }
+  ],
+  "type": "indreb:crushing",
+
+  "duration": 180,
+  "experience": 0.0,
+  "ingredient": {
+    "count": 1,
+    "tag": "forge:asphalt"
+  },
+
+  "power_cost": 8,
+  "result": {
+    "item": "citycraft:asphalt_mixture"
+  }
+}

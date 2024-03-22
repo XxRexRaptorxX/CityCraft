@@ -1,0 +1,13 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ftbic"
+    }
+  ],
+  "type": "ftbic:basic_generator_fuel",
+  "ingredient": {
+    "item": "citycraft:coal_coke"
+  },
+  "ticks": 3200
+}

@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:painting",
+  "chemicalInput": {
+    "amount": 32,
+    "pigment": "mekanism:brown"
+  },
+
+  "itemInput": {
+    "ingredient": {
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:asphalt" },
+      "subtracted": {
+        "item": "citycraft:brown_asphalt"
+      }
+    }
+  },
+
+  "output": {
+    "item": "citycraft:brown_asphalt"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:crusher",
+  "ingredient": {
+    "tag": "forge:asphalt"
+  },
+  "output": {
+    "item": "citycraft:asphalt_mixture"
+  }
+}
