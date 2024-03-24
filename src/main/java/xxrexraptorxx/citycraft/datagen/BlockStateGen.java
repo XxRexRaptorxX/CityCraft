@@ -466,37 +466,41 @@ public class BlockStateGen extends BlockStateProvider {
 
     private void trafficSignBlock(Block block, SignShape shape) {
         String frontTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
-        String backTexture;
+        String backTexture = shape.toString() + "_sign_back";
 
-        switch (shape) {
-            case ROUND:
-                backTexture = "round_sign_back";
+        getVariantBuilder(block).forAllStates(state -> {
+
+            ModelFile model = models().withExistingParent(frontTexture, References.MODID + ":block/traffic_sign")
+                    .texture("front", "block/" + frontTexture)
+                    .texture("back", modLoc("block/" + backTexture));
+
+        Direction dir = state.getValue(AsphaltBlock.FACING);
+        int x = 0;
+        int y = 0;
+
+        switch (dir) {
+            case EAST:
+                y = 270;
                 break;
-            case TRIANGLE:
-                backTexture = "triangle_sign_back";
-            case UPSIDE_DOWN_TRIANGLE:
-                backTexture = "upside_down_triangle_sign_back";
+            case NORTH:
+                y = 180;
                 break;
-            case RHOMBUS:
-                backTexture = "rhombus_sign_back";
+            case SOUTH:
                 break;
-            case OCTAGON:
-                backTexture = "octagon_sign_back";
-            case CROSS:
-                backTexture = "cross_sign_back";
-            case RECTANGLE:
-                backTexture = "rectangle_sign_back";
-            case BAKE:
-                backTexture = "bake_sign_back";
+            case WEST:
+                y = 90;
+                break;
             default:
-                backTexture = "square_sign_back";
+                break;
         }
 
-        ModelFile model = models().withExistingParent(frontTexture, References.MODID + ":block/traffic_sign")
-                .texture("front", "block/" + frontTexture)
-                .texture("back", modLoc("block/" + backTexture));
+        return ConfiguredModel.builder()
+                .modelFile(model)
+                .rotationX(x)
+                .rotationY(y)
+                .build();
+        });
 
-        simpleBlock(block, model);
         makeBlockItemFromExistingModel(block);
     }
 
@@ -505,17 +509,16 @@ public class BlockStateGen extends BlockStateProvider {
         String asphaltTexture = BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
-        getVariantBuilder(block)
-                .forAllStates(state -> {
+        getVariantBuilder(block).forAllStates(state -> {
 
-                    ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/directional_cube")
-                            .texture("down", "block/" + blockTexture)   //down
-                            .texture("up", "block/" + blockTexture)    //up
-                            .texture("north", "block/" + blockTexture)  //north
-                            .texture("south", "block/" + blockTexture)   //south
-                            .texture("east", "block/" + asphaltTexture)   //east
-                            .texture("west", "block/" + asphaltTexture)  //west
-                            .texture("particle", modLoc("block/" + asphaltTexture));
+                ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/directional_cube")
+                        .texture("down", "block/" + blockTexture)   //down
+                        .texture("up", "block/" + blockTexture)    //up
+                        .texture("north", "block/" + blockTexture)  //north
+                        .texture("south", "block/" + blockTexture)   //south
+                        .texture("east", "block/" + asphaltTexture)   //east
+                        .texture("west", "block/" + asphaltTexture)  //west
+                        .texture("particle", modLoc("block/" + asphaltTexture));
 
         Direction dir = state.getValue(AsphaltBlock.FACING);
         int x = 0;

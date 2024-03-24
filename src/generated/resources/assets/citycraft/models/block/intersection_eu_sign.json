@@ -1,7 +1,7 @@
 {
   "parent": "citycraft:block/traffic_sign",
   "textures": {
-    "back": "citycraft:block/upside_down_triangle_sign_back",
+    "back": "citycraft:block/triangle_sign_back",
     "front": "citycraft:block/intersection_eu_sign"
   }
 }

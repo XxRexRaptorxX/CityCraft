@@ -1,7 +1,7 @@
 {
   "parent": "citycraft:block/traffic_sign",
   "textures": {
-    "back": "citycraft:block/square_sign_back",
+    "back": "citycraft:block/rectangle_sign_back",
     "front": "citycraft:block/km_ahead_eu_sign"
   }
 }
