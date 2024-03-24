@@ -14,6 +14,7 @@ import xxrexraptorxx.citycraft.blocks.AsphaltBlock;
 import xxrexraptorxx.citycraft.blocks.AsphaltSlabBlock;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
+import xxrexraptorxx.citycraft.utils.SignShape;
 
 public class BlockStateGen extends BlockStateProvider {
 
@@ -325,6 +326,8 @@ public class BlockStateGen extends BlockStateProvider {
         makeBlockFromParentModel(ModBlocks.YELLOW_POLE.get(), "pole");
         makeBlockFromParentModel(ModBlocks.RED_WHITE_POLE.get(), "pole");
         makeBlockFromParentModel(ModBlocks.YELLOW_BLACK_POLE.get(), "pole");
+
+        trafficSignBlock(ModBlocks.DANGER_SIGN.get(), SignShape.TRIANGLE);
     }
 
 
@@ -347,6 +350,43 @@ public class BlockStateGen extends BlockStateProvider {
 
     private void makeSimpleBlock(Block block) {
         simpleBlock(block);
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void trafficSignBlock(Block block, SignShape shape) {
+        String frontTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        String backTexture;
+
+        switch (shape) {
+            case ROUND:
+                backTexture = "round_sign_back";
+                break;
+            case TRIANGLE:
+                backTexture = "triangle_sign_back";
+            case UPSIDE_DOWN_TRIANGLE:
+                backTexture = "upside_down_triangle_sign_back";
+                break;
+            case RHOMBUS:
+                backTexture = "rhombus_sign_back";
+                break;
+            case OCTAGON:
+                backTexture = "octagon_sign_back";
+            case CROSS:
+                backTexture = "cross_sign_back";
+            case RECTANGLE:
+                backTexture = "rectangle_sign_back";
+            case BAKE:
+                backTexture = "bake_sign_back";
+            default:
+                backTexture = "square_sign_back";
+        }
+
+        ModelFile model = models().withExistingParent(frontTexture, References.MODID + ":block/traffic_sign")
+                .texture("front", "block/" + frontTexture)
+                .texture("back", modLoc("block/" + backTexture));
+
+        simpleBlock(block, model);
         makeBlockItemFromExistingModel(block);
     }
 

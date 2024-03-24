@@ -327,7 +327,7 @@ public class ModBlocks {
     public static final RegistryObject<PoleBlock> BLACK_POLE = registerBlock("black_pole", PoleBlock::new);
     public static final RegistryObject<PoleBlock> RED_WHITE_POLE = registerBlock("red_white_pole", PoleBlock::new);
     public static final RegistryObject<PoleBlock> YELLOW_BLACK_POLE = registerBlock("yellow_black_pole", PoleBlock::new);
-    public static final RegistryObject<DirectionalPoleBlock> ROAD_EDGE_POST = registerBlock("road_edge_post", DirectionalPoleBlock::new); //delineator post
+    public static final RegistryObject<DirectionalPoleBlock> ROAD_EDGE_POST = registerBlock("road_edge_post", DirectionalPoleBlock::new);
 
     public static final RegistryObject<PostBlock> STONE_POST = registerBlock("stone_post", PostBlock::new);
     public static final RegistryObject<PostBlock> RED_POST = registerBlock("red_post", PostBlock::new);
@@ -341,6 +341,10 @@ public class ModBlocks {
     public static final RegistryObject<ChainBlock> WHITE_CHAIN = registerBlock("white_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
     public static final RegistryObject<ChainBlock> YELLOW_CHAIN = registerBlock("yellow_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
     public static final RegistryObject<ChainBlock> BLACK_CHAIN = registerBlock("black_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
+
+    public static final RegistryObject<TrafficSignBlock> DANGER_SIGN = registerBlock("danger_sign", TrafficSignBlock::new);
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

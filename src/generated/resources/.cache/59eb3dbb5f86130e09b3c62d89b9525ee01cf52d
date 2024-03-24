@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-20T21:11:41.8466909	Loot Tables
+// 1.20.1	2024-03-23T13:36:57.7678775	Loot Tables
 cbf19d648ae3a90f9888408a5e3886b68f63efae data/citycraft/loot_tables/blocks/asphalt.json
 73c3da23703e311211b05840d3762074610d688f data/citycraft/loot_tables/blocks/asphalt_slab.json
 9b4e29a1c5578dd42abfa6ca00c953dc275b3f6d data/citycraft/loot_tables/blocks/asphalt_with_white_a.json
@@ -242,6 +242,7 @@ b72c222e2bb35f0a85b72aab03f888ae0e66779c data/citycraft/loot_tables/blocks/crack
 d3c33c3a38257001b399d42e38cece72b6cacfea data/citycraft/loot_tables/blocks/cracked_asphalt_slab.json
 c2184032a6ee81c786aae62c86c498e6d4362a37 data/citycraft/loot_tables/blocks/cyan_asphalt.json
 9ccb88b1e7d0d4b4b2baff04af93aa28462fb1cc data/citycraft/loot_tables/blocks/cyan_asphalt_slab.json
+9d6dfda0a0271bc32c9ee40977ef9d6bf9101d46 data/citycraft/loot_tables/blocks/danger_sign.json
 0aa0e99056ea5cc1f0683feeb23b4603bc80ebee data/citycraft/loot_tables/blocks/dirty_asphalt.json
 c44768fb33c0bccd784ed14ff21cd58c3779d828 data/citycraft/loot_tables/blocks/dirty_asphalt_slab.json
 3bacfe2b025e0d7a632306562b20184bbf9b2703 data/citycraft/loot_tables/blocks/gray_asphalt.json

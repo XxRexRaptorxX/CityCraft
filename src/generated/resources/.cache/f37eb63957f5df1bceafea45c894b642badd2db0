@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-20T21:40:31.9273742	Block States: citycraft
+// 1.20.1	2024-03-23T13:42:13.9444686	Block States: citycraft
 21b44b1c5c021bbea5b5a037ebe999dcc6ae6406 assets/citycraft/blockstates/asphalt.json
 218b8da1eb86c87ed9acaf68ad8718ff717e7c07 assets/citycraft/blockstates/asphalt_slab.json
 82f26259ceac3ce9515ab60457c7d0f799125a91 assets/citycraft/blockstates/asphalt_with_white_a.json
@@ -241,6 +241,7 @@ a73c3d25d7fb73b91ab350153be7ee33ce77a368 assets/citycraft/blockstates/cracked_as
 989047d16537f79fc9d0485c552000f8f06285cd assets/citycraft/blockstates/cracked_asphalt_slab.json
 1b1dbd5265f4792d46035e9085e52c6add0826f0 assets/citycraft/blockstates/cyan_asphalt.json
 2c69c5f3b8e28e7d0b6f0f7dde628c3d90b898a1 assets/citycraft/blockstates/cyan_asphalt_slab.json
+22a4a023918f56911b7a932327839d0e96c90509 assets/citycraft/blockstates/danger_sign.json
 62a6fd66ab22f7ee666ce5b747c6b07b6e86618e assets/citycraft/blockstates/dirty_asphalt.json
 7a88524d855b39658bcabc2c24e8b6a1c9277ad2 assets/citycraft/blockstates/dirty_asphalt_slab.json
 c999cce5c9e97a7b861927987dcb71652dbb4d52 assets/citycraft/blockstates/gray_asphalt.json
@@ -645,6 +646,7 @@ c7e7539df0a0a4c7416d796e23f7d668b461aba4 assets/citycraft/models/block/brown_asp
 3a9de844605d335a915cee487a864e4a7f9f33bf assets/citycraft/models/block/cyan_asphalt.json
 83da08d1e1565ad8dc5c424b53681db5901584c8 assets/citycraft/models/block/cyan_asphalt_slab.json
 ee1fcba331fbb0be2c4422a8458bb6d62767b057 assets/citycraft/models/block/cyan_asphalt_slab_top.json
+8e3a4ff73c2eb402c27a705773e7992e736eff12 assets/citycraft/models/block/danger_sign.json
 4302f03767f399231d3a290b4b7eeb4cfe65fcb1 assets/citycraft/models/block/dirty_asphalt.json
 0d0ab39407e09b77a0846bdf9e211d8bd380fe3c assets/citycraft/models/block/dirty_asphalt_slab.json
 7164edd5795a40820735219023880f39568b3f93 assets/citycraft/models/block/dirty_asphalt_slab_top.json
@@ -944,6 +946,7 @@ f732d0e581c65345cea0b0b29f1ebad0c73f4898 assets/citycraft/models/item/cracked_as
 29fe58505714ba5dc39ff2a867b55a651b967517 assets/citycraft/models/item/cracked_asphalt_slab.json
 1bc5dd546c0eb49ba4bd5fdc6c75ae5ec4c0b5a2 assets/citycraft/models/item/cyan_asphalt.json
 ea2894bb430ef58cddcb50a6b775bed5694e0f63 assets/citycraft/models/item/cyan_asphalt_slab.json
+68cf292925787160905d5af4f80d300934fa64f2 assets/citycraft/models/item/danger_sign.json
 7a241f06abfc1a9781ac8d0d59d348120d70eb0d assets/citycraft/models/item/dirty_asphalt.json
 37044998fcc161fc371bcc5fad599be8a6008475 assets/citycraft/models/item/dirty_asphalt_slab.json
 7bce5b5ea88f5fe1189ecae96074cb0c6764c639 assets/citycraft/models/item/gray_asphalt.json

@@ -1,0 +1,52 @@
+{
+	"textures": {
+		"front": "#front",
+		"back": "#back",
+		"particle": "#front",
+		"pole": "citycraft:block/iron_pole"
+	},
+	"render_type": "cutout_mipped",
+
+	"elements": [
+		{
+			"name": "pole",
+			"from": [6, 0, 6],
+			"to": [10, 16, 10],
+			"faces": {
+				"north": {"uv": [6, 0, 10, 16], "texture": "#pole"},
+				"east": {"uv": [6, 0, 10, 16], "texture": "#pole"},
+				"south": {"uv": [6, 0, 10, 16], "texture": "#pole"},
+				"west": {"uv": [6, 0, 10, 16], "texture": "#pole"},
+				"up": {"uv": [6, 2, 10, 6], "texture": "#pole", "cullface": "up"},
+				"down": {"uv": [6, 10, 10, 14], "texture": "#pole", "cullface": "down"}
+			}
+		},
+		{
+			"name": "plate",
+			"from": [0, 0, 5.9],
+			"to": [16, 16, 5.9],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#front"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#back"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#missing"}
+			}
+		}
+	],
+
+	"display": {
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [0, 180, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"translation": [0, 14.5, 1]
+		}
+	}
+}

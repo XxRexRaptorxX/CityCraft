@@ -323,6 +323,8 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.BLACK_CHAIN.get());
         this.dropSelf(ModBlocks.WHITE_CHAIN.get());
         this.dropSelf(ModBlocks.RED_CHAIN.get());
+
+        this.dropSelf(ModBlocks.DANGER_SIGN.get());
     }
 
 

@@ -54,6 +54,8 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.YELLOW_BLACK_POLE.get());
                 output.accept(ModBlocks.YELLOW_BLACK_POST.get());
 
+                output.accept(ModBlocks.DANGER_SIGN.get());
+
             }).build());
 
 
