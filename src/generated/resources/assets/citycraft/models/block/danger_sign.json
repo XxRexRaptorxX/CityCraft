@@ -1,7 +1,0 @@
-{
-  "parent": "citycraft:block/traffic_sign",
-  "textures": {
-    "back": "citycraft:block/triangle_sign_back",
-    "front": "citycraft:block/danger_sign"
-  }
-}

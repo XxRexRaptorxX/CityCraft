@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/traffic_sign",
+  "textures": {
+    "back": "citycraft:block/square_sign_back",
+    "front": "citycraft:block/parking_garage_eu_eu_sign"
+  }
+}

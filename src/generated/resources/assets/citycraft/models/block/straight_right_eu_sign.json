@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/traffic_sign",
+  "textures": {
+    "back": "citycraft:block/round_sign_back",
+    "front": "citycraft:block/straight_right_eu_sign"
+  }
+}
