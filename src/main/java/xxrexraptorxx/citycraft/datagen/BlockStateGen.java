@@ -390,7 +390,6 @@ public class BlockStateGen extends BlockStateProvider {
         trafficSignBlock(ModBlocks.PEDESTRIAN_CROSSING_EU_SIGN.get(), SignShape.SQUARE);
         trafficSignBlock(ModBlocks.INFO_EU_SIGN.get(), SignShape.SQUARE);
         trafficSignBlock(ModBlocks.DISABLED_EU_SIGN.get(), SignShape.SQUARE);
-        trafficSignBlock(ModBlocks.NO_EU_SIGN.get(), SignShape.ROUND);
         trafficSignBlock(ModBlocks.TEN_SPEED_EU_SIGN.get(), SignShape.ROUND);
         trafficSignBlock(ModBlocks.CROSSBUCK_EU_SIGN.get(), SignShape.CROSS);
         trafficSignBlock(ModBlocks.THIRTY_SPEED_EU_SIGN.get(), SignShape.ROUND);

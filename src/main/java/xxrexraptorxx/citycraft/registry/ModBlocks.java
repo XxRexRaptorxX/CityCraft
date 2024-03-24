@@ -405,7 +405,6 @@ public class ModBlocks {
     public static final RegistryObject<TrafficSignBlock> PEDESTRIAN_CROSSING_EU_SIGN = registerBlock("pedestrian_crossing_eu_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> INFO_EU_SIGN = registerBlock("info_eu_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> DISABLED_EU_SIGN = registerBlock("disabled_eu_sign", TrafficSignBlock::new);
-    public static final RegistryObject<TrafficSignBlock> NO_EU_SIGN = registerBlock("no_eu_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> TEN_SPEED_EU_SIGN = registerBlock("10_speed_eu_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> CROSSBUCK_EU_SIGN = registerBlock("crossbuck_eu_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> THIRTY_SPEED_EU_SIGN = registerBlock("30_speed_eu_sign", TrafficSignBlock::new);

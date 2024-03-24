@@ -66,8 +66,8 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.SNOW_EU_SIGN.get());
                 output.accept(ModBlocks.ONCOMING_TRAFFIC_EU_SIGN.get());
                 output.accept(ModBlocks.LEFT_CURVE_EU_SIGN.get());
-                output.accept(ModBlocks.LEFT_DOUBLE_CURVE_EU_SIGN.get());
                 output.accept(ModBlocks.RIGHT_CURVE_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_DOUBLE_CURVE_EU_SIGN.get());
                 output.accept(ModBlocks.RIGHT_DOUBLE_CURVE_EU_SIGN.get());
                 output.accept(ModBlocks.GATE_EU_SIGN.get());
                 output.accept(ModBlocks.NARROWING_EU_SIGN.get());
@@ -95,6 +95,7 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.NO_TRUCKS_EU_SIGN.get());
                 output.accept(ModBlocks.NO_PEDESTRIANS_EU_SIGN.get());
                 output.accept(ModBlocks.NO_BICYCLES_EU_SIGN.get());
+                output.accept(ModBlocks.NO_PASSING_EU_SIGN.get());
                 output.accept(ModBlocks.NO_TRUCK_PASSING_EU_SIGN.get());
                 output.accept(ModBlocks.ONGOING_TRAFFIC_EU_SIGN.get());
 

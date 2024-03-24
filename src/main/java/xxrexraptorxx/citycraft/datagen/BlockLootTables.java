@@ -387,7 +387,6 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PEDESTRIAN_CROSSING_EU_SIGN.get());
         this.dropSelf(ModBlocks.INFO_EU_SIGN.get());
         this.dropSelf(ModBlocks.DISABLED_EU_SIGN.get());
-        this.dropSelf(ModBlocks.NO_EU_SIGN.get());
         this.dropSelf(ModBlocks.TEN_SPEED_EU_SIGN.get());
         this.dropSelf(ModBlocks.CROSSBUCK_EU_SIGN.get());
         this.dropSelf(ModBlocks.THIRTY_SPEED_EU_SIGN.get());
