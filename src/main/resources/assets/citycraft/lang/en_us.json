@@ -428,10 +428,10 @@
     "block.citycraft.warning_beacon_left_eu_sign": "Left Warning Beacon",
     "block.citycraft.warning_beacon_right_eu_sign": "Right Warning Beacon",
     "block.citycraft.warning_beacon_alt_eu_sign": "Warning Beacon",
-    "block.citycraft.nature_reserve_eu_sign":  "'Nature Reserve' Schild",
-    "block.citycraft.motorway_eu_sign": "'Motorway' Schild",
-    "block.citycraft.motorway_end_eu_sign":  "'End of Motorway' Schild",
-    "block.citycraft.water_protection_area_eu_sign": "'Water Protection Area' Schild",
-    "block.citycraft.left_ahead_eu_sign": "'Left Ahead' Schild",
-    "block.citycraft.right_ahead_eu_sign": "'Right Ahead' Schild"
+    "block.citycraft.nature_reserve_eu_sign":  "'Nature Reserve' Sign",
+    "block.citycraft.motorway_eu_sign": "'Motorway' Sign",
+    "block.citycraft.motorway_end_eu_sign":  "'End of Motorway' Sign",
+    "block.citycraft.water_protection_area_eu_sign": "'Water Protection Area' Sign",
+    "block.citycraft.left_ahead_eu_sign": "'Left Ahead' Sign",
+    "block.citycraft.right_ahead_eu_sign": "'Right Ahead' Sign"
 }
