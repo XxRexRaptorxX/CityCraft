@@ -432,8 +432,14 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WARNING_BEACON_LEFT_EU_SIGN.get());
         this.dropSelf(ModBlocks.WC_EU_SIGN.get());
         this.dropSelf(ModBlocks.WEIGHT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.LEFT_AHEAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.RIGHT_AHEAD_EU_SIGN.get());
         this.dropSelf(ModBlocks.WET_EU_SIGN.get());
         this.dropSelf(ModBlocks.YIELD_RIGHT_OF_WAY_EU_SIGN.get());
+        this.dropSelf(ModBlocks.NATURE_RESERVE_EU_SIGN.get());
+        this.dropSelf(ModBlocks.MOTORWAY_EU_SIGN.get());
+        this.dropSelf(ModBlocks.MOTORWAY_END_EU_SIGN.get());
+        this.dropSelf(ModBlocks.WATER_PROTECTION_AREA_EU_SIGN.get());
     }
 
 

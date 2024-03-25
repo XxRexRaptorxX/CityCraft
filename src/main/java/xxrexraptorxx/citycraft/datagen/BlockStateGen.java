@@ -437,6 +437,13 @@ public class BlockStateGen extends BlockStateProvider {
         trafficSignBlock(ModBlocks.WEIGHT_EU_SIGN.get(), SignShape.RECTANGLE);
         trafficSignBlock(ModBlocks.WET_EU_SIGN.get(), SignShape.SQUARE);
         trafficSignBlock(ModBlocks.YIELD_RIGHT_OF_WAY_EU_SIGN.get(), SignShape.UPSIDE_DOWN_TRIANGLE);
+        trafficSignBlock(ModBlocks.NATURE_RESERVE_EU_SIGN .get(), SignShape.UPSIDE_DOWN_TRIANGLE);
+        trafficSignBlock(ModBlocks.MOTORWAY_EU_SIGN .get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.MOTORWAY_END_EU_SIGN .get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.WATER_PROTECTION_AREA_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.LEFT_AHEAD_EU_SIGN.get(), SignShape.ROUND);
+        trafficSignBlock(ModBlocks.RIGHT_AHEAD_EU_SIGN.get(), SignShape.ROUND);
+
     }
 
 

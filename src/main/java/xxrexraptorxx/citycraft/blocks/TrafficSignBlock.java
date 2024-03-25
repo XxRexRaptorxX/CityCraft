@@ -43,10 +43,10 @@ public class TrafficSignBlock extends FenceBlock implements SimpleWaterloggedBlo
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> list, TooltipFlag flag) {
 		if (ForgeRegistries.BLOCKS.getKey(Block.byItem(stack.getItem())).getPath().contains("eu_sign")) {
-			list.add(Component.literal("[EU]").withStyle(ChatFormatting.BLUE));
+			list.add(Component.literal("[EU]").withStyle(ChatFormatting.GRAY));
 
 		} else if (ForgeRegistries.BLOCKS.getKey(Block.byItem(stack.getItem())).getPath().contains("us_sign")) {
-			list.add(Component.literal("[US]").withStyle(ChatFormatting.BLUE));
+			list.add(Component.literal("[US]").withStyle(ChatFormatting.GRAY));
 		}
 	}
 

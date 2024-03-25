@@ -452,6 +452,12 @@ public class ModBlocks {
     public static final RegistryObject<TrafficSignBlock> WEIGHT_EU_SIGN = registerBlock("weight_eu_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> WET_EU_SIGN = registerBlock("wet_eu_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> YIELD_RIGHT_OF_WAY_EU_SIGN = registerBlock("yield_right_of_way_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> NATURE_RESERVE_EU_SIGN = registerBlock("nature_reserve_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> MOTORWAY_EU_SIGN = registerBlock("motorway_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> MOTORWAY_END_EU_SIGN = registerBlock("motorway_end_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> WATER_PROTECTION_AREA_EU_SIGN = registerBlock("water_protection_area_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> LEFT_AHEAD_EU_SIGN = registerBlock("left_ahead_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> RIGHT_AHEAD_EU_SIGN = registerBlock("right_ahead_eu_sign", TrafficSignBlock::new);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

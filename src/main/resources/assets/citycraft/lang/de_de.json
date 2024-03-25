@@ -340,7 +340,7 @@
     "block.citycraft.ascend_eu_sign": "'Achtung steiler Aufstieg' Schild",
     "block.citycraft.descend_eu_sign":  "'Achtung steiler Abstieg' Schild",
     "block.citycraft.jams_eu_sign": "'Achtung Staugefahr' Schild",
-    "block.citycraft.priority_eu_sign":  "Achtung Vorfahrt an der nächsten Kreuzung'' Schild",
+    "block.citycraft.priority_eu_sign":  "'Achtung Vorfahrt an der nächsten Kreuzung' Schild",
     "block.citycraft.railroad_eu_sign": "'Achtung Bahnübergang' Schild",
     "block.citycraft.uneven_eu_sign":  "'Achtung unebene Fahrbahn' Schild",
     "block.citycraft.cycles_eu_sign": "'Achtung Fahrräder' Schild",
@@ -383,8 +383,8 @@
     "block.citycraft.detour_ahead_eu_sign":  "'Umleitung Vorraus' Schild",
     "block.citycraft.detour_left_eu_sign": "'Umleitung Links' Schild",
     "block.citycraft.detour_right_eu_sign":  "'Umleitung Rechts' Schild",
-    "block.citycraft.priority_road_eu_sign": "'' Schild",
-    "block.citycraft.priority_road_end_eu_sign":  "'Vorfahrtsstraße' Schild",
+    "block.citycraft.priority_road_eu_sign": "'Vorfahrtsstraße' Schild",
+    "block.citycraft.priority_road_end_eu_sign":  "'Ende der Vorfahrtsstraße' Schild",
     "block.citycraft.yield_right_of_way_eu_sign": "'Vorfahrt gewähren' Schild",
     "block.citycraft.stop_eu_sign":  "'STOP' Schild",
     "block.citycraft.crossbuck_eu_sign": "'Andreaskreuz' Schild",
@@ -427,5 +427,11 @@
     "block.citycraft.right_direction_eu_sign":  "Rechte Richtungstafel",
     "block.citycraft.warning_beacon_left_eu_sign": "Linke Leitbake",
     "block.citycraft.warning_beacon_right_eu_sign":  "Rechte Leitbake",
-    "block.citycraft.warning_beacon_alt_eu_sign": "Warnbake"
+    "block.citycraft.warning_beacon_alt_eu_sign": "Warnbake",
+    "block.citycraft.nature_reserve_eu_sign":  "'Naturschutzgebiet' Schild",
+    "block.citycraft.motorway_eu_sign": "'Kraftfahrstraße Auffahrt' Schild",
+    "block.citycraft.motorway_end_eu_sign":  "'Kraftfahrstraße Abfahrt' Schild",
+    "block.citycraft.water_protection_area_eu_sign": "'Wasserschutzgebiet' Schild",
+    "block.citycraft.left_ahead_eu_sign": "'Links weiter' Schild",
+    "block.citycraft.right_ahead_eu_sign": "'Rechts weiter' Schild"
 }

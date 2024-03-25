@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "citycraft:no_eu_sign"
+          "name": "citycraft:motorway_eu_sign"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "citycraft:blocks/no_eu_sign"
+  "random_sequence": "citycraft:blocks/motorway_eu_sign"
 }
