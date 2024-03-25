@@ -152,14 +152,14 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.HIGHWAY_END_EU_SIGN.get());
                 output.accept(ModBlocks.MOTORWAY_EU_SIGN.get());
                 output.accept(ModBlocks.MOTORWAY_END_EU_SIGN.get());
+                output.accept(ModBlocks.CALMING_AREA_EU_SIGN.get());
+                output.accept(ModBlocks.END_CALMING_AREA_EU_SIGN.get());
                 output.accept(ModBlocks.ONE_WAY_EU_SIGN.get());
                 output.accept(ModBlocks.PRIORITY_OVER_ONCOMING_TRAFFIC_EU_SIGN.get());
                 output.accept(ModBlocks.NO_THROUGH_ROAD_EU_SIGN.get());
                 output.accept(ModBlocks.PARKING_EU_SIGN.get());
                 output.accept(ModBlocks.PARKING_GARAGE_EU_EU_SIGN.get());
                 output.accept(ModBlocks.PEDESTRIAN_CROSSING_EU_SIGN.get());
-                output.accept(ModBlocks.CALMING_AREA_EU_SIGN.get());
-                output.accept(ModBlocks.END_CALMING_AREA_EU_SIGN.get());
 
                 output.accept(ModBlocks.CAMPING_EU_SIGN.get());
                 output.accept(ModBlocks.PR_EU_SIGN.get());
