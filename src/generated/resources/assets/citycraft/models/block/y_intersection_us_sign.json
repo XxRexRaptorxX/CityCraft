@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/traffic_sign",
+  "textures": {
+    "back": "citycraft:block/rhombus_sign_back",
+    "front": "citycraft:block/y_intersection_us_sign"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/traffic_sign",
+  "textures": {
+    "back": "citycraft:block/rhombus_sign_back",
+    "front": "citycraft:block/right_entering_roadway_merge_us_sign"
+  }
+}

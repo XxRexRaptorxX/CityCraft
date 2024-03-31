@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/traffic_sign",
+  "textures": {
+    "back": "citycraft:block/rhombus_sign_back",
+    "front": "citycraft:block/truck_rollover_warning_us_sign"
+  }
+}

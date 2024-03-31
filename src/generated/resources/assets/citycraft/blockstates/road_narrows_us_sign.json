@@ -1,0 +1,484 @@
+{
+  "variants": {
+    "east=false,facing=east,north=false,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=false,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=false,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=false,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=false,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=false,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=false,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=false,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=true,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=true,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=true,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=true,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=true,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=true,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=true,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=east,north=true,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=false,facing=north,north=false,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=false,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=false,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=false,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=false,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=false,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=false,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=false,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=true,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=true,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=true,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=true,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=true,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=true,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=true,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=north,north=true,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=false,facing=south,north=false,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=false,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=false,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=false,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=false,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=false,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=false,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=false,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=true,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=true,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=true,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=true,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=true,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=true,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=true,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=south,north=true,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=false,facing=west,north=false,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=false,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=false,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=false,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=false,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=false,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=false,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=false,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=true,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=true,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=true,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=true,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=true,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=true,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=true,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=false,facing=west,north=true,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=east,north=false,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=false,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=false,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=false,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=false,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=false,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=false,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=false,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=true,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=true,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=true,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=true,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=true,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=true,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=true,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=east,north=true,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 270
+    },
+    "east=true,facing=north,north=false,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=false,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=false,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=false,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=false,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=false,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=false,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=false,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=true,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=true,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=true,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=true,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=true,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=true,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=true,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=north,north=true,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 180
+    },
+    "east=true,facing=south,north=false,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=false,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=false,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=false,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=false,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=false,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=false,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=false,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=true,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=true,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=true,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=true,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=true,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=true,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=true,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=south,north=true,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign"
+    },
+    "east=true,facing=west,north=false,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=false,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=false,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=false,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=false,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=false,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=false,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=false,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=true,south=false,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=true,south=false,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=true,south=false,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=true,south=false,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=true,south=true,waterlogged=false,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=true,south=true,waterlogged=false,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=true,south=true,waterlogged=true,west=false": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    },
+    "east=true,facing=west,north=true,south=true,waterlogged=true,west=true": {
+      "model": "citycraft:block/road_narrows_us_sign",
+      "y": 90
+    }
+  }
+}
