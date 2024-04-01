@@ -562,7 +562,7 @@ public class CreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> ROAD_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".roads", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".roads_tab"))
             .icon(() -> new ItemStack(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE.get()))
-            .withTabsBefore(SIGN_TAB.getId(), US_SIGN_TAB.getId())
+            .withTabsBefore(MAIN_TAB.getId())
             .displayItems((params, output) -> {
 
                 output.accept(ModBlocks.ASPHALT_BLOCK.get());
