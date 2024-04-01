@@ -1,7 +1,10 @@
 ﻿{
     "itemGroup.citycraft.main_tab": "City Craft",
-    "itemGroup.citycraft.road_tab": "City Craft - Straßen",
-    "itemGroup.citycraft.road_tab": "City Craft - Schilder",
+    "itemGroup.citycraft.roads_tab": "City Craft - Straßen",
+    "itemGroup.citycraft.signs_tab": "City Craft - Schilder",
+    "itemGroup.citycraft.eu_signs_tab": "City Craft - EU Schilder",
+    "itemGroup.citycraft.us_signs_tab": "City Craft - US Schilder",
+    "itemGroup.citycraft.zh_signs_tab": "City Craft - ZH Schilder",
 
     "message.citycraft.speed_tooltip": "Erhöhte Bewegungsgeschwindigkeit",
     "message.citycraft.boost_speed_tooltip": "Stark erhöhte Bewegungsgeschwindigkeit",
