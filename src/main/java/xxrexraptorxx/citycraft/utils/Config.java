@@ -39,9 +39,9 @@ public class Config {
         UPDATE_CHECKER = builder.comment("Activate the Update-Checker").define("update-checker", true);
         builder.pop();
 
-        builder.comment("Signs").push(CATEGORY_SIGNS);
-        SPLIT_TRAFFIC_SIGN_TAB = builder.comment("Activate this if you want to split the signs tab in the creative inventory into different categories").define("split_traffic_sign_tab", false);
-        builder.pop();
+        //builder.comment("Signs").push(CATEGORY_SIGNS);
+        //SPLIT_TRAFFIC_SIGN_TAB = builder.comment("Activate this if you want to split the signs tab in the creative inventory into different categories").define("split_traffic_sign_tab", false);
+        //builder.pop();
 
         CLIENT_CONFIG = builder.build();
     }
