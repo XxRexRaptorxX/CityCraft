@@ -533,6 +533,8 @@
     "block.citycraft.winter_recreation_area_us_sign":  "'Schneegebiet' Schild",
     "block.citycraft.winding_road_us_sign": "'Achtung Serpentine' Schild",
     "block.citycraft.workers_us_sign":  "'Achtung Baustelle' Schild",
-    "block.citycraft.y_intersection_us_sign": "'Achtung Y-Kreuzung' Schild"
+    "block.citycraft.y_intersection_us_sign": "'Achtung Y-Kreuzung' Schild",
 
+    "block.citycraft.drain_cover": "Kanaldeckel",
+    "block.citycraft.drain_cover_grid": "Kanalgitter"
 }

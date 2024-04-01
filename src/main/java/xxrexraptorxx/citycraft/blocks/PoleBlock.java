@@ -27,7 +27,7 @@ public class PoleBlock extends FenceBlock implements SimpleWaterloggedBlock {
 
 	public PoleBlock() {
 		super(Properties.of()
-				.strength(4.0F, 6.0F)
+				.strength(5.0F, 6.0F)
 				.sound(SoundType.METAL)
 				.mapColor(MapColor.METAL)
 				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)

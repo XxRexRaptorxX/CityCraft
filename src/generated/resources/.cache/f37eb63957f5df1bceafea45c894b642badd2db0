@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-30T01:18:01.5950279	Block States: citycraft
+// 1.20.1	2024-04-01T20:51:47.2561279	Block States: citycraft
 b51850f16e80dab0090eda4583a749cebcc5b44c assets/citycraft/blockstates/100_speed_eu_sign.json
 1dbad5fb9d00b6053a4c06a2f3e665ec6c968b8b assets/citycraft/blockstates/10_speed_eu_sign.json
 fd8eaf23a08bebcb94a0561becbd0d174ace0c9a assets/citycraft/blockstates/120_speed_eu_sign.json
@@ -1415,6 +1415,8 @@ ff75e1e6afe84861a10711af3604e9ed4fde6eca assets/citycraft/models/item/disabled_e
 eae87cc4c92898e4ee9dfed1370883af3a74d05b assets/citycraft/models/item/double_arrow_green_us_sign.json
 01323baa2a4394d3cf1890afe3a82b86db0bd7e4 assets/citycraft/models/item/double_arrow_orange_us_sign.json
 33ef63054074047d077591a0da07cf37981b894b assets/citycraft/models/item/double_arrow_yellow_us_sign.json
+0ddeb932ba37d619631aef4ebf605176336f249d assets/citycraft/models/item/drain_cover.json
+f91fb84f8bc3d95d9bbab2ac12ce59a0e252895f assets/citycraft/models/item/drain_cover_grid.json
 ff0d1591c973ac42f3a5362df0c4eae52cdcd066 assets/citycraft/models/item/drinking_water_us_sign.json
 d4a110a14fa80b5a8fa4b14087638c9db9ec37e1 assets/citycraft/models/item/electric_station_us_sign.json
 1836a463957f24b1325493619a725929112be700 assets/citycraft/models/item/emergency_bay_eu_sign.json

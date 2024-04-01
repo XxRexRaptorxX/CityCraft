@@ -533,5 +533,8 @@
     "block.citycraft.winter_recreation_area_us_sign":  "'Winter Area' Sign",
     "block.citycraft.winding_road_us_sign": "'Warning Winding Road' Sign",
     "block.citycraft.workers_us_sign":  "'Warning Roadworks' Sign",
-    "block.citycraft.y_intersection_us_sign": "'Warning Y-Intersection' Sign"
+    "block.citycraft.y_intersection_us_sign": "'Warning Y-Intersection' Sign",
+
+    "block.citycraft.drain_cover": "Drain Cover",
+    "block.citycraft.drain_cover_grid": "Drain Grid"
 }

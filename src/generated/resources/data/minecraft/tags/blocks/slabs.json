@@ -136,6 +136,8 @@
     "citycraft:asphalt_with_yellow_w_slab",
     "citycraft:asphalt_with_yellow_x_slab",
     "citycraft:asphalt_with_yellow_y_slab",
-    "citycraft:asphalt_with_yellow_z_slab"
+    "citycraft:asphalt_with_yellow_z_slab",
+    "citycraft:drain_cover",
+    "citycraft:drain_cover_grid"
   ]
 }

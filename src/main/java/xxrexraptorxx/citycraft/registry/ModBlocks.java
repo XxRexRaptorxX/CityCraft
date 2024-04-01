@@ -556,6 +556,9 @@ public class ModBlocks {
     public static final RegistryObject<TrafficSignBlock> WORKERS_US_SIGN = registerBlock("workers_us_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> Y_INTERSECTION_US_SIGN = registerBlock("y_intersection_us_sign", TrafficSignBlock::new);
 
+    public static final RegistryObject<DrainCoverBlock> DRAIN_COVER = registerBlock("drain_cover", DrainCoverBlock::new);
+    public static final RegistryObject<DrainCoverBlock> DRAIN_COVER_GRID = registerBlock("drain_cover_grid", DrainCoverBlock::new);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

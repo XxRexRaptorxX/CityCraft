@@ -24,7 +24,6 @@ public class DirectionalPoleBlock extends FenceBlock implements SimpleWaterlogge
 				.sound(SoundType.METAL)
 				.mapColor(DyeColor.WHITE)
 				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-				.requiresCorrectToolForDrops()
 		);
 	}
 

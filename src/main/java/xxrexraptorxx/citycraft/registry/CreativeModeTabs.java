@@ -8,7 +8,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import xxrexraptorxx.citycraft.main.References;
-import xxrexraptorxx.citycraft.utils.Config;
 
 public class CreativeModeTabs {
 
@@ -42,6 +41,9 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.RED_CHAIN.get());
                 output.accept(ModBlocks.YELLOW_CHAIN.get());
                 output.accept(ModBlocks.BLACK_CHAIN.get());
+
+                output.accept(ModBlocks.DRAIN_COVER.get());
+                output.accept(ModBlocks.DRAIN_COVER_GRID.get());
 
                 output.accept(ModItems.COAL_COKE.get());
                 output.accept(ModItems.ASPHALT_MIXTURE.get());
