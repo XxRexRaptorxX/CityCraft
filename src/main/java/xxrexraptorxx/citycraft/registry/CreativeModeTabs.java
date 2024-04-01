@@ -23,6 +23,7 @@ public class CreativeModeTabs {
             .displayItems((params, output) -> {
 
                 output.accept(ModBlocks.STONE_POST.get());
+                output.accept(ModBlocks.ROAD_EDGE_POST.get());
                 output.accept(ModBlocks.WHITE_POLE.get());
                 output.accept(ModBlocks.WHITE_POST.get());
                 output.accept(ModBlocks.RED_POLE.get());
@@ -56,7 +57,6 @@ public class CreativeModeTabs {
                 if (!Config.SPLIT_TRAFFIC_SIGN_TAB.get()) {
 
                     // EU
-                    output.accept(ModBlocks.ROAD_EDGE_POST.get());
                     output.accept(ModBlocks.IRON_POLE.get());
 
                     output.accept(ModBlocks.DANGER_EU_SIGN.get());
@@ -306,7 +306,6 @@ public class CreativeModeTabs {
                 if (Config.SPLIT_TRAFFIC_SIGN_TAB.get()) {
 
                     // EU
-                    output.accept(ModBlocks.ROAD_EDGE_POST.get());
                     output.accept(ModBlocks.IRON_POLE.get());
 
                     output.accept(ModBlocks.DANGER_EU_SIGN.get());
@@ -451,9 +450,7 @@ public class CreativeModeTabs {
                 if (Config.SPLIT_TRAFFIC_SIGN_TAB.get()) {
 
                     // US
-                    output.accept(ModBlocks.GUIDE_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_DIRECTION_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_DIRECTION_US_SIGN.get());
+                    output.accept(ModBlocks.IRON_POLE.get());
 
                     output.accept(ModBlocks.T_INTERSECTION_US_SIGN.get());
                     output.accept(ModBlocks.Y_INTERSECTION_US_SIGN.get());
@@ -551,6 +548,10 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.BATHROOMS_US_SIGN.get());
                     output.accept(ModBlocks.LITTER_BARREL_US_SIGN.get());
                     output.accept(ModBlocks.LOUNDRY_FACILITY_US_SIGN.get());
+
+                    output.accept(ModBlocks.GUIDE_US_SIGN.get());
+                    output.accept(ModBlocks.LEFT_DIRECTION_US_SIGN.get());
+                    output.accept(ModBlocks.RIGHT_DIRECTION_US_SIGN.get());
 
                     output.accept(ModBlocks.RAILROAD_CROSSING_US_SIGN.get());
                     output.accept(ModBlocks.CROSSBUCK_US_SIGN.get());
