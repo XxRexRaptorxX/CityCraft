@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+
+  "key": {
+    "#": {
+      "item": "citycraft:light_gray_asphalt_slab"
+    },
+    "X": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+
+  "result": {
+    "item": "citycraft:drain_cover",
+    "count": 3
+  }
+}

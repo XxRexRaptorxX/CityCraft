@@ -538,8 +538,9 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WORKERS_US_SIGN.get());
         this.dropSelf(ModBlocks.Y_INTERSECTION_US_SIGN.get());
 
-        this.dropSelf(ModBlocks.DRAIN_COVER.get());
-        this.dropSelf(ModBlocks.DRAIN_COVER_GRID.get());
+        this.add(ModBlocks.DRAIN_COVER.get(), block -> createSlabItemTable(ModBlocks.DRAIN_COVER.get()));
+        this.add(ModBlocks.DRAIN_COVER_GRID.get(), block -> createSlabItemTable(ModBlocks.DRAIN_COVER_GRID.get()));
+
     }
 
 

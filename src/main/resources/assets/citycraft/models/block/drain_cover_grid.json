@@ -5,6 +5,8 @@
         "top": "citycraft:block/drain_cover_grid_top",
         "side": "citycraft:block/drain_cover_grid_side"
     },
+    "render_type": "cutout_mipped",
+
     "elements": [
         {
             "from": [0, 0, 0],

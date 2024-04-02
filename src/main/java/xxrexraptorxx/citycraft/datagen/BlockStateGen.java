@@ -540,9 +540,6 @@ public class BlockStateGen extends BlockStateProvider {
         trafficSignBlock(ModBlocks.WINDING_ROAD_US_SIGN.get(), SignShape.RHOMBUS);
         trafficSignBlock(ModBlocks.WORKERS_US_SIGN.get(), SignShape.RHOMBUS);
         trafficSignBlock(ModBlocks.Y_INTERSECTION_US_SIGN.get(), SignShape.RHOMBUS);
-
-        makeBlockItemFromExistingModel(ModBlocks.DRAIN_COVER.get());
-        makeBlockItemFromExistingModel(ModBlocks.DRAIN_COVER_GRID.get());
     }
 
 

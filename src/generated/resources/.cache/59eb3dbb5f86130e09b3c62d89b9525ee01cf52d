@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-01T20:51:47.2516268	Loot Tables
+// 1.20.1	2024-04-02T19:14:57.0312121	Loot Tables
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_tables/blocks/100_speed_eu_sign.json
 dd3c3abd2471b84fca081f594e0f07afa39c7d42 data/citycraft/loot_tables/blocks/10_speed_eu_sign.json
 ee8f5504a89f1e81ed260a129c0aa566f6e82fed data/citycraft/loot_tables/blocks/120_speed_eu_sign.json
@@ -289,8 +289,8 @@ af554a4eab8dd3dc5fdfbbd8dcb4d7d365c8bf33 data/citycraft/loot_tables/blocks/divid
 3c139b8fe5213d0a3d149d298a6add86e0465524 data/citycraft/loot_tables/blocks/double_arrow_green_us_sign.json
 8ee80b7ce456f45b4be627fe1027e9286db83048 data/citycraft/loot_tables/blocks/double_arrow_orange_us_sign.json
 f1f4dde1cee1201b26ac5c55bc5fce6675fc431a data/citycraft/loot_tables/blocks/double_arrow_yellow_us_sign.json
-6c615bf2f38d86e59b6fe0f66c310fb28750fd7a data/citycraft/loot_tables/blocks/drain_cover.json
-528df3c7ce5afd0115ab8967a83569c331c3ea43 data/citycraft/loot_tables/blocks/drain_cover_grid.json
+d341ae5bd8b3bf2c4f81455de213f81348b0b9a6 data/citycraft/loot_tables/blocks/drain_cover.json
+99645c1770b741ce2562fb5ed43b9c39e3138217 data/citycraft/loot_tables/blocks/drain_cover_grid.json
 58bb7fe57fd0fd58024e36fde73f2f7c1c12ce0e data/citycraft/loot_tables/blocks/drinking_water_us_sign.json
 ce54f2e13cab38e48e8336f284c2cd3ced417a8e data/citycraft/loot_tables/blocks/electric_station_us_sign.json
 0e8721b4c638d8d37b64580e35343f3dbe298345 data/citycraft/loot_tables/blocks/emergency_bay_eu_sign.json

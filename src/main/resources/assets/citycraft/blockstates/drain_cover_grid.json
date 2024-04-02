@@ -17,11 +17,11 @@
       "y": 270
     },
     "facing=east,type=top,waterlogged=false": {
-      "model": "citycraft:block/drain_cover_grid_slab_top",
+      "model": "citycraft:block/drain_cover_grid_top",
       "y": 270
     },
     "facing=east,type=top,waterlogged=true": {
-      "model": "citycraft:block/drain_cover_grid_slab_top",
+      "model": "citycraft:block/drain_cover_grid_top",
       "y": 270
     },
     "facing=north,type=bottom,waterlogged=false": {
@@ -41,11 +41,11 @@
       "y": 180
     },
     "facing=north,type=top,waterlogged=false": {
-      "model": "citycraft:block/drain_cover_grid_slab_top",
+      "model": "citycraft:block/drain_cover_grid_top",
       "y": 180
     },
     "facing=north,type=top,waterlogged=true": {
-      "model": "citycraft:block/drain_cover_grid_slab_top",
+      "model": "citycraft:block/drain_cover_grid_top",
       "y": 180
     },
     "facing=south,type=bottom,waterlogged=false": {
@@ -61,10 +61,10 @@
       "model": "citycraft:block/drain_cover_grid"
     },
     "facing=south,type=top,waterlogged=false": {
-      "model": "citycraft:block/drain_cover_grid_slab_top"
+      "model": "citycraft:block/drain_cover_grid_top"
     },
     "facing=south,type=top,waterlogged=true": {
-      "model": "citycraft:block/drain_cover_grid_slab_top"
+      "model": "citycraft:block/drain_cover_grid_top"
     },
     "facing=west,type=bottom,waterlogged=false": {
       "model": "citycraft:block/drain_cover_grid_bottom",
@@ -83,11 +83,11 @@
       "y": 90
     },
     "facing=west,type=top,waterlogged=false": {
-      "model": "citycraft:block/drain_cover_grid_slab_top",
+      "model": "citycraft:block/drain_cover_grid_top",
       "y": 90
     },
     "facing=west,type=top,waterlogged=true": {
-      "model": "citycraft:block/drain_cover_grid_slab_top",
+      "model": "citycraft:block/drain_cover_grid_top",
       "y": 90
     }
   }
