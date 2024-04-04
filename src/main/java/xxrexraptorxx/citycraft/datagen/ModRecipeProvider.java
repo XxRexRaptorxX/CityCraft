@@ -157,7 +157,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_X.get(), writer);
         slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Y.get(), writer);
         slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Z.get(), writer);
-
     }
 
 

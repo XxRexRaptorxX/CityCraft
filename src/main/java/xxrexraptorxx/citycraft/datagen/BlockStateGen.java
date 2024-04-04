@@ -4,6 +4,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -541,6 +543,8 @@ public class BlockStateGen extends BlockStateProvider {
         trafficSignBlock(ModBlocks.WINDING_ROAD_US_SIGN.get(), SignShape.RHOMBUS);
         trafficSignBlock(ModBlocks.WORKERS_US_SIGN.get(), SignShape.RHOMBUS);
         trafficSignBlock(ModBlocks.Y_INTERSECTION_US_SIGN.get(), SignShape.RHOMBUS);
+
+        fenceBlock(((FenceBlock) ModBlocks.IRON_FENCE.get()), blockTexture(ModBlocks.IRON_POLE.get()));
     }
 
 

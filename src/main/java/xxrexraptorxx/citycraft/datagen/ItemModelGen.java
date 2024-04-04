@@ -2,8 +2,11 @@ package xxrexraptorxx.citycraft.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FenceBlock;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
@@ -26,6 +29,8 @@ public class ItemModelGen extends ItemModelProvider {
         itemGenerated(ModBlocks.RED_CHAIN);
         itemGenerated(ModBlocks.BLACK_CHAIN);
         itemGenerated(ModBlocks.YELLOW_CHAIN);
+
+        fenceItem(ModBlocks.IRON_FENCE, ModBlocks.IRON_POLE);
     }
 
 
@@ -40,6 +45,11 @@ public class ItemModelGen extends ItemModelProvider {
 
     private void itemBlock(RegistryObject item) {
         withExistingParent(item.getId().getPath(), modLoc( "block/" + item.getId().getPath()));
+    }
+
+    public void fenceItem(RegistryObject<FenceBlock> block, RegistryObject<Block> textureBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  new ResourceLocation(References.MODID, "block/" + ForgeRegistries.BLOCKS.getKey(textureBlock.get()).getPath()));
     }
 
 }

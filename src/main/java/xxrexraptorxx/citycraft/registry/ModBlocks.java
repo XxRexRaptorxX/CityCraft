@@ -5,6 +5,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ChainBlock;
+import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -320,7 +321,7 @@ public class ModBlocks {
     public static final RegistryObject<BumperSlab> YELLOW_BUMPER_SLAB = registerBlock("yellow_bumper_slab", BumperSlab::new);
     public static final RegistryObject<BumperSlab> RED_BUMPER_SLAB = registerBlock("red_bumper_slab", BumperSlab::new);
 
-    public static final RegistryObject<PoleBlock> IRON_POLE = registerBlock("iron_pole", PoleBlock::new);
+    public static final RegistryObject<Block> IRON_POLE = registerBlock("iron_pole", PoleBlock::new);
     public static final RegistryObject<PoleBlock> RED_POLE = registerBlock("red_pole", PoleBlock::new);
     public static final RegistryObject<PoleBlock> WHITE_POLE = registerBlock("white_pole", PoleBlock::new);
     public static final RegistryObject<PoleBlock> YELLOW_POLE = registerBlock("yellow_pole", PoleBlock::new);
@@ -559,6 +560,8 @@ public class ModBlocks {
 
     public static final RegistryObject<DrainCoverBlock> DRAIN_COVER = registerBlock("drain_cover", DrainCoverBlock::new);
     public static final RegistryObject<DrainCoverBlock> DRAIN_COVER_GRID = registerBlock("drain_cover_grid", DrainCoverBlock::new);
+
+    public static final RegistryObject<FenceBlock> IRON_FENCE = registerBlock("iron_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(ModBlocks.IRON_POLE.get())));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-04T20:32:38.4379094	Loot Tables
+// 1.20.1	2024-04-04T21:00:43.6626643	Loot Tables
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_tables/blocks/100_speed_eu_sign.json
 dd3c3abd2471b84fca081f594e0f07afa39c7d42 data/citycraft/loot_tables/blocks/10_speed_eu_sign.json
 ee8f5504a89f1e81ed260a129c0aa566f6e82fed data/citycraft/loot_tables/blocks/120_speed_eu_sign.json
@@ -318,6 +318,7 @@ eb6de1d79989c9d305af4c309a8d2107b5775dd4 data/citycraft/loot_tables/blocks/highw
 648418441af2783033e700a3223c559cf911ab3b data/citycraft/loot_tables/blocks/info_eu_sign.json
 017bea27f5952898cd76e95bc73f0e012c3981c2 data/citycraft/loot_tables/blocks/info_us_sign.json
 5bcc3af408443f488a66430ee1c21441ad0d3bd4 data/citycraft/loot_tables/blocks/intersection_eu_sign.json
+16dc8debe05093ab3ff5092323cad7359a24c556 data/citycraft/loot_tables/blocks/iron_fence.json
 344a3c1bbf24f6c61ff35d62792b8dd6d31fb4f9 data/citycraft/loot_tables/blocks/iron_pole.json
 c5fe938d1d5f4375f456a3eaacbe7cc5a28b8f17 data/citycraft/loot_tables/blocks/jams_eu_sign.json
 8a85049d61a23d32f5477862bae30755acf6ed5c data/citycraft/loot_tables/blocks/km_ahead_eu_sign.json

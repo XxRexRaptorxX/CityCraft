@@ -43,6 +43,8 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.YELLOW_CHAIN.get());
                 output.accept(ModBlocks.BLACK_CHAIN.get());
 
+                output.accept(ModBlocks.IRON_FENCE.get());
+
                 output.accept(ModBlocks.DRAIN_COVER.get());
                 output.accept(ModBlocks.DRAIN_COVER_GRID.get());
 

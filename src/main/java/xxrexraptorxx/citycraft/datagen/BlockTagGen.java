@@ -539,7 +539,8 @@ public class BlockTagGen extends BlockTagsProvider {
                        ModBlocks.WINTER_RECREATION_AREA_US_SIGN.get(),
                        ModBlocks.WINDING_ROAD_US_SIGN.get(),
                        ModBlocks.WORKERS_US_SIGN.get(),
-                       ModBlocks.Y_INTERSECTION_US_SIGN.get()
+                       ModBlocks.Y_INTERSECTION_US_SIGN.get(),
+                       ModBlocks.IRON_FENCE.get()
                );
 
 
@@ -691,5 +692,11 @@ public class BlockTagGen extends BlockTagsProvider {
                     ModBlocks.DRAIN_COVER.get(),
                     ModBlocks.DRAIN_COVER_GRID.get()
             );
+
+
+        tag(BlockTags.FENCES)
+                .add(
+                        ModBlocks.IRON_FENCE.get()
+                );
     }
 }
