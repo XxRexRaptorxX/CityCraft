@@ -18,6 +18,7 @@ public class Config {
     public static ForgeConfigSpec.BooleanValue UPDATE_CHECKER;
     public static ForgeConfigSpec.BooleanValue PATREON_REWARDS;
 
+    public static ForgeConfigSpec.BooleanValue ENABLE_TOOLTIPS;
     public static ForgeConfigSpec.BooleanValue ENABLE_ASPHALT_SPEED_EFFECT;
     public static ForgeConfigSpec.BooleanValue SPLIT_TRAFFIC_SIGN_TAB;
     public static ForgeConfigSpec.IntValue SPEED_EFFECT_AMPLIFIER;
@@ -37,6 +38,7 @@ public class Config {
 
         builder.comment("General").push(CATEGORY_GENERAL);
         UPDATE_CHECKER = builder.comment("Activate the Update-Checker").define("update-checker", true);
+        ENABLE_TOOLTIPS = builder.comment("Enables tooltips for some blocks/items in your inventory").define("enable_tooltips", true);
         builder.pop();
 
         //builder.comment("Signs").push(CATEGORY_SIGNS);

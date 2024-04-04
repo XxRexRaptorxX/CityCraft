@@ -63,11 +63,13 @@ public class AsphaltBlock extends HorizontalDirectionalBlock {
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> list, TooltipFlag flag) {
-		if (this == ModBlocks.BOOST_ASPHALT.get()) {
-			list.add(Component.translatable("message.citycraft.boost_speed_tooltip").withStyle(ChatFormatting.GRAY));
+		if (Config.ENABLE_TOOLTIPS.get()) {
+			if (this == ModBlocks.BOOST_ASPHALT.get()) {
+				list.add(Component.translatable("message.citycraft.boost_speed_tooltip").withStyle(ChatFormatting.GRAY));
 
-		} else if (Config.ENABLE_ASPHALT_SPEED_EFFECT.get() && this != ModBlocks.POTHOLE_ASPHALT.get()) {
-			list.add(Component.translatable("message.citycraft.speed_tooltip").withStyle(ChatFormatting.GRAY));
+			} else if (Config.ENABLE_ASPHALT_SPEED_EFFECT.get() && this != ModBlocks.POTHOLE_ASPHALT.get()) {
+				list.add(Component.translatable("message.citycraft.speed_tooltip").withStyle(ChatFormatting.GRAY));
+			}
 		}
 	}
 

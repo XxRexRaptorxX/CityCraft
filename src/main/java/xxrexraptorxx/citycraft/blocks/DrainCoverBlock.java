@@ -9,21 +9,21 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.*;
-import net.minecraft.world.level.material.*;
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.SlabType;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.material.MapColor;
 import org.jetbrains.annotations.Nullable;
-import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Config;
 
 import java.util.List;
-import java.util.Optional;
 
 
 public class DrainCoverBlock extends SlabBlock {
@@ -110,6 +110,8 @@ public class DrainCoverBlock extends SlabBlock {
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> list, TooltipFlag flag) {
-		list.add(Component.translatable("message.citycraft.drain_cover_tooltip").withStyle(ChatFormatting.GRAY));
+		if (Config.ENABLE_TOOLTIPS.get()) {
+			list.add(Component.translatable("message.citycraft.drain_cover_tooltip").withStyle(ChatFormatting.GRAY));
+		}
 	}
 }
