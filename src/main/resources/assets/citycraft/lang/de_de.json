@@ -8,6 +8,7 @@
 
     "message.citycraft.speed_tooltip": "Erhöhte Bewegungsgeschwindigkeit",
     "message.citycraft.boost_speed_tooltip": "Stark erhöhte Bewegungsgeschwindigkeit",
+    "message.citycraft.drain_cover_tooltip": "Lässt Wasser nach unten durch fließen.",
 
     "item.citycraft.coal_coke": "Koks",
     "item.citycraft.coal_tar": "Steinkohlenteer",
