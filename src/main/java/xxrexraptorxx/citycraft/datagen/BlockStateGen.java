@@ -310,6 +310,7 @@ public class BlockStateGen extends BlockStateProvider {
         makeBlockItemFromExistingModel(ModBlocks.RED_BUMPER_SLAB.get());
         makeBlockItemFromExistingModel(ModBlocks.YELLOW_BUMPER_SLAB.get());
         makeBlockItemFromExistingModel(ModBlocks.ROAD_EDGE_POST.get());
+        makeBlockItemFromExistingModel(ModBlocks.ORANGE_ROAD_EDGE_POST.get());
 
         makeBlockFromParentModel(ModBlocks.STONE_POST.get(), "post");
         makeBlockFromParentModel(ModBlocks.BLACK_POST.get(), "post");

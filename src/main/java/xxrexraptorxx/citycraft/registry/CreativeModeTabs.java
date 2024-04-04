@@ -22,6 +22,7 @@ public class CreativeModeTabs {
             .displayItems((params, output) -> {
 
                 output.accept(ModBlocks.ROAD_EDGE_POST.get());
+                output.accept(ModBlocks.ORANGE_ROAD_EDGE_POST.get());
 
                 output.accept(ModBlocks.STONE_POST.get());
                 output.accept(ModBlocks.WHITE_POLE.get());

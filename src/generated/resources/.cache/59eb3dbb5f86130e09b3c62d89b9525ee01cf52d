@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-02T19:14:57.0312121	Loot Tables
+// 1.20.1	2024-04-04T20:32:38.4379094	Loot Tables
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_tables/blocks/100_speed_eu_sign.json
 dd3c3abd2471b84fca081f594e0f07afa39c7d42 data/citycraft/loot_tables/blocks/10_speed_eu_sign.json
 ee8f5504a89f1e81ed260a129c0aa566f6e82fed data/citycraft/loot_tables/blocks/120_speed_eu_sign.json
@@ -390,6 +390,7 @@ fc941ce2385376d5d830b7e9c2a64f1d535e4226 data/citycraft/loot_tables/blocks/no_ve
 f1da884f1c1ec6af83b86890c00d5a9980ed6c1c data/citycraft/loot_tables/blocks/ongoing_traffic_eu_sign.json
 f8b6434caa3a39a18b69c134ff4da679b639c0e2 data/citycraft/loot_tables/blocks/orange_asphalt.json
 ea1a2d8f1e66b29b970a45668a6babfcd30d0528 data/citycraft/loot_tables/blocks/orange_asphalt_slab.json
+2588ea5520a467279bd037459a0bf53fef6408ca data/citycraft/loot_tables/blocks/orange_road_edge_post.json
 cdda2062dfa2d02b24c47b375d3376e6532a1560 data/citycraft/loot_tables/blocks/parking_eu_sign.json
 1425a6fdacc73d25f56cd570ae5f49a2304e3f78 data/citycraft/loot_tables/blocks/parking_garage_eu_eu_sign.json
 055f2879fbc8ab3496ade80abdf45aa920df3e4d data/citycraft/loot_tables/blocks/pass_left_eu_sign.json

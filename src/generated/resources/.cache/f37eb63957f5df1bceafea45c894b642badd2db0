@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-01T20:51:47.2561279	Block States: citycraft
+// 1.20.1	2024-04-04T20:32:38.4428959	Block States: citycraft
 b51850f16e80dab0090eda4583a749cebcc5b44c assets/citycraft/blockstates/100_speed_eu_sign.json
 1dbad5fb9d00b6053a4c06a2f3e665ec6c968b8b assets/citycraft/blockstates/10_speed_eu_sign.json
 fd8eaf23a08bebcb94a0561becbd0d174ace0c9a assets/citycraft/blockstates/120_speed_eu_sign.json
@@ -1415,8 +1415,6 @@ ff75e1e6afe84861a10711af3604e9ed4fde6eca assets/citycraft/models/item/disabled_e
 eae87cc4c92898e4ee9dfed1370883af3a74d05b assets/citycraft/models/item/double_arrow_green_us_sign.json
 01323baa2a4394d3cf1890afe3a82b86db0bd7e4 assets/citycraft/models/item/double_arrow_orange_us_sign.json
 33ef63054074047d077591a0da07cf37981b894b assets/citycraft/models/item/double_arrow_yellow_us_sign.json
-0ddeb932ba37d619631aef4ebf605176336f249d assets/citycraft/models/item/drain_cover.json
-f91fb84f8bc3d95d9bbab2ac12ce59a0e252895f assets/citycraft/models/item/drain_cover_grid.json
 ff0d1591c973ac42f3a5362df0c4eae52cdcd066 assets/citycraft/models/item/drinking_water_us_sign.json
 d4a110a14fa80b5a8fa4b14087638c9db9ec37e1 assets/citycraft/models/item/electric_station_us_sign.json
 1836a463957f24b1325493619a725929112be700 assets/citycraft/models/item/emergency_bay_eu_sign.json
@@ -1516,6 +1514,7 @@ a5e41e23a466c43c32600b715a1d29c4e1f4258d assets/citycraft/models/item/no_vehicle
 63c7080425fda2db1497626c9415379563b7c4c8 assets/citycraft/models/item/ongoing_traffic_eu_sign.json
 178dd0baec809b443da75f68c6009518cd315e78 assets/citycraft/models/item/orange_asphalt.json
 376df88202b44ac833ab9c3f5cfdba50e3841797 assets/citycraft/models/item/orange_asphalt_slab.json
+c0bc153bca4c1fff66354d7fc5af2e6dce8e73b7 assets/citycraft/models/item/orange_road_edge_post.json
 e5f587a74b87664eb66cb7f69415c9a02761750c assets/citycraft/models/item/parking_eu_sign.json
 a48642a2cd2b27e1d493232c3412157540c1d483 assets/citycraft/models/item/parking_garage_eu_eu_sign.json
 b13451ff3606f97d65cfd7dfa93963bdfe362977 assets/citycraft/models/item/pass_left_eu_sign.json

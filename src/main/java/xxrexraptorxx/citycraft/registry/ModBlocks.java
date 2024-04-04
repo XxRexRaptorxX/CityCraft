@@ -328,6 +328,7 @@ public class ModBlocks {
     public static final RegistryObject<PoleBlock> RED_WHITE_POLE = registerBlock("red_white_pole", PoleBlock::new);
     public static final RegistryObject<PoleBlock> YELLOW_BLACK_POLE = registerBlock("yellow_black_pole", PoleBlock::new);
     public static final RegistryObject<DirectionalPoleBlock> ROAD_EDGE_POST = registerBlock("road_edge_post", DirectionalPoleBlock::new);
+    public static final RegistryObject<DirectionalPoleBlock> ORANGE_ROAD_EDGE_POST = registerBlock("orange_road_edge_post", DirectionalPoleBlock::new);
 
     public static final RegistryObject<PostBlock> STONE_POST = registerBlock("stone_post", PostBlock::new);
     public static final RegistryObject<PostBlock> RED_POST = registerBlock("red_post", PostBlock::new);

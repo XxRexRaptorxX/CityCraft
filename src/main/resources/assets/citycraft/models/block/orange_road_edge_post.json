@@ -1,0 +1,19 @@
+{
+  "parent": "citycraft:block/directional_pole",
+  "textures": {
+    "texture": "citycraft:block/orange_road_edge_post"
+  },
+  "display": {
+    "ground": {
+      "translation": [0, 3, 0],
+      "scale": [0.25, 0.25, 0.25]
+    },
+    "gui": {
+      "rotation": [30, 225, 0],
+      "scale": [0.625, 0.625, 0.625]
+    },
+    "head": {
+      "translation": [0, 7.5, 0]
+    }
+  }
+}
