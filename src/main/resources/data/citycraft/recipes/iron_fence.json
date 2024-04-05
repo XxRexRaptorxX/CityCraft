@@ -1,10 +1,8 @@
 {
   "conditions": [
     {
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:rods/iron"
-      }
+      "type": "forge:tag_empty",
+      "tag": "forge:rods/iron"
     }
   ],
   "type": "minecraft:crafting_shaped",
