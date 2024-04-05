@@ -6,6 +6,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
@@ -157,11 +158,37 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_X.get(), writer);
         slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Y.get(), writer);
         slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Z.get(), writer);
+
+        wallRecipes(ModBlocks.BLACK_CONCRETE_WALL.get(), Blocks.BLACK_CONCRETE, writer);
+        wallRecipes(ModBlocks.WHITE_CONCRETE_WALL.get(), Blocks.WHITE_CONCRETE, writer);
+        wallRecipes(ModBlocks.ORANGE_CONCRETE_WALL.get(), Blocks.ORANGE_CONCRETE, writer);
+        wallRecipes(ModBlocks.MAGENTA_CONCRETE_WALL.get(), Blocks.MAGENTA_CONCRETE, writer);
+        wallRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get(), Blocks.LIGHT_BLUE_CONCRETE, writer);
+        wallRecipes(ModBlocks.YELLOW_CONCRETE_WALL.get(), Blocks.YELLOW_CONCRETE, writer);
+        wallRecipes(ModBlocks.LIME_CONCRETE_WALL.get(), Blocks.LIME_CONCRETE, writer);
+        wallRecipes(ModBlocks.PINK_CONCRETE_WALL.get(), Blocks.PINK_CONCRETE, writer);
+        wallRecipes(ModBlocks.GRAY_CONCRETE_WALL.get(), Blocks.GRAY_CONCRETE, writer);
+        wallRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get(), Blocks.LIGHT_GRAY_CONCRETE, writer);
+        wallRecipes(ModBlocks.CYAN_CONCRETE_WALL.get(), Blocks.CYAN_CONCRETE, writer);
+        wallRecipes(ModBlocks.PURPLE_CONCRETE_WALL.get(), Blocks.PURPLE_CONCRETE, writer);
+        wallRecipes(ModBlocks.BLUE_CONCRETE_WALL.get(), Blocks.BLUE_CONCRETE, writer);
+        wallRecipes(ModBlocks.BROWN_CONCRETE_WALL.get(), Blocks.BROWN_CONCRETE, writer);
+        wallRecipes(ModBlocks.GREEN_CONCRETE_WALL.get(), Blocks.GREEN_CONCRETE, writer);
+        wallRecipes(ModBlocks.RED_CONCRETE_WALL.get(), Blocks.RED_CONCRETE, writer);
     }
 
 
     protected static void slabRecipes(Block output, Block input, Consumer<FinishedRecipe> writer) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, output, 6)
+                .pattern("###")
+                .define('#', input)
+                .unlockedBy(getHasName(input), has(input))
+                .save(writer);
+    }
+
+    protected static void wallRecipes(Block output, Block input, Consumer<FinishedRecipe> writer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, output, 6)
+                .pattern("###")
                 .pattern("###")
                 .define('#', input)
                 .unlockedBy(getHasName(input), has(input))

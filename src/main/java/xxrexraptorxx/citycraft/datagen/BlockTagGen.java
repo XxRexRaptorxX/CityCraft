@@ -698,5 +698,26 @@ public class BlockTagGen extends BlockTagsProvider {
                 .add(
                         ModBlocks.IRON_FENCE.get()
                 );
+
+
+        tag(BlockTags.WALLS)
+                .add(
+                        ModBlocks.BLACK_CONCRETE_WALL.get(),
+                        ModBlocks.WHITE_CONCRETE_WALL.get(),
+                        ModBlocks.ORANGE_CONCRETE_WALL.get(),
+                        ModBlocks.MAGENTA_CONCRETE_WALL.get(),
+                        ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get(),
+                        ModBlocks.YELLOW_CONCRETE_WALL.get(),
+                        ModBlocks.LIME_CONCRETE_WALL.get(),
+                        ModBlocks.PINK_CONCRETE_WALL.get(),
+                        ModBlocks.GRAY_CONCRETE_WALL.get(),
+                        ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get(),
+                        ModBlocks.CYAN_CONCRETE_WALL.get(),
+                        ModBlocks.PURPLE_CONCRETE_WALL.get(),
+                        ModBlocks.BLUE_CONCRETE_WALL.get(),
+                        ModBlocks.BROWN_CONCRETE_WALL.get(),
+                        ModBlocks.GREEN_CONCRETE_WALL.get(),
+                        ModBlocks.RED_CONCRETE_WALL.get()
+                );
     }
 }

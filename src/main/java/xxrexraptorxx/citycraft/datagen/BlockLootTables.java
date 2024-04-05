@@ -3,7 +3,6 @@ package xxrexraptorxx.citycraft.datagen;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
@@ -543,6 +542,23 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.DRAIN_COVER_GRID.get(), block -> createSlabItemTable(ModBlocks.DRAIN_COVER_GRID.get()));
 
         this.dropSelf(ModBlocks.IRON_FENCE.get());
+
+        this.dropSelf(ModBlocks.BLACK_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.WHITE_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.ORANGE_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.MAGENTA_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.YELLOW_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.LIME_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.PINK_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.GRAY_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.CYAN_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.PURPLE_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.BLUE_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.BROWN_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.GREEN_CONCRETE_WALL.get());
+        this.dropSelf(ModBlocks.RED_CONCRETE_WALL.get());
     }
 
 

@@ -2,10 +2,7 @@ package xxrexraptorxx.citycraft.registry;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.ChainBlock;
-import net.minecraft.world.level.block.FenceBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -562,6 +559,23 @@ public class ModBlocks {
     public static final RegistryObject<DrainCoverBlock> DRAIN_COVER_GRID = registerBlock("drain_cover_grid", DrainCoverBlock::new);
 
     public static final RegistryObject<FenceBlock> IRON_FENCE = registerBlock("iron_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(ModBlocks.IRON_POLE.get())));
+
+    public static final RegistryObject<WallBlock> BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_CONCRETE)));
+    public static final RegistryObject<WallBlock> WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_CONCRETE)));
+    public static final RegistryObject<WallBlock> ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_CONCRETE)));
+    public static final RegistryObject<WallBlock> MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_CONCRETE)));
+    public static final RegistryObject<WallBlock> LIGHT_BLUE_CONCRETE_WALL = registerBlock("light_blue_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_BLUE_CONCRETE)));
+    public static final RegistryObject<WallBlock> YELLOW_CONCRETE_WALL = registerBlock("yellow_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_CONCRETE)));
+    public static final RegistryObject<WallBlock> LIME_CONCRETE_WALL = registerBlock("lime_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.LIME_CONCRETE)));
+    public static final RegistryObject<WallBlock> PINK_CONCRETE_WALL = registerBlock("pink_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.PINK_CONCRETE)));
+    public static final RegistryObject<WallBlock> GRAY_CONCRETE_WALL = registerBlock("gray_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.GRAY_CONCRETE)));
+    public static final RegistryObject<WallBlock> LIGHT_GRAY_CONCRETE_WALL = registerBlock("light_gray_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_GRAY_CONCRETE)));
+    public static final RegistryObject<WallBlock> CYAN_CONCRETE_WALL = registerBlock("cyan_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.CYAN_CONCRETE)));
+    public static final RegistryObject<WallBlock> PURPLE_CONCRETE_WALL = registerBlock("purple_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_CONCRETE)));
+    public static final RegistryObject<WallBlock> BLUE_CONCRETE_WALL = registerBlock("blue_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_CONCRETE)));
+    public static final RegistryObject<WallBlock> BROWN_CONCRETE_WALL = registerBlock("brown_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_CONCRETE)));
+    public static final RegistryObject<WallBlock> GREEN_CONCRETE_WALL = registerBlock("green_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_CONCRETE)));
+    public static final RegistryObject<WallBlock> RED_CONCRETE_WALL = registerBlock("red_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.RED_CONCRETE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

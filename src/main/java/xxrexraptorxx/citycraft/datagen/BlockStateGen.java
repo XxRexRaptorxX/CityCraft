@@ -3,10 +3,7 @@ package xxrexraptorxx.citycraft.datagen;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FenceBlock;
-import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
@@ -545,6 +542,23 @@ public class BlockStateGen extends BlockStateProvider {
         trafficSignBlock(ModBlocks.Y_INTERSECTION_US_SIGN.get(), SignShape.RHOMBUS);
 
         fenceBlock(((FenceBlock) ModBlocks.IRON_FENCE.get()), blockTexture(ModBlocks.IRON_POLE.get()));
+
+        wallBlock(((WallBlock) ModBlocks.BLACK_CONCRETE_WALL.get()), blockTexture(Blocks.BLACK_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.WHITE_CONCRETE_WALL.get()), blockTexture(Blocks.WHITE_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.ORANGE_CONCRETE_WALL.get()), blockTexture(Blocks.ORANGE_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.MAGENTA_CONCRETE_WALL.get()), blockTexture(Blocks.MAGENTA_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get()), blockTexture(Blocks.LIGHT_BLUE_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.YELLOW_CONCRETE_WALL.get()), blockTexture(Blocks.YELLOW_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.LIME_CONCRETE_WALL.get()), blockTexture(Blocks.LIME_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.PINK_CONCRETE_WALL.get()), blockTexture(Blocks.PINK_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.GRAY_CONCRETE_WALL.get()), blockTexture(Blocks.GRAY_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get()), blockTexture(Blocks.LIGHT_GRAY_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.CYAN_CONCRETE_WALL.get()), blockTexture(Blocks.CYAN_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.PURPLE_CONCRETE_WALL.get()), blockTexture(Blocks.PURPLE_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.BLUE_CONCRETE_WALL.get()), blockTexture(Blocks.BLUE_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.BROWN_CONCRETE_WALL.get()), blockTexture(Blocks.BROWN_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.GREEN_CONCRETE_WALL.get()), blockTexture(Blocks.GREEN_CONCRETE));
+        wallBlock(((WallBlock) ModBlocks.RED_CONCRETE_WALL.get()), blockTexture(Blocks.RED_CONCRETE));
     }
 
 

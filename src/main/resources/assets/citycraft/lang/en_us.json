@@ -539,5 +539,22 @@
     "block.citycraft.y_intersection_us_sign": "'Warning Y-Intersection' Sign",
 
     "block.citycraft.drain_cover": "Drain Cover",
-    "block.citycraft.drain_cover_grid": "Drain Grid"
+    "block.citycraft.drain_cover_grid": "Drain Grid",
+
+    "block.citycraft.black_concrete_wall": "Black Concrete Wall",
+    "block.citycraft.white_concrete_wall": "White Concrete Wall",
+    "block.citycraft.orange_concrete_wall": "Orange Concrete Wall",
+    "block.citycraft.magenta_concrete_wall": "Magenta Concrete Wall",
+    "block.citycraft.light_blue_concrete_wall": "Light Blue Concrete Wall",
+    "block.citycraft.yellow_concrete_wall": "Yellow Concrete Wall",
+    "block.citycraft.lime_concrete_wall": "Lime Concrete Wall",
+    "block.citycraft.pink_concrete_wall": "Pink Concrete Wall",
+    "block.citycraft.gray_concrete_wall": "Gray Concrete Wall",
+    "block.citycraft.light_gray_concrete_wall": "Light Gray Concrete Wall",
+    "block.citycraft.cyan_concrete_wall": "Cyan Concrete Wall",
+    "block.citycraft.purple_concrete_wall": "Purple Concrete Wall",
+    "block.citycraft.blue_concrete_wall": "Blue Concrete Wall",
+    "block.citycraft.brown_concrete_wall": "Brown Concrete Wall",
+    "block.citycraft.green_concrete_wall": "Green Concrete Wall",
+    "block.citycraft.red_concrete_wall": "Red Concrete Wall"
 }

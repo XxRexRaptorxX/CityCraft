@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_rconcrete_wall",
+  "ingredients": [
+    {
+      "tag": "forge:walls/concrete"
+    },
+    {
+      "tag": "forge:dyes/red"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:red_concrete_wall"
+  }
+}
