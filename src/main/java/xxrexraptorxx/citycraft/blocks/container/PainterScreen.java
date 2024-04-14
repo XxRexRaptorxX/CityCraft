@@ -19,7 +19,7 @@ import java.util.List;
 @OnlyIn(Dist.CLIENT)
 public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
-    private static final ResourceLocation BG_LOCATION = new ResourceLocation(References.MODID, ":textures/gui/container/painter.png");
+    private static final ResourceLocation BG_LOCATION = new ResourceLocation(References.MODID, "textures/gui/container/painter.png");
     private static final int SCROLLER_WIDTH = 12;
     private static final int SCROLLER_HEIGHT = 15;
     private static final int RECIPES_COLUMNS = 4;
