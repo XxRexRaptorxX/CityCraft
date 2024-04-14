@@ -11,14 +11,15 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import xxrexraptorxx.citycraft.utils.PaintingRecipe;
+import xxrexraptorxx.citycraft.main.References;
+import xxrexraptorxx.citycraft.utils.IPaintingRecipe;
 
 import java.util.List;
 
 @OnlyIn(Dist.CLIENT)
 public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
-    private static final ResourceLocation BG_LOCATION = new ResourceLocation("minecraft:textures/gui/container/stonecutter.png");
+    private static final ResourceLocation BG_LOCATION = new ResourceLocation(References.MODID, ":textures/gui/container/painter.png");
     private static final int SCROLLER_WIDTH = 12;
     private static final int SCROLLER_HEIGHT = 15;
     private static final int RECIPES_COLUMNS = 4;
@@ -76,7 +77,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
             int i = this.leftPos + 52;
             int j = this.topPos + 14;
             int k = this.startIndex + 12;
-            List<PaintingRecipe> list = this.menu.getRecipes();
+            List<IPaintingRecipe> list = this.menu.getRecipes();
 
             for(int l = this.startIndex; l < k && l < this.menu.getNumRecipes(); ++l) {
                 int i1 = l - this.startIndex;
@@ -111,7 +112,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
 
     private void renderRecipes(GuiGraphics pGuiGraphics, int pX, int pY, int pStartIndex) {
-        List<PaintingRecipe> list = this.menu.getRecipes();
+        List<IPaintingRecipe> list = this.menu.getRecipes();
 
         for(int i = this.startIndex; i < pStartIndex && i < this.menu.getNumRecipes(); ++i) {
             int j = i - this.startIndex;
