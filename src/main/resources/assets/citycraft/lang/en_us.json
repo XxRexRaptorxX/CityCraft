@@ -556,5 +556,7 @@
     "block.citycraft.blue_concrete_wall": "Blue Concrete Wall",
     "block.citycraft.brown_concrete_wall": "Brown Concrete Wall",
     "block.citycraft.green_concrete_wall": "Green Concrete Wall",
-    "block.citycraft.red_concrete_wall": "Red Concrete Wall"
+    "block.citycraft.red_concrete_wall": "Red Concrete Wall",
+
+    "block.citycraft.block_painter": "Block Painter"
 }

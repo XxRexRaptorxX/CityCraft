@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-05T23:48:57.9376612	Block States: citycraft
+// 1.20.1	2024-04-06T01:12:52.0699219	Block States: citycraft
 b51850f16e80dab0090eda4583a749cebcc5b44c assets/citycraft/blockstates/100_speed_eu_sign.json
 1dbad5fb9d00b6053a4c06a2f3e665ec6c968b8b assets/citycraft/blockstates/10_speed_eu_sign.json
 fd8eaf23a08bebcb94a0561becbd0d174ace0c9a assets/citycraft/blockstates/120_speed_eu_sign.json
@@ -1439,6 +1439,7 @@ e8ecd3e1ab88989249ddba7057b3be65fe36193b assets/citycraft/models/item/bathrooms_
 cee4a87bba0767a2da76a37900a6d3a1015833d3 assets/citycraft/models/item/bicycle_path_eu_sign.json
 86e0c9238afc9638b103ad7f68248244e6f8fdaf assets/citycraft/models/item/black_pole.json
 d15abf536f9870514dddf14349f85b3bda48bdca assets/citycraft/models/item/black_post.json
+503f19004d85e8cc8a71324e65bdf70db8cff9f5 assets/citycraft/models/item/block_painter.json
 c5255e4120b57ac506ae47d26d1f22736170579e assets/citycraft/models/item/blue_asphalt.json
 4ae0ca1232a9c7d4e1bd10136b0d80877da188f8 assets/citycraft/models/item/blue_asphalt_slab.json
 a23e80226a37fb1b78f96288ea9619b19afd0951 assets/citycraft/models/item/boost_asphalt.json

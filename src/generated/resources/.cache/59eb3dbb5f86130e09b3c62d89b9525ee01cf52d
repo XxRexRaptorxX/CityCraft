@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-05T23:48:57.9336722	Loot Tables
+// 1.20.1	2024-04-06T01:12:52.0659327	Loot Tables
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_tables/blocks/100_speed_eu_sign.json
 dd3c3abd2471b84fca081f594e0f07afa39c7d42 data/citycraft/loot_tables/blocks/10_speed_eu_sign.json
 ee8f5504a89f1e81ed260a129c0aa566f6e82fed data/citycraft/loot_tables/blocks/120_speed_eu_sign.json
@@ -247,6 +247,7 @@ e1e47ed893ca8ded1d1a64630b6cd72f83b76238 data/citycraft/loot_tables/blocks/black
 519f924245c4d2bb196fe848408ef16558aa6e22 data/citycraft/loot_tables/blocks/black_concrete_wall.json
 128441ecd917f1694f4784432507e858cc332783 data/citycraft/loot_tables/blocks/black_pole.json
 ea5bc39383d27dccf40c5671b6bd82a1f05fcd38 data/citycraft/loot_tables/blocks/black_post.json
+27dd324dca97fe7da2087321216d9b443439904a data/citycraft/loot_tables/blocks/block_painter.json
 5a8dc712ac21d9af82fd28b8a76af392a58b3df6 data/citycraft/loot_tables/blocks/blue_asphalt.json
 663f422646352a08ebf2843fef4ffedf5bcf4866 data/citycraft/loot_tables/blocks/blue_asphalt_slab.json
 317aef28954bee33027d3c0ea2f67fe355ddf686 data/citycraft/loot_tables/blocks/blue_concrete_wall.json

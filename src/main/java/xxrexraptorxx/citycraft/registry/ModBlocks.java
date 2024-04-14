@@ -577,6 +577,8 @@ public class ModBlocks {
     public static final RegistryObject<WallBlock> GREEN_CONCRETE_WALL = registerBlock("green_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_CONCRETE)));
     public static final RegistryObject<WallBlock> RED_CONCRETE_WALL = registerBlock("red_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.RED_CONCRETE)));
 
+    public static final RegistryObject<PainterBlock> BLOCK_PAINTER = registerBlock("block_painter", PainterBlock::new);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

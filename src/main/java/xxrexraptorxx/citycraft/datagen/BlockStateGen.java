@@ -559,6 +559,8 @@ public class BlockStateGen extends BlockStateProvider {
         wallBlock(((WallBlock) ModBlocks.BROWN_CONCRETE_WALL.get()), blockTexture(Blocks.BROWN_CONCRETE));
         wallBlock(((WallBlock) ModBlocks.GREEN_CONCRETE_WALL.get()), blockTexture(Blocks.GREEN_CONCRETE));
         wallBlock(((WallBlock) ModBlocks.RED_CONCRETE_WALL.get()), blockTexture(Blocks.RED_CONCRETE));
+
+        makeBlockItemFromExistingModel(ModBlocks.BLOCK_PAINTER.get());
     }
 
 

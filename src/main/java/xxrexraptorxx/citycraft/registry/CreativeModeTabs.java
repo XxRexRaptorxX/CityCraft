@@ -66,6 +66,8 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.YELLOW_CHAIN.get());
                 output.accept(ModBlocks.BLACK_CHAIN.get());
 
+                output.accept(ModBlocks.BLOCK_PAINTER.get());
+
                 output.accept(ModItems.COAL_COKE.get());
                 output.accept(ModItems.ASPHALT_MIXTURE.get());
                 output.accept(ModItems.COAL_TAR.get());

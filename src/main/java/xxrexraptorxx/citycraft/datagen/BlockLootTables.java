@@ -559,6 +559,8 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.BROWN_CONCRETE_WALL.get());
         this.dropSelf(ModBlocks.GREEN_CONCRETE_WALL.get());
         this.dropSelf(ModBlocks.RED_CONCRETE_WALL.get());
+
+        this.dropSelf(ModBlocks.BLOCK_PAINTER.get());
     }
 
 

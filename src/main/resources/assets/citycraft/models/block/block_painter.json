@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "citycraft:block/painter_bottom",
+    "east": "citycraft:block/painter_side",
+    "north": "citycraft:block/painter_side",
+    "particle": "citycraft:block/painter_top",
+    "south": "citycraft:block/painter_side",
+    "up": "citycraft:block/painter_top",
+    "west": "citycraft:block/painter_side"
+  }
+}

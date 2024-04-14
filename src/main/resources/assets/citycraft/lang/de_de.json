@@ -556,5 +556,7 @@
     "block.citycraft.blue_concrete_wall": "Blauer Beton Mauer",
     "block.citycraft.brown_concrete_wall": "Brauner Beton Mauer",
     "block.citycraft.green_concrete_wall": "Grüner Beton Mauer",
-    "block.citycraft.red_concrete_wall": "Roter Beton Mauer"
+    "block.citycraft.red_concrete_wall": "Roter Beton Mauer",
+
+    "block.citycraft.block_painter": "Block Bemaler"
 }
