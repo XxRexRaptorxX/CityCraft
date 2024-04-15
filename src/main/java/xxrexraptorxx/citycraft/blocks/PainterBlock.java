@@ -8,12 +8,12 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerLevelAccess;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.BlockHitResult;
 import xxrexraptorxx.citycraft.blocks.container.PainterMenu;
 import xxrexraptorxx.citycraft.main.References;
@@ -29,9 +29,9 @@ public class PainterBlock extends Block {
 	public PainterBlock() {
 		super(Properties.of()
 				.strength(2.5F)
-				.sound(SoundType.STONE)
-				.mapColor(DyeColor.GRAY)
-				.instrument(NoteBlockInstrument.BELL)
+				.sound(SoundType.METAL)
+				.mapColor(MapColor.METAL)
+				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 		);
 	}
 
@@ -43,7 +43,7 @@ public class PainterBlock extends Block {
 
 		} else {
 			player.openMenu(state.getMenuProvider(level, pos));
-			//player.awardStat(Stats.INTERACT_WITH_STONECUTTER); TODO!
+			//player.awardStat(Stats.INTERACT_WITH_PAINTER); TODO!
 
 			return InteractionResult.CONSUME;
 		}

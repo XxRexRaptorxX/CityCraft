@@ -15,9 +15,6 @@ public class Registration {
         if (event.getRegistryKey().equals(ForgeRegistries.Keys.MENU_TYPES)) {
             ModMenuTypes.onRegister(event);
 
-        } else if (event.getRegistryKey().equals(ForgeRegistries.Keys.RECIPE_SERIALIZERS)) {
-            ModRecipeSerializers.onRegister(event);
-
         } else if (event.getRegistryKey().equals(ForgeRegistries.Keys.RECIPE_TYPES)) {
             ModRecipeTypes.onRegister(event);
         }

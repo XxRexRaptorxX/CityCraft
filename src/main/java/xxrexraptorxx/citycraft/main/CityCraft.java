@@ -30,7 +30,9 @@ public class CityCraft {
         ModItems.init();
         Config.init();
         CreativeModeTabs.init();
+        ModRecipeSerializers.init();
         modBus.addListener(this::clientSetup);
+
     }
 
     private void clientSetup(FMLClientSetupEvent event) {

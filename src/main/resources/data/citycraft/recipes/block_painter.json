@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+
+  "pattern": [
+    "#I#",
+    "###"
+  ],
+
+  "key": {
+    "#": {
+      "tag": "forge:ingots/iron"
+    },
+    "I": {
+      "item": "minecraft:brush"
+    }
+  },
+
+  "result": {
+    "item": "citycraft:block_painter",
+    "count": 1
+  }
+}

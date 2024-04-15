@@ -5,12 +5,12 @@ import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
 import xxrexraptorxx.citycraft.main.References;
+import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
 import xxrexraptorxx.citycraft.utils.Helper;
-import xxrexraptorxx.citycraft.utils.PaintingRecipe;
 
 public class ModRecipeTypes {
 
-    public static RecipeType<PaintingRecipe> PAINTING = Helper.unsafeNullCast();
+    public static RecipeType<IPaintingRecipe> PAINTING = Helper.unsafeNullCast();
 
 
     static void onRegister(final RegisterEvent event) {

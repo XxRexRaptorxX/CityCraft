@@ -1,9 +1,0 @@
-{
-  "type": "citycraft:painting",
-  "ingredient":
-  {
-    "tag": "forge:ingots/iron"
-  },
-  "result": "minecraft:cobblestone",
-  "count": 1
-}

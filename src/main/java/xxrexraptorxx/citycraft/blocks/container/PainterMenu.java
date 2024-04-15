@@ -1,6 +1,5 @@
 package xxrexraptorxx.citycraft.blocks.container;
 
-import com.google.common.collect.Lists;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Container;
@@ -8,178 +7,92 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.items.ItemHandlerHelper;
+import net.minecraft.world.level.block.state.BlockState;
+import org.apache.commons.compress.utils.Lists;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.registry.ModMenuTypes;
 import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
-import xxrexraptorxx.citycraft.utils.PaintingRecipe;
+import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
+import xxrexraptorxx.citycraft.recipes.PaintingRecipe;
 
+import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Optional;
 
-public class PainterMenu extends AbstractContainerMenu {
-
-    private final ContainerLevelAccess access;
-    private final DataSlot selectedRecipeIndex = DataSlot.standalone();
-    private final Level level;
-    private List<PaintingRecipe> recipes = Lists.newArrayList();
-    private ItemStack input = ItemStack.EMPTY;
-    private long lastSoundTime;
-    private final Slot inputSlot;
-    private final Slot resultSlot;
-    private Runnable slotUpdateListener = () -> {};
-    private final Container inputInventory = new SimpleContainer(1) {
-
-        @Override
-        public void setChanged() {
-            super.setChanged();
-            slotsChanged(this);
-            slotUpdateListener.run();
-        }
-    };
+public class PainterMenu extends ItemCombinerMenu {
 
     private final ResultContainer resultContainer = new ResultContainer();
+    private final Level level;
+    private Runnable slotUpdateListener = () -> {};
+    @Nullable
+    private PaintingRecipe selectedRecipe;
+    private final DataSlot selectedRecipeIndex = DataSlot.standalone();
+    private List<IPaintingRecipe> recipes = Lists.newArrayList();
+    private List<IPaintingRecipe> allRecipes;
+    private ItemStack input = ItemStack.EMPTY;
+    private ItemStack color = ItemStack.EMPTY;
 
     public PainterMenu(int id, Inventory playerInventory) {
         this(id, playerInventory, ContainerLevelAccess.NULL);
     }
 
     public PainterMenu(int id, Inventory playerInventory, final ContainerLevelAccess access) {
-        super(ModMenuTypes.PAINTER, id);
-        this.access = access;
+        super(ModMenuTypes.PAINTER, id, playerInventory, access);
         this.level = playerInventory.player.level();
-        this.inputSlot = addSlot(new Slot(this.inputInventory, 0, 20, 33));
-        this.resultSlot = addSlot(new Slot(this.resultContainer, 1, 143, 33) {
-
-            @Override
-            public boolean mayPlace(ItemStack stack) {
-                return false;
-            }
+        this.allRecipes = this.level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.PAINTING);
+    }
 
 
-            @Override
-            public void onTake(Player playerIn, ItemStack stack) {
-                stack.onCraftedBy(playerIn.level(), playerIn, stack.getCount());
-                resultContainer.awardUsedRecipes(playerIn, getRelevantItems());
-                ItemStack itemstack = inputSlot.remove(1);
-                if (!itemstack.isEmpty()) {
-                    setupResultSlot();
-                }
-                access.execute((world, pos) -> {
-                    long l = world.getGameTime();
-                    if (lastSoundTime != l) {
-                        world.playSound(null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS, 1f, 1f);
-                        lastSoundTime = l;
-                    }
-                });
-                super.onTake(playerIn, stack);
-            }
+    @Override
+    public boolean mayPickup(Player player, boolean hasStack) {
+        return this.selectedRecipe != null && this.selectedRecipe.matches(this.inputSlots, this.level);
+    }
 
-            private List<ItemStack> getRelevantItems() {
-                return List.of(inputSlot.getItem());
-            }
+
+    @Override
+    public void onTake(Player player, ItemStack stack) {
+        stack.onCraftedBy(player.level(), player, stack.getCount());
+        this.resultSlots.awardUsedRecipes(player, this.getRelevantItems());
+        this.shrinkStackInSlot(0);
+        this.shrinkStackInSlot(1);
+        this.access.execute((p_40263_, p_40264_) -> {
+            player.level().playSound(null, player.getOnPos(), SoundEvents.BRUSH_GENERIC, SoundSource.BLOCKS, 1f, 1f);
+            p_40263_.levelEvent(1044, p_40264_, 0);
         });
-        for (int i = 0; i < 3; ++i) {
-            for (int j = 0; j < 9; ++j) {
-                addSlot(new Slot(playerInventory, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
-            }
-        }
-        for (int k = 0; k < 9; ++k) {
-            addSlot(new Slot(playerInventory, k, 8 + k * 18, 142));
-        }
-        addDataSlot(this.selectedRecipeIndex);
     }
 
 
-    public int getSelectedRecipeIndex() {
-        return this.selectedRecipeIndex.get();
-    }
-
-
-    public List<PaintingRecipe> getRecipes() {
-        return this.recipes;
-    }
-
-
-    public int getNumRecipes() {
-        return this.recipes.size();
-    }
-
-
-    public boolean hasInputItem() {
-        return this.inputSlot.hasItem() && !this.recipes.isEmpty();
+    private List<ItemStack> getRelevantItems() {
+        return List.of(this.inputSlots.getItem(0), this.inputSlots.getItem(1));
     }
 
 
     @Override
-    public boolean stillValid(Player player) {
-        return stillValid(this.access, player, ModBlocks.BLOCK_PAINTER.get());
+    public ItemCombinerMenuSlotDefinition createInputSlotDefinitions() {
+        return ItemCombinerMenuSlotDefinition.create()
+                //BASE INGREDIENT SLOT
+                .withSlot(0, 20, 20, (ingredient) -> {
+                    return this.allRecipes.stream().anyMatch((matchedIngredientRecipes) -> {
+                        return matchedIngredientRecipes.isBaseIngredient(ingredient);
+                    });
+                    //COLOR INGREDIENT SLOT
+                }).withSlot(1, 20, 48, (color) -> {
+                    return this.allRecipes.stream().anyMatch((matchedColorRecipes) -> {
+                        return matchedColorRecipes.isColorIngredient(color);
+                    });
+                    //RESULT SLOT
+                }).withResultSlot(2, 143, 33).build();
     }
 
 
-    @Override
-    public boolean clickMenuButton(Player playerIn, int id) {
-        if (isValidRecipeIndex(id)) {
-            this.selectedRecipeIndex.set(id);
-            setupResultSlot();
+    private void shrinkStackInSlot(int index) {
+        ItemStack itemstack = this.inputSlots.getItem(index);
+        if (!itemstack.isEmpty()) {
+            itemstack.shrink(1);
+            this.inputSlots.setItem(index, itemstack);
         }
-        return true;
-    }
-
-
-    private boolean isValidRecipeIndex(int id) {
-        return id >= 0 && id < this.recipes.size();
-    }
-
-
-    @Override
-    public void slotsChanged(Container inventoryIn) {
-        ItemStack stack = this.inputSlot.getItem();
-        if (stack.getItem() != this.input.getItem()) {
-            this.input = stack.copy();
-            setupRecipeList(inventoryIn, stack);
-        }
-    }
-
-
-    private void setupRecipeList(Container container, ItemStack stack) {
-        this.recipes.clear();
-        this.selectedRecipeIndex.set(-1);
-        this.resultSlot.set(ItemStack.EMPTY);
-        if (!stack.isEmpty()) {
-            this.recipes = this.level.getRecipeManager().getRecipesFor(ModRecipeTypes.PAINTING, container, this.level);
-        }
-
-    }
-
-
-    private void setupResultSlot() {
-        if (!this.recipes.isEmpty() && isValidRecipeIndex(this.selectedRecipeIndex.get())) {
-            PaintingRecipe recipeHolder = this.recipes.get(this.selectedRecipeIndex.get());
-            ItemStack stack = recipeHolder.assemble(this.inputInventory, this.level.registryAccess());
-            if (stack.isItemEnabled(this.level.enabledFeatures())) {
-                this.resultContainer.setRecipeUsed(recipeHolder);
-                this.resultSlot.set(stack);
-            } else {
-                this.resultSlot.set(ItemStack.EMPTY);
-            }
-        } else {
-            this.resultSlot.set(ItemStack.EMPTY);
-        }
-        broadcastChanges();
-    }
-
-
-    @Override
-    public MenuType<?> getType() {
-        return ModMenuTypes.PAINTER;
-    }
-
-
-    public void registerUpdateListener(Runnable runnable) {
-        this.slotUpdateListener = runnable;
     }
 
 
@@ -190,60 +103,171 @@ public class PainterMenu extends AbstractContainerMenu {
 
 
     @Override
-    public ItemStack quickMoveStack(Player playerIn, int index) {
-        ItemStack stack = ItemStack.EMPTY;
-        Slot slot = this.slots.get(index);
-        if (slot != null && slot.hasItem()) {
-            ItemStack itemstack1 = slot.getItem();
-            Item item = itemstack1.getItem();
-            stack = itemstack1.copy();
-            if (index == 1) {
-                item.onCraftedBy(itemstack1, playerIn.level(), playerIn);
-                if (!this.moveItemStackTo(itemstack1, 2, 38, true)) {
-                    return ItemStack.EMPTY;
-                }
-                slot.onQuickCraft(itemstack1, stack);
-            } else if (index == 0) {
-                if (!this.moveItemStackTo(itemstack1, 2, 38, false)) {
-                    return ItemStack.EMPTY;
-                }
-            } else if (this.level.getRecipeManager().getRecipeFor(ModRecipeTypes.PAINTING, new SimpleContainer(itemstack1), this.level).isPresent()) {
-                if (!this.moveItemStackTo(itemstack1, 0, 1, false)) {
-                    return ItemStack.EMPTY;
-                }
-            } else if (index < 29) {
-                if (!this.moveItemStackTo(itemstack1, 29, 38, false)) {
-                    return ItemStack.EMPTY;
-                }
-            } else if (index < 38 && !this.moveItemStackTo(itemstack1, 2, 29, false)) {
-                return ItemStack.EMPTY;
-            }
-            if (itemstack1.isEmpty()) {
-                slot.set(ItemStack.EMPTY);
-            }
-            slot.setChanged();
-            if (itemstack1.getCount() == stack.getCount()) {
-                return ItemStack.EMPTY;
-            }
-            slot.onTake(playerIn, itemstack1);
-            broadcastChanges();
-        }
-
-        return stack;
+    public boolean isValidBlock(BlockState state) {
+        return state.is(ModBlocks.BLOCK_PAINTER.get());
     }
 
 
     @Override
-    public void removed(Player playerIn) {
-        super.removed(playerIn);
-        if (this.access == ContainerLevelAccess.NULL) {
-            ItemStack leftStack = this.inputInventory.removeItemNoUpdate(0);
-            if (!leftStack.isEmpty()) {
-                ItemHandlerHelper.giveItemToPlayer(playerIn, leftStack);
-            }
-        } else {
-            this.access.execute((world, pos) -> clearContainer(playerIn, this.inputInventory));
-        }
-        this.resultContainer.removeItemNoUpdate(0);
+    public boolean canMoveIntoInputSlots(ItemStack stack) {
+        return this.allRecipes.stream().map((recipeMap) -> {
+            return findSlotMatchingIngredient(recipeMap, stack);
+        }).anyMatch(Optional::isPresent);
     }
+
+
+    private static Optional<Integer> findSlotMatchingIngredient(IPaintingRecipe recipe, ItemStack stack) {
+        if (recipe.isColorIngredient(stack)) {
+            return Optional.of(1);
+        } else {
+            return Optional.of(0);
+        }
+    }
+
+
+    @Override
+    public int getSlotToQuickMoveTo(ItemStack stack) {
+        return this.allRecipes.stream().map((recipeMap) -> {
+            return findSlotMatchingIngredient(recipeMap, stack);
+        }).filter(Optional::isPresent).findFirst().orElse(Optional.of(0)).get();
+    }
+
+
+    public void createResult() {
+        List<IPaintingRecipe> list = this.level.getRecipeManager().getRecipesFor(ModRecipeTypes.PAINTING, this.inputSlots, this.level);
+
+        if (list.isEmpty()) {
+            this.resultSlots.setItem(0, ItemStack.EMPTY);
+
+        } else {
+            IPaintingRecipe recipe = list.get(0);
+            ItemStack itemstack = recipe.assemble(this.inputSlots, this.level.registryAccess());
+
+            if (itemstack.isItemEnabled(this.level.enabledFeatures())) {
+                this.selectedRecipe = (PaintingRecipe) recipe;
+                this.resultSlots.setRecipeUsed(recipe);
+                this.resultSlots.setItem(0, itemstack);
+            }
+        }
+
+    }
+
+
+    /////STONECUTTER CODE PARTS/////
+
+
+    public final Container container = new SimpleContainer(2) {
+        /**
+         * For block entities, ensures the chunk containing the block entity is saved to disk later - the game won't think
+         * it hasn't changed and skip it.
+         */
+        @Override
+        public void setChanged() {
+            super.setChanged();
+            PainterMenu.this.slotsChanged(this);
+            PainterMenu.this.slotUpdateListener.run();
+        }
+    };
+
+    @Override
+    public boolean stillValid(Player player) {
+        return stillValid(this.access, player, ModBlocks.BLOCK_PAINTER.get());
+    }
+
+
+    @Override
+    public boolean clickMenuButton(Player player, int id) {
+        if (isValidRecipeIndex(id)) {
+            this.selectedRecipeIndex.set(id);
+            setupResultSlot();
+        }
+
+        return true;
+    }
+
+
+    private boolean isValidRecipeIndex(int id) {
+        return id >= 0 && id < this.recipes.size();
+    }
+
+
+    public int getSelectedRecipeIndex() {
+        return this.selectedRecipeIndex.get();
+    }
+
+
+    public List<IPaintingRecipe> getRecipes() {
+        return this.recipes;
+    }
+
+
+    public int getNumRecipes() {
+        return this.recipes.size();
+    }
+
+
+    @Override
+    public void slotsChanged(Container inventory) {
+        ItemStack input = this.inputSlots.getItem(0);
+        ItemStack color = this.inputSlots.getItem(1);
+
+        if (!input.is(this.input.getItem())) {
+            this.input = input.copy();
+            setupRecipeList(inventory, input, color);
+        }
+        if (!color.is(this.color.getItem())) {
+            this.color = color.copy();
+            setupRecipeList(inventory, input, color);
+        }
+    }
+
+
+    private void setupRecipeList(Container container, ItemStack input, ItemStack color) {
+        this.recipes.clear();
+        this.selectedRecipeIndex.set(-1);
+        this.resultSlots.setItem(2, ItemStack.EMPTY);
+
+        if (!input.isEmpty() && !color.isEmpty()) {
+            this.recipes = this.level.getRecipeManager().getRecipesFor(ModRecipeTypes.PAINTING, container, this.level);
+        }
+
+    }
+
+
+    private void setupResultSlot() {
+        if (!this.recipes.isEmpty() && isValidRecipeIndex(this.selectedRecipeIndex.get())) {
+            IPaintingRecipe recipeHolder = this.recipes.get(this.selectedRecipeIndex.get());
+            ItemStack stack = recipeHolder.assemble(this.inputSlots, this.level.registryAccess());
+
+            if (stack.isItemEnabled(this.level.enabledFeatures())) {
+                this.resultContainer.setRecipeUsed(recipeHolder);
+                this.resultSlots.setItem(2, stack);
+
+            } else {
+                this.resultSlots.setItem(2, ItemStack.EMPTY);
+            }
+
+        } else {
+            this.resultSlots.setItem(2, ItemStack.EMPTY);
+        }
+
+        broadcastChanges();
+    }
+
+
+    @Override
+    public MenuType<?> getType() {
+        return ModMenuTypes.PAINTER;
+    }
+
+
+    public boolean hasInputItem() {
+        return !this.inputSlots.getItem(0).isEmpty() && !this.inputSlots.getItem(1).isEmpty() && !this.recipes.isEmpty();
+    }
+
+
+    public void registerUpdateListener(Runnable runnable) {
+        this.slotUpdateListener = runnable;
+    }
+
 }
