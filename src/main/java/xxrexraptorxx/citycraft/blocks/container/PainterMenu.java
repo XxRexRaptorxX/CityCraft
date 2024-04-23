@@ -9,10 +9,8 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.StonecutterRecipe;
 import net.minecraft.world.level.Level;
 import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
-import xxrexraptorxx.citycraft.recipes.PaintingRecipe;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.registry.ModMenuTypes;
 import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
@@ -121,14 +119,13 @@ public class PainterMenu extends AbstractContainerMenu {
 
     @Override
     public boolean clickMenuButton(Player player, int id) {
-        if (id >= 0 && id < this.recipes.size()) {
+        if (this.isValidRecipeIndex(id)) {
+            this.selectedRecipeIndex.set(id);
             this.setupResultSlot();
-            return true;
-        } else {
-            return false;
         }
-    }
 
+        return true;
+    }
 
     @Override
     public void slotsChanged(Container inventory) {
@@ -142,26 +139,32 @@ public class PainterMenu extends AbstractContainerMenu {
     }
 
 
-    private void setupRecipeList(Container inventory, ItemStack stack1, ItemStack stack2) {
+    private void setupRecipeList(Container container, ItemStack stack1, ItemStack stack2) {
         this.recipes.clear();
+        this.selectedRecipeIndex.set(-1);
         this.resultSlot.set(ItemStack.EMPTY);
         if (!stack1.isEmpty() && !stack2.isEmpty()) {
-            this.recipes = this.level.getRecipeManager().getRecipesFor(ModRecipeTypes.PAINTING, inventory, this.level);
+            this.recipes = this.level.getRecipeManager().getRecipesFor(ModRecipeTypes.PAINTING, container, this.level);
         }
     }
 
 
     private void setupResultSlot() {
-        if (!this.recipes.isEmpty() && this.inputSlot1.hasItem() && this.inputSlot2.hasItem()) {
-            IPaintingRecipe recipe = this.recipes.get(this.selectedRecipeIndex.get());//TODO
+        if (!this.recipes.isEmpty() && this.inputSlot1.hasItem() && this.inputSlot2.hasItem() &&  this.isValidRecipeIndex(this.selectedRecipeIndex.get())) {
+            IPaintingRecipe recipe = this.recipes.get(this.selectedRecipeIndex.get()); //TODO
             ItemStack resultStack = recipe.assemble(new SimpleContainer(this.inputSlot1.getItem(), this.inputSlot2.getItem()), this.level.registryAccess());
-            if (!resultStack.isEmpty()) {
+
+            if (resultStack.isItemEnabled(this.level.enabledFeatures())) {
                 this.resultContainer.setRecipeUsed(recipe);
                 this.resultSlot.set(resultStack);
+
+            } else {
+                this.resultSlot.set(ItemStack.EMPTY);
             }
         } else {
             this.resultSlot.set(ItemStack.EMPTY);
         }
+
         this.broadcastChanges();
     }
 
@@ -170,8 +173,10 @@ public class PainterMenu extends AbstractContainerMenu {
     public void removed(Player player) {
         super.removed(player);
         this.resultContainer.removeItemNoUpdate(RESULT_SLOT);
+        this.access.execute((p_40313_, p_40314_) -> {
+            this.clearContainer(player, this.container);
+        });
     }
-
 
     ///////////////////
 
@@ -309,5 +314,6 @@ public class PainterMenu extends AbstractContainerMenu {
             PainterMenu.this.slotUpdateListener.run();
         }
     };
+
 
 }
