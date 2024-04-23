@@ -42,6 +42,15 @@ public class PainterMenu extends AbstractContainerMenu {
     private final DataSlot selectedRecipeIndex = DataSlot.standalone();
     private final List<Integer> inputSlotIndexes = List.of(0, 1);
 
+    private final Container container = new SimpleContainer(2) {
+        @Override
+        public void setChanged() {
+            super.setChanged();
+            PainterMenu.this.slotsChanged(this);
+            PainterMenu.this.slotUpdateListener.run();
+        }
+    };
+
 
     public PainterMenu(int containerId, Inventory playerInventory) {
         this(containerId, playerInventory, ContainerLevelAccess.NULL);
@@ -107,7 +116,7 @@ public class PainterMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInventory, k, startX + k * 18, 142));
         }
 
-        //this.addDataSlot(new DataSlot(0)); // Add any additional data slots needed
+        this.addDataSlot(this.selectedRecipeIndex);
     }
 
 
@@ -131,7 +140,7 @@ public class PainterMenu extends AbstractContainerMenu {
     public void slotsChanged(Container inventory) {
         ItemStack stack1 = this.inputSlot1.getItem();
         ItemStack stack2 = this.inputSlot2.getItem();
-        if (!ItemStack.matches(stack1, this.input1) || !ItemStack.matches(stack2, this.input2)) {
+        if (!stack1.is(this.input1.getItem()) || !stack2.is(this.input2.getItem())) {
             this.input1 = stack1.copy();
             this.input2 = stack2.copy();
             this.setupRecipeList(this.container, stack1, stack2);
@@ -150,9 +159,9 @@ public class PainterMenu extends AbstractContainerMenu {
 
 
     private void setupResultSlot() {
-        if (!this.recipes.isEmpty() && this.inputSlot1.hasItem() && this.inputSlot2.hasItem() &&  this.isValidRecipeIndex(this.selectedRecipeIndex.get())) {
-            IPaintingRecipe recipe = this.recipes.get(this.selectedRecipeIndex.get()); //TODO
-            ItemStack resultStack = recipe.assemble(new SimpleContainer(this.inputSlot1.getItem(), this.inputSlot2.getItem()), this.level.registryAccess());
+        if (!this.recipes.isEmpty() && this.isValidRecipeIndex(this.selectedRecipeIndex.get())) {
+            IPaintingRecipe recipe = this.recipes.get(this.selectedRecipeIndex.get());
+            ItemStack resultStack = recipe.assemble(this.container, this.level.registryAccess());
 
             if (resultStack.isItemEnabled(this.level.enabledFeatures())) {
                 this.resultContainer.setRecipeUsed(recipe);
@@ -304,16 +313,6 @@ public class PainterMenu extends AbstractContainerMenu {
     public boolean hasInputItem() {
         return this.inputSlot1.hasItem() && this.inputSlot2.hasItem() && !this.recipes.isEmpty();
     }
-
-
-    private final Container container = new SimpleContainer(2) {
-        @Override
-        public void setChanged() {
-            super.setChanged();
-            PainterMenu.this.slotsChanged(this);
-            PainterMenu.this.slotUpdateListener.run();
-        }
-    };
 
 
 }

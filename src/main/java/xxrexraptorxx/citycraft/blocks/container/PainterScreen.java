@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.Slot;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import xxrexraptorxx.citycraft.main.References;
@@ -29,6 +30,8 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
     private static final int SCROLLER_FULL_HEIGHT = 54;
     private static final int RECIPES_X = 52;
     private static final int RECIPES_Y = 14;
+    private static final int OVERLAY_X = 0;
+    private static final int OVERLAY_Y = 220;
     private float scrollOffs;
     /** Is {@code true} if the player clicked on the scroll wheel in the GUI. */
     private boolean scrolling;
@@ -48,9 +51,9 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
 
     @Override
-    public void render(GuiGraphics pGuiGraphics, int pMouseX, int pMouseY, float pPartialTick) {
-        super.render(pGuiGraphics, pMouseX, pMouseY, pPartialTick);
-        this.renderTooltip(pGuiGraphics, pMouseX, pMouseY);
+    public void render(GuiGraphics gui, int mouseX, int mouseY, float partialTick) {
+        super.render(gui, mouseX, mouseY, partialTick);
+        this.renderTooltip(gui, mouseX, mouseY);
     }
 
 
@@ -65,6 +68,14 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
         int l = this.leftPos + 52;
         int i1 = this.topPos + 14;
         int j1 = this.startIndex + 12;
+
+        //Slot Overlay
+        Slot slot = this.menu.inputSlot2;
+
+        if (!slot.hasItem()) {
+            gui.blit(BG_LOCATION, i + slot.x, j + slot.y, OVERLAY_X, OVERLAY_Y, 16, 16);
+        }
+
         this.renderButtons(gui, mouseX, mouseY, l, i1, j1);
         this.renderRecipes(gui, l, i1, j1);
     }
