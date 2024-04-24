@@ -541,6 +541,16 @@ public class BlockStateGen extends BlockStateProvider {
         trafficSignBlock(ModBlocks.WORKERS_US_SIGN.get(), SignShape.RHOMBUS);
         trafficSignBlock(ModBlocks.Y_INTERSECTION_US_SIGN.get(), SignShape.RHOMBUS);
 
+        trafficSignBlock(ModBlocks.ROUND_SIGN.get(), SignShape.ROUND);
+        trafficSignBlock(ModBlocks.TRIANGLE_SIGN.get(), SignShape.TRIANGLE);
+        trafficSignBlock(ModBlocks.RECTANGLE_SIGN.get(), SignShape.RECTANGLE);
+        trafficSignBlock(ModBlocks.SQUARE_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.CROSS_SIGN.get(), SignShape.CROSS);
+        trafficSignBlock(ModBlocks.UPSIDE_DOWN_TRIANGLE_SIGN.get(), SignShape.UPSIDE_DOWN_TRIANGLE);
+        trafficSignBlock(ModBlocks.RHOMBUS_SIGN.get(), SignShape.RHOMBUS);
+        trafficSignBlock(ModBlocks.OCTAGON_SIGN.get(), SignShape.OCTAGON);
+        trafficSignBlock(ModBlocks.BAKE_SIGN.get(), SignShape.BAKE);
+
         fenceBlock(((FenceBlock) ModBlocks.IRON_FENCE.get()), blockTexture(ModBlocks.IRON_POLE.get()));
 
         wallBlock(((WallBlock) ModBlocks.BLACK_CONCRETE_WALL.get()), blockTexture(Blocks.BLACK_CONCRETE));

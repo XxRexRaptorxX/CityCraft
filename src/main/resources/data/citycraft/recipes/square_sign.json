@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:plates/iron"
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+
+  "pattern": [
+    "###",
+    "###",
+    " I "
+  ],
+
+  "key": {
+    "#": {
+      "tag": "forge:ingots/iron"
+    },
+    "I": {
+      "item": "citycraft:iron_pole"
+    }
+  },
+
+  "result": {
+    "item": "citycraft:square_sign",
+    "count": 6
+  }
+}

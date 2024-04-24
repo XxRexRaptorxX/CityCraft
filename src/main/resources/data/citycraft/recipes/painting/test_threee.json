@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:gems/diamond"
+  },
+  "color": {
+    "tag": "forge:ingots/iron"
+  },
+  "result": {
+    "item": "minecraft:gold_block"
+  }
+}

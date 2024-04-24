@@ -15,6 +15,7 @@
     "item.citycraft.coal_coke": "Koks",
     "item.citycraft.coal_tar": "Steinkohlenteer",
     "item.citycraft.asphalt_mixture": "Asphalt Gemisch",
+    "item.citycraft.dye_mix": "Farbstoff Mischung",
 
     "block.citycraft.asphalt": "Asphalt",
     "block.citycraft.cracked_asphalt":  "Gerissener Asphalt",
@@ -539,6 +540,16 @@
     "block.citycraft.winding_road_us_sign": "'Achtung Serpentine' Schild",
     "block.citycraft.workers_us_sign":  "'Achtung Baustelle' Schild",
     "block.citycraft.y_intersection_us_sign": "'Achtung Y-Kreuzung' Schild",
+
+    "block.citycraft.round_sign": "Rund geformtes Schild",
+    "block.citycraft.triangle_sign": "Dreieckförmiges Schild",
+    "block.citycraft.rectangle_sign":  "Rechteckig geformtes Schild",
+    "block.citycraft.square_sign": "Quadratisch geformtes Schild",
+    "block.citycraft.cross_sign":  "Kreuzförmiges Schild",
+    "block.citycraft.upside_down_triangle_sign": "Umgedreht Dreieckförmiges Schild",
+    "block.citycraft.rhombus_sign":  "Rautenförmiges Schild",
+    "block.citycraft.octagon_sign": "Achteckig geformtes Schild",
+    "block.citycraft.bake_sign":  "Bakenförmiges Schild",
 
     "block.citycraft.drain_cover": "Kanaldeckel",
     "block.citycraft.drain_cover_grid": "Kanalgitter",

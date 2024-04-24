@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-06T00:42:58.612175	Item Models: citycraft
+// 1.20.1	2024-04-25T00:14:35.8455833	Item Models: citycraft
 7b5af6a3e4b44fd4abf41140a7c4970f7cc7b90e assets/citycraft/models/item/asphalt_mixture.json
 3fc1709a84300ce1e7d899cfb7159917fd547ea6 assets/citycraft/models/item/black_chain.json
 57404862ace35b88b6fabaa4345c6988d361534e assets/citycraft/models/item/black_concrete_wall.json
@@ -7,6 +7,7 @@ c0e511d82c06f579d0192e5d3b49e8088795cee0 assets/citycraft/models/item/brown_conc
 0b4bef31e63713c0cde65f2aadfbf674a5fddea8 assets/citycraft/models/item/coal_coke.json
 54f66d1fb96b3280732b3e72e40746e15461e635 assets/citycraft/models/item/coal_tar.json
 011c21ea835c442fdbea0fcea5b5413f90b31e82 assets/citycraft/models/item/cyan_concrete_wall.json
+d5dfad70e431b2860f3e10b064a043570e08f35b assets/citycraft/models/item/dye_mix.json
 9cd1b682af79d39998bee07e18c55fdb76336a6c assets/citycraft/models/item/gray_concrete_wall.json
 0d8daa42b0b8857e4365012334c1fe0fb4221994 assets/citycraft/models/item/green_concrete_wall.json
 5ece7d0207c75addbf4ed8c08d09a2ef2cceecac assets/citycraft/models/item/iron_fence.json

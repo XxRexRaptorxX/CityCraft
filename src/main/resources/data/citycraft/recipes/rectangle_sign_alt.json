@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:plates/iron"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+
+  "pattern": [
+    "###",
+    " I "
+  ],
+
+  "key": {
+    "#": {
+      "tag": "forge:plates/iron"
+    },
+    "I": {
+      "item": "citycraft:iron_pole"
+    }
+  },
+
+  "result": {
+    "item": "citycraft:rectangle_sign",
+    "count": 3
+  }
+}

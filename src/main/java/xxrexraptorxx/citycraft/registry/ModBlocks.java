@@ -555,6 +555,16 @@ public class ModBlocks {
     public static final RegistryObject<TrafficSignBlock> WORKERS_US_SIGN = registerBlock("workers_us_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> Y_INTERSECTION_US_SIGN = registerBlock("y_intersection_us_sign", TrafficSignBlock::new);
 
+    public static final RegistryObject<TrafficSignBlock> ROUND_SIGN = registerBlock("round_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> TRIANGLE_SIGN = registerBlock("triangle_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> RECTANGLE_SIGN = registerBlock("rectangle_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> SQUARE_SIGN = registerBlock("square_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> CROSS_SIGN = registerBlock("cross_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> UPSIDE_DOWN_TRIANGLE_SIGN = registerBlock("upside_down_triangle_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> RHOMBUS_SIGN = registerBlock("rhombus_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> OCTAGON_SIGN = registerBlock("octagon_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BAKE_SIGN = registerBlock("bake_sign", TrafficSignBlock::new);
+
     public static final RegistryObject<DrainCoverBlock> DRAIN_COVER = registerBlock("drain_cover", DrainCoverBlock::new);
     public static final RegistryObject<DrainCoverBlock> DRAIN_COVER_GRID = registerBlock("drain_cover_grid", DrainCoverBlock::new);
 

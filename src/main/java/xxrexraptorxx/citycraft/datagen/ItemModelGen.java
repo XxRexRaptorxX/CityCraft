@@ -26,6 +26,7 @@ public class ItemModelGen extends ItemModelProvider {
         itemGenerated(ModItems.COAL_COKE);
         itemGenerated(ModItems.COAL_TAR);
         itemGenerated(ModItems.ASPHALT_MIXTURE);
+        itemGenerated(ModItems.DYE_MIX);
 
         itemGenerated(ModBlocks.WHITE_CHAIN);
         itemGenerated(ModBlocks.RED_CHAIN);

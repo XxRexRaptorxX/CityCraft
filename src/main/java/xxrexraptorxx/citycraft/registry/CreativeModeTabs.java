@@ -70,6 +70,7 @@ public class CreativeModeTabs {
 
                 output.accept(ModItems.COAL_COKE.get());
                 output.accept(ModItems.ASPHALT_MIXTURE.get());
+                output.accept(ModItems.DYE_MIX.get());
                 output.accept(ModItems.COAL_TAR.get());
 
             }).build());
@@ -320,6 +321,17 @@ public class CreativeModeTabs {
 
                     output.accept(ModBlocks.RAILROAD_CROSSING_US_SIGN.get());
                     output.accept(ModBlocks.CROSSBUCK_US_SIGN.get());
+
+                    //BASE
+                    output.accept(ModBlocks.ROUND_SIGN.get());
+                    output.accept(ModBlocks.TRIANGLE_SIGN.get());
+                    output.accept(ModBlocks.RECTANGLE_SIGN.get());
+                    output.accept(ModBlocks.SQUARE_SIGN.get());
+                    output.accept(ModBlocks.CROSS_SIGN.get());
+                    output.accept(ModBlocks.UPSIDE_DOWN_TRIANGLE_SIGN.get());
+                    output.accept(ModBlocks.RHOMBUS_SIGN.get());
+                    output.accept(ModBlocks.OCTAGON_SIGN.get());
+                    output.accept(ModBlocks.BAKE_SIGN.get());
                 //}
             }).build());
 

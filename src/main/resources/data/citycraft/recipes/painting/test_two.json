@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:ingots/gold"
+  },
+  "color": {
+    "tag": "forge:ingots/iron"
+  },
+  "result": {
+    "item": "minecraft:dirt"
+  }
+}

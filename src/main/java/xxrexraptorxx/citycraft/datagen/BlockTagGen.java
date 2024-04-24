@@ -540,7 +540,35 @@ public class BlockTagGen extends BlockTagsProvider {
                        ModBlocks.WINDING_ROAD_US_SIGN.get(),
                        ModBlocks.WORKERS_US_SIGN.get(),
                        ModBlocks.Y_INTERSECTION_US_SIGN.get(),
-                       ModBlocks.IRON_FENCE.get()
+
+                       ModBlocks.ROUND_SIGN.get(),
+                       ModBlocks.TRIANGLE_SIGN.get(),
+                       ModBlocks.RECTANGLE_SIGN.get(),
+                       ModBlocks.SQUARE_SIGN.get(),
+                       ModBlocks.CROSS_SIGN.get(),
+                       ModBlocks.UPSIDE_DOWN_TRIANGLE_SIGN.get(),
+                       ModBlocks.RHOMBUS_SIGN.get(),
+                       ModBlocks.OCTAGON_SIGN.get(),
+                       ModBlocks.BAKE_SIGN.get(),
+
+                       ModBlocks.IRON_FENCE.get(),
+
+                       ModBlocks.BLACK_CONCRETE_WALL.get(),
+                       ModBlocks.WHITE_CONCRETE_WALL.get(),
+                       ModBlocks.ORANGE_CONCRETE_WALL.get(),
+                       ModBlocks.MAGENTA_CONCRETE_WALL.get(),
+                       ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get(),
+                       ModBlocks.YELLOW_CONCRETE_WALL.get(),
+                       ModBlocks.LIME_CONCRETE_WALL.get(),
+                       ModBlocks.PINK_CONCRETE_WALL.get(),
+                       ModBlocks.GRAY_CONCRETE_WALL.get(),
+                       ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get(),
+                       ModBlocks.CYAN_CONCRETE_WALL.get(),
+                       ModBlocks.PURPLE_CONCRETE_WALL.get(),
+                       ModBlocks.BLUE_CONCRETE_WALL.get(),
+                       ModBlocks.BROWN_CONCRETE_WALL.get(),
+                       ModBlocks.GREEN_CONCRETE_WALL.get(),
+                       ModBlocks.RED_CONCRETE_WALL.get()
                );
 
 
