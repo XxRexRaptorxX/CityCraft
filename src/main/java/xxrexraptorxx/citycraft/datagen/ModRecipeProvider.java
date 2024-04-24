@@ -1,13 +1,14 @@
 package xxrexraptorxx.citycraft.datagen;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.*;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
 import java.util.function.Consumer;
@@ -186,6 +187,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(writer);
     }
 
+
     protected static void wallRecipes(Block output, Block input, Consumer<FinishedRecipe> writer) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, output, 6)
                 .pattern("###")
@@ -195,4 +197,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(writer);
     }
 
+
+    protected static void stoneCuttingRecipes(Block output, Integer outputCount, Block input, Consumer<FinishedRecipe> writer) {
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, output, outputCount)
+                .unlockedBy(getHasName(input), has(input))
+                .save(writer);
+    }
+
+
+    protected static void stoneCuttingRecipes(Block output, Integer outputCount, TagKey<Item> input, Consumer<FinishedRecipe> writer) {
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, output, outputCount)
+                .unlockedBy("has_" + input, has(input))
+                .save(writer);
+    }
+
+
+    protected static void paintingRecipes(Block output, Integer outputCount, Block input, Item color, Consumer<FinishedRecipe> writer) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, output, outputCount)
+                .requires(input)
+                .requires(color)
+                .group(References.MODID + ":painting")
+                .unlockedBy(getHasName(input), has(input))
+                .save(writer);
+
+    }
+
+
+    protected static void paintingRecipes(Block output, Integer outputCount, TagKey<Item> input, TagKey<Item> color, Consumer<FinishedRecipe> writer) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, output, outputCount)
+                .requires(input)
+                .requires(color)
+                .group(References.MODID + ":painting")
+                .unlockedBy("has_" + input, has(input))
+                .save(writer);
+    }
 }
