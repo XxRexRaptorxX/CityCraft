@@ -20,7 +20,7 @@ import java.util.List;
 @OnlyIn(Dist.CLIENT)
 public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
-    private static final ResourceLocation BG_LOCATION = new ResourceLocation(References.MODID, "textures/gui/container/painter.png");
+    public static final ResourceLocation BG_LOCATION = new ResourceLocation(References.MODID, "textures/gui/container/painter.png");
     private static final int SCROLLER_WIDTH = 12;
     private static final int SCROLLER_HEIGHT = 15;
     private static final int RECIPES_COLUMNS = 4;
@@ -30,8 +30,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
     private static final int SCROLLER_FULL_HEIGHT = 54;
     private static final int RECIPES_X = 52;
     private static final int RECIPES_Y = 14;
-    private static final int OVERLAY_X = 0;
-    private static final int OVERLAY_Y = 220;
+
     private float scrollOffs;
     /** Is {@code true} if the player clicked on the scroll wheel in the GUI. */
     private boolean scrolling;
@@ -73,7 +72,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
         Slot slot = this.menu.inputSlot2;
 
         if (!slot.hasItem()) {
-            gui.blit(BG_LOCATION, i + slot.x, j + slot.y, OVERLAY_X, OVERLAY_Y, 16, 16);
+            gui.blit(BG_LOCATION, i + slot.x, j + slot.y, this.imageWidth, this.imageHeight, 16, 16);
         }
 
         this.renderButtons(gui, mouseX, mouseY, l, i1, j1);

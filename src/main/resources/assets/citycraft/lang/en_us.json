@@ -10,6 +10,8 @@
     "message.citycraft.boost_speed_tooltip": "Greatly increased movement speed",
     "message.citycraft.drain_cover_tooltip": "Allows water to flow downwards through.",
 
+    "gui.citycraft.painting": "Painting",
+
     "item.citycraft.coal_coke": "Coal Coke",
     "item.citycraft.coal_tar": "Coal Tar",
     "item.citycraft.asphalt_mixture": "Asphalt Mixture",

@@ -2,6 +2,7 @@ package xxrexraptorxx.citycraft.recipes;
 
 import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeType;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
@@ -27,4 +28,7 @@ public interface IPaintingRecipe extends Recipe<Container> {
         boolean isColorIngredient(ItemStack pStack);
 
         boolean isBaseIngredient(ItemStack pStack);
- }
+
+        Ingredient getIngredients(Integer id);
+
+    }

@@ -1,6 +1,8 @@
 package xxrexraptorxx.citycraft.recipes;
 
 import com.google.gson.JsonObject;
+
+import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 import net.minecraft.core.RegistryAccess;
@@ -15,6 +17,7 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeHooks;
+import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.main.References;
 
 public class PaintingRecipe implements IPaintingRecipe {
@@ -49,6 +52,18 @@ public class PaintingRecipe implements IPaintingRecipe {
       }
 
       return itemstack;
+   }
+
+
+   public Ingredient getIngredients(Integer slotId) {
+      switch (slotId) {
+         case 0: return this.base;
+         case 1: return this.color;
+
+         default:
+            CityCraft.LOGGER.error("Invalid Ingredient slot id: " + id);
+      }
+      return null;
    }
 
 
