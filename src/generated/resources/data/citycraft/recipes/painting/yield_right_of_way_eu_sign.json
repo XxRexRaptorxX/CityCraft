@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "citycraft:upside_down_triangle_sign"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "count": 1,
+    "item": "citycraft:yield_right_of_way_eu_sign"
+  }
+}

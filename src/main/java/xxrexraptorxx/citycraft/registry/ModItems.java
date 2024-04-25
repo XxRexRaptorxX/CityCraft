@@ -1,5 +1,8 @@
 package xxrexraptorxx.citycraft.registry;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -18,6 +21,13 @@ public class ModItems {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ITEMS.register(bus);
     }
+
+    public static final TagKey<Item> ROUND_SIGN_TAG = ItemTags.create(new ResourceLocation("forge", "traffic_signs/round"));
+    public static final TagKey<Item> TRIANGLE_SIGN_TAG = ItemTags.create(new ResourceLocation("forge", "traffic_signs/triangle"));
+    public static final TagKey<Item> RECTANGLE_SIGN_TAG = ItemTags.create(new ResourceLocation("forge", "traffic_signs/rectangle"));
+    public static final TagKey<Item> SQUARE_SIGN_TAG = ItemTags.create(new ResourceLocation("forge", "traffic_signs/square"));
+    public static final TagKey<Item> CROSS_SIGN_TAG = ItemTags.create(new ResourceLocation("forge", "traffic_signs/cross"));
+    public static final TagKey<Item> UPSIDE_DOWN_TRIANGLE_SIGN_TAG = ItemTags.create(new ResourceLocation("forge", "traffic_signs/upside_down_triangle"));
 
 
     public static final RegistryObject<ItemBasic> COAL_COKE = ITEMS.register("coal_coke", ItemBasic::new);

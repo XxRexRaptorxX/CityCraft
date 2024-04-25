@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "citycraft:bake_sign"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "count": 1,
+    "item": "citycraft:warning_beacon_alt_eu_sign"
+  }
+}

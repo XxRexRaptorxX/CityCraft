@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "citycraft:rhombus_sign"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "count": 1,
+    "item": "citycraft:right_entering_roadway_merge_us_sign"
+  }
+}
