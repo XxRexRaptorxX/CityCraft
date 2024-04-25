@@ -1,5 +1,7 @@
 {
   "replace": false,
   "values": [
+    "citycraft:crossbuck_eu_sign",
+    "citycraft:crossbuck_us_sign"
   ]
 }

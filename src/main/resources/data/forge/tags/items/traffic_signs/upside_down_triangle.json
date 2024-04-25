@@ -1,5 +1,7 @@
 {
   "replace": false,
   "values": [
+    "citycraft:yield_right_of_way_eu_sign",
+    "citycraft:nature_reserve_eu_sign"
   ]
 }

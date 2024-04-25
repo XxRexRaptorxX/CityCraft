@@ -1,5 +1,28 @@
 {
   "replace": false,
   "values": [
+    "citycraft:left_arrow_eu_sign",
+    "citycraft:right_arrow_eu_sign",
+    "citycraft:left_turn_arrow_eu_sign",
+    "citycraft:right_turn_arrow_eu_sign",
+    "citycraft:km_ahead_eu_sign",
+    "citycraft:weight_eu_sign",
+    "citycraft:taxi_eu_sign",
+    "citycraft:warn_eu_sign",
+    "citycraft:left_arrow_yellow_us_sign",
+    "citycraft:right_arrow_yellow_us_sign",
+    "citycraft:left_diagonal_arrow_yellow_us_sign",
+    "citycraft:right_diagonal_arrow_yellow_us_sign",
+    "citycraft:double_arrow_yellow_us_sign",
+    "citycraft:left_arrow_green_us_sign",
+    "citycraft:right_arrow_green_us_sign",
+    "citycraft:left_diagonal_arrow_green_us_sign",
+    "citycraft:right_diagonal_arrow_green_us_sign",
+    "citycraft:double_arrow_green_us_sign",
+    "citycraft:left_arrow_orange_us_sign",
+    "citycraft:right_arrow_orange_us_sign",
+    "citycraft:left_diagonal_arrow_orange_us_sign",
+    "citycraft:right_diagonal_arrow_orange_us_sign",
+    "citycraft:double_arrow_orange_us_sign"
   ]
 }

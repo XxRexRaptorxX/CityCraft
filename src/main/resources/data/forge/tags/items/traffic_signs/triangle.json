@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:danger_eu_sign",
+    "citycraft:roadworks_eu_sign",
+    "citycraft:creeper_eu_sign",
+    "citycraft:children_eu_sign",
+    "citycraft:crosswalk_eu_sign",
+    "citycraft:rockfall_eu_sign",
+    "citycraft:slipperiness_eu_sign",
+    "citycraft:signal_eu_sign",
+    "citycraft:snow_eu_sign",
+    "citycraft:oncoming_traffic_eu_sign",
+    "citycraft:left_curve_eu_sign",
+    "citycraft:right_curve_eu_sign",
+    "citycraft:left_double_curve_eu_sign",
+    "citycraft:right_double_curve_eu_sign",
+    "citycraft:gate_eu_sign",
+    "citycraft:narrowing_eu_sign",
+    "citycraft:left_narrowing_eu_sign",
+    "citycraft:right_narrowing_eu_sign",
+    "citycraft:cattle_eu_sign",
+    "citycraft:ascend_eu_sign",
+    "citycraft:descend_eu_sign",
+    "citycraft:jams_eu_sign",
+    "citycraft:priority_eu_sign",
+    "citycraft:railroad_eu_sign",
+    "citycraft:uneven_eu_sign",
+    "citycraft:cycles_eu_sign",
+    "citycraft:pedestrians_eu_sign",
+    "citycraft:intersection_eu_sign"
+  ]
+}
