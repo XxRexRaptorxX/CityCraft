@@ -2,7 +2,6 @@ package xxrexraptorxx.citycraft.blocks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
@@ -19,8 +18,6 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
-import xxrexraptorxx.citycraft.registry.ModBlocks;
-import xxrexraptorxx.citycraft.utils.Config;
 
 import java.util.List;
 

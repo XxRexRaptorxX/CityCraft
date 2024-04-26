@@ -1,10 +1,6 @@
 package xxrexraptorxx.citycraft.recipes;
 
 import com.google.gson.JsonObject;
-
-import java.util.logging.Logger;
-import java.util.stream.Stream;
-
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
@@ -19,6 +15,8 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeHooks;
 import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.main.References;
+
+import java.util.stream.Stream;
 
 public class PaintingRecipe implements IPaintingRecipe {
 
