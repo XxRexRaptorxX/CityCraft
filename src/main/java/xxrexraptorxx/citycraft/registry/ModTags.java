@@ -26,10 +26,17 @@ public class ModTags {
     public static final TagKey<Item> CONCRETE_WALLS_TAG = createItemTag("forge", "walls/concrete");
     public static final TagKey<Item> BLANK_ASPHALT_TAG = createItemTag(References.MODID, "blank_asphalt");
     public static final TagKey<Item> BLANK_ASPHALT_SLABS_TAG = createItemTag(References.MODID, "blank_asphalt_slabs");
-    public static final TagKey<Item> ASPHALT_WITH_WHITE_MARKINGS_TAG = createItemTag(References.MODID, "asphalt_with_white_markings");
-    public static final TagKey<Item> ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG = createItemTag(References.MODID, "asphalt_slabs_with_white_markings");
-    public static final TagKey<Item> ASPHALT_WITH_YELLOW_MARKINGS_TAG = createItemTag(References.MODID, "asphalt_with_yellow_markings");
-    public static final TagKey<Item> ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG = createItemTag(References.MODID, "asphalt_slabs_with_yellow_markings");
+    public static final TagKey<Item> ASPHALT_WITH_WHITE_MARKINGS_TAG = createItemTag(References.MODID, "white_marked_asphalt");
+    public static final TagKey<Item> ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG = createItemTag(References.MODID, "white_marked_asphalt_slabs");
+    public static final TagKey<Item> ASPHALT_WITH_YELLOW_MARKINGS_TAG = createItemTag(References.MODID, "yellow_marked_asphalt");
+    public static final TagKey<Item> ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG = createItemTag(References.MODID, "yellow_marked_asphalt_slabs");
+    public static final TagKey<Item> CONCRETE_TAG = createItemTag("forge", "concrete");
+    public static final TagKey<Item> CONCRETE_POWDER_TAG = createItemTag("forge", "concrete_powder");
+    public static final TagKey<Item> GLAZED_TERRACOTTA_TAG = createItemTag("forge", "glazed_terracotta");
+    public static final TagKey<Item> SHULKER_BOXES_TAG = createItemTag("forge", "shulker_boxes");
+    public static final TagKey<Item> SIGNS_TAG = createItemTag("forge", "signs");
+    public static final TagKey<Item> SIGNS_WOOD_TAG = createItemTag("forge", "signs/wood");
+    public static final TagKey<Item> HANGING_WOOD_SIGNS_TAG = createItemTag("forge", "hanging_signs/wood");
 
 
     private static TagKey<Item> createItemTag(String id, String name) {
