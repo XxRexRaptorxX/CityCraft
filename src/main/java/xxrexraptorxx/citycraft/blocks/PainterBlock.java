@@ -2,6 +2,7 @@ package xxrexraptorxx.citycraft.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.MenuProvider;
@@ -43,7 +44,7 @@ public class PainterBlock extends Block {
 
 		} else {
 			player.openMenu(state.getMenuProvider(level, pos));
-			//player.awardStat(Stats.INTERACT_WITH_PAINTER); TODO!
+			player.awardStat(Stats.ITEM_USED.get(state.getBlock().asItem()));
 
 			return InteractionResult.CONSUME;
 		}
@@ -55,4 +56,5 @@ public class PainterBlock extends Block {
 	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
 		return new SimpleMenuProvider((id, playerInventory, player) -> new PainterMenu(id, playerInventory, ContainerLevelAccess.create(worldIn, pos)), CONTAINER_TITLE);
 	}
+
 }
