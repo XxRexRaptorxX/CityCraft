@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "citycraft:rhombus_sign",
     "citycraft:priority_road_eu_sign",
     "citycraft:priority_road_end_eu_sign",
     "citycraft:t_intersection_us_sign",

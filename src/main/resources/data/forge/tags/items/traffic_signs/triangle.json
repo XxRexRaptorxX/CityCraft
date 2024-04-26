@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "citycraft:triangle_sign",
     "citycraft:danger_eu_sign",
     "citycraft:roadworks_eu_sign",
     "citycraft:creeper_eu_sign",

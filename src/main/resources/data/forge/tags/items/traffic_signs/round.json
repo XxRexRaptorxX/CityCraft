@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "citycraft:round_sign",
     "citycraft:10_speed_eu_sign",
     "citycraft:30_speed_eu_sign",
     "citycraft:60_speed_eu_sign",

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "citycraft:rectangle_sign",
     "citycraft:left_arrow_eu_sign",
     "citycraft:right_arrow_eu_sign",
     "citycraft:left_turn_arrow_eu_sign",

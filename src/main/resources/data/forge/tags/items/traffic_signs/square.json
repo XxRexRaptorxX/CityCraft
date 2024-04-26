@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "citycraft:square_sign",
     "citycraft:detour_ahead_eu_sign",
     "citycraft:detour_left_eu_sign",
     "citycraft:detour_right_eu_sign",

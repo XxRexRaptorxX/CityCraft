@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "citycraft:octagon_sign",
     "citycraft:stop_eu_sign"
   ]
 }

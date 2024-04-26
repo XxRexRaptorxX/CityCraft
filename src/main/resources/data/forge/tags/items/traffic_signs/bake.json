@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "citycraft:bake_sign",
     "citycraft:warning_beacon_left_eu_sign",
     "citycraft:warning_beacon_right_eu_sign",
     "citycraft:warning_beacon_alt_eu_sign"
