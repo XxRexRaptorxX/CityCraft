@@ -9,6 +9,8 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.item.crafting.SmithingRecipe;
 import net.minecraft.world.level.Level;
 import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
@@ -30,6 +32,7 @@ public class PainterMenu extends AbstractContainerMenu {
 
     private final Level level;
     private List<IPaintingRecipe> recipes = Lists.newArrayList();
+    private final List<IPaintingRecipe> allRecipes;
     private ItemStack input1 = ItemStack.EMPTY;
     private ItemStack input2 = ItemStack.EMPTY;
     long lastSoundTime;
@@ -61,6 +64,7 @@ public class PainterMenu extends AbstractContainerMenu {
         super(ModMenuTypes.PAINTER, containerId);
         this.level = playerInventory.player.level();
         this.access = access;
+        this.allRecipes = this.level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.PAINTING);
 
         // Input Slot 1 (left slot)
         this.inputSlot1 = this.addSlot(new Slot(this.container, INPUT_SLOT_1, 20, 20));
@@ -254,9 +258,9 @@ public class PainterMenu extends AbstractContainerMenu {
 
 
     public int getSlotToQuickMoveTo(ItemStack stack) {
-        return this.recipes.stream().map((recipeMap) -> {
+        return allRecipes.stream().map((recipeMap) -> {
             return findSlotMatchingIngredient(recipeMap, stack);
-        }).filter(Optional::isPresent).findFirst().orElse(Optional.of(0)).get();
+        }).filter(Optional::isPresent).findFirst().orElse(Optional.of(1)).get();
     }
 
 
