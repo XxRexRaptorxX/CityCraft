@@ -38,6 +38,7 @@ public class CityCraftJeiPlugin implements IModPlugin {
         registration.addRecipes(PainterJEICategory.TYPE, recipeManager.getAllRecipesFor(ModRecipeTypes.PAINTING));
     }
 
+
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
         registration.addRecipeCatalyst(new ItemStack(ModBlocks.BLOCK_PAINTER.get()), PainterJEICategory.TYPE);

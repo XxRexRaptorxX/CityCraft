@@ -17,7 +17,7 @@ public class ModMenuTypes {
 
     static void onRegister(final RegisterEvent event) {
         PAINTER = new MenuType<>(PainterMenu::new, FeatureFlags.DEFAULT_FLAGS);
-        event.register(ForgeRegistries.Keys.MENU_TYPES, new ResourceLocation(References.MODID, "painter"), () -> PAINTER);
+        event.register(ForgeRegistries.Keys.MENU_TYPES, new ResourceLocation(References.MODID, "painting"), () -> PAINTER);
     }
 
 }

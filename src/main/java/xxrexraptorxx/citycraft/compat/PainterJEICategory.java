@@ -16,10 +16,11 @@ import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
 import xxrexraptorxx.citycraft.recipes.PaintingRecipe;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
+import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
 
 public class PainterJEICategory implements IRecipeCategory<IPaintingRecipe> {
 
-    public static final ResourceLocation UID = new ResourceLocation(References.MODID, "painter");
+    public static final ResourceLocation UID = new ResourceLocation(ModRecipeTypes.PAINTING_RECIPE_TYPE);
     public static final ResourceLocation BACKGROUND = new ResourceLocation(References.MODID,"textures/gui/container/painter_jei.png");
     public static final RecipeType<IPaintingRecipe> TYPE = new RecipeType<>(UID, PaintingRecipe.class);
     private final IDrawable background;

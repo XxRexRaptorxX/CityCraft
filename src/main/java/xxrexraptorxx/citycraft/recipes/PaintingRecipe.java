@@ -15,6 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeHooks;
 import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.main.References;
+import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
 
 import java.util.stream.Stream;
 
@@ -97,7 +98,7 @@ public class PaintingRecipe implements IPaintingRecipe {
 
    public static class Serializer implements RecipeSerializer<PaintingRecipe> {
       public static final Serializer INSTANCE = new Serializer();
-      public static final ResourceLocation ID = new ResourceLocation(References.MODID, "painting");
+      public static final ResourceLocation ID = new ResourceLocation(ModRecipeTypes.PAINTING_RECIPE_TYPE);
 
       public PaintingRecipe fromJson(ResourceLocation loc, JsonObject json) {
          Ingredient ingredient = Ingredient.fromJson(GsonHelper.getNonNull(json, "base"));
