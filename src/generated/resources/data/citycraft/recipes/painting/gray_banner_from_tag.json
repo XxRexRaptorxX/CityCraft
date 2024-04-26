@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:banners"
+  },
+  "color": {
+    "tag": "forge:dyes/gray"
+  },
+  "result": {
+    "item": "minecraft:gray_banner"
+  }
+}

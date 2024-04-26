@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wool"
+  },
+  "color": {
+    "tag": "forge:dyes/orange"
+  },
+  "result": {
+    "item": "minecraft:orange_wool"
+  }
+}

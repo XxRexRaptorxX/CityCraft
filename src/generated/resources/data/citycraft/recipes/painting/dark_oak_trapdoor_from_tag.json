@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wooden_trapdoors"
+  },
+  "color": {
+    "tag": "forge:dyes/black"
+  },
+  "result": {
+    "item": "minecraft:dark_oak_trapdoor"
+  }
+}

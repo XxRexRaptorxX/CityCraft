@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:traffic_signs/upside_down_triangle"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "item": "citycraft:nature_reserve_eu_sign"
+  }
+}

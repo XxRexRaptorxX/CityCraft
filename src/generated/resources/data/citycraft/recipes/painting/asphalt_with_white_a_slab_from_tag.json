@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:white_marked_asphalt_slabs"
+  },
+  "color": {
+    "tag": "forge:dyes/white"
+  },
+  "result": {
+    "item": "citycraft:asphalt_with_white_a_slab"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:yellow_marked_asphalt_slabs"
+  },
+  "color": {
+    "tag": "forge:dyes/yellow"
+  },
+  "result": {
+    "item": "citycraft:asphalt_with_yellow_thick_hatching_slab"
+  }
+}

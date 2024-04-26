@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "citycraft:asphalt"
+  },
+  "color": {
+    "tag": "forge:dyes/yellow"
+  },
+  "result": {
+    "item": "citycraft:asphalt_with_yellow_thick_solid_and_broken_middle_line"
+  }
+}

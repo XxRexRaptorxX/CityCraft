@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wooden_slabs"
+  },
+  "color": {
+    "tag": "forge:dyes/orange"
+  },
+  "result": {
+    "item": "minecraft:jungle_slab"
+  }
+}

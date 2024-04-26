@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:beds"
+  },
+  "color": {
+    "tag": "forge:dyes/brown"
+  },
+  "result": {
+    "item": "minecraft:brown_bed"
+  }
+}

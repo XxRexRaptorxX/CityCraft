@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "minecraft:chiseled_red_sandstone"
+  },
+  "color": {
+    "tag": "forge:dyes/yellow"
+  },
+  "result": {
+    "item": "minecraft:chiseled_sandstone"
+  }
+}

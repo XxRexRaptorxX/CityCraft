@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wooden_fences"
+  },
+  "color": {
+    "tag": "forge:dyes/brown"
+  },
+  "result": {
+    "item": "minecraft:spruce_fence"
+  }
+}

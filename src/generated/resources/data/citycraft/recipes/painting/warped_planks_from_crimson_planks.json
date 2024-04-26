@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "minecraft:crimson_planks"
+  },
+  "color": {
+    "tag": "forge:dyes/green"
+  },
+  "result": {
+    "item": "minecraft:warped_planks"
+  }
+}

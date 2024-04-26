@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:planks"
+  },
+  "color": {
+    "tag": "forge:dyes/black"
+  },
+  "result": {
+    "item": "minecraft:dark_oak_planks"
+  }
+}

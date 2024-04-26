@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:planks"
+  },
+  "color": {
+    "tag": "forge:dyes/orange"
+  },
+  "result": {
+    "item": "minecraft:jungle_planks"
+  }
+}

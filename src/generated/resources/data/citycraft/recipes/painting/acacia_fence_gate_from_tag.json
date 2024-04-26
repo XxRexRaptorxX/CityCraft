@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:fence_gates/wooden"
+  },
+  "color": {
+    "tag": "forge:dyes/red"
+  },
+  "result": {
+    "item": "minecraft:acacia_fence_gate"
+  }
+}

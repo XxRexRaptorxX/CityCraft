@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:fence_gates/wooden"
+  },
+  "color": {
+    "tag": "forge:dyes/white"
+  },
+  "result": {
+    "item": "minecraft:birch_fence_gate"
+  }
+}

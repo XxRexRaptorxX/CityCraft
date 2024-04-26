@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:glass_panes"
+  },
+  "color": {
+    "tag": "forge:dyes/white"
+  },
+  "result": {
+    "item": "minecraft:white_stained_glass_pane"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:glass"
+  },
+  "color": {
+    "tag": "forge:dyes/lime"
+  },
+  "result": {
+    "item": "minecraft:lime_stained_glass"
+  }
+}

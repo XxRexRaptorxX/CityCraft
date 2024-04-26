@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:walls/concrete"
+  },
+  "color": {
+    "tag": "forge:dyes/purple"
+  },
+  "result": {
+    "item": "citycraft:purple_concrete_wall"
+  }
+}

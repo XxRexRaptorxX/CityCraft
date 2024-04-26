@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:glazed_terracotta"
+  },
+  "color": {
+    "tag": "forge:dyes/green"
+  },
+  "result": {
+    "item": "minecraft:green_glazed_terracotta"
+  }
+}

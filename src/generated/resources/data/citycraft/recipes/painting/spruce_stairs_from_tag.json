@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wooden_stairs"
+  },
+  "color": {
+    "tag": "forge:dyes/brown"
+  },
+  "result": {
+    "item": "minecraft:spruce_stairs"
+  }
+}

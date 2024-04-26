@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:shulker_boxes"
+  },
+  "color": {
+    "tag": "forge:dyes/green"
+  },
+  "result": {
+    "item": "minecraft:green_shulker_box"
+  }
+}

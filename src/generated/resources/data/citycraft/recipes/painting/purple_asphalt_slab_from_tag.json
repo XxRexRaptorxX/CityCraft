@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:blank_asphalt_slabs"
+  },
+  "color": {
+    "tag": "forge:dyes/purple"
+  },
+  "result": {
+    "item": "citycraft:purple_asphalt_slab"
+  }
+}

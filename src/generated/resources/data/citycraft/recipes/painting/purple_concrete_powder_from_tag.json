@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:concrete_powder"
+  },
+  "color": {
+    "tag": "forge:dyes/purple"
+  },
+  "result": {
+    "item": "minecraft:purple_concrete_powder"
+  }
+}

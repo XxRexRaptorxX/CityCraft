@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:glass"
+  },
+  "color": {
+    "tag": "forge:dyes/magenta"
+  },
+  "result": {
+    "item": "minecraft:magenta_stained_glass"
+  }
+}

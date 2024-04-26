@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:banners"
+  },
+  "color": {
+    "tag": "forge:dyes/magenta"
+  },
+  "result": {
+    "item": "minecraft:magenta_banner"
+  }
+}
