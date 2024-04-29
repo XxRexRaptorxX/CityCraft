@@ -569,6 +569,7 @@ public class ModBlocks {
     public static final RegistryObject<DrainCoverBlock> DRAIN_COVER_GRID = registerBlock("drain_cover_grid", DrainCoverBlock::new);
 
     public static final RegistryObject<FenceBlock> IRON_FENCE = registerBlock("iron_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(ModBlocks.IRON_POLE.get())));
+    public static final RegistryObject<TrafficBarrierBlock> TRAFFIC_BARRIER = registerBlock("traffic_barrier", TrafficBarrierBlock::new);
 
     public static final RegistryObject<WallBlock> BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_CONCRETE)));
     public static final RegistryObject<WallBlock> WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_CONCRETE)));

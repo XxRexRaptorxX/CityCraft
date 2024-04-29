@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-25T00:14:35.8465803	Loot Tables
+// 1.20.1	2024-04-30T00:20:30.8475795	Loot Tables
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_tables/blocks/100_speed_eu_sign.json
 dd3c3abd2471b84fca081f594e0f07afa39c7d42 data/citycraft/loot_tables/blocks/10_speed_eu_sign.json
 ee8f5504a89f1e81ed260a129c0aa566f6e82fed data/citycraft/loot_tables/blocks/120_speed_eu_sign.json
@@ -496,6 +496,7 @@ c057c3e594c061c116002efa8ea0aa977c30ae7d data/citycraft/loot_tables/blocks/stone
 37e1f5ec71f81390b66d6f965caaa53caefa8b4f data/citycraft/loot_tables/blocks/taxi_eu_sign.json
 d78997aa3b4a6afdfadd571123b6e285b375c248 data/citycraft/loot_tables/blocks/telephone_eu_sign.json
 e2150d0b7d46b5978c09b1a986c61826182dde37 data/citycraft/loot_tables/blocks/telephone_us_sign.json
+05487077a17b4e387c44855ad9a50f875b5ea356 data/citycraft/loot_tables/blocks/traffic_barrier.json
 73af9beec85e9a73680edc384acc5212a7216273 data/citycraft/loot_tables/blocks/triangle_sign.json
 fee443aea9d669539ad194d7aac36b3ff94f9ec1 data/citycraft/loot_tables/blocks/truck_crossing_us_sign.json
 fc08e7cf71624e9708208eae60286f090e72a685 data/citycraft/loot_tables/blocks/truck_rollover_warning_us_sign.json

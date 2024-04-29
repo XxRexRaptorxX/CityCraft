@@ -552,6 +552,7 @@ public class BlockTagGen extends BlockTagsProvider {
                        ModBlocks.BAKE_SIGN.get(),
 
                        ModBlocks.IRON_FENCE.get(),
+                       ModBlocks.TRAFFIC_BARRIER.get(),
 
                        ModBlocks.BLACK_CONCRETE_WALL.get(),
                        ModBlocks.WHITE_CONCRETE_WALL.get(),

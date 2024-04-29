@@ -1,0 +1,45 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "citycraft:block/traffic_barrier"
+	},
+	"elements": [
+		{
+			"name": "lower bar",
+			"from": [6, 7, 0],
+			"to": [10, 10, 6],
+			"faces": {
+				"north": {"uv": [0, 6, 4, 9], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [7, 6, 16, 9], "texture": "#1"},
+				"south": {"uv": [0, 6, 4, 9], "texture": "#1"},
+				"west": {"uv": [7, 6, 13, 9], "texture": "#1"},
+				"up": {"uv": [7, 12, 16, 16], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [7, 12, 16, 16], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"name": "middle bar",
+			"from": [7, 10, 0],
+			"to": [9, 13, 6],
+			"faces": {
+				"north": {"uv": [0, 3, 2, 6], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [7, 3, 16, 6], "texture": "#1"},
+				"south": {"uv": [0, 3, 2, 6], "texture": "#1"},
+				"west": {"uv": [7, 3, 13, 6], "texture": "#1"}
+			}
+		},
+		{
+			"name": "top bar",
+			"from": [6, 13, 0],
+			"to": [10, 16, 6],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 3], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [7, 0, 16, 3], "texture": "#1"},
+				"south": {"uv": [0, 0, 4, 3], "texture": "#1"},
+				"west": {"uv": [7, 0, 13, 3], "texture": "#1"},
+				"up": {"uv": [7, 12, 16, 16], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [7, 12, 16, 16], "rotation": 90, "texture": "#1"}
+			}
+		}
+	]
+}

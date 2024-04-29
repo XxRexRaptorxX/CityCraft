@@ -39,6 +39,10 @@ public class ModTags {
     public static final TagKey<Item> HANGING_WOOD_SIGNS_TAG = createItemTag("forge", "hanging_signs/wood");
 
 
+
+    public static final TagKey<Block> TRAFFIC_BARRIERS_TAG = createBlockTag("forge", "traffic_barriers");
+
+
     private static TagKey<Item> createItemTag(String id, String name) {
         return ItemTags.create(new ResourceLocation(id, name));
     }
