@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#citycraft:blank_asphalt_slabs",
+    "#citycraft:asphalt_slabs_with_markings",
+
+    "citycraft:cracked_asphalt_slab",
+    "citycraft:pothole_asphalt_slab",
+    "citycraft:mossy_asphalt_slab",
+    "citycraft:dirty_asphalt_slab"
+  ]
+}

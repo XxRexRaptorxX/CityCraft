@@ -4,7 +4,7 @@
   "group": "color_rasphalt_slab",
   "ingredients": [
     {
-      "tag": "forge:asphalt_slab"
+      "tag": "citycraft:asphalt_slab"
     },
     {
       "tag": "forge:dyes/red"
