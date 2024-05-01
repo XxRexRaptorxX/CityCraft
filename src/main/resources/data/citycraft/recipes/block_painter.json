@@ -3,8 +3,8 @@
   "category": "misc",
 
   "pattern": [
-    "#I#",
-    "###"
+    "-I",
+    "##"
   ],
 
   "key": {
@@ -13,6 +13,9 @@
     },
     "I": {
       "item": "minecraft:brush"
+    },
+    "-": {
+      "item": "minecraft:paper"
     }
   },
 
