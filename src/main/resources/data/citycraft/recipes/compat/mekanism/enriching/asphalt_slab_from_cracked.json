@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input":
+  {
+    "ingredient":
+    {
+      "item": "citycraft:cracked_asphalt_slab"
+    }
+  },
+  "output":
+  {
+    "item": "citycraft:asphalt_slab"
+  }
+}

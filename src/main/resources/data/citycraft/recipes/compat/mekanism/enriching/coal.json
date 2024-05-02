@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input":
+  {
+    "ingredient":
+    {
+      "tag": "forge:buckets/coal_tar"
+    }
+  },
+  "output":
+  {
+    "item": "citycraft:cracked_asphalt_slab",
+    "count": 3
+  }
+}

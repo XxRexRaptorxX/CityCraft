@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input":
+  {
+    "ingredient":
+    {
+      "item": "citycraft:mossy_asphalt"
+    }
+  },
+  "output":
+  {
+    "item": "citycraft:asphalt"
+  }
+}
