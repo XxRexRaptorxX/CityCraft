@@ -1,0 +1,44 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    },
+    {
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:bitumen"
+      },
+      "type": "forge:not"
+    }
+  ],
+
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+
+    {
+      "tag": "forge:bitumen"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+
+  "energy": 50000,
+  "input": {
+    "base_ingredient": {
+      "item": "minecraft:purple_concrete_powder"
+    },
+    "count": 1
+  },
+
+  "results": [
+    {
+      "base_ingredient": {
+        "item": "citycraft:purple_asphalt"
+      },
+      "count": 6
+    }
+  ],
+  "time": 200
+}

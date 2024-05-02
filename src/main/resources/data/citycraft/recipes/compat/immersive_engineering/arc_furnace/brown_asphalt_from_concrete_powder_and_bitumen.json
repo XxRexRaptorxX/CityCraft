@@ -1,0 +1,46 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    },
+    {
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:bitumen"
+      },
+      "type": "forge:not"
+    }
+  ],
+
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "tag": "forge:dyes/brown"
+    },
+    {
+      "tag": "forge:bitumen"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+
+  "energy": 50000,
+  "input": {
+    "base_ingredient": {
+      "item": "minecraft:brown_concrete_powder"
+    },
+    "count": 1
+  },
+
+  "results": [
+    {
+      "base_ingredient": {
+        "item": "citycraft:brown_asphalt"
+      },
+      "count": 6
+    }
+  ],
+  "time": 200
+}
