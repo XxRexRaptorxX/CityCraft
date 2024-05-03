@@ -2,6 +2,7 @@ package xxrexraptorxx.citycraft.recipes;
 
 import com.google.gson.JsonObject;
 import net.minecraft.core.RegistryAccess;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
@@ -100,8 +101,8 @@ public class PaintingRecipe implements IPaintingRecipe {
       public static final ResourceLocation ID = new ResourceLocation(ModRecipeTypes.PAINTING_RECIPE_TYPE);
 
       public PaintingRecipe fromJson(ResourceLocation loc, JsonObject json) {
-         Ingredient ingredient = Ingredient.fromJson(GsonHelper.convertToJsonObject(json, "base"));
-         Ingredient color = Ingredient.fromJson(GsonHelper.convertToJsonObject(json, "color"));
+         Ingredient ingredient = Ingredient.fromJson(GsonHelper.getAsJsonObject(json, "base"));
+         Ingredient color = Ingredient.fromJson(GsonHelper.getAsJsonObject(json, "color"));
          ItemStack result = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "result"));
 
          return new PaintingRecipe(loc, ingredient, color, result);
