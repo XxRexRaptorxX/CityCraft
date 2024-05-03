@@ -14,7 +14,7 @@ import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeHooks;
 import xxrexraptorxx.citycraft.main.CityCraft;
-import xxrexraptorxx.citycraft.main.References;
+import xxrexraptorxx.citycraft.registry.ModRecipeSerializers;
 import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
 
 import java.util.stream.Stream;
@@ -87,7 +87,7 @@ public class PaintingRecipe implements IPaintingRecipe {
 
 
    public RecipeSerializer<?> getSerializer() {
-      return RecipeSerializer.SMITHING_TRANSFORM;
+      return ModRecipeSerializers.PAINTING.get();
    }
 
 
