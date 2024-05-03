@@ -2,7 +2,6 @@ package xxrexraptorxx.citycraft.recipes;
 
 import com.google.gson.JsonObject;
 import net.minecraft.core.RegistryAccess;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
@@ -15,6 +14,7 @@ import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeHooks;
 import xxrexraptorxx.citycraft.main.CityCraft;
+import xxrexraptorxx.citycraft.registry.ModRecipeSerializers;
 import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
 
 import java.util.stream.Stream;
@@ -38,12 +38,14 @@ public class PaintingRecipe implements IPaintingRecipe {
    /**
     * Used to check if a recipe matches current crafting inventory
     */
+   @Override
    public boolean matches(Container container, Level level) {
       return this.base.test(container.getItem(0)) && this.color.test(container.getItem(1));
    }
 
 
-   public ItemStack assemble(Container container, RegistryAccess registryAccess) {
+   @Override
+   public ItemStack assemble(Container container) {
       ItemStack itemstack = this.result.copy();
       CompoundTag compoundtag = container.getItem(0).getTag();
       if (compoundtag != null) {
@@ -53,7 +55,13 @@ public class PaintingRecipe implements IPaintingRecipe {
       return itemstack;
    }
 
+   @Override
+   public ItemStack getResultItem() {
+      return result;
+   }
 
+
+   @Override
    public Ingredient getIngredients(Integer slotId) {
       switch (slotId) {
          case 0: return this.base;
@@ -87,7 +95,7 @@ public class PaintingRecipe implements IPaintingRecipe {
 
 
    public RecipeSerializer<?> getSerializer() {
-      return RecipeSerializer.SMITHING_TRANSFORM;
+      return ModRecipeSerializers.PAINTING.get();
    }
 
 

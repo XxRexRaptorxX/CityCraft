@@ -98,7 +98,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
                 int j1 = i + i1 % 4 * 16;
                 int k1 = j + i1 / 4 * 18 + 2;
                 if (x >= j1 && x < j1 + 16 && y >= k1 && y < k1 + 18) {
-                    this.renderTooltip(gui, list.get(l).getResultItem(this.minecraft.level.registryAccess()), x, y);
+                    this.renderTooltip(gui, list.get(l).getResultItem(), x, y);
                 }
             }
         }
@@ -135,7 +135,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
             int k = x + j % 4 * 16;
             int l = j / 4;
             int i1 = y + l * 18 + 2;
-            this.minecraft.getItemRenderer().renderAndDecorateItem(gui, list.get(i).getResultItem(this.minecraft.level.registryAccess()), k, i1);
+            this.minecraft.getItemRenderer().renderAndDecorateItem(list.get(i).getResultItem(), k, i1);
         }
     }
 
@@ -154,7 +154,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
                 double d0 = mouseX - (double)(i + i1 % 4 * 16);
                 double d1 = mouseY - (double)(j + i1 / 4 * 18);
                 if (d0 >= 0.0D && d1 >= 0.0D && d0 < 16.0D && d1 < 18.0D && this.menu.clickMenuButton(this.minecraft.player, l)) {
-                    Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.BRUSH_BRUSHING, 1.0F));
+                    Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.SAND_PLACE, 1.0F));
                     this.minecraft.gameMode.handleInventoryButtonClick((this.menu).containerId, l);
                     return true;
                 }

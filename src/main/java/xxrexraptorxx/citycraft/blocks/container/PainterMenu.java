@@ -163,15 +163,11 @@ public class PainterMenu extends AbstractContainerMenu {
     private void setupResultSlot() {
         if (!this.recipes.isEmpty() && this.isValidRecipeIndex(this.selectedRecipeIndex.get())) {
             IPaintingRecipe recipe = this.recipes.get(this.selectedRecipeIndex.get());
-            ItemStack resultStack = recipe.assemble(this.container, this.level.registryAccess());
+            //ItemStack resultStack = recipe.assemble(this.container, this.level.registryAccess());
 
-            if (resultStack.isItemEnabled(this.level.enabledFeatures())) {
-                this.resultContainer.setRecipeUsed(recipe);
-                this.resultSlot.set(resultStack);
+            this.resultContainer.setRecipeUsed(recipe);
+            this.resultSlot.set(recipe.assemble(this.container));
 
-            } else {
-                this.resultSlot.set(ItemStack.EMPTY);
-            }
         } else {
             this.resultSlot.set(ItemStack.EMPTY);
         }

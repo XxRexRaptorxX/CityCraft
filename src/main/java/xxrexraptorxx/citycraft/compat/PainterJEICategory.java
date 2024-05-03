@@ -62,7 +62,7 @@ public class PainterJEICategory implements IRecipeCategory<IPaintingRecipe> {
         iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.INPUT, 1, 1).addIngredients(recipe.getIngredients(0));
         iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.INPUT, 1, 29).addIngredients(recipe.getIngredients(1));
 
-        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.OUTPUT, 61, 15).addItemStack(recipe.getResultItem(Minecraft.getInstance().level.registryAccess()));
+        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.OUTPUT, 61, 15).addItemStack(recipe.getResultItem());
     }
 
 

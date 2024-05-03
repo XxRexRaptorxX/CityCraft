@@ -1,7 +1,6 @@
 package xxrexraptorxx.citycraft.registry;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
@@ -16,7 +15,7 @@ public class ModMenuTypes {
 
 
     static void onRegister(final RegisterEvent event) {
-        PAINTER = new MenuType<>(PainterMenu::new, FeatureFlags.DEFAULT_FLAGS);
+        PAINTER = new MenuType<>(PainterMenu::new);
         event.register(ForgeRegistries.Keys.MENU_TYPES, new ResourceLocation(References.MODID, "painting"), () -> PAINTER);
     }
 

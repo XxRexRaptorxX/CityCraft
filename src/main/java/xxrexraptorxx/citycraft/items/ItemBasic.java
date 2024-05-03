@@ -5,12 +5,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.RecipeType;
 import org.jetbrains.annotations.Nullable;
+import xxrexraptorxx.citycraft.registry.ModCreativeTabs;
 import xxrexraptorxx.citycraft.registry.ModItems;
 
 public class ItemBasic extends Item {
 
     public ItemBasic() {
-        super(new Properties()
+        super(new Properties().tab(ModCreativeTabs.MAIN_TAB)
         );
     }
 

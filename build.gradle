@@ -167,16 +167,16 @@ dependencies {
     //IMMERSIVE ENGINEERING
     runtimeOnly fg.deobf("curse.maven:ie-231951:${immersive_engineering_version}")
     //IMMERSIVE PETROLEUM
-    //runtimeOnly fg.deobf("curse.maven:ip-268250:${immersive_petroleum_version}")
+    runtimeOnly fg.deobf("curse.maven:ip-268250:${immersive_petroleum_version}")
     //MORE MCMETA
     //runtimeOnly fg.deobf("curse.maven:moremcmeta-442169:${moremcmeta_version}")
     //runtimeOnly fg.deobf("curse.maven:moremcmetaemissive-880880:${moremcmeta_emissive_version}")
     //MEKANISM
-    //runtimeOnly fg.deobf("curse.maven:mekanism-268560:${mekanism_version}")
+    runtimeOnly fg.deobf("curse.maven:mekanism-268560:${mekanism_version}")
     //Moonlight Lib
-    runtimeOnly fg.deobf("curse.maven:moonlight-499980:${moonlight_version}")
+    //runtimeOnly fg.deobf("curse.maven:moonlight-499980:${moonlight_version}")
     //Supplementaries
-    runtimeOnly fg.deobf("curse.maven:supplementaries-412082:${supplementaries_version}")
+    //runtimeOnly fg.deobf("curse.maven:supplementaries-412082:${supplementaries_version}")
 }
 
 // MixinGradle Settings
