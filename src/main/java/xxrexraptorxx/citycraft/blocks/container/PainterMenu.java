@@ -60,7 +60,7 @@ public class PainterMenu extends AbstractContainerMenu {
 
     public PainterMenu(int containerId, Inventory playerInventory, final ContainerLevelAccess access) {
         super(ModMenuTypes.PAINTER, containerId);
-        this.level = playerInventory.player.level();
+        this.level = playerInventory.player.getLevel();
         this.access = access;
         this.allRecipes = this.level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.PAINTING);
 
@@ -77,8 +77,8 @@ public class PainterMenu extends AbstractContainerMenu {
             }
 
             public void onTake(Player player, ItemStack stack) {
-                stack.onCraftedBy(player.level(), player, stack.getCount());
-                PainterMenu.this.resultContainer.awardUsedRecipes(player, this.getRelevantItems());
+                stack.onCraftedBy(player.getLevel(), player, stack.getCount());
+                PainterMenu.this.resultContainer.awardUsedRecipes(player);
                 ItemStack inputStack1 = PainterMenu.this.inputSlot1.remove(1);
                 ItemStack inputStack2 = PainterMenu.this.inputSlot2.remove(1);
 

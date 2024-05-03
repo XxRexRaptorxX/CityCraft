@@ -15,11 +15,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.utils.Config;
 
@@ -32,13 +32,12 @@ public class DrainCoverBlock extends SlabBlock {
 
 
 	public DrainCoverBlock() {
-		super(Properties.of()
+		super(Properties.of(Material.METAL)
 				.strength(5.5F, 6.5F)
 				.sound(SoundType.METAL)
-				.mapColor(MapColor.METAL)
-				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)
 				.requiresCorrectToolForDrops()
 				.noOcclusion()
+				.color(MaterialColor.METAL)
 		);
 
 		this.registerDefaultState(this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false)));

@@ -1,16 +1,16 @@
 package xxrexraptorxx.citycraft.blocks;
 
 import net.minecraft.core.Direction;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 
 
 public class DirectionalPoleBlock extends FenceBlock implements SimpleWaterloggedBlock {
@@ -18,11 +18,10 @@ public class DirectionalPoleBlock extends FenceBlock implements SimpleWaterlogge
 	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
 	public DirectionalPoleBlock() {
-		super(Properties.of()
+		super(Properties.of(Material.METAL)
 				.strength(3.0F, 4.0F)
 				.sound(SoundType.METAL)
-				.mapColor(DyeColor.WHITE)
-				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+				.color(MaterialColor.SNOW)
 		);
 	}
 

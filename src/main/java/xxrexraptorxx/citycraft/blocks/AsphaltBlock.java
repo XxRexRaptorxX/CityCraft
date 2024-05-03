@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -18,7 +17,8 @@ import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Config;
@@ -29,12 +29,11 @@ import java.util.List;
 public class AsphaltBlock extends HorizontalDirectionalBlock {
 
 	public AsphaltBlock() {
-		super(Properties.of()
+		super(Properties.of(Material.STONE)
 				.requiresCorrectToolForDrops()
 				.strength(1.6F)
 				.sound(SoundType.STONE)
-				.mapColor(DyeColor.BLACK)
-				.instrument(NoteBlockInstrument.BASEDRUM)
+				.color(MaterialColor.COLOR_BLACK)
 		);
 	}
 

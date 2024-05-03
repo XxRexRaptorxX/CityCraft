@@ -14,7 +14,6 @@ import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeHooks;
 import xxrexraptorxx.citycraft.main.CityCraft;
-import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
 
 import java.util.stream.Stream;
@@ -101,8 +100,8 @@ public class PaintingRecipe implements IPaintingRecipe {
       public static final ResourceLocation ID = new ResourceLocation(ModRecipeTypes.PAINTING_RECIPE_TYPE);
 
       public PaintingRecipe fromJson(ResourceLocation loc, JsonObject json) {
-         Ingredient ingredient = Ingredient.fromJson(GsonHelper.getNonNull(json, "base"));
-         Ingredient color = Ingredient.fromJson(GsonHelper.getNonNull(json, "color"));
+         Ingredient ingredient = Ingredient.fromJson(GsonHelper.convertToJsonObject(json, "base"));
+         Ingredient color = Ingredient.fromJson(GsonHelper.convertToJsonObject(json, "color"));
          ItemStack result = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "result"));
 
          return new PaintingRecipe(loc, ingredient, color, result);

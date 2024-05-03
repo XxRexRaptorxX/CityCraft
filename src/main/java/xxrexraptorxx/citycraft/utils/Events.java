@@ -1,4 +1,4 @@
-package xxrexraptorxx.citycraft.world;
+package xxrexraptorxx.citycraft.utils;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -68,7 +68,7 @@ public class Events {
     @SubscribeEvent
     public static void SupporterRewards(PlayerEvent.PlayerLoggedInEvent event) {
         Player player = event.getEntity();
-        Level level = player.level();
+        Level level = player.getLevel();
 
         if (Config.PATREON_REWARDS.get()) {
 

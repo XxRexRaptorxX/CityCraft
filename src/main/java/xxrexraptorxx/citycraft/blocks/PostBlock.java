@@ -5,20 +5,19 @@ import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 
 
 public class PostBlock extends WallBlock implements SimpleWaterloggedBlock {
 
 	public PostBlock() {
-		super(Properties.of()
+		super(Properties.of(Material.STONE)
 				.strength(1.5F, 6.0F)
 				.sound(SoundType.STONE)
-				.mapColor(MapColor.STONE)
-				.instrument(NoteBlockInstrument.BASEDRUM)
+				.color(MaterialColor.STONE)
 				.requiresCorrectToolForDrops()
 		);
 

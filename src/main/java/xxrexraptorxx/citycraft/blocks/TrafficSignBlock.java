@@ -3,7 +3,6 @@ package xxrexraptorxx.citycraft.blocks;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -13,9 +12,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
 
@@ -27,11 +27,10 @@ public class TrafficSignBlock extends FenceBlock implements SimpleWaterloggedBlo
 	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
 	public TrafficSignBlock() {
-		super(Properties.of()
+		super(Properties.of(Material.METAL)
 				.strength(3.0F, 4.0F)
 				.sound(SoundType.METAL)
-				.mapColor(DyeColor.WHITE)
-				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+				.color(MaterialColor.METAL)
 				.requiresCorrectToolForDrops()
 		);
 	}

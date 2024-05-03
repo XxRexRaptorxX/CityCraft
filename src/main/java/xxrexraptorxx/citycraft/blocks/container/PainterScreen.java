@@ -1,7 +1,8 @@
 package xxrexraptorxx.citycraft.blocks.container;
 
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.network.chat.Component;
@@ -50,20 +51,22 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
 
     @Override
-    public void render(GuiGraphics gui, int mouseX, int mouseY, float partialTick) {
+    public void render(PoseStack gui, int mouseX, int mouseY, float partialTick) {
         super.render(gui, mouseX, mouseY, partialTick);
         this.renderTooltip(gui, mouseX, mouseY);
     }
 
 
     @Override
-    protected void renderBg(GuiGraphics gui, float partialTick, int mouseX, int mouseY) {
+    protected void renderBg(PoseStack gui, float partialTick, int mouseX, int mouseY) {
         this.renderBackground(gui);
+        RenderSystem.setShaderTexture(0, BG_LOCATION);
+
         int i = this.leftPos;
         int j = this.topPos;
-        gui.blit(BG_LOCATION, i, j, 0, 0, this.imageWidth, this.imageHeight);
+        this.blit(gui, i, j, 0, 0, this.imageWidth, this.imageHeight);
         int k = (int)(41.0F * this.scrollOffs);
-        gui.blit(BG_LOCATION, i + 119, j + 15 + k, 176 + (this.isScrollBarActive() ? 0 : 12), 0, 12, 15);
+        this.blit(gui, i + 119, j + 15 + k, 176 + (this.isScrollBarActive() ? 0 : 12), 0, 12, 15);
         int l = this.leftPos + 52;
         int i1 = this.topPos + 14;
         int j1 = this.startIndex + 12;
@@ -72,7 +75,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
         Slot slot = this.menu.inputSlot2;
 
         if (!slot.hasItem()) {
-            gui.blit(BG_LOCATION, i + slot.x, j + slot.y, this.imageWidth, this.imageHeight, 16, 16);
+            this.blit(gui, i + slot.x, j + slot.y, this.imageWidth, this.imageHeight, 16, 16);
         }
 
         this.renderButtons(gui, mouseX, mouseY, l, i1, j1);
@@ -81,7 +84,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
 
     @Override
-    protected void renderTooltip(GuiGraphics gui, int x, int y) {
+    protected void renderTooltip(PoseStack gui, int x, int y) {
         super.renderTooltip(gui, x, y);
 
         if (this.displayRecipes) {
@@ -95,7 +98,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
                 int j1 = i + i1 % 4 * 16;
                 int k1 = j + i1 / 4 * 18 + 2;
                 if (x >= j1 && x < j1 + 16 && y >= k1 && y < k1 + 18) {
-                    gui.renderTooltip(this.font, list.get(l).getResultItem(this.minecraft.level.registryAccess()), x, y);
+                    this.renderTooltip(gui, list.get(l).getResultItem(this.minecraft.level.registryAccess()), x, y);
                 }
             }
         }
@@ -103,7 +106,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
     }
 
 
-    private void renderButtons(GuiGraphics gui, int mouseX, int mouseY, int x, int y, int lastVisibleElementIndex) {
+    private void renderButtons(PoseStack gui, int mouseX, int mouseY, int x, int y, int lastVisibleElementIndex) {
         for(int i = this.startIndex; i < lastVisibleElementIndex && i < this.menu.getNumRecipes(); ++i) {
             int j = i - this.startIndex;
             int k = x + j % 4 * 16;
@@ -118,13 +121,13 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
                 j1 += 36;
             }
 
-            gui.blit(BG_LOCATION, k, i1 - 1, 0, j1, 16, 18);
+            this.blit(gui, k, i1 - 1, 0, j1, 16, 18);
         }
 
     }
 
 
-    private void renderRecipes(GuiGraphics gui, int x, int y, int startIndex) {
+    private void renderRecipes(PoseStack gui, int x, int y, int startIndex) {
         List<IPaintingRecipe> list = this.menu.getRecipes();
 
         for(int i = this.startIndex; i < startIndex && i < this.menu.getNumRecipes(); ++i) {
@@ -132,9 +135,8 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
             int k = x + j % 4 * 16;
             int l = j / 4;
             int i1 = y + l * 18 + 2;
-            gui.renderItem(list.get(i).getResultItem(this.minecraft.level.registryAccess()), k, i1);
+            this.minecraft.getItemRenderer().renderAndDecorateItem(gui, list.get(i).getResultItem(this.minecraft.level.registryAccess()), k, i1);
         }
-
     }
 
 
@@ -152,7 +154,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
                 double d0 = mouseX - (double)(i + i1 % 4 * 16);
                 double d1 = mouseY - (double)(j + i1 / 4 * 18);
                 if (d0 >= 0.0D && d1 >= 0.0D && d0 < 16.0D && d1 < 18.0D && this.menu.clickMenuButton(this.minecraft.player, l)) {
-                    Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.BRUSH_GENERIC, 1.0F));
+                    Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.BRUSH_BRUSHING, 1.0F));
                     this.minecraft.gameMode.handleInventoryButtonClick((this.menu).containerId, l);
                     return true;
                 }

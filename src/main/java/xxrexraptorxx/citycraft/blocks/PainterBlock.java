@@ -13,8 +13,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.phys.BlockHitResult;
 import xxrexraptorxx.citycraft.blocks.container.PainterMenu;
 import xxrexraptorxx.citycraft.main.References;
@@ -28,11 +28,10 @@ public class PainterBlock extends Block {
 
 
 	public PainterBlock() {
-		super(Properties.of()
+		super(Properties.of(Material.METAL)
 				.strength(2.5F)
 				.sound(SoundType.METAL)
-				.mapColor(MapColor.METAL)
-				.instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+				.color(MaterialColor.METAL)
 		);
 	}
 
