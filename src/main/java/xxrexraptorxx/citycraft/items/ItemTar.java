@@ -8,31 +8,20 @@ import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.registry.ModCreativeTabs;
 import xxrexraptorxx.citycraft.registry.ModItems;
 
-public class ItemBasic extends Item {
+public class ItemTar extends Item {
 
-    public ItemBasic() {
-        super(new Properties().tab(ModCreativeTabs.MAIN_TAB)
+    public ItemTar() {
+        super(new Properties().tab(ModCreativeTabs.MAIN_TAB).craftRemainder(Items.BUCKET)
         );
     }
 
 
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-        if (this == ModItems.COAL_COKE.get()) {
-            return 3200;
+        if (this == ModItems.COAL_TAR.get()) {
+                return 800;
         } else {
             return 0;
         }
-    }
-
-
-
-    @Override
-    public ItemStack getCraftingRemainingItem(ItemStack stack) {
-        if (this == ModItems.COAL_TAR.get()) {
-            return new ItemStack(Items.BUCKET);
-        }
-
-        return super.getCraftingRemainingItem(stack);
     }
 }
