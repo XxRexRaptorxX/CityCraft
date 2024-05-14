@@ -336,10 +336,10 @@ public class ModBlocks {
     public static final RegistryObject<PostBlock> RED_WHITE_POST = registerBlock("red_white_post", PostBlock::new);
     public static final RegistryObject<PostBlock> YELLOW_BLACK_POST = registerBlock("yellow_black_post", PostBlock::new);
 
-    public static final RegistryObject<ChainBlock> RED_CHAIN = registerBlock("red_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
-    public static final RegistryObject<ChainBlock> WHITE_CHAIN = registerBlock("white_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
-    public static final RegistryObject<ChainBlock> YELLOW_CHAIN = registerBlock("yellow_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
-    public static final RegistryObject<ChainBlock> BLACK_CHAIN = registerBlock("black_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN)));
+    public static final RegistryObject<ChainBlock> RED_CHAIN = registerBlock("red_chain", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
+    public static final RegistryObject<ChainBlock> WHITE_CHAIN = registerBlock("white_chain", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
+    public static final RegistryObject<ChainBlock> YELLOW_CHAIN = registerBlock("yellow_chain", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
+    public static final RegistryObject<ChainBlock> BLACK_CHAIN = registerBlock("black_chain", () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
 
     public static final RegistryObject<TrafficSignBlock> LEFT_ARROW_EU_SIGN = registerBlock("left_arrow_eu_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> CAMPING_EU_SIGN = registerBlock("camping_eu_sign", TrafficSignBlock::new);
@@ -568,25 +568,25 @@ public class ModBlocks {
     public static final RegistryObject<DrainCoverBlock> DRAIN_COVER = registerBlock("drain_cover", DrainCoverBlock::new);
     public static final RegistryObject<DrainCoverBlock> DRAIN_COVER_GRID = registerBlock("drain_cover_grid", DrainCoverBlock::new);
 
-    public static final RegistryObject<FenceBlock> IRON_FENCE = registerBlock("iron_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(ModBlocks.IRON_POLE.get())));
+    public static final RegistryObject<FenceBlock> IRON_FENCE = registerBlock("iron_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.IRON_POLE.get())));
     public static final RegistryObject<TrafficBarrierBlock> TRAFFIC_BARRIER = registerBlock("traffic_barrier", TrafficBarrierBlock::new);
 
-    public static final RegistryObject<WallBlock> BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_CONCRETE)));
-    public static final RegistryObject<WallBlock> WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_CONCRETE)));
-    public static final RegistryObject<WallBlock> ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_CONCRETE)));
-    public static final RegistryObject<WallBlock> MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_CONCRETE)));
-    public static final RegistryObject<WallBlock> LIGHT_BLUE_CONCRETE_WALL = registerBlock("light_blue_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_BLUE_CONCRETE)));
-    public static final RegistryObject<WallBlock> YELLOW_CONCRETE_WALL = registerBlock("yellow_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_CONCRETE)));
-    public static final RegistryObject<WallBlock> LIME_CONCRETE_WALL = registerBlock("lime_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.LIME_CONCRETE)));
-    public static final RegistryObject<WallBlock> PINK_CONCRETE_WALL = registerBlock("pink_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.PINK_CONCRETE)));
-    public static final RegistryObject<WallBlock> GRAY_CONCRETE_WALL = registerBlock("gray_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.GRAY_CONCRETE)));
-    public static final RegistryObject<WallBlock> LIGHT_GRAY_CONCRETE_WALL = registerBlock("light_gray_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_GRAY_CONCRETE)));
-    public static final RegistryObject<WallBlock> CYAN_CONCRETE_WALL = registerBlock("cyan_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.CYAN_CONCRETE)));
-    public static final RegistryObject<WallBlock> PURPLE_CONCRETE_WALL = registerBlock("purple_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_CONCRETE)));
-    public static final RegistryObject<WallBlock> BLUE_CONCRETE_WALL = registerBlock("blue_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_CONCRETE)));
-    public static final RegistryObject<WallBlock> BROWN_CONCRETE_WALL = registerBlock("brown_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_CONCRETE)));
-    public static final RegistryObject<WallBlock> GREEN_CONCRETE_WALL = registerBlock("green_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_CONCRETE)));
-    public static final RegistryObject<WallBlock> RED_CONCRETE_WALL = registerBlock("red_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.RED_CONCRETE)));
+    public static final RegistryObject<WallBlock> BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
+    public static final RegistryObject<WallBlock> WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
+    public static final RegistryObject<WallBlock> ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE)));
+    public static final RegistryObject<WallBlock> MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE)));
+    public static final RegistryObject<WallBlock> LIGHT_BLUE_CONCRETE_WALL = registerBlock("light_blue_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE)));
+    public static final RegistryObject<WallBlock> YELLOW_CONCRETE_WALL = registerBlock("yellow_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE)));
+    public static final RegistryObject<WallBlock> LIME_CONCRETE_WALL = registerBlock("lime_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE)));
+    public static final RegistryObject<WallBlock> PINK_CONCRETE_WALL = registerBlock("pink_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE)));
+    public static final RegistryObject<WallBlock> GRAY_CONCRETE_WALL = registerBlock("gray_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE)));
+    public static final RegistryObject<WallBlock> LIGHT_GRAY_CONCRETE_WALL = registerBlock("light_gray_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE)));
+    public static final RegistryObject<WallBlock> CYAN_CONCRETE_WALL = registerBlock("cyan_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE)));
+    public static final RegistryObject<WallBlock> PURPLE_CONCRETE_WALL = registerBlock("purple_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE)));
+    public static final RegistryObject<WallBlock> BLUE_CONCRETE_WALL = registerBlock("blue_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE)));
+    public static final RegistryObject<WallBlock> BROWN_CONCRETE_WALL = registerBlock("brown_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE)));
+    public static final RegistryObject<WallBlock> GREEN_CONCRETE_WALL = registerBlock("green_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE)));
+    public static final RegistryObject<WallBlock> RED_CONCRETE_WALL = registerBlock("red_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
 
     public static final RegistryObject<PainterBlock> BLOCK_PAINTER = registerBlock("block_painter", PainterBlock::new);
 

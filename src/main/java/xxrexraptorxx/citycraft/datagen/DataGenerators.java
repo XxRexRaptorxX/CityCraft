@@ -26,6 +26,6 @@ public class DataGenerators {
 
         generator.addProvider(event.includeServer(), new BlockTagGen(packOutput, lookupProvider, helper));
         generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
+        //generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput)); TODO!
     }
 }

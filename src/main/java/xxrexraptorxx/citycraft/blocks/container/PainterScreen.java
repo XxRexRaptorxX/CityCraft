@@ -10,6 +10,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import xxrexraptorxx.citycraft.main.References;
@@ -58,7 +59,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
     @Override
     protected void renderBg(GuiGraphics gui, float partialTick, int mouseX, int mouseY) {
-        this.renderBackground(gui);
+        this.renderBackground(gui, mouseX, mouseY, partialTick);
         int i = this.leftPos;
         int j = this.topPos;
         gui.blit(BG_LOCATION, i, j, 0, 0, this.imageWidth, this.imageHeight);
@@ -88,14 +89,14 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
             int i = this.leftPos + 52;
             int j = this.topPos + 14;
             int k = this.startIndex + 12;
-            List<IPaintingRecipe> list = this.menu.getRecipes();
+            List<RecipeHolder<IPaintingRecipe>> list = this.menu.getRecipes();
 
             for(int l = this.startIndex; l < k && l < this.menu.getNumRecipes(); ++l) {
                 int i1 = l - this.startIndex;
                 int j1 = i + i1 % 4 * 16;
                 int k1 = j + i1 / 4 * 18 + 2;
                 if (x >= j1 && x < j1 + 16 && y >= k1 && y < k1 + 18) {
-                    gui.renderTooltip(this.font, list.get(l).getResultItem(this.minecraft.level.registryAccess()), x, y);
+                    gui.renderTooltip(this.font, list.get(l).value().getResultItem(this.minecraft.level.registryAccess()), x, y);
                 }
             }
         }
@@ -125,14 +126,14 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
 
     private void renderRecipes(GuiGraphics gui, int x, int y, int startIndex) {
-        List<IPaintingRecipe> list = this.menu.getRecipes();
+        List<RecipeHolder<IPaintingRecipe>> list = this.menu.getRecipes();
 
         for(int i = this.startIndex; i < startIndex && i < this.menu.getNumRecipes(); ++i) {
             int j = i - this.startIndex;
             int k = x + j % 4 * 16;
             int l = j / 4;
             int i1 = y + l * 18 + 2;
-            gui.renderItem(list.get(i).getResultItem(this.minecraft.level.registryAccess()), k, i1);
+            gui.renderItem(list.get(i).value().getResultItem(this.minecraft.level.registryAccess()), k, i1);
         }
 
     }
@@ -187,10 +188,10 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
 
     @Override
-    public boolean mouseScrolled(double mouseX, double mouseY, double delta) {
+    public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
         if (this.isScrollBarActive()) {
             int i = this.getOffscreenRows();
-            float f = (float)delta / (float)i;
+            float f = (float)scrollY / (float)i;
             this.scrollOffs = Mth.clamp(this.scrollOffs - f, 0.0F, 1.0F);
             this.startIndex = (int)((double)(this.scrollOffs * (float)i) + 0.5D) * 4;
         }

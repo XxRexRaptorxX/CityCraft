@@ -9,6 +9,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.Level;
 import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
@@ -29,8 +30,8 @@ public class PainterMenu extends AbstractContainerMenu {
     private static final int USE_ROW_SLOT_END = 39;
 
     private final Level level;
-    private List<IPaintingRecipe> recipes = Lists.newArrayList();
-    private final List<IPaintingRecipe> allRecipes;
+    private List<RecipeHolder<IPaintingRecipe>> recipes = Lists.newArrayList();
+    private final List<RecipeHolder<IPaintingRecipe>> allRecipes;
     private ItemStack input1 = ItemStack.EMPTY;
     private ItemStack input2 = ItemStack.EMPTY;
     long lastSoundTime;
@@ -162,8 +163,8 @@ public class PainterMenu extends AbstractContainerMenu {
 
     private void setupResultSlot() {
         if (!this.recipes.isEmpty() && this.isValidRecipeIndex(this.selectedRecipeIndex.get())) {
-            IPaintingRecipe recipe = this.recipes.get(this.selectedRecipeIndex.get());
-            ItemStack resultStack = recipe.assemble(this.container, this.level.registryAccess());
+            RecipeHolder<IPaintingRecipe> recipe = this.recipes.get(this.selectedRecipeIndex.get());
+            ItemStack resultStack = recipe.value().assemble(this.container, this.level.registryAccess());
 
             if (resultStack.isItemEnabled(this.level.enabledFeatures())) {
                 this.resultContainer.setRecipeUsed(recipe);
@@ -257,7 +258,7 @@ public class PainterMenu extends AbstractContainerMenu {
 
     public int getSlotToQuickMoveTo(ItemStack stack) {
         return allRecipes.stream().map((recipeMap) -> {
-            return findSlotMatchingIngredient(recipeMap, stack);
+            return findSlotMatchingIngredient(recipeMap.value(), stack);
         }).filter(Optional::isPresent).findFirst().orElse(Optional.of(1)).get();
     }
 
@@ -275,7 +276,7 @@ public class PainterMenu extends AbstractContainerMenu {
 
     public boolean canMoveIntoInputSlots(ItemStack stack) {
         return this.level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.PAINTING).stream().map((recipeMap) -> {
-            return findSlotMatchingIngredient(recipeMap, stack);
+            return findSlotMatchingIngredient(recipeMap.value(), stack);
         }).anyMatch(Optional::isPresent);
     }
 
@@ -302,7 +303,7 @@ public class PainterMenu extends AbstractContainerMenu {
     }
 
 
-    public List<IPaintingRecipe> getRecipes() {
+    public List<RecipeHolder<IPaintingRecipe>> getRecipes() {
         return this.recipes;
     }
 

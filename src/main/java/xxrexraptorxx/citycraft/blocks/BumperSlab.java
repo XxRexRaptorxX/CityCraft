@@ -26,7 +26,7 @@ public class BumperSlab extends SlabBlock {
 
 
 	public BumperSlab() {
-		super(Properties.copy(ModBlocks.ASPHALT_BLOCK.get())
+		super(Properties.ofFullCopy(ModBlocks.ASPHALT_BLOCK.get())
 		);
 
 		this.registerDefaultState(this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false)));

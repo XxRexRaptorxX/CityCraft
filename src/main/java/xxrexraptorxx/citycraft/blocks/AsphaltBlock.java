@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.blocks;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -83,4 +84,9 @@ public class AsphaltBlock extends HorizontalDirectionalBlock {
 		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
 	}
 
+
+	@Override
+	protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+		return null;
+	}
 }

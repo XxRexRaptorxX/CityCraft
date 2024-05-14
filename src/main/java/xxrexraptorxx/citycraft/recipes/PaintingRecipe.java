@@ -1,16 +1,14 @@
 package xxrexraptorxx.citycraft.recipes;
 
-import com.google.gson.JsonObject;
+import com.mojang.serialization.Codec;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.GsonHelper;
 import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeHooks;
 import xxrexraptorxx.citycraft.main.CityCraft;
@@ -100,22 +98,29 @@ public class PaintingRecipe implements IPaintingRecipe {
       public static final Serializer INSTANCE = new Serializer();
       public static final ResourceLocation ID = new ResourceLocation(ModRecipeTypes.PAINTING_RECIPE_TYPE);
 
-      public PaintingRecipe fromJson(ResourceLocation loc, JsonObject json) {
-         Ingredient ingredient = Ingredient.fromJson(GsonHelper.getNonNull(json, "base"));
-         Ingredient color = Ingredient.fromJson(GsonHelper.getNonNull(json, "color"));
-         ItemStack result = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "result"));
+      //public PaintingRecipe fromJson(ResourceLocation loc, JsonObject json) {
+      //   Ingredient ingredient = Ingredient.fromJson(GsonHelper.getNonNull(json, "base"));
+      //   Ingredient color = Ingredient.fromJson(GsonHelper.getNonNull(json, "color"));
+      //   ItemStack result = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "result"));
+//
+      //   return new PaintingRecipe(loc, ingredient, color, result);
+      //}
 
-         return new PaintingRecipe(loc, ingredient, color, result);
-      }
-
-      public PaintingRecipe fromNetwork(ResourceLocation loc, FriendlyByteBuf buf) {
+      @Override
+      public PaintingRecipe fromNetwork(FriendlyByteBuf buf) {
          Ingredient ingredient = Ingredient.fromNetwork(buf);
          Ingredient ingredient1 = Ingredient.fromNetwork(buf);
          ItemStack itemstack = buf.readItem();
 
-         return new PaintingRecipe(loc, ingredient, ingredient1, itemstack);
+         return new PaintingRecipe(ID, ingredient, ingredient1, itemstack);
       }
 
+      @Override
+      public Codec<PaintingRecipe> codec() {
+         return null;
+      }
+
+      @Override
       public void toNetwork(FriendlyByteBuf buf, PaintingRecipe recipe) {
          recipe.base.toNetwork(buf);
          recipe.color.toNetwork(buf);

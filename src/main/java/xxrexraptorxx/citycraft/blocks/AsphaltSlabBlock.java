@@ -38,7 +38,7 @@ public class AsphaltSlabBlock extends SlabBlock {
 
 
 	public AsphaltSlabBlock() {
-		super(BlockBehaviour.Properties.copy(ModBlocks.ASPHALT_BLOCK.get())
+		super(BlockBehaviour.Properties.ofFullCopy(ModBlocks.ASPHALT_BLOCK.get())
 		);
 
 		this.registerDefaultState(this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false)));
