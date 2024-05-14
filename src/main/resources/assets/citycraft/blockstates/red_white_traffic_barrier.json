@@ -1,0 +1,45 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "citycraft:block/red_white_traffic_barrier_post"
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/red_white_traffic_barrier_side"
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "citycraft:block/red_white_traffic_barrier_side",
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "citycraft:block/red_white_traffic_barrier_side",
+        "y": 180
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "citycraft:block/red_white_traffic_barrier_side",
+        "y": 270
+      },
+      "when": {
+        "west": "true"
+      }
+    }
+  ]
+}

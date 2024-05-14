@@ -58,6 +58,8 @@ public class CreativeModeTabs {
 
                 output.accept(ModBlocks.IRON_FENCE.get());
                 output.accept(ModBlocks.TRAFFIC_BARRIER.get());
+                output.accept(ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get());
+                output.accept(ModBlocks.YELLOW_BLACK_TRAFFIC_BARRIER.get());
 
                 output.accept(ModBlocks.DRAIN_COVER.get());
                 output.accept(ModBlocks.DRAIN_COVER_GRID.get());

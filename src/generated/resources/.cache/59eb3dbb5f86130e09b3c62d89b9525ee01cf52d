@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-30T00:20:30.8475795	Loot Tables
+// 1.20.1	2024-05-14T15:13:52.2595602	Loot Tables
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_tables/blocks/100_speed_eu_sign.json
 dd3c3abd2471b84fca081f594e0f07afa39c7d42 data/citycraft/loot_tables/blocks/10_speed_eu_sign.json
 ee8f5504a89f1e81ed260a129c0aa566f6e82fed data/citycraft/loot_tables/blocks/120_speed_eu_sign.json
@@ -442,6 +442,7 @@ d54b0af2b734b1673a116708e95be2e8184aaee3 data/citycraft/loot_tables/blocks/red_a
 5947b79a8a38d3d3c79b3c7fa535b2cebe00fdd9 data/citycraft/loot_tables/blocks/red_post.json
 89e5c1abc8bece6783d433785bef9d9788f3d05e data/citycraft/loot_tables/blocks/red_white_pole.json
 6c833de4e6242b308c1dbf5e82377cba2d062572 data/citycraft/loot_tables/blocks/red_white_post.json
+ec75af9165948441b567b9288b59641eebc442d7 data/citycraft/loot_tables/blocks/red_white_traffic_barrier.json
 ae0eb3e04ddbd3fefdb41376ccb30eaeb8ea2ec3 data/citycraft/loot_tables/blocks/repair_eu_sign.json
 396f0d3c1725823cfd493f15cb27e46a551110a3 data/citycraft/loot_tables/blocks/repair_us_sign.json
 6f0024d0f6d3e7b69b3aeb214e62c1f5024f9572 data/citycraft/loot_tables/blocks/restaurant_eu_sign.json
@@ -526,6 +527,7 @@ e02f7ff4042e5f41e5abc56c0409a344e7b55714 data/citycraft/loot_tables/blocks/winte
 5eedba75d477399c21260e92b7456c82d347b1f5 data/citycraft/loot_tables/blocks/yellow_asphalt_slab.json
 231846dda7004b6259ab954df66ff4de1e5e936b data/citycraft/loot_tables/blocks/yellow_black_pole.json
 ba79d7e16743a5b9b56ef136c3f75872bca68db6 data/citycraft/loot_tables/blocks/yellow_black_post.json
+099d532ba893f58a070a22148184890913122748 data/citycraft/loot_tables/blocks/yellow_black_traffic_barrier.json
 4aa322549456d4521e2c975efb50ddb0760b1f83 data/citycraft/loot_tables/blocks/yellow_bumper_slab.json
 95b5c3c4dbcc3318f4f2fd23efd3aad29ef80b07 data/citycraft/loot_tables/blocks/yellow_chain.json
 e7266fe48b9ce2f9bd1a362c69f67fb61db2560b data/citycraft/loot_tables/blocks/yellow_concrete_wall.json

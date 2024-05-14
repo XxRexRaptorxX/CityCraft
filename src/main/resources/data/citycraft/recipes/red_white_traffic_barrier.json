@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_pole",
+  "ingredients": [
+    {
+      "item": "citycraft:traffic_barrier"
+    },
+    {
+      "tag": "forge:dyes/white"
+    },
+    {
+      "tag": "forge:dyes/red"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:red_white_traffic_barrier"
+  }
+}

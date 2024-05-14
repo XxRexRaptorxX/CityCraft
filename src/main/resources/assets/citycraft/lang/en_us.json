@@ -573,5 +573,7 @@
 
     "block.citycraft.block_painter": "Block Painter",
 
-    "block.citycraft.traffic_barrier": "Traffic Barrier"
+    "block.citycraft.traffic_barrier": "Traffic Barrier",
+    "block.citycraft.red_white_traffic_barrier": "Red-White Signal Traffic Barrier",
+    "block.citycraft.yellow_black_traffic_barrier": "Yellow-Black Signal Traffic Barrier"
 }

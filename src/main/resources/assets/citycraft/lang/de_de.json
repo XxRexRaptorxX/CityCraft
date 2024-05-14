@@ -573,5 +573,7 @@
 
     "block.citycraft.block_painter": "Block Bemaler",
 
-    "block.citycraft.traffic_barrier": "Leitplanke"
+    "block.citycraft.traffic_barrier": "Leitplanke",
+    "block.citycraft.red_white_traffic_barrier": "Rot-Weiße Signal Leitplanke",
+    "block.citycraft.yellow_black_traffic_barrier": "Gelb-Schwarze Signal Leitplanke"
 }

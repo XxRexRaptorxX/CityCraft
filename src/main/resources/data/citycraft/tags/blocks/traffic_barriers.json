@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "citycraft:traffic_barrier",
     "citycraft:red_white_traffic_barrier",
