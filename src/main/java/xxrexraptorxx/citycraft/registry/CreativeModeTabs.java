@@ -31,6 +31,16 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.BLACK_POLE.get());
                 output.accept(ModBlocks.YELLOW_BLACK_POLE.get());
 
+                output.accept(ModBlocks.IRON_FENCE.get());
+
+                output.accept(ModBlocks.TRAFFIC_BARRIER.get());
+                output.accept(ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get());
+                output.accept(ModBlocks.YELLOW_BLACK_TRAFFIC_BARRIER.get());
+
+                output.accept(ModBlocks.DOUBLE_TRAFFIC_BARRIER.get());
+                output.accept(ModBlocks.DOUBLE_RED_WHITE_TRAFFIC_BARRIER.get());
+                output.accept(ModBlocks.DOUBLE_YELLOW_BLACK_TRAFFIC_BARRIER.get());
+
                 output.accept(ModBlocks.STONE_POST.get());
                 output.accept(ModBlocks.WHITE_POST.get());
                 output.accept(ModBlocks.RED_POST.get());
@@ -55,14 +65,6 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.BROWN_CONCRETE_WALL.get());
                 output.accept(ModBlocks.GREEN_CONCRETE_WALL.get());
                 output.accept(ModBlocks.RED_CONCRETE_WALL.get());
-
-                output.accept(ModBlocks.IRON_FENCE.get());
-                output.accept(ModBlocks.TRAFFIC_BARRIER.get());
-                output.accept(ModBlocks.DOUBLE_TRAFFIC_BARRIER.get());
-                output.accept(ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get());
-                output.accept(ModBlocks.DOUBLE_RED_WHITE_TRAFFIC_BARRIER.get());
-                output.accept(ModBlocks.YELLOW_BLACK_TRAFFIC_BARRIER.get());
-                output.accept(ModBlocks.DOUBLE_YELLOW_BLACK_TRAFFIC_BARRIER.get());
 
                 output.accept(ModBlocks.DRAIN_COVER.get());
                 output.accept(ModBlocks.DRAIN_COVER_GRID.get());

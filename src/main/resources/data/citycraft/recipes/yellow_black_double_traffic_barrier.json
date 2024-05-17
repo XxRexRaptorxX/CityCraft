@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:yellow_black_traffic_barrier"
+    },
+    {
+      "item": "citycraft:yellow_black_traffic_barrier"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:double_yellow_black_traffic_barrier"
+  }
+}
