@@ -555,6 +555,9 @@ public class BlockTagGen extends BlockTagsProvider {
                        ModBlocks.TRAFFIC_BARRIER.get(),
                        ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get(),
                        ModBlocks.YELLOW_BLACK_TRAFFIC_BARRIER.get(),
+                       ModBlocks.DOUBLE_TRAFFIC_BARRIER.get(),
+                       ModBlocks.DOUBLE_RED_WHITE_TRAFFIC_BARRIER.get(),
+                       ModBlocks.DOUBLE_YELLOW_BLACK_TRAFFIC_BARRIER.get(),
 
                        ModBlocks.BLACK_CONCRETE_WALL.get(),
                        ModBlocks.WHITE_CONCRETE_WALL.get(),

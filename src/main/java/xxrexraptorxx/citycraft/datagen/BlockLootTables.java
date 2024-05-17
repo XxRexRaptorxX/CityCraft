@@ -553,6 +553,11 @@ public class BlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.IRON_FENCE.get());
         this.dropSelf(ModBlocks.TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.YELLOW_BLACK_TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.DOUBLE_TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.DOUBLE_YELLOW_BLACK_TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.DOUBLE_RED_WHITE_TRAFFIC_BARRIER.get());
         this.dropSelf(ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get());
         this.dropSelf(ModBlocks.YELLOW_BLACK_TRAFFIC_BARRIER.get());
 

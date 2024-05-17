@@ -575,5 +575,8 @@
 
     "block.citycraft.traffic_barrier": "Leitplanke",
     "block.citycraft.red_white_traffic_barrier": "Rot-Weiße Signal Leitplanke",
-    "block.citycraft.yellow_black_traffic_barrier": "Gelb-Schwarze Signal Leitplanke"
+    "block.citycraft.yellow_black_traffic_barrier": "Gelb-Schwarze Signal Leitplanke",
+    "block.citycraft.double_traffic_barrier": "Doppel Leitplanke",
+    "block.citycraft.double_red_white_traffic_barrier": "Rot-Weiße Signal Doppel Leitplanke",
+    "block.citycraft.double_yellow_black_traffic_barrier": "Gelb-Schwarze Signal Doppel Leitplanke"
 }
