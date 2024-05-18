@@ -25,12 +25,10 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.utils.Config;
 
 import java.util.List;
-import java.util.Random;
 
 
 public class DrainCoverBlock extends SlabBlock {
