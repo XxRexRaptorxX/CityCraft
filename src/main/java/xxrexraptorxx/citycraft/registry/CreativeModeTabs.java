@@ -74,6 +74,9 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.YELLOW_CHAIN.get());
                 output.accept(ModBlocks.BLACK_CHAIN.get());
 
+                output.accept(ModBlocks.RED_WHITE_BARRIER_TAPE.get());
+                output.accept(ModBlocks.YELLOW_BLACK_BARRIER_TAPE.get());
+
                 output.accept(ModBlocks.BLOCK_PAINTER.get());
 
                 output.accept(ModItems.COAL_COKE.get());

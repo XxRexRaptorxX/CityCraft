@@ -4,6 +4,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -595,6 +596,8 @@ public class ModBlocks {
 
     public static final RegistryObject<PainterBlock> BLOCK_PAINTER = registerBlock("block_painter", PainterBlock::new);
 
+    public static final RegistryObject<TapeBlock> RED_WHITE_BARRIER_TAPE = registerBlock("red_white_barrier_tape", () -> new TapeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).strength(0.1F).sound(SoundType.AZALEA_LEAVES).noOcclusion()));
+    public static final RegistryObject<TapeBlock> YELLOW_BLACK_BARRIER_TAPE = registerBlock("yellow_black_barrier_tape", () -> new TapeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).strength(0.1F).sound(SoundType.AZALEA_LEAVES).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

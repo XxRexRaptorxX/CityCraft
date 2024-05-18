@@ -110,7 +110,6 @@ public class BlockStateGen extends BlockStateProvider {
         directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE.get());
         directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING.get());
 
-
         asphaltSlab(ModBlocks.ASPHALT_SLAB.get());
         asphaltSlab(ModBlocks.CRACKED_ASPHALT_SLAB.get());
         asphaltSlab(ModBlocks.POTHOLE_ASPHALT_SLAB.get());

@@ -578,5 +578,8 @@
     "block.citycraft.yellow_black_traffic_barrier": "Yellow-Black Signal Traffic Barrier",
     "block.citycraft.double_traffic_barrier": "Double Traffic Barrier",
     "block.citycraft.double_red_white_traffic_barrier": "Red-White Signal Double Traffic Barrier",
-    "block.citycraft.double_yellow_black_traffic_barrier": "Yellow-Black Signal Double Traffic Barrier"
+    "block.citycraft.double_yellow_black_traffic_barrier": "Yellow-Black Signal Double Traffic Barrier",
+
+    "block.citycraft.red_white_barrier_tape": "Red-White Barrier Tape",
+    "block.citycraft.yellow_black_barrier_tape": "Yellow-Black Barrier Tape"
 }
