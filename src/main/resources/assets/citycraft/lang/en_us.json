@@ -8,7 +8,7 @@
 
     "message.citycraft.speed_tooltip": "Increased movement speed",
     "message.citycraft.boost_speed_tooltip": "Greatly increased movement speed",
-    "message.citycraft.drain_cover_tooltip": "Allows water to flow downwards through.",
+    "message.citycraft.drain_cover_tooltip": "Allows water and items to flow downwards through.",
 
     "gui.citycraft.painting": "Painting",
 
