@@ -319,13 +319,13 @@ public class BlockStateGen extends BlockStateProvider {
         makeBlockFromParentModel(ModBlocks.RED_WHITE_POST.get(), "post");
         makeBlockFromParentModel(ModBlocks.YELLOW_BLACK_POST.get(), "post");
 
-        makeBlockFromParentModel(ModBlocks.IRON_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.BLACK_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.RED_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.WHITE_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.YELLOW_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.RED_WHITE_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.YELLOW_BLACK_POLE.get(), "pole");
+        makeBlockItemFromExistingModel(ModBlocks.IRON_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.BLACK_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.RED_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.WHITE_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.YELLOW_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.RED_WHITE_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.YELLOW_BLACK_POLE.get());
 
         trafficSignBlock(ModBlocks.LEFT_ARROW_EU_SIGN.get(), SignShape.RECTANGLE);
         trafficSignBlock(ModBlocks.CAMPING_EU_SIGN.get(), SignShape.SQUARE);
