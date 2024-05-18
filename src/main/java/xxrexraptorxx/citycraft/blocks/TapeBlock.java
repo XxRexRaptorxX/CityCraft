@@ -2,6 +2,7 @@ package xxrexraptorxx.citycraft.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -18,7 +19,9 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.pathfinder.PathComputationType;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.IForgeShearable;
 import org.jetbrains.annotations.NotNull;
@@ -34,11 +37,14 @@ public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBl
     protected static final VoxelShape Z_AXIS_AABB = Block.box(6.5D, 6.5D, 0.0D, 9.5D, 9.5D, 16.0D);
     protected static final VoxelShape X_AXIS_AABB = Block.box(0.0D, 6.5D, 6.5D, 16.0D, 9.5D, 9.5D);
 
+
     public TapeBlock(BlockBehaviour.Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, Boolean.valueOf(false)).setValue(AXIS, Direction.Axis.Y));
     }
 
+
+    @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         switch ((Direction.Axis)state.getValue(AXIS)) {
             case X:
@@ -50,6 +56,13 @@ public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBl
                 return Y_AXIS_AABB;
         }
     }
+
+
+    @Override
+    public VoxelShape getCollisionShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        return Shapes.empty();
+    }
+
 
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext context) {
@@ -91,5 +104,11 @@ public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBl
     @Override
     public boolean isShearable(@NotNull ItemStack item, Level level, BlockPos pos) {
         return true;
+    }
+
+
+    @Override
+    public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
+        pEntity.makeStuckInBlock(pState, new Vec3(0.9D, (double)1.0F, 0.9D));
     }
 }
