@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-25T00:14:35.8455833	Item Models: citycraft
+// 1.20.1	2024-05-20T23:12:28.718871	Item Models: citycraft
 7b5af6a3e4b44fd4abf41140a7c4970f7cc7b90e assets/citycraft/models/item/asphalt_mixture.json
 3fc1709a84300ce1e7d899cfb7159917fd547ea6 assets/citycraft/models/item/black_chain.json
 57404862ace35b88b6fabaa4345c6988d361534e assets/citycraft/models/item/black_concrete_wall.json
@@ -20,7 +20,9 @@ a7c6e7a09718f97ce5ffa0f00ff9ee32616cac05 assets/citycraft/models/item/pink_concr
 a4af617fefda8ae2359d3a765bf4c4ee554691cb assets/citycraft/models/item/purple_concrete_wall.json
 708c155e6fa0afe3516eebc4f302944ba91c7b5b assets/citycraft/models/item/red_chain.json
 cf1fa63750c59f26c67d415761c061efacafb53e assets/citycraft/models/item/red_concrete_wall.json
+35c177ce38122be3784318113466953eb16666b8 assets/citycraft/models/item/red_white_barrier_tape.json
 3e26f88fadd878a164b56e49d421d73049a785dd assets/citycraft/models/item/white_chain.json
 1ec9bfade81ddc0d9b7fed46adc4115684c0267b assets/citycraft/models/item/white_concrete_wall.json
+a7f59f26eb7b6151d23dec3296720ef0e290fa44 assets/citycraft/models/item/yellow_black_barrier_tape.json
 6a31cb8b5c79e899affca4a8923ae931a884640f assets/citycraft/models/item/yellow_chain.json
 31931639f6560886512b2cc1e307f54243425603 assets/citycraft/models/item/yellow_concrete_wall.json

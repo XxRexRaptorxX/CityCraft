@@ -579,6 +579,34 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RED_CONCRETE_WALL.get());
 
         this.dropSelf(ModBlocks.BLOCK_PAINTER.get());
+
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get());
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get()));
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get());
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get()));
+
+        this.dropSelf(ModBlocks.RED_WHITE_BARRIER_TAPE.get());
+        this.dropSelf(ModBlocks.YELLOW_BLACK_BARRIER_TAPE.get());
     }
 
 

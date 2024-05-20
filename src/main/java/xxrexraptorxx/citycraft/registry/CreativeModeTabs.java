@@ -740,6 +740,12 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get());
 
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get());
+
+
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_EDGE.get());
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_EDGE.get());
@@ -755,6 +761,16 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW_SLAB.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get());
 
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW.get());
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW_SLAB.get());
@@ -922,5 +938,19 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_Z.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get());
 
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get());
             }).build());
 }

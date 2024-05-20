@@ -58,6 +58,14 @@
     "citycraft:asphalt_with_white_w",
     "citycraft:asphalt_with_white_x",
     "citycraft:asphalt_with_white_y",
-    "citycraft:asphalt_with_white_z"
+    "citycraft:asphalt_with_white_z",
+
+    "citycraft:asphalt_with_white_bicycle",
+    "citycraft:asphalt_with_white_diagonal_left_arrow",
+    "citycraft:asphalt_with_white_diagonal_right_arrow",
+    "citycraft:asphalt_with_white_handicapped",
+    "citycraft:asphalt_with_white_pedestrian",
+    "citycraft:asphalt_with_white_triangle"
+
   ]
 }

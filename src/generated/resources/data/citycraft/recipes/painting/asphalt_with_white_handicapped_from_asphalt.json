@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "citycraft:asphalt"
+  },
+  "color": {
+    "tag": "forge:dyes/white"
+  },
+  "result": {
+    "item": "citycraft:asphalt_with_white_handicapped"
+  }
+}

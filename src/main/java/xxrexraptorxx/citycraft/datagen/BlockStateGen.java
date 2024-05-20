@@ -570,6 +570,31 @@ public class BlockStateGen extends BlockStateProvider {
         wallBlock(((WallBlock) ModBlocks.RED_CONCRETE_WALL.get()), blockTexture(Blocks.RED_CONCRETE));
 
         makeBlockItemFromExistingModel(ModBlocks.BLOCK_PAINTER.get());
+
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get());
     }
 
 

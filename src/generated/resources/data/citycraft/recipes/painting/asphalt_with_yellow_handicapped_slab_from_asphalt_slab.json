@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "citycraft:asphalt_slab"
+  },
+  "color": {
+    "tag": "forge:dyes/yellow"
+  },
+  "result": {
+    "item": "citycraft:asphalt_with_yellow_handicapped_slab"
+  }
+}

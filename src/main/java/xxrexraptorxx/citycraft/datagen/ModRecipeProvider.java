@@ -170,6 +170,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Y.get(), writer);
         slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Z.get(), writer);
 
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get(), writer);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get(), writer);
+
         wallRecipes(ModBlocks.BLACK_CONCRETE_WALL.get(), Blocks.BLACK_CONCRETE, writer);
         wallRecipes(ModBlocks.WHITE_CONCRETE_WALL.get(), Blocks.WHITE_CONCRETE, writer);
         wallRecipes(ModBlocks.ORANGE_CONCRETE_WALL.get(), Blocks.ORANGE_CONCRETE, writer);
@@ -931,6 +944,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, writer);
         paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, writer);
         paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, writer);
+
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, writer);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, writer);
 
         paintingRecipes(Blocks.BLACK_WOOL, ItemTags.WOOL, Tags.Items.DYES_BLACK, writer);
         paintingRecipes(Blocks.WHITE_WOOL, ItemTags.WOOL, Tags.Items.DYES_WHITE, writer);

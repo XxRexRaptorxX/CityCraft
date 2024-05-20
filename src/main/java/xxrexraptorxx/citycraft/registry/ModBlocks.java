@@ -599,6 +599,35 @@ public class ModBlocks {
     public static final RegistryObject<TapeBlock> RED_WHITE_BARRIER_TAPE = registerBlock("red_white_barrier_tape", () -> new TapeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).strength(0.1F).sound(SoundType.AZALEA_LEAVES).noOcclusion()));
     public static final RegistryObject<TapeBlock> YELLOW_BLACK_BARRIER_TAPE = registerBlock("yellow_black_barrier_tape", () -> new TapeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).strength(0.1F).sound(SoundType.AZALEA_LEAVES).noOcclusion()));
 
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_BICYCLE = registerBlock("asphalt_with_white_bicycle", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW = registerBlock("asphalt_with_white_diagonal_left_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW = registerBlock("asphalt_with_white_diagonal_right_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_HANDICAPPED = registerBlock("asphalt_with_white_handicapped", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_PEDESTRIAN = registerBlock("asphalt_with_white_pedestrian", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_TRIANGLE = registerBlock("asphalt_with_white_triangle", AsphaltBlock::new);
+
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_BICYCLE_SLAB = registerBlock("asphalt_with_white_bicycle_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB = registerBlock("asphalt_with_white_diagonal_left_arrow_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB = registerBlock("asphalt_with_white_diagonal_right_arrow_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_HANDICAPPED_SLAB = registerBlock("asphalt_with_white_handicapped_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB = registerBlock("asphalt_with_white_pedestrian_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_TRIANGLE_SLAB = registerBlock("asphalt_with_white_triangle_slab", AsphaltSlabBlock::new);
+
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_BICYCLE = registerBlock("asphalt_with_yellow_bicycle", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW = registerBlock("asphalt_with_yellow_diagonal_left_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW = registerBlock("asphalt_with_yellow_diagonal_right_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_HANDICAPPED = registerBlock("asphalt_with_yellow_handicapped", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_PEDESTRIAN = registerBlock("asphalt_with_yellow_pedestrian", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_TRIANGLE = registerBlock("asphalt_with_yellow_triangle", AsphaltBlock::new);
+
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_BICYCLE_SLAB = registerBlock("asphalt_with_yellow_bicycle_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB = registerBlock("asphalt_with_yellow_diagonal_left_arrow_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB = registerBlock("asphalt_with_yellow_diagonal_right_arrow_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB = registerBlock("asphalt_with_yellow_handicapped_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB = registerBlock("asphalt_with_yellow_pedestrian_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_TRIANGLE_SLAB = registerBlock("asphalt_with_yellow_triangle_slab", AsphaltSlabBlock::new);
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
