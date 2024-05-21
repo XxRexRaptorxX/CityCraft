@@ -581,5 +581,23 @@
     "block.citycraft.double_yellow_black_traffic_barrier": "Yellow-Black Signal Double Traffic Barrier",
 
     "block.citycraft.red_white_barrier_tape": "Red-White Barrier Tape",
-    "block.citycraft.yellow_black_barrier_tape": "Yellow-Black Barrier Tape"
+    "block.citycraft.yellow_black_barrier_tape": "Yellow-Black Barrier Tape",
+
+    "block.citycraft.variable_traffic_sign": "Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_lane_open": "'Lane Open' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_lane_closed":  "'Lane Closed' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_lane_change_left": "'Lane change to left' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_lane_change_right":  "'Lane change to right' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_sixty_speed_limit": "'Speed Limit 60Km/h' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_eighty_speed_limit":  "'Speed Limit 80Km/h' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_hundred_speed_limit": "'Speed Limit 100Km/h' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_hundred_twenty_speed_limit":  "'Speed Limit 120Km/h' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_creeper": "'Danger Monsters' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_danger":  "'Danger' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_end_all_limits": "'End all Limits' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_jams":  "'Danger Jams' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_no_passing": "'No Passing' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_no_truck_passing":  "'No Passing for Trucks' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_roadworks": "'Danger Roadworks' Variable Traffic Sign",
+    "block.citycraft.variable_traffic_sign_slipperiness":  "'Danger Slipperiness' Variable Traffic Sign"
 }

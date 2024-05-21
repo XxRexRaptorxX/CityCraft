@@ -581,5 +581,23 @@
     "block.citycraft.double_yellow_black_traffic_barrier": "Gelb-Schwarze Signal Doppel Leitplanke",
 
     "block.citycraft.red_white_barrier_tape": "Rot-Weißes Absperrband",
-    "block.citycraft.yellow_black_barrier_tape": "Gelb-Schwarzes Absperrband"
+    "block.citycraft.yellow_black_barrier_tape": "Gelb-Schwarzes Absperrband",
+
+    "block.citycraft.variable_traffic_sign": "Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_lane_open": "'Spur offen' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_lane_closed":  "'Spur geschlossen' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_lane_change_left": "'Spur nach Links' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_lane_change_right": "'Spur nach Rechts' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_sixty_speed_limit": "'Höchstgeschwindigkeit 60Km/h' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_eighty_speed_limit":  "'Höchstgeschwindigkeit 80Km/h' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_hundred_speed_limit": "'Höchstgeschwindigkeit 100Km/h' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_hundred_twenty_speed_limit":  "'Höchstgeschwindigkeit 120Km/h' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_creeper": "'Achtung Monster' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_danger":  "'Achtung Gefahrstelle' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_end_all_limits": "'Ende aller Beschränkungen' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_jams":  "'Achtung Staugefahr' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_no_passing": "'Überhohlverbot' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_no_truck_passing":  "'Überholverbot für Laster' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_roadworks": "'Achtung Baustelle' Wechselverkehrszeichen",
+    "block.citycraft.variable_traffic_sign_slipperiness":  "'Achtung Rutschig' Wechselverkehrszeichen"
 }
