@@ -600,7 +600,25 @@ public class BlockTagGen extends BlockTagsProvider {
                        ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(),
                        ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(),
                        ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(),
-                       ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get()
+                       ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(),
+
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_OPEN.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CLOSED.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_CREEPER.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_DANGER.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get(),
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get()
                );
 
 

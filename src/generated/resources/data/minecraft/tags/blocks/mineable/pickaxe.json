@@ -560,6 +560,23 @@
     "citycraft:asphalt_with_yellow_diagonal_right_arrow_slab",
     "citycraft:asphalt_with_yellow_handicapped_slab",
     "citycraft:asphalt_with_yellow_pedestrian_slab",
-    "citycraft:asphalt_with_yellow_triangle_slab"
+    "citycraft:asphalt_with_yellow_triangle_slab",
+    "citycraft:variable_traffic_sign",
+    "citycraft:variable_traffic_sign_lane_open",
+    "citycraft:variable_traffic_sign_lane_closed",
+    "citycraft:variable_traffic_sign_lane_change_left",
+    "citycraft:variable_traffic_sign_lane_change_right",
+    "citycraft:variable_traffic_sign_sixty_speed_limit",
+    "citycraft:variable_traffic_sign_eighty_speed_limit",
+    "citycraft:variable_traffic_sign_hundred_speed_limit",
+    "citycraft:variable_traffic_sign_hundred_twenty_speed_limit",
+    "citycraft:variable_traffic_sign_creeper",
+    "citycraft:variable_traffic_sign_danger",
+    "citycraft:variable_traffic_sign_end_all_limits",
+    "citycraft:variable_traffic_sign_jams",
+    "citycraft:variable_traffic_sign_no_passing",
+    "citycraft:variable_traffic_sign_no_truck_passing",
+    "citycraft:variable_traffic_sign_roadworks",
+    "citycraft:variable_traffic_sign_slipperiness"
   ]
 }
