@@ -1304,6 +1304,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(Blocks.CUT_RED_SANDSTONE, Blocks.CUT_SANDSTONE, Tags.Items.DYES_RED, writer);
         paintingRecipes(Blocks.CUT_SANDSTONE_SLAB, Blocks.CUT_RED_SANDSTONE_SLAB, Tags.Items.DYES_YELLOW, writer);
         paintingRecipes(Blocks.CUT_RED_SANDSTONE_SLAB, Blocks.CUT_SANDSTONE_SLAB, Tags.Items.DYES_RED, writer);
+
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_OPEN.get(), ModBlocks.STRAIGHT_AHEAD_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CLOSED.get(), ModBlocks.CROSS_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT.get(), ModBlocks.PASS_LEFT_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT.get(), ModBlocks.PASS_RIGHT_EU_SIGN.get(), writer);
+
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT.get(), ModBlocks.SIXTY_SPEED_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT.get(), ModBlocks.EIGHTY_SPEED_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT.get(), ModBlocks.HUNDRED_SPEED_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT.get(), ModBlocks.HUNDRED_TWENTY_SPEED_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_CREEPER.get(), ModBlocks.CREEPER_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_DANGER.get(), ModBlocks.DANGER_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS.get(), ModBlocks.END_ALL_LIMITS_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get(), ModBlocks.JAMS_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get(), ModBlocks.NO_PASSING_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get(), ModBlocks.NO_TRUCK_PASSING_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get(), ModBlocks.ROADWORKS_EU_SIGN.get(), writer);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get(), ModBlocks.SLIPPERINESS_EU_SIGN.get(), writer);
+
     }
 
 
@@ -1325,6 +1344,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(writer);
     }
 
+
+    protected static void variableTrafficSignRecipes(Block output, Block input, Consumer<FinishedRecipe> writer) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, output, 1)
+                .requires(input)
+                .requires(ModBlocks.VARIABLE_TRAFFIC_SIGN.get())
+                .unlockedBy(getHasName(input), has(input))
+                .group("variable_traffic_signs")
+                .save(writer);
+    }
 
     protected static void stoneCuttingRecipes(Block output, Integer outputCount, Block input, Consumer<FinishedRecipe> writer) {
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, output, outputCount)

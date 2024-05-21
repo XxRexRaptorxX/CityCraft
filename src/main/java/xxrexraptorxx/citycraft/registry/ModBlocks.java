@@ -627,6 +627,25 @@ public class ModBlocks {
     public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB = registerBlock("asphalt_with_yellow_pedestrian_slab", AsphaltSlabBlock::new);
     public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_TRIANGLE_SLAB = registerBlock("asphalt_with_yellow_triangle_slab", AsphaltSlabBlock::new);
 
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN = registerBlock("variable_traffic_sign", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_LANE_OPEN = registerBlock("variable_traffic_sign_lane_open", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_LANE_CLOSED = registerBlock("variable_traffic_sign_lane_closed", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT = registerBlock("variable_traffic_sign_lane_change_left", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT = registerBlock("variable_traffic_sign_lane_change_right", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT = registerBlock("variable_traffic_sign_sixty_speed_limit", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT = registerBlock("variable_traffic_sign_eighty_speed_limit", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT = registerBlock("variable_traffic_sign_hundred_speed_limit", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT = registerBlock("variable_traffic_sign_hundred_twenty_speed_limit", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_CREEPER = registerBlock("variable_traffic_sign_creeper", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_DANGER = registerBlock("variable_traffic_sign_danger", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS = registerBlock("variable_traffic_sign_end_all_limits", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_JAMS = registerBlock("variable_traffic_sign_jams", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_NO_PASSING = registerBlock("variable_traffic_sign_no_passing", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING = registerBlock("variable_traffic_sign_no_truck_passing", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_ROADWORKS = registerBlock("variable_traffic_sign_roadworks", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_SLIPPERINESS = registerBlock("variable_traffic_sign_slipperiness", VariableTrafficSignBlock::new);
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

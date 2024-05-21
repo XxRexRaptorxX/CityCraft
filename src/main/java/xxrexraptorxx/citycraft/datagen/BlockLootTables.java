@@ -607,6 +607,24 @@ public class BlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.RED_WHITE_BARRIER_TAPE.get());
         this.dropSelf(ModBlocks.YELLOW_BLACK_BARRIER_TAPE.get());
+
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_OPEN.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CLOSED.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_CREEPER.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_DANGER.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get());
     }
 
 

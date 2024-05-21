@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "citycraft:variable_traffic_sign_no_passing"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "citycraft:blocks/variable_traffic_sign_no_passing"
+}

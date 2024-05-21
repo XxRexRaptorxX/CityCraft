@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_straight_ahead_eu_sign": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "citycraft:straight_ahead_eu_sign"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "citycraft:variable_traffic_sign_lane_open"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_straight_ahead_eu_sign",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "citycraft:variable_traffic_sign_lane_open"
+    ]
+  },
+  "sends_telemetry_event": false
+}

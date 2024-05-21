@@ -11,6 +11,7 @@ import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import xxrexraptorxx.citycraft.blocks.AsphaltBlock;
 import xxrexraptorxx.citycraft.blocks.AsphaltSlabBlock;
+import xxrexraptorxx.citycraft.blocks.VariableTrafficSignBlock;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.SignShape;
@@ -595,7 +596,27 @@ public class BlockStateGen extends BlockStateProvider {
         directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get());
         directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get());
         directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get());
+
+        makeBlockItemFromExistingModel(ModBlocks.VARIABLE_TRAFFIC_SIGN.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_OPEN.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CLOSED.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_CREEPER.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_DANGER.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get());
     }
+
+    private final String emissiveTexturesSuffix = "_e";
 
 
     private void makeBlockItemFromExistingModel(Block block) {
@@ -774,6 +795,50 @@ public class BlockStateGen extends BlockStateProvider {
 
                     return ConfiguredModel.builder()
                             .modelFile(type == SlabType.BOTTOM ? bottom : type == SlabType.TOP ? top : full)
+                            .rotationX(x)
+                            .rotationY(y)
+                            .build();
+                });
+
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void variableTrafficSign(Block block) {
+        String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/variable_traffic_signs")
+                .texture("texture", "block/" + blockTexture + emissiveTexturesSuffix);
+        ModelFile model_off = models().withExistingParent(blockTexture + "_off", References.MODID + ":block/variable_traffic_signs_off");
+
+
+        getVariantBuilder(block)
+                .forAllStates(state -> {
+
+                    Boolean lit = state.getValue(VariableTrafficSignBlock.LIT);
+                    Direction dir = state.getValue(VariableTrafficSignBlock.FACING);
+                    int x = 0;
+                    int y = 0;
+
+                    switch (dir) {
+                        case EAST:
+                            y = 270;
+                            break;
+                        case NORTH:
+                            y = 180;
+                            break;
+                        case SOUTH:
+                            break;
+                        case WEST:
+                            y = 90;
+                            break;
+                        default:
+                            break;
+                    }
+
+
+                    return ConfiguredModel.builder()
+                            .modelFile(lit == true ? model : model_off)
                             .rotationX(x)
                             .rotationY(y)
                             .build();
