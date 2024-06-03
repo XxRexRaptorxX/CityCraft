@@ -21,13 +21,4 @@ public class ModRecipeSerializers {
 
     public static final RegistryObject<RecipeSerializer<?>> PAINTING = SERIALIZERS.register("painting", () -> new PaintingRecipe.Serializer().INSTANCE);
 
-
-
-    // OLD
-    //public static RecipeSerializer<PaintingRecipe> PAINTING = Helper.unsafeNullCast();
-
-    //static void onRegister(final RegisterEvent event) {
-    //    PAINTING = new SingleItemRecipe.Serializer<>(PaintingRecipe::new) {};
-    //    event.register(ForgeRegistries.Keys.RECIPE_SERIALIZERS, new ResourceLocation(References.MODID, "painting"), () -> PAINTING);
-    //}
 }

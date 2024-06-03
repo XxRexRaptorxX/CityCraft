@@ -1,28 +1,22 @@
 package xxrexraptorxx.citycraft.registry;
 
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegisterEvent;
+import net.minecraftforge.registries.RegistryObject;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
-import xxrexraptorxx.citycraft.recipes.PaintingRecipe;
-import xxrexraptorxx.citycraft.utils.Helper;
 
 public class ModRecipeTypes {
 
-    public static RecipeType<IPaintingRecipe> PAINTING = Helper.unsafeNullCast();
-    public static final String PAINTING_RECIPE_TYPE = References.MODID + ":painting";
+    public static final DeferredRegister<RecipeType<?>> RECIPE_TYPES = DeferredRegister.create(ForgeRegistries.RECIPE_TYPES, References.MODID);
 
-
-    static void onRegister(final RegisterEvent event) {
-        PAINTING = new RecipeType<>() {
-            public String toString() {
-                return PAINTING_RECIPE_TYPE;
-            }
-        };
-
-        event.register(ForgeRegistries.Keys.RECIPE_TYPES, new ResourceLocation(PAINTING_RECIPE_TYPE), () -> PAINTING);
+    public static void init() {
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        RECIPE_TYPES.register(bus);
     }
 
+    public static final RegistryObject<RecipeType<IPaintingRecipe>> PAINTING = RECIPE_TYPES.register("painting", () -> new RecipeType<IPaintingRecipe>() {});
 }

@@ -60,10 +60,10 @@ public class PainterMenu extends AbstractContainerMenu {
 
 
     public PainterMenu(int containerId, Inventory playerInventory, final ContainerLevelAccess access) {
-        super(ModMenuTypes.PAINTER, containerId);
+        super(ModMenuTypes.PAINTER.get(), containerId);
         this.level = playerInventory.player.level();
         this.access = access;
-        this.allRecipes = this.level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.PAINTING);
+        this.allRecipes = this.level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.PAINTING.get());
 
         // Input Slot 1 (left slot)
         this.inputSlot1 = this.addSlot(new Slot(this.container, INPUT_SLOT_1, 20, 20));
@@ -156,7 +156,7 @@ public class PainterMenu extends AbstractContainerMenu {
         this.selectedRecipeIndex.set(-1);
         this.resultSlot.set(ItemStack.EMPTY);
         if (!stack1.isEmpty() && !stack2.isEmpty()) {
-            this.recipes = this.level.getRecipeManager().getRecipesFor(ModRecipeTypes.PAINTING, container, this.level);
+            this.recipes = this.level.getRecipeManager().getRecipesFor(ModRecipeTypes.PAINTING.get(), container, this.level);
         }
     }
 
@@ -275,7 +275,7 @@ public class PainterMenu extends AbstractContainerMenu {
 
 
     public boolean canMoveIntoInputSlots(ItemStack stack) {
-        return this.level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.PAINTING).stream().map((recipeMap) -> {
+        return this.level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.PAINTING.get()).stream().map((recipeMap) -> {
             return findSlotMatchingIngredient(recipeMap.value(), stack);
         }).anyMatch(Optional::isPresent);
     }

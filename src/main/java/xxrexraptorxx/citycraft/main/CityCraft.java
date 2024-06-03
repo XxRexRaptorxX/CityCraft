@@ -6,7 +6,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.RegisterEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import xxrexraptorxx.citycraft.blocks.container.PainterScreen;
@@ -31,12 +30,14 @@ public class CityCraft {
         Config.init();
         CreativeModeTabs.init();
         ModRecipeSerializers.init();
+        ModRecipeTypes.init();
+        ModMenuTypes.init();
         modBus.addListener(this::clientSetup);
 
     }
 
     private void clientSetup(FMLClientSetupEvent event) {
-        event.enqueueWork(() -> MenuScreens.register(ModMenuTypes.PAINTER, PainterScreen::new));
+        event.enqueueWork(() -> MenuScreens.register(ModMenuTypes.PAINTER.get(), PainterScreen::new));
     }
 
 }

@@ -9,6 +9,7 @@ import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeHooks;
 import xxrexraptorxx.citycraft.main.CityCraft;
@@ -88,6 +89,11 @@ public class PaintingRecipe implements IPaintingRecipe {
       return ModRecipeSerializers.PAINTING.get();
    }
 
+   @Override
+   public RecipeType<?> getType() {
+      return ModRecipeTypes.PAINTING.get();
+   }
+
 
    public boolean isIncomplete() {
       return Stream.of(this.color, this.base).anyMatch(ForgeHooks::hasNoElements);
@@ -96,7 +102,7 @@ public class PaintingRecipe implements IPaintingRecipe {
 
    public static class Serializer implements RecipeSerializer<PaintingRecipe> {
       public static final Serializer INSTANCE = new Serializer();
-      public static final ResourceLocation ID = new ResourceLocation(ModRecipeTypes.PAINTING_RECIPE_TYPE);
+      public static final ResourceLocation ID = ModRecipeTypes.PAINTING.getId();
 
       //public PaintingRecipe fromJson(ResourceLocation loc, JsonObject json) {
       //   Ingredient ingredient = Ingredient.fromJson(GsonHelper.getNonNull(json, "base"));

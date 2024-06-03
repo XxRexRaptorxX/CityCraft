@@ -20,9 +20,9 @@ import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
 
 public class PainterJEICategory implements IRecipeCategory<RecipeHolder<IPaintingRecipe>> {
 
-    public static final ResourceLocation UID = new ResourceLocation(ModRecipeTypes.PAINTING_RECIPE_TYPE);
+    public static final ResourceLocation UID = new ResourceLocation(ModRecipeTypes.PAINTING.getId().toString());
     public static final ResourceLocation BACKGROUND = new ResourceLocation(References.MODID,"textures/gui/container/painter_jei.png");
-    public static final RecipeType<RecipeHolder<IPaintingRecipe>> TYPE = new RecipeType<>(UID, RecipeType.createFromVanilla(ModRecipeTypes.PAINTING).getRecipeClass());
+    public static final RecipeType<RecipeHolder<IPaintingRecipe>> TYPE = new RecipeType<>(UID, RecipeType.createFromVanilla(ModRecipeTypes.PAINTING.get()).getRecipeClass());
     //public static final RecipeType<RecipeHolder<IPaintingRecipe>> TYPE = RecipeType.createFromVanilla(ModRecipeTypes.PAINTING);
     private final IDrawable background;
     private final IDrawable icon;
