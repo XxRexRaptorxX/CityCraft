@@ -59,7 +59,6 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
     @Override
     protected void renderBg(GuiGraphics gui, float partialTick, int mouseX, int mouseY) {
-        this.renderBackground(gui, mouseX, mouseY, partialTick);
         int i = this.leftPos;
         int j = this.topPos;
         gui.blit(BG_LOCATION, i, j, 0, 0, this.imageWidth, this.imageHeight);
