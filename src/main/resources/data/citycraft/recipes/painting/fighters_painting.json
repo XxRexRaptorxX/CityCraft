@@ -1,0 +1,14 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "minecraft:painting"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "type": "forge:nbt",
+    "item": "minecraft:painting",
+    "nbt": "{EntityTag:{variant:'minecraft:fighters'}}"
+  }
+}
