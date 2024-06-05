@@ -67,6 +67,13 @@ public class PaintingRecipe implements IPaintingRecipe {
    }
 
 
+   //Unknown recipe category fix
+   @Override
+   public boolean isSpecial() {
+      return true;
+   }
+
+
    @Override
    public ItemStack getResultItem(RegistryAccess registryAccess) {
       return this.result;

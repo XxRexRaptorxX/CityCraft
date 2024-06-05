@@ -18,5 +18,6 @@ public class ModRecipeTypes {
         RECIPE_TYPES.register(bus);
     }
 
-    public static final RegistryObject<RecipeType<IPaintingRecipe>> PAINTING = RECIPE_TYPES.register("painting", () -> new RecipeType<IPaintingRecipe>() {});
+    public static final RegistryObject<RecipeType<IPaintingRecipe>> PAINTING = RECIPE_TYPES.register("painting", () -> new RecipeType<>() {
+    });
 }
