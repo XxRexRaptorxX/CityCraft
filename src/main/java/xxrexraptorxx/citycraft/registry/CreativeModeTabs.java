@@ -124,6 +124,10 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.UNEVEN_EU_SIGN.get());
                     output.accept(ModBlocks.CYCLES_EU_SIGN.get());
                     output.accept(ModBlocks.PEDESTRIANS_EU_SIGN.get());
+                    output.accept(ModBlocks.MOVABLE_BRIDGE_EU_SIGN.get());
+                    output.accept(ModBlocks.SHORE_EU_SIGN.get());
+                    output.accept(ModBlocks.TREE_OVERHANG_EU_SIGN.get());
+                    output.accept(ModBlocks.LOOSE_GRAVEL_EU_SIGN.get());
                     output.accept(ModBlocks.INTERSECTION_EU_SIGN.get());
 
                     output.accept(ModBlocks.TEN_SPEED_EU_SIGN.get());
@@ -133,10 +137,12 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.HUNDRED_SPEED_EU_SIGN.get());
                     output.accept(ModBlocks.HUNDRED_TWENTY_SPEED_EU_SIGN.get());
                     output.accept(ModBlocks.NO_VEHICLES_EU_SIGN.get());
+                    output.accept(ModBlocks.NO_MONSTER_EU_SIGN.get());
                     output.accept(ModBlocks.NO_CARS_EU_SIGN.get());
                     output.accept(ModBlocks.NO_TRUCKS_EU_SIGN.get());
                     output.accept(ModBlocks.NO_PEDESTRIANS_EU_SIGN.get());
                     output.accept(ModBlocks.NO_BICYCLES_EU_SIGN.get());
+                    output.accept(ModBlocks.NO_HAZARDOUS_CARGO_EU_SIGN.get());
                     output.accept(ModBlocks.NO_PASSING_EU_SIGN.get());
                     output.accept(ModBlocks.NO_TRUCK_PASSING_EU_SIGN.get());
                     output.accept(ModBlocks.ONGOING_TRAFFIC_EU_SIGN.get());
@@ -150,8 +156,11 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.NO_PASSING_END_EU_SIGN.get());
                     output.accept(ModBlocks.NO_TRUCK_PASSING_END_EU_SIGN.get());
 
+                    output.accept(ModBlocks.TEN_MINIMUM_SPEED_SIGN_EU.get());
+                    output.accept(ModBlocks.THIRTY_MINIMUM_SPEED_SIGN_EU.get());
                     output.accept(ModBlocks.SIDEWALK_EU_SIGN.get());
                     output.accept(ModBlocks.BICYCLE_PATH_EU_SIGN.get());
+                    output.accept(ModBlocks.BRIDLE_PATH_EU_SIGN.get());
                     output.accept(ModBlocks.BUS_EU_SIGN.get());
 
                     output.accept(ModBlocks.STRAIGHT_AHEAD_EU_SIGN.get());
@@ -167,9 +176,16 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.ROUNDABOUT_EU_SIGN.get());
                     output.accept(ModBlocks.BUS_STOP_EU_SIGN.get());
 
+                    output.accept(ModBlocks.DETOUR_END_EU_SIGN.get());
                     output.accept(ModBlocks.DETOUR_AHEAD_EU_SIGN.get());
                     output.accept(ModBlocks.DETOUR_LEFT_EU_SIGN.get());
                     output.accept(ModBlocks.DETOUR_RIGHT_EU_SIGN.get());
+                    output.accept(ModBlocks.TRUCK_ROUTE_AHEAD_EU_SIGN.get());
+                    output.accept(ModBlocks.TRUCK_ROUTE_LEFT_EU_SIGN.get());
+                    output.accept(ModBlocks.TRUCK_ROUTE_RIGHT_EU_SIGN.get());
+                    output.accept(ModBlocks.BICYCLE_ROUTE_AHEAD_EU_SIGN.get());
+                    output.accept(ModBlocks.BICYCLE_ROUTE_LEFT_EU_SIGN.get());
+                    output.accept(ModBlocks.BICYCLE_ROUTE_RIGHT_EU_SIGN.get());
                     output.accept(ModBlocks.CRAFT_CITY_EU_SIGN.get());
                     output.accept(ModBlocks.CRAFT_CITY_END_EU_SIGN.get());
 
@@ -184,14 +200,25 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.RIGHT_ARROW_EU_SIGN.get());
                     output.accept(ModBlocks.LEFT_TURN_ARROW_EU_SIGN.get());
                     output.accept(ModBlocks.RIGHT_TURN_ARROW_EU_SIGN.get());
+                    output.accept(ModBlocks.M_AHEAD_EU_SIGN.get());
                     output.accept(ModBlocks.KM_AHEAD_EU_SIGN.get());
                     output.accept(ModBlocks.WEIGHT_EU_SIGN.get());
                     output.accept(ModBlocks.TAXI_EU_SIGN.get());
 
+                    output.accept(ModBlocks.LEFT_PRIORITY_ROAD_EU_SIGN.get());
+                    output.accept(ModBlocks.RIGHT_PRIORITY_ROAD_EU_SIGN.get());
+                    output.accept(ModBlocks.PRIORITY_ROAD_FROM_LEFT_EU_SIGN.get());
+                    output.accept(ModBlocks.PRIORITY_ROAD_FROM_RIGHT_EU_SIGN.get());
                     output.accept(ModBlocks.DISABLED_EU_SIGN.get());
                     output.accept(ModBlocks.WET_EU_SIGN.get());
                     output.accept(ModBlocks.END_LINE_EU_SIGN.get());
 
+                    output.accept(ModBlocks.BICYCLE_PATH_AHEAD_EU_SIGN.get());
+                    output.accept(ModBlocks.BICYCLE_PATH_LEFT_EU_SIGN.get());
+                    output.accept(ModBlocks.BICYCLE_PATH_RIGHT_EU_SIGN.get());
+
+                    output.accept(ModBlocks.BICYCLE_HIGHWAY_EU_SIGN.get());
+                    output.accept(ModBlocks.BICYCLE_HIGHWAY_END_EU_SIGN.get());
                     output.accept(ModBlocks.HIGHWAY_EU_SIGN.get());
                     output.accept(ModBlocks.HIGHWAY_END_EU_SIGN.get());
                     output.accept(ModBlocks.MOTORWAY_EU_SIGN.get());
@@ -202,6 +229,8 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.PRIORITY_OVER_ONCOMING_TRAFFIC_EU_SIGN.get());
                     output.accept(ModBlocks.NO_THROUGH_ROAD_EU_SIGN.get());
                     output.accept(ModBlocks.PARKING_EU_SIGN.get());
+                    output.accept(ModBlocks.PARKING_AREA_START_EU_SIGN.get());
+                    output.accept(ModBlocks.PARKING_AREA_END_EU_SIGN.get());
                     output.accept(ModBlocks.PARKING_GARAGE_EU_EU_SIGN.get());
                     output.accept(ModBlocks.PEDESTRIAN_CROSSING_EU_SIGN.get());
 
@@ -210,6 +239,7 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.CHURCH_EU_SIGN.get());
                     output.accept(ModBlocks.HOTEL_EU_SIGN.get());
                     output.accept(ModBlocks.PETROL_STATION_EU_SIGN.get());
+                    output.accept(ModBlocks.CHARGING_STATION_EU_SIGN.get());
                     output.accept(ModBlocks.CAFE_EU_SIGN.get());
                     output.accept(ModBlocks.INFO_EU_SIGN.get());
                     output.accept(ModBlocks.WC_EU_SIGN.get());
@@ -220,6 +250,16 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.WATER_PROTECTION_AREA_EU_SIGN.get());
                     output.accept(ModBlocks.EMERGENCY_BAY_EU_SIGN.get());
 
+                    output.accept(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN.get());
+                    output.accept(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN.get());
+                    output.accept(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN.get());
+                    output.accept(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN.get());
+                    output.accept(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN.get());
+                    output.accept(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN.get());
+                    output.accept(ModBlocks.RAILWAY_COUNTDOWN_MARKER_80_EU_SIGN.get());
+                    output.accept(ModBlocks.RAILWAY_COUNTDOWN_MARKER_160_EU_SIGN.get());
+                    output.accept(ModBlocks.RAILWAY_COUNTDOWN_MARKER_240_EU_SIGN.get());
+
                     output.accept(ModBlocks.WARN_EU_SIGN.get());
                     output.accept(ModBlocks.GUIDE_EU_SIGN.get());
                     output.accept(ModBlocks.LEFT_DIRECTION_EU_SIGN.get());
@@ -228,11 +268,15 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.WARNING_BEACON_RIGHT_EU_SIGN.get());
                     output.accept(ModBlocks.WARNING_BEACON_ALT_EU_SIGN.get());
 
+
                     // US
+                    output.accept(ModBlocks.WARN_US_SIGN.get());
                     output.accept(ModBlocks.GUIDE_US_SIGN.get());
                     output.accept(ModBlocks.LEFT_DIRECTION_US_SIGN.get());
                     output.accept(ModBlocks.RIGHT_DIRECTION_US_SIGN.get());
-
+                    output.accept(ModBlocks.WARNING_BEACON_LEFT_US_SIGN.get());
+                    output.accept(ModBlocks.WARNING_BEACON_RIGHT_US_SIGN.get());
+                    output.accept(ModBlocks.WARNING_BEACON_ALT_US_SIGN.get());
                     output.accept(ModBlocks.T_INTERSECTION_US_SIGN.get());
                     output.accept(ModBlocks.Y_INTERSECTION_US_SIGN.get());
                     output.accept(ModBlocks.RIGHT_SIDE_ROAD_US_SIGN.get());
@@ -281,6 +325,9 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.THIRTYFIVE_ADVISORY_SPEED_US_SIGN.get());
                     output.accept(ModBlocks.FORTYFIVE_ADVISORY_SPEED_US_SIGN.get());
 
+                    output.accept(ModBlocks.DETOUR_LEFT_US_SIGN.get());
+                    output.accept(ModBlocks.DETOUR_RIGHT_US_SIGN.get());
+
                     output.accept(ModBlocks.NO_PEDESTRIANS_US_SIGN.get());
                     output.accept(ModBlocks.NO_BICYCLE_US_SIGN.get());
                     output.accept(ModBlocks.NO_TRUCKS_US_SIGN.get());
@@ -292,16 +339,20 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.LEFT_TURN_ONLY_US_SIGN.get());
                     output.accept(ModBlocks.RIGHT_TURN_ONLY_US_SIGN.get());
 
+                    output.accept(ModBlocks.AHEAD_YELLOW_US_SIGN.get());
                     output.accept(ModBlocks.LEFT_ARROW_YELLOW_US_SIGN.get());
                     output.accept(ModBlocks.RIGHT_ARROW_YELLOW_US_SIGN.get());
                     output.accept(ModBlocks.LEFT_DIAGONAL_ARROW_YELLOW_US_SIGN.get());
                     output.accept(ModBlocks.RIGHT_DIAGONAL_ARROW_YELLOW_US_SIGN.get());
                     output.accept(ModBlocks.DOUBLE_ARROW_YELLOW_US_SIGN.get());
+                    output.accept(ModBlocks.AHEAD_ORANGE_US_SIGN.get());
+                    output.accept(ModBlocks.EXIT_CLOSED_US_SIGN.get());
                     output.accept(ModBlocks.LEFT_ARROW_ORANGE_US_SIGN.get());
                     output.accept(ModBlocks.RIGHT_ARROW_ORANGE_US_SIGN.get());
                     output.accept(ModBlocks.LEFT_DIAGONAL_ARROW_ORANGE_US_SIGN.get());
                     output.accept(ModBlocks.RIGHT_DIAGONAL_ARROW_ORANGE_US_SIGN.get());
                     output.accept(ModBlocks.DOUBLE_ARROW_ORANGE_US_SIGN.get());
+                    output.accept(ModBlocks.AHEAD_GREEN_US_SIGN.get());
                     output.accept(ModBlocks.LEFT_ARROW_GREEN_US_SIGN.get());
                     output.accept(ModBlocks.RIGHT_ARROW_GREEN_US_SIGN.get());
                     output.accept(ModBlocks.LEFT_DIAGONAL_ARROW_GREEN_US_SIGN.get());
@@ -321,6 +372,7 @@ public class CreativeModeTabs {
                     output.accept(ModBlocks.TELEPHONE_US_SIGN.get());
                     output.accept(ModBlocks.AIRPORT_US_SIGN.get());
                     output.accept(ModBlocks.LIGHT_RAIL_TRANSIT_STATION_US_SIGN.get());
+                    output.accept(ModBlocks.BICYCLE_PATH_US_SIGN.get());
                     output.accept(ModBlocks.WINTER_RECREATION_AREA_US_SIGN.get());
                     output.accept(ModBlocks.SWIMMING_AREA_US_SIGN.get());
                     output.accept(ModBlocks.PICNIC_AREA_US_SIGN.get());

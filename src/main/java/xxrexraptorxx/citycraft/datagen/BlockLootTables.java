@@ -625,6 +625,56 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get());
         this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get());
         this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get());
+
+        this.dropSelf(ModBlocks.EXIT_CLOSED_US_SIGN.get());
+        this.dropSelf(ModBlocks.NO_HAZARDOUS_CARGO_EU_SIGN.get());
+        this.dropSelf(ModBlocks.M_AHEAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.AHEAD_YELLOW_US_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_PATH_RIGHT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_HIGHWAY_END_EU_SIGN.get());
+        this.dropSelf(ModBlocks.TEN_MINIMUM_SPEED_SIGN_EU.get());
+        this.dropSelf(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_PATH_LEFT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_ROUTE_AHEAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN.get());
+        this.dropSelf(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BRIDLE_PATH_EU_SIGN.get());
+        this.dropSelf(ModBlocks.DETOUR_END_EU_SIGN.get());
+        this.dropSelf(ModBlocks.DETOUR_LEFT_US_SIGN.get());
+        this.dropSelf(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN.get());
+        this.dropSelf(ModBlocks.DETOUR_RIGHT_US_SIGN.get());
+        this.dropSelf(ModBlocks.AHEAD_GREEN_US_SIGN.get());
+        this.dropSelf(ModBlocks.MOVABLE_BRIDGE_EU_SIGN.get());
+        this.dropSelf(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_PATH_US_SIGN.get());
+        this.dropSelf(ModBlocks.THIRTY_MINIMUM_SPEED_SIGN_EU.get());
+        this.dropSelf(ModBlocks.CHARGING_STATION_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_ROUTE_LEFT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.LOOSE_GRAVEL_EU_SIGN.get());
+        this.dropSelf(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_HIGHWAY_EU_SIGN.get());
+        this.dropSelf(ModBlocks.PARKING_AREA_END_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_PATH_AHEAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.NO_MONSTER_EU_SIGN.get());
+        this.dropSelf(ModBlocks.AHEAD_ORANGE_US_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_ROUTE_RIGHT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.LEFT_PRIORITY_ROAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.PARKING_AREA_START_EU_SIGN.get());
+        this.dropSelf(ModBlocks.PRIORITY_ROAD_FROM_LEFT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.PRIORITY_ROAD_FROM_RIGHT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.RAILWAY_COUNTDOWN_MARKER_80_EU_SIGN.get());
+        this.dropSelf(ModBlocks.RAILWAY_COUNTDOWN_MARKER_160_EU_SIGN.get());
+        this.dropSelf(ModBlocks.RAILWAY_COUNTDOWN_MARKER_240_EU_SIGN.get());
+        this.dropSelf(ModBlocks.RIGHT_PRIORITY_ROAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.SHORE_EU_SIGN.get());
+        this.dropSelf(ModBlocks.TREE_OVERHANG_EU_SIGN.get());
+        this.dropSelf(ModBlocks.TRUCK_ROUTE_AHEAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.TRUCK_ROUTE_RIGHT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.TRUCK_ROUTE_LEFT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.WARN_US_SIGN.get());
+        this.dropSelf(ModBlocks.WARNING_BEACON_ALT_US_SIGN.get());
+        this.dropSelf(ModBlocks.WARNING_BEACON_LEFT_US_SIGN.get());
+                this.dropSelf(ModBlocks.WARNING_BEACON_RIGHT_US_SIGN.get());
     }
 
 
