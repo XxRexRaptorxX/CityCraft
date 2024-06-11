@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/traffic_sign",
+  "textures": {
+    "back": "citycraft:block/bake_sign_back",
+    "front": "citycraft:block/highway_countdown_marker_200_eu_sign"
+  }
+}
