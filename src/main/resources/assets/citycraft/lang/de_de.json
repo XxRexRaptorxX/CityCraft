@@ -649,5 +649,22 @@
     "block.citycraft.variable_traffic_sign_no_passing": "'Überhohlverbot' Wechselverkehrszeichen",
     "block.citycraft.variable_traffic_sign_no_truck_passing":  "'Überholverbot für Laster' Wechselverkehrszeichen",
     "block.citycraft.variable_traffic_sign_roadworks": "'Achtung Baustelle' Wechselverkehrszeichen",
-    "block.citycraft.variable_traffic_sign_slipperiness":  "'Achtung Rutschig' Wechselverkehrszeichen"
+    "block.citycraft.variable_traffic_sign_slipperiness":  "'Achtung Rutschig' Wechselverkehrszeichen",
+
+    "block.citycraft.bicycle_double_traffic_light":  "Zweifeldige Fahrrad Ampel",
+    "block.citycraft.bicycle_tripple_traffic_light": "Dreifeldige Fahrrad Ampel",
+    "block.citycraft.danger_signal_light":  "Gefahren Signal Ampel",
+    "block.citycraft.double_traffic_light": "Zweifeldige Ampel",
+    "block.citycraft.left_turn_double_traffic_light":  "Zweifeldige Linksabbieger Ampel",
+    "block.citycraft.left_turn_tripple_traffic_light": "Dreifeldige Linksabbieger Ampel",
+    "block.citycraft.pedestrian_double_traffic_light":  "Zweifeldige Fußgänger Ampel",
+    "block.citycraft.pedestrian_signal_light": "Fußgänger Signal Ampel",
+    "block.citycraft.pedestrian_tripple_traffic_light":  "Dreifeldige Fußgänger Ampel",
+    "block.citycraft.right_turn_double_traffic_light": "Zweifeldige Rechtsabbieger Ampel",
+    "block.citycraft.right_turn_tripple_traffic_light":  "Dreifeldige Rechtsabbieger Ampel",
+    "block.citycraft.signal_light": "Signal Ampel",
+    "block.citycraft.straight_double_traffic_light":  "Zweifeldige Nichtabbieger Ampel",
+    "block.citycraft.straight_tripple_traffic_light": "Dreifeldige Nichtabbieger Ampel",
+    "block.citycraft.train_signal_light":  "Zug Signal Ampel",
+    "block.citycraft.tripple_traffic_light": "Dreifeldige Ampel"
 }

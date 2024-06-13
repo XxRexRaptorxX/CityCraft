@@ -695,6 +695,23 @@ public class ModBlocks {
     public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_ROADWORKS = registerBlock("variable_traffic_sign_roadworks", VariableTrafficSignBlock::new);
     public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_SLIPPERINESS = registerBlock("variable_traffic_sign_slipperiness", VariableTrafficSignBlock::new);
 
+    public static final RegistryObject<TrafficLightBlock> BICYCLE_DOUBLE_TRAFFIC_LIGHT = registerBlock("bicycle_double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> BICYCLE_TRIPPLE_TRAFFIC_LIGHT = registerBlock("bicycle_tripple_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> DANGER_SIGNAL_LIGHT = registerBlock("danger_signal_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> DOUBLE_TRAFFIC_LIGHT = registerBlock("double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> LEFT_TURN_DOUBLE_TRAFFIC_LIGHT = registerBlock("left_turn_double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> LEFT_TURN_TRIPPLE_TRAFFIC_LIGHT = registerBlock("left_turn_tripple_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT = registerBlock("pedestrian_double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> PEDESTRIAN_SIGNAL_LIGHT = registerBlock("pedestrian_signal_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> PEDESTRIAN_TRIPPLE_TRAFFIC_LIGHT = registerBlock("pedestrian_tripple_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT = registerBlock("right_turn_double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> RIGHT_TURN_TRIPPLE_TRAFFIC_LIGHT = registerBlock("right_turn_tripple_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> SIGNAL_LIGHT = registerBlock("signal_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> STRAIGHT_DOUBLE_TRAFFIC_LIGHT = registerBlock("straight_double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> STRAIGHT_TRIPPLE_TRAFFIC_LIGHT = registerBlock("straight_tripple_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> TRAIN_SIGNAL_LIGHT = registerBlock("train_signal_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> TRIPPLE_TRAFFIC_LIGHT = registerBlock("tripple_traffic_light", TrafficLightBlock::new);
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

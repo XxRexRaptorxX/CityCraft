@@ -649,5 +649,22 @@
     "block.citycraft.variable_traffic_sign_no_passing": "'No Passing' Variable Traffic Sign",
     "block.citycraft.variable_traffic_sign_no_truck_passing":  "'No Passing for Trucks' Variable Traffic Sign",
     "block.citycraft.variable_traffic_sign_roadworks": "'Danger Roadworks' Variable Traffic Sign",
-    "block.citycraft.variable_traffic_sign_slipperiness":  "'Danger Slipperiness' Variable Traffic Sign"
+    "block.citycraft.variable_traffic_sign_slipperiness":  "'Danger Slipperiness' Variable Traffic Sign",
+
+    "block.citycraft.bicycle_double_traffic_light":  "Bicycle Double Traffic Light",
+    "block.citycraft.bicycle_tripple_traffic_light": "Bicycle Tripple Traffic Light",
+    "block.citycraft.danger_signal_light":  "Danger Signal Light",
+    "block.citycraft.double_traffic_light": "Double Traffic Light",
+    "block.citycraft.left_turn_double_traffic_light":  "Left Turn Double Traffic Light",
+    "block.citycraft.left_turn_tripple_traffic_light": "Left Turn Tripple Traffic Light",
+    "block.citycraft.pedestrian_double_traffic_light":  "Pedestrian Double Traffic Light",
+    "block.citycraft.pedestrian_signal_light": "Pedestrian Signal Light",
+    "block.citycraft.pedestrian_tripple_traffic_light":  "Pedestrian Tripple Traffic Light",
+    "block.citycraft.right_turn_double_traffic_light": "Right Turn Double Traffic Light",
+    "block.citycraft.right_turn_tripple_traffic_light":  "Right Turn Tripple Traffic Light",
+    "block.citycraft.signal_light": "Signal Light",
+    "block.citycraft.straight_double_traffic_light":  "Straight Double Traffic Light",
+    "block.citycraft.straight_tripple_traffic_light": "Straight Tripple Traffic Light",
+    "block.citycraft.train_signal_light":  "Train Signal Light",
+    "block.citycraft.tripple_traffic_light": "Tripple Traffic Light"
 }
