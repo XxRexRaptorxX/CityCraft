@@ -406,12 +406,12 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT.get());
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT.get());
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get());
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS.get());
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_CREEPER.get());
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_DANGER.get());
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get());
-                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get());
-                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get());
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get());
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get());
             }).build());
