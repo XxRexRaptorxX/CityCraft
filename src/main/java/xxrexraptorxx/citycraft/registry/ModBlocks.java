@@ -695,7 +695,6 @@ public class ModBlocks {
     public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_ROADWORKS = registerBlock("variable_traffic_sign_roadworks", VariableTrafficSignBlock::new);
     public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_SLIPPERINESS = registerBlock("variable_traffic_sign_slipperiness", VariableTrafficSignBlock::new);
 
-    //TODO: SIGN SHAPE TAGS
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

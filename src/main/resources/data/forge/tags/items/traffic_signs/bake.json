@@ -4,6 +4,18 @@
     "citycraft:bake_sign",
     "citycraft:warning_beacon_left_eu_sign",
     "citycraft:warning_beacon_right_eu_sign",
-    "citycraft:warning_beacon_alt_eu_sign"
+    "citycraft:warning_beacon_alt_eu_sign",
+    "citycraft:highway_countdown_marker_200_eu_sign",
+    "citycraft:federal_highway_countdown_marker_100_eu_sign",
+    "citycraft:highway_countdown_marker_300_eu_sign",
+    "citycraft:federal_highway_countdown_marker_200_eu_sign",
+    "citycraft:highway_countdown_marker_100_eu_sign",
+    "citycraft:federal_highway_countdown_marker_300_eu_sign",
+    "citycraft:railway_countdown_marker_80_eu_sign",
+    "citycraft:railway_countdown_marker_160_eu_sign",
+    "citycraft:railway_countdown_marker_240_eu_sign",
+    "citycraft:warning_beacon_alt_us_sign",
+    "citycraft:warning_beacon_left_us_sign",
+    "citycraft:warning_beacon_right_us_sign"
   ]
 }

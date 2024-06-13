@@ -24,6 +24,12 @@
     "citycraft:right_arrow_orange_us_sign",
     "citycraft:left_diagonal_arrow_orange_us_sign",
     "citycraft:right_diagonal_arrow_orange_us_sign",
-    "citycraft:double_arrow_orange_us_sign"
+    "citycraft:double_arrow_orange_us_sign",
+    "citycraft:exit_closed_us_sign",
+    "citycraft:m_ahead_eu_sign",
+    "citycraft:ahead_yellow_us_sign",
+    "citycraft:ahead_green_us_sign",
+    "citycraft:ahead_orange_us_sign",
+    "citycraft:warn_us_sign"
   ]
 }
