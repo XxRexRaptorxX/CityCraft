@@ -1,9 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "citycraft:block/side_traffic_light",
-		"1": "citycraft:block/traffic_light_top_bottom",
-		"particle": "citycraft:block/side_traffic_light"
+		"side": "citycraft:block/traffic_light_top_bottom",
+		"particle": "#texture"
 	},
 	"elements": [
 		{
@@ -12,12 +11,12 @@
 			"to": [16, 8, 12],
 			"rotation": {"angle": 0, "axis": "y", "origin": [-4, 0, 0]},
 			"faces": {
-				"north": {"uv": [0, 8, 16, 16], "texture": "#0"},
-				"east": {"uv": [0, 0, 8, 8], "texture": "#1"},
-				"south": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"west": {"uv": [0, 0, 8, 8], "texture": "#1"},
-				"up": {"uv": [0, 0, 16, 8], "texture": "#0", "cullface": "up"},
-				"down": {"uv": [0, 0, 16, 8], "texture": "#0", "cullface": "down"}
+				"north": {"uv": [0, 8, 16, 16], "texture": "#texture"},
+				"east": {"uv": [0, 0, 8, 8], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#texture"},
+				"west": {"uv": [0, 0, 8, 8], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 8], "texture": "#texture", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 8], "texture": "#texture", "cullface": "down"}
 			}
 		}
 	],

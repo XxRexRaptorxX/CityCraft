@@ -16,7 +16,10 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
+import xxrexraptorxx.citycraft.registry.ModBlocks;
 
 import java.util.function.ToIntFunction;
 
@@ -28,6 +31,9 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
 	private static final VoxelShape DOUBLE = Block.box(7.0D, 0.0D, 7.0D, 9.0D, 12.0D, 9.0D);
 	private static final VoxelShape SINGLE = Block.box(7.0D, 0.0D, 7.0D, 9.0D, 8.0D, 9.0D);
 	private static final VoxelShape SIDE_NORTH = Block.box(0.0D, 0.0D, 4.0D, 0.0D, 8.0D, 12.0D);
+	private static final VoxelShape SIDE_SOUTH = Block.box(0.0D, 0.0D, 4.0D, 0.0D, 8.0D, 12.0D);
+	private static final VoxelShape SIDE_EAST = Block.box(0.0D, 0.0D, 4.0D, 0.0D, 8.0D, 12.0D);
+	private static final VoxelShape SIDE_WEST = Block.box(0.0D, 0.0D, 4.0D, 0.0D, 8.0D, 12.0D);
 
 
 	public TrafficLightBlock() {
@@ -45,7 +51,27 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-		if (this == )
+		String blockName = ForgeRegistries.BLOCKS.getKey(this).getPath();
+
+		if (blockName.contains("tripple")) {
+			return TRIPPE;
+		} else if (blockName.contains("double")) {
+			return DOUBLE;
+		} else if (this == ModBlocks.SIGNAL_LIGHT.get() || this == ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get()) {
+			return SINGLE;
+		} else {
+
+			//SIDE
+			if (state.getValue(FACING) == Direction.NORTH) {
+				return SIDE_NORTH;
+			} else if (state.getValue(FACING) == Direction.SOUTH) {
+				return SIDE_SOUTH;
+			} else if (state.getValue(FACING) == Direction.EAST) {
+				return SIDE_EAST;
+			} else {
+				return SIDE_WEST;
+			}
+		}
 	}
 
 	@Override

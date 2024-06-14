@@ -674,7 +674,24 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WARN_US_SIGN.get());
         this.dropSelf(ModBlocks.WARNING_BEACON_ALT_US_SIGN.get());
         this.dropSelf(ModBlocks.WARNING_BEACON_LEFT_US_SIGN.get());
-                this.dropSelf(ModBlocks.WARNING_BEACON_RIGHT_US_SIGN.get());
+        this.dropSelf(ModBlocks.WARNING_BEACON_RIGHT_US_SIGN.get());
+
+        this.dropSelf(ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.BICYCLE_TRIPPLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.DANGER_SIGNAL_LIGHT.get());
+        this.dropSelf(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.LEFT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.LEFT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get());
+        this.dropSelf(ModBlocks.PEDESTRIAN_TRIPPLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.RIGHT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.SIGNAL_LIGHT.get());
+        this.dropSelf(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
+        this.dropSelf(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get());
     }
 
 

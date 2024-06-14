@@ -9,11 +9,10 @@ import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import xxrexraptorxx.citycraft.blocks.AsphaltBlock;
-import xxrexraptorxx.citycraft.blocks.AsphaltSlabBlock;
-import xxrexraptorxx.citycraft.blocks.VariableTrafficSignBlock;
+import xxrexraptorxx.citycraft.blocks.*;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
+import xxrexraptorxx.citycraft.utils.Helper;
 import xxrexraptorxx.citycraft.utils.SignShape;
 
 public class BlockStateGen extends BlockStateProvider {
@@ -664,6 +663,23 @@ public class BlockStateGen extends BlockStateProvider {
         variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get());
         variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get());
         variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get());
+
+        trafficLights(ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.BICYCLE_TRIPPLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.DANGER_SIGNAL_LIGHT.get());
+        trafficLights(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.LEFT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.LEFT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get());
+        trafficLights(ModBlocks.PEDESTRIAN_TRIPPLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.RIGHT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.SIGNAL_LIGHT.get());
+        trafficLights(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
+        trafficLights(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get());
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -692,7 +708,7 @@ public class BlockStateGen extends BlockStateProvider {
     }
 
 
-    private void trafficSignBlock(Block block, SignShape shape) {
+    private void trafficSignBlock(TrafficSignBlock block, SignShape shape) {
         String frontTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
         String backTexture = shape.toString() + "_sign_back";
 
@@ -733,7 +749,7 @@ public class BlockStateGen extends BlockStateProvider {
     }
 
 
-    private void directionalAsphaltBlock(Block block) {
+    private void directionalAsphaltBlock(AsphaltBlock block) {
         String asphaltTexture = BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
@@ -779,7 +795,7 @@ public class BlockStateGen extends BlockStateProvider {
     }
 
 
-    private void asphaltSlab(Block block) {
+    private void asphaltSlab(AsphaltSlabBlock block) {
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath().replace("_slab", "");
 
         slabBlock((SlabBlock) block, modLoc("block/" + blockTexture), modLoc("block/" + blockTexture));
@@ -787,7 +803,7 @@ public class BlockStateGen extends BlockStateProvider {
     }
 
 
-    private void directionalAsphaltSlab(Block block) {
+    private void directionalAsphaltSlab(AsphaltSlabBlock block) {
         String asphaltTexture = BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath().replace("_slab", "");
 
@@ -854,12 +870,58 @@ public class BlockStateGen extends BlockStateProvider {
     }
 
 
-    private void variableTrafficSign(Block block) {
+    private void variableTrafficSign(VariableTrafficSignBlock block) {
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
         ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/variable_traffic_signs")
                 .texture("texture", "block/" + blockTexture + emissiveTexturesSuffix);
         ModelFile model_off = models().withExistingParent(blockTexture + "_off", References.MODID + ":block/variable_traffic_signs_off");
+
+
+        getVariantBuilder(block)
+                .forAllStates(state -> {
+
+                    Boolean lit = state.getValue(VariableTrafficSignBlock.LIT);
+                    Direction dir = state.getValue(VariableTrafficSignBlock.FACING);
+                    int x = 0;
+                    int y = 0;
+
+                    switch (dir) {
+                        case EAST:
+                            y = 270;
+                            break;
+                        case NORTH:
+                            y = 180;
+                            break;
+                        case SOUTH:
+                            break;
+                        case WEST:
+                            y = 90;
+                            break;
+                        default:
+                            break;
+                    }
+
+
+                    return ConfiguredModel.builder()
+                            .modelFile(lit == true ? model : model_off)
+                            .rotationX(x)
+                            .rotationY(y)
+                            .build();
+                });
+
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void trafficLights(TrafficLightBlock block) {
+        String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        String modelType = Helper.getTrafficLightModelType(block);
+
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + modelType)
+                .texture("texture", "block/" + blockTexture);
+        ModelFile model_off = models().withExistingParent(blockTexture + "_off", References.MODID + ":block/" + modelType)
+                .texture("texture", "block/" + blockTexture + "_off");
 
 
         getVariantBuilder(block)

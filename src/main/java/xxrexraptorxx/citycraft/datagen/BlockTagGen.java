@@ -668,7 +668,24 @@ public class BlockTagGen extends BlockTagsProvider {
                        ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get(),
                        ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get(),
                        ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get(),
-                       ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get()
+                       ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get(),
+
+                       ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.BICYCLE_TRIPPLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.DANGER_SIGNAL_LIGHT.get(),
+                       ModBlocks.DOUBLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.LEFT_TURN_DOUBLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.LEFT_TURN_TRIPPLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get(),
+                       ModBlocks.PEDESTRIAN_TRIPPLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.RIGHT_TURN_TRIPPLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.SIGNAL_LIGHT.get(),
+                       ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get(),
+                       ModBlocks.TRAIN_SIGNAL_LIGHT.get(),
+                       ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get()
                );
 
 
