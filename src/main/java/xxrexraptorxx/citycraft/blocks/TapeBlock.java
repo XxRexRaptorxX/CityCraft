@@ -59,7 +59,7 @@ public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBl
 
 
     @Override
-    public VoxelShape getCollisionShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+    public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return Shapes.empty();
     }
 
@@ -84,19 +84,19 @@ public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBl
 
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(WATERLOGGED).add(AXIS);
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(WATERLOGGED).add(AXIS);
     }
 
 
     @Override
-    public FluidState getFluidState(BlockState pState) {
-        return pState.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(pState);
+    public FluidState getFluidState(BlockState state) {
+        return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
 
 
     @Override
-    public boolean isPathfindable(BlockState pState, BlockGetter pLevel, BlockPos pPos, PathComputationType pType) {
+    public boolean isPathfindable(BlockState state, BlockGetter level, BlockPos pos, PathComputationType type) {
         return false;
     }
 
@@ -108,7 +108,7 @@ public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBl
 
 
     @Override
-    public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
-        pEntity.makeStuckInBlock(pState, new Vec3(0.9D, (double)1.0F, 0.9D));
+    public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+        entity.makeStuckInBlock(state, new Vec3(0.9D, (double)1.0F, 0.9D));
     }
 }

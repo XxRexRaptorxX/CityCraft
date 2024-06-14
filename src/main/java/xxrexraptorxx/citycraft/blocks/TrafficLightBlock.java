@@ -8,12 +8,16 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.SlabType;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.fml.common.Mod;
@@ -27,13 +31,12 @@ import java.util.function.ToIntFunction;
 public class TrafficLightBlock extends HorizontalDirectionalBlock implements SimpleWaterloggedBlock {
 
 	public static final BooleanProperty LIT = RedstoneTorchBlock.LIT;
-	private static final VoxelShape TRIPPE = Block.box(7.0D, 0.0D, 7.0D, 9.0D, 16.0D, 9.0D);
-	private static final VoxelShape DOUBLE = Block.box(7.0D, 0.0D, 7.0D, 9.0D, 12.0D, 9.0D);
-	private static final VoxelShape SINGLE = Block.box(7.0D, 0.0D, 7.0D, 9.0D, 8.0D, 9.0D);
-	private static final VoxelShape SIDE_NORTH = Block.box(0.0D, 0.0D, 4.0D, 0.0D, 8.0D, 12.0D);
-	private static final VoxelShape SIDE_SOUTH = Block.box(0.0D, 0.0D, 4.0D, 0.0D, 8.0D, 12.0D);
-	private static final VoxelShape SIDE_EAST = Block.box(0.0D, 0.0D, 4.0D, 0.0D, 8.0D, 12.0D);
-	private static final VoxelShape SIDE_WEST = Block.box(0.0D, 0.0D, 4.0D, 0.0D, 8.0D, 12.0D);
+	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+	private static final VoxelShape TRIPPE = Block.box(4.0D, 0.0D, 4.0D, 12.0D, 16.0D, 12.0D);
+	private static final VoxelShape DOUBLE = Block.box(4.0D, 0.0D, 4.0D, 12.0D, 12.0D, 12.0D);
+	private static final VoxelShape SINGLE = Block.box(4.0D, 0.0D, 4.0D, 12.0D, 8.0D, 12.0D);
+	private static final VoxelShape SIDE_EAST_WEST = Block.box(4.0D, 0.0D, 0.0D, 12.0D, 8.0D, 16.0D);
+	private static final VoxelShape SIDE_NORTH_SOUTH = Block.box(0.0D, 0.0D, 4.0D, 16.0D, 8.0D, 12.0D);
 
 
 	public TrafficLightBlock() {
@@ -44,8 +47,9 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
 				.mapColor(DyeColor.GRAY)
 				.instrument(NoteBlockInstrument.PLING)
 				.lightLevel(litBlockEmission(2))
+				.requiresCorrectToolForDrops()
 		);
-		this.registerDefaultState(this.defaultBlockState().setValue(LIT, Boolean.valueOf(true)));
+		this.registerDefaultState(this.defaultBlockState().setValue(LIT, Boolean.valueOf(true)).setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, Boolean.valueOf(false)));
 	}
 
 
@@ -62,28 +66,44 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
 		} else {
 
 			//SIDE
-			if (state.getValue(FACING) == Direction.NORTH) {
-				return SIDE_NORTH;
-			} else if (state.getValue(FACING) == Direction.SOUTH) {
-				return SIDE_SOUTH;
-			} else if (state.getValue(FACING) == Direction.EAST) {
-				return SIDE_EAST;
+			if (state.getValue(FACING) == Direction.NORTH || state.getValue(FACING) == Direction.SOUTH) {
+				return SIDE_NORTH_SOUTH;
 			} else {
-				return SIDE_WEST;
+				return SIDE_EAST_WEST;
 			}
 		}
 	}
 
 	@Override
 	public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING, LIT);
+		builder.add(FACING, LIT, WATERLOGGED);
 	}
 
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection())
+		FluidState fluidstate = context.getLevel().getFluidState(context.getClickedPos());
+
+		return this.defaultBlockState()
+				.setValue(FACING, context.getHorizontalDirection())
+				.setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER))
 				.setValue(LIT, Boolean.valueOf(!context.getLevel().hasNeighborSignal(context.getClickedPos())));
+	}
+
+
+	@Override
+	public FluidState getFluidState(BlockState state) {
+		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
+	}
+
+
+	@Override
+	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos) {
+		if (state.getValue(WATERLOGGED)) {
+			level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+		}
+
+		return super.updateShape(state, facing, facingState, level, currentPos, facingPos);
 	}
 
 
