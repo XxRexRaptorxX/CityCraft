@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:tripple_traffic_light"
+    },
+    {
+      "item": "citycraft:sidewalk_eu_sign"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:pedestrian_tripple_traffic_light"
+  }
+}

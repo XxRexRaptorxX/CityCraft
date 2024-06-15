@@ -677,6 +677,31 @@ public class CreativeModeTabs {
     //            }
     //        }).build());
 
+    public static final RegistryObject<CreativeModeTab> TRAFFIC_LIGHTS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".traffic_lights_tab", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + References.MODID + ".traffic_lights_tab"))
+            .icon(() -> new ItemStack(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get()))
+            .displayItems((params, output) -> {
+
+                output.accept(ModBlocks.IRON_POLE.get());
+
+                output.accept(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.LEFT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.LEFT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.RIGHT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.BICYCLE_TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.PEDESTRIAN_TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get());
+                output.accept(ModBlocks.SIGNAL_LIGHT.get());
+                output.accept(ModBlocks.DANGER_SIGNAL_LIGHT.get());
+                output.accept(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
+            }).build());
+
 
     public static final RegistryObject<CreativeModeTab> ROAD_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".roads", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".roads_tab"))
@@ -1022,30 +1047,6 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get());
-            }).build());
-
-
-    public static final RegistryObject<CreativeModeTab> TRAFFIC_LIGHTS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".traffic_lights_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup." + References.MODID + ".traffic_lights_tab"))
-            .icon(() -> new ItemStack(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get()))
-            .displayItems((params, output) -> {
-
-                output.accept(ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.BICYCLE_TRIPPLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.DANGER_SIGNAL_LIGHT.get());
-                output.accept(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.LEFT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.LEFT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get());
-                output.accept(ModBlocks.PEDESTRIAN_TRIPPLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.RIGHT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.SIGNAL_LIGHT.get());
-                output.accept(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get());
-                output.accept(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
-                output.accept(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get());
             }).build());
 
 }
