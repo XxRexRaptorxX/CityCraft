@@ -23,12 +23,12 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.common.IForgeShearable;
+import net.neoforged.neoforge.common.IShearable;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
-public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBlock, IForgeShearable {
+public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBlock, IShearable {
 
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     protected static final float AABB_MIN = 6.5F;

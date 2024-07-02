@@ -1,6 +1,6 @@
 package xxrexraptorxx.citycraft.utils;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import xxrexraptorxx.citycraft.blocks.TrafficLightBlock;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
@@ -13,7 +13,7 @@ public class Helper {
 
 
     public static String getTrafficLightModelType(TrafficLightBlock block) {
-        String blockName = ForgeRegistries.BLOCKS.getKey(block).getPath();
+        String blockName = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
         if (blockName.contains("tripple")) {
             return "tripple_traffic_lights";

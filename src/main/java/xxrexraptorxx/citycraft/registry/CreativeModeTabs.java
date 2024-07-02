@@ -4,19 +4,19 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.citycraft.main.References;
 
 public class CreativeModeTabs {
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, References.MODID);
 
-    public static void init() { CREATIVE_MODE_TABS.register(FMLJavaModLoadingContext.get().getModEventBus()); }
+    public static void init(IEventBus bus) { CREATIVE_MODE_TABS.register(bus); }
 
 
-    public static final RegistryObject<CreativeModeTab> MAIN_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".main", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MAIN_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".main", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".main_tab"))
             .icon(() -> new ItemStack(ModBlocks.YELLOW_BLACK_POST.get()))
             .displayItems((params, output) -> {
@@ -87,7 +87,7 @@ public class CreativeModeTabs {
             }).build());
 
 
-    public static final RegistryObject<CreativeModeTab> SIGN_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".signs", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SIGN_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".signs", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".signs_tab"))
             .icon(() -> new ItemStack(ModBlocks.CREEPER_US_SIGN.get()))
             .withTabsBefore(MAIN_TAB.getId())
@@ -677,7 +677,7 @@ public class CreativeModeTabs {
     //            }
     //        }).build());
 
-    public static final RegistryObject<CreativeModeTab> TRAFFIC_LIGHTS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".traffic_lights_tab", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TRAFFIC_LIGHTS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".traffic_lights_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".traffic_lights_tab"))
             .icon(() -> new ItemStack(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get()))
             .displayItems((params, output) -> {
@@ -703,7 +703,7 @@ public class CreativeModeTabs {
             }).build());
 
 
-    public static final RegistryObject<CreativeModeTab> ROAD_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".roads", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ROAD_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".roads", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".roads_tab"))
             .icon(() -> new ItemStack(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE.get()))
             .withTabsBefore(MAIN_TAB.getId())

@@ -1,11 +1,9 @@
 package xxrexraptorxx.citycraft.main;
 
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import xxrexraptorxx.citycraft.blocks.container.PainterScreen;
@@ -21,19 +19,16 @@ public class CityCraft {
 
     public static final Logger LOGGER = LogManager.getLogger();
 
-    public CityCraft() {
-        IEventBus forgeBus = MinecraftForge.EVENT_BUS;
-        IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
+    public CityCraft(IEventBus bus) {
 
-        ModBlocks.init();
-        ModItems.init();
+        ModBlocks.init(bus);
+        ModItems.init(bus);
         Config.init();
-        CreativeModeTabs.init();
-        ModRecipeSerializers.init();
-        ModRecipeTypes.init();
-        ModMenuTypes.init();
-        modBus.addListener(this::clientSetup);
-
+        CreativeModeTabs.init(bus);
+        ModRecipeSerializers.init(bus);
+        ModRecipeTypes.init(bus);
+        ModMenuTypes.init(bus);
+        bus.addListener(this::clientSetup);
     }
 
     private void clientSetup(FMLClientSetupEvent event) {

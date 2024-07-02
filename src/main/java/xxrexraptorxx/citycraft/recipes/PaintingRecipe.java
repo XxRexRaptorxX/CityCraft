@@ -12,7 +12,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.common.ForgeHooks;
+import net.neoforged.neoforge.common.CommonHooks;
 import org.jetbrains.annotations.NotNull;
 import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.registry.ModRecipeSerializers;
@@ -111,7 +111,7 @@ public class PaintingRecipe implements IPaintingRecipe {
 
    @Override
    public boolean isIncomplete() {
-      return Stream.of(this.color, this.base).anyMatch(ForgeHooks::hasNoElements);
+      return Stream.of(this.color, this.base).anyMatch(CommonHooks::hasNoElements);
    }
 
 

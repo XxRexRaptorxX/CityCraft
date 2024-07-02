@@ -1,4 +1,4 @@
-package xxrexraptorxx.citycraft.world;
+package xxrexraptorxx.citycraft.utils;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -15,15 +15,14 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModList;
-import net.minecraftforge.fml.VersionChecker;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
+import net.neoforged.fml.VersionChecker;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.event.TickEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.main.References;
-import xxrexraptorxx.citycraft.utils.Config;
 
 import java.net.MalformedURLException;
 import java.net.URL;

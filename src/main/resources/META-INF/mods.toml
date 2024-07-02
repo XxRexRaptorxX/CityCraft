@@ -8,7 +8,7 @@ modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
 itemIcon="citycraft:asphalt_with_white_broken_middle_line"
-updateJSONURL="https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/CityCraft.json"
+updateJSONURL="https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/CityCraft_NEO.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/city-craft"
 logoFile="logo.png"
 #credits=""
@@ -17,8 +17,9 @@ description='''This mod expands the game with vanilla friendly streets, signs an
 
 
 [[dependencies.${mod_id}]]
-modId="forge"
+modId="neoforge"
 mandatory=true
+type="required"
 versionRange="${forge_version_range}"
 ordering="NONE"
 side="BOTH"
@@ -26,6 +27,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="minecraft"
 mandatory=true
+type="required"
 versionRange="${mc_version_range}"
 ordering="NONE"
 side="BOTH"

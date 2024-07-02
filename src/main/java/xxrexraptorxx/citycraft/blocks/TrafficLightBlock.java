@@ -3,6 +3,7 @@ package xxrexraptorxx.citycraft.blocks;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.DyeColor;
@@ -20,7 +21,6 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
@@ -59,7 +59,7 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        String blockName = ForgeRegistries.BLOCKS.getKey(this).getPath();
+        String blockName = BuiltInRegistries.BLOCK.getKey(this).getPath();
 
         if (blockName.contains("tripple")) {
             return TRIPPE;

@@ -1,15 +1,16 @@
 package xxrexraptorxx.citycraft.datagen;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.WallBlock;
-import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.registry.ModItems;
@@ -33,7 +34,7 @@ public class ItemModelGen extends ItemModelProvider {
         itemGenerated(ModBlocks.BLACK_CHAIN);
         itemGenerated(ModBlocks.YELLOW_CHAIN);
 
-        fenceItem(ModBlocks.IRON_FENCE, ModBlocks.IRON_POLE);
+        fenceItem(ModBlocks.IRON_FENCE, ModBlocks.IRON_POLE.get());
 
         wallItem(ModBlocks.BLACK_CONCRETE_WALL, Blocks.BLACK_CONCRETE);
         wallItem(ModBlocks.WHITE_CONCRETE_WALL, Blocks.WHITE_CONCRETE);
@@ -58,26 +59,30 @@ public class ItemModelGen extends ItemModelProvider {
 
 
 
-    private void itemGenerated(RegistryObject item) {
+    private void itemGenerated(DeferredItem item) {
         singleTexture(item.getId().getPath(), new ResourceLocation("item/generated"),"layer0", new ResourceLocation(References.MODID, "item/" + item.getId().getPath()));
     }
 
-    private void itemHandheld(RegistryObject item) {
+    private void itemGenerated(DeferredBlock item) {
+        singleTexture(item.getId().getPath(), new ResourceLocation("item/generated"),"layer0", new ResourceLocation(References.MODID, "item/" + item.getId().getPath()));
+    }
+
+    private void itemHandheld(DeferredItem item) {
         singleTexture(item.getId().getPath(), new ResourceLocation("item/handheld"),"layer0", new ResourceLocation(References.MODID, "item/" + item.getId().getPath()));
     }
 
-    private void itemBlock(RegistryObject item) {
-        withExistingParent(item.getId().getPath(), modLoc( "block/" + item.getId().getPath()));
+    private void itemBlock(DeferredBlock item) {
+        withExistingParent(item.getId().getPath(), modLoc( "block/" + item.getId()));
     }
 
-    public void fenceItem(RegistryObject<FenceBlock> block, RegistryObject<Block> textureBlock) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
-                .texture("texture",  new ResourceLocation(References.MODID, "block/" + ForgeRegistries.BLOCKS.getKey(textureBlock.get()).getPath()));
+    public void fenceItem(DeferredBlock<FenceBlock> block, Block textureBlock) {
+        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  new ResourceLocation(References.MODID, "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
 
-    public void wallItem(RegistryObject<WallBlock> block, Block textureBlock) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
-                .texture("wall",  new ResourceLocation( "minecraft:block/" + ForgeRegistries.BLOCKS.getKey(textureBlock).getPath()));
+    public void wallItem(DeferredBlock<WallBlock> block, Block textureBlock) {
+        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation( "minecraft:block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
 
 }

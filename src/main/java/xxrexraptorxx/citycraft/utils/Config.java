@@ -1,28 +1,26 @@
 package xxrexraptorxx.citycraft.utils;
 
-import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.fml.ModLoadingContext;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
+import net.neoforged.fml.ModLoadingContext;
+import net.neoforged.fml.config.ModConfig;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
-@Mod.EventBusSubscriber
 public class Config {
 
     public static final String CATEGORY_GENERAL = "general";
     public static final String CATEGORY_ROADS = "roads";
     public static final String CATEGORY_SIGNS = "signs";
 
-    public static ForgeConfigSpec SERVER_CONFIG;
-    public static ForgeConfigSpec CLIENT_CONFIG;
+    public static ModConfigSpec SERVER_CONFIG;
+    public static ModConfigSpec CLIENT_CONFIG;
 
-    public static ForgeConfigSpec.BooleanValue UPDATE_CHECKER;
-    public static ForgeConfigSpec.BooleanValue PATREON_REWARDS;
+    public static ModConfigSpec.BooleanValue UPDATE_CHECKER;
+    public static ModConfigSpec.BooleanValue PATREON_REWARDS;
 
-    public static ForgeConfigSpec.BooleanValue ENABLE_TOOLTIPS;
-    public static ForgeConfigSpec.BooleanValue ENABLE_ASPHALT_SPEED_EFFECT;
-    public static ForgeConfigSpec.BooleanValue SPLIT_TRAFFIC_SIGN_TAB;
-    public static ForgeConfigSpec.IntValue SPEED_EFFECT_AMPLIFIER;
-    public static ForgeConfigSpec.IntValue BOOST_SPEED_EFFECT_AMPLIFIER;
+    public static ModConfigSpec.BooleanValue ENABLE_TOOLTIPS;
+    public static ModConfigSpec.BooleanValue ENABLE_ASPHALT_SPEED_EFFECT;
+    public static ModConfigSpec.BooleanValue SPLIT_TRAFFIC_SIGN_TAB;
+    public static ModConfigSpec.IntValue SPEED_EFFECT_AMPLIFIER;
+    public static ModConfigSpec.IntValue BOOST_SPEED_EFFECT_AMPLIFIER;
 
     public static void init() {
         initServer();
@@ -34,7 +32,7 @@ public class Config {
 
 
     public static void initClient() {
-        ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
+        ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
         builder.comment("General").push(CATEGORY_GENERAL);
         UPDATE_CHECKER = builder.comment("Activate the Update-Checker").define("update-checker", true);
@@ -50,7 +48,7 @@ public class Config {
 
 
     public static void initServer() {
-        ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
+        ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
         builder.comment("General").push(CATEGORY_GENERAL);
         PATREON_REWARDS = builder.comment("Enables ingame rewards on first spawn for Patreons").define("patreon_rewards", true);

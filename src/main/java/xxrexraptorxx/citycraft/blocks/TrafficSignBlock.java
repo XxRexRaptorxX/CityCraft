@@ -2,6 +2,7 @@ package xxrexraptorxx.citycraft.blocks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
@@ -16,7 +17,6 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -39,13 +39,13 @@ public class TrafficSignBlock extends FenceBlock implements SimpleWaterloggedBlo
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> list, TooltipFlag flag) {
-		if (ForgeRegistries.BLOCKS.getKey(Block.byItem(stack.getItem())).getPath().contains("_eu_sign")) {
+		if (BuiltInRegistries.BLOCK.getKey(Block.byItem(stack.getItem())).getPath().contains("_eu_sign")) {
 			list.add(Component.literal("[EU]").withStyle(ChatFormatting.GRAY));
 
-		} else if (ForgeRegistries.BLOCKS.getKey(Block.byItem(stack.getItem())).getPath().contains("_us_sign")) {
+		} else if (BuiltInRegistries.BLOCK.getKey(Block.byItem(stack.getItem())).getPath().contains("_us_sign")) {
 			list.add(Component.literal("[US]").withStyle(ChatFormatting.GRAY));
 
-		} else if (ForgeRegistries.BLOCKS.getKey(Block.byItem(stack.getItem())).getPath().contains("_zh_sign")) {
+		} else if (BuiltInRegistries.BLOCK.getKey(Block.byItem(stack.getItem())).getPath().contains("_zh_sign")) {
 			list.add(Component.literal("[ZH]").withStyle(ChatFormatting.GRAY));
 		}
 	}
