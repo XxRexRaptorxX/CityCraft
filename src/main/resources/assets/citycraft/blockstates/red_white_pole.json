@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "citycraft:block/red_white_pole",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "citycraft:block/red_white_pole",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "citycraft:block/red_white_pole",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "citycraft:block/red_white_pole",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "citycraft:block/red_white_pole"
+    },
+    "facing=west": {
+      "model": "citycraft:block/red_white_pole",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:bicycle_double_traffic_light",
+    "citycraft:bicycle_tripple_traffic_light",
+    "citycraft:danger_signal_light",
+    "citycraft:double_traffic_light",
+    "citycraft:left_turn_double_traffic_light",
+    "citycraft:left_turn_tripple_traffic_light",
+    "citycraft:pedestrian_double_traffic_light",
+    "citycraft:pedestrian_signal_light",
+    "citycraft:pedestrian_tripple_traffic_light",
+    "citycraft:right_turn_double_traffic_light",
+    "citycraft:right_turn_tripple_traffic_light",
+    "citycraft:signal_light",
+    "citycraft:straight_double_traffic_light",
+    "citycraft:straight_tripple_traffic_light",
+    "citycraft:train_signal_light",
+    "citycraft:tripple_traffic_light"
+  ]
+}

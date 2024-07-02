@@ -1,0 +1,262 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "citycraft:block/double_traffic_barrier_post"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "false",
+            "east": "false",
+            "south": "false",
+            "west": "false"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_side"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "true",
+            "south": "false",
+            "east": "false",
+            "west": "false"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_side"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "false",
+            "south": "true",
+            "east": "false",
+            "west": "false"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_side"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "true",
+            "south": "true",
+            "east": "false",
+            "west": "false"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_side",
+        "y": 90
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "false",
+            "south": "false",
+            "east": "true",
+            "west": "false"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_side",
+        "y": 90
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "false",
+            "south": "false",
+            "east": "false",
+            "west": "true"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_side",
+        "y": 90
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "false",
+            "south": "false",
+            "east": "true",
+            "west": "true"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_middle"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "true",
+            "south": "true",
+            "east": "true",
+            "west": "true"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_middle"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "true",
+            "south": "false",
+            "east": "true",
+            "west": "false"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_middle"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "true",
+            "south": "false",
+            "east": "false",
+            "west": "true"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_middle"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "false",
+            "south": "true",
+            "east": "false",
+            "west": "true"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_middle"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "false",
+            "south": "true",
+            "east": "true",
+            "west": "false"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_middle"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "true",
+            "south": "true",
+            "east": "true",
+            "west": "false"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_middle"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "false",
+            "south": "true",
+            "east": "true",
+            "west": "true"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_middle"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "true",
+            "south": "false",
+            "east": "true",
+            "west": "true"
+          }
+        ]
+      }
+    },
+
+    {
+      "apply": {
+        "model": "citycraft:block/double_yellow_black_traffic_barrier_middle"
+      },
+      "when": {
+        "AND": [
+          {
+            "north": "true",
+            "south": "true",
+            "east": "false",
+            "west": "true"
+          }
+        ]
+      }
+    }
+  ]
+}

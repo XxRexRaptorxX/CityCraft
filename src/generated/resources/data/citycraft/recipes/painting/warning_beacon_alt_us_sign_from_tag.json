@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:traffic_signs/bake"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "item": "citycraft:warning_beacon_alt_us_sign"
+  }
+}

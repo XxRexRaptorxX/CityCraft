@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:double_traffic_light"
+    },
+    {
+      "item": "citycraft:straight_ahead_eu_sign"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:straight_double_traffic_light"
+  }
+}

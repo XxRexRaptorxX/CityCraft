@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:traffic_signs/triangle"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "item": "citycraft:loose_gravel_eu_sign"
+  }
+}

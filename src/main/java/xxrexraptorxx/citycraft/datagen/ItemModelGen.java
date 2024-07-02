@@ -51,6 +51,9 @@ public class ItemModelGen extends ItemModelProvider {
         wallItem(ModBlocks.BROWN_CONCRETE_WALL, Blocks.BROWN_CONCRETE);
         wallItem(ModBlocks.GREEN_CONCRETE_WALL, Blocks.GREEN_CONCRETE);
         wallItem(ModBlocks.RED_CONCRETE_WALL, Blocks.RED_CONCRETE);
+
+        itemBlock(ModBlocks.RED_WHITE_BARRIER_TAPE);
+        itemBlock(ModBlocks.YELLOW_BLACK_BARRIER_TAPE);
     }
 
 

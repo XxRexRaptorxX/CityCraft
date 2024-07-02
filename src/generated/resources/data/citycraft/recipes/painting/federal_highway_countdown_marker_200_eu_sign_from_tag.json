@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "forge:traffic_signs/bake"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "item": "citycraft:federal_highway_countdown_marker_200_eu_sign"
+  }
+}

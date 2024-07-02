@@ -29,6 +29,10 @@
     "citycraft:uneven_eu_sign",
     "citycraft:cycles_eu_sign",
     "citycraft:pedestrians_eu_sign",
-    "citycraft:intersection_eu_sign"
+    "citycraft:intersection_eu_sign",
+    "citycraft:movable_bridge_eu_sign",
+    "citycraft:loose_gravel_eu_sign",
+    "citycraft:shore_eu_sign",
+    "citycraft:tree_overhang_eu_sign"
   ]
 }

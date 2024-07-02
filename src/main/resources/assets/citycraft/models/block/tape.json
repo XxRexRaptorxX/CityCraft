@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"render_type": "cutout_mipped",
+	"elements": [
+		{
+			"name": "plane",
+			"from": [8, 0, 6.5],
+			"to": [8, 16, 9.5],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0, 9]},
+			"faces": {
+				"east": {"uv": [0, 10, 16, 7], "rotation": 90, "texture": "#texture"},
+				"west": {"uv": [0, 7, 16, 10], "rotation": 90, "texture": "#texture"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [90, -180, 90]
+		}
+	}
+}

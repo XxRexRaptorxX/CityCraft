@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "variable_traffic_signs",
+  "ingredients": [
+    {
+      "item": "citycraft:end_all_limits_eu_sign"
+    },
+    {
+      "item": "citycraft:variable_traffic_sign"
+    }
+  ],
+  "result": {
+    "item": "citycraft:variable_traffic_sign_end_all_limits"
+  }
+}

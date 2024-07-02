@@ -58,6 +58,13 @@
     "citycraft:asphalt_with_yellow_w_slab",
     "citycraft:asphalt_with_yellow_x_slab",
     "citycraft:asphalt_with_yellow_y_slab",
-    "citycraft:asphalt_with_yellow_z_slab"
+    "citycraft:asphalt_with_yellow_z_slab",
+
+    "citycraft:asphalt_with_yellow_bicycle_slab",
+    "citycraft:asphalt_with_yellow_diagonal_left_arrow_slab",
+    "citycraft:asphalt_with_yellow_diagonal_right_arrow_slab",
+    "citycraft:asphalt_with_yellow_handicapped_slab",
+    "citycraft:asphalt_with_yellow_pedestrian_slab",
+    "citycraft:asphalt_with_yellow_triangle_slab"
   ]
 }

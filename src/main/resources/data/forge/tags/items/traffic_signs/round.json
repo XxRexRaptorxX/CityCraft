@@ -38,6 +38,11 @@
     "citycraft:straight_right_eu_sign",
     "citycraft:roundabout_eu_sign",
     "citycraft:bus_stop_eu_sign",
-    "citycraft:railroad_crossing_us_sign"
+    "citycraft:railroad_crossing_us_sign",
+    "citycraft:no_hazardous_cargo_eu_sign",
+    "citycraft:10_minimum_speed_sign_eu",
+    "citycraft:bridle_path_eu_sign",
+    "citycraft:30_minimum_speed_sign_eu",
+    "citycraft:no_monster_eu_sign"
   ]
 }

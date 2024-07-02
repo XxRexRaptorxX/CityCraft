@@ -1,0 +1,6 @@
+{
+  "parent": "citycraft:block/double_traffic_lights",
+  "textures": {
+    "texture": "citycraft:block/bicycle_double_traffic_light_off"
+  }
+}

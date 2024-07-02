@@ -4,11 +4,15 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.FluidTags;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,6 +24,7 @@ import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.phys.AABB;
 import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.utils.Config;
 
@@ -69,6 +74,33 @@ public class DrainCoverBlock extends SlabBlock {
 		}
 
 		return state;
+	}
+
+
+	@Override
+	public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+		BlockPos above = pos.above();
+		BlockPos below = pos.below();
+
+		// Handle item movement
+		AABB itemCheckBox = new AABB(pos.getX(), pos.getY(), pos.getZ(), above.getX() + 1, above.getY() + 1, above.getZ() + 1);
+
+		if (!level.getEntitiesOfClass(ItemEntity.class, itemCheckBox).isEmpty()) {
+			level.getEntitiesOfClass(ItemEntity.class, itemCheckBox).forEach(itemEntity -> {
+				ItemStack stack = itemEntity.getItem();
+				itemEntity.setPos(itemEntity.getX(), below.getY(), itemEntity.getZ());
+			});
+		}
+
+		level.scheduleTick(pos, this, 5);
+	}
+
+
+	@Override
+	public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
+		if (!level.isClientSide) {
+			level.scheduleTick(pos, this, 20);  // Schedule the first tick in 20 game ticks (1 second)
+		}
 	}
 
 

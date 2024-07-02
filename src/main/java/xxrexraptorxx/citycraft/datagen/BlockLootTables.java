@@ -553,6 +553,13 @@ public class BlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.IRON_FENCE.get());
         this.dropSelf(ModBlocks.TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.YELLOW_BLACK_TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.DOUBLE_TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.DOUBLE_YELLOW_BLACK_TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.DOUBLE_RED_WHITE_TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get());
+        this.dropSelf(ModBlocks.YELLOW_BLACK_TRAFFIC_BARRIER.get());
 
         this.dropSelf(ModBlocks.BLACK_CONCRETE_WALL.get());
         this.dropSelf(ModBlocks.WHITE_CONCRETE_WALL.get());
@@ -572,6 +579,119 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RED_CONCRETE_WALL.get());
 
         this.dropSelf(ModBlocks.BLOCK_PAINTER.get());
+
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get());
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get()));
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get());
+        this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get());
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get()));
+        this.add(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get()));
+
+        this.dropSelf(ModBlocks.RED_WHITE_BARRIER_TAPE.get());
+        this.dropSelf(ModBlocks.YELLOW_BLACK_BARRIER_TAPE.get());
+
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_OPEN.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CLOSED.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_CREEPER.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_DANGER.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get());
+        this.dropSelf(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get());
+
+        this.dropSelf(ModBlocks.EXIT_CLOSED_US_SIGN.get());
+        this.dropSelf(ModBlocks.NO_HAZARDOUS_CARGO_EU_SIGN.get());
+        this.dropSelf(ModBlocks.M_AHEAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.AHEAD_YELLOW_US_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_PATH_RIGHT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_HIGHWAY_END_EU_SIGN.get());
+        this.dropSelf(ModBlocks.TEN_MINIMUM_SPEED_SIGN_EU.get());
+        this.dropSelf(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_PATH_LEFT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_ROUTE_AHEAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN.get());
+        this.dropSelf(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BRIDLE_PATH_EU_SIGN.get());
+        this.dropSelf(ModBlocks.DETOUR_END_EU_SIGN.get());
+        this.dropSelf(ModBlocks.DETOUR_LEFT_US_SIGN.get());
+        this.dropSelf(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN.get());
+        this.dropSelf(ModBlocks.DETOUR_RIGHT_US_SIGN.get());
+        this.dropSelf(ModBlocks.AHEAD_GREEN_US_SIGN.get());
+        this.dropSelf(ModBlocks.MOVABLE_BRIDGE_EU_SIGN.get());
+        this.dropSelf(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_PATH_US_SIGN.get());
+        this.dropSelf(ModBlocks.THIRTY_MINIMUM_SPEED_SIGN_EU.get());
+        this.dropSelf(ModBlocks.CHARGING_STATION_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_ROUTE_LEFT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.LOOSE_GRAVEL_EU_SIGN.get());
+        this.dropSelf(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_HIGHWAY_EU_SIGN.get());
+        this.dropSelf(ModBlocks.PARKING_AREA_END_EU_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_PATH_AHEAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.NO_MONSTER_EU_SIGN.get());
+        this.dropSelf(ModBlocks.AHEAD_ORANGE_US_SIGN.get());
+        this.dropSelf(ModBlocks.BICYCLE_ROUTE_RIGHT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.LEFT_PRIORITY_ROAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.PARKING_AREA_START_EU_SIGN.get());
+        this.dropSelf(ModBlocks.PRIORITY_ROAD_FROM_LEFT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.PRIORITY_ROAD_FROM_RIGHT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.RAILWAY_COUNTDOWN_MARKER_80_EU_SIGN.get());
+        this.dropSelf(ModBlocks.RAILWAY_COUNTDOWN_MARKER_160_EU_SIGN.get());
+        this.dropSelf(ModBlocks.RAILWAY_COUNTDOWN_MARKER_240_EU_SIGN.get());
+        this.dropSelf(ModBlocks.RIGHT_PRIORITY_ROAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.SHORE_EU_SIGN.get());
+        this.dropSelf(ModBlocks.TREE_OVERHANG_EU_SIGN.get());
+        this.dropSelf(ModBlocks.TRUCK_ROUTE_AHEAD_EU_SIGN.get());
+        this.dropSelf(ModBlocks.TRUCK_ROUTE_RIGHT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.TRUCK_ROUTE_LEFT_EU_SIGN.get());
+        this.dropSelf(ModBlocks.WARN_US_SIGN.get());
+        this.dropSelf(ModBlocks.WARNING_BEACON_ALT_US_SIGN.get());
+        this.dropSelf(ModBlocks.WARNING_BEACON_LEFT_US_SIGN.get());
+        this.dropSelf(ModBlocks.WARNING_BEACON_RIGHT_US_SIGN.get());
+
+        this.dropSelf(ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.BICYCLE_TRIPPLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.DANGER_SIGNAL_LIGHT.get());
+        this.dropSelf(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.LEFT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.LEFT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get());
+        this.dropSelf(ModBlocks.PEDESTRIAN_TRIPPLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.RIGHT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.SIGNAL_LIGHT.get());
+        this.dropSelf(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get());
+        this.dropSelf(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
+        this.dropSelf(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get());
     }
 
 

@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/tape",
+  "textures": {
+    "texture": "citycraft:block/yellow_black_barrier_tape",
+    "particle": "citycraft:block/yellow_black_barrier_tape"
+  }
+}

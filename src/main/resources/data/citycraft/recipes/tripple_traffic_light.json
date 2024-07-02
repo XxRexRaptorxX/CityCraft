@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+
+  "key": {
+    "#": {
+      "item": "citycraft:signal_light"
+    }
+  },
+
+  "result": {
+    "item": "citycraft:tripple_traffic_light"
+  }
+}

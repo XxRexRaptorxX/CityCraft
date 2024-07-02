@@ -4,6 +4,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -565,11 +566,67 @@ public class ModBlocks {
     public static final RegistryObject<TrafficSignBlock> OCTAGON_SIGN = registerBlock("octagon_sign", TrafficSignBlock::new);
     public static final RegistryObject<TrafficSignBlock> BAKE_SIGN = registerBlock("bake_sign", TrafficSignBlock::new);
 
+    public static final RegistryObject<TrafficSignBlock> EXIT_CLOSED_US_SIGN = registerBlock("exit_closed_us_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> NO_HAZARDOUS_CARGO_EU_SIGN = registerBlock("no_hazardous_cargo_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> M_AHEAD_EU_SIGN = registerBlock("m_ahead_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> AHEAD_YELLOW_US_SIGN = registerBlock("ahead_yellow_us_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BICYCLE_PATH_RIGHT_EU_SIGN = registerBlock("bicycle_path_right_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BICYCLE_HIGHWAY_END_EU_SIGN = registerBlock("bicycle_highway_end_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> TEN_MINIMUM_SPEED_SIGN_EU = registerBlock("10_minimum_speed_sign_eu", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN = registerBlock("highway_countdown_marker_200_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BICYCLE_PATH_LEFT_EU_SIGN = registerBlock("bicycle_path_left_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BICYCLE_ROUTE_AHEAD_EU_SIGN = registerBlock("bicycle_route_ahead_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> FEDERAL_HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN = registerBlock("federal_highway_countdown_marker_100_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN = registerBlock("highway_countdown_marker_300_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BRIDLE_PATH_EU_SIGN = registerBlock("bridle_path_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> DETOUR_END_EU_SIGN = registerBlock("detour_end_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> DETOUR_LEFT_US_SIGN = registerBlock("detour_left_us_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> FEDERAL_HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN = registerBlock("federal_highway_countdown_marker_200_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> DETOUR_RIGHT_US_SIGN = registerBlock("detour_right_us_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> AHEAD_GREEN_US_SIGN = registerBlock("ahead_green_us_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> MOVABLE_BRIDGE_EU_SIGN = registerBlock("movable_bridge_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN = registerBlock("highway_countdown_marker_100_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BICYCLE_PATH_US_SIGN = registerBlock("bicycle_path_us_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> THIRTY_MINIMUM_SPEED_SIGN_EU = registerBlock("30_minimum_speed_sign_eu", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> CHARGING_STATION_EU_SIGN = registerBlock("charging_station_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BICYCLE_ROUTE_LEFT_EU_SIGN = registerBlock("bicycle_route_left_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> LOOSE_GRAVEL_EU_SIGN = registerBlock("loose_gravel_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> FEDERAL_HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN = registerBlock("federal_highway_countdown_marker_300_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BICYCLE_HIGHWAY_EU_SIGN = registerBlock("bicycle_highway_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> PARKING_AREA_END_EU_SIGN = registerBlock("parking_area_end_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BICYCLE_PATH_AHEAD_EU_SIGN = registerBlock("bicycle_path_ahead_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> NO_MONSTER_EU_SIGN = registerBlock("no_monster_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> AHEAD_ORANGE_US_SIGN = registerBlock("ahead_orange_us_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> BICYCLE_ROUTE_RIGHT_EU_SIGN = registerBlock("bicycle_route_right_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> LEFT_PRIORITY_ROAD_EU_SIGN = registerBlock("left_priority_road_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> PARKING_AREA_START_EU_SIGN = registerBlock("parking_area_start_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> PRIORITY_ROAD_FROM_LEFT_EU_SIGN = registerBlock("priority_road_from_left_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> PRIORITY_ROAD_FROM_RIGHT_EU_SIGN = registerBlock("priority_road_from_right_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> RAILWAY_COUNTDOWN_MARKER_80_EU_SIGN = registerBlock("railway_countdown_marker_80_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> RAILWAY_COUNTDOWN_MARKER_160_EU_SIGN = registerBlock("railway_countdown_marker_160_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> RAILWAY_COUNTDOWN_MARKER_240_EU_SIGN = registerBlock("railway_countdown_marker_240_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> RIGHT_PRIORITY_ROAD_EU_SIGN = registerBlock("right_priority_road_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> SHORE_EU_SIGN = registerBlock("shore_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> TREE_OVERHANG_EU_SIGN = registerBlock("tree_overhang_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> TRUCK_ROUTE_AHEAD_EU_SIGN = registerBlock("truck_route_ahead_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> TRUCK_ROUTE_RIGHT_EU_SIGN = registerBlock("truck_route_right_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> TRUCK_ROUTE_LEFT_EU_SIGN = registerBlock("truck_route_left_eu_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> WARN_US_SIGN = registerBlock("warn_us_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> WARNING_BEACON_ALT_US_SIGN = registerBlock("warning_beacon_alt_us_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> WARNING_BEACON_LEFT_US_SIGN = registerBlock("warning_beacon_left_us_sign", TrafficSignBlock::new);
+    public static final RegistryObject<TrafficSignBlock> WARNING_BEACON_RIGHT_US_SIGN = registerBlock("warning_beacon_right_us_sign", TrafficSignBlock::new);
+
     public static final RegistryObject<DrainCoverBlock> DRAIN_COVER = registerBlock("drain_cover", DrainCoverBlock::new);
     public static final RegistryObject<DrainCoverBlock> DRAIN_COVER_GRID = registerBlock("drain_cover_grid", DrainCoverBlock::new);
 
     public static final RegistryObject<FenceBlock> IRON_FENCE = registerBlock("iron_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.IRON_POLE.get())));
     public static final RegistryObject<TrafficBarrierBlock> TRAFFIC_BARRIER = registerBlock("traffic_barrier", TrafficBarrierBlock::new);
+    public static final RegistryObject<TrafficBarrierBlock> RED_WHITE_TRAFFIC_BARRIER = registerBlock("red_white_traffic_barrier", TrafficBarrierBlock::new);
+    public static final RegistryObject<TrafficBarrierBlock> YELLOW_BLACK_TRAFFIC_BARRIER = registerBlock("yellow_black_traffic_barrier", TrafficBarrierBlock::new);
+    public static final RegistryObject<DoubleTrafficBarrierBlock> DOUBLE_TRAFFIC_BARRIER = registerBlock("double_traffic_barrier", DoubleTrafficBarrierBlock::new);
+    public static final RegistryObject<DoubleTrafficBarrierBlock> DOUBLE_RED_WHITE_TRAFFIC_BARRIER = registerBlock("double_red_white_traffic_barrier", DoubleTrafficBarrierBlock::new);
+    public static final RegistryObject<DoubleTrafficBarrierBlock> DOUBLE_YELLOW_BLACK_TRAFFIC_BARRIER = registerBlock("double_yellow_black_traffic_barrier", DoubleTrafficBarrierBlock::new);
+
 
     public static final RegistryObject<WallBlock> BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
     public static final RegistryObject<WallBlock> WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
@@ -589,6 +646,73 @@ public class ModBlocks {
     public static final RegistryObject<WallBlock> RED_CONCRETE_WALL = registerBlock("red_concrete_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
 
     public static final RegistryObject<PainterBlock> BLOCK_PAINTER = registerBlock("block_painter", PainterBlock::new);
+
+    public static final RegistryObject<TapeBlock> RED_WHITE_BARRIER_TAPE = registerBlock("red_white_barrier_tape", () -> new TapeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).strength(0.1F).sound(SoundType.AZALEA_LEAVES).noOcclusion()));
+    public static final RegistryObject<TapeBlock> YELLOW_BLACK_BARRIER_TAPE = registerBlock("yellow_black_barrier_tape", () -> new TapeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).strength(0.1F).sound(SoundType.AZALEA_LEAVES).noOcclusion()));
+
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_BICYCLE = registerBlock("asphalt_with_white_bicycle", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW = registerBlock("asphalt_with_white_diagonal_left_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW = registerBlock("asphalt_with_white_diagonal_right_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_HANDICAPPED = registerBlock("asphalt_with_white_handicapped", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_PEDESTRIAN = registerBlock("asphalt_with_white_pedestrian", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_WHITE_TRIANGLE = registerBlock("asphalt_with_white_triangle", AsphaltBlock::new);
+
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_BICYCLE_SLAB = registerBlock("asphalt_with_white_bicycle_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB = registerBlock("asphalt_with_white_diagonal_left_arrow_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB = registerBlock("asphalt_with_white_diagonal_right_arrow_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_HANDICAPPED_SLAB = registerBlock("asphalt_with_white_handicapped_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB = registerBlock("asphalt_with_white_pedestrian_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_WHITE_TRIANGLE_SLAB = registerBlock("asphalt_with_white_triangle_slab", AsphaltSlabBlock::new);
+
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_BICYCLE = registerBlock("asphalt_with_yellow_bicycle", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW = registerBlock("asphalt_with_yellow_diagonal_left_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW = registerBlock("asphalt_with_yellow_diagonal_right_arrow", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_HANDICAPPED = registerBlock("asphalt_with_yellow_handicapped", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_PEDESTRIAN = registerBlock("asphalt_with_yellow_pedestrian", AsphaltBlock::new);
+    public static final RegistryObject<AsphaltBlock> ASPHALT_WITH_YELLOW_TRIANGLE = registerBlock("asphalt_with_yellow_triangle", AsphaltBlock::new);
+
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_BICYCLE_SLAB = registerBlock("asphalt_with_yellow_bicycle_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB = registerBlock("asphalt_with_yellow_diagonal_left_arrow_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB = registerBlock("asphalt_with_yellow_diagonal_right_arrow_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB = registerBlock("asphalt_with_yellow_handicapped_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB = registerBlock("asphalt_with_yellow_pedestrian_slab", AsphaltSlabBlock::new);
+    public static final RegistryObject<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_TRIANGLE_SLAB = registerBlock("asphalt_with_yellow_triangle_slab", AsphaltSlabBlock::new);
+
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN = registerBlock("variable_traffic_sign", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_LANE_OPEN = registerBlock("variable_traffic_sign_lane_open", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_LANE_CLOSED = registerBlock("variable_traffic_sign_lane_closed", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT = registerBlock("variable_traffic_sign_lane_change_left", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT = registerBlock("variable_traffic_sign_lane_change_right", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT = registerBlock("variable_traffic_sign_sixty_speed_limit", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT = registerBlock("variable_traffic_sign_eighty_speed_limit", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT = registerBlock("variable_traffic_sign_hundred_speed_limit", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT = registerBlock("variable_traffic_sign_hundred_twenty_speed_limit", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_CREEPER = registerBlock("variable_traffic_sign_creeper", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_DANGER = registerBlock("variable_traffic_sign_danger", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS = registerBlock("variable_traffic_sign_end_all_limits", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_JAMS = registerBlock("variable_traffic_sign_jams", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_NO_PASSING = registerBlock("variable_traffic_sign_no_passing", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING = registerBlock("variable_traffic_sign_no_truck_passing", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_ROADWORKS = registerBlock("variable_traffic_sign_roadworks", VariableTrafficSignBlock::new);
+    public static final RegistryObject<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_SLIPPERINESS = registerBlock("variable_traffic_sign_slipperiness", VariableTrafficSignBlock::new);
+
+
+    public static final RegistryObject<TrafficLightBlock> BICYCLE_DOUBLE_TRAFFIC_LIGHT = registerBlock("bicycle_double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> BICYCLE_TRIPPLE_TRAFFIC_LIGHT = registerBlock("bicycle_tripple_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> DANGER_SIGNAL_LIGHT = registerBlock("danger_signal_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> DOUBLE_TRAFFIC_LIGHT = registerBlock("double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> LEFT_TURN_DOUBLE_TRAFFIC_LIGHT = registerBlock("left_turn_double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> LEFT_TURN_TRIPPLE_TRAFFIC_LIGHT = registerBlock("left_turn_tripple_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT = registerBlock("pedestrian_double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> PEDESTRIAN_SIGNAL_LIGHT = registerBlock("pedestrian_signal_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> PEDESTRIAN_TRIPPLE_TRAFFIC_LIGHT = registerBlock("pedestrian_tripple_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT = registerBlock("right_turn_double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> RIGHT_TURN_TRIPPLE_TRAFFIC_LIGHT = registerBlock("right_turn_tripple_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> SIGNAL_LIGHT = registerBlock("signal_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> STRAIGHT_DOUBLE_TRAFFIC_LIGHT = registerBlock("straight_double_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> STRAIGHT_TRIPPLE_TRAFFIC_LIGHT = registerBlock("straight_tripple_traffic_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> TRAIN_SIGNAL_LIGHT = registerBlock("train_signal_light", TrafficLightBlock::new);
+    public static final RegistryObject<TrafficLightBlock> TRIPPLE_TRAFFIC_LIGHT = registerBlock("tripple_traffic_light", TrafficLightBlock::new);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

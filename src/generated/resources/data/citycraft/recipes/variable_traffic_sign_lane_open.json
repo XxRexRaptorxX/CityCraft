@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "variable_traffic_signs",
+  "ingredients": [
+    {
+      "item": "citycraft:straight_ahead_eu_sign"
+    },
+    {
+      "item": "citycraft:variable_traffic_sign"
+    }
+  ],
+  "result": {
+    "item": "citycraft:variable_traffic_sign_lane_open"
+  }
+}

@@ -31,6 +31,16 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.BLACK_POLE.get());
                 output.accept(ModBlocks.YELLOW_BLACK_POLE.get());
 
+                output.accept(ModBlocks.IRON_FENCE.get());
+
+                output.accept(ModBlocks.TRAFFIC_BARRIER.get());
+                output.accept(ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get());
+                output.accept(ModBlocks.YELLOW_BLACK_TRAFFIC_BARRIER.get());
+
+                output.accept(ModBlocks.DOUBLE_TRAFFIC_BARRIER.get());
+                output.accept(ModBlocks.DOUBLE_RED_WHITE_TRAFFIC_BARRIER.get());
+                output.accept(ModBlocks.DOUBLE_YELLOW_BLACK_TRAFFIC_BARRIER.get());
+
                 output.accept(ModBlocks.STONE_POST.get());
                 output.accept(ModBlocks.WHITE_POST.get());
                 output.accept(ModBlocks.RED_POST.get());
@@ -56,9 +66,6 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.GREEN_CONCRETE_WALL.get());
                 output.accept(ModBlocks.RED_CONCRETE_WALL.get());
 
-                output.accept(ModBlocks.IRON_FENCE.get());
-                output.accept(ModBlocks.TRAFFIC_BARRIER.get());
-
                 output.accept(ModBlocks.DRAIN_COVER.get());
                 output.accept(ModBlocks.DRAIN_COVER_GRID.get());
 
@@ -66,6 +73,9 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.RED_CHAIN.get());
                 output.accept(ModBlocks.YELLOW_CHAIN.get());
                 output.accept(ModBlocks.BLACK_CHAIN.get());
+
+                output.accept(ModBlocks.RED_WHITE_BARRIER_TAPE.get());
+                output.accept(ModBlocks.YELLOW_BLACK_BARRIER_TAPE.get());
 
                 output.accept(ModBlocks.BLOCK_PAINTER.get());
 
@@ -84,256 +94,326 @@ public class CreativeModeTabs {
             .displayItems((params, output) -> {
                 //if (!Config.SPLIT_TRAFFIC_SIGN_TAB.get()) {
 
-                    // EU
-                    output.accept(ModBlocks.IRON_POLE.get());
+                // EU
+                output.accept(ModBlocks.IRON_POLE.get());
 
-                    output.accept(ModBlocks.DANGER_EU_SIGN.get());
-                    output.accept(ModBlocks.ROADWORKS_EU_SIGN.get());
-                    output.accept(ModBlocks.CREEPER_EU_SIGN.get());
-                    output.accept(ModBlocks.CHILDREN_EU_SIGN.get());
-                    output.accept(ModBlocks.CROSSWALK_EU_SIGN.get());
-                    output.accept(ModBlocks.ROCKFALL_EU_SIGN.get());
-                    output.accept(ModBlocks.SLIPPERINESS_EU_SIGN.get());
-                    output.accept(ModBlocks.SIGNAL_EU_SIGN.get());
-                    output.accept(ModBlocks.SNOW_EU_SIGN.get());
-                    output.accept(ModBlocks.ONCOMING_TRAFFIC_EU_SIGN.get());
-                    output.accept(ModBlocks.LEFT_CURVE_EU_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_CURVE_EU_SIGN.get());
-                    output.accept(ModBlocks.LEFT_DOUBLE_CURVE_EU_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_DOUBLE_CURVE_EU_SIGN.get());
-                    output.accept(ModBlocks.GATE_EU_SIGN.get());
-                    output.accept(ModBlocks.NARROWING_EU_SIGN.get());
-                    output.accept(ModBlocks.LEFT_NARROWING_EU_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_NARROWING_EU_SIGN.get());
-                    output.accept(ModBlocks.CATTLE_EU_SIGN.get());
-                    output.accept(ModBlocks.ASCEND_EU_SIGN.get());
-                    output.accept(ModBlocks.DESCEND_EU_SIGN.get());
-                    output.accept(ModBlocks.JAMS_EU_SIGN.get());
-                    output.accept(ModBlocks.PRIORITY_EU_SIGN.get());
-                    output.accept(ModBlocks.RAILROAD_EU_SIGN.get());
-                    output.accept(ModBlocks.UNEVEN_EU_SIGN.get());
-                    output.accept(ModBlocks.CYCLES_EU_SIGN.get());
-                    output.accept(ModBlocks.PEDESTRIANS_EU_SIGN.get());
-                    output.accept(ModBlocks.INTERSECTION_EU_SIGN.get());
+                output.accept(ModBlocks.DANGER_EU_SIGN.get());
+                output.accept(ModBlocks.ROADWORKS_EU_SIGN.get());
+                output.accept(ModBlocks.CREEPER_EU_SIGN.get());
+                output.accept(ModBlocks.CHILDREN_EU_SIGN.get());
+                output.accept(ModBlocks.CROSSWALK_EU_SIGN.get());
+                output.accept(ModBlocks.ROCKFALL_EU_SIGN.get());
+                output.accept(ModBlocks.SLIPPERINESS_EU_SIGN.get());
+                output.accept(ModBlocks.SIGNAL_EU_SIGN.get());
+                output.accept(ModBlocks.SNOW_EU_SIGN.get());
+                output.accept(ModBlocks.ONCOMING_TRAFFIC_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_CURVE_EU_SIGN.get());
+                output.accept(ModBlocks.RIGHT_CURVE_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_DOUBLE_CURVE_EU_SIGN.get());
+                output.accept(ModBlocks.RIGHT_DOUBLE_CURVE_EU_SIGN.get());
+                output.accept(ModBlocks.GATE_EU_SIGN.get());
+                output.accept(ModBlocks.NARROWING_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_NARROWING_EU_SIGN.get());
+                output.accept(ModBlocks.RIGHT_NARROWING_EU_SIGN.get());
+                output.accept(ModBlocks.CATTLE_EU_SIGN.get());
+                output.accept(ModBlocks.ASCEND_EU_SIGN.get());
+                output.accept(ModBlocks.DESCEND_EU_SIGN.get());
+                output.accept(ModBlocks.JAMS_EU_SIGN.get());
+                output.accept(ModBlocks.PRIORITY_EU_SIGN.get());
+                output.accept(ModBlocks.RAILROAD_EU_SIGN.get());
+                output.accept(ModBlocks.UNEVEN_EU_SIGN.get());
+                output.accept(ModBlocks.CYCLES_EU_SIGN.get());
+                output.accept(ModBlocks.PEDESTRIANS_EU_SIGN.get());
+                output.accept(ModBlocks.MOVABLE_BRIDGE_EU_SIGN.get());
+                output.accept(ModBlocks.SHORE_EU_SIGN.get());
+                output.accept(ModBlocks.TREE_OVERHANG_EU_SIGN.get());
+                output.accept(ModBlocks.LOOSE_GRAVEL_EU_SIGN.get());
+                output.accept(ModBlocks.INTERSECTION_EU_SIGN.get());
 
-                    output.accept(ModBlocks.TEN_SPEED_EU_SIGN.get());
-                    output.accept(ModBlocks.THIRTY_SPEED_EU_SIGN.get());
-                    output.accept(ModBlocks.SIXTY_SPEED_EU_SIGN.get());
-                    output.accept(ModBlocks.EIGHTY_SPEED_EU_SIGN.get());
-                    output.accept(ModBlocks.HUNDRED_SPEED_EU_SIGN.get());
-                    output.accept(ModBlocks.HUNDRED_TWENTY_SPEED_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_VEHICLES_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_CARS_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_TRUCKS_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_PEDESTRIANS_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_BICYCLES_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_PASSING_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_TRUCK_PASSING_EU_SIGN.get());
-                    output.accept(ModBlocks.ONGOING_TRAFFIC_EU_SIGN.get());
+                output.accept(ModBlocks.TEN_SPEED_EU_SIGN.get());
+                output.accept(ModBlocks.THIRTY_SPEED_EU_SIGN.get());
+                output.accept(ModBlocks.SIXTY_SPEED_EU_SIGN.get());
+                output.accept(ModBlocks.EIGHTY_SPEED_EU_SIGN.get());
+                output.accept(ModBlocks.HUNDRED_SPEED_EU_SIGN.get());
+                output.accept(ModBlocks.HUNDRED_TWENTY_SPEED_EU_SIGN.get());
+                output.accept(ModBlocks.NO_VEHICLES_EU_SIGN.get());
+                output.accept(ModBlocks.NO_MONSTER_EU_SIGN.get());
+                output.accept(ModBlocks.NO_CARS_EU_SIGN.get());
+                output.accept(ModBlocks.NO_TRUCKS_EU_SIGN.get());
+                output.accept(ModBlocks.NO_PEDESTRIANS_EU_SIGN.get());
+                output.accept(ModBlocks.NO_BICYCLES_EU_SIGN.get());
+                output.accept(ModBlocks.NO_HAZARDOUS_CARGO_EU_SIGN.get());
+                output.accept(ModBlocks.NO_PASSING_EU_SIGN.get());
+                output.accept(ModBlocks.NO_TRUCK_PASSING_EU_SIGN.get());
+                output.accept(ModBlocks.ONGOING_TRAFFIC_EU_SIGN.get());
 
-                    output.accept(ModBlocks.NO_ENTER_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_PARKING_ALONG_CARRIAGEWAY_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_PARKING_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_U_TURN_EU_SIGN.get());
+                output.accept(ModBlocks.NO_ENTER_EU_SIGN.get());
+                output.accept(ModBlocks.NO_PARKING_ALONG_CARRIAGEWAY_EU_SIGN.get());
+                output.accept(ModBlocks.NO_PARKING_EU_SIGN.get());
+                output.accept(ModBlocks.NO_U_TURN_EU_SIGN.get());
 
-                    output.accept(ModBlocks.END_ALL_LIMITS_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_PASSING_END_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_TRUCK_PASSING_END_EU_SIGN.get());
+                output.accept(ModBlocks.END_ALL_LIMITS_EU_SIGN.get());
+                output.accept(ModBlocks.NO_PASSING_END_EU_SIGN.get());
+                output.accept(ModBlocks.NO_TRUCK_PASSING_END_EU_SIGN.get());
 
-                    output.accept(ModBlocks.SIDEWALK_EU_SIGN.get());
-                    output.accept(ModBlocks.BICYCLE_PATH_EU_SIGN.get());
-                    output.accept(ModBlocks.BUS_EU_SIGN.get());
+                output.accept(ModBlocks.TEN_MINIMUM_SPEED_SIGN_EU.get());
+                output.accept(ModBlocks.THIRTY_MINIMUM_SPEED_SIGN_EU.get());
+                output.accept(ModBlocks.SIDEWALK_EU_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_PATH_EU_SIGN.get());
+                output.accept(ModBlocks.BRIDLE_PATH_EU_SIGN.get());
+                output.accept(ModBlocks.BUS_EU_SIGN.get());
 
-                    output.accept(ModBlocks.STRAIGHT_AHEAD_EU_SIGN.get());
-                    output.accept(ModBlocks.LEFT_HERE_EU_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_HERE_EU_SIGN.get());
-                    output.accept(ModBlocks.PASS_LEFT_EU_SIGN.get());
-                    output.accept(ModBlocks.PASS_RIGHT_EU_SIGN.get());
-                    output.accept(ModBlocks.LEFT_AHEAD_EU_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_AHEAD_EU_SIGN.get());
-                    output.accept(ModBlocks.LEFT_RIGHT_EU_SIGN.get());
-                    output.accept(ModBlocks.STRAIGHT_LEFT_EU_SIGN.get());
-                    output.accept(ModBlocks.STRAIGHT_RIGHT_EU_SIGN.get());
-                    output.accept(ModBlocks.ROUNDABOUT_EU_SIGN.get());
-                    output.accept(ModBlocks.BUS_STOP_EU_SIGN.get());
+                output.accept(ModBlocks.STRAIGHT_AHEAD_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_HERE_EU_SIGN.get());
+                output.accept(ModBlocks.RIGHT_HERE_EU_SIGN.get());
+                output.accept(ModBlocks.PASS_LEFT_EU_SIGN.get());
+                output.accept(ModBlocks.PASS_RIGHT_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_AHEAD_EU_SIGN.get());
+                output.accept(ModBlocks.RIGHT_AHEAD_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_RIGHT_EU_SIGN.get());
+                output.accept(ModBlocks.STRAIGHT_LEFT_EU_SIGN.get());
+                output.accept(ModBlocks.STRAIGHT_RIGHT_EU_SIGN.get());
+                output.accept(ModBlocks.ROUNDABOUT_EU_SIGN.get());
+                output.accept(ModBlocks.BUS_STOP_EU_SIGN.get());
 
-                    output.accept(ModBlocks.DETOUR_AHEAD_EU_SIGN.get());
-                    output.accept(ModBlocks.DETOUR_LEFT_EU_SIGN.get());
-                    output.accept(ModBlocks.DETOUR_RIGHT_EU_SIGN.get());
-                    output.accept(ModBlocks.CRAFT_CITY_EU_SIGN.get());
-                    output.accept(ModBlocks.CRAFT_CITY_END_EU_SIGN.get());
+                output.accept(ModBlocks.DETOUR_END_EU_SIGN.get());
+                output.accept(ModBlocks.DETOUR_AHEAD_EU_SIGN.get());
+                output.accept(ModBlocks.DETOUR_LEFT_EU_SIGN.get());
+                output.accept(ModBlocks.DETOUR_RIGHT_EU_SIGN.get());
+                output.accept(ModBlocks.TRUCK_ROUTE_AHEAD_EU_SIGN.get());
+                output.accept(ModBlocks.TRUCK_ROUTE_LEFT_EU_SIGN.get());
+                output.accept(ModBlocks.TRUCK_ROUTE_RIGHT_EU_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_ROUTE_AHEAD_EU_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_ROUTE_LEFT_EU_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_ROUTE_RIGHT_EU_SIGN.get());
+                output.accept(ModBlocks.CRAFT_CITY_EU_SIGN.get());
+                output.accept(ModBlocks.CRAFT_CITY_END_EU_SIGN.get());
 
-                    output.accept(ModBlocks.PRIORITY_ROAD_EU_SIGN.get());
-                    output.accept(ModBlocks.PRIORITY_ROAD_END_EU_SIGN.get());
-                    output.accept(ModBlocks.STOP_EU_SIGN.get());
-                    output.accept(ModBlocks.YIELD_RIGHT_OF_WAY_EU_SIGN.get());
-                    output.accept(ModBlocks.NATURE_RESERVE_EU_SIGN.get());
-                    output.accept(ModBlocks.CROSSBUCK_EU_SIGN.get());
+                output.accept(ModBlocks.PRIORITY_ROAD_EU_SIGN.get());
+                output.accept(ModBlocks.PRIORITY_ROAD_END_EU_SIGN.get());
+                output.accept(ModBlocks.STOP_EU_SIGN.get());
+                output.accept(ModBlocks.YIELD_RIGHT_OF_WAY_EU_SIGN.get());
+                output.accept(ModBlocks.NATURE_RESERVE_EU_SIGN.get());
+                output.accept(ModBlocks.CROSSBUCK_EU_SIGN.get());
 
-                    output.accept(ModBlocks.LEFT_ARROW_EU_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_ARROW_EU_SIGN.get());
-                    output.accept(ModBlocks.LEFT_TURN_ARROW_EU_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_TURN_ARROW_EU_SIGN.get());
-                    output.accept(ModBlocks.KM_AHEAD_EU_SIGN.get());
-                    output.accept(ModBlocks.WEIGHT_EU_SIGN.get());
-                    output.accept(ModBlocks.TAXI_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_ARROW_EU_SIGN.get());
+                output.accept(ModBlocks.RIGHT_ARROW_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_TURN_ARROW_EU_SIGN.get());
+                output.accept(ModBlocks.RIGHT_TURN_ARROW_EU_SIGN.get());
+                output.accept(ModBlocks.M_AHEAD_EU_SIGN.get());
+                output.accept(ModBlocks.KM_AHEAD_EU_SIGN.get());
+                output.accept(ModBlocks.WEIGHT_EU_SIGN.get());
+                output.accept(ModBlocks.TAXI_EU_SIGN.get());
 
-                    output.accept(ModBlocks.DISABLED_EU_SIGN.get());
-                    output.accept(ModBlocks.WET_EU_SIGN.get());
-                    output.accept(ModBlocks.END_LINE_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_PRIORITY_ROAD_EU_SIGN.get());
+                output.accept(ModBlocks.RIGHT_PRIORITY_ROAD_EU_SIGN.get());
+                output.accept(ModBlocks.PRIORITY_ROAD_FROM_LEFT_EU_SIGN.get());
+                output.accept(ModBlocks.PRIORITY_ROAD_FROM_RIGHT_EU_SIGN.get());
+                output.accept(ModBlocks.DISABLED_EU_SIGN.get());
+                output.accept(ModBlocks.WET_EU_SIGN.get());
+                output.accept(ModBlocks.END_LINE_EU_SIGN.get());
 
-                    output.accept(ModBlocks.HIGHWAY_EU_SIGN.get());
-                    output.accept(ModBlocks.HIGHWAY_END_EU_SIGN.get());
-                    output.accept(ModBlocks.MOTORWAY_EU_SIGN.get());
-                    output.accept(ModBlocks.MOTORWAY_END_EU_SIGN.get());
-                    output.accept(ModBlocks.CALMING_AREA_EU_SIGN.get());
-                    output.accept(ModBlocks.END_CALMING_AREA_EU_SIGN.get());
-                    output.accept(ModBlocks.ONE_WAY_EU_SIGN.get());
-                    output.accept(ModBlocks.PRIORITY_OVER_ONCOMING_TRAFFIC_EU_SIGN.get());
-                    output.accept(ModBlocks.NO_THROUGH_ROAD_EU_SIGN.get());
-                    output.accept(ModBlocks.PARKING_EU_SIGN.get());
-                    output.accept(ModBlocks.PARKING_GARAGE_EU_EU_SIGN.get());
-                    output.accept(ModBlocks.PEDESTRIAN_CROSSING_EU_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_PATH_AHEAD_EU_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_PATH_LEFT_EU_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_PATH_RIGHT_EU_SIGN.get());
 
-                    output.accept(ModBlocks.CAMPING_EU_SIGN.get());
-                    output.accept(ModBlocks.PR_EU_SIGN.get());
-                    output.accept(ModBlocks.CHURCH_EU_SIGN.get());
-                    output.accept(ModBlocks.HOTEL_EU_SIGN.get());
-                    output.accept(ModBlocks.PETROL_STATION_EU_SIGN.get());
-                    output.accept(ModBlocks.CAFE_EU_SIGN.get());
-                    output.accept(ModBlocks.INFO_EU_SIGN.get());
-                    output.accept(ModBlocks.WC_EU_SIGN.get());
-                    output.accept(ModBlocks.TELEPHONE_EU_SIGN.get());
-                    output.accept(ModBlocks.RESTAURANT_EU_SIGN.get());
-                    output.accept(ModBlocks.REPAIR_EU_SIGN.get());
-                    output.accept(ModBlocks.FIRST_AID_EU_SIGN.get());
-                    output.accept(ModBlocks.WATER_PROTECTION_AREA_EU_SIGN.get());
-                    output.accept(ModBlocks.EMERGENCY_BAY_EU_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_HIGHWAY_EU_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_HIGHWAY_END_EU_SIGN.get());
+                output.accept(ModBlocks.HIGHWAY_EU_SIGN.get());
+                output.accept(ModBlocks.HIGHWAY_END_EU_SIGN.get());
+                output.accept(ModBlocks.MOTORWAY_EU_SIGN.get());
+                output.accept(ModBlocks.MOTORWAY_END_EU_SIGN.get());
+                output.accept(ModBlocks.CALMING_AREA_EU_SIGN.get());
+                output.accept(ModBlocks.END_CALMING_AREA_EU_SIGN.get());
+                output.accept(ModBlocks.ONE_WAY_EU_SIGN.get());
+                output.accept(ModBlocks.PRIORITY_OVER_ONCOMING_TRAFFIC_EU_SIGN.get());
+                output.accept(ModBlocks.NO_THROUGH_ROAD_EU_SIGN.get());
+                output.accept(ModBlocks.PARKING_EU_SIGN.get());
+                output.accept(ModBlocks.PARKING_AREA_START_EU_SIGN.get());
+                output.accept(ModBlocks.PARKING_AREA_END_EU_SIGN.get());
+                output.accept(ModBlocks.PARKING_GARAGE_EU_EU_SIGN.get());
+                output.accept(ModBlocks.PEDESTRIAN_CROSSING_EU_SIGN.get());
 
-                    output.accept(ModBlocks.WARN_EU_SIGN.get());
-                    output.accept(ModBlocks.GUIDE_EU_SIGN.get());
-                    output.accept(ModBlocks.LEFT_DIRECTION_EU_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_DIRECTION_EU_SIGN.get());
-                    output.accept(ModBlocks.WARNING_BEACON_LEFT_EU_SIGN.get());
-                    output.accept(ModBlocks.WARNING_BEACON_RIGHT_EU_SIGN.get());
-                    output.accept(ModBlocks.WARNING_BEACON_ALT_EU_SIGN.get());
+                output.accept(ModBlocks.CAMPING_EU_SIGN.get());
+                output.accept(ModBlocks.PR_EU_SIGN.get());
+                output.accept(ModBlocks.CHURCH_EU_SIGN.get());
+                output.accept(ModBlocks.HOTEL_EU_SIGN.get());
+                output.accept(ModBlocks.PETROL_STATION_EU_SIGN.get());
+                output.accept(ModBlocks.CHARGING_STATION_EU_SIGN.get());
+                output.accept(ModBlocks.CAFE_EU_SIGN.get());
+                output.accept(ModBlocks.INFO_EU_SIGN.get());
+                output.accept(ModBlocks.WC_EU_SIGN.get());
+                output.accept(ModBlocks.TELEPHONE_EU_SIGN.get());
+                output.accept(ModBlocks.RESTAURANT_EU_SIGN.get());
+                output.accept(ModBlocks.REPAIR_EU_SIGN.get());
+                output.accept(ModBlocks.FIRST_AID_EU_SIGN.get());
+                output.accept(ModBlocks.WATER_PROTECTION_AREA_EU_SIGN.get());
+                output.accept(ModBlocks.EMERGENCY_BAY_EU_SIGN.get());
 
-                    // US
-                    output.accept(ModBlocks.GUIDE_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_DIRECTION_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_DIRECTION_US_SIGN.get());
+                output.accept(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN.get());
+                output.accept(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN.get());
+                output.accept(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN.get());
+                output.accept(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN.get());
+                output.accept(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN.get());
+                output.accept(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN.get());
+                output.accept(ModBlocks.RAILWAY_COUNTDOWN_MARKER_80_EU_SIGN.get());
+                output.accept(ModBlocks.RAILWAY_COUNTDOWN_MARKER_160_EU_SIGN.get());
+                output.accept(ModBlocks.RAILWAY_COUNTDOWN_MARKER_240_EU_SIGN.get());
 
-                    output.accept(ModBlocks.T_INTERSECTION_US_SIGN.get());
-                    output.accept(ModBlocks.Y_INTERSECTION_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_SIDE_ROAD_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_SIDE_ROAD_US_SIGN.get());
-                    output.accept(ModBlocks.CROSS_ROAD_US_SIGN.get());
-                    output.accept(ModBlocks.SIDE_ROAD_AT_ANGLE_LEFT_US_SIGN.get());
-                    output.accept(ModBlocks.SIDE_ROAD_AT_ANGLE_RIGHT_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_TURN_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_TURN_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_CURVE_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_CURVE_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_REVERSE_TURN_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_REVERSE_TURN_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_MERGING_TRAFFIC_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_MERGING_TRAFFIC_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_ENTERING_ROADWAY_MERGE_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_ENTERING_ROADWAY_MERGE_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_ADDED_LINE_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_ADDED_LINE_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_LANE_ENDS_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_LANE_ENDS_US_SIGN.get());
-                    output.accept(ModBlocks.TWO_WAY_TRAFFIC_US_SIGN.get());
-                    output.accept(ModBlocks.VERY_SHARP_CURVE_US_SIGN.get());
-                    output.accept(ModBlocks.WINDING_ROAD_US_SIGN.get());
-                    output.accept(ModBlocks.HAIRPIN_CURVE_US_SIGN.get());
-                    output.accept(ModBlocks.CIRCULAR_INTERSECTION_US_SIGN.get());
-                    output.accept(ModBlocks.DIVIDED_HIGHWAY_US_SIGN.get());
+                output.accept(ModBlocks.WARN_EU_SIGN.get());
+                output.accept(ModBlocks.GUIDE_EU_SIGN.get());
+                output.accept(ModBlocks.LEFT_DIRECTION_EU_SIGN.get());
+                output.accept(ModBlocks.RIGHT_DIRECTION_EU_SIGN.get());
+                output.accept(ModBlocks.WARNING_BEACON_LEFT_EU_SIGN.get());
+                output.accept(ModBlocks.WARNING_BEACON_RIGHT_EU_SIGN.get());
+                output.accept(ModBlocks.WARNING_BEACON_ALT_EU_SIGN.get());
 
-                    output.accept(ModBlocks.CREEPER_US_SIGN.get());
-                    output.accept(ModBlocks.TRUCK_CROSSING_US_SIGN.get());
-                    output.accept(ModBlocks.HILL_US_SIGN.get());
-                    output.accept(ModBlocks.TRUCK_ROLLOVER_WARNING_US_SIGN.get());
-                    output.accept(ModBlocks.SLIPPERY_US_SIGN.get());
-                    output.accept(ModBlocks.ROAD_NARROWS_US_SIGN.get());
-                    output.accept(ModBlocks.CATTLE_US_SIGN.get());
-                    output.accept(ModBlocks.SIGNAL_US_SIGN.get());
 
-                    output.accept(ModBlocks.WORKERS_US_SIGN.get());
+                // US
+                output.accept(ModBlocks.WARN_US_SIGN.get());
+                output.accept(ModBlocks.GUIDE_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_DIRECTION_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_DIRECTION_US_SIGN.get());
+                output.accept(ModBlocks.WARNING_BEACON_LEFT_US_SIGN.get());
+                output.accept(ModBlocks.WARNING_BEACON_RIGHT_US_SIGN.get());
+                output.accept(ModBlocks.WARNING_BEACON_ALT_US_SIGN.get());
+                output.accept(ModBlocks.T_INTERSECTION_US_SIGN.get());
+                output.accept(ModBlocks.Y_INTERSECTION_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_SIDE_ROAD_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_SIDE_ROAD_US_SIGN.get());
+                output.accept(ModBlocks.CROSS_ROAD_US_SIGN.get());
+                output.accept(ModBlocks.SIDE_ROAD_AT_ANGLE_LEFT_US_SIGN.get());
+                output.accept(ModBlocks.SIDE_ROAD_AT_ANGLE_RIGHT_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_TURN_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_TURN_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_CURVE_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_CURVE_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_REVERSE_TURN_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_REVERSE_TURN_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_MERGING_TRAFFIC_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_MERGING_TRAFFIC_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_ENTERING_ROADWAY_MERGE_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_ENTERING_ROADWAY_MERGE_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_ADDED_LINE_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_ADDED_LINE_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_LANE_ENDS_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_LANE_ENDS_US_SIGN.get());
+                output.accept(ModBlocks.TWO_WAY_TRAFFIC_US_SIGN.get());
+                output.accept(ModBlocks.VERY_SHARP_CURVE_US_SIGN.get());
+                output.accept(ModBlocks.WINDING_ROAD_US_SIGN.get());
+                output.accept(ModBlocks.HAIRPIN_CURVE_US_SIGN.get());
+                output.accept(ModBlocks.CIRCULAR_INTERSECTION_US_SIGN.get());
+                output.accept(ModBlocks.DIVIDED_HIGHWAY_US_SIGN.get());
 
-                    output.accept(ModBlocks.PEDESTRIANS_CROSSING_US_SIGN.get());
-                    output.accept(ModBlocks.HANDICAPED_CROSSING_US_SIGN.get());
-                    output.accept(ModBlocks.BICYCLE_CROSSING_US_SIGN.get());
-                    output.accept(ModBlocks.PLAYGROUND_AHEAD_US_SIGN.get());
+                output.accept(ModBlocks.CREEPER_US_SIGN.get());
+                output.accept(ModBlocks.TRUCK_CROSSING_US_SIGN.get());
+                output.accept(ModBlocks.HILL_US_SIGN.get());
+                output.accept(ModBlocks.TRUCK_ROLLOVER_WARNING_US_SIGN.get());
+                output.accept(ModBlocks.SLIPPERY_US_SIGN.get());
+                output.accept(ModBlocks.ROAD_NARROWS_US_SIGN.get());
+                output.accept(ModBlocks.CATTLE_US_SIGN.get());
+                output.accept(ModBlocks.SIGNAL_US_SIGN.get());
 
-                    output.accept(ModBlocks.TWENTYFIVE_ADVISORY_SPEED_US_SIGN.get());
-                    output.accept(ModBlocks.THIRTYFIVE_ADVISORY_SPEED_US_SIGN.get());
-                    output.accept(ModBlocks.FORTYFIVE_ADVISORY_SPEED_US_SIGN.get());
+                output.accept(ModBlocks.WORKERS_US_SIGN.get());
 
-                    output.accept(ModBlocks.NO_PEDESTRIANS_US_SIGN.get());
-                    output.accept(ModBlocks.NO_BICYCLE_US_SIGN.get());
-                    output.accept(ModBlocks.NO_TRUCKS_US_SIGN.get());
-                    output.accept(ModBlocks.NO_PARKING_US_SIGN.get());
-                    output.accept(ModBlocks.NO_LEFT_TURN_US_SIGN.get());
-                    output.accept(ModBlocks.NO_RIGHT_TURN_US_SIGN.get());
-                    output.accept(ModBlocks.NO_U_TURN_US_SIGN.get());
-                    output.accept(ModBlocks.STRAIGHT_AHEAD_ONLY_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_TURN_ONLY_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_TURN_ONLY_US_SIGN.get());
+                output.accept(ModBlocks.PEDESTRIANS_CROSSING_US_SIGN.get());
+                output.accept(ModBlocks.HANDICAPED_CROSSING_US_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_CROSSING_US_SIGN.get());
+                output.accept(ModBlocks.PLAYGROUND_AHEAD_US_SIGN.get());
 
-                    output.accept(ModBlocks.LEFT_ARROW_YELLOW_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_ARROW_YELLOW_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_DIAGONAL_ARROW_YELLOW_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_DIAGONAL_ARROW_YELLOW_US_SIGN.get());
-                    output.accept(ModBlocks.DOUBLE_ARROW_YELLOW_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_ARROW_ORANGE_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_ARROW_ORANGE_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_DIAGONAL_ARROW_ORANGE_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_DIAGONAL_ARROW_ORANGE_US_SIGN.get());
-                    output.accept(ModBlocks.DOUBLE_ARROW_ORANGE_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_ARROW_GREEN_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_ARROW_GREEN_US_SIGN.get());
-                    output.accept(ModBlocks.LEFT_DIAGONAL_ARROW_GREEN_US_SIGN.get());
-                    output.accept(ModBlocks.RIGHT_DIAGONAL_ARROW_GREEN_US_SIGN.get());
-                    output.accept(ModBlocks.DOUBLE_ARROW_GREEN_US_SIGN.get());
+                output.accept(ModBlocks.TWENTYFIVE_ADVISORY_SPEED_US_SIGN.get());
+                output.accept(ModBlocks.THIRTYFIVE_ADVISORY_SPEED_US_SIGN.get());
+                output.accept(ModBlocks.FORTYFIVE_ADVISORY_SPEED_US_SIGN.get());
 
-                    output.accept(ModBlocks.INFO_US_SIGN.get());
-                    output.accept(ModBlocks.HANDICAPPED_ACCESSIBLE_US_SIGN.get());
-                    output.accept(ModBlocks.HOTEL_US_SIGN.get());
-                    output.accept(ModBlocks.RESTAURANT_US_SIGN.get());
-                    output.accept(ModBlocks.HOSPITAL_US_SIGN.get());
-                    output.accept(ModBlocks.GAS_STATION_US_SIGN.get());
-                    output.accept(ModBlocks.DIESEL_STATION_US_SIGN.get());
-                    output.accept(ModBlocks.ELECTRIC_STATION_US_SIGN.get());
-                    output.accept(ModBlocks.CAMPING_US_SIGN.get());
-                    output.accept(ModBlocks.MEDICAL_SERVICE_US_SIGN.get());
-                    output.accept(ModBlocks.TELEPHONE_US_SIGN.get());
-                    output.accept(ModBlocks.AIRPORT_US_SIGN.get());
-                    output.accept(ModBlocks.LIGHT_RAIL_TRANSIT_STATION_US_SIGN.get());
-                    output.accept(ModBlocks.WINTER_RECREATION_AREA_US_SIGN.get());
-                    output.accept(ModBlocks.SWIMMING_AREA_US_SIGN.get());
-                    output.accept(ModBlocks.PICNIC_AREA_US_SIGN.get());
-                    output.accept(ModBlocks.REPAIR_US_SIGN.get());
-                    output.accept(ModBlocks.DRINKING_WATER_US_SIGN.get());
-                    output.accept(ModBlocks.BATHROOMS_US_SIGN.get());
-                    output.accept(ModBlocks.LITTER_BARREL_US_SIGN.get());
-                    output.accept(ModBlocks.LOUNDRY_FACILITY_US_SIGN.get());
+                output.accept(ModBlocks.DETOUR_LEFT_US_SIGN.get());
+                output.accept(ModBlocks.DETOUR_RIGHT_US_SIGN.get());
 
-                    output.accept(ModBlocks.RAILROAD_CROSSING_US_SIGN.get());
-                    output.accept(ModBlocks.CROSSBUCK_US_SIGN.get());
+                output.accept(ModBlocks.NO_PEDESTRIANS_US_SIGN.get());
+                output.accept(ModBlocks.NO_BICYCLE_US_SIGN.get());
+                output.accept(ModBlocks.NO_TRUCKS_US_SIGN.get());
+                output.accept(ModBlocks.NO_PARKING_US_SIGN.get());
+                output.accept(ModBlocks.NO_LEFT_TURN_US_SIGN.get());
+                output.accept(ModBlocks.NO_RIGHT_TURN_US_SIGN.get());
+                output.accept(ModBlocks.NO_U_TURN_US_SIGN.get());
+                output.accept(ModBlocks.STRAIGHT_AHEAD_ONLY_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_TURN_ONLY_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_TURN_ONLY_US_SIGN.get());
 
-                    //BASE
-                    output.accept(ModBlocks.ROUND_SIGN.get());
-                    output.accept(ModBlocks.TRIANGLE_SIGN.get());
-                    output.accept(ModBlocks.RECTANGLE_SIGN.get());
-                    output.accept(ModBlocks.SQUARE_SIGN.get());
-                    output.accept(ModBlocks.CROSS_SIGN.get());
-                    output.accept(ModBlocks.UPSIDE_DOWN_TRIANGLE_SIGN.get());
-                    output.accept(ModBlocks.RHOMBUS_SIGN.get());
-                    output.accept(ModBlocks.OCTAGON_SIGN.get());
-                    output.accept(ModBlocks.BAKE_SIGN.get());
+                output.accept(ModBlocks.AHEAD_YELLOW_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_ARROW_YELLOW_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_ARROW_YELLOW_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_DIAGONAL_ARROW_YELLOW_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_DIAGONAL_ARROW_YELLOW_US_SIGN.get());
+                output.accept(ModBlocks.DOUBLE_ARROW_YELLOW_US_SIGN.get());
+                output.accept(ModBlocks.AHEAD_ORANGE_US_SIGN.get());
+                output.accept(ModBlocks.EXIT_CLOSED_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_ARROW_ORANGE_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_ARROW_ORANGE_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_DIAGONAL_ARROW_ORANGE_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_DIAGONAL_ARROW_ORANGE_US_SIGN.get());
+                output.accept(ModBlocks.DOUBLE_ARROW_ORANGE_US_SIGN.get());
+                output.accept(ModBlocks.AHEAD_GREEN_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_ARROW_GREEN_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_ARROW_GREEN_US_SIGN.get());
+                output.accept(ModBlocks.LEFT_DIAGONAL_ARROW_GREEN_US_SIGN.get());
+                output.accept(ModBlocks.RIGHT_DIAGONAL_ARROW_GREEN_US_SIGN.get());
+                output.accept(ModBlocks.DOUBLE_ARROW_GREEN_US_SIGN.get());
+
+                output.accept(ModBlocks.INFO_US_SIGN.get());
+                output.accept(ModBlocks.HANDICAPPED_ACCESSIBLE_US_SIGN.get());
+                output.accept(ModBlocks.HOTEL_US_SIGN.get());
+                output.accept(ModBlocks.RESTAURANT_US_SIGN.get());
+                output.accept(ModBlocks.HOSPITAL_US_SIGN.get());
+                output.accept(ModBlocks.GAS_STATION_US_SIGN.get());
+                output.accept(ModBlocks.DIESEL_STATION_US_SIGN.get());
+                output.accept(ModBlocks.ELECTRIC_STATION_US_SIGN.get());
+                output.accept(ModBlocks.CAMPING_US_SIGN.get());
+                output.accept(ModBlocks.MEDICAL_SERVICE_US_SIGN.get());
+                output.accept(ModBlocks.TELEPHONE_US_SIGN.get());
+                output.accept(ModBlocks.AIRPORT_US_SIGN.get());
+                output.accept(ModBlocks.LIGHT_RAIL_TRANSIT_STATION_US_SIGN.get());
+                output.accept(ModBlocks.BICYCLE_PATH_US_SIGN.get());
+                output.accept(ModBlocks.WINTER_RECREATION_AREA_US_SIGN.get());
+                output.accept(ModBlocks.SWIMMING_AREA_US_SIGN.get());
+                output.accept(ModBlocks.PICNIC_AREA_US_SIGN.get());
+                output.accept(ModBlocks.REPAIR_US_SIGN.get());
+                output.accept(ModBlocks.DRINKING_WATER_US_SIGN.get());
+                output.accept(ModBlocks.BATHROOMS_US_SIGN.get());
+                output.accept(ModBlocks.LITTER_BARREL_US_SIGN.get());
+                output.accept(ModBlocks.LOUNDRY_FACILITY_US_SIGN.get());
+
+                output.accept(ModBlocks.RAILROAD_CROSSING_US_SIGN.get());
+                output.accept(ModBlocks.CROSSBUCK_US_SIGN.get());
+
+                //BASE
+                output.accept(ModBlocks.ROUND_SIGN.get());
+                output.accept(ModBlocks.TRIANGLE_SIGN.get());
+                output.accept(ModBlocks.RECTANGLE_SIGN.get());
+                output.accept(ModBlocks.SQUARE_SIGN.get());
+                output.accept(ModBlocks.CROSS_SIGN.get());
+                output.accept(ModBlocks.UPSIDE_DOWN_TRIANGLE_SIGN.get());
+                output.accept(ModBlocks.RHOMBUS_SIGN.get());
+                output.accept(ModBlocks.OCTAGON_SIGN.get());
+                output.accept(ModBlocks.BAKE_SIGN.get());
                 //}
+
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_OPEN.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CLOSED.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_CREEPER.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_DANGER.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get());
+                output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get());
             }).build());
 
 
@@ -597,6 +677,31 @@ public class CreativeModeTabs {
     //            }
     //        }).build());
 
+    public static final RegistryObject<CreativeModeTab> TRAFFIC_LIGHTS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".traffic_lights_tab", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + References.MODID + ".traffic_lights_tab"))
+            .icon(() -> new ItemStack(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get()))
+            .displayItems((params, output) -> {
+
+                output.accept(ModBlocks.IRON_POLE.get());
+
+                output.accept(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.LEFT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.LEFT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.RIGHT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.BICYCLE_TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.PEDESTRIAN_TRIPPLE_TRAFFIC_LIGHT.get());
+                output.accept(ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get());
+                output.accept(ModBlocks.SIGNAL_LIGHT.get());
+                output.accept(ModBlocks.DANGER_SIGNAL_LIGHT.get());
+                output.accept(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
+            }).build());
+
 
     public static final RegistryObject<CreativeModeTab> ROAD_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".roads", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".roads_tab"))
@@ -730,6 +835,12 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get());
 
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get());
+
+
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_EDGE.get());
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_EDGE.get());
@@ -745,6 +856,16 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW_SLAB.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get());
 
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW.get());
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW_SLAB.get());
@@ -912,5 +1033,20 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_Z.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get());
 
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get());
             }).build());
+
 }

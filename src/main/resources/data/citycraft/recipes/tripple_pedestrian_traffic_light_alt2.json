@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:pedestrian_double_traffic_light"
+    },
+    {
+      "item": "citycraft:pedestrian_signal_light"
+    }
+  ],
+
+  "result": {
+    "item": "citycraft:pedestrian_tripple_traffic_light"
+  }
+}

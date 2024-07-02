@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "X": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+
+  "result": {
+    "item": "citycraft:signal_light",
+    "count": 4
+  }
+}

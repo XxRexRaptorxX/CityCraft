@@ -9,10 +9,10 @@ import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import xxrexraptorxx.citycraft.blocks.AsphaltBlock;
-import xxrexraptorxx.citycraft.blocks.AsphaltSlabBlock;
+import xxrexraptorxx.citycraft.blocks.*;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
+import xxrexraptorxx.citycraft.utils.Helper;
 import xxrexraptorxx.citycraft.utils.SignShape;
 
 public class BlockStateGen extends BlockStateProvider {
@@ -109,7 +109,6 @@ public class BlockStateGen extends BlockStateProvider {
         directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME.get());
         directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE.get());
         directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING.get());
-
 
         asphaltSlab(ModBlocks.ASPHALT_SLAB.get());
         asphaltSlab(ModBlocks.CRACKED_ASPHALT_SLAB.get());
@@ -319,13 +318,13 @@ public class BlockStateGen extends BlockStateProvider {
         makeBlockFromParentModel(ModBlocks.RED_WHITE_POST.get(), "post");
         makeBlockFromParentModel(ModBlocks.YELLOW_BLACK_POST.get(), "post");
 
-        makeBlockFromParentModel(ModBlocks.IRON_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.BLACK_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.RED_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.WHITE_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.YELLOW_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.RED_WHITE_POLE.get(), "pole");
-        makeBlockFromParentModel(ModBlocks.YELLOW_BLACK_POLE.get(), "pole");
+        makeBlockItemFromExistingModel(ModBlocks.IRON_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.BLACK_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.RED_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.WHITE_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.YELLOW_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.RED_WHITE_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.YELLOW_BLACK_POLE.get());
 
         trafficSignBlock(ModBlocks.LEFT_ARROW_EU_SIGN.get(), SignShape.RECTANGLE);
         trafficSignBlock(ModBlocks.CAMPING_EU_SIGN.get(), SignShape.SQUARE);
@@ -541,6 +540,56 @@ public class BlockStateGen extends BlockStateProvider {
         trafficSignBlock(ModBlocks.WORKERS_US_SIGN.get(), SignShape.RHOMBUS);
         trafficSignBlock(ModBlocks.Y_INTERSECTION_US_SIGN.get(), SignShape.RHOMBUS);
 
+        trafficSignBlock(ModBlocks.EXIT_CLOSED_US_SIGN.get(), SignShape.RECTANGLE);
+        trafficSignBlock(ModBlocks.NO_HAZARDOUS_CARGO_EU_SIGN.get(), SignShape.ROUND);
+        trafficSignBlock(ModBlocks.M_AHEAD_EU_SIGN.get(), SignShape.RECTANGLE);
+        trafficSignBlock(ModBlocks.AHEAD_YELLOW_US_SIGN.get(), SignShape.RECTANGLE);
+        trafficSignBlock(ModBlocks.BICYCLE_PATH_RIGHT_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.BICYCLE_HIGHWAY_END_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.TEN_MINIMUM_SPEED_SIGN_EU.get(), SignShape.ROUND);
+        trafficSignBlock(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.BICYCLE_PATH_LEFT_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.BICYCLE_ROUTE_AHEAD_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.BRIDLE_PATH_EU_SIGN.get(), SignShape.ROUND);
+        trafficSignBlock(ModBlocks.DETOUR_END_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.DETOUR_LEFT_US_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_200_EU_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.DETOUR_RIGHT_US_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.AHEAD_GREEN_US_SIGN.get(), SignShape.RECTANGLE);
+        trafficSignBlock(ModBlocks.MOVABLE_BRIDGE_EU_SIGN.get(), SignShape.TRIANGLE);
+        trafficSignBlock(ModBlocks.HIGHWAY_COUNTDOWN_MARKER_100_EU_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.BICYCLE_PATH_US_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.THIRTY_MINIMUM_SPEED_SIGN_EU.get(), SignShape.ROUND);
+        trafficSignBlock(ModBlocks.CHARGING_STATION_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.BICYCLE_ROUTE_LEFT_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.LOOSE_GRAVEL_EU_SIGN.get(), SignShape.TRIANGLE);
+        trafficSignBlock(ModBlocks.FEDERAL_HIGHWAY_COUNTDOWN_MARKER_300_EU_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.BICYCLE_HIGHWAY_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.PARKING_AREA_END_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.BICYCLE_PATH_AHEAD_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.NO_MONSTER_EU_SIGN.get(), SignShape.ROUND);
+        trafficSignBlock(ModBlocks.AHEAD_ORANGE_US_SIGN.get(), SignShape.RECTANGLE);
+        trafficSignBlock(ModBlocks.BICYCLE_ROUTE_RIGHT_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.LEFT_PRIORITY_ROAD_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.PARKING_AREA_START_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.PRIORITY_ROAD_FROM_LEFT_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.PRIORITY_ROAD_FROM_RIGHT_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.RAILWAY_COUNTDOWN_MARKER_80_EU_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.RAILWAY_COUNTDOWN_MARKER_160_EU_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.RAILWAY_COUNTDOWN_MARKER_240_EU_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.RIGHT_PRIORITY_ROAD_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.SHORE_EU_SIGN.get(), SignShape.TRIANGLE);
+        trafficSignBlock(ModBlocks.TREE_OVERHANG_EU_SIGN.get(), SignShape.TRIANGLE);
+        trafficSignBlock(ModBlocks.TRUCK_ROUTE_AHEAD_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.TRUCK_ROUTE_RIGHT_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.TRUCK_ROUTE_LEFT_EU_SIGN.get(), SignShape.SQUARE);
+        trafficSignBlock(ModBlocks.WARN_US_SIGN.get(), SignShape.RECTANGLE);
+        trafficSignBlock(ModBlocks.WARNING_BEACON_ALT_US_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.WARNING_BEACON_LEFT_US_SIGN.get(), SignShape.BAKE);
+        trafficSignBlock(ModBlocks.WARNING_BEACON_RIGHT_US_SIGN.get(), SignShape.BAKE);
+
         trafficSignBlock(ModBlocks.ROUND_SIGN.get(), SignShape.ROUND);
         trafficSignBlock(ModBlocks.TRIANGLE_SIGN.get(), SignShape.TRIANGLE);
         trafficSignBlock(ModBlocks.RECTANGLE_SIGN.get(), SignShape.RECTANGLE);
@@ -571,7 +620,69 @@ public class BlockStateGen extends BlockStateProvider {
         wallBlock(((WallBlock) ModBlocks.RED_CONCRETE_WALL.get()), blockTexture(Blocks.RED_CONCRETE));
 
         makeBlockItemFromExistingModel(ModBlocks.BLOCK_PAINTER.get());
+
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get());
+        directionalAsphaltBlock(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get());
+        directionalAsphaltSlab(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get());
+
+        makeBlockItemFromExistingModel(ModBlocks.VARIABLE_TRAFFIC_SIGN.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_OPEN.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CLOSED.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_CREEPER.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_DANGER.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get());
+        variableTrafficSign(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get());
+
+        trafficLights(ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.BICYCLE_TRIPPLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.DANGER_SIGNAL_LIGHT.get());
+        trafficLights(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.LEFT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.LEFT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get());
+        trafficLights(ModBlocks.PEDESTRIAN_TRIPPLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.RIGHT_TURN_TRIPPLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.SIGNAL_LIGHT.get());
+        trafficLights(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get());
+        trafficLights(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
+        trafficLights(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get());
     }
+
+    private final String emissiveTexturesSuffix = "_e";
 
 
     private void makeBlockItemFromExistingModel(Block block) {
@@ -597,7 +708,7 @@ public class BlockStateGen extends BlockStateProvider {
     }
 
 
-    private void trafficSignBlock(Block block, SignShape shape) {
+    private void trafficSignBlock(TrafficSignBlock block, SignShape shape) {
         String frontTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
         String backTexture = shape.toString() + "_sign_back";
 
@@ -607,84 +718,84 @@ public class BlockStateGen extends BlockStateProvider {
                     .texture("front", "block/" + frontTexture)
                     .texture("back", modLoc("block/" + backTexture));
 
-        Direction dir = state.getValue(AsphaltBlock.FACING);
-        int x = 0;
-        int y = 0;
+            Direction dir = state.getValue(AsphaltBlock.FACING);
+            int x = 0;
+            int y = 0;
 
-        switch (dir) {
-            case EAST:
-                y = 270;
-                break;
-            case NORTH:
-                y = 180;
-                break;
-            case SOUTH:
-                break;
-            case WEST:
-                y = 90;
-                break;
-            default:
-                break;
-        }
+            switch (dir) {
+                case EAST:
+                    y = 270;
+                    break;
+                case NORTH:
+                    y = 180;
+                    break;
+                case SOUTH:
+                    break;
+                case WEST:
+                    y = 90;
+                    break;
+                default:
+                    break;
+            }
 
-        return ConfiguredModel.builder()
-                .modelFile(model)
-                .rotationX(x)
-                .rotationY(y)
-                .build();
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .rotationX(x)
+                    .rotationY(y)
+                    .build();
         });
 
         makeBlockItemFromExistingModel(block);
     }
 
 
-    private void directionalAsphaltBlock(Block block) {
+    private void directionalAsphaltBlock(AsphaltBlock block) {
         String asphaltTexture = BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
         getVariantBuilder(block).forAllStates(state -> {
 
-                ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/directional_cube")
-                        .texture("down", "block/" + blockTexture)   //down
-                        .texture("up", "block/" + blockTexture)    //up
-                        .texture("north", "block/" + blockTexture)  //north
-                        .texture("south", "block/" + blockTexture)   //south
-                        .texture("east", "block/" + asphaltTexture)   //east
-                        .texture("west", "block/" + asphaltTexture)  //west
-                        .texture("particle", modLoc("block/" + asphaltTexture));
+            ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/directional_cube")
+                    .texture("down", "block/" + blockTexture)   //down
+                    .texture("up", "block/" + blockTexture)    //up
+                    .texture("north", "block/" + blockTexture)  //north
+                    .texture("south", "block/" + blockTexture)   //south
+                    .texture("east", "block/" + asphaltTexture)   //east
+                    .texture("west", "block/" + asphaltTexture)  //west
+                    .texture("particle", modLoc("block/" + asphaltTexture));
 
-        Direction dir = state.getValue(AsphaltBlock.FACING);
-        int x = 0;
-        int y = 0;
+            Direction dir = state.getValue(AsphaltBlock.FACING);
+            int x = 0;
+            int y = 0;
 
-        switch (dir) {
-            case EAST:
-                y = 270;
-                break;
-            case NORTH:
-                y = 180;
-                break;
-            case SOUTH:
-                break;
-            case WEST:
-                y = 90;
-                break;
-            default:
-                break;
-        }
+            switch (dir) {
+                case EAST:
+                    y = 270;
+                    break;
+                case NORTH:
+                    y = 180;
+                    break;
+                case SOUTH:
+                    break;
+                case WEST:
+                    y = 90;
+                    break;
+                default:
+                    break;
+            }
 
-        return ConfiguredModel.builder()
-                .modelFile(model)
-                .rotationX(x)
-                .rotationY(y)
-                .build();
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .rotationX(x)
+                    .rotationY(y)
+                    .build();
         });
 
         makeBlockItemFromExistingModel(block);
     }
 
 
-    private void asphaltSlab(Block block) {
+    private void asphaltSlab(AsphaltSlabBlock block) {
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath().replace("_slab", "");
 
         slabBlock((SlabBlock) block, modLoc("block/" + blockTexture), modLoc("block/" + blockTexture));
@@ -692,7 +803,7 @@ public class BlockStateGen extends BlockStateProvider {
     }
 
 
-    private void directionalAsphaltSlab(Block block) {
+    private void directionalAsphaltSlab(AsphaltSlabBlock block) {
         String asphaltTexture = BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath().replace("_slab", "");
 
@@ -750,6 +861,96 @@ public class BlockStateGen extends BlockStateProvider {
 
                     return ConfiguredModel.builder()
                             .modelFile(type == SlabType.BOTTOM ? bottom : type == SlabType.TOP ? top : full)
+                            .rotationX(x)
+                            .rotationY(y)
+                            .build();
+                });
+
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void variableTrafficSign(VariableTrafficSignBlock block) {
+        String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/variable_traffic_signs")
+                .texture("texture", "block/" + blockTexture + emissiveTexturesSuffix);
+        ModelFile model_off = models().withExistingParent(blockTexture + "_off", References.MODID + ":block/variable_traffic_signs_off");
+
+
+        getVariantBuilder(block)
+                .forAllStates(state -> {
+
+                    Boolean lit = state.getValue(VariableTrafficSignBlock.LIT);
+                    Direction dir = state.getValue(VariableTrafficSignBlock.FACING);
+                    int x = 0;
+                    int y = 0;
+
+                    switch (dir) {
+                        case EAST:
+                            y = 270;
+                            break;
+                        case NORTH:
+                            y = 180;
+                            break;
+                        case SOUTH:
+                            break;
+                        case WEST:
+                            y = 90;
+                            break;
+                        default:
+                            break;
+                    }
+
+
+                    return ConfiguredModel.builder()
+                            .modelFile(lit == true ? model : model_off)
+                            .rotationX(x)
+                            .rotationY(y)
+                            .build();
+                });
+
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void trafficLights(TrafficLightBlock block) {
+        String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        String modelType = Helper.getTrafficLightModelType(block);
+
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + modelType)
+                .texture("texture", "block/" + blockTexture);
+        ModelFile model_off = models().withExistingParent(blockTexture + "_off", References.MODID + ":block/" + modelType)
+                .texture("texture", "block/" + blockTexture + "_off");
+
+
+        getVariantBuilder(block)
+                .forAllStates(state -> {
+
+                    Boolean lit = state.getValue(VariableTrafficSignBlock.LIT);
+                    Direction dir = state.getValue(VariableTrafficSignBlock.FACING);
+                    int x = 0;
+                    int y = 0;
+
+                    switch (dir) {
+                        case EAST:
+                            y = 270;
+                            break;
+                        case NORTH:
+                            y = 180;
+                            break;
+                        case SOUTH:
+                            break;
+                        case WEST:
+                            y = 90;
+                            break;
+                        default:
+                            break;
+                    }
+
+
+                    return ConfiguredModel.builder()
+                            .modelFile(lit == true ? model : model_off)
                             .rotationX(x)
                             .rotationY(y)
                             .build();

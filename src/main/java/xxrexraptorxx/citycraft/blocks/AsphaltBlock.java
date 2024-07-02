@@ -29,6 +29,13 @@ import java.util.List;
 
 public class AsphaltBlock extends HorizontalDirectionalBlock {
 
+	public static final MapCodec<AsphaltBlock> CODEC = simpleCodec(AsphaltBlock::new);
+
+
+	public AsphaltBlock(Properties properties) {
+		super(properties);
+	}
+
 	public AsphaltBlock() {
 		super(Properties.of()
 				.requiresCorrectToolForDrops()
@@ -87,6 +94,6 @@ public class AsphaltBlock extends HorizontalDirectionalBlock {
 
 	@Override
 	protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
-		return null;
+		return CODEC;
 	}
 }

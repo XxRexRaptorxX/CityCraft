@@ -2,8 +2,7 @@
   "replace": false,
   "values": [
     "#forge:traffic_signs/guide",
-    "#forge:traffic_signs/mandatory",
-    "#forge:traffic_signs/miscellaneous",
+    "#forge:traffic_signs/supplementary",
     "#forge:traffic_signs/regulatory",
     "#forge:traffic_signs/warning"
     ]
