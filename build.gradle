@@ -139,8 +139,8 @@ dependencies {
 
     //JEI
     compileOnly ("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
-    compileOnly ("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
-    runtimeOnly ("mezz.jei:jei-${mc_version}-forge:${jei_version}")
+    compileOnly ("mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}")
+    runtimeOnly ("mezz.jei:jei-${mc_version}-neoforge:${jei_version}")
     //JEED
     //runtimeOnly ("curse.maven:jeed-532286:${jeed_version}")
     //JADE

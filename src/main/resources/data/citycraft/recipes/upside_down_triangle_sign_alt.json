@@ -2,10 +2,10 @@
   "conditions": [
     {
       "value": {
-        "type": "forge:tag_empty",
+        "type": "neoforge:tag_empty",
         "tag": "forge:plates/iron"
       },
-      "type": "forge:not"
+      "type": "neoforge:not"
     }
   ],
   "type": "minecraft:crafting_shaped",

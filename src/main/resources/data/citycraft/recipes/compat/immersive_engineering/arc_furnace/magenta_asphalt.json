@@ -1,7 +1,7 @@
 {
   "conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "immersiveengineering"
     }
   ],
@@ -15,7 +15,7 @@
 
   "energy": 50000,
   "input": {
-    "base_ingredient": {
+    "basePredicate": {
       "tag": "forge:dusts/asphalt"
     },
     "count": 1
@@ -23,7 +23,7 @@
 
   "results": [
     {
-      "base_ingredient": {
+      "basePredicate": {
         "item": "citycraft:magenta_asphalt"
       },
       "count": 1

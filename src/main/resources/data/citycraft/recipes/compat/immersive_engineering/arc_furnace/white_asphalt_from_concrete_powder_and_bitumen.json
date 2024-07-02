@@ -1,15 +1,15 @@
 {
   "conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "immersiveengineering"
     },
     {
       "value": {
-        "type": "forge:tag_empty",
+        "type": "neoforge:tag_empty",
         "tag": "forge:bitumen"
       },
-      "type": "forge:not"
+      "type": "neoforge:not"
     }
   ],
 
@@ -26,7 +26,7 @@
 
   "energy": 50000,
   "input": {
-    "base_ingredient": {
+    "basePredicate": {
       "item": "minecraft:white_concrete_powder"
     },
     "count": 1
@@ -34,7 +34,7 @@
 
   "results": [
     {
-      "base_ingredient": {
+      "basePredicate": {
         "item": "citycraft:white_asphalt"
       },
       "count": 6

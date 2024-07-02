@@ -18,14 +18,14 @@
       "values": [
         {
           "modid": "cyclic",
-          "type": "forge:mod_loaded"
+          "type": "neoforge:mod_loaded"
         },
         {
           "item": "cyclic:crusher",
           "type": "forge:item_exists"
         }
       ],
-      "type": "forge:and"
+      "type": "neoforge:and"
     }
   ]
 }

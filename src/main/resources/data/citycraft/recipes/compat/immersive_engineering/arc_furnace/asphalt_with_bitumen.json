@@ -1,15 +1,15 @@
 {
   "conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "immersiveengineering"
     },
     {
       "value": {
-        "type": "forge:tag_empty",
+        "type": "neoforge:tag_empty",
         "tag": "forge:bitumen"
       },
-      "type": "forge:not"
+      "type": "neoforge:not"
     }
   ],
 
@@ -31,7 +31,7 @@
 
   "energy": 50000,
   "input": {
-    "base_ingredient": {
+    "basePredicate": {
       "tag": "forge:bitumen"
     },
     "count": 4
@@ -39,7 +39,7 @@
 
   "results": [
     {
-      "base_ingredient": {
+      "basePredicate": {
         "item": "citycraft:asphalt"
       },
       "count": 8
