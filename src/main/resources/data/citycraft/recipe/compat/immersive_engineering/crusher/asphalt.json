@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "immersiveengineering"
@@ -8,10 +8,10 @@
   "type":"immersiveengineering:crusher",
   "energy": 2400,
   "input": {
-    "tag": "neoforge:asphalt"
+    "tag": "c:asphalt"
   },
   "result": {
-    "tag": "neoforge:dusts/asphalt"
+    "tag": "c:dusts/asphalt"
   },
   "secondaries":[]
 }

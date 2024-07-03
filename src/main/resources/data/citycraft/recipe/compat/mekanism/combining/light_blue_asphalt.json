@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "mekanism"
@@ -7,20 +7,16 @@
   ],
   "type":"mekanism:combining",
 
-  "extraInput": {
-    "ingredient": {
+  "extra_input": {
       "tag":"forge:dyes/light_blue"
-    }
   },
 
-  "mainInput": {
-    "ingredient": {
+  "main_input": {
       "tag":"forge:asphalt"
-    }
   },
 
   "output": {
     "count": 1,
-    "item": "citycraft:light_blue_asphalt"
+    "id": "citycraft:light_blue_asphalt"
   }
 }

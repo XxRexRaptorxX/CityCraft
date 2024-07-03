@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "mekanism"
@@ -8,13 +8,11 @@
   "type":"mekanism:pigment_extracting",
   
   "input": {
-    "ingredient": {
       "item": "citycraft:lime_asphalt"
-    }
   },
 
   "output": {
     "amount": 24,
-    "pigment": "mekanism:lime"
+    "id": "mekanism:lime"
   }
 }

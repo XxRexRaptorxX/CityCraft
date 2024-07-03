@@ -2,7 +2,7 @@
   "replace": false,
   "values":
   [
-    "#forge:buckets/creosote",
+    "#c:buckets/creosote",
     "citycraft:coal_tar"
   ]
 }

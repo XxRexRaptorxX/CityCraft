@@ -4,5 +4,7 @@
   "ingredient": {
     "item": "citycraft:light_blue_asphalt"
   },
-  "result": "citycraft:light_blue_asphalt_slab"
+    "result": {
+    "count": 1,
+    "id": "citycraft:light_blue_asphalt_slab"  }
 }

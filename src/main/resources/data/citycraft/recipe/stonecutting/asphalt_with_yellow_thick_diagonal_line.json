@@ -1,8 +1,9 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "tag": "citycraft:yellow_marked_asphalt"
   },
-  "result": "citycraft:asphalt_with_yellow_thick_diagonal_line"
+    "result": {
+    "count": 1,
+    "id": "citycraft:asphalt_with_yellow_thick_diagonal_line"  }
 }

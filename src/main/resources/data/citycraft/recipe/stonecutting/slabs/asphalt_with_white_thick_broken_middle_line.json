@@ -4,5 +4,7 @@
   "ingredient": {
     "tag": "citycraft:white_marked_asphalt"
   },
-  "result": "citycraft:asphalt_with_white_thick_broken_middle_line_slab"
+    "result": {
+    "count": 1,
+    "id": "citycraft:asphalt_with_white_thick_broken_middle_line_slab"  }
 }

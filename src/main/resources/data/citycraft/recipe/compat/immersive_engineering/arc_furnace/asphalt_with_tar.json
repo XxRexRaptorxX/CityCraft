@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "immersiveengineering"
@@ -9,23 +9,23 @@
   "type": "immersiveengineering:arc_furnace",
   "additives": [
     {
-      "tag": "neoforge:sand"
+      "tag": "c:sand"
     },
     {
-      "tag": "neoforge:gravel"
+      "tag": "c:gravel"
     },
     {
-      "tag": "neoforge:sand"
+      "tag": "c:sand"
     },
     {
-      "tag": "neoforge:gravel"
+      "tag": "c:gravel"
     }
   ],
 
   "energy": 50000,
   "input": {
     "basePredicate": {
-      "tag": "neoforge:buckets/coal_tar"
+      "tag": "c:buckets/coal_tar"
     },
     "count": 4
   },

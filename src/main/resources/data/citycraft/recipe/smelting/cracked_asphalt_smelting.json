@@ -8,5 +8,7 @@
     "item": "citycraft:asphalt"
   },
 
-  "result": "citycraft:cracked_asphalt"
+  "result": {
+    "id": "citycraft:cracked_asphalt"
+  }
 }

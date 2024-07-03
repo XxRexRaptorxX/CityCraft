@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "immersiveengineering"
@@ -9,14 +9,14 @@
   "type": "immersiveengineering:arc_furnace",
   "additives": [
     {
-      "tag": "neoforge:dyes/brown"
+      "tag": "c:dyes/brown"
     }
   ],
 
   "energy": 50000,
   "input": {
     "basePredicate": {
-      "tag": "neoforge:dusts/asphalt"
+      "tag": "c:dusts/asphalt"
     },
     "count": 1
   },

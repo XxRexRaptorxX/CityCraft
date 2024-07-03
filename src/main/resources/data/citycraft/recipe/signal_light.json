@@ -12,7 +12,7 @@
       "item": "minecraft:redstone_lamp"
     },
     "X": {
-      "tag": "neoforge:ingots/iron"
+      "tag": "c:ingots/iron"
     }
   },
 

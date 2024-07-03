@@ -4,13 +4,13 @@
   "group": "color_pole",
   "ingredients": [
     {
-      "tag": "neoforge:poles/iron"
+      "tag": "c:poles/iron"
     },
     {
-      "tag": "neoforge:dyes/red"
+      "tag": "c:dyes/red"
     },
     {
-      "tag": "neoforge:dyes/white"
+      "tag": "c:dyes/white"
     }
   ],
 

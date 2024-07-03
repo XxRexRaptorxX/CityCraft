@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "mekanism"
@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
+
       "item": "citycraft:asphalt"
-    }
   },
   "output":
   {
-    "item": "citycraft:mossy_asphalt"
+    "id": "citycraft:mossy_asphalt"
   }
 }

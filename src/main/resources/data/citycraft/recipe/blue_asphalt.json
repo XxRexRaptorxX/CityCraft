@@ -4,10 +4,10 @@
   "group": "color_asphalt",
   "ingredients": [
     {
-      "tag": "neoforge:asphalt"
+      "tag": "c:asphalt"
     },
     {
-      "tag": "neoforge:dyes/blue"
+      "tag": "c:dyes/blue"
     }
   ],
 

@@ -1,28 +1,26 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "mekanism"
     }
   ],
   "type": "mekanism:painting",
-  "chemicalInput": {
+  "chemical_input": {
     "amount": 32,
     "pigment": "mekanism:white"
   },
 
-  "itemInput": {
-    "ingredient": {
+  "item_input": {
+
       "type": "neoforge:difference",
       "base": {
-        "tag": "neoforge:asphalt" },
+        "tag": "c:asphalt" },
       "subtracted": {
         "item": "citycraft:white_asphalt"
       }
-    }
   },
-
   "output": {
-    "item": "citycraft:white_asphalt"
+    "id": "citycraft:white_asphalt"
   }
 }

@@ -5,8 +5,10 @@
   "experience": 1.0,
 
   "ingredient": {
-    "tag": "neoforge:dusts/asphalt"
+    "tag": "c:dusts/asphalt"
   },
 
-  "result": "citycraft:asphalt"
+  "result": {
+    "id": "citycraft:asphalt"
+  }
 }

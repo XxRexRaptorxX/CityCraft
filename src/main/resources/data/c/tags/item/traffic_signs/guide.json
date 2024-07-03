@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#forge:traffic_signs/service",
+    "#c:traffic_signs/service",
     "citycraft:detour_end_eu_sign",
     "citycraft:detour_ahead_eu_sign",
     "citycraft:detour_left_eu_sign",

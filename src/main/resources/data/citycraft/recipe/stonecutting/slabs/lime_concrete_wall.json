@@ -1,8 +1,9 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:lime_concrete"
   },
-  "result": "citycraft:lime_concrete_wall"
+    "result": {
+    "count": 1,
+    "id": "citycraft:lime_concrete_wall"  }
 }

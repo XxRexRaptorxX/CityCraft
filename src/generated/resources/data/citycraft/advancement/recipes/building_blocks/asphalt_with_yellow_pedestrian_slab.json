@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_asphalt_with_yellow_pedestrian": {
+      "conditions": {
+        "items": [
+          {
+            "items": "citycraft:asphalt_with_yellow_pedestrian"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "citycraft:asphalt_with_yellow_pedestrian_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_asphalt_with_yellow_pedestrian"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "citycraft:asphalt_with_yellow_pedestrian_slab"
+    ]
+  }
+}

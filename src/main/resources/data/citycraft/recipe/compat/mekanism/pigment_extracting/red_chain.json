@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "mekanism"
@@ -8,13 +8,11 @@
   "type":"mekanism:pigment_extracting",
   
   "input": {
-    "ingredient": {
       "item": "citycraft:red_chain"
-    }
   },
 
   "output": {
     "amount": 10,
-    "pigment": "mekanism:red"
+    "id": "mekanism:red"
   }
 }

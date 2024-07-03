@@ -1,8 +1,8 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:tag_empty",
-      "tag": "neoforge:plates/iron"
+      "tag": "c:plates/iron"
     }
   ],
   "type": "minecraft:crafting_shaped",
@@ -16,7 +16,7 @@
 
   "key": {
     "#": {
-      "tag": "neoforge:ingots/iron"
+      "tag": "c:ingots/iron"
     },
     "I": {
       "item": "citycraft:iron_pole"

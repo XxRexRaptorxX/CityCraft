@@ -9,10 +9,10 @@
 
   "key": {
     "-": {
-      "tag": "neoforge:ingots/iron"
+      "tag": "c:ingots/iron"
     },
     "#": {
-      "tag": "neoforge:fences/iron"
+      "tag": "c:fences/iron"
     }
   },
 

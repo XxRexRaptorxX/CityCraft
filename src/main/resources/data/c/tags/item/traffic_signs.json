@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#forge:traffic_signs/guide",
-    "#forge:traffic_signs/supplementary",
-    "#forge:traffic_signs/regulatory",
-    "#forge:traffic_signs/warning"
+    "#c:traffic_signs/guide",
+    "#c:traffic_signs/supplementary",
+    "#c:traffic_signs/regulatory",
+    "#c:traffic_signs/warning"
     ]
 }

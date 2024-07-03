@@ -10,7 +10,7 @@
 
   "key": {
     "#": {
-      "tag": "neoforge:ingots/iron"
+      "tag": "c:ingots/iron"
     },
     "X": {
       "item": "minecraft:redstone_lamp"

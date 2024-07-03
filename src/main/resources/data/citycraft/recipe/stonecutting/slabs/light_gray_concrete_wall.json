@@ -1,8 +1,9 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:light_gray_concrete"
   },
-  "result": "citycraft:light_gray_concrete_wall"
+    "result": {
+    "count": 1,
+    "id": "citycraft:light_gray_concrete_wall"  }
 }

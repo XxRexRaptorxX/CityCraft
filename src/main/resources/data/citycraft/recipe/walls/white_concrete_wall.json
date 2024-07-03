@@ -4,10 +4,10 @@
   "group": "color_concrete_wall",
   "ingredients": [
     {
-      "tag": "neoforge:walls/concrete"
+      "tag": "c:walls/concrete"
     },
     {
-      "tag": "neoforge:dyes/white"
+      "tag": "c:dyes/white"
     }
   ],
 

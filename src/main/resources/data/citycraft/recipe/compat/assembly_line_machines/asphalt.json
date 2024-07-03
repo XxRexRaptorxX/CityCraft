@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "assemblylinemachines"
@@ -7,7 +7,7 @@
   ],
   "type": "assemblylinemachines:grinder",
   "input":{
-    "tag": "neoforge:asphalt"
+    "tag": "c:asphalt"
   },
 
   "output":{

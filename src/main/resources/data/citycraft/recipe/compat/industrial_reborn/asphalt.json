@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "indreb"
@@ -11,7 +11,7 @@
   "experience": 0.0,
   "ingredient": {
     "count": 1,
-    "tag": "neoforge:asphalt"
+    "tag": "c:asphalt"
   },
 
   "power_cost": 8,

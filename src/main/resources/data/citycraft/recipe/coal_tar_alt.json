@@ -1,9 +1,9 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "neoforge:coal_coke"
+        "tag": "c:coal_coke"
       },
       "type": "neoforge:not"
     }
@@ -15,13 +15,13 @@
       "item": "minecraft:water_bucket"
     },
     {
-      "tag": "neoforge:coal_coke"
+      "tag": "c:coal_coke"
     },
     {
-      "tag": "neoforge:coal_coke"
+      "tag": "c:coal_coke"
     },
     {
-      "tag": "neoforge:coal_coke"
+      "tag": "c:coal_coke"
     }
   ],
 

@@ -1,9 +1,9 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "neoforge:bitumen"
+        "tag": "c:bitumen"
       },
       "type": "neoforge:not"
     }
@@ -15,28 +15,28 @@
       "item": "minecraft:water_bucket"
     },
     {
-      "tag": "neoforge:bitumen"
+      "tag": "c:bitumen"
     },
     {
-      "tag": "neoforge:bitumen"
+      "tag": "c:bitumen"
     },
     {
-      "tag": "neoforge:bitumen"
+      "tag": "c:bitumen"
     },
     {
-      "tag": "neoforge:bitumen"
+      "tag": "c:bitumen"
     },
     {
-      "tag": "neoforge:sand"
+      "tag": "c:sand"
     },
     {
-      "tag": "neoforge:sand"
+      "tag": "c:sand"
     },
     {
-      "tag": "neoforge:gravel"
+      "tag": "c:gravel"
     },
     {
-      "tag": "neoforge:gravel"
+      "tag": "c:gravel"
     }
   ],
 

@@ -4,10 +4,10 @@
   "group": "color_post",
   "ingredients": [
     {
-      "tag": "neoforge:posts/stone"
+      "tag": "c:posts/stone"
     },
     {
-      "tag": "neoforge:dyes/red"
+      "tag": "c:dyes/red"
     }
   ],
 

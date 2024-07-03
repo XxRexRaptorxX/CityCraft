@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "tag": "neoforge:poles/iron"
+      "tag": "c:poles/iron"
     },
     {
-      "tag": "neoforge:dyes/white"
+      "tag": "c:dyes/white"
     },
     {
-      "tag": "neoforge:dyes/black"
+      "tag": "c:dyes/black"
     },
     {
       "item": "minecraft:glow_ink_sac"

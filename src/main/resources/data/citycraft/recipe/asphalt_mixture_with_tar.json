@@ -6,28 +6,28 @@
       "item": "minecraft:water_bucket"
     },
     {
-      "tag": "neoforge:buckets/coal_tar"
+      "tag": "c:buckets/coal_tar"
     },
     {
-      "tag": "neoforge:buckets/coal_tar"
+      "tag": "c:buckets/coal_tar"
     },
     {
-      "tag": "neoforge:buckets/coal_tar"
+      "tag": "c:buckets/coal_tar"
     },
     {
-      "tag": "neoforge:buckets/coal_tar"
+      "tag": "c:buckets/coal_tar"
     },
     {
-      "tag": "neoforge:sand"
+      "tag": "c:sand"
     },
     {
-      "tag": "neoforge:sand"
+      "tag": "c:sand"
     },
     {
-      "tag": "neoforge:gravel"
+      "tag": "c:gravel"
     },
     {
-      "tag": "neoforge:gravel"
+      "tag": "c:gravel"
     }
   ],
 

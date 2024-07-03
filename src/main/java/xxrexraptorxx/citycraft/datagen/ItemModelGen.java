@@ -72,7 +72,7 @@ public class ItemModelGen extends ItemModelProvider {
     }
 
     private void itemBlock(DeferredBlock item) {
-        withExistingParent(item.getId().getPath(), modLoc( "block/" + item.getId()));
+        withExistingParent(item.getId().getPath(), modLoc( "block/" + item.getId().getPath()));
     }
 
     public void fenceItem(DeferredBlock<FenceBlock> block, Block textureBlock) {

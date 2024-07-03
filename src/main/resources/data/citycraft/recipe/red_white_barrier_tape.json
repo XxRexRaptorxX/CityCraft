@@ -12,10 +12,10 @@
       "item": "minecraft:paper"
     },
     "1": {
-      "tag": "neoforge:dyes/white"
+      "tag": "c:dyes/white"
     },
     "2": {
-      "tag": "neoforge:dyes/red"
+      "tag": "c:dyes/red"
     }
   },
 

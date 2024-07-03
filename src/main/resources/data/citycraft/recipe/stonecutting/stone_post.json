@@ -4,5 +4,8 @@
   "ingredient": {
     "item": "minecraft:stone"
   },
-  "result": "citycraft:stone_post"
+  "result": {
+    "count": 1,
+    "id": "citycraft:stone_post"
+  }
 }

@@ -1,8 +1,8 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:tag_empty",
-      "tag": "neoforge:coal_coke"
+      "tag": "c:coal_coke"
     }
   ],
   "type": "minecraft:blasting",
@@ -14,5 +14,7 @@
     "item": "minecraft:coal"
   },
 
-  "result": "citycraft:coal_coke"
+  "result": {
+    "id": "citycraft:coal_coke"
+  }
 }

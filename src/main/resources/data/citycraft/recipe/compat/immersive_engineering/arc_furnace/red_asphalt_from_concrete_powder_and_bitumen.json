@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "immersiveengineering"
@@ -7,7 +7,7 @@
     {
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "neoforge:bitumen"
+        "tag": "c:bitumen"
       },
       "type": "neoforge:not"
     }
@@ -17,7 +17,7 @@
   "additives": [
 
     {
-      "tag": "neoforge:bitumen"
+      "tag": "c:bitumen"
     },
     {
       "item": "minecraft:water_bucket"

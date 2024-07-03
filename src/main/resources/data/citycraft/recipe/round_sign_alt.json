@@ -1,9 +1,9 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "neoforge:plates/iron"
+        "tag": "c:plates/iron"
       },
       "type": "neoforge:not"
     }
@@ -18,7 +18,7 @@
 
   "key": {
     "#": {
-      "tag": "neoforge:plates/iron"
+      "tag": "c:plates/iron"
     },
     "I": {
       "item": "citycraft:iron_pole"

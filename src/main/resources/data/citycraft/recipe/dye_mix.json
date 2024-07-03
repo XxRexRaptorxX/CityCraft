@@ -3,31 +3,31 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "neoforge:dyes/black"
+      "tag": "c:dyes/black"
     },
     {
-      "tag": "neoforge:dyes/green"
+      "tag": "c:dyes/green"
     },
     {
-      "tag": "neoforge:dyes/brown"
+      "tag": "c:dyes/brown"
     },
     {
-      "tag": "neoforge:dyes/red"
+      "tag": "c:dyes/red"
     },
     {
-      "tag": "neoforge:dyes/yellow"
+      "tag": "c:dyes/yellow"
     },
     {
-      "tag": "neoforge:dyes/orange"
+      "tag": "c:dyes/orange"
     },
     {
-      "tag": "neoforge:dyes/blue"
+      "tag": "c:dyes/blue"
     },
     {
-      "tag": "neoforge:dyes/lime"
+      "tag": "c:dyes/lime"
     },
     {
-      "tag": "neoforge:dyes/white"
+      "tag": "c:dyes/white"
     }
   ],
 

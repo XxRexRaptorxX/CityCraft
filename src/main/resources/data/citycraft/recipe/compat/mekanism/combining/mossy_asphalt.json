@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "mekanism"
@@ -7,20 +7,16 @@
   ],
   "type":"mekanism:combining",
 
-  "extraInput": {
-    "ingredient": {
+  "extra_input": {
       "item": "minecraft:moss_block"
-    }
   },
 
-  "mainInput": {
-    "ingredient": {
-      "tag": "neoforge:asphalt"
-    }
+  "main_input": {
+      "tag": "c:asphalt"
   },
 
   "output": {
     "count": 2,
-    "item": "citycraft:mossy_asphalt"
+    "id": "citycraft:mossy_asphalt"
   }
 }

@@ -15,7 +15,7 @@
       "item": "citycraft:asphalt"
     },
     {
-      "type": "forge:nbt",
+      "type": "neoforge:nbt",
       "item": "minecraft:lingering_potion",
       "nbt": "{Potion:'minecraft:long_swiftness'}"
     },

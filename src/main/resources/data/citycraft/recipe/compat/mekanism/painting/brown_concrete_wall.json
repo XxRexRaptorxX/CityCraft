@@ -1,28 +1,26 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "mekanism"
     }
   ],
   "type": "mekanism:painting",
-  "chemicalInput": {
+  "chemical_input": {
     "amount": 32,
     "pigment": "mekanism:brown"
   },
 
-  "itemInput": {
-    "ingredient": {
+  "item_input": {
+
       "type": "neoforge:difference",
       "base": {
-        "tag": "neoforge:walls/concrete" },
+        "tag": "c:walls/concrete" },
       "subtracted": {
         "item": "citycraft:brown_concrete_wall"
-      }
     }
   },
-
   "output": {
-    "item": "citycraft:brown_concrete_wall"
+    "id": "citycraft:brown_concrete_wall"
   }
 }

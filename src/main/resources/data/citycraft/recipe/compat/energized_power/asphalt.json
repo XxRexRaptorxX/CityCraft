@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "energizedpower"
@@ -7,7 +7,7 @@
   ],
   "type": "energizedpower:crusher",
   "ingredient": {
-    "tag": "neoforge:asphalt"
+    "tag": "c:asphalt"
   },
   "output": {
     "item": "citycraft:asphalt_mixture"

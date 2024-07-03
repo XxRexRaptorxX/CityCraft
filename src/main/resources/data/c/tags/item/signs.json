@@ -1,6 +1,6 @@
 {
   "values": [
-    "#forge:signs/wood",
-    "#forge:signs/bamboo"
+    "#c:signs/wood",
+    "#c:signs/bamboo"
   ]
 }

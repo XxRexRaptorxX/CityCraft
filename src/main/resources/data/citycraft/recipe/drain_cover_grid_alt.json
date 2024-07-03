@@ -1,9 +1,9 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "neoforge:rods/iron"
+        "tag": "c:rods/iron"
       },
       "type": "neoforge:not"
     }
@@ -19,7 +19,7 @@
   "key": {
     "#": [
       {
-        "tag": "neoforge:rods/iron"
+        "tag": "c:rods/iron"
       }
     ]
   },

@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "mekanism"
@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
+
       "item": "citycraft:asphalt_slab"
-    }
   },
   "output":
   {
-    "item": "citycraft:cracked_asphalt_slab"
+    "id": "citycraft:cracked_asphalt_slab"
   }
 }

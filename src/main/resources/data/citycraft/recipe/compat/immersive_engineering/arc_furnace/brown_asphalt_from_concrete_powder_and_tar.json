@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "immersiveengineering"
@@ -7,7 +7,7 @@
     {
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "neoforge:buckets/coal_tar"
+        "tag": "c:buckets/coal_tar"
       },
       "type": "neoforge:not"
     }
@@ -16,10 +16,10 @@
   "type": "immersiveengineering:arc_furnace",
   "additives": [
     {
-      "tag": "neoforge:dyes/brown"
+      "tag": "c:dyes/brown"
     },
     {
-      "tag": "neoforge:buckets/coal_tar"
+      "tag": "c:buckets/coal_tar"
     },
     {
       "item": "minecraft:water_bucket"

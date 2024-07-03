@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#forge:traffic_signs/variable"
+    "#c:traffic_signs/variable"
   ]
 }

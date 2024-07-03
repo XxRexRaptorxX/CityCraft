@@ -4,10 +4,10 @@
   "group": "color_chain",
   "ingredients": [
     {
-      "tag": "neoforge:chains"
+      "tag": "c:chains"
     },
     {
-      "tag": "neoforge:dyes/white"
+      "tag": "c:dyes/white"
     }
   ],
 

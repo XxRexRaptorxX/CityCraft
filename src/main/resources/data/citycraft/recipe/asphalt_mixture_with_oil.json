@@ -1,9 +1,9 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "neoforge:buckets/oil"
+        "tag": "c:buckets/oil"
       },
       "type": "neoforge:not"
     }
@@ -12,25 +12,25 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "neoforge:buckets/oil"
+      "tag": "c:buckets/oil"
     },
     {
-      "tag": "neoforge:sand"
+      "tag": "c:sand"
     },
     {
-      "tag": "neoforge:sand"
+      "tag": "c:sand"
     },
     {
-      "tag": "neoforge:sand"
+      "tag": "c:sand"
     },
     {
-      "tag": "neoforge:gravel"
+      "tag": "c:gravel"
     },
     {
-      "tag": "neoforge:gravel"
+      "tag": "c:gravel"
     },
     {
-      "tag": "neoforge:gravel"
+      "tag": "c:gravel"
     }
   ],
 

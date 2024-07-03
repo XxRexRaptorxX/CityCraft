@@ -15,7 +15,7 @@ import java.util.Set;
 public class BlockLootTables extends BlockLootSubProvider {
 
     public BlockLootTables(HolderLookup.Provider lookupProvider) {
-        super(Collections.emptySet(), FeatureFlags.REGISTRY.allFlags(), lookupProvider);
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), lookupProvider);
     }
 
     @Override

@@ -1,5 +1,5 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "mekanism"
@@ -8,13 +8,11 @@
   "type":"mekanism:pigment_extracting",
   
   "input": {
-    "ingredient": {
       "item": "citycraft:light_blue_concrete_wall"
-    }
   },
 
   "output": {
     "amount": 24,
-    "pigment": "mekanism:light_blue"
+    "id": "mekanism:light_blue"
   }
 }
