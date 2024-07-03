@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:traffic_signs/square"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "id": "citycraft:truck_route_right_eu_sign"
+  }
+}

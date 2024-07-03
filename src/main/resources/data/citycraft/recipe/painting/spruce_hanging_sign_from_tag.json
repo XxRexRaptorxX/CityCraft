@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:hanging_signs/wood"
+  },
+  "color": {
+    "tag": "c:dyes/brown"
+  },
+  "result": {
+    "id": "minecraft:spruce_hanging_sign"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wooden_slabs"
+  },
+  "color": {
+    "tag": "c:dyes/pink"
+  },
+  "result": {
+    "id": "minecraft:cherry_slab"
+  }
+}

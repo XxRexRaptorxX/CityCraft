@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:poles/iron"
+  },
+  "color": {
+    "tag": "c:dyes/black"
+  },
+  "result": {
+    "id": "citycraft:black_pole"
+  }
+}

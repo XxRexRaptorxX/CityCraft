@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:planks"
+  },
+  "color": {
+    "tag": "c:dyes/pink"
+  },
+  "result": {
+    "id": "minecraft:cherry_planks"
+  }
+}

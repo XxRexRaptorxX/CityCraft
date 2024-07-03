@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:concrete"
+  },
+  "color": {
+    "tag": "c:dyes/brown"
+  },
+  "result": {
+    "id": "minecraft:brown_concrete"
+  }
+}

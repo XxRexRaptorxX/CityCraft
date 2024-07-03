@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:candles"
+  },
+  "color": {
+    "tag": "c:dyes/gray"
+  },
+  "result": {
+    "id": "minecraft:gray_candle"
+  }
+}

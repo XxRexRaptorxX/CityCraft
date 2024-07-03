@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:glazed_terracotta"
+  },
+  "color": {
+    "tag": "c:dyes/pink"
+  },
+  "result": {
+    "id": "minecraft:pink_glazed_terracotta"
+  }
+}

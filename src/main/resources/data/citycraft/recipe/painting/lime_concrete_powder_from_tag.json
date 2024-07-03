@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:concrete_powder"
+  },
+  "color": {
+    "tag": "c:dyes/lime"
+  },
+  "result": {
+    "id": "minecraft:lime_concrete_powder"
+  }
+}

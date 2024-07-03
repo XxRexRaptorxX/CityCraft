@@ -1,12 +1,12 @@
 package xxrexraptorxx.citycraft.main;
 
-import net.minecraft.client.gui.screens.MenuScreens;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import xxrexraptorxx.citycraft.blocks.container.PainterScreen;
 import xxrexraptorxx.citycraft.registry.*;
 import xxrexraptorxx.citycraft.utils.Config;
 
@@ -28,11 +28,12 @@ public class CityCraft {
         ModRecipeSerializers.init(bus);
         ModRecipeTypes.init(bus);
         ModMenuTypes.init(bus);
-        bus.addListener(this::clientSetup);
+        bus.addListener(this::registerScreens);
     }
 
-    private void clientSetup(FMLClientSetupEvent event) {
-        event.enqueueWork(() -> MenuScreens.getScreenFactory(ModMenuTypes.PAINTER.get()));
+
+    private void registerScreens(RegisterMenuScreensEvent event) {
+        event.register(ModMenuTypes.PAINTER.get(), PainterScreen::new);
     }
 
 }

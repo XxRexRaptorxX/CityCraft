@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:blank_asphalt"
+  },
+  "color": {
+    "tag": "c:dyes/brown"
+  },
+  "result": {
+    "id": "citycraft:brown_asphalt"
+  }
+}

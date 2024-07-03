@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:concrete_powder"
+  },
+  "color": {
+    "tag": "c:dyes/pink"
+  },
+  "result": {
+    "id": "minecraft:pink_concrete_powder"
+  }
+}

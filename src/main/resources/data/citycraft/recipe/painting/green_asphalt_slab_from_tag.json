@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:blank_asphalt_slabs"
+  },
+  "color": {
+    "tag": "c:dyes/green"
+  },
+  "result": {
+    "id": "citycraft:green_asphalt_slab"
+  }
+}

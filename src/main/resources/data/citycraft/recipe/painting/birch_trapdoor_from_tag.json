@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wooden_trapdoors"
+  },
+  "color": {
+    "tag": "c:dyes/white"
+  },
+  "result": {
+    "id": "minecraft:birch_trapdoor"
+  }
+}

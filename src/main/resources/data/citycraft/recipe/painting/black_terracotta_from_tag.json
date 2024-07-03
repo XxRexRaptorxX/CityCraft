@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:terracotta"
+  },
+  "color": {
+    "tag": "c:dyes/black"
+  },
+  "result": {
+    "id": "minecraft:black_terracotta"
+  }
+}

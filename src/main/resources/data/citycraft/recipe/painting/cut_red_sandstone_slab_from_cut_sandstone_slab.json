@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "minecraft:cut_sandstone_slab"
+  },
+  "color": {
+    "tag": "c:dyes/red"
+  },
+  "result": {
+    "id": "minecraft:cut_red_sandstone_slab"
+  }
+}

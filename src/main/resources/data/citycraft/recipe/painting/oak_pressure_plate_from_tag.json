@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wooden_pressure_plates"
+  },
+  "color": {
+    "tag": "c:dyes/yellow"
+  },
+  "result": {
+    "id": "minecraft:oak_pressure_plate"
+  }
+}

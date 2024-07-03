@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:planks"
+  },
+  "color": {
+    "tag": "c:dyes/yellow"
+  },
+  "result": {
+    "id": "minecraft:oak_planks"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wool"
+  },
+  "color": {
+    "tag": "c:dyes/magenta"
+  },
+  "result": {
+    "id": "minecraft:magenta_wool"
+  }
+}

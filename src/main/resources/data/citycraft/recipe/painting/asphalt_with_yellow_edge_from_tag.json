@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:yellow_marked_asphalt"
+  },
+  "color": {
+    "tag": "c:dyes/yellow"
+  },
+  "result": {
+    "id": "citycraft:asphalt_with_yellow_edge"
+  }
+}

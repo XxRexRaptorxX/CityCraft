@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wool"
+  },
+  "color": {
+    "tag": "c:dyes/pink"
+  },
+  "result": {
+    "id": "minecraft:pink_wool"
+  }
+}

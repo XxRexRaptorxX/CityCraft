@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wool_carpets"
+  },
+  "color": {
+    "tag": "c:dyes/purple"
+  },
+  "result": {
+    "id": "minecraft:purple_carpet"
+  }
+}

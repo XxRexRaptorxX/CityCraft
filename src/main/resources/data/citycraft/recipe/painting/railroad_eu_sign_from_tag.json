@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:traffic_signs/triangle"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "id": "citycraft:railroad_eu_sign"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:glass_panes"
+  },
+  "color": {
+    "tag": "c:dyes/brown"
+  },
+  "result": {
+    "id": "minecraft:brown_stained_glass_pane"
+  }
+}

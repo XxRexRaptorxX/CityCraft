@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wooden_slabs"
+  },
+  "color": {
+    "tag": "c:dyes/black"
+  },
+  "result": {
+    "id": "minecraft:dark_oak_slab"
+  }
+}

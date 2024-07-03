@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wool"
+  },
+  "color": {
+    "tag": "c:dyes/lime"
+  },
+  "result": {
+    "id": "minecraft:lime_wool"
+  }
+}

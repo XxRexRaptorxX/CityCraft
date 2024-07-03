@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "citycraft:asphalt"
+  },
+  "color": {
+    "tag": "c:dyes/white"
+  },
+  "result": {
+    "id": "citycraft:asphalt_with_white_p"
+  }
+}

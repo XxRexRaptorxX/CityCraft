@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:glass"
+  },
+  "color": {
+    "tag": "c:dyes/black"
+  },
+  "result": {
+    "id": "minecraft:black_stained_glass"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:glass"
+  },
+  "color": {
+    "tag": "c:dyes/blue"
+  },
+  "result": {
+    "id": "minecraft:blue_stained_glass"
+  }
+}

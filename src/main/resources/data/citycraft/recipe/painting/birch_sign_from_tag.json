@@ -1,0 +1,12 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:signs/wood"
+  },
+  "color": {
+    "tag": "c:dyes/white"
+  },
+  "result": {
+    "id": "minecraft:birch_sign"
+  }
+}
