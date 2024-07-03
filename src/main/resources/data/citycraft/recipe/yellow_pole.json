@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_pole",
+  "ingredients": [
+    {
+      "tag": "neoforge:poles/iron"
+    },
+    {
+      "tag": "neoforge:dyes/yellow"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:yellow_pole"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "neoforge:rods/iron"
+      },
+      "type": "neoforge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+
+  "pattern": [
+    "###",
+    "###"
+  ],
+
+  "key": {
+    "#": [
+      {
+        "tag": "neoforge:rods/iron"
+      }
+    ]
+  },
+
+  "result": {
+    "id": "citycraft:drain_cover_grid",
+    "count": 4
+  }
+}

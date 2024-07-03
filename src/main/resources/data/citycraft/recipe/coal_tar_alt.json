@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "neoforge:coal_coke"
+      },
+      "type": "neoforge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "tag": "neoforge:coal_coke"
+    },
+    {
+      "tag": "neoforge:coal_coke"
+    },
+    {
+      "tag": "neoforge:coal_coke"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:coal_tar"
+  }
+}

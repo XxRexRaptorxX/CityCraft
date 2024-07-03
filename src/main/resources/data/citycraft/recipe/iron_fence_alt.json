@@ -1,0 +1,33 @@
+{
+  "conditions": [
+    {
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "neoforge:rods/iron"
+      },
+      "type": "neoforge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+
+  "pattern": [
+    "#I#",
+    "#I#"
+  ],
+
+  "key": {
+    "#": {
+      "tag": "neoforge:ingots/iron"
+    },
+    "I": {
+      "tag": "neoforge:rods/iron"
+    }
+
+  },
+
+  "result": {
+    "id": "citycraft:iron_fence",
+    "count": 3
+  }
+}

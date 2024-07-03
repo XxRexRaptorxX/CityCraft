@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_chain",
+  "ingredients": [
+    {
+      "tag": "neoforge:chains"
+    },
+    {
+      "tag": "neoforge:dyes/red"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:red_chain"
+  }
+}

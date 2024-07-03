@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##"
+  ],
+
+  "key": {
+    "#": {
+      "item": "citycraft:signal_light"
+    }
+  },
+
+  "result": {
+    "id": "citycraft:danger_signal_light"
+  }
+}

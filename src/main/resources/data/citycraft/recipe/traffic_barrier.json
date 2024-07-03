@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+
+  "pattern": [
+    "-",
+    "#"
+  ],
+
+  "key": {
+    "-": {
+      "tag": "neoforge:ingots/iron"
+    },
+    "#": {
+      "tag": "neoforge:fences/iron"
+    }
+  },
+
+  "result": {
+    "id": "citycraft:traffic_barrier",
+    "count": 1
+  }
+}

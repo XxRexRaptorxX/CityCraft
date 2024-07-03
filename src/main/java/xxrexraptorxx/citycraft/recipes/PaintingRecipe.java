@@ -1,19 +1,19 @@
 package xxrexraptorxx.citycraft.recipes;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.core.RegistryAccess;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeInput;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
-import net.neoforged.neoforge.common.CommonHooks;
-import org.jetbrains.annotations.NotNull;
 import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.registry.ModRecipeSerializers;
 import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
@@ -37,20 +37,14 @@ public class PaintingRecipe implements IPaintingRecipe {
 
 
    @Override
-   public boolean matches(Container container, Level level) {
-      return this.base.test(container.getItem(0)) && this.color.test(container.getItem(1));
+   public boolean matches(RecipeInput input, Level level) {
+      return this.base.test(input.getItem(0)) && this.color.test(input.getItem(1));
    }
 
 
    @Override
-   public ItemStack assemble(Container container, RegistryAccess registryAccess) {
-      ItemStack itemstack = this.result.copy();
-      CompoundTag compoundtag = container.getItem(0).getTag();
-      if (compoundtag != null) {
-         itemstack.setTag(compoundtag.copy());
-      }
-
-      return itemstack;
+   public ItemStack assemble(RecipeInput input, HolderLookup.Provider provider) {
+      return this.result.copy();
    }
 
 
@@ -75,7 +69,7 @@ public class PaintingRecipe implements IPaintingRecipe {
 
 
    @Override
-   public ItemStack getResultItem(RegistryAccess registryAccess) {
+   public ItemStack getResultItem(HolderLookup.Provider provider) {
       return this.result;
    }
 
@@ -111,46 +105,52 @@ public class PaintingRecipe implements IPaintingRecipe {
 
    @Override
    public boolean isIncomplete() {
-      return Stream.of(this.color, this.base).anyMatch(CommonHooks::hasNoElements);
+      return Stream.of(this.color, this.base).anyMatch(Ingredient::hasNoItems);
    }
 
 
    public static class Serializer implements RecipeSerializer<PaintingRecipe> {
       public static final Serializer INSTANCE = new Serializer();
 
-      private static final Codec<PaintingRecipe> CODEC = RecordCodecBuilder.create((builder) -> {
+      private static final MapCodec<PaintingRecipe> CODEC = RecordCodecBuilder.mapCodec((builder) -> {
          return builder.group(
                  ResourceLocation.CODEC.fieldOf("type").forGetter((recipe) -> recipe.id),
                  Ingredient.CODEC.fieldOf("base").forGetter((recipe) -> recipe.base),
                  Ingredient.CODEC.fieldOf("color").forGetter((recipe) -> recipe.color),
-                 ItemStack.ITEM_WITH_COUNT_CODEC.fieldOf("result").forGetter((recipe) -> recipe.result)
+                 ItemStack.OPTIONAL_CODEC.fieldOf("result").forGetter((recipe) -> recipe.result)
          ).apply(builder, PaintingRecipe::new);
       });
 
 
-      @Override
-      public PaintingRecipe fromNetwork(FriendlyByteBuf buf) {
+      private static PaintingRecipe read(RegistryFriendlyByteBuf buf) {
          ResourceLocation id = buf.readResourceLocation();
-         Ingredient base = Ingredient.fromNetwork(buf);
-         Ingredient color = Ingredient.fromNetwork(buf);
-         ItemStack result = buf.readItem();
+         Ingredient base = Ingredient.CONTENTS_STREAM_CODEC.decode(buf);
+         Ingredient color = Ingredient.CONTENTS_STREAM_CODEC.decode(buf);
+         ItemStack result = ItemStack.OPTIONAL_STREAM_CODEC.decode(buf);
 
          return new PaintingRecipe(id, base, color, result);
       }
 
 
-      @Override
-      public void toNetwork(FriendlyByteBuf buf, PaintingRecipe recipe) {
+      private static void write(RegistryFriendlyByteBuf buf, PaintingRecipe recipe) {
          buf.writeResourceLocation(recipe.getId());
-         recipe.base.toNetwork(buf);
-         recipe.color.toNetwork(buf);
-         buf.writeItem(recipe.result);
+         Ingredient.CONTENTS_STREAM_CODEC.encode(buf, recipe.base);
+         Ingredient.CONTENTS_STREAM_CODEC.encode(buf, recipe.color);
+         ItemStack.OPTIONAL_STREAM_CODEC.encode(buf, recipe.result);
+      }
+
+      private final StreamCodec<RegistryFriendlyByteBuf, PaintingRecipe> STREAM_CODEC = StreamCodec.of(
+              Serializer::write, Serializer::read);
+
+      @Override
+      public MapCodec<PaintingRecipe> codec() {
+         return CODEC;
       }
 
 
       @Override
-      public @NotNull Codec<PaintingRecipe> codec() {
-         return CODEC;
+      public StreamCodec<RegistryFriendlyByteBuf, PaintingRecipe> streamCodec() {
+         return STREAM_CODEC;
       }
    }
 

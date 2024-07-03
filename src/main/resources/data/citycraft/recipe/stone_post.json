@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+
+  "pattern": [
+    "I",
+    "I",
+    "I"
+  ],
+
+  "key": {
+    "I": {
+      "item": "minecraft:stone"
+    }
+  },
+
+  "result": {
+    "id": "citycraft:stone_post",
+    "count": 3
+  }
+}

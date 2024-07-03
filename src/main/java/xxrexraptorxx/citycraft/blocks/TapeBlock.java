@@ -3,6 +3,7 @@ package xxrexraptorxx.citycraft.blocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -24,7 +25,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.neoforge.common.IShearable;
-import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
@@ -96,13 +96,13 @@ public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBl
 
 
     @Override
-    public boolean isPathfindable(BlockState state, BlockGetter level, BlockPos pos, PathComputationType type) {
+    public boolean isPathfindable(BlockState state, PathComputationType type) {
         return false;
     }
 
 
     @Override
-    public boolean isShearable(@NotNull ItemStack item, Level level, BlockPos pos) {
+    public boolean isShearable(@Nullable Player player, ItemStack item, Level level, BlockPos pos) {
         return true;
     }
 

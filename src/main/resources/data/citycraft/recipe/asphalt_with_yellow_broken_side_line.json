@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+
+  "pattern": [
+    "I##",
+    "###",
+    "I##"
+  ],
+
+  "key": {
+    "#": {
+      "item": "citycraft:asphalt"
+    },
+    "I": {
+      "tag": "neoforge:dyes/yellow"
+    }
+  },
+
+  "result": {
+    "id": "citycraft:asphalt_with_yellow_broken_side_line",
+    "count": 7
+  }
+}

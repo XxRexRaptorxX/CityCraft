@@ -9,10 +9,10 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
@@ -20,7 +20,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Config;
 
@@ -66,9 +65,8 @@ public class AsphaltBlock extends HorizontalDirectionalBlock {
 		}
 	}
 
-
 	@Override
-	public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> list, TooltipFlag flag) {
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		if (Config.ENABLE_TOOLTIPS.get()) {
 			if (this == ModBlocks.BOOST_ASPHALT.get()) {
 				list.add(Component.translatable("message.citycraft.boost_speed_tooltip").withStyle(ChatFormatting.GRAY));

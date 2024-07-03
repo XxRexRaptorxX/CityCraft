@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+
+  "pattern": [
+    "-I",
+    "##"
+  ],
+
+  "key": {
+    "#": {
+      "tag": "neoforge:ingots/iron"
+    },
+    "I": {
+      "item": "minecraft:brush"
+    },
+    "-": {
+      "item": "minecraft:paper"
+    }
+  },
+
+  "result": {
+    "id": "citycraft:block_painter",
+    "count": 1
+  }
+}

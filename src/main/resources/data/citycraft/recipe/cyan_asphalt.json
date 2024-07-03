@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_asphalt",
+  "ingredients": [
+    {
+      "tag": "neoforge:asphalt"
+    },
+    {
+      "tag": "neoforge:dyes/cyan"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:cyan_asphalt"
+  }
+}

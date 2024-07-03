@@ -1,0 +1,42 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "tag": "neoforge:sand"
+    },
+    {
+      "tag": "neoforge:gravel"
+    },
+    {
+      "tag": "neoforge:sand"
+    },
+    {
+      "tag": "neoforge:gravel"
+    }
+  ],
+
+  "energy": 50000,
+  "input": {
+    "basePredicate": {
+      "tag": "neoforge:buckets/coal_tar"
+    },
+    "count": 4
+  },
+
+  "results": [
+    {
+      "basePredicate": {
+        "item": "citycraft:asphalt"
+      },
+      "count": 8
+    }
+  ],
+  "time": 100
+}

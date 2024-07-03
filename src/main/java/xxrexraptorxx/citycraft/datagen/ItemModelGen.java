@@ -60,15 +60,15 @@ public class ItemModelGen extends ItemModelProvider {
 
 
     private void itemGenerated(DeferredItem item) {
-        singleTexture(item.getId().getPath(), new ResourceLocation("item/generated"),"layer0", new ResourceLocation(References.MODID, "item/" + item.getId().getPath()));
+        singleTexture(item.getId().getPath(), ResourceLocation.withDefaultNamespace("item/generated"),"layer0", ResourceLocation.fromNamespaceAndPath(References.MODID, "item/" + item.getId().getPath()));
     }
 
     private void itemGenerated(DeferredBlock item) {
-        singleTexture(item.getId().getPath(), new ResourceLocation("item/generated"),"layer0", new ResourceLocation(References.MODID, "item/" + item.getId().getPath()));
+        singleTexture(item.getId().getPath(), ResourceLocation.withDefaultNamespace("item/generated"),"layer0", ResourceLocation.fromNamespaceAndPath(References.MODID, "item/" + item.getId().getPath()));
     }
 
     private void itemHandheld(DeferredItem item) {
-        singleTexture(item.getId().getPath(), new ResourceLocation("item/handheld"),"layer0", new ResourceLocation(References.MODID, "item/" + item.getId().getPath()));
+        singleTexture(item.getId().getPath(), ResourceLocation.withDefaultNamespace("item/handheld"),"layer0", ResourceLocation.fromNamespaceAndPath(References.MODID, "item/" + item.getId().getPath()));
     }
 
     private void itemBlock(DeferredBlock item) {
@@ -77,12 +77,12 @@ public class ItemModelGen extends ItemModelProvider {
 
     public void fenceItem(DeferredBlock<FenceBlock> block, Block textureBlock) {
         this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
-                .texture("texture",  new ResourceLocation(References.MODID, "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
 
     public void wallItem(DeferredBlock<WallBlock> block, Block textureBlock) {
         this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
-                .texture("wall",  new ResourceLocation( "minecraft:block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+                .texture("wall",  ResourceLocation.withDefaultNamespace( "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
 
 }

@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "voluminousenergy"
+    }
+  ],
+  "type": "voluminousenergy:crushing",
+  "ingredients": [
+    {
+      "tag": "neoforge:asphalt",
+      "count": 1
+    }
+  ],
+
+  "process_time": 200,
+  "item_results": [
+    {
+      "item": "citycraft:asphalt_mixture",
+      "count": 1
+    }
+  ],
+
+  "experience": {
+    "minimum": 0,
+    "maximum": 0
+  }
+}

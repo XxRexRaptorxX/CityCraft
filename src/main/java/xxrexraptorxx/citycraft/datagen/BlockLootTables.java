@@ -1,18 +1,21 @@
 package xxrexraptorxx.citycraft.datagen;
 
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.Set;
 
 public class BlockLootTables extends BlockLootSubProvider {
 
-    public BlockLootTables() {
-        super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+    public BlockLootTables(HolderLookup.Provider lookupProvider) {
+        super(Collections.emptySet(), FeatureFlags.REGISTRY.allFlags(), lookupProvider);
     }
 
     @Override
@@ -698,7 +701,10 @@ public class BlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return () -> (Iterator<Block>) ModBlocks.BLOCKS.getEntries().stream().map(DeferredHolder::get).iterator();
+        return ModBlocks.BLOCKS.getEntries() // Get all registered entries
+                .stream() // Stream the wrapped objects
+                .map(Holder::value) // Get the object if available
+                .toList(); // Create the iterable
     }
 
 }

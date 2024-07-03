@@ -5,6 +5,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -38,7 +39,7 @@ public class TrafficSignBlock extends FenceBlock implements SimpleWaterloggedBlo
 
 
 	@Override
-	public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> list, TooltipFlag flag) {
+	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		if (BuiltInRegistries.BLOCK.getKey(Block.byItem(stack.getItem())).getPath().contains("_eu_sign")) {
 			list.add(Component.literal("[EU]").withStyle(ChatFormatting.GRAY));
 

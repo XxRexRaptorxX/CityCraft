@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:danger_signal_light"
+    },
+    {
+      "tag": "neoforge:dyes/red"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:train_signal_light"
+  }
+}

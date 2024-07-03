@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:white_pole"
+    },
+    {
+      "tag": "neoforge:dyes/black"
+    },
+    {
+      "item": "minecraft:glow_ink_sac"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:road_edge_post"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:painting",
+  "chemicalInput": {
+    "amount": 32,
+    "pigment": "mekanism:black"
+  },
+
+  "itemInput": {
+    "ingredient": {
+      "type": "neoforge:difference",
+      "base": {
+        "tag": "neoforge:chains" },
+      "subtracted": {
+        "item": "citycraft:black_chain"
+      }
+    }
+  },
+
+  "output": {
+    "item": "citycraft:black_chain"
+  }
+}

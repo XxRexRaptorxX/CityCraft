@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_rasphalt",
+  "ingredients": [
+    {
+      "tag": "neoforge:asphalt"
+    },
+    {
+      "tag": "neoforge:dyes/red"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:red_asphalt"
+  }
+}

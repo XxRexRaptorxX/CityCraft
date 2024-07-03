@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:painting",
+  "chemicalInput": {
+    "amount": 32,
+    "pigment": "mekanism:red"
+  },
+
+  "itemInput": {
+    "ingredient": {
+      "type": "neoforge:difference",
+      "base": {
+        "tag": "neoforge:posts" },
+      "subtracted": {
+        "item": "citycraft:red_post"
+      }
+    }
+  },
+
+  "output": {
+    "item": "citycraft:red_post"
+  }
+}

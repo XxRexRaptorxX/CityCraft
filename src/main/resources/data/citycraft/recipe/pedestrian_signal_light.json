@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:signal_light"
+    },
+    {
+      "item": "citycraft:sidewalk_eu_sign"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:pedestrian_signal_light"
+  }
+}

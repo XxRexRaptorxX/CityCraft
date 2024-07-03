@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:traffic_barrier"
+    },
+    {
+      "item": "citycraft:traffic_barrier"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:double_traffic_barrier"
+  }
+}

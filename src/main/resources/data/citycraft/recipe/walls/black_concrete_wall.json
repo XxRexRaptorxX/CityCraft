@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_concrete_wall",
+  "ingredients": [
+    {
+      "tag": "neoforge:walls/concrete"
+    },
+    {
+      "tag": "neoforge:dyes/black"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:black_concrete_wall"
+  }
+}

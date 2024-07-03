@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_asphalt",
+  "ingredients": [
+    {
+      "tag": "neoforge:asphalt"
+    },
+    {
+      "tag": "neoforge:dyes/yellow"
+    },
+    {
+      "tag": "neoforge:dyes/black"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:yellow_bumper_slab"
+  }
+}

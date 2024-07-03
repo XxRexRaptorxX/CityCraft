@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:road_edge_post"
+    },
+    {
+      "tag": "neoforge:dyes/orange"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:orange_road_edge_post",
+    "count": 1
+  }
+}

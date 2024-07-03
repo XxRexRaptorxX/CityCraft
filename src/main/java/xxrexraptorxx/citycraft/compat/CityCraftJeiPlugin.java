@@ -19,7 +19,7 @@ public class CityCraftJeiPlugin implements IModPlugin {
 
     @Override
     public ResourceLocation getPluginUid() {
-        return new ResourceLocation(References.MODID, "jei_plugin");
+        return ResourceLocation.fromNamespaceAndPath(References.MODID, "jei_plugin");
     }
 
 

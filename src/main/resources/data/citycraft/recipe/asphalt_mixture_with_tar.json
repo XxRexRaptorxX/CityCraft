@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "tag": "neoforge:buckets/coal_tar"
+    },
+    {
+      "tag": "neoforge:buckets/coal_tar"
+    },
+    {
+      "tag": "neoforge:buckets/coal_tar"
+    },
+    {
+      "tag": "neoforge:buckets/coal_tar"
+    },
+    {
+      "tag": "neoforge:sand"
+    },
+    {
+      "tag": "neoforge:sand"
+    },
+    {
+      "tag": "neoforge:gravel"
+    },
+    {
+      "tag": "neoforge:gravel"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:asphalt_mixture",
+    "count": 8
+  }
+}

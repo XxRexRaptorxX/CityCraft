@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "neoforge:dyes/black"
+    },
+    {
+      "tag": "neoforge:dyes/green"
+    },
+    {
+      "tag": "neoforge:dyes/brown"
+    },
+    {
+      "tag": "neoforge:dyes/red"
+    },
+    {
+      "tag": "neoforge:dyes/yellow"
+    },
+    {
+      "tag": "neoforge:dyes/orange"
+    },
+    {
+      "tag": "neoforge:dyes/blue"
+    },
+    {
+      "tag": "neoforge:dyes/lime"
+    },
+    {
+      "tag": "neoforge:dyes/white"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:dye_mix",
+    "count": 9
+  }
+}

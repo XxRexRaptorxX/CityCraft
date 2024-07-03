@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:yellow_pole"
+    },
+    {
+      "item": "citycraft:black_pole"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:yellow_black_pole",
+    "count": 2
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:tag_empty",
+      "tag": "neoforge:plates/iron"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+
+  "pattern": [
+    "#",
+    "I"
+  ],
+
+  "key": {
+    "#": {
+      "tag": "neoforge:ingots/iron"
+    },
+    "I": {
+      "item": "citycraft:iron_pole"
+    }
+  },
+
+  "result": {
+    "id": "citycraft:round_sign",
+    "count": 1
+  }
+}

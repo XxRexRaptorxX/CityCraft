@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_pole",
+  "ingredients": [
+    {
+      "item": "citycraft:double_traffic_barrier"
+    },
+    {
+      "tag": "neoforge:dyes/red"
+    },
+    {
+      "tag": "neoforge:dyes/white"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:double_red_white_traffic_barrier"
+  }
+}

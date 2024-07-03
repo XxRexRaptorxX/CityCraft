@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "plaingrinder"
+    }
+  ],
+  "type": "plaingrinder:grinder",
+  "input": {
+    "tag": "neoforge:asphalt"
+  },
+  "result": {
+    "id": "citycraft:asphalt_mixture",
+    "count": 1
+  }
+}

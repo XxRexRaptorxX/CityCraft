@@ -1,0 +1,31 @@
+{
+  "type": "cyclic:crusher",
+  "input": {
+    "tag": "neoforge:asphalt"
+  },
+  "energy": {
+    "ticks": 60,
+    "rfpertick": 40
+  },
+
+  "result": {
+    "id": "citycraft:asphalt",
+    "count": 1
+  },
+
+  "conditions": [
+    {
+      "values": [
+        {
+          "modid": "cyclic",
+          "type": "neoforge:mod_loaded"
+        },
+        {
+          "item": "cyclic:crusher",
+          "type": "forge:item_exists"
+        }
+      ],
+      "type": "neoforge:and"
+    }
+  ]
+}

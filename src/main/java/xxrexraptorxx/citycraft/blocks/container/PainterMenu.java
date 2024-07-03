@@ -10,8 +10,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.RecipeInput;
 import net.minecraft.world.level.Level;
 import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
+import xxrexraptorxx.citycraft.recipes.RecipeInputWrapper;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.registry.ModMenuTypes;
 import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
@@ -156,7 +158,7 @@ public class PainterMenu extends AbstractContainerMenu {
         this.selectedRecipeIndex.set(-1);
         this.resultSlot.set(ItemStack.EMPTY);
         if (!stack1.isEmpty() && !stack2.isEmpty()) {
-            this.recipes = this.level.getRecipeManager().getRecipesFor(ModRecipeTypes.PAINTING.get(), container, this.level);
+            this.recipes = this.level.getRecipeManager().getRecipesFor(ModRecipeTypes.PAINTING.get(), getRecipeInput(container), this.level);
         }
     }
 
@@ -164,7 +166,7 @@ public class PainterMenu extends AbstractContainerMenu {
     private void setupResultSlot() {
         if (!this.recipes.isEmpty() && this.isValidRecipeIndex(this.selectedRecipeIndex.get())) {
             RecipeHolder<IPaintingRecipe> recipe = this.recipes.get(this.selectedRecipeIndex.get());
-            ItemStack resultStack = recipe.value().assemble(this.container, this.level.registryAccess());
+            ItemStack resultStack = recipe.value().assemble(getRecipeInput(container), this.level.registryAccess());
 
             if (resultStack.isItemEnabled(this.level.enabledFeatures())) {
                 this.resultContainer.setRecipeUsed(recipe);
@@ -189,6 +191,12 @@ public class PainterMenu extends AbstractContainerMenu {
             this.clearContainer(player, this.container);
         });
     }
+
+
+    private RecipeInput getRecipeInput(Container inventory) {
+        return new RecipeInputWrapper(inventory);
+    }
+
 
     ///////////////////
 

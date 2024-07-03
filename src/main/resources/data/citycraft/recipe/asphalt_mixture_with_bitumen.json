@@ -1,0 +1,47 @@
+{
+  "conditions": [
+    {
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "neoforge:bitumen"
+      },
+      "type": "neoforge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "tag": "neoforge:bitumen"
+    },
+    {
+      "tag": "neoforge:bitumen"
+    },
+    {
+      "tag": "neoforge:bitumen"
+    },
+    {
+      "tag": "neoforge:bitumen"
+    },
+    {
+      "tag": "neoforge:sand"
+    },
+    {
+      "tag": "neoforge:sand"
+    },
+    {
+      "tag": "neoforge:gravel"
+    },
+    {
+      "tag": "neoforge:gravel"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:asphalt_mixture",
+    "count": 8
+  }
+}

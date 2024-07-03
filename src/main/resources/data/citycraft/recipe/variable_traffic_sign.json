@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+
+  "key": {
+    "#": {
+      "tag": "neoforge:ingots/iron"
+    },
+    "X": {
+      "item": "minecraft:redstone_lamp"
+    }
+  },
+
+  "result": {
+    "id": "citycraft:variable_traffic_sign",
+    "count": 1
+  }
+}

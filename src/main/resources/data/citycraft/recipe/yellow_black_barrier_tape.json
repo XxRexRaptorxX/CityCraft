@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+
+  "pattern": [
+    "121",
+    "###"
+  ],
+
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    },
+    "1": {
+      "tag": "neoforge:dyes/yellow"
+    },
+    "2": {
+      "tag": "neoforge:dyes/black"
+    }
+  },
+
+  "result": {
+    "id": "citycraft:yellow_black_barrier_tape",
+    "count": 3
+  }
+}

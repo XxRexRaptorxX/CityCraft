@@ -1,12 +1,12 @@
 package xxrexraptorxx.citycraft.recipes;
 
-import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
+import net.minecraft.world.item.crafting.RecipeInput;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
-public interface IPaintingRecipe extends Recipe<Container> {
+public interface IPaintingRecipe extends Recipe<RecipeInput> {
 
         /**
          * Used to determine if this recipe can fit in a grid of the given width/height

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_asphalt",
+  "ingredients": [
+    {
+      "tag": "neoforge:asphalt"
+    },
+    {
+      "tag": "neoforge:dyes/light_blue"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:light_blue_asphalt"
+  }
+}

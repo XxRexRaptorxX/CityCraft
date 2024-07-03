@@ -1,0 +1,49 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    },
+    {
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "neoforge:buckets/oil"
+      },
+      "type": "neoforge:not"
+    }
+  ],
+
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "tag": "neoforge:sand"
+    },
+    {
+      "tag": "neoforge:gravel"
+    },
+    {
+      "tag": "neoforge:sand"
+    },
+    {
+      "tag": "neoforge:gravel"
+    }
+  ],
+
+  "energy": 50000,
+  "input": {
+    "basePredicate": {
+      "tag": "neoforge:buckets/oil"
+    },
+    "count": 1
+  },
+
+  "results": [
+    {
+      "basePredicate": {
+        "item": "citycraft:asphalt"
+      },
+      "count": 4
+    }
+  ],
+  "time": 100
+}

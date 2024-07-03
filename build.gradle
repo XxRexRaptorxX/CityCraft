@@ -3,26 +3,20 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'net.neoforged.gradle.userdev' version '7.0.55'
-    //id 'org.parchmentmc.librarian.forgegradle' version '1.+' //Parchment
-    //id 'org.spongepowered.mixin' version '0.7.+' //Mixins
+    id 'net.neoforged.gradle.userdev' version '7.0.145'
 }
-
-version = mod_version
-group = "xxrexraptorxx.${mod_id}.main"
 
 
 base {
     archivesName = mod_id
 }
 
-// Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
-minecraft.accessTransformers.file rootProject.file('src/main/resources/META-INF/accesstransformer.cfg')
+//minecraft.accessTransformers.file rootProject.file('src/main/resources/META-INF/accesstransformer.cfg')
+//minecraft.accessTransformers.entry public net.minecraft.client.Minecraft textureManager # textureManager
 
-// Default run configurations.
-// These can be tweaked, removed, or duplicated as needed.
+
 runs {
     // applies to all the run configs below
     configureEach {
@@ -45,37 +39,51 @@ runs {
         // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
         systemProperty 'forge.enabledGameTestNamespaces', project.mod_id
 
-        //Mixin refmaps!
-        //property 'mixin.env.remapRefMap', 'true'
-        //property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+        // Change run folder location
+        workingDirectory project.file('run')
+
+        // Fix mixin dependencies
+        systemProperty 'mixin.env.remapRefMap', 'true'
+        systemProperty 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
     }
 
     server {
         systemProperty 'forge.enabledGameTestNamespaces', project.mod_id
         programArgument '--nogui'
 
-        //Mixin refmaps!
-        //property 'mixin.env.remapRefMap', 'true'
-        //property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+        // Change run folder location
+        workingDirectory project.file('run')
+
+        // Fix mixin dependencies
+        systemProperty 'mixin.env.remapRefMap', 'true'
+        systemProperty 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
     }
 
-    // This run config launches GameTestServer and runs all registered gametests, then exits.
-    // By default, the server will crash when no gametests are provided.
-    // The gametest system is also enabled by default for other run configs under the /test command.
     gameTestServer {
         systemProperty 'forge.enabledGameTestNamespaces', project.mod_id
+        programArgument '--nogui'
+
+        // Change run folder location
+        workingDirectory project.file('run')
+
+        // Fix mixin dependencies
+        systemProperty 'mixin.env.remapRefMap', 'true'
+        systemProperty 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
     }
 
     data {
         // example of overriding the workingDirectory set in configureEach above, uncomment if you want to use it
         // workingDirectory project.file('run-data')
 
+        // Change run folder location
+        workingDirectory project.file('run')
+
+        // Fix mixin dependencies
+        systemProperty 'mixin.env.remapRefMap', 'true'
+        systemProperty 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
         // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
         programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
-
-        //Mixin refmaps!
-        //property 'mixin.env.remapRefMap', 'true'
-        //property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
     }
 }
 
@@ -142,11 +150,11 @@ dependencies {
     compileOnly ("mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}")
     runtimeOnly ("mezz.jei:jei-${mc_version}-neoforge:${jei_version}")
     //JEED
-    //runtimeOnly ("curse.maven:jeed-532286:${jeed_version}")
+    runtimeOnly ("curse.maven:jeed-532286:${jeed_version}")
     //JADE
     runtimeOnly ("curse.maven:jade-324717:${jade_version}")
     //IMMERSIVE ENGINEERING
-    runtimeOnly ("curse.maven:ie-231951:${immersive_engineering_version}")
+    //runtimeOnly ("curse.maven:ie-231951:${immersive_engineering_version}")
     //IMMERSIVE PETROLEUM
     //runtimeOnly ("curse.maven:ip-268250:${immersive_petroleum_version}")
     //MORE MCMETA
@@ -154,6 +162,8 @@ dependencies {
     //runtimeOnly ("curse.maven:moremcmetaemissive-880880:${moremcmeta_emissive_version}")
     //MEKANISM
     runtimeOnly ("curse.maven:mekanism-268560:${mekanism_version}")
+    //ENERGIZED_POWER
+    //runtimeOnly ("curse.maven:energizedpower-5489630:${energized_power_version}")
     //Moonlight Lib
     //runtimeOnly ("curse.maven:moonlight-499980:${moonlight_version}")
     //Supplementaries
@@ -188,21 +198,43 @@ tasks.withType(ProcessResources).configureEach {
     ]
     inputs.properties replaceProperties
 
-    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
+    filesMatching(['META-INF/neoforge.mods.toml', 'pack.mcmeta']) {
         expand replaceProperties + [project: project]
     }
+}
+
+group = "xxrexraptorxx.${mod_id}.main"
+archivesBaseName = "${mod_id}"
+version = "${mc_version}-${mod_version}"
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : mod_id,
+                "Specification-Vendor"    : mod_authors,
+                "Specification-Version"   : project.version,
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Vendor"   : mod_authors,
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+
+    archiveClassifier = ''
+    archiveBaseName = "${mod_name}".replace(" ", "")
+    archiveVersion = "${mc_version}-(v.${mod_version})"
 }
 
 
 publishing {
     publications {
-        register('mavenJava', MavenPublication) {
-            from components.java
+        mavenJava(MavenPublication) {
+            artifact jar
         }
     }
     repositories {
         maven {
-            url "file://${project.projectDir}/repo"
+            url "file://${project.projectDir}/mcmodsrepo"
         }
     }
 }

@@ -1,0 +1,22 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ftbic"
+    }
+  ],
+  "type": "ftbic:macerating",
+  "inputItems": [
+    {
+      "ingredient": {
+        "tag": "neoforge:asphalt"
+      },
+      "count": 1
+    }
+  ],
+  "outputItems": [
+    {
+      "item": "citycraft:asphalt_mixture"
+    }
+  ]
+}
