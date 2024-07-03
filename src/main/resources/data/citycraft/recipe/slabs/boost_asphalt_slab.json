@@ -15,9 +15,13 @@
       "item": "citycraft:asphalt_slab"
     },
     {
-      "type": "neoforge:nbt",
-      "item": "minecraft:lingering_potion",
-      "nbt": "{Potion:'minecraft:speed'}"
+      "type": "neoforge:components",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:long_swiftness"
+        }
+      },
+      "items": "minecraft:lingering_potion"
     },
     {
       "item": "citycraft:asphalt_slab"
