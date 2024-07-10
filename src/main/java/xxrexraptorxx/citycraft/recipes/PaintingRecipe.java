@@ -2,7 +2,6 @@ package xxrexraptorxx.citycraft.recipes;
 
 import com.google.gson.JsonObject;
 import net.minecraft.core.RegistryAccess;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
@@ -11,10 +10,12 @@ import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeHooks;
 import xxrexraptorxx.citycraft.main.CityCraft;
+import xxrexraptorxx.citycraft.registry.ModRecipeSerializers;
 import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
 
 import java.util.stream.Stream;
@@ -38,11 +39,13 @@ public class PaintingRecipe implements IPaintingRecipe {
    /**
     * Used to check if a recipe matches current crafting inventory
     */
+   @Override
    public boolean matches(Container container, Level level) {
       return this.base.test(container.getItem(0)) && this.color.test(container.getItem(1));
    }
 
 
+   @Override
    public ItemStack assemble(Container container, RegistryAccess registryAccess) {
       ItemStack itemstack = this.result.copy();
       CompoundTag compoundtag = container.getItem(0).getTag();
@@ -54,6 +57,7 @@ public class PaintingRecipe implements IPaintingRecipe {
    }
 
 
+   @Override
    public Ingredient getIngredients(Integer slotId) {
       switch (slotId) {
          case 0: return this.base;
@@ -66,33 +70,51 @@ public class PaintingRecipe implements IPaintingRecipe {
    }
 
 
+   @Override
    public ItemStack getResultItem(RegistryAccess registryAccess) {
       return this.result;
    }
 
 
+   @Override
    public boolean isColorIngredient(ItemStack pStack) {
       return this.color.test(pStack);
    }
 
 
+   @Override
    public boolean isBaseIngredient(ItemStack pStack) {
       return this.base.test(pStack);
    }
 
 
+   @Override
    public ResourceLocation getId() {
       return this.id;
    }
 
 
+   @Override
    public RecipeSerializer<?> getSerializer() {
-      return RecipeSerializer.SMITHING_TRANSFORM;
+      return ModRecipeSerializers.PAINTING.get();
    }
 
 
+   @Override
+   public RecipeType<?> getType() {
+      return ModRecipeTypes.PAINTING;
+   }
+
+
+   @Override
    public boolean isIncomplete() {
       return Stream.of(this.color, this.base).anyMatch(ForgeHooks::hasNoElements);
+   }
+
+
+   @Override
+   public boolean isSpecial() {
+      return true;
    }
 
 
@@ -115,6 +137,7 @@ public class PaintingRecipe implements IPaintingRecipe {
 
          return new PaintingRecipe(loc, ingredient, ingredient1, itemstack);
       }
+
 
       public void toNetwork(FriendlyByteBuf buf, PaintingRecipe recipe) {
          recipe.base.toNetwork(buf);
