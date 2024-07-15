@@ -16,16 +16,16 @@
   "type": "immersiveengineering:arc_furnace",
   "additives": [
     {
-      "tag": "c:sand"
+      "tag": "c:sands"
     },
     {
-      "tag": "c:gravel"
+      "tag": "c:gravels"
     },
     {
-      "tag": "c:sand"
+      "tag": "c:sands"
     },
     {
-      "tag": "c:gravel"
+      "tag": "c:gravels"
     }
   ],
 
