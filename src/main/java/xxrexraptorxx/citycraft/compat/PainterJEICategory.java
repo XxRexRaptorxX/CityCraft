@@ -13,6 +13,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeHolder;
+import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
@@ -41,21 +42,16 @@ public class PainterJEICategory implements IRecipeCategory<RecipeHolder<IPaintin
 
 
     @Override
+    public IDrawable getBackground() {
+        return background;
+    }
+
+
+    @Override
     public Component getTitle() {
         return Component.translatable("gui." + References.MODID + ".painting");
     }
 
-
-    @Override
-    public int getHeight() {
-        return background.getHeight();
-    }
-
-
-    @Override
-    public int getWidth() {
-        return background.getWidth();
-    }
 
     @Override
     public IDrawable getIcon() {
