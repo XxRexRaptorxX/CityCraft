@@ -432,7 +432,6 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.GUIDE_CN_SIGN.get());
                 output.accept(ModBlocks.LEFT_DIRECTION_CN_SIGN.get());
                 output.accept(ModBlocks.RIGHT_DIRECTION_CN_SIGN.get());
-
                 output.accept(ModBlocks.THIRTY_ADVISORY_SPEED_CN_SIGN.get());
                 output.accept(ModBlocks.FORTY_ADVISORY_SPEED_CN_SIGN.get());
                 output.accept(ModBlocks.FIFTY_ADVISORY_SPEED_CN_SIGN.get());
@@ -440,7 +439,6 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.PARKING_GARAGE_CN_SIGN.get());
                 output.accept(ModBlocks.HIGHWAY_CN_SIGN.get());
                 output.accept(ModBlocks.HIGHWAY_END_CN_SIGN.get());
-                output.accept(ModBlocks.PARKING_CN_SIGN.get());
                 output.accept(ModBlocks.TELEPHONE_CN_SIGN.get());
                 output.accept(ModBlocks.EMERGENCY_BAY_CN_SIGN.get());
                 output.accept(ModBlocks.GAS_STATION_CN_SIGN.get());
