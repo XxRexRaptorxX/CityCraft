@@ -92,7 +92,7 @@ public class PainterMenu extends AbstractContainerMenu {
                 access.execute((world, pos) -> {
                     long time = world.getGameTime();
                     if (PainterMenu.this.lastSoundTime != time) {
-                        world.playSound(null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS, 1.0F, 1.0F);
+                        world.playSound(null, pos, SoundEvents.BRUSH_GENERIC, SoundSource.BLOCKS, 1.0F, 1.0F);
                         PainterMenu.this.lastSoundTime = time;
                     }
                 });
