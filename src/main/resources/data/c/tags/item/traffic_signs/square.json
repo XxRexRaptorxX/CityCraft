@@ -97,6 +97,22 @@
     "citycraft:right_priority_road_eu_sign",
     "citycraft:truck_route_ahead_eu_sign",
     "citycraft:truck_route_right_eu_sign",
-    "citycraft:truck_route_left_eu_sign"
+    "citycraft:truck_route_left_eu_sign",
+    "citycraft:50_advisory_speed_cn_sign",
+    "citycraft:priority_cn_sign",
+    "citycraft:30_advisory_speed_cn_sign",
+    "citycraft:40_advisory_speed_cn_sign",
+    "citycraft:right_direction_cn_sign",
+    "citycraft:left_direction_cn_sign",
+    "citycraft:guide_cn_sign",
+    "citycraft:camping_cn_sign",
+    "citycraft:info_cn_sign",
+    "citycraft:parking_cn_sign",
+    "citycraft:parking_garage_cn_sign",
+    "citycraft:gas_station_cn_sign",
+    "citycraft:highway_cn_sign",
+    "citycraft:highway_end_cn_sign",
+    "citycraft:emergency_bay_cn_sign",
+    "citycraft:telephone_cn_sign"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:traffic_signs/rectangle"
+  },
+  "color": {
+    "item": "citycraft:dye_mix"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:taxi_eu_sign"
+  }
+}

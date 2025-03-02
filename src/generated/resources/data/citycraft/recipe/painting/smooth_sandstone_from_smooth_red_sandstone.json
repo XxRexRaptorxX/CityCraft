@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "minecraft:smooth_red_sandstone"
+  },
+  "color": {
+    "tag": "c:dyes/yellow"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:smooth_sandstone"
+  }
+}

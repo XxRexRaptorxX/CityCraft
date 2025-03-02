@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:walls/concrete"
+  },
+  "color": {
+    "tag": "c:dyes/lime"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:lime_concrete_wall"
+  }
+}

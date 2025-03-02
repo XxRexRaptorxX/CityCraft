@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:concrete_powder"
+  },
+  "color": {
+    "tag": "c:dyes/black"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:black_concrete_powder"
+  }
+}

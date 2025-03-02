@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:planks"
+  },
+  "color": {
+    "tag": "c:dyes/brown"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:spruce_planks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wool_carpets"
+  },
+  "color": {
+    "tag": "c:dyes/red"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:red_carpet"
+  }
+}

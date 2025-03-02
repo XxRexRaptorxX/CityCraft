@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wooden_trapdoors"
+  },
+  "color": {
+    "tag": "c:dyes/pink"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:cherry_trapdoor"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:signs/wood"
+  },
+  "color": {
+    "tag": "c:dyes/black"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:dark_oak_sign"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:walls/concrete"
+  },
+  "color": {
+    "tag": "c:dyes/blue"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:blue_concrete_wall"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/traffic_sign",
+  "textures": {
+    "back": "citycraft:block/triangle_sign_back",
+    "front": "citycraft:block/side_road_at_right_cn_sign"
+  }
+}

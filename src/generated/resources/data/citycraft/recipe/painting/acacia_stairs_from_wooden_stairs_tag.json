@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:wooden_stairs"
+  },
+  "color": {
+    "tag": "c:dyes/red"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:acacia_stairs"
+  }
+}

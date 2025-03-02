@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "minecraft:warped_pressure_plate"
+  },
+  "color": {
+    "tag": "c:dyes/purple"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:crimson_pressure_plate"
+  }
+}

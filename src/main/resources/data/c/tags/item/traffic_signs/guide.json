@@ -44,8 +44,17 @@
     "citycraft:railway_countdown_marker_80_eu_sign",
     "citycraft:railway_countdown_marker_160_eu_sign",
     "citycraft:railway_countdown_marker_240_eu_sign",
+
     "citycraft:detour_left_us_sign",
     "citycraft:detour_right_us_sign",
-    "citycraft:bicycle_path_us_sign"
+    "citycraft:bicycle_path_us_sign",
+
+    "citycraft:parking_garage_cn_sign",
+    "citycraft:parking_cn_sign",
+    "citycraft:highway_cn_sign",
+    "citycraft:highway_end_cn_sign",
+    "citycraft:guide_cn_sign",
+    "citycraft:right_direction_cn_sign",
+    "citycraft:left_direction_cn_sign"
   ]
 }

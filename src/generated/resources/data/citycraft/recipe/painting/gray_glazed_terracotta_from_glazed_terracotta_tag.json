@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:glazed_terracotta"
+  },
+  "color": {
+    "tag": "c:dyes/gray"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:gray_glazed_terracotta"
+  }
+}

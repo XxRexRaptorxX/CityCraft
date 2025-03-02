@@ -46,8 +46,8 @@ public class TrafficSignBlock extends FenceBlock implements SimpleWaterloggedBlo
 		} else if (BuiltInRegistries.BLOCK.getKey(Block.byItem(stack.getItem())).getPath().contains("_us_sign")) {
 			list.add(Component.literal("[US]").withStyle(ChatFormatting.GRAY));
 
-		} else if (BuiltInRegistries.BLOCK.getKey(Block.byItem(stack.getItem())).getPath().contains("_zh_sign")) {
-			list.add(Component.literal("[ZH]").withStyle(ChatFormatting.GRAY));
+		} else if (BuiltInRegistries.BLOCK.getKey(Block.byItem(stack.getItem())).getPath().contains("_cn_sign")) {
+			list.add(Component.literal("[CN]").withStyle(ChatFormatting.GRAY));
 		}
 	}
 

@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:beds"
+  },
+  "color": {
+    "tag": "c:dyes/light_blue"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:light_blue_bed"
+  }
+}

@@ -47,10 +47,15 @@ public class PainterJEICategory implements IRecipeCategory<RecipeHolder<IPaintin
 
 
     @Override
-    public IDrawable getBackground() {
-        return background;
+    public int getHeight() {
+        return background.getHeight();
     }
 
+
+    @Override
+    public int getWidth() {
+        return background.getWidth();
+    }
 
     @Override
     public IDrawable getIcon() {
