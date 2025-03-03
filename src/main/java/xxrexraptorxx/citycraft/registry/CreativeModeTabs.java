@@ -756,6 +756,12 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.RADIATION_WARNING_SIGN.get());
                 output.accept(ModBlocks.BIOHAZARD_WARNING_SIGN.get());
 
+                output.accept(ModBlocks.MANDATORY_SIGN.get());
+                output.accept(ModBlocks.HELMET_MANDATORY_SIGN.get());
+                output.accept(ModBlocks.GLOVES_MANDATORY_SIGN.get());
+                output.accept(ModBlocks.ARMOR_MANDATORY_SIGN.get());
+                output.accept(ModBlocks.BOOTS_MANDATORY_SIGN.get());
+
                 output.accept(ModBlocks.PROHIBITION_SIGN.get());
                 output.accept(ModBlocks.ENTERING_PROHIBITED_SIGN.get());
                 output.accept(ModBlocks.HEAVY_LOAD_PROHIBITED_SIGN.get());
@@ -766,16 +772,10 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.SMOKING_PROHIBITED_SIGN.get());
                 output.accept(ModBlocks.EATING_PROHIBITED_SIGN.get());
 
-                output.accept(ModBlocks.MANDATORY_SIGN.get());
-                output.accept(ModBlocks.HELMET_MANDATORY_SIGN.get());
-                output.accept(ModBlocks.GLOVES_MANDATORY_SIGN.get());
-                output.accept(ModBlocks.ARMOR_MANDATORY_SIGN.get());
-                output.accept(ModBlocks.BOOTS_MANDATORY_SIGN.get());
-
-                output.accept(ModBlocks.FIRST_AID_SIGN.get());
                 output.accept(ModBlocks.FIRE_ALARM_SIGN.get());
                 output.accept(ModBlocks.FIRE_TELEPHONE_SIGN.get());
                 output.accept(ModBlocks.FIRE_EXTINGUISHER_SIGN.get());
+                output.accept(ModBlocks.FIRST_AID_SIGN.get());
                 output.accept(ModBlocks.ASSEMBLY_POINT_SIGN.get());
                 output.accept(ModBlocks.EMERGENCY_TELEFONE_SIGN.get());
 
