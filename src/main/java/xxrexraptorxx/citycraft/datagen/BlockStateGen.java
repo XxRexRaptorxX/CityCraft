@@ -10,6 +10,7 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import xxrexraptorxx.citycraft.blocks.*;
+import xxrexraptorxx.citycraft.blocks.WallSignBlock;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Helper;
@@ -815,6 +816,47 @@ public class BlockStateGen extends BlockStateProvider {
         getVariantBuilder(block).forAllStates(state -> {
 
             ModelFile model = models().withExistingParent(frontTexture, References.MODID + ":block/traffic_sign")
+                    .texture("front", "block/" + frontTexture)
+                    .texture("back", modLoc("block/" + backTexture));
+
+            Direction dir = state.getValue(AsphaltBlock.FACING);
+            int x = 0;
+            int y = 0;
+
+            switch (dir) {
+                case EAST:
+                    y = 270;
+                    break;
+                case NORTH:
+                    y = 180;
+                    break;
+                case SOUTH:
+                    break;
+                case WEST:
+                    y = 90;
+                    break;
+                default:
+                    break;
+            }
+
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .rotationX(x)
+                    .rotationY(y)
+                    .build();
+        });
+
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void wallSignBlock(WallSignBlock block, SignShape shape) {
+        String frontTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        String backTexture = shape.toString() + "_sign_back";
+
+        getVariantBuilder(block).forAllStates(state -> {
+
+            ModelFile model = models().withExistingParent(frontTexture, References.MODID + ":block/wall_sign")
                     .texture("front", "block/" + frontTexture)
                     .texture("back", modLoc("block/" + backTexture));
 

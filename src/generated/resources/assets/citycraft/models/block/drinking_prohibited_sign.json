@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/wall_sign",
+  "textures": {
+    "back": "citycraft:block/round_sign_back",
+    "front": "citycraft:block/drinking_prohibited_sign"
+  }
+}

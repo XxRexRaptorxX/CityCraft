@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/wall_sign",
+  "textures": {
+    "back": "citycraft:block/rectangle_sign_back",
+    "front": "citycraft:block/exit_sign"
+  }
+}
