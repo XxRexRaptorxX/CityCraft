@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:prohibition_sign",
+    "citycraft:entering_prohibited_sign",
+    "citycraft:heavy_load_prohibited_sign",
+    "citycraft:drinking_prohibited_sign",
+    "citycraft:phones_prohibited_sign",
+    "citycraft:pedestrians_prohibited_sign",
+    "citycraft:unauthorised_prohibited_sign",
+    "citycraft:smoking_prohibited_sign",
+    "citycraft:eating_prohibited_sign",
+    "citycraft:mandatory_sign",
+    "citycraft:helmet_mandatory_sign",
+    "citycraft:gloves_mandatory_sign",
+    "citycraft:armor_mandatory_sign",
+    "citycraft:boots_mandatory_sign"
+  ]
+}

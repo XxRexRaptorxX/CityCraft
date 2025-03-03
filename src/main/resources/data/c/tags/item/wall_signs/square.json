@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:first_aid_sign",
+    "citycraft:fire_alarm_sign",
+    "citycraft:fire_telephone_sign",
+    "citycraft:fire_extinguisher_sign",
+    "citycraft:assembly_point_sign",
+    "citycraft:emergency_telefone_sign",
+    "citycraft:emergency_exit_sign"
+  ]
+}

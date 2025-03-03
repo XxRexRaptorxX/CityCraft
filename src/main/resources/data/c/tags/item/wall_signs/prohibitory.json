@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:prohibition_sign",
+    "citycraft:entering_prohibited_sign",
+    "citycraft:heavy_load_prohibited_sign",
+    "citycraft:drinking_prohibited_sign",
+    "citycraft:phones_prohibited_sign",
+    "citycraft:pedestrians_prohibited_sign",
+    "citycraft:unauthorised_prohibited_sign",
+    "citycraft:smoking_prohibited_sign",
+    "citycraft:eating_prohibited_sign"
+  ]
+}

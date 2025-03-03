@@ -83,7 +83,6 @@ public class CreativeModeTabs {
                 output.accept(ModItems.ASPHALT_MIXTURE.get());
                 output.accept(ModItems.DYE_MIX.get());
                 output.accept(ModItems.COAL_TAR.get());
-
             }).build());
 
 
@@ -738,6 +737,56 @@ public class CreativeModeTabs {
     //                output.accept(ModBlocks.CROSSBUCK_US_SIGN.get());
     //            }
     //        }).build());
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WALL_SIGNS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".wall_signs_tab", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup." + References.MODID + ".wall_signs_tab"))
+            .icon(() -> new ItemStack(ModBlocks.MONSTER_WARNING_SIGN.get()))
+            .displayItems((params, output) -> {
+
+                output.accept(ModBlocks.WARNING_SIGN.get());
+                output.accept(ModBlocks.MONSTER_WARNING_SIGN.get());
+                output.accept(ModBlocks.TOXIC_WARNING_SIGN.get());
+                output.accept(ModBlocks.VOLTAGE_WARNING_SIGN.get());
+                output.accept(ModBlocks.FIRE_WARNING_SIGN.get());
+                output.accept(ModBlocks.LASER_WARNING_SIGN.get());
+                output.accept(ModBlocks.HOT_WARNING_SIGN.get());
+                output.accept(ModBlocks.MAGNETIC_WARNING_SIGN.get());
+                output.accept(ModBlocks.EXPLOSION_WARNING_SIGN.get());
+                output.accept(ModBlocks.GAS_CYLINDER_WARNING_SIGN.get());
+                output.accept(ModBlocks.RADIATION_WARNING_SIGN.get());
+                output.accept(ModBlocks.BIOHAZARD_WARNING_SIGN.get());
+
+                output.accept(ModBlocks.PROHIBITION_SIGN.get());
+                output.accept(ModBlocks.ENTERING_PROHIBITED_SIGN.get());
+                output.accept(ModBlocks.HEAVY_LOAD_PROHIBITED_SIGN.get());
+                output.accept(ModBlocks.DRINKING_PROHIBITED_SIGN.get());
+                output.accept(ModBlocks.PHONES_PROHIBITED_SIGN.get());
+                output.accept(ModBlocks.PEDESTRIANS_PROHIBITED_SIGN.get());
+                output.accept(ModBlocks.UNAUTHORISED_PROHIBITED_SIGN.get());
+                output.accept(ModBlocks.SMOKING_PROHIBITED_SIGN.get());
+                output.accept(ModBlocks.EATING_PROHIBITED_SIGN.get());
+
+                output.accept(ModBlocks.MANDATORY_SIGN.get());
+                output.accept(ModBlocks.HELMET_MANDATORY_SIGN.get());
+                output.accept(ModBlocks.GLOVES_MANDATORY_SIGN.get());
+                output.accept(ModBlocks.ARMOR_MANDATORY_SIGN.get());
+                output.accept(ModBlocks.BOOTS_MANDATORY_SIGN.get());
+
+                output.accept(ModBlocks.FIRST_AID_SIGN.get());
+                output.accept(ModBlocks.FIRE_ALARM_SIGN.get());
+                output.accept(ModBlocks.FIRE_TELEPHONE_SIGN.get());
+                output.accept(ModBlocks.FIRE_EXTINGUISHER_SIGN.get());
+                output.accept(ModBlocks.ASSEMBLY_POINT_SIGN.get());
+                output.accept(ModBlocks.EMERGENCY_TELEFONE_SIGN.get());
+
+                output.accept(ModBlocks.EMERGENCY_EXIT_SIGN.get());
+                output.accept(ModBlocks.EMERGENCY_EXIT_LEFT_SIGN.get());
+                output.accept(ModBlocks.EMERGENCY_EXIT_RIGHT_SIGN.get());
+                output.accept(ModBlocks.EMERGENCY_EXIT_AHEAD_SIGN.get());
+                output.accept(ModBlocks.EMERGENCY_EXIT_DOWNWARDS_SIGN.get());
+                output.accept(ModBlocks.EXIT_SIGN.get());
+            }).build());
+
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TRAFFIC_LIGHTS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".traffic_lights_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".traffic_lights_tab"))

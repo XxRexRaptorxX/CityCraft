@@ -661,6 +661,45 @@ public class BlockStateGen extends BlockStateProvider {
         trafficSignBlock(ModBlocks.OCTAGON_SIGN.get(), SignShape.OCTAGON);
         trafficSignBlock(ModBlocks.BAKE_SIGN.get(), SignShape.BAKE);
 
+        wallSignBlock(ModBlocks.WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.MONSTER_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.TOXIC_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.VOLTAGE_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.FIRE_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.LASER_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.HOT_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.MAGNETIC_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.EXPLOSION_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.GAS_CYLINDER_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.RADIATION_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.BIOHAZARD_WARNING_SIGN.get(), SignShape.TRIANGLE);
+        wallSignBlock(ModBlocks.PROHIBITION_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.ENTERING_PROHIBITED_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.HEAVY_LOAD_PROHIBITED_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.DRINKING_PROHIBITED_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.PHONES_PROHIBITED_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.PEDESTRIANS_PROHIBITED_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.UNAUTHORISED_PROHIBITED_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.SMOKING_PROHIBITED_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.EATING_PROHIBITED_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.MANDATORY_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.HELMET_MANDATORY_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.GLOVES_MANDATORY_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.ARMOR_MANDATORY_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.BOOTS_MANDATORY_SIGN.get(), SignShape.ROUND);
+        wallSignBlock(ModBlocks.FIRST_AID_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.FIRE_ALARM_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.FIRE_TELEPHONE_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.FIRE_EXTINGUISHER_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.ASSEMBLY_POINT_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.EMERGENCY_TELEFONE_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.EMERGENCY_EXIT_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.EMERGENCY_EXIT_LEFT_SIGN.get(), SignShape.RECTANGLE);
+        wallSignBlock(ModBlocks.EMERGENCY_EXIT_RIGHT_SIGN.get(), SignShape.RECTANGLE);
+        wallSignBlock(ModBlocks.EMERGENCY_EXIT_AHEAD_SIGN.get(), SignShape.RECTANGLE);
+        wallSignBlock(ModBlocks.EMERGENCY_EXIT_DOWNWARDS_SIGN.get(), SignShape.RECTANGLE);
+        wallSignBlock(ModBlocks.EXIT_SIGN.get(), SignShape.RECTANGLE);
+
         fenceBlock(((FenceBlock) ModBlocks.IRON_FENCE.get()), blockTexture(ModBlocks.IRON_POLE.get()));
 
         wallBlock(((WallBlock) ModBlocks.BLACK_CONCRETE_WALL.get()), blockTexture(Blocks.BLACK_CONCRETE));

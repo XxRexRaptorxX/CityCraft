@@ -12,7 +12,7 @@ import xxrexraptorxx.citycraft.utils.Config;
 
 /**
  * @author XxRexRaptorxX (RexRaptor)
- * @projectPage https://www.curseforge.com/minecraft/mc-mods/city-craft
+ * @projectPage <a href="https://www.curseforge.com/minecraft/mc-mods/city-craft">...</a>
  **/
 @Mod(References.MODID)
 public class CityCraft {

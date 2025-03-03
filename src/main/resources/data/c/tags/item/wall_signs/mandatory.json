@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:mandatory_sign",
+    "citycraft:helmet_mandatory_sign",
+    "citycraft:gloves_mandatory_sign",
+    "citycraft:armor_mandatory_sign",
+    "citycraft:boots_mandatory_sign"
+  ]
+}

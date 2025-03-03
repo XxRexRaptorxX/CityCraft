@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:emergency_exit_left_sign",
+    "citycraft:emergency_exit_right_sign",
+    "citycraft:emergency_exit_ahead_sign",
+    "citycraft:emergency_exit_downwards_sign",
+    "citycraft:exit_sign"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#c:wall_signs/rectangle",
+    "#c:wall_signs/round",
+    "#c:wall_signs/square",
+    "#c:wall_signs/triangle"
+  ]
+}

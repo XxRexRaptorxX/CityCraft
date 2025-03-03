@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:warning_sign",
+    "citycraft:monster_warning_sign",
+    "citycraft:toxic_warning_sign",
+    "citycraft:voltage_warning_sign",
+    "citycraft:fire_warning_sign",
+    "citycraft:laser_warning_sign",
+    "citycraft:hot_warning_sign",
+    "citycraft:magnetic_warning_sign",
+    "citycraft:explosion_warning_sign",
+    "citycraft:gas_cylinder_warning_sign",
+    "citycraft:radiation_warning_sign",
+    "citycraft:biohazard_warning_sign"
+  ]
+}
