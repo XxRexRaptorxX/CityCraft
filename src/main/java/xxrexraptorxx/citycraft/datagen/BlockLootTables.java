@@ -5,11 +5,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
-import java.util.Collections;
-import java.util.Iterator;
 import java.util.Set;
 
 public class BlockLootTables extends BlockLootSubProvider {
@@ -601,7 +598,7 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STOP_CN_SIGN.get());
         this.dropSelf(ModBlocks.T_INTERSECTION_CN_SIGN.get());
         this.dropSelf(ModBlocks.TELEPHONE_CN_SIGN.get());
-                this.dropSelf(ModBlocks.UNEVEN_ROAD_CN_SIGN.get());
+        this.dropSelf(ModBlocks.UNEVEN_ROAD_CN_SIGN.get());
 
         this.dropSelf(ModBlocks.ROUND_SIGN.get());
         this.dropSelf(ModBlocks.TRIANGLE_SIGN.get());
@@ -778,7 +775,7 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TOXIC_WARNING_SIGN.get());
         this.dropSelf(ModBlocks.UNAUTHORISED_PROHIBITED_SIGN.get());
         this.dropSelf(ModBlocks.VOLTAGE_WARNING_SIGN.get());
-                this.dropSelf(ModBlocks.WARNING_SIGN.get());
+        this.dropSelf(ModBlocks.WARNING_SIGN.get());
 
         this.dropSelf(ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get());
         this.dropSelf(ModBlocks.BICYCLE_TRIPPLE_TRAFFIC_LIGHT.get());
