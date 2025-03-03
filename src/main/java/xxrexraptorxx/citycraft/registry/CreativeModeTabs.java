@@ -88,7 +88,7 @@ public class CreativeModeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SIGN_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".signs", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + ".signs_tab"))
-            .icon(() -> new ItemStack(ModBlocks.CREEPER_US_SIGN.get()))
+            .icon(() -> new ItemStack(ModBlocks.LEFT_DIAGONAL_ARROW_YELLOW_US_SIGN.get()))
             .withTabsBefore(MAIN_TAB.getId())
             .displayItems((params, output) -> {
                 //if (!Config.SPLIT_TRAFFIC_SIGN_TAB.get()) {
