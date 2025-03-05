@@ -168,6 +168,9 @@ dependencies {
     //runtimeOnly ("curse.maven:moonlight-499980:${moonlight_version}")
     //Supplementaries
     //runtimeOnly ("curse.maven:supplementaries-412082:${supplementaries_version}")
+    //Shimmer
+    //runtimeOnly ("curse.maven:shimmer-627824:${shimmer_version}")
+
 }
 
 

@@ -66,6 +66,23 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.GREEN_CONCRETE_WALL.get());
                 output.accept(ModBlocks.RED_CONCRETE_WALL.get());
 
+                output.accept(ModBlocks.BLACK_LAMP.get());
+                output.accept(ModBlocks.WHITE_LAMP.get());
+                output.accept(ModBlocks.ORANGE_LAMP.get());
+                output.accept(ModBlocks.MAGENTA_LAMP.get());
+                output.accept(ModBlocks.LIGHT_BLUE_LAMP.get());
+                output.accept(ModBlocks.YELLOW_LAMP.get());
+                output.accept(ModBlocks.LIME_LAMP.get());
+                output.accept(ModBlocks.PINK_LAMP.get());
+                output.accept(ModBlocks.GRAY_LAMP.get());
+                output.accept(ModBlocks.LIGHT_GRAY_LAMP.get());
+                output.accept(ModBlocks.CYAN_LAMP.get());
+                output.accept(ModBlocks.PURPLE_LAMP.get());
+                output.accept(ModBlocks.BLUE_LAMP.get());
+                output.accept(ModBlocks.BROWN_LAMP.get());
+                output.accept(ModBlocks.GREEN_LAMP.get());
+                output.accept(ModBlocks.RED_LAMP.get());
+
                 output.accept(ModBlocks.DRAIN_COVER.get());
                 output.accept(ModBlocks.DRAIN_COVER_GRID.get());
 

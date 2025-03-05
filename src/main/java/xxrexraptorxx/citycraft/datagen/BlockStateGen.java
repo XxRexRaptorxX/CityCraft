@@ -3,6 +3,7 @@ package xxrexraptorxx.citycraft.datagen;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -781,6 +782,24 @@ public class BlockStateGen extends BlockStateProvider {
         trafficLights(ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get());
         trafficLights(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
         trafficLights(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get());
+
+        customLamp(ModBlocks.BLACK_LAMP.get());
+        customLamp(ModBlocks.WHITE_LAMP.get());
+        customLamp(ModBlocks.ORANGE_LAMP.get());
+        customLamp(ModBlocks.MAGENTA_LAMP.get());
+        customLamp(ModBlocks.LIGHT_BLUE_LAMP.get());
+        customLamp(ModBlocks.YELLOW_LAMP.get());
+        customLamp(ModBlocks.LIME_LAMP.get());
+        customLamp(ModBlocks.PINK_LAMP.get());
+        customLamp(ModBlocks.GRAY_LAMP.get());
+        customLamp(ModBlocks.LIGHT_GRAY_LAMP.get());
+        customLamp(ModBlocks.CYAN_LAMP.get());
+        customLamp(ModBlocks.PURPLE_LAMP.get());
+        customLamp(ModBlocks.BLUE_LAMP.get());
+        customLamp(ModBlocks.BROWN_LAMP.get());
+        customLamp(ModBlocks.GREEN_LAMP.get());
+        customLamp(ModBlocks.RED_LAMP.get());
+
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -806,6 +825,24 @@ public class BlockStateGen extends BlockStateProvider {
     private void makeSimpleBlock(Block block) {
         simpleBlock(block);
         makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void customLamp(Block block) {
+        String texture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        getVariantBuilder(block).forAllStates(state -> {
+            if(state.getValue(RedstoneLampBlock.LIT)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(texture + "_on",
+                        ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture + "_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(texture,
+                        ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)))};
+            }
+        });
+
+        simpleBlockItem(block, models().cubeAll(texture,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)));
     }
 
 

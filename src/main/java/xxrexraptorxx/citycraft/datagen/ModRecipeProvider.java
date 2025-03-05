@@ -1,7 +1,6 @@
 package xxrexraptorxx.citycraft.datagen;
 
 
-import com.google.gson.JsonObject;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -9,11 +8,11 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.DyeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
@@ -23,9 +22,7 @@ import xxrexraptorxx.citycraft.recipes.PaintingRecipe;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.registry.ModItems;
 import xxrexraptorxx.citycraft.registry.ModTags;
-import xxrexraptorxx.citycraft.utils.SignShape;
 
-import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
@@ -1475,7 +1472,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get(), ModBlocks.NO_TRUCK_PASSING_EU_SIGN.get(), output);
         variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get(), ModBlocks.ROADWORKS_EU_SIGN.get(), output);
         variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get(), ModBlocks.SLIPPERINESS_EU_SIGN.get(), output);
-        
+
+        simpleColorRecipes(ModBlocks.BLACK_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.WHITE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.ORANGE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.MAGENTA_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.LIGHT_BLUE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.YELLOW_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.LIME_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.PINK_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.GRAY_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.LIGHT_GRAY_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.CYAN_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.PURPLE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.BLUE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.BROWN_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.GREEN_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        simpleColorRecipes(ModBlocks.RED_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
     }
 
 
@@ -1504,6 +1517,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.VARIABLE_TRAFFIC_SIGN.get())
                 .unlockedBy(getHasName(input), has(input))
                 .group("variable_traffic_signs")
+                .save(output);
+    }
+
+
+    protected static void simpleColorRecipes(Block result, TagKey<Item> input, RecipeOutput output) {
+        for (DyeColor color : DyeColor.values()) {
+            Item dye = DyeItem.byColor(color);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1)
+                    .requires(input)
+                    .requires(dye)
+                    .group(input.toString())
+                    .save(output);
+
+            paintingRecipes(result, input, dye, output);
+        }
+    }
+
+
+
+    protected static void simpleShapelessRecipes(Block result, TagKey<Item> firstInput, Item secondInput, RecipeOutput output, String group) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1)
+                .requires(firstInput)
+                .requires(secondInput)
+                .unlockedBy(getHasName(secondInput), has(secondInput))
+                .group(group)
                 .save(output);
     }
 

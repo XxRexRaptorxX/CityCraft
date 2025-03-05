@@ -784,5 +784,22 @@
     "block.citycraft.straight_double_traffic_light":  "Zweifeldige Nichtabbieger Ampel",
     "block.citycraft.straight_tripple_traffic_light": "Dreifeldige Nichtabbieger Ampel",
     "block.citycraft.train_signal_light":  "Zug Signal Ampel",
-    "block.citycraft.tripple_traffic_light": "Dreifeldige Ampel"
+    "block.citycraft.tripple_traffic_light": "Dreifeldige Ampel",
+
+    "block.citycraft.black_lamp":  "Schwarze Lampe",
+    "block.citycraft.white_lamp": "Weiße Lampe",
+    "block.citycraft.orange_lamp":  "Orange Lampe",
+    "block.citycraft.magenta_lamp": "Magenta Lampe",
+    "block.citycraft.light_blue_lamp":  "Hellblaue Lampe",
+    "block.citycraft.yellow_lamp": "Gelbe Lampe",
+    "block.citycraft.lime_lamp":  "Hellgrüne Lampe",
+    "block.citycraft.pink_lamp": "Rosa Lampe",
+    "block.citycraft.gray_lamp":  "Graue Lampe",
+    "block.citycraft.light_gray_lamp": "Hellgraue Lampe",
+    "block.citycraft.cyan_lamp":  "Türkise Lampe",
+    "block.citycraft.purple_lamp": "Violette Lampe",
+    "block.citycraft.blue_lamp":  "Blaue Lampe",
+    "block.citycraft.brown_lamp": "Braune Lampe",
+    "block.citycraft.green_lamp":  "Grüne Lampe",
+    "block.citycraft.red_lamp": "Rote Lampe"
 }

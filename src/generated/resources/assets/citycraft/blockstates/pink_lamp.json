@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "citycraft:block/pink_lamp"
+    },
+    "lit=true": {
+      "model": "citycraft:block/pink_lamp_on"
+    }
+  }
+}

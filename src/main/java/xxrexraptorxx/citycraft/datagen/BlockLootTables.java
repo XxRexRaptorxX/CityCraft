@@ -793,6 +793,23 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get());
         this.dropSelf(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
         this.dropSelf(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get());
+
+        this.dropSelf(ModBlocks.BLACK_LAMP.get());
+        this.dropSelf(ModBlocks.WHITE_LAMP.get());
+        this.dropSelf(ModBlocks.ORANGE_LAMP.get());
+        this.dropSelf(ModBlocks.MAGENTA_LAMP.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_LAMP.get());
+        this.dropSelf(ModBlocks.YELLOW_LAMP.get());
+        this.dropSelf(ModBlocks.LIME_LAMP.get());
+        this.dropSelf(ModBlocks.PINK_LAMP.get());
+        this.dropSelf(ModBlocks.GRAY_LAMP.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_LAMP.get());
+        this.dropSelf(ModBlocks.CYAN_LAMP.get());
+        this.dropSelf(ModBlocks.PURPLE_LAMP.get());
+        this.dropSelf(ModBlocks.BLUE_LAMP.get());
+        this.dropSelf(ModBlocks.BROWN_LAMP.get());
+        this.dropSelf(ModBlocks.GREEN_LAMP.get());
+        this.dropSelf(ModBlocks.RED_LAMP.get());
     }
 
 

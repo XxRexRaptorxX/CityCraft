@@ -785,7 +785,24 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get(),
                         ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get(),
                         ModBlocks.TRAIN_SIGNAL_LIGHT.get(),
-                        ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get()
+                        ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get(),
+
+                        ModBlocks.BLACK_LAMP.get(),
+                        ModBlocks.WHITE_LAMP.get(),
+                        ModBlocks.ORANGE_LAMP.get(),
+                        ModBlocks.MAGENTA_LAMP.get(),
+                        ModBlocks.LIGHT_BLUE_LAMP.get(),
+                        ModBlocks.YELLOW_LAMP.get(),
+                        ModBlocks.LIME_LAMP.get(),
+                        ModBlocks.PINK_LAMP.get(),
+                        ModBlocks.GRAY_LAMP.get(),
+                        ModBlocks.LIGHT_GRAY_LAMP.get(),
+                        ModBlocks.CYAN_LAMP.get(),
+                        ModBlocks.PURPLE_LAMP.get(),
+                        ModBlocks.BLUE_LAMP.get(),
+                        ModBlocks.BROWN_LAMP.get(),
+                        ModBlocks.GREEN_LAMP.get(),
+                        ModBlocks.RED_LAMP.get()
                 );
 
 

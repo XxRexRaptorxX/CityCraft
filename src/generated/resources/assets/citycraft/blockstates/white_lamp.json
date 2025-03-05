@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "citycraft:block/white_lamp"
+    },
+    "lit=true": {
+      "model": "citycraft:block/white_lamp_on"
+    }
+  }
+}

@@ -1,5 +1,5 @@
-// 1.21	2025-03-03T21:58:37.1301471	Tags for minecraft:block mod id citycraft
+// 1.21	2025-03-05T17:27:06.043387	Tags for minecraft:block mod id citycraft
 94ba0098c5aced5815411f47a64a017f29885004 data/minecraft/tags/block/fences.json
-cecd1d2cf37f44962afbbefc659c8a735d5de01d data/minecraft/tags/block/mineable/pickaxe.json
+ccfe99b8c24ccd41fc1c14b8b1de5ed38441b09a data/minecraft/tags/block/mineable/pickaxe.json
 e8498d22c1ab09c2c2d9e4b71667404849b49f7b data/minecraft/tags/block/slabs.json
 9358f50b1d078facbaba4686e68982789fb3d438 data/minecraft/tags/block/walls.json

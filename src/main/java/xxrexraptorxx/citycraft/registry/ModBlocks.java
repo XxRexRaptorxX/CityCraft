@@ -1,6 +1,7 @@
 package xxrexraptorxx.citycraft.registry;
 
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -813,6 +814,22 @@ public class ModBlocks {
     public static final DeferredBlock<TrafficLightBlock> TRAIN_SIGNAL_LIGHT = registerBlock("train_signal_light", TrafficLightBlock::new);
     public static final DeferredBlock<TrafficLightBlock> TRIPPLE_TRAFFIC_LIGHT = registerBlock("tripple_traffic_light", TrafficLightBlock::new);
 
+    public static final DeferredBlock<RedstoneLampBlock> BLACK_LAMP = registerBlock("black_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.BLACK)));
+    public static final DeferredBlock<RedstoneLampBlock> WHITE_LAMP = registerBlock("white_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.WHITE)));
+    public static final DeferredBlock<RedstoneLampBlock> ORANGE_LAMP = registerBlock("orange_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.ORANGE)));
+    public static final DeferredBlock<RedstoneLampBlock> MAGENTA_LAMP = registerBlock("magenta_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.MAGENTA)));
+    public static final DeferredBlock<RedstoneLampBlock> LIGHT_BLUE_LAMP = registerBlock("light_blue_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.LIGHT_BLUE)));
+    public static final DeferredBlock<RedstoneLampBlock> YELLOW_LAMP = registerBlock("yellow_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.YELLOW)));
+    public static final DeferredBlock<RedstoneLampBlock> LIME_LAMP = registerBlock("lime_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.LIME)));
+    public static final DeferredBlock<RedstoneLampBlock> PINK_LAMP = registerBlock("pink_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.PINK)));
+    public static final DeferredBlock<RedstoneLampBlock> GRAY_LAMP = registerBlock("gray_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.GRAY)));
+    public static final DeferredBlock<RedstoneLampBlock> LIGHT_GRAY_LAMP = registerBlock("light_gray_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.LIGHT_GRAY)));
+    public static final DeferredBlock<RedstoneLampBlock> CYAN_LAMP = registerBlock("cyan_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.CYAN)));
+    public static final DeferredBlock<RedstoneLampBlock> PURPLE_LAMP = registerBlock("purple_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.PURPLE)));
+    public static final DeferredBlock<RedstoneLampBlock> BLUE_LAMP = registerBlock("blue_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.BLUE)));
+    public static final DeferredBlock<RedstoneLampBlock> BROWN_LAMP = registerBlock("brown_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.BROWN)));
+    public static final DeferredBlock<RedstoneLampBlock> GREEN_LAMP = registerBlock("green_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.GREEN)));
+    public static final DeferredBlock<RedstoneLampBlock> RED_LAMP = registerBlock("red_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.RED)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
