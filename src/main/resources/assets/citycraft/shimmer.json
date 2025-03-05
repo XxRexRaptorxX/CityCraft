@@ -19,22 +19,24 @@
   },
 
   "LightBlock": [
-    { "block": "citycraft:black_lamp", "state": { "lit": true }, "color": "#black", "radius": 16 },
-    { "block": "citycraft:white_lamp", "state": { "lit": true }, "color":  "#white", "radius": 16 },
-    { "block": "citycraft:orange_lamp", "state": { "lit": true }, "color":  "#orange", "radius": 16 },
-    { "block": "citycraft:magenta_lamp", "state": { "lit": true }, "color":  "#magenta", "radius": 16 },
-    { "block": "citycraft:light_blue_lamp", "state": { "lit": true }, "color":  "#light_blue", "radius": 16 },
-    { "block": "citycraft:yellow_lamp", "state": { "lit": true }, "color":  "#yellow", "radius": 16 },
-    { "block": "citycraft:lime_lamp", "state": { "lit": true }, "color":  "#lime", "radius": 16 },
-    { "block": "citycraft:pink_lamp", "state": { "lit": true }, "color":  "#pink", "radius": 16 },
-    { "block": "citycraft:gray_lamp", "state": { "lit": true }, "color":  "#gray", "radius": 16 },
-    { "block": "citycraft:light_gray_lamp", "state": { "lit": true }, "color":  "#light_gray", "radius": 16 },
-    { "block": "citycraft:cyan_lamp", "state": { "lit": true }, "color":  "#cyan", "radius": 16 },
-    { "block": "citycraft:purple_lamp", "state": { "lit": true }, "color":  "#purple", "radius": 16 },
-    { "block": "citycraft:blue_lamp", "state": { "lit": true }, "color":  "#blue", "radius": 16 },
-    { "block": "citycraft:brown_lamp", "state": { "lit": true }, "color":  "#brown", "radius": 16 },
-    { "block": "citycraft:green_lamp", "state": { "lit": true }, "color":  "#green", "radius": 16 },
-    { "block": "citycraft:red_lamp", "state": { "lit": true }, "color":  "#red", "radius":  16 }
+    { "block": "citycraft:black_lamp", "state": { "lit": true }, "color": "#black", "radius": 15 },
+    { "block": "citycraft:white_lamp", "state": { "lit": true }, "color":  "#white", "radius": 15 },
+    { "block": "citycraft:orange_lamp", "state": { "lit": true }, "color":  "#orange", "radius": 15 },
+    { "block": "citycraft:magenta_lamp", "state": { "lit": true }, "color":  "#magenta", "radius": 15 },
+    { "block": "citycraft:light_blue_lamp", "state": { "lit": true }, "color":  "#light_blue", "radius": 15 },
+    { "block": "citycraft:yellow_lamp", "state": { "lit": true }, "color":  "#yellow", "radius": 15 },
+    { "block": "citycraft:lime_lamp", "state": { "lit": true }, "color":  "#lime", "radius": 15 },
+    { "block": "citycraft:pink_lamp", "state": { "lit": true }, "color":  "#pink", "radius": 15 },
+    { "block": "citycraft:gray_lamp", "state": { "lit": true }, "color":  "#gray", "radius": 15 },
+    { "block": "citycraft:light_gray_lamp", "state": { "lit": true }, "color":  "#light_gray", "radius": 15 },
+    { "block": "citycraft:cyan_lamp", "state": { "lit": true }, "color":  "#cyan", "radius": 15 },
+    { "block": "citycraft:purple_lamp", "state": { "lit": true }, "color":  "#purple", "radius": 15 },
+    { "block": "citycraft:blue_lamp", "state": { "lit": true }, "color":  "#blue", "radius": 15 },
+    { "block": "citycraft:brown_lamp", "state": { "lit": true }, "color":  "#brown", "radius": 15 },
+    { "block": "citycraft:green_lamp", "state": { "lit": true }, "color":  "#green", "radius": 15 },
+    { "block": "citycraft:red_lamp", "state": { "lit": true }, "color":  "#red", "radius": 15 },
+
+    { "block": "citycraft:street_lantern_panel", "state": { "lit": true }, "color":  "#white", "radius": 15 }
   ],
 
   "LightItem": [ ]
