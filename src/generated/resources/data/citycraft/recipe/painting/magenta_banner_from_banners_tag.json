@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:banners"
+  },
+  "color": {
+    "tag": "c:dyes/magenta"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:magenta_banner"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:chains"
+  },
+  "color": {
+    "tag": "c:dyes/gray"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:chain"
+  }
+}

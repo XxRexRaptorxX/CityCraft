@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "variable_traffic_signs",
+  "ingredients": [
+    {
+      "item": "citycraft:120_speed_eu_sign"
+    },
+    {
+      "item": "citycraft:variable_traffic_sign"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:variable_traffic_sign_hundred_twenty_speed_limit"
+  }
+}

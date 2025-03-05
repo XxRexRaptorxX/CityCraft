@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "color_rasphalt_slab",
+  "ingredients": [
+    {
+      "tag": "citycraft:colored_lamps"
+    },
+    {
+      "tag": "c:dyes/red"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:red_lamp"
+  }
+}

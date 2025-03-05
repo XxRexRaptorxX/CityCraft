@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "citycraft:asphalt"
+  },
+  "color": {
+    "tag": "c:dyes/yellow"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:asphalt_with_yellow_broken_diagonal_line"
+  }
+}

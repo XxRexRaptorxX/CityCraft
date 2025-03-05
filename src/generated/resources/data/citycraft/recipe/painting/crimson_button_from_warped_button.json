@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "minecraft:warped_button"
+  },
+  "color": {
+    "tag": "c:dyes/purple"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:crimson_button"
+  }
+}

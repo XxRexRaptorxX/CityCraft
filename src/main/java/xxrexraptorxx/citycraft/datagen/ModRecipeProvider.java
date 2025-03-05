@@ -1473,22 +1473,39 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get(), ModBlocks.ROADWORKS_EU_SIGN.get(), output);
         variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get(), ModBlocks.SLIPPERINESS_EU_SIGN.get(), output);
 
-        simpleColorRecipes(ModBlocks.BLACK_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.WHITE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.ORANGE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.MAGENTA_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.LIGHT_BLUE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.YELLOW_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.LIME_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.PINK_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.GRAY_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.LIGHT_GRAY_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.CYAN_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.PURPLE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.BLUE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.BROWN_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.GREEN_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
-        simpleColorRecipes(ModBlocks.RED_LAMP.get(), ModTags.COLORED_LAMPS_TAG, output);
+        paintingRecipes(ModBlocks.BLACK_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.WHITE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ORANGE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.MAGENTA_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.LIGHT_BLUE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.YELLOW_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.LIME_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.PINK_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.GRAY_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.LIGHT_GRAY_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.CYAN_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.PURPLE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.BLUE_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.BROWN_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.GREEN_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.RED_LAMP.get(), ModTags.COLORED_LAMPS_TAG, Tags.Items.DYES_RED, output);
+
+        lampRecipes(ModBlocks.BLACK_LAMP.get(), Blocks.BLACK_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.WHITE_LAMP.get(), Blocks.WHITE_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.ORANGE_LAMP.get(), Blocks.ORANGE_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.MAGENTA_LAMP.get(), Blocks.MAGENTA_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.LIGHT_BLUE_LAMP.get(), Blocks.LIGHT_BLUE_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.YELLOW_LAMP.get(), Blocks.YELLOW_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.LIME_LAMP.get(), Blocks.LIME_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.PINK_LAMP.get(), Blocks.PINK_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.GRAY_LAMP.get(), Blocks.GRAY_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.LIGHT_GRAY_LAMP.get(), Blocks.LIGHT_GRAY_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.CYAN_LAMP.get(), Blocks.CYAN_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.PURPLE_LAMP.get(), Blocks.PURPLE_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.BLUE_LAMP.get(), Blocks.BLUE_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.BROWN_LAMP.get(), Blocks.BROWN_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.GREEN_LAMP.get(), Blocks.GREEN_STAINED_GLASS_PANE, output);
+        lampRecipes(ModBlocks.RED_LAMP.get(), Blocks.RED_STAINED_GLASS_PANE, output);
     }
 
 
@@ -1511,6 +1528,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
 
+    protected static void lampRecipes(Block result, Block glassInput, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 1)
+                .pattern(" # ")
+                .pattern("#X#")
+                .pattern(" # ")
+                .define('X', Blocks.REDSTONE_LAMP)
+                .define('#', glassInput)
+                .unlockedBy(getHasName(Blocks.REDSTONE_LAMP), has(Blocks.REDSTONE_LAMP))
+                .save(output);
+    }
+
+
     protected static void variableTrafficSignRecipes(Block result, Block input, RecipeOutput output) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1)
                 .requires(input)
@@ -1529,8 +1558,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .requires(dye)
                     .group(input.toString())
                     .save(output);
-
-            paintingRecipes(result, input, dye, output);
         }
     }
 

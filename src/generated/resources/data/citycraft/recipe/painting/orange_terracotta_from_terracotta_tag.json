@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "minecraft:terracotta"
+  },
+  "color": {
+    "tag": "c:dyes/orange"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:orange_terracotta"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:hanging_signs/wood"
+  },
+  "color": {
+    "tag": "c:dyes/pink"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:cherry_hanging_sign"
+  }
+}
