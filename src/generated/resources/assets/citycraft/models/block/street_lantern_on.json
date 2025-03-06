@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "citycraft:block/street_lantern_end",
+    "side": "citycraft:block/street_lantern_on"
+  }
+}

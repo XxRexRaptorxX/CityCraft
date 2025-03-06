@@ -11,6 +11,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.citycraft.blocks.*;
+import xxrexraptorxx.citycraft.blocks.LanternBlock;
 import xxrexraptorxx.citycraft.blocks.WallSignBlock;
 import xxrexraptorxx.citycraft.main.References;
 
@@ -832,6 +833,7 @@ public class ModBlocks {
     public static final DeferredBlock<RedstoneLampBlock> RED_LAMP = registerBlock("red_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.RED)));
 
     public static final DeferredBlock<LanternBlockPanel> STREET_LANTERN_PANEL = registerBlock("street_lantern_panel", LanternBlockPanel::new);
+    public static final DeferredBlock<LanternBlock> STREET_LANTERN = registerBlock("street_lantern", LanternBlock::new);
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

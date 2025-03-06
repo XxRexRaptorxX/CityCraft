@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:daylight_sensor"
+    },
+    {
+      "item": "minecraft:redstone_lamp"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:street_lantern"
+  }
+}

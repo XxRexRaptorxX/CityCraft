@@ -800,6 +800,7 @@ public class BlockStateGen extends BlockStateProvider {
         customLamp(ModBlocks.GREEN_LAMP.get());
         customLamp(ModBlocks.RED_LAMP.get());
 
+        customLantern(ModBlocks.STREET_LANTERN.get());
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -843,6 +844,24 @@ public class BlockStateGen extends BlockStateProvider {
 
         simpleBlockItem(block, models().cubeAll(texture,
                 ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)));
+    }
+
+
+    private void customLantern(Block block) {
+        String texture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        ResourceLocation sideOn = ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture + "_on");
+        ResourceLocation sideOff = ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture);
+        ResourceLocation end = ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture + "_end");
+
+        getVariantBuilder(block).forAllStates(state -> {
+            if(state.getValue(RedstoneLampBlock.LIT)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeColumnHorizontal(texture + "_on", sideOn, end))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeColumnHorizontal(texture, sideOff, end))};
+            }
+        });
+
+        simpleBlockItem(block, models().cubeColumnHorizontal(texture, sideOff, end));
     }
 
 

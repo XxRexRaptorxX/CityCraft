@@ -52,9 +52,8 @@ public class LanternBlockPanel extends SlabBlock {
 			level.setBlock(pos, state.setValue(LIT, true), 2);
 		}
 
-		level.scheduleTick(pos, this, 20);
+		level.scheduleTick(pos, this, 100);
 	}
-
 
 
 	@Override
@@ -90,23 +89,6 @@ public class LanternBlockPanel extends SlabBlock {
 			return direction != Direction.DOWN && (direction == Direction.UP || !(context.getClickLocation().y - (double)blockpos.getY() > 0.5D)) ? blockstate1 : blockstate1.setValue(TYPE, SlabType.TOP);
 		}
 	}
-
-
-	//@Override
-	//public  BlockState updateShape(BlockState state, Direction direction, BlockState p_53278_, LevelAccessor level, BlockPos pos, BlockPos p_53281_) {
-	//		//level.scheduleTick(pos, this, 1);
-//
-	//	int brightness = level.getBrightness(LightLayer.SKY, pos) - level.getSkyDarken();
-	//	System.out.println(brightness);
-//
-	//	if (brightness > 10) {
-	//		level.setBlock(pos, (BlockState)state.cycle(LIT), 2);
-	//	}
-//
-	//	level.scheduleTick(pos, this, 20);
-//
-	//	return super.updateShape(state, direction, p_53278_, level, p_53281_, p_53281_);
-	//}
 
 
 	private static ToIntFunction<BlockState> litBlockEmission(int lightValue) {

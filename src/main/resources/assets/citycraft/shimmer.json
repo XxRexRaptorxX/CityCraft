@@ -15,7 +15,10 @@
     "pink": { "r": 255, "g": 192, "b": 203, "a": 255 },
     "purple": { "r": 200, "g": 10, "b": 226, "a": 255 },
     "red": { "r": 255, "g": 0, "b": 0, "a": 255 },
-    "yellow": { "r": 255, "g": 255, "b": 0, "a": 255 }
+    "yellow": { "r": 255, "g": 255, "b": 0, "a": 255 },
+
+    "natural": { "r": 255, "g": 208, "b": 0, "a": 255 },
+    "led": { "r": 189, "g": 255, "b": 255, "a": 255 }
   },
 
   "LightBlock": [
@@ -36,7 +39,8 @@
     { "block": "citycraft:green_lamp", "state": { "lit": true }, "color":  "#green", "radius": 15 },
     { "block": "citycraft:red_lamp", "state": { "lit": true }, "color":  "#red", "radius": 15 },
 
-    { "block": "citycraft:street_lantern_panel", "state": { "lit": true }, "color":  "#white", "radius": 15 }
+    { "block": "citycraft:street_lantern_panel", "state": { "lit": true }, "color":  "#natural", "radius": 15 },
+    { "block": "citycraft:street_lantern", "state": { "lit": true }, "color":  "#natural", "radius": 15 }
   ],
 
   "LightItem": [ ]

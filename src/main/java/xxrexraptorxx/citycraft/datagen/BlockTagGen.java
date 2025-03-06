@@ -804,6 +804,7 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.GREEN_LAMP.get(),
                         ModBlocks.RED_LAMP.get(),
 
+                        ModBlocks.STREET_LANTERN.get(),
                         ModBlocks.STREET_LANTERN_PANEL.get()
                 );
 

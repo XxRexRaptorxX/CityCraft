@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "__",
+    "--"
+  ],
+
+  "key": {
+    "_": {
+      "item": "minecraft:daylight_sensor"
+    },
+    "-": {
+      "item": "minecraft:redstone_lamp"
+    }
+  },
+
+  "result": {
+    "id": "citycraft:street_lantern_panel",
+    "count": 4
+  }
+}

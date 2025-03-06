@@ -57,7 +57,7 @@ public class LanternBlock extends Block {
 		super.onPlace(state, level, pos, oldState, isMoving);
 
 		if (!level.isClientSide()) {
-			level.scheduleTick(pos, this, 20);
+			level.scheduleTick(pos, this, 100);
 		}
 	}
 

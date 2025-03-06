@@ -1,4 +1,4 @@
-// 1.21	2025-03-05T19:25:40.8561574	Loot Tables
+// 1.21	2025-03-06T21:24:25.5277096	Loot Tables
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_table/blocks/100_speed_eu_sign.json
 7a90e771f0880894a9b1aa172c8080bc9742350f data/citycraft/loot_table/blocks/10_minimum_speed_sign_eu.json
 dd3c3abd2471b84fca081f594e0f07afa39c7d42 data/citycraft/loot_table/blocks/10_speed_eu_sign.json
@@ -681,6 +681,7 @@ b0a5e3fdcceb744b8ed858003efd80d0f88d8f19 data/citycraft/loot_table/blocks/straig
 4a434f994ea361c8e7055f88ef2ba2810b4df985 data/citycraft/loot_table/blocks/straight_left_eu_sign.json
 95b6b47adba95237e1ffb320fe1be531ef7dbc79 data/citycraft/loot_table/blocks/straight_right_eu_sign.json
 5c8db12c3291c37756f2d0205fd2a2492cfea01e data/citycraft/loot_table/blocks/straight_tripple_traffic_light.json
+6528773f75894f37ace0541d2d401965f91e17a8 data/citycraft/loot_table/blocks/street_lantern.json
 1f1e9015ea7984c3c154cbf65aab8abfd3f3166e data/citycraft/loot_table/blocks/street_lantern_panel.json
 4100f1bd80be442a01077b8af3b39a99fcc807d9 data/citycraft/loot_table/blocks/swimming_area_us_sign.json
 37e1f5ec71f81390b66d6f965caaa53caefa8b4f data/citycraft/loot_table/blocks/taxi_eu_sign.json
