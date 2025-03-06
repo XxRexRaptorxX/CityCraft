@@ -20,6 +20,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Config;
 
@@ -69,10 +70,10 @@ public class AsphaltBlock extends HorizontalDirectionalBlock {
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		if (Config.ENABLE_TOOLTIPS.get()) {
 			if (this == ModBlocks.BOOST_ASPHALT.get()) {
-				list.add(Component.translatable("message.citycraft.boost_speed_tooltip").withStyle(ChatFormatting.GRAY));
+				list.add(Component.translatable("message." + References.MODID + ".boost_speed_tooltip").withStyle(ChatFormatting.GRAY));
 
 			} else if (Config.ENABLE_ASPHALT_SPEED_EFFECT.get() && this != ModBlocks.POTHOLE_ASPHALT.get()) {
-				list.add(Component.translatable("message.citycraft.speed_tooltip").withStyle(ChatFormatting.GRAY));
+				list.add(Component.translatable("message." + References.MODID + ".speed_tooltip").withStyle(ChatFormatting.GRAY));
 			}
 		}
 	}

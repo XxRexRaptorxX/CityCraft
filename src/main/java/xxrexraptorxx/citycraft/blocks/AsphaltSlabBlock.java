@@ -25,6 +25,7 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Config;
 
@@ -69,10 +70,10 @@ public class AsphaltSlabBlock extends SlabBlock {
 		if (Config.ENABLE_TOOLTIPS.get()) {
 
 			if (this == ModBlocks.BOOST_ASPHALT_SLAB.get()) {
-				list.add(Component.translatable("message.citycraft.boost_speed_tooltip").withStyle(ChatFormatting.GRAY));
+				list.add(Component.translatable("message." + References.MODID + ".boost_speed_tooltip").withStyle(ChatFormatting.GRAY));
 
 			} else if (Config.ENABLE_ASPHALT_SPEED_EFFECT.get() && this != ModBlocks.POTHOLE_ASPHALT_SLAB.get()) {
-				list.add(Component.translatable("message.citycraft.speed_tooltip").withStyle(ChatFormatting.GRAY));
+				list.add(Component.translatable("message." + References.MODID + ".speed_tooltip").withStyle(ChatFormatting.GRAY));
 			}
 		}
 	}

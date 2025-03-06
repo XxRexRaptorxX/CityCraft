@@ -25,6 +25,7 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.AABB;
+import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.utils.Config;
 
 import java.util.List;
@@ -142,7 +143,7 @@ public class DrainCoverBlock extends SlabBlock {
 	@Override
 	public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		if (Config.ENABLE_TOOLTIPS.get()) {
-			list.add(Component.translatable("message.citycraft.drain_cover_tooltip").withStyle(ChatFormatting.GRAY));
+			list.add(Component.translatable("message." + References.MODID + ".drain_cover_tooltip").withStyle(ChatFormatting.GRAY));
 		}
 	}
 }

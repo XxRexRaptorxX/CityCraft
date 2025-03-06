@@ -47,7 +47,7 @@ public class DoubleTrafficBarrierBlock extends FenceBlock implements SimpleWater
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        if (state.getValue(NORTH) == true || state.getValue(EAST) == true || state.getValue(SOUTH) == true || state.getValue(WEST) == true) {
+        if (state.getValue(NORTH) || state.getValue(EAST) || state.getValue(SOUTH) || state.getValue(WEST)) {
             return FULL_SHAPE;
 
         } else {
