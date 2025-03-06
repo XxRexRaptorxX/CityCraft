@@ -802,7 +802,9 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.BLUE_LAMP.get(),
                         ModBlocks.BROWN_LAMP.get(),
                         ModBlocks.GREEN_LAMP.get(),
-                        ModBlocks.RED_LAMP.get()
+                        ModBlocks.RED_LAMP.get(),
+
+                        ModBlocks.STREET_LANTERN_PANEL.get()
                 );
 
 
@@ -965,7 +967,9 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(),
-                        ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get()
+                        ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(),
+
+                        ModBlocks.STREET_LANTERN_PANEL.get()
                 );
 
 

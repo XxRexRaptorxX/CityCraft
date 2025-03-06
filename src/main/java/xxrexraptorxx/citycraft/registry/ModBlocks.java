@@ -831,6 +831,9 @@ public class ModBlocks {
     public static final DeferredBlock<RedstoneLampBlock> GREEN_LAMP = registerBlock("green_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.GREEN)));
     public static final DeferredBlock<RedstoneLampBlock> RED_LAMP = registerBlock("red_lamp", () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.RED)));
 
+    public static final DeferredBlock<LanternBlockPanel> STREET_LANTERN_PANEL = registerBlock("street_lantern_panel", LanternBlockPanel::new);
+
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

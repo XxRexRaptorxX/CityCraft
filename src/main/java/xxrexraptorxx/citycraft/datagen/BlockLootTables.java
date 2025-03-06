@@ -810,6 +810,9 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.BROWN_LAMP.get());
         this.dropSelf(ModBlocks.GREEN_LAMP.get());
         this.dropSelf(ModBlocks.RED_LAMP.get());
+
+        this.add(ModBlocks.STREET_LANTERN_PANEL.get(), block -> createSlabItemTable(ModBlocks.STREET_LANTERN_PANEL.get()));
+
     }
 
 

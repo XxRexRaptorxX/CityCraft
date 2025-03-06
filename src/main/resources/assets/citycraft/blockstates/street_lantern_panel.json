@@ -1,0 +1,41 @@
+{
+  "variants": {
+    "lit=false,type=bottom,waterlogged=false": {
+      "model": "citycraft:block/street_lantern_panel_bottom"
+    },
+    "lit=false,type=bottom,waterlogged=true": {
+      "model": "citycraft:block/street_lantern_panel_bottom"
+    },
+    "lit=false,type=double,waterlogged=false": {
+      "model": "citycraft:block/street_lantern_panel"
+    },
+    "lit=false,type=double,waterlogged=true": {
+      "model": "citycraft:block/street_lantern_panel"
+    },
+    "lit=false,type=top,waterlogged=false": {
+      "model": "citycraft:block/street_lantern_panel_top"
+    },
+    "lit=false,type=top,waterlogged=true": {
+      "model": "citycraft:block/street_lantern_panel_top"
+    },
+
+    "lit=true,type=bottom,waterlogged=false": {
+      "model": "citycraft:block/street_lantern_panel_bottom_on"
+    },
+    "lit=true,type=bottom,waterlogged=true": {
+      "model": "citycraft:block/street_lantern_panel_bottom_on"
+    },
+    "lit=true,type=double,waterlogged=false": {
+      "model": "citycraft:block/street_lantern_panel_on"
+    },
+    "lit=true,type=double,waterlogged=true": {
+      "model": "citycraft:block/street_lantern_panel_on"
+    },
+    "lit=true,type=top,waterlogged=false": {
+      "model": "citycraft:block/street_lantern_panel_top_on"
+    },
+    "lit=true,type=top,waterlogged=true": {
+      "model": "citycraft:block/street_lantern_panel_top_on"
+    }
+  }
+}

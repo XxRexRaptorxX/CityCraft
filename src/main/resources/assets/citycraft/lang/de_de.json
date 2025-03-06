@@ -801,5 +801,7 @@
     "block.citycraft.blue_lamp":  "Blaue Lampe",
     "block.citycraft.brown_lamp": "Braune Lampe",
     "block.citycraft.green_lamp":  "Grüne Lampe",
-    "block.citycraft.red_lamp": "Rote Lampe"
+    "block.citycraft.red_lamp": "Rote Lampe",
+
+    "block.citycraft.street_lantern_panel": "Straßenlaternen Panel"
 }

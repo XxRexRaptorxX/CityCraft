@@ -66,6 +66,8 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.GREEN_CONCRETE_WALL.get());
                 output.accept(ModBlocks.RED_CONCRETE_WALL.get());
 
+                output.accept(ModBlocks.STREET_LANTERN_PANEL.get());
+
                 output.accept(ModBlocks.BLACK_LAMP.get());
                 output.accept(ModBlocks.WHITE_LAMP.get());
                 output.accept(ModBlocks.ORANGE_LAMP.get());

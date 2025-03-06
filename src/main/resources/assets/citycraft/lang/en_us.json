@@ -801,5 +801,7 @@
     "block.citycraft.blue_lamp":  "Blue Lamp",
     "block.citycraft.brown_lamp": "Brown Lamp",
     "block.citycraft.green_lamp":  "Green Lamp",
-    "block.citycraft.red_lamp": "Red Lamp"
+    "block.citycraft.red_lamp": "Red Lamp",
+
+    "block.citycraft.street_lantern_panel": "Street Lamp Panel"
 }
