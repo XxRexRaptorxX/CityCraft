@@ -83,8 +83,8 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.MAGENTA_LAMP.get());
                 output.accept(ModBlocks.PINK_LAMP.get());
 
-                output.accept(ModBlocks.STREET_LANTERN_PANEL.get());
                 output.accept(ModBlocks.STREET_LANTERN.get());
+                output.accept(ModBlocks.STREET_LANTERN_PANEL.get());
 
                 output.accept(ModBlocks.DRAIN_COVER.get());
                 output.accept(ModBlocks.DRAIN_COVER_GRID.get());
