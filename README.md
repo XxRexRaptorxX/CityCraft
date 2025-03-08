@@ -15,8 +15,12 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 
 - high mod compatibility with tech mods
 - a large amount of different road blocks
-- sign & decoration blocks
+- road signs from around the world, traffic barriers, drain covers and more
+- additional decoration blocks (like walls, fences, posts & more!)
+- traffic lights, lamps and lanterns
+- increased movement speed on asphalt
 - vanilla & survival friendly
+- emissive textures
 - version checker
 
 ![city](https://github.com/XxRexRaptorxX/General/blob/main/2024-03-22_16.38.21.png?raw=true)
