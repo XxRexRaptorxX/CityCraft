@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "citycraft:block/modern_street_lantern"
+    },
+    "lit=true": {
+      "model": "citycraft:block/modern_street_lantern_on"
+    }
+  }
+}

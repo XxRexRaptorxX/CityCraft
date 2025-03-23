@@ -1,4 +1,4 @@
-// 1.21	2025-03-06T21:24:25.5277096	Loot Tables
+// 1.21	2025-03-23T20:20:43.1719298	Loot Tables
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_table/blocks/100_speed_eu_sign.json
 7a90e771f0880894a9b1aa172c8080bc9742350f data/citycraft/loot_table/blocks/10_minimum_speed_sign_eu.json
 dd3c3abd2471b84fca081f594e0f07afa39c7d42 data/citycraft/loot_table/blocks/10_speed_eu_sign.json
@@ -500,6 +500,7 @@ dfa0b1b83eb8cd036db6832b659c1f5e43c16f48 data/citycraft/loot_table/blocks/lime_l
 715080b82781aca06315fde03b4b2370659c59a0 data/citycraft/loot_table/blocks/magnetic_warning_sign.json
 595c31694206ee56f28947f333f2f7acf8d4856f data/citycraft/loot_table/blocks/mandatory_sign.json
 d90428ec0dd8431b00f510f937adfda952b06016 data/citycraft/loot_table/blocks/medical_service_us_sign.json
+77995324539f095987bc1b05cbf9aba3f9f16b95 data/citycraft/loot_table/blocks/modern_street_lantern.json
 5fc36db56075a4dedcc5c636296efc7b2bd36613 data/citycraft/loot_table/blocks/monster_warning_sign.json
 35425d1bcf0d24c6fc20c3d366eae4953849ba39 data/citycraft/loot_table/blocks/mossy_asphalt.json
 11edfa17e1dc4741ea9bf792ad15c1f7776ccfe0 data/citycraft/loot_table/blocks/mossy_asphalt_slab.json

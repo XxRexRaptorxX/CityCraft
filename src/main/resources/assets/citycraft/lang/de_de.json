@@ -804,5 +804,6 @@
     "block.citycraft.red_lamp": "Rote Lampe",
 
     "block.citycraft.street_lantern_panel": "Straßenlaternen Panel",
-    "block.citycraft.street_lantern": "Straßenlaterne"
+    "block.citycraft.street_lantern": "Straßenlaterne",
+    "block.citycraft.modern_street_lantern": "Moderne Straßenlaterne"
 }

@@ -834,6 +834,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<LanternBlockSlab> STREET_LANTERN_PANEL = registerBlock("street_lantern_panel", LanternBlockSlab::new);
     public static final DeferredBlock<LanternBlock> STREET_LANTERN = registerBlock("street_lantern", LanternBlock::new);
+    public static final DeferredBlock<LanternBlock> MODERN_STREET_LANTERN = registerBlock("modern_street_lantern", LanternBlock::new);
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

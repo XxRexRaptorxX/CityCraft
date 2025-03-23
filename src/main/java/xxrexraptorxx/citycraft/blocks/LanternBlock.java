@@ -31,6 +31,7 @@ public class LanternBlock extends Block {
 				.instrument(NoteBlockInstrument.BELL)
 				.requiresCorrectToolForDrops()
 				.lightLevel(litBlockEmission(15))
+				.noOcclusion()
 		);
 		this.registerDefaultState(this.defaultBlockState().setValue(LIT, false));
 	}
