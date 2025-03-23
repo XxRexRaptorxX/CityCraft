@@ -8,7 +8,7 @@
 
   "key": {
     "_": {
-      "item": "minecraft:daylight_sensor"
+      "item": "minecraft:daylight_detector"
     },
     "-": {
       "item": "minecraft:redstone_lamp"
