@@ -8,11 +8,11 @@
   "type":"mekanism:combining",
 
   "extra_input": {
-      "tag":"forge:dyes/pink"
+      "tag":"c:dyes/pink"
   },
 
   "main_input": {
-      "tag":"forge:asphalt"
+      "tag":"c:asphalt"
   },
 
   "output": {

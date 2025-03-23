@@ -8,11 +8,11 @@
   "type":"mekanism:combining",
 
   "extra_input": {
-      "tag":"forge:dyes/light_gray"
+      "tag":"c:dyes/light_gray"
   },
 
   "main_input": {
-      "tag":"forge:asphalt"
+      "tag":"c:asphalt"
   },
 
   "output": {
