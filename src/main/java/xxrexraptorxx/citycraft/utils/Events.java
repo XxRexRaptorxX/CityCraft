@@ -43,23 +43,30 @@ public class Events {
 
     @SubscribeEvent
     public static void onClientTick(ClientTickEvent.Pre event) {
-        if (Config.UPDATE_CHECKER.get()) {
+        if (Config.UPDATE_CHECKER != null && Config.UPDATE_CHECKER.get()) {
+
             if (!hasShownUp && Minecraft.getInstance().screen == null) {
-                if (VersionChecker.getResult(ModList.get().getModContainerById(References.MODID).get().getModInfo()).status() == VersionChecker.Status.OUTDATED ||
-                        VersionChecker.getResult(ModList.get().getModContainerById(References.MODID).get().getModInfo()).status() == VersionChecker.Status.BETA_OUTDATED ) {
+                var player = Minecraft.getInstance().player;
+                if (player == null) return;
 
-                    MutableComponent url = Component.literal(ChatFormatting.GREEN + "Click here to update!");
-                    url.withStyle(url.getStyle().withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, References.URL)));
+                var modContainer = ModList.get().getModContainerById(References.MODID).orElse(null);
 
-                    Minecraft.getInstance().player.displayClientMessage(Component.literal(ChatFormatting.BLUE + "A newer version of " + ChatFormatting.YELLOW + References.NAME + ChatFormatting.BLUE + " is available!"), false);
-                    Minecraft.getInstance().player.displayClientMessage(url, false);
+                if (modContainer != null) {
+                    var versionCheckResult = VersionChecker.getResult(modContainer.getModInfo());
 
-                    hasShownUp = true;
+                    if (versionCheckResult.status() == VersionChecker.Status.OUTDATED || versionCheckResult.status() == VersionChecker.Status.BETA_OUTDATED) {
+                        MutableComponent url = Component.translatable(ChatFormatting.GREEN + "Click here to update!")
+                                .withStyle(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, References.URL)));
 
-                } else if (VersionChecker.getResult(ModList.get().getModContainerById(References.MODID).get().getModInfo()).status() == VersionChecker.Status.FAILED) {
-                    CityCraft.LOGGER.error(References.NAME + "'s version checker failed!");
-                    hasShownUp = true;
+                        player.displayClientMessage(Component.literal(ChatFormatting.BLUE + "A newer version of " + ChatFormatting.YELLOW + References.NAME + ChatFormatting.BLUE + " is available!"), false);
+                        player.displayClientMessage(url, false);
 
+                        hasShownUp = true;
+
+                    } else if (versionCheckResult.status() == VersionChecker.Status.FAILED) {
+                        CityCraft.LOGGER.error(References.NAME + "'s version checker failed!");
+                        hasShownUp = true;
+                    }
                 }
             }
         }
