@@ -66,27 +66,6 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.MAGENTA_CONCRETE_WALL.get());
                 output.accept(ModBlocks.PINK_CONCRETE_WALL.get());
 
-                output.accept(ModBlocks.WHITE_LAMP.get());
-                output.accept(ModBlocks.LIGHT_GRAY_LAMP.get());
-                output.accept(ModBlocks.GRAY_LAMP.get());
-                output.accept(ModBlocks.BLACK_LAMP.get());
-                output.accept(ModBlocks.BROWN_LAMP.get());
-                output.accept(ModBlocks.RED_LAMP.get());
-                output.accept(ModBlocks.ORANGE_LAMP.get());
-                output.accept(ModBlocks.YELLOW_LAMP.get());
-                output.accept(ModBlocks.LIME_LAMP.get());
-                output.accept(ModBlocks.GREEN_LAMP.get());
-                output.accept(ModBlocks.CYAN_LAMP.get());
-                output.accept(ModBlocks.LIGHT_BLUE_LAMP.get());
-                output.accept(ModBlocks.BLUE_LAMP.get());
-                output.accept(ModBlocks.PURPLE_LAMP.get());
-                output.accept(ModBlocks.MAGENTA_LAMP.get());
-                output.accept(ModBlocks.PINK_LAMP.get());
-
-                output.accept(ModBlocks.MODERN_STREET_LANTERN.get());
-                output.accept(ModBlocks.STREET_LANTERN.get());
-                output.accept(ModBlocks.STREET_LANTERN_PANEL.get());
-
                 output.accept(ModBlocks.DRAIN_COVER.get());
                 output.accept(ModBlocks.DRAIN_COVER_GRID.get());
 
@@ -104,7 +83,8 @@ public class CreativeModeTabs {
                 output.accept(ModItems.ASPHALT_MIXTURE.get());
                 output.accept(ModItems.DYE_MIX.get());
                 output.accept(ModItems.COAL_TAR.get());
-            }).build());
+            }).build()
+    );
 
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SIGN_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".signs", () -> CreativeModeTab.builder()
@@ -496,7 +476,8 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get());
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get());
                 output.accept(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get());
-            }).build());
+            }).build()
+    );
 
 
     //public static final RegistryObject<CreativeModeTab> EU_SIGN_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".eu_signs", () -> CreativeModeTab.builder()
@@ -806,7 +787,8 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.EMERGENCY_EXIT_AHEAD_SIGN.get());
                 output.accept(ModBlocks.EMERGENCY_EXIT_DOWNWARDS_SIGN.get());
                 output.accept(ModBlocks.EXIT_SIGN.get());
-            }).build());
+            }).build()
+    );
 
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TRAFFIC_LIGHTS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".traffic_lights_tab", () -> CreativeModeTab.builder()
@@ -832,7 +814,29 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.SIGNAL_LIGHT.get());
                 output.accept(ModBlocks.DANGER_SIGNAL_LIGHT.get());
                 output.accept(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
-            }).build());
+
+                output.accept(ModBlocks.MODERN_STREET_LANTERN.get());
+                output.accept(ModBlocks.STREET_LANTERN.get());
+                output.accept(ModBlocks.STREET_LANTERN_PANEL.get());
+
+                output.accept(ModBlocks.WHITE_LAMP.get());
+                output.accept(ModBlocks.LIGHT_GRAY_LAMP.get());
+                output.accept(ModBlocks.GRAY_LAMP.get());
+                output.accept(ModBlocks.BLACK_LAMP.get());
+                output.accept(ModBlocks.BROWN_LAMP.get());
+                output.accept(ModBlocks.RED_LAMP.get());
+                output.accept(ModBlocks.ORANGE_LAMP.get());
+                output.accept(ModBlocks.YELLOW_LAMP.get());
+                output.accept(ModBlocks.LIME_LAMP.get());
+                output.accept(ModBlocks.GREEN_LAMP.get());
+                output.accept(ModBlocks.CYAN_LAMP.get());
+                output.accept(ModBlocks.LIGHT_BLUE_LAMP.get());
+                output.accept(ModBlocks.BLUE_LAMP.get());
+                output.accept(ModBlocks.PURPLE_LAMP.get());
+                output.accept(ModBlocks.MAGENTA_LAMP.get());
+                output.accept(ModBlocks.PINK_LAMP.get());
+            }).build()
+    );
 
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ROAD_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".roads", () -> CreativeModeTab.builder()
@@ -1179,6 +1183,7 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get());
-            }).build());
+            }).build()
+    );
 
 }
