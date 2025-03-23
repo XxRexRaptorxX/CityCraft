@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:daylight_detector"
+    },
+    {
+      "item": "minecraft:iron_trapdoor"
+    },
+    {
+      "item": "minecraft:redstone_lamp"
+    }
+  ],
+
+  "result": {
+    "id": "citycraft:modern_street_lantern"
+  }
+}
