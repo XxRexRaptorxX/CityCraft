@@ -72,6 +72,8 @@
     "block.citycraft.asphalt_with_white_thick_frame": "Asphalt mit Weißem dicken Rahmen",
     "block.citycraft.asphalt_with_white_thick_edge": "Asphalt mit Weißem dicken Eck",
     "block.citycraft.asphalt_with_white_thick_hatching": "Asphalt mit Weißer dicker Schraffur",
+    "block.citycraft.asphalt_with_white_diagonal_left_arrow": "Asphalt mit Weißer Linker Diagonaler-Pfeil",
+    "block.citycraft.asphalt_with_white_diagonal_right_arrow": "Asphalt mit Weißer Rechter Diagonaler-Pfeil",
 
     "block.citycraft.asphalt_with_yellow_broken_middle_line": "Asphalt mit Gelber gestrichelter Mittel-Linie",
     "block.citycraft.asphalt_with_yellow_middle_line": "Asphalt mit Gelber Mittel-Linie",
@@ -104,6 +106,8 @@
     "block.citycraft.asphalt_with_yellow_thick_frame": "Asphalt mit Gelber dicken Rahmen",
     "block.citycraft.asphalt_with_yellow_thick_edge": "Asphalt mit Gelber dicken Eck",
     "block.citycraft.asphalt_with_yellow_thick_hatching": "Asphalt mit Gelber dicker Schraffur",
+    "block.citycraft.asphalt_with_yellow_diagonal_left_arrow": "Asphalt mit Gelber Linker Diagonaler-Pfeil",
+    "block.citycraft.asphalt_with_yellow_diagonal_right_arrow": "Asphalt mit Gelber Rechter Diagonaler-Pfeil",
 
     "block.citycraft.asphalt_with_white_middle_left_edge":  "Asphalt mit Weißer Links Mittel Ecke",
     "block.citycraft.asphalt_with_white_middle_right_edge": "Asphalt mit Weißer Rechts Middle Ecke",
@@ -175,6 +179,8 @@
     "block.citycraft.asphalt_with_white_thick_frame_slab": "Asphalt Stufe mit Weißem dicken Rahmen",
     "block.citycraft.asphalt_with_white_thick_edge_slab": "Asphalt Stufe mit Weißem dicken Eck",
     "block.citycraft.asphalt_with_white_thick_hatching_slab": "Asphalt Stufe mit Weißer dicker Schraffur",
+    "block.citycraft.asphalt_with_white_diagonal_left_arrow_slab": "Asphalt Stufe mit Weißer Linker Diagonaler-Pfeil",
+    "block.citycraft.asphalt_with_white_diagonal_right_arrow_slab": "Asphalt Stufe mit Weißer Rechter Diagonaler-Pfeil",
 
     "block.citycraft.asphalt_with_yellow_broken_middle_line_slab": "Asphalt Stufe mit Gelber gestrichelter Mittel-Linie",
     "block.citycraft.asphalt_with_yellow_middle_line_slab": "Asphalt Stufe mit Gelber Mittel-Linie",
@@ -207,6 +213,8 @@
     "block.citycraft.asphalt_with_yellow_thick_frame_slab": "Asphalt Stufe mit Gelber dicken Rahmen",
     "block.citycraft.asphalt_with_yellow_thick_edge_slab": "Asphalt Stufe mit Gelber dicken Eck",
     "block.citycraft.asphalt_with_yellow_thick_hatching_slab": "Asphalt Stufe mit Gelber dicker Schraffur",
+    "block.citycraft.asphalt_with_yellow_diagonal_left_arrow_slab": "Asphalt Stufe mit Gelber Linker Diagonaler-Pfeil",
+    "block.citycraft.asphalt_with_yellow_diagonal_right_arrow_slab": "Asphalt Stufe mit Gelber Rechter Diagonaler-Pfeil",
 
     "block.citycraft.asphalt_with_white_middle_left_edge_slab":  "Asphalt Stufe mit Weißer Links Mittel Ecke",
     "block.citycraft.asphalt_with_white_middle_right_edge_slab": "Asphalt Stufe mit Weißer Rechts Middle Ecke",

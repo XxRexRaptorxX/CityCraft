@@ -72,6 +72,8 @@
     "block.citycraft.asphalt_with_white_thick_frame": "Asphalt with White thick Frame",
     "block.citycraft.asphalt_with_white_thick_edge": "Asphalt with White thick Edge",
     "block.citycraft.asphalt_with_white_thick_hatching": "Asphalt with white thick Hatching",
+    "block.citycraft.asphalt_with_white_diagonal_left_arrow": "Asphalt with White Left Diagonal Arrow",
+    "block.citycraft.asphalt_with_white_diagonal_right_arrow": "Asphalt with White Right Diagonal Arrow",
 
     "block.citycraft.asphalt_with_yellow_broken_middle_line": "Asphalt with Yellow broken Middle Line",
     "block.citycraft.asphalt_with_yellow_middle_line": "Asphalt with Yellow Middle Line",
@@ -104,6 +106,8 @@
     "block.citycraft.asphalt_with_yellow_thick_frame": "Asphalt with Yellow thick Frame",
     "block.citycraft.asphalt_with_yellow_thick_edge": "Asphalt with Yellow thick Edge",
     "block.citycraft.asphalt_with_yellow_thick_hatching": "Asphalt with Yellow thick Hatching",
+    "block.citycraft.asphalt_with_yellow_diagonal_left_arrow": "Asphalt with Yellow Left Diagonal Arrow",
+    "block.citycraft.asphalt_with_yellow_diagonal_right_arrow": "Asphalt with Yellow Right Diagonal Arrow",
 
     "block.citycraft.asphalt_with_white_middle_left_edge":  "Asphalt with White Left Middle Edge",
     "block.citycraft.asphalt_with_white_middle_right_edge": "Asphalt with White Right Middle Edge",
@@ -175,6 +179,8 @@
     "block.citycraft.asphalt_with_white_thick_frame_slab": "Asphalt Slab with White thick Frame",
     "block.citycraft.asphalt_with_white_thick_edge_slab": "Asphalt Slab with White thick Edge",
     "block.citycraft.asphalt_with_white_thick_hatching_slab": "Asphalt Slab with white thick Hatching",
+    "block.citycraft.asphalt_with_white_diagonal_left_arrow_slab": "Asphalt Slab with White Left Diagonal Arrow",
+    "block.citycraft.asphalt_with_white_diagonal_right_arrow_slab": "Asphalt Slab with White Right Diagonal Arrow",
 
     "block.citycraft.asphalt_with_yellow_broken_middle_line_slab": "Asphalt Slab with Yellow broken Middle Line",
     "block.citycraft.asphalt_with_yellow_middle_line_slab": "Asphalt Slab with Yellow Middle Line",
@@ -207,6 +213,8 @@
     "block.citycraft.asphalt_with_yellow_thick_frame_slab": "Asphalt Slab with Yellow thick Frame",
     "block.citycraft.asphalt_with_yellow_thick_edge_slab": "Asphalt Slab with Yellow thick Edge",
     "block.citycraft.asphalt_with_yellow_thick_hatching_slab": "Asphalt Slab with Yellow thick Hatching",
+    "block.citycraft.asphalt_with_yellow_diagonal_left_arrow_slab": "Asphalt Slab with Yellow Left Diagonal Arrow",
+    "block.citycraft.asphalt_with_yellow_diagonal_right_arrow_slab": "Asphalt Slab with Yellow Right Diagonal Arrow",
 
     "block.citycraft.asphalt_with_white_middle_left_edge_slab":  "Asphalt Slab with White Left Middle Edge",
     "block.citycraft.asphalt_with_white_middle_right_edge_slab": "Asphalt Slab with White Right Middle Edge",
