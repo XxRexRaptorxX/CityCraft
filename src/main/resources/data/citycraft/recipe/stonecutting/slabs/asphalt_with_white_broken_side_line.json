@@ -1,8 +1,7 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 2,
   "ingredient": {
-    "tag": "citycraft:white_marked_asphalt"
+    "tag": "citycraft:white_marked_asphalt_slabs"
   },
     "result": {
     "count": 1,
