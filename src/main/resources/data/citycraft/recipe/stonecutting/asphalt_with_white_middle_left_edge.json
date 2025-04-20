@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "citycraft:white_marked_asphalt"
+  },
+    "result": {
+    "count": 1,
+    "id": "citycraft:asphalt_with_white_middle_left_edge_slab"  }
+}

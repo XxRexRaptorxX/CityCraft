@@ -56,6 +56,10 @@ public class ModBlocks {
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE = registerBlock("asphalt_with_white_solid_and_broken_middle_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE = registerBlock("asphalt_with_white_broken_side_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_SIDE_LINE = registerBlock("asphalt_with_white_side_line", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE  = registerBlock("asphalt_with_white_middle_left_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE  = registerBlock("asphalt_with_white_middle_right_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE  = registerBlock("asphalt_with_white_middle_double_left_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE  = registerBlock("asphalt_with_white_middle_double_right_edge", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE = registerBlock("asphalt_with_white_broken_diagonal_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_DIAGONAL_LINE = registerBlock("asphalt_with_white_diagonal_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE = registerBlock("asphalt_with_white_diagonal_double_line", AsphaltBlock::new);
@@ -77,6 +81,10 @@ public class ModBlocks {
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE = registerBlock("asphalt_with_white_thick_middle_double_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE = registerBlock("asphalt_with_white_thick_solid_and_broken_middle_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE = registerBlock("asphalt_with_white_thick_broken_diagonal_line", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE  = registerBlock("asphalt_with_white_thick_middle_double_left_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE  = registerBlock("asphalt_with_white_thick_middle_double_right_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE  = registerBlock("asphalt_with_white_thick_middle_left_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE  = registerBlock("asphalt_with_white_thick_middle_right_edge", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE = registerBlock("asphalt_with_white_thick_diagonal_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE = registerBlock("asphalt_with_white_thick_diagonal_double_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_THICK_FRAME = registerBlock("asphalt_with_white_thick_frame", AsphaltBlock::new);
@@ -90,6 +98,10 @@ public class ModBlocks {
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE = registerBlock("asphalt_with_yellow_broken_side_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_SIDE_LINE = registerBlock("asphalt_with_yellow_side_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE = registerBlock("asphalt_with_yellow_broken_diagonal_line", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE  = registerBlock("asphalt_with_yellow_middle_left_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE  = registerBlock("asphalt_with_yellow_middle_right_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE  = registerBlock("asphalt_with_yellow_middle_double_left_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE  = registerBlock("asphalt_with_yellow_middle_double_right_edge", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_DIAGONAL_LINE = registerBlock("asphalt_with_yellow_diagonal_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE = registerBlock("asphalt_with_yellow_diagonal_double_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_HATCHING = registerBlock("asphalt_with_yellow_hatching", AsphaltBlock::new);
@@ -110,6 +122,10 @@ public class ModBlocks {
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE = registerBlock("asphalt_with_yellow_thick_middle_double_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE = registerBlock("asphalt_with_yellow_thick_solid_and_broken_middle_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE = registerBlock("asphalt_with_yellow_thick_broken_diagonal_line", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE  = registerBlock("asphalt_with_yellow_thick_middle_double_left_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE  = registerBlock("asphalt_with_yellow_thick_middle_double_right_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE  = registerBlock("asphalt_with_yellow_thick_middle_left_edge", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE  = registerBlock("asphalt_with_yellow_thick_middle_right_edge", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE = registerBlock("asphalt_with_yellow_thick_diagonal_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE = registerBlock("asphalt_with_yellow_thick_diagonal_double_line", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_THICK_FRAME = registerBlock("asphalt_with_yellow_thick_frame", AsphaltBlock::new);
@@ -201,6 +217,10 @@ public class ModBlocks {
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE_SLAB = registerBlock("asphalt_with_white_broken_side_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_SIDE_LINE_SLAB = registerBlock("asphalt_with_white_side_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE_SLAB = registerBlock("asphalt_with_white_broken_diagonal_line_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB  = registerBlock("asphalt_with_white_middle_double_left_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB  = registerBlock("asphalt_with_white_middle_double_right_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB  = registerBlock("asphalt_with_white_middle_left_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB  = registerBlock("asphalt_with_white_middle_right_edge_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_DIAGONAL_LINE_SLAB = registerBlock("asphalt_with_white_diagonal_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE_SLAB = registerBlock("asphalt_with_white_diagonal_double_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_HATCHING_SLAB = registerBlock("asphalt_with_white_hatching_slab", AsphaltSlabBlock::new);
@@ -221,6 +241,10 @@ public class ModBlocks {
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE_SLAB = registerBlock("asphalt_with_white_thick_middle_double_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB = registerBlock("asphalt_with_white_thick_solid_and_broken_middle_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE_SLAB = registerBlock("asphalt_with_white_thick_broken_diagonal_line_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB  = registerBlock("asphalt_with_white_thick_middle_double_left_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB  = registerBlock("asphalt_with_white_thick_middle_double_right_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB  = registerBlock("asphalt_with_white_thick_middle_left_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB  = registerBlock("asphalt_with_white_thick_middle_right_edge_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE_SLAB = registerBlock("asphalt_with_white_thick_diagonal_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE_SLAB = registerBlock("asphalt_with_white_thick_diagonal_double_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_THICK_FRAME_SLAB = registerBlock("asphalt_with_white_thick_frame_slab", AsphaltSlabBlock::new);
@@ -234,6 +258,10 @@ public class ModBlocks {
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE_SLAB = registerBlock("asphalt_with_yellow_broken_side_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_SIDE_LINE_SLAB = registerBlock("asphalt_with_yellow_side_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE_SLAB = registerBlock("asphalt_with_yellow_broken_diagonal_line_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB  = registerBlock("asphalt_with_yellow_middle_double_left_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB  = registerBlock("asphalt_with_yellow_middle_double_right_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB  = registerBlock("asphalt_with_yellow_middle_left_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB  = registerBlock("asphalt_with_yellow_middle_right_edge_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_DIAGONAL_LINE_SLAB = registerBlock("asphalt_with_yellow_diagonal_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE_SLAB = registerBlock("asphalt_with_yellow_diagonal_double_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_HATCHING_SLAB = registerBlock("asphalt_with_yellow_hatching_slab", AsphaltSlabBlock::new);
@@ -254,6 +282,10 @@ public class ModBlocks {
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE_SLAB = registerBlock("asphalt_with_yellow_thick_middle_double_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB = registerBlock("asphalt_with_yellow_thick_solid_and_broken_middle_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE_SLAB = registerBlock("asphalt_with_yellow_thick_broken_diagonal_line_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB  = registerBlock("asphalt_with_yellow_thick_middle_double_left_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB  = registerBlock("asphalt_with_yellow_thick_middle_double_right_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB  = registerBlock("asphalt_with_yellow_thick_middle_left_edge_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB  = registerBlock("asphalt_with_yellow_thick_middle_right_edge_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE_SLAB = registerBlock("asphalt_with_yellow_thick_diagonal_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB = registerBlock("asphalt_with_yellow_thick_diagonal_double_line_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB = registerBlock("asphalt_with_yellow_thick_frame_slab", AsphaltSlabBlock::new);

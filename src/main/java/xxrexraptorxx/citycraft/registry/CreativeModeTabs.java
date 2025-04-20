@@ -971,11 +971,50 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get());
 
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get());
+
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get());
+                output.accept(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get());
+
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get());
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get());
                 output.accept(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get());
-
 
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_EDGE.get());
                 output.accept(ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get());

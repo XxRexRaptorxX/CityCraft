@@ -116,6 +116,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE.get(), output);
         slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING.get(), output);
 
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE.get(), output);
+        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE.get(), output);
+
         slabRecipes(ModBlocks.BOOST_ASPHALT_SLAB.get(), ModBlocks.BOOST_ASPHALT.get(), output);
 
         slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_A.get(), output);
@@ -686,7 +703,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_W.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
         paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_X.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
         paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Y.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Z.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);//
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Z.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE.get(), ModTags.ASPHALT_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE.get(), ModTags.ASPHALT_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE.get(), ModTags.ASPHALT_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE.get(), ModTags.ASPHALT_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE.get(), ModTags.ASPHALT_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE.get(), ModTags.ASPHALT_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get(), ModTags.ASPHALT_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE.get(), ModTags.ASPHALT_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE.get(), ModTags.ASPHALT_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
 
         paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
         paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
@@ -920,6 +954,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_X_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
         paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Y_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
         paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Z_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(), ModTags.ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG, Tags.Items.DYES_YELLOW, output);
 
         paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
         paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
