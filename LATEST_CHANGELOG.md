@@ -1,7 +1,2 @@
-# v.2.4.0 for MC 1.21
+# [v.2.4.0 for MC 1.21,1.21.1](https://github.com/XxRexRaptorxX/CityCraft/tree/v.2.4.0-dev1)
 
-## 📝 Changes
-
-- Initial release or changes not documented
-
-Please refer to commit history for detailed changes.
