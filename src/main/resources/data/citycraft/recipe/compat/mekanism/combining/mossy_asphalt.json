@@ -5,16 +5,13 @@
       "modid": "mekanism"
     }
   ],
-  "type":"mekanism:combining",
-
+  "type": "mekanism:combining",
   "extra_input": {
-      "item": "minecraft:moss_block"
+    "item": "minecraft:moss_block"
   },
-
   "main_input": {
-      "tag": "c:asphalt"
+    "tag": "c:asphalt"
   },
-
   "output": {
     "count": 2,
     "id": "citycraft:mossy_asphalt"

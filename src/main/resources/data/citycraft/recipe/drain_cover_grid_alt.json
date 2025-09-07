@@ -10,12 +10,10 @@
   ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
-
   "pattern": [
     "###",
     "###"
   ],
-
   "key": {
     "#": [
       {
@@ -23,7 +21,6 @@
       }
     ]
   },
-
   "result": {
     "id": "citycraft:drain_cover_grid",
     "count": 4

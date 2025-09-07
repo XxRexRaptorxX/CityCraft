@@ -10,15 +10,14 @@
     "amount": 32,
     "pigment": "mekanism:white"
   },
-
   "item_input": {
-
-      "type": "neoforge:difference",
-      "base": {
-        "tag": "c:poles" },
-      "subtracted": {
-        "item": "citycraft:white_pole"
-      }
+    "type": "neoforge:difference",
+    "base": {
+      "tag": "c:poles"
+    },
+    "subtracted": {
+      "item": "citycraft:white_pole"
+    }
   },
   "output": {
     "id": "citycraft:white_pole"

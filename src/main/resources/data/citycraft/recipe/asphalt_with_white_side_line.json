@@ -1,13 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-
   "pattern": [
     "I##",
     "I##",
     "I##"
   ],
-
   "key": {
     "#": {
       "item": "citycraft:asphalt"
@@ -16,7 +14,6 @@
       "tag": "c:dyes/white"
     }
   },
-
   "result": {
     "id": "citycraft:asphalt_with_white_side_line",
     "count": 6

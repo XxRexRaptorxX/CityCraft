@@ -122,107 +122,278 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE.get());
 
         this.add(ModBlocks.ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_SLAB.get()));
-        this.add(ModBlocks.CRACKED_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.CRACKED_ASPHALT_SLAB.get()));
-        this.add(ModBlocks.POTHOLE_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.POTHOLE_ASPHALT_SLAB.get()));
+        this.add(
+                ModBlocks.CRACKED_ASPHALT_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CRACKED_ASPHALT_SLAB.get()));
+        this.add(
+                ModBlocks.POTHOLE_ASPHALT_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.POTHOLE_ASPHALT_SLAB.get()));
         this.add(ModBlocks.MOSSY_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.MOSSY_ASPHALT_SLAB.get()));
         this.add(ModBlocks.DIRTY_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.DIRTY_ASPHALT_SLAB.get()));
 
         this.add(ModBlocks.WHITE_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.WHITE_ASPHALT_SLAB.get()));
-        this.add(ModBlocks.ORANGE_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.ORANGE_ASPHALT_SLAB.get()));
-        this.add(ModBlocks.MAGENTA_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.MAGENTA_ASPHALT_SLAB.get()));
-        this.add(ModBlocks.LIGHT_BLUE_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.LIGHT_BLUE_ASPHALT_SLAB.get()));
-        this.add(ModBlocks.YELLOW_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.YELLOW_ASPHALT_SLAB.get()));
+        this.add(
+                ModBlocks.ORANGE_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.ORANGE_ASPHALT_SLAB.get()));
+        this.add(
+                ModBlocks.MAGENTA_ASPHALT_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.MAGENTA_ASPHALT_SLAB.get()));
+        this.add(
+                ModBlocks.LIGHT_BLUE_ASPHALT_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LIGHT_BLUE_ASPHALT_SLAB.get()));
+        this.add(
+                ModBlocks.YELLOW_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.YELLOW_ASPHALT_SLAB.get()));
         this.add(ModBlocks.LIME_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.LIME_ASPHALT_SLAB.get()));
         this.add(ModBlocks.RED_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.RED_ASPHALT_SLAB.get()));
         this.add(ModBlocks.PINK_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.PINK_ASPHALT_SLAB.get()));
         this.add(ModBlocks.GRAY_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.GRAY_ASPHALT_SLAB.get()));
-        this.add(ModBlocks.LIGHT_GRAY_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.LIGHT_GRAY_ASPHALT_SLAB.get()));
+        this.add(
+                ModBlocks.LIGHT_GRAY_ASPHALT_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LIGHT_GRAY_ASPHALT_SLAB.get()));
         this.add(ModBlocks.CYAN_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.CYAN_ASPHALT_SLAB.get()));
-        this.add(ModBlocks.PURPLE_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.PURPLE_ASPHALT_SLAB.get()));
+        this.add(
+                ModBlocks.PURPLE_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.PURPLE_ASPHALT_SLAB.get()));
         this.add(ModBlocks.BLUE_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.BLUE_ASPHALT_SLAB.get()));
         this.add(ModBlocks.BROWN_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.BROWN_ASPHALT_SLAB.get()));
         this.add(ModBlocks.GREEN_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.GREEN_ASPHALT_SLAB.get()));
 
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_HATCHING_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_HATCHING_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_FRAME_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_FRAME_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_HATCHING_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_HATCHING_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_FRAME_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_FRAME_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(
+                        ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING_SLAB.get()));
 
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_HATCHING_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_HATCHING_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_FRAME_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_FRAME_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_HATCHING_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_HATCHING_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_FRAME_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_FRAME_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(
+                        ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get()));
 
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get()));
 
         this.dropSelf(ModBlocks.BOOST_ASPHALT.get());
         this.add(ModBlocks.BOOST_ASPHALT_SLAB.get(), block -> createSlabItemTable(ModBlocks.BOOST_ASPHALT_SLAB.get()));
@@ -283,58 +454,162 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_Y.get());
         this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_Z.get());
 
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_B_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_B_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_C_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_C_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_D_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_D_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_E_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_E_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_F_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_F_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_G_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_G_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_H_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_H_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_I_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_I_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_J_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_J_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_K_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_K_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_L_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_L_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_M_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_M_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_N_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_N_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_O_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_O_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_P_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_P_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_Q_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_Q_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_R_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_R_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_S_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_S_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_T_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_T_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_U_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_U_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_V_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_V_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_W_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_W_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_X_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_X_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_Y_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_Y_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_Z_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_Z_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_A_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_A_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_B_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_B_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_C_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_C_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_D_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_D_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_E_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_E_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_F_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_F_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_G_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_G_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_H_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_H_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_I_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_I_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_J_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_J_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_K_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_K_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_L_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_L_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_M_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_M_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_N_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_N_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_O_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_O_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_P_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_P_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_Q_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_Q_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_R_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_R_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_S_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_S_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_T_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_T_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_U_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_U_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_V_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_V_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_W_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_W_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_B_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_B_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_C_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_C_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_D_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_D_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_E_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_E_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_F_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_F_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_G_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_G_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_H_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_H_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_I_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_I_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_J_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_J_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_K_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_K_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_L_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_L_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_M_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_M_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_N_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_N_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_O_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_O_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_P_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_P_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_Q_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_Q_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_R_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_R_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_S_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_S_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_T_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_T_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_U_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_U_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_V_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_V_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_W_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_W_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_X_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_X_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_Y_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_Y_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_Z_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_Z_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_A_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_A_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_B_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_B_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_C_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_C_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_D_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_D_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_E_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_E_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_F_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_F_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_G_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_G_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_H_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_H_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_I_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_I_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_J_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_J_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_K_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_K_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_L_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_L_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_M_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_M_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_N_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_N_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_O_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_O_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_P_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_P_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_Q_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_Q_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_R_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_R_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_S_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_S_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_T_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_T_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_U_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_U_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_V_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_V_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_W_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_W_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get()));
 
         this.dropSelf(ModBlocks.IRON_POLE.get());
         this.dropSelf(ModBlocks.YELLOW_POLE.get());
@@ -682,24 +957,48 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get());
         this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get());
         this.dropSelf(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get());
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get()));
         this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get());
         this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get());
         this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get());
         this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get());
         this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get());
         this.dropSelf(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get());
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get()));
-        this.add(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get()));
+        this.add(
+                ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get()));
 
         this.dropSelf(ModBlocks.RED_WHITE_BARRIER_TAPE.get());
         this.dropSelf(ModBlocks.YELLOW_BLACK_BARRIER_TAPE.get());
@@ -847,17 +1146,17 @@ public class BlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.STREET_LANTERN.get());
         this.dropSelf(ModBlocks.MODERN_STREET_LANTERN.get());
-        this.add(ModBlocks.STREET_LANTERN_PANEL.get(), block -> createSlabItemTable(ModBlocks.STREET_LANTERN_PANEL.get()));
-
+        this.add(
+                ModBlocks.STREET_LANTERN_PANEL.get(),
+                block -> createSlabItemTable(ModBlocks.STREET_LANTERN_PANEL.get()));
     }
-
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries() // Get all registered entries
+        return ModBlocks.BLOCKS
+                .getEntries() // Get all registered entries
                 .stream() // Stream the wrapped objects
                 .map(Holder::value) // Get the object if available
                 .toList(); // Create the iterable
     }
-
 }

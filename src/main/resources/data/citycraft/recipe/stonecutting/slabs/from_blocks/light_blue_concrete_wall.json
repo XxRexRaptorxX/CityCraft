@@ -3,8 +3,8 @@
   "ingredient": {
     "item": "minecraft:light_blue_concrete"
   },
-    "result": {
+  "result": {
     "count": 1,
     "id": "citycraft:light_blue_concrete_wall"
-    }
+  }
 }

@@ -1,13 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-
   "pattern": [
     " # ",
     "#X#",
     " # "
   ],
-
   "key": {
     "#": {
       "tag": "c:glass_panes/colorless"
@@ -16,7 +14,6 @@
       "item": "minecraft:redstone_lamp"
     }
   },
-
   "result": {
     "id": "citycraft:yellow_lamp",
     "count": 3

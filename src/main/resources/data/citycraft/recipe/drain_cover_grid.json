@@ -1,13 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-
   "pattern": [
     " X ",
     "X#X",
     " X "
   ],
-
   "key": {
     "#": {
       "item": "minecraft:iron_bars"
@@ -16,7 +14,6 @@
       "tag": "c:ingots/iron"
     }
   },
-
   "result": {
     "id": "citycraft:drain_cover_grid",
     "count": 3

@@ -5,7 +5,6 @@
         "model": "citycraft:block/yellow_black_traffic_barrier_post"
       }
     },
-
     {
       "apply": {
         "model": "citycraft:block/yellow_black_traffic_barrier_side"

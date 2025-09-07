@@ -10,13 +10,11 @@
   ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
-
   "pattern": [
     " # ",
     "#I#",
     " # "
   ],
-
   "key": {
     "#": {
       "tag": "c:plates/iron"
@@ -25,7 +23,6 @@
       "item": "citycraft:iron_pole"
     }
   },
-
   "result": {
     "id": "citycraft:rhombus_sign",
     "count": 4

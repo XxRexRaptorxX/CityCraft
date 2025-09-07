@@ -4,8 +4,8 @@
   "ingredient": {
     "item": "citycraft:mossy_asphalt"
   },
-    "result": {
+  "result": {
     "count": 1,
     "id": "citycraft:mossy_asphalt_slab"
-    }
+  }
 }

@@ -4,13 +4,11 @@
   "pattern": [
     "##"
   ],
-
   "key": {
     "#": {
       "item": "citycraft:signal_light"
     }
   },
-
   "result": {
     "id": "citycraft:danger_signal_light"
   }

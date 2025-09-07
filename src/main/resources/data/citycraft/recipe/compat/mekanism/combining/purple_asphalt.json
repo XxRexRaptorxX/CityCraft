@@ -5,16 +5,13 @@
       "modid": "mekanism"
     }
   ],
-  "type":"mekanism:combining",
-
+  "type": "mekanism:combining",
   "extra_input": {
-      "tag":"c:dyes/purple"
+    "tag": "c:dyes/purple"
   },
-
   "main_input": {
-      "tag":"c:asphalt"
+    "tag": "c:asphalt"
   },
-
   "output": {
     "count": 1,
     "id": "citycraft:purple_asphalt"

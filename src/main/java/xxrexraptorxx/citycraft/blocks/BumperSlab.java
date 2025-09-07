@@ -19,63 +19,66 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
-
 public class BumperSlab extends SlabBlock {
 
-	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
+    public BumperSlab() {
+        super(Properties.ofFullCopy(ModBlocks.ASPHALT_BLOCK.get()));
 
-	public BumperSlab() {
-		super(Properties.ofFullCopy(ModBlocks.ASPHALT_BLOCK.get())
-		);
+        this.registerDefaultState(
+                this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false)));
+    }
 
-		this.registerDefaultState(this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false)));
-	}
+    @Override
+    public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
+        if (level.isClientSide || entity == null) return;
 
+        if (entity instanceof LivingEntity) {
+            entity.setDeltaMovement(entity.getDeltaMovement().x, 0.5D, entity.getDeltaMovement().z);
+            entity.fallDistance = 0.0F;
+        }
+    }
 
-	@Override
-	public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-		if (level.isClientSide || entity == null) return;
+    @Override
+    public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(FACING, TYPE, WATERLOGGED);
+    }
 
-		if (entity instanceof LivingEntity) {
-			entity.setDeltaMovement(entity.getDeltaMovement().x, 0.5D, entity.getDeltaMovement().z);
-			entity.fallDistance = 0.0F;
-		}
-	}
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        BlockPos blockpos = context.getClickedPos();
+        BlockState blockstate = context.getLevel().getBlockState(blockpos);
 
+        if (blockstate.is(this)) {
+            return blockstate
+                    .setValue(FACING, context.getHorizontalDirection().getOpposite())
+                    .setValue(TYPE, SlabType.DOUBLE)
+                    .setValue(WATERLOGGED, Boolean.valueOf(false));
 
-	@Override
-	public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING, TYPE, WATERLOGGED);
-	}
+        } else {
+            FluidState fluidstate = context.getLevel().getFluidState(blockpos);
+            BlockState blockstate1 = this.defaultBlockState()
+                    .setValue(FACING, context.getHorizontalDirection().getOpposite())
+                    .setValue(TYPE, SlabType.BOTTOM)
+                    .setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
+            Direction direction = context.getClickedFace();
 
+            return direction != Direction.DOWN
+                            && (direction == Direction.UP
+                                    || !(context.getClickLocation().y - (double) blockpos.getY() > 0.5D))
+                    ? blockstate1
+                    : blockstate1.setValue(TYPE, SlabType.TOP);
+        }
+    }
 
-	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		BlockPos blockpos = context.getClickedPos();
-		BlockState blockstate = context.getLevel().getBlockState(blockpos);
+    @Override
+    public BlockState rotate(BlockState state, Rotation rot) {
+        return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
+    }
 
-		if (blockstate.is(this)) {
-			return blockstate.setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(TYPE, SlabType.DOUBLE).setValue(WATERLOGGED, Boolean.valueOf(false));
-
-		} else {
-			FluidState fluidstate = context.getLevel().getFluidState(blockpos);
-			BlockState blockstate1 = this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
-			Direction direction = context.getClickedFace();
-
-			return direction != Direction.DOWN && (direction == Direction.UP || !(context.getClickLocation().y - (double)blockpos.getY() > 0.5D)) ? blockstate1 : blockstate1.setValue(TYPE, SlabType.TOP);
-		}
-	}
-
-
-	@Override
-	public BlockState rotate(BlockState state, Rotation rot) {
-		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
-	}
-
-
-	@Override
-	public BlockState mirror(BlockState state, Mirror mirror) {
-		return state.rotate(mirror.getRotation(state.getValue(FACING)));
-	}
+    @Override
+    public BlockState mirror(BlockState state, Mirror mirror) {
+        return state.rotate(mirror.getRotation(state.getValue(FACING)));
+    }
 }

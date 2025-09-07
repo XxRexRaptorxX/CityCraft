@@ -3,11 +3,9 @@
   "category": "blocks",
   "cookingtime": 200,
   "experience": 0.1,
-
   "ingredient": {
     "item": "citycraft:cracked_asphalt"
   },
-
   "result": {
     "id": "citycraft:pothole_asphalt"
   }

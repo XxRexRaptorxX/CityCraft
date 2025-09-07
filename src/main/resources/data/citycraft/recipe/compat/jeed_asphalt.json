@@ -5,10 +5,8 @@
       "modid": "jeed"
     }
   ],
-
   "type": "jeed:effect_provider",
   "effect": "minecraft:speed",
-
   "providers": [
     {
       "tag": "citycraft:blocks_with_speed_boost"

@@ -7,13 +7,11 @@
   ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
-
   "pattern": [
     " # ",
     "###",
     " I "
   ],
-
   "key": {
     "#": {
       "tag": "c:ingots/iron"
@@ -22,7 +20,6 @@
       "item": "citycraft:iron_pole"
     }
   },
-
   "result": {
     "id": "citycraft:triangle_sign",
     "count": 4

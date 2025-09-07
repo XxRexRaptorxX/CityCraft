@@ -6,13 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-
-      "tag": "c:buckets/coal_tar"
+  "input": {
+    "tag": "c:buckets/coal_tar"
   },
-  "output":
-  {
+  "output": {
     "id": "minecraft:coal",
     "count": 3
   }

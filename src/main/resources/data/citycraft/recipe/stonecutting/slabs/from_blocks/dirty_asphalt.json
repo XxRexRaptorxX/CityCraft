@@ -4,8 +4,8 @@
   "ingredient": {
     "item": "citycraft:dirty_asphalt"
   },
-    "result": {
+  "result": {
     "count": 1,
     "id": "citycraft:dirty_asphalt_slab"
-    }
+  }
 }

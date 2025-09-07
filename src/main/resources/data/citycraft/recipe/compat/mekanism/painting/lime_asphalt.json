@@ -10,14 +10,13 @@
     "amount": 32,
     "pigment": "mekanism:lime"
   },
-
   "item_input": {
-
-      "type": "neoforge:difference",
-      "base": {
-        "tag": "c:asphalt" },
-      "subtracted": {
-        "item": "citycraft:lime_asphalt"
+    "type": "neoforge:difference",
+    "base": {
+      "tag": "c:asphalt"
+    },
+    "subtracted": {
+      "item": "citycraft:lime_asphalt"
     }
   },
   "output": {

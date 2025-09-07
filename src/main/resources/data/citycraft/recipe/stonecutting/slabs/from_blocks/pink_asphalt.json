@@ -4,8 +4,8 @@
   "ingredient": {
     "item": "citycraft:pink_asphalt"
   },
-    "result": {
+  "result": {
     "count": 1,
     "id": "citycraft:pink_asphalt_slab"
-    }
+  }
 }

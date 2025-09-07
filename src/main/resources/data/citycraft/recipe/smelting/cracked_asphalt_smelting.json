@@ -3,11 +3,9 @@
   "category": "blocks",
   "cookingtime": 200,
   "experience": 0.1,
-
   "ingredient": {
     "item": "citycraft:asphalt"
   },
-
   "result": {
     "id": "citycraft:cracked_asphalt"
   }

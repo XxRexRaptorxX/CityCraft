@@ -12,10 +12,8 @@
       "type": "neoforge:not"
     }
   ],
-
   "type": "immersiveengineering:arc_furnace",
   "additives": [
-
     {
       "tag": "c:buckets/coal_tar"
     },
@@ -23,7 +21,6 @@
       "item": "minecraft:water_bucket"
     }
   ],
-
   "energy": 50000,
   "input": {
     "basePredicate": {
@@ -31,7 +28,6 @@
     },
     "count": 1
   },
-
   "results": [
     {
       "basePredicate": {

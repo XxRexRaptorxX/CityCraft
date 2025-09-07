@@ -5,16 +5,13 @@
       "modid": "mekanism"
     }
   ],
-  "type":"mekanism:combining",
-
+  "type": "mekanism:combining",
   "extra_input": {
-      "item": "minecraft:vine"
+    "item": "minecraft:vine"
   },
-
   "main_input": {
-      "tag": "c:asphalt"
+    "tag": "c:asphalt"
   },
-
   "output": {
     "count": 1,
     "id": "citycraft:mossy_asphalt"

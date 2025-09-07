@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-  [
+  "values": [
     {
       "id": "assemblylinemachines:oil_bucket",
       "required": false

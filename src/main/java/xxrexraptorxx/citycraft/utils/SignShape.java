@@ -1,7 +1,6 @@
 package xxrexraptorxx.citycraft.utils;
 
 public enum SignShape {
-
     ROUND("round"),
     TRIANGLE("triangle"),
     UPSIDE_DOWN_TRIANGLE("upside_down_triangle"),
@@ -11,7 +10,6 @@ public enum SignShape {
     CROSS("cross"),
     RECTANGLE("rectangle"),
     BAKE("bake");
-
 
     private final String name;
 

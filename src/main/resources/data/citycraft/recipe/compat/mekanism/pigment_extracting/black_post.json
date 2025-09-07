@@ -5,12 +5,10 @@
       "modid": "mekanism"
     }
   ],
-  "type":"mekanism:pigment_extracting",
-  
+  "type": "mekanism:pigment_extracting",
   "input": {
-      "item": "citycraft:black_post"
+    "item": "citycraft:black_post"
   },
-
   "output": {
     "amount": 24,
     "id": "mekanism:black"

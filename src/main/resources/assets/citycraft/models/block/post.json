@@ -4,29 +4,107 @@
   },
   "elements": [
     {
-      "from": [4, 0, 4],
-      "to": [12, 16, 12],
+      "from": [
+        4,
+        0,
+        4
+      ],
+      "to": [
+        12,
+        16,
+        12
+      ],
       "faces": {
-        "north": {"uv": [4, 0, 12, 16], "texture": "#texture"},
-        "east": {"uv": [4, 0, 12, 16], "texture": "#texture"},
-        "south": {"uv": [4, 0, 12, 16], "texture": "#texture"},
-        "west": {"uv": [4, 0, 12, 16], "texture": "#texture"},
-        "up": {"uv": [4, 0, 12, 8], "texture": "#texture", "cullface": "up"},
-        "down": {"uv": [4, 8, 12, 16], "texture": "#texture", "cullface": "down"}
+        "north": {
+          "uv": [
+            4,
+            0,
+            12,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "east": {
+          "uv": [
+            4,
+            0,
+            12,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "south": {
+          "uv": [
+            4,
+            0,
+            12,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "west": {
+          "uv": [
+            4,
+            0,
+            12,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "up": {
+          "uv": [
+            4,
+            0,
+            12,
+            8
+          ],
+          "texture": "#texture",
+          "cullface": "up"
+        },
+        "down": {
+          "uv": [
+            4,
+            8,
+            12,
+            16
+          ],
+          "texture": "#texture",
+          "cullface": "down"
+        }
       }
     }
   ],
   "display": {
     "ground": {
-      "translation": [0, 3, 0],
-      "scale": [0.25, 0.25, 0.25]
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
     },
     "gui": {
-      "rotation": [30, 225, 0],
-      "scale": [0.625, 0.625, 0.625]
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
     },
     "head": {
-      "translation": [0, 7.5, 0]
+      "translation": [
+        0,
+        7.5,
+        0
+      ]
     }
   }
 }

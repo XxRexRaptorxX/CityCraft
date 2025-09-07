@@ -3,11 +3,9 @@
   "category": "blocks",
   "cookingtime": 200,
   "experience": 1.0,
-
   "ingredient": {
     "tag": "c:dusts/asphalt"
   },
-
   "result": {
     "id": "citycraft:asphalt"
   }

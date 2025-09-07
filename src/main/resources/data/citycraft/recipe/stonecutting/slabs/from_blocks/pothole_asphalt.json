@@ -4,8 +4,8 @@
   "ingredient": {
     "item": "citycraft:pothole_asphalt"
   },
-    "result": {
+  "result": {
     "count": 1,
     "id": "citycraft:pothole_asphalt_slab"
-    }
+  }
 }

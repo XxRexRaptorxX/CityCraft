@@ -1,8 +1,8 @@
 {
-	"parent": "citycraft:block/traffic_barriers_side",
-	"textures": {
-		"particle": "citycraft:block/yellow_black_traffic_barrier",
-		"texture": "citycraft:block/yellow_black_traffic_barrier",
-		"pole": "citycraft:block/iron_pole"
-	}
+  "parent": "citycraft:block/traffic_barriers_side",
+  "textures": {
+    "particle": "citycraft:block/yellow_black_traffic_barrier",
+    "texture": "citycraft:block/yellow_black_traffic_barrier",
+    "pole": "citycraft:block/iron_pole"
+  }
 }

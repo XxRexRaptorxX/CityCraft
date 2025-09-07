@@ -10,13 +10,13 @@ import xxrexraptorxx.citycraft.recipes.PaintingRecipe;
 
 public class ModRecipeSerializers {
 
-    public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS = DeferredRegister.create(BuiltInRegistries.RECIPE_SERIALIZER, References.MODID);
+    public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS =
+            DeferredRegister.create(BuiltInRegistries.RECIPE_SERIALIZER, References.MODID);
 
     public static void init(IEventBus bus) {
         SERIALIZERS.register(bus);
     }
 
-
-    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> PAINTING = SERIALIZERS.register("painting", () -> new PaintingRecipe.Serializer().INSTANCE);
-
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<?>> PAINTING =
+            SERIALIZERS.register("painting", () -> new PaintingRecipe.Serializer().INSTANCE);
 }

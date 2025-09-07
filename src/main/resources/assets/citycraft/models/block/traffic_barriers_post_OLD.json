@@ -1,59 +1,267 @@
 {
-	"credit": "Made with Blockbench by XxRexRaptorxX",
-	"textures": {
-		"1": "citycraft:block/iron_pole",
-		"2": "citycraft:block/traffic_barrier",
-		"particle": "citycraft:block/traffic_barrier"
-	},
-	"elements": [
-		{
-			"name": "post",
-			"from": [7, 0, 7],
-			"to": [9, 7, 9],
-			"faces": {
-				"north": {"uv": [7, 7, 9, 16], "texture": "#1"},
-				"east": {"uv": [10, 7, 12, 16], "texture": "#1"},
-				"south": {"uv": [4, 7, 6, 16], "texture": "#1"},
-				"west": {"uv": [1, 7, 3, 16], "texture": "#1"},
-				"down": {"uv": [6, 6, 8, 8], "texture": "#1", "cullface": "down"}
-			}
-		},
-		{
-			"name": "lower bar",
-			"from": [6, 7, 6],
-			"to": [10, 10, 10],
-			"faces": {
-				"north": {"uv": [0, 6, 4, 9], "texture": "#2", "cullface": "north"},
-				"east": {"uv": [0, 6, 4, 9], "texture": "#2"},
-				"south": {"uv": [0, 6, 4, 9], "texture": "#2"},
-				"west": {"uv": [0, 6, 4, 9], "texture": "#2"},
-				"up": {"uv": [6, 9, 10, 13], "rotation": 90, "texture": "#2"},
-				"down": {"uv": [6, 9, 10, 13], "rotation": 90, "texture": "#2"}
-			}
-		},
-		{
-			"name": "middle bar",
-			"from": [7, 10, 7],
-			"to": [9, 13, 9],
-			"faces": {
-				"north": {"uv": [0, 3, 2, 6], "texture": "#2", "cullface": "north"},
-				"east": {"uv": [0, 3, 2, 6], "texture": "#2"},
-				"south": {"uv": [0, 3, 2, 6], "texture": "#2"},
-				"west": {"uv": [0, 3, 2, 6], "texture": "#2"}
-			}
-		},
-		{
-			"name": "top bar",
-			"from": [6, 13, 6],
-			"to": [10, 16, 10],
-			"faces": {
-				"north": {"uv": [0, 0, 4, 3], "texture": "#2", "cullface": "north"},
-				"east": {"uv": [0, 0, 4, 3], "texture": "#2"},
-				"south": {"uv": [0, 0, 4, 3], "texture": "#2"},
-				"west": {"uv": [0, 0, 4, 3], "texture": "#2"},
-				"up": {"uv": [6, 9, 10, 13], "rotation": 90, "texture": "#2"},
-				"down": {"uv": [6, 9, 10, 13], "rotation": 90, "texture": "#2"}
-			}
-		}
-	]
+  "credit": "Made with Blockbench by XxRexRaptorxX",
+  "textures": {
+    "1": "citycraft:block/iron_pole",
+    "2": "citycraft:block/traffic_barrier",
+    "particle": "citycraft:block/traffic_barrier"
+  },
+  "elements": [
+    {
+      "name": "post",
+      "from": [
+        7,
+        0,
+        7
+      ],
+      "to": [
+        9,
+        7,
+        9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            7,
+            9,
+            16
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            10,
+            7,
+            12,
+            16
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            4,
+            7,
+            6,
+            16
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            1,
+            7,
+            3,
+            16
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            6,
+            6,
+            8,
+            8
+          ],
+          "texture": "#1",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "lower bar",
+      "from": [
+        6,
+        7,
+        6
+      ],
+      "to": [
+        10,
+        10,
+        10
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            6,
+            4,
+            9
+          ],
+          "texture": "#2",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [
+            0,
+            6,
+            4,
+            9
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            6,
+            4,
+            9
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            6,
+            4,
+            9
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            6,
+            9,
+            10,
+            13
+          ],
+          "rotation": 90,
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            6,
+            9,
+            10,
+            13
+          ],
+          "rotation": 90,
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "middle bar",
+      "from": [
+        7,
+        10,
+        7
+      ],
+      "to": [
+        9,
+        13,
+        9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            3,
+            2,
+            6
+          ],
+          "texture": "#2",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [
+            0,
+            3,
+            2,
+            6
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            3,
+            2,
+            6
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            3,
+            2,
+            6
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "top bar",
+      "from": [
+        6,
+        13,
+        6
+      ],
+      "to": [
+        10,
+        16,
+        10
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            3
+          ],
+          "texture": "#2",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4,
+            3
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            3
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4,
+            3
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            6,
+            9,
+            10,
+            13
+          ],
+          "rotation": 90,
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            6,
+            9,
+            10,
+            13
+          ],
+          "rotation": 90,
+          "texture": "#2"
+        }
+      }
+    }
+  ]
 }

@@ -10,15 +10,14 @@
     "amount": 32,
     "pigment": "mekanism:white"
   },
-
   "item_input": {
-
-      "type": "neoforge:difference",
-      "base": {
-        "tag": "c:asphalt" },
-      "subtracted": {
-        "item": "citycraft:white_asphalt"
-      }
+    "type": "neoforge:difference",
+    "base": {
+      "tag": "c:asphalt"
+    },
+    "subtracted": {
+      "item": "citycraft:white_asphalt"
+    }
   },
   "output": {
     "id": "citycraft:white_asphalt"

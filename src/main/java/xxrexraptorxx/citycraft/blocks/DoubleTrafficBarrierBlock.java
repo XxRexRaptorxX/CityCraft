@@ -14,12 +14,10 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import xxrexraptorxx.citycraft.registry.ModTags;
 
-
 public class DoubleTrafficBarrierBlock extends FenceBlock implements SimpleWaterloggedBlock {
 
     private static final VoxelShape POST_SHAPE = Block.box(3.0D, 0.0D, 3.0D, 13.0D, 16.0D, 13.0D);
     private static final VoxelShape FULL_SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
-
 
     public DoubleTrafficBarrierBlock() {
         super(Properties.of()
@@ -27,11 +25,8 @@ public class DoubleTrafficBarrierBlock extends FenceBlock implements SimpleWater
                 .sound(SoundType.METAL)
                 .mapColor(MapColor.METAL)
                 .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                .requiresCorrectToolForDrops()
-        );
-
+                .requiresCorrectToolForDrops());
     }
-
 
     @Override
     public boolean connectsTo(BlockState state, boolean isSideSolid, Direction direction) {
@@ -39,11 +34,9 @@ public class DoubleTrafficBarrierBlock extends FenceBlock implements SimpleWater
         return !isExceptionForConnection(state) && isSideSolid || flag;
     }
 
-
     private boolean isSameFence(BlockState state) {
         return state.is(ModTags.TRAFFIC_BARRIERS_TAG);
     }
-
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
@@ -51,7 +44,7 @@ public class DoubleTrafficBarrierBlock extends FenceBlock implements SimpleWater
             return FULL_SHAPE;
 
         } else {
-            return  POST_SHAPE;
+            return POST_SHAPE;
         }
     }
 }

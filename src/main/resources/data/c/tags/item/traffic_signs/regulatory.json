@@ -49,7 +49,6 @@
     "citycraft:one_way_eu_sign",
     "citycraft:priority_over_oncoming_traffic_eu_sign",
     "citycraft:pedestrian_crossing_eu_sign",
-
     "citycraft:25_advisory_speed_us_sign",
     "citycraft:35_advisory_speed_us_sign",
     "citycraft:45_advisory_speed_us_sign",
@@ -64,14 +63,12 @@
     "citycraft:left_turn_only_us_sign",
     "citycraft:right_turn_only_us_sign",
     "citycraft:crossbuck_us_sign",
-
     "citycraft:one_way_cn_sign",
     "citycraft:30_advisory_speed_cn_sign",
     "citycraft:40_advisory_speed_cn_sign",
     "citycraft:50_advisory_speed_cn_sign",
     "citycraft:stop_cn_sign",
     "citycraft:priority_cn_sign",
-
     "citycraft:variable_traffic_sign_lane_open",
     "citycraft:variable_traffic_sign_lane_closed",
     "citycraft:variable_traffic_sign_lane_change_left",

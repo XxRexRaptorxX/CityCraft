@@ -6,15 +6,13 @@
     }
   ],
   "type": "assemblylinemachines:grinder",
-  "input":{
+  "input": {
     "tag": "c:asphalt"
   },
-
-  "output":{
+  "output": {
     "item": "citycraft:asphalt_mixture",
     "count": 1
   },
-
   "grinds": 6,
   "bladetype": "TITANIUM"
 }

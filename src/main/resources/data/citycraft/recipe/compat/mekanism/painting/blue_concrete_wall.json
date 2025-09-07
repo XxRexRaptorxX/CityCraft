@@ -10,14 +10,13 @@
     "amount": 32,
     "pigment": "mekanism:blue"
   },
-
   "item_input": {
-
-      "type": "neoforge:difference",
-      "base": {
-        "tag": "c:walls/concrete" },
-      "subtracted": {
-        "item": "citycraft:blue_concrete_wall"
+    "type": "neoforge:difference",
+    "base": {
+      "tag": "c:walls/concrete"
+    },
+    "subtracted": {
+      "item": "citycraft:blue_concrete_wall"
     }
   },
   "output": {

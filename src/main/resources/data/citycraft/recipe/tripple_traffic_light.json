@@ -6,13 +6,11 @@
     "#",
     "#"
   ],
-
   "key": {
     "#": {
       "item": "citycraft:signal_light"
     }
   },
-
   "result": {
     "id": "citycraft:tripple_traffic_light"
   }

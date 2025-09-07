@@ -6,13 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-
-      "item": "citycraft:asphalt"
+  "input": {
+    "item": "citycraft:asphalt"
   },
-  "output":
-  {
+  "output": {
     "id": "citycraft:mossy_asphalt"
   }
 }

@@ -26,7 +26,6 @@ import xxrexraptorxx.citycraft.registry.ModBlocks;
 
 import java.util.function.ToIntFunction;
 
-
 public class TrafficLightBlock extends HorizontalDirectionalBlock implements SimpleWaterloggedBlock {
 
     public static final MapCodec<TrafficLightBlock> CODEC = simpleCodec(TrafficLightBlock::new);
@@ -38,10 +37,12 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
     private static final VoxelShape SIDE_EAST_WEST = Block.box(4.0D, 0.0D, 0.0D, 12.0D, 8.0D, 16.0D);
     private static final VoxelShape SIDE_NORTH_SOUTH = Block.box(0.0D, 0.0D, 4.0D, 16.0D, 8.0D, 12.0D);
 
-
     public TrafficLightBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.defaultBlockState().setValue(LIT, Boolean.valueOf(true)).setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, Boolean.valueOf(false)));
+        this.registerDefaultState(this.defaultBlockState()
+                .setValue(LIT, Boolean.valueOf(true))
+                .setValue(FACING, Direction.NORTH)
+                .setValue(WATERLOGGED, Boolean.valueOf(false)));
     }
 
     public TrafficLightBlock() {
@@ -52,10 +53,8 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
                 .mapColor(DyeColor.GRAY)
                 .instrument(NoteBlockInstrument.PLING)
                 .lightLevel(litBlockEmission(2))
-                .requiresCorrectToolForDrops()
-        );
+                .requiresCorrectToolForDrops());
     }
-
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
@@ -69,7 +68,7 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
             return SINGLE;
         } else {
 
-            //SIDE
+            // SIDE
             if (state.getValue(FACING) == Direction.NORTH || state.getValue(FACING) == Direction.SOUTH) {
                 return SIDE_NORTH_SOUTH;
             } else {
@@ -83,7 +82,6 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         builder.add(FACING, LIT, WATERLOGGED);
     }
 
-
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         FluidState fluidstate = context.getLevel().getFluidState(context.getClickedPos());
@@ -94,15 +92,19 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
                 .setValue(LIT, Boolean.valueOf(!context.getLevel().hasNeighborSignal(context.getClickedPos())));
     }
 
-
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
 
-
     @Override
-    public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos) {
+    public BlockState updateShape(
+            BlockState state,
+            Direction facing,
+            BlockState facingState,
+            LevelAccessor level,
+            BlockPos currentPos,
+            BlockPos facingPos) {
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
@@ -110,9 +112,9 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         return super.updateShape(state, facing, facingState, level, currentPos, facingPos);
     }
 
-
     @Override
-    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
+    public void neighborChanged(
+            BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
         if (!level.isClientSide) {
             boolean isLit = state.getValue(LIT);
             boolean hasSignal = level.hasNeighborSignal(pos);
@@ -125,7 +127,6 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         }
     }
 
-
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         boolean hasSignal = level.hasNeighborSignal(pos);
@@ -136,19 +137,17 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         }
     }
 
-
     @Override
-    public boolean canConnectRedstone(BlockState state, BlockGetter level, BlockPos pos, @Nullable Direction direction) {
+    public boolean canConnectRedstone(
+            BlockState state, BlockGetter level, BlockPos pos, @Nullable Direction direction) {
         return true;
     }
-
 
     private static ToIntFunction<BlockState> litBlockEmission(int lightValue) {
         return (block) -> {
             return block.getValue(BlockStateProperties.LIT) ? lightValue : 0;
         };
     }
-
 
     @Override
     protected MapCodec<? extends HorizontalDirectionalBlock> codec() {

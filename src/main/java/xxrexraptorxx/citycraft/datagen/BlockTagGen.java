@@ -12,10 +12,10 @@ import java.util.concurrent.CompletableFuture;
 
 public class BlockTagGen extends BlockTagsProvider {
 
-    public BlockTagGen(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, ExistingFileHelper helper) {
+    public BlockTagGen(
+            PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, ExistingFileHelper helper) {
         super(packOutput, lookupProvider, References.MODID, helper);
     }
-
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
@@ -26,7 +26,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.POTHOLE_ASPHALT.get(),
                         ModBlocks.MOSSY_ASPHALT.get(),
                         ModBlocks.DIRTY_ASPHALT.get(),
-
                         ModBlocks.WHITE_ASPHALT.get(),
                         ModBlocks.ORANGE_ASPHALT.get(),
                         ModBlocks.MAGENTA_ASPHALT.get(),
@@ -42,7 +41,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.BLUE_ASPHALT.get(),
                         ModBlocks.BROWN_ASPHALT.get(),
                         ModBlocks.GREEN_ASPHALT.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE.get(),
@@ -74,7 +72,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING.get(),
-
                         ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE.get(),
@@ -106,7 +103,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE.get(),
@@ -123,14 +119,11 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE.get(),
-
-
                         ModBlocks.ASPHALT_SLAB.get(),
                         ModBlocks.CRACKED_ASPHALT_SLAB.get(),
                         ModBlocks.POTHOLE_ASPHALT_SLAB.get(),
                         ModBlocks.MOSSY_ASPHALT_SLAB.get(),
                         ModBlocks.DIRTY_ASPHALT_SLAB.get(),
-
                         ModBlocks.WHITE_ASPHALT_SLAB.get(),
                         ModBlocks.ORANGE_ASPHALT_SLAB.get(),
                         ModBlocks.MAGENTA_ASPHALT_SLAB.get(),
@@ -146,7 +139,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.BLUE_ASPHALT_SLAB.get(),
                         ModBlocks.BROWN_ASPHALT_SLAB.get(),
                         ModBlocks.GREEN_ASPHALT_SLAB.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE_SLAB.get(),
@@ -178,7 +170,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING_SLAB.get(),
-
                         ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE_SLAB.get(),
@@ -210,7 +201,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(),
@@ -227,12 +217,10 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(),
-
                         ModBlocks.BOOST_ASPHALT.get(),
                         ModBlocks.BOOST_ASPHALT_SLAB.get(),
                         ModBlocks.RED_BUMPER_SLAB.get(),
                         ModBlocks.YELLOW_BUMPER_SLAB.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_A.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_B.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_C.get(),
@@ -285,7 +273,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_X.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_Y.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_Z.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_B_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_C_SLAB.get(),
@@ -338,7 +325,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(),
-
                         ModBlocks.IRON_POLE.get(),
                         ModBlocks.RED_POLE.get(),
                         ModBlocks.WHITE_POLE.get(),
@@ -354,14 +340,12 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.BLACK_POST.get(),
                         ModBlocks.RED_WHITE_POST.get(),
                         ModBlocks.YELLOW_BLACK_POST.get(),
-
                         ModBlocks.DRAIN_COVER.get(),
                         ModBlocks.DRAIN_COVER_GRID.get(),
                         ModBlocks.RED_CHAIN.get(),
                         ModBlocks.WHITE_CHAIN.get(),
                         ModBlocks.YELLOW_CHAIN.get(),
                         ModBlocks.BLACK_CHAIN.get(),
-
                         ModBlocks.LEFT_ARROW_EU_SIGN.get(),
                         ModBlocks.CAMPING_EU_SIGN.get(),
                         ModBlocks.PR_EU_SIGN.get(),
@@ -574,7 +558,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.WINDING_ROAD_US_SIGN.get(),
                         ModBlocks.WORKERS_US_SIGN.get(),
                         ModBlocks.Y_INTERSECTION_US_SIGN.get(),
-
                         ModBlocks.EXIT_CLOSED_US_SIGN.get(),
                         ModBlocks.NO_HAZARDOUS_CARGO_EU_SIGN.get(),
                         ModBlocks.M_AHEAD_EU_SIGN.get(),
@@ -624,7 +607,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.WARNING_BEACON_ALT_US_SIGN.get(),
                         ModBlocks.WARNING_BEACON_LEFT_US_SIGN.get(),
                         ModBlocks.WARNING_BEACON_RIGHT_US_SIGN.get(),
-
                         ModBlocks.ONCOMING_TRAFFIC_CN_SIGN.get(),
                         ModBlocks.INTERSECTION_CN_SIGN.get(),
                         ModBlocks.DETOUR_LEFT_OR_RIGHT_CN_SIGN.get(),
@@ -685,7 +667,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.T_INTERSECTION_CN_SIGN.get(),
                         ModBlocks.TELEPHONE_CN_SIGN.get(),
                         ModBlocks.UNEVEN_ROAD_CN_SIGN.get(),
-
                         ModBlocks.ROUND_SIGN.get(),
                         ModBlocks.TRIANGLE_SIGN.get(),
                         ModBlocks.RECTANGLE_SIGN.get(),
@@ -695,7 +676,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.RHOMBUS_SIGN.get(),
                         ModBlocks.OCTAGON_SIGN.get(),
                         ModBlocks.BAKE_SIGN.get(),
-
                         ModBlocks.ENTERING_PROHIBITED_SIGN.get(),
                         ModBlocks.HEAVY_LOAD_PROHIBITED_SIGN.get(),
                         ModBlocks.LASER_WARNING_SIGN.get(),
@@ -734,7 +714,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.UNAUTHORISED_PROHIBITED_SIGN.get(),
                         ModBlocks.VOLTAGE_WARNING_SIGN.get(),
                         ModBlocks.WARNING_SIGN.get(),
-
                         ModBlocks.IRON_FENCE.get(),
                         ModBlocks.TRAFFIC_BARRIER.get(),
                         ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get(),
@@ -742,7 +721,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.DOUBLE_TRAFFIC_BARRIER.get(),
                         ModBlocks.DOUBLE_RED_WHITE_TRAFFIC_BARRIER.get(),
                         ModBlocks.DOUBLE_YELLOW_BLACK_TRAFFIC_BARRIER.get(),
-
                         ModBlocks.BLACK_CONCRETE_WALL.get(),
                         ModBlocks.WHITE_CONCRETE_WALL.get(),
                         ModBlocks.ORANGE_CONCRETE_WALL.get(),
@@ -759,7 +737,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.BROWN_CONCRETE_WALL.get(),
                         ModBlocks.GREEN_CONCRETE_WALL.get(),
                         ModBlocks.RED_CONCRETE_WALL.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get(),
@@ -772,7 +749,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(),
@@ -785,7 +761,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(),
-
                         ModBlocks.VARIABLE_TRAFFIC_SIGN.get(),
                         ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_OPEN.get(),
                         ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CLOSED.get(),
@@ -803,7 +778,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get(),
                         ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get(),
                         ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get(),
-
                         ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get(),
                         ModBlocks.BICYCLE_TRIPPLE_TRAFFIC_LIGHT.get(),
                         ModBlocks.DANGER_SIGNAL_LIGHT.get(),
@@ -820,7 +794,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.STRAIGHT_TRIPPLE_TRAFFIC_LIGHT.get(),
                         ModBlocks.TRAIN_SIGNAL_LIGHT.get(),
                         ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get(),
-
                         ModBlocks.BLACK_LAMP.get(),
                         ModBlocks.WHITE_LAMP.get(),
                         ModBlocks.ORANGE_LAMP.get(),
@@ -837,12 +810,9 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.BROWN_LAMP.get(),
                         ModBlocks.GREEN_LAMP.get(),
                         ModBlocks.RED_LAMP.get(),
-
                         ModBlocks.STREET_LANTERN.get(),
                         ModBlocks.MODERN_STREET_LANTERN.get(),
-                        ModBlocks.STREET_LANTERN_PANEL.get()
-                );
-
+                        ModBlocks.STREET_LANTERN_PANEL.get());
 
         tag(BlockTags.SLABS)
                 .add(
@@ -851,7 +821,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.POTHOLE_ASPHALT_SLAB.get(),
                         ModBlocks.MOSSY_ASPHALT_SLAB.get(),
                         ModBlocks.DIRTY_ASPHALT_SLAB.get(),
-
                         ModBlocks.WHITE_ASPHALT_SLAB.get(),
                         ModBlocks.ORANGE_ASPHALT_SLAB.get(),
                         ModBlocks.MAGENTA_ASPHALT_SLAB.get(),
@@ -867,7 +836,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.BLUE_ASPHALT_SLAB.get(),
                         ModBlocks.BROWN_ASPHALT_SLAB.get(),
                         ModBlocks.GREEN_ASPHALT_SLAB.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE_SLAB.get(),
@@ -899,7 +867,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING_SLAB.get(),
-
                         ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE_SLAB.get(),
@@ -931,7 +898,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(),
@@ -948,11 +914,9 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(),
-
                         ModBlocks.BOOST_ASPHALT_SLAB.get(),
                         ModBlocks.RED_BUMPER_SLAB.get(),
                         ModBlocks.YELLOW_BUMPER_SLAB.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_B_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_C_SLAB.get(),
@@ -1005,10 +969,8 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(),
-
                         ModBlocks.DRAIN_COVER.get(),
                         ModBlocks.DRAIN_COVER_GRID.get(),
-
                         ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(),
@@ -1021,16 +983,9 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(),
                         ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(),
+                        ModBlocks.STREET_LANTERN_PANEL.get());
 
-                        ModBlocks.STREET_LANTERN_PANEL.get()
-                );
-
-
-        tag(BlockTags.FENCES)
-                .add(
-                        ModBlocks.IRON_FENCE.get()
-                );
-
+        tag(BlockTags.FENCES).add(ModBlocks.IRON_FENCE.get());
 
         tag(BlockTags.WALLS)
                 .add(
@@ -1049,7 +1004,6 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.BLUE_CONCRETE_WALL.get(),
                         ModBlocks.BROWN_CONCRETE_WALL.get(),
                         ModBlocks.GREEN_CONCRETE_WALL.get(),
-                        ModBlocks.RED_CONCRETE_WALL.get()
-                );
+                        ModBlocks.RED_CONCRETE_WALL.get());
     }
 }

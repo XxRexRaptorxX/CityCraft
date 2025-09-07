@@ -5,13 +5,11 @@
     "#",
     "#"
   ],
-
   "key": {
     "#": {
       "item": "citycraft:pedestrian_signal_light"
     }
   },
-
   "result": {
     "id": "citycraft:pedestrian_double_traffic_light"
   }

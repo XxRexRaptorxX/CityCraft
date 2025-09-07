@@ -5,12 +5,10 @@
       "modid": "mekanism"
     }
   ],
-  "type":"mekanism:pigment_extracting",
-  
+  "type": "mekanism:pigment_extracting",
   "input": {
-      "item": "citycraft:red_chain"
+    "item": "citycraft:red_chain"
   },
-
   "output": {
     "amount": 10,
     "id": "mekanism:red"

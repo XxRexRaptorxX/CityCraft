@@ -1,13 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-
   "pattern": [
     "#I#",
     "###",
     "#I#"
   ],
-
   "key": {
     "#": {
       "item": "citycraft:asphalt"
@@ -16,7 +14,6 @@
       "tag": "c:dyes/yellow"
     }
   },
-
   "result": {
     "id": "citycraft:asphalt_with_yellow_broken_middle_line",
     "count": 7

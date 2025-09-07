@@ -12,7 +12,6 @@
       "type": "neoforge:not"
     }
   ],
-
   "type": "immersiveengineering:arc_furnace",
   "additives": [
     {
@@ -28,7 +27,6 @@
       "tag": "c:gravels"
     }
   ],
-
   "energy": 50000,
   "input": {
     "basePredicate": {
@@ -36,7 +34,6 @@
     },
     "count": 4
   },
-
   "results": [
     {
       "basePredicate": {

@@ -7,12 +7,10 @@
     "ticks": 60,
     "rfpertick": 40
   },
-
   "result": {
     "id": "citycraft:asphalt",
     "count": 1
   },
-
   "neoforge:conditions": [
     {
       "values": [

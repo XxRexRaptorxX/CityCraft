@@ -1,9 +1,8 @@
 {
-	"parent": "citycraft:block/traffic_barriers_inventory",
-	"textures": {
-		"particle": "citycraft:block/traffic_barrier",
-		"texture": "citycraft:block/traffic_barrier",
-		"pole": "citycraft:block/iron_pole"
-
-	}
+  "parent": "citycraft:block/traffic_barriers_inventory",
+  "textures": {
+    "particle": "citycraft:block/traffic_barrier",
+    "texture": "citycraft:block/traffic_barrier",
+    "pole": "citycraft:block/iron_pole"
+  }
 }

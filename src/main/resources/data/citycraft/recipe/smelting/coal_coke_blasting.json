@@ -9,11 +9,9 @@
   "category": "misc",
   "cookingtime": 2000,
   "experience": 1.0,
-
   "ingredient": {
     "item": "minecraft:coal"
   },
-
   "result": {
     "id": "citycraft:coal_coke"
   }

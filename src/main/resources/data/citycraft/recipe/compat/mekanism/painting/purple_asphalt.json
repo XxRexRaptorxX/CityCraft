@@ -10,15 +10,14 @@
     "amount": 32,
     "pigment": "mekanism:purple"
   },
-
   "item_input": {
-
-      "type": "neoforge:difference",
-      "base": {
-        "tag": "c:asphalt" },
-      "subtracted": {
-        "item": "citycraft:purple_asphalt"
-      }
+    "type": "neoforge:difference",
+    "base": {
+      "tag": "c:asphalt"
+    },
+    "subtracted": {
+      "item": "citycraft:purple_asphalt"
+    }
   },
   "output": {
     "id": "citycraft:purple_asphalt"

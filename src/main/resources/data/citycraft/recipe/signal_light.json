@@ -6,7 +6,6 @@
     "X#X",
     " X "
   ],
-
   "key": {
     "#": {
       "item": "minecraft:redstone_lamp"
@@ -15,7 +14,6 @@
       "tag": "c:ingots/iron"
     }
   },
-
   "result": {
     "id": "citycraft:signal_light",
     "count": 4

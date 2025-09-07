@@ -55,11 +55,9 @@ public class PainterMenu extends AbstractContainerMenu {
         }
     };
 
-
     public PainterMenu(int containerId, Inventory playerInventory) {
         this(containerId, playerInventory, ContainerLevelAccess.NULL);
     }
-
 
     public PainterMenu(int containerId, Inventory playerInventory, final ContainerLevelAccess access) {
         super(ModMenuTypes.PAINTER.get(), containerId);
@@ -124,12 +122,10 @@ public class PainterMenu extends AbstractContainerMenu {
         this.addDataSlot(this.selectedRecipeIndex);
     }
 
-
     @Override
     public boolean stillValid(Player player) {
         return stillValid(this.access, player, ModBlocks.BLOCK_PAINTER.get());
     }
-
 
     @Override
     public boolean clickMenuButton(Player player, int id) {
@@ -152,16 +148,16 @@ public class PainterMenu extends AbstractContainerMenu {
         }
     }
 
-
     private void setupRecipeList(Container container, ItemStack stack1, ItemStack stack2) {
         this.recipes.clear();
         this.selectedRecipeIndex.set(-1);
         this.resultSlot.set(ItemStack.EMPTY);
         if (!stack1.isEmpty() && !stack2.isEmpty()) {
-            this.recipes = this.level.getRecipeManager().getRecipesFor(ModRecipeTypes.PAINTING.get(), getRecipeInput(container), this.level);
+            this.recipes = this.level
+                    .getRecipeManager()
+                    .getRecipesFor(ModRecipeTypes.PAINTING.get(), getRecipeInput(container), this.level);
         }
     }
-
 
     private void setupResultSlot() {
         if (!this.recipes.isEmpty() && this.isValidRecipeIndex(this.selectedRecipeIndex.get())) {
@@ -182,7 +178,6 @@ public class PainterMenu extends AbstractContainerMenu {
         this.broadcastChanges();
     }
 
-
     @Override
     public void removed(Player player) {
         super.removed(player);
@@ -192,14 +187,11 @@ public class PainterMenu extends AbstractContainerMenu {
         });
     }
 
-
     private RecipeInput getRecipeInput(Container inventory) {
         return new RecipeInputWrapper(inventory);
     }
 
-
     ///////////////////
-
 
     @Override
     public ItemStack quickMoveStack(Player player, int index) {
@@ -263,13 +255,16 @@ public class PainterMenu extends AbstractContainerMenu {
         return itemstack;
     }
 
-
     public int getSlotToQuickMoveTo(ItemStack stack) {
-        return allRecipes.stream().map((recipeMap) -> {
-            return findSlotMatchingIngredient(recipeMap.value(), stack);
-        }).filter(Optional::isPresent).findFirst().orElse(Optional.of(1)).get();
+        return allRecipes.stream()
+                .map((recipeMap) -> {
+                    return findSlotMatchingIngredient(recipeMap.value(), stack);
+                })
+                .filter(Optional::isPresent)
+                .findFirst()
+                .orElse(Optional.of(1))
+                .get();
     }
-
 
     private static Optional<Integer> findSlotMatchingIngredient(IPaintingRecipe recipe, ItemStack stack) {
         if (recipe.isBaseIngredient(stack)) {
@@ -281,18 +276,17 @@ public class PainterMenu extends AbstractContainerMenu {
         }
     }
 
-
     public boolean canMoveIntoInputSlots(ItemStack stack) {
-        return this.level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.PAINTING.get()).stream().map((recipeMap) -> {
-            return findSlotMatchingIngredient(recipeMap.value(), stack);
-        }).anyMatch(Optional::isPresent);
+        return this.level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.PAINTING.get()).stream()
+                .map((recipeMap) -> {
+                    return findSlotMatchingIngredient(recipeMap.value(), stack);
+                })
+                .anyMatch(Optional::isPresent);
     }
-
 
     public int getResultSlot() {
         return this.RESULT_SLOT;
     }
-
 
     //////////////////
 
@@ -300,30 +294,23 @@ public class PainterMenu extends AbstractContainerMenu {
         this.slotUpdateListener = runnable;
     }
 
-
     private boolean isValidRecipeIndex(int id) {
         return id >= 0 && id < this.recipes.size();
     }
-
 
     public int getSelectedRecipeIndex() {
         return this.selectedRecipeIndex.get();
     }
 
-
     public List<RecipeHolder<IPaintingRecipe>> getRecipes() {
         return this.recipes;
     }
-
 
     public int getNumRecipes() {
         return this.recipes.size();
     }
 
-
     public boolean hasInputItem() {
         return this.inputSlot1.hasItem() && this.inputSlot2.hasItem() && !this.recipes.isEmpty();
     }
-
-
 }

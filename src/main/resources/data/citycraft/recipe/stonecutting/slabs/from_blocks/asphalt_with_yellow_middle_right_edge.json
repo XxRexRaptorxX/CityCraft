@@ -4,8 +4,8 @@
   "ingredient": {
     "tag": "citycraft:yellow_marked_asphalt"
   },
-    "result": {
+  "result": {
     "count": 1,
     "id": "citycraft:asphalt_with_yellow_middle_right_edge_slab"
-    }
+  }
 }

@@ -21,7 +21,6 @@ public class ItemModelGen extends ItemModelProvider {
         super(packOutput, References.MODID, existingFileHelper);
     }
 
-
     @Override
     protected void registerModels() {
         itemGenerated(ModItems.COAL_COKE);
@@ -57,32 +56,55 @@ public class ItemModelGen extends ItemModelProvider {
         itemBlock(ModBlocks.YELLOW_BLACK_BARRIER_TAPE);
     }
 
-
-
     private void itemGenerated(DeferredItem item) {
-        singleTexture(item.getId().getPath(), ResourceLocation.withDefaultNamespace("item/generated"),"layer0", ResourceLocation.fromNamespaceAndPath(References.MODID, "item/" + item.getId().getPath()));
+        singleTexture(
+                item.getId().getPath(),
+                ResourceLocation.withDefaultNamespace("item/generated"),
+                "layer0",
+                ResourceLocation.fromNamespaceAndPath(
+                        References.MODID, "item/" + item.getId().getPath()));
     }
 
     private void itemGenerated(DeferredBlock item) {
-        singleTexture(item.getId().getPath(), ResourceLocation.withDefaultNamespace("item/generated"),"layer0", ResourceLocation.fromNamespaceAndPath(References.MODID, "item/" + item.getId().getPath()));
+        singleTexture(
+                item.getId().getPath(),
+                ResourceLocation.withDefaultNamespace("item/generated"),
+                "layer0",
+                ResourceLocation.fromNamespaceAndPath(
+                        References.MODID, "item/" + item.getId().getPath()));
     }
 
     private void itemHandheld(DeferredItem item) {
-        singleTexture(item.getId().getPath(), ResourceLocation.withDefaultNamespace("item/handheld"),"layer0", ResourceLocation.fromNamespaceAndPath(References.MODID, "item/" + item.getId().getPath()));
+        singleTexture(
+                item.getId().getPath(),
+                ResourceLocation.withDefaultNamespace("item/handheld"),
+                "layer0",
+                ResourceLocation.fromNamespaceAndPath(
+                        References.MODID, "item/" + item.getId().getPath()));
     }
 
     private void itemBlock(DeferredBlock item) {
-        withExistingParent(item.getId().getPath(), modLoc( "block/" + item.getId().getPath()));
+        withExistingParent(
+                item.getId().getPath(), modLoc("block/" + item.getId().getPath()));
     }
 
     public void fenceItem(DeferredBlock<FenceBlock> block, Block textureBlock) {
         this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
-                .texture("texture",  ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+                .texture(
+                        "texture",
+                        ResourceLocation.fromNamespaceAndPath(
+                                References.MODID,
+                                "block/"
+                                        + BuiltInRegistries.BLOCK
+                                                .getKey(textureBlock)
+                                                .getPath()));
     }
 
     public void wallItem(DeferredBlock<WallBlock> block, Block textureBlock) {
         this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
-                .texture("wall",  ResourceLocation.withDefaultNamespace( "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+                .texture(
+                        "wall",
+                        ResourceLocation.withDefaultNamespace("block/"
+                                + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
-
 }

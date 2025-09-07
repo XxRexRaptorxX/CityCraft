@@ -10,14 +10,13 @@
     "amount": 32,
     "pigment": "mekanism:orange"
   },
-
   "item_input": {
-
-      "type": "neoforge:difference",
-      "base": {
-        "tag": "c:asphalt" },
-      "subtracted": {
-        "item": "citycraft:orange_asphalt"
+    "type": "neoforge:difference",
+    "base": {
+      "tag": "c:asphalt"
+    },
+    "subtracted": {
+      "item": "citycraft:orange_asphalt"
     }
   },
   "output": {

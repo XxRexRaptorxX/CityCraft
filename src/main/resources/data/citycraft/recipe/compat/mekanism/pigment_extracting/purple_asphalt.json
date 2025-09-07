@@ -5,12 +5,10 @@
       "modid": "mekanism"
     }
   ],
-  "type":"mekanism:pigment_extracting",
-  
+  "type": "mekanism:pigment_extracting",
   "input": {
-      "item": "citycraft:purple_asphalt"
+    "item": "citycraft:purple_asphalt"
   },
-
   "output": {
     "amount": 24,
     "id": "mekanism:purple"

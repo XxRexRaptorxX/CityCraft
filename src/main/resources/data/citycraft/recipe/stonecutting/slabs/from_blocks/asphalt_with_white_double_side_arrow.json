@@ -4,8 +4,8 @@
   "ingredient": {
     "tag": "citycraft:white_marked_asphalt"
   },
-    "result": {
+  "result": {
     "count": 1,
     "id": "citycraft:asphalt_with_white_double_side_arrow_slab"
-    }
+  }
 }

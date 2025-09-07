@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-  [
+  "values": [
     "#c:buckets/creosote",
     "citycraft:coal_tar"
   ]

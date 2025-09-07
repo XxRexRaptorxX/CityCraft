@@ -12,8 +12,10 @@ import java.util.concurrent.CompletableFuture;
 public class ModLootTableProvider {
 
     public static LootTableProvider create(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-        return new LootTableProvider(output, Set.of(), List.of(
-                new LootTableProvider.SubProviderEntry(BlockLootTables::new, LootContextParamSets.BLOCK)
-        ), lookupProvider);
+        return new LootTableProvider(
+                output,
+                Set.of(),
+                List.of(new LootTableProvider.SubProviderEntry(BlockLootTables::new, LootContextParamSets.BLOCK)),
+                lookupProvider);
     }
 }

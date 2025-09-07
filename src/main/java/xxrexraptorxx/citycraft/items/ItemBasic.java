@@ -10,22 +10,19 @@ import xxrexraptorxx.citycraft.registry.ModItems;
 public class ItemBasic extends Item {
 
     public ItemBasic() {
-        super(new Properties()
-        );
+        super(new Properties());
     }
-
 
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
         if (this == ModItems.COAL_COKE.get()) {
             return 3200;
         } else if (this == ModItems.COAL_TAR.get()) {
-                return 800;
+            return 800;
         } else {
             return 0;
         }
     }
-
 
     @Override
     public ItemStack getCraftingRemainingItem(ItemStack stack) {

@@ -5,13 +5,11 @@
       "modid": "mekanism"
     }
   ],
-  "type":"mekanism:crushing",
-
+  "type": "mekanism:crushing",
   "input": {
-      "tag": "c:asphalt"
+    "tag": "c:asphalt"
   },
-
   "output": {
-    "id":"citycraft:asphalt_mixture"
+    "id": "citycraft:asphalt_mixture"
   }
 }

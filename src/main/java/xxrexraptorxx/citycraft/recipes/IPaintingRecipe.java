@@ -8,21 +8,20 @@ import xxrexraptorxx.citycraft.registry.ModBlocks;
 
 public interface IPaintingRecipe extends Recipe<RecipeInput> {
 
-        /**
-         * Used to determine if this recipe can fit in a grid of the given width/height
-         */
-        default boolean canCraftInDimensions(int width, int height) {
-            return width >= 2 && height >= 1;
-        }
-
-        default ItemStack getToastSymbol() {
-            return new ItemStack(ModBlocks.BLOCK_PAINTER.get());
-        }
-
-        boolean isColorIngredient(ItemStack stack);
-
-        boolean isBaseIngredient(ItemStack stack);
-
-        Ingredient getIngredients(Integer id);
-
+    /**
+     * Used to determine if this recipe can fit in a grid of the given width/height
+     */
+    default boolean canCraftInDimensions(int width, int height) {
+        return width >= 2 && height >= 1;
     }
+
+    default ItemStack getToastSymbol() {
+        return new ItemStack(ModBlocks.BLOCK_PAINTER.get());
+    }
+
+    boolean isColorIngredient(ItemStack stack);
+
+    boolean isBaseIngredient(ItemStack stack);
+
+    Ingredient getIngredients(Integer id);
+}

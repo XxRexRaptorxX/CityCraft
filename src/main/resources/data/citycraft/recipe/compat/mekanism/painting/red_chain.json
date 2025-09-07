@@ -10,15 +10,14 @@
     "amount": 32,
     "pigment": "mekanism:red"
   },
-
   "item_input": {
-
-      "type": "neoforge:difference",
-      "base": {
-        "tag": "c:chains" },
-      "subtracted": {
-        "item": "citycraft:red_chain"
-      }
+    "type": "neoforge:difference",
+    "base": {
+      "tag": "c:chains"
+    },
+    "subtracted": {
+      "item": "citycraft:red_chain"
+    }
   },
   "output": {
     "id": "citycraft:red_chain"

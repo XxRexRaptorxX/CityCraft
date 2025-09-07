@@ -10,14 +10,13 @@
     "amount": 32,
     "pigment": "mekanism:gray"
   },
-
   "item_input": {
-
-      "type": "neoforge:difference",
-      "base": {
-        "tag": "c:chains" },
-      "subtracted": {
-        "item": "minecraft:chain"
+    "type": "neoforge:difference",
+    "base": {
+      "tag": "c:chains"
+    },
+    "subtracted": {
+      "item": "minecraft:chain"
     }
   },
   "output": {

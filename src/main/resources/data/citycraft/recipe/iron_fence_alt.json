@@ -10,12 +10,10 @@
   ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
-
   "pattern": [
     "#I#",
     "#I#"
   ],
-
   "key": {
     "#": {
       "tag": "c:ingots/iron"
@@ -23,9 +21,7 @@
     "I": {
       "tag": "c:rods/iron"
     }
-
   },
-
   "result": {
     "id": "citycraft:iron_fence",
     "count": 3

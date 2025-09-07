@@ -40,7 +40,6 @@
     "citycraft:asphalt_with_white_thick_middle_double_right_edge",
     "citycraft:asphalt_with_white_thick_middle_left_edge",
     "citycraft:asphalt_with_white_thick_middle_right_edge",
-
     "citycraft:asphalt_with_white_a",
     "citycraft:asphalt_with_white_b",
     "citycraft:asphalt_with_white_c",
@@ -67,13 +66,11 @@
     "citycraft:asphalt_with_white_x",
     "citycraft:asphalt_with_white_y",
     "citycraft:asphalt_with_white_z",
-
     "citycraft:asphalt_with_white_bicycle",
     "citycraft:asphalt_with_white_diagonal_left_arrow",
     "citycraft:asphalt_with_white_diagonal_right_arrow",
     "citycraft:asphalt_with_white_handicapped",
     "citycraft:asphalt_with_white_pedestrian",
     "citycraft:asphalt_with_white_triangle"
-
   ]
 }

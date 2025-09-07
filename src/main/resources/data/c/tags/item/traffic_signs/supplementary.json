@@ -14,7 +14,6 @@
     "citycraft:priority_road_from_right_eu_sign",
     "citycraft:disabled_eu_sign",
     "citycraft:wet_eu_sign",
-
     "citycraft:left_arrow_yellow_us_sign",
     "citycraft:right_arrow_yellow_us_sign",
     "citycraft:left_diagonal_arrow_yellow_us_sign",
@@ -35,6 +34,5 @@
     "citycraft:ahead_yellow_us_sign",
     "citycraft:ahead_green_us_sign",
     "citycraft:ahead_orange_us_sign"
-
   ]
 }

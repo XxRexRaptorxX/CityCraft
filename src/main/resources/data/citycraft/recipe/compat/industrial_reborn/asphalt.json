@@ -6,14 +6,12 @@
     }
   ],
   "type": "indreb:crushing",
-
   "duration": 180,
   "experience": 0.0,
   "ingredient": {
     "count": 1,
     "tag": "c:asphalt"
   },
-
   "power_cost": 8,
   "result": {
     "id": "citycraft:asphalt_mixture"
