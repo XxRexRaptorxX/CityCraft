@@ -1,0 +1,54 @@
+
+repositories {
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
+    maven {
+        // location of the cursemaven
+        url 'https://www.cursemaven.com'
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+
+    flatDir {
+        dir 'libs'
+    }
+}
+
+
+dependencies {
+    //JEI
+    compileOnly ("mezz.jei:jei-${minecraft_version}.1-common-api:${jei_version}")
+    compileOnly ("mezz.jei:jei-${minecraft_version}.1-neoforge-api:${jei_version}")
+    runtimeOnly ("mezz.jei:jei-${minecraft_version}.1-neoforge:${jei_version}")
+    //JEED
+    runtimeOnly ("curse.maven:jeed-532286:${jeed_version}")
+    //JADE
+    runtimeOnly ("curse.maven:jade-324717:${jade_version}")
+    //IMMERSIVE ENGINEERING
+    //runtimeOnly ("curse.maven:ie-231951:${immersive_engineering_version}")
+    //IMMERSIVE PETROLEUM
+    //runtimeOnly ("curse.maven:ip-268250:${immersive_petroleum_version}")
+    //MORE MCMETA
+    //runtimeOnly ("curse.maven:moremcmeta-442169:${moremcmeta_version}")
+    //runtimeOnly ("curse.maven:moremcmetaemissive-880880:${moremcmeta_emissive_version}")
+    //MEKANISM
+    runtimeOnly ("curse.maven:mekanism-268560:${mekanism_version}")
+    //ENERGIZED_POWER
+    runtimeOnly ("curse.maven:energizedpower-782147:${energized_power_version}")
+    //Moonlight Lib
+    //runtimeOnly ("curse.maven:moonlight-499980:${moonlight_version}")
+    //Supplementaries
+    //runtimeOnly ("curse.maven:supplementaries-412082:${supplementaries_version}")
+    //Shimmer
+    //runtimeOnly ("curse.maven:shimmer-627824:${shimmer_version}")
+
+}
