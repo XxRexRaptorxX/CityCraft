@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "item": "citycraft:asphalt_slab"
+  },
+  "color": {
+    "tag": "c:dyes/white"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:asphalt_with_white_7_slab"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "citycraft:block/asphalt_with_yellow_0",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "citycraft:block/asphalt_with_yellow_0",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "citycraft:block/asphalt_with_yellow_0"
+    },
+    "facing=west": {
+      "model": "citycraft:block/asphalt_with_yellow_0",
+      "y": 90
+    }
+  }
+}

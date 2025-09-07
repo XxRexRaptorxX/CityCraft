@@ -318,6 +318,72 @@ public class ModBlocks {
     public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_Z =
             registerBlock("asphalt_with_yellow_z", AsphaltBlock::new);
 
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_0 =
+            registerBlock("asphalt_with_white_0", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_1 =
+            registerBlock("asphalt_with_white_1", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_2 =
+            registerBlock("asphalt_with_white_2", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_3 =
+            registerBlock("asphalt_with_white_3", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_4 =
+            registerBlock("asphalt_with_white_4", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_5 =
+            registerBlock("asphalt_with_white_5", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_6 =
+            registerBlock("asphalt_with_white_6", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_7 =
+            registerBlock("asphalt_with_white_7", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_8 =
+            registerBlock("asphalt_with_white_8", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_9 =
+            registerBlock("asphalt_with_white_9", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_COMMA =
+            registerBlock("asphalt_with_white_comma", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_DASH =
+            registerBlock("asphalt_with_white_dash", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_DOT =
+            registerBlock("asphalt_with_white_dot", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_EXCLAMATION =
+            registerBlock("asphalt_with_white_exclamation", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_QUESTION =
+            registerBlock("asphalt_with_white_question", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_WHITE_SLASH =
+            registerBlock("asphalt_with_white_slash", AsphaltBlock::new);
+
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_0 =
+            registerBlock("asphalt_with_yellow_0", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_1 =
+            registerBlock("asphalt_with_yellow_1", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_2 =
+            registerBlock("asphalt_with_yellow_2", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_3 =
+            registerBlock("asphalt_with_yellow_3", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_4 =
+            registerBlock("asphalt_with_yellow_4", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_5 =
+            registerBlock("asphalt_with_yellow_5", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_6 =
+            registerBlock("asphalt_with_yellow_6", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_7 =
+            registerBlock("asphalt_with_yellow_7", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_8 =
+            registerBlock("asphalt_with_yellow_8", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_9 =
+            registerBlock("asphalt_with_yellow_9", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_COMMA =
+            registerBlock("asphalt_with_yellow_comma", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_DASH =
+            registerBlock("asphalt_with_yellow_dash", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_DOT =
+            registerBlock("asphalt_with_yellow_dot", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_EXCLAMATION =
+            registerBlock("asphalt_with_yellow_exclamation", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_QUESTION =
+            registerBlock("asphalt_with_yellow_question", AsphaltBlock::new);
+    public static final DeferredBlock<AsphaltBlock> ASPHALT_WITH_YELLOW_SLASH =
+            registerBlock("asphalt_with_yellow_slash", AsphaltBlock::new);
+
     // SLABS
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_SLAB =
             registerBlock("asphalt_slab", AsphaltSlabBlock::new);
@@ -626,6 +692,72 @@ public class ModBlocks {
             registerBlock("asphalt_with_yellow_y_slab", AsphaltSlabBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_Z_SLAB =
             registerBlock("asphalt_with_yellow_z_slab", AsphaltSlabBlock::new);
+
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_0_SLAB =
+            registerBlock("asphalt_with_white_0_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_1_SLAB =
+            registerBlock("asphalt_with_white_1_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_2_SLAB =
+            registerBlock("asphalt_with_white_2_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_3_SLAB =
+            registerBlock("asphalt_with_white_3_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_4_SLAB =
+            registerBlock("asphalt_with_white_4_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_5_SLAB =
+            registerBlock("asphalt_with_white_5_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_6_SLAB =
+            registerBlock("asphalt_with_white_6_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_7_SLAB =
+            registerBlock("asphalt_with_white_7_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_8_SLAB =
+            registerBlock("asphalt_with_white_8_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_9_SLAB =
+            registerBlock("asphalt_with_white_9_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_COMMA_SLAB =
+            registerBlock("asphalt_with_white_comma_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_DASH_SLAB =
+            registerBlock("asphalt_with_white_dash_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_DOT_SLAB =
+            registerBlock("asphalt_with_white_dot_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_EXCLAMATION_SLAB =
+            registerBlock("asphalt_with_white_exclamation_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_QUESTION_SLAB =
+            registerBlock("asphalt_with_white_question_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_WHITE_SLASH_SLAB =
+            registerBlock("asphalt_with_white_slash_slab", AsphaltSlabBlock::new);
+
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_0_SLAB =
+            registerBlock("asphalt_with_yellow_0_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_1_SLAB =
+            registerBlock("asphalt_with_yellow_1_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_2_SLAB =
+            registerBlock("asphalt_with_yellow_2_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_3_SLAB =
+            registerBlock("asphalt_with_yellow_3_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_4_SLAB =
+            registerBlock("asphalt_with_yellow_4_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_5_SLAB =
+            registerBlock("asphalt_with_yellow_5_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_6_SLAB =
+            registerBlock("asphalt_with_yellow_6_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_7_SLAB =
+            registerBlock("asphalt_with_yellow_7_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_8_SLAB =
+            registerBlock("asphalt_with_yellow_8_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_9_SLAB =
+            registerBlock("asphalt_with_yellow_9_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_COMMA_SLAB =
+            registerBlock("asphalt_with_yellow_comma_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_DASH_SLAB =
+            registerBlock("asphalt_with_yellow_dash_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_DOT_SLAB =
+            registerBlock("asphalt_with_yellow_dot_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_EXCLAMATION_SLAB =
+            registerBlock("asphalt_with_yellow_exclamation_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_QUESTION_SLAB =
+            registerBlock("asphalt_with_yellow_question_slab", AsphaltSlabBlock::new);
+    public static final DeferredBlock<AsphaltSlabBlock> ASPHALT_WITH_YELLOW_SLASH_SLAB =
+            registerBlock("asphalt_with_yellow_slash_slab", AsphaltSlabBlock::new);
 
     public static final DeferredBlock<AsphaltBlock> BOOST_ASPHALT = registerBlock("boost_asphalt", AsphaltBlock::new);
     public static final DeferredBlock<AsphaltSlabBlock> BOOST_ASPHALT_SLAB =
