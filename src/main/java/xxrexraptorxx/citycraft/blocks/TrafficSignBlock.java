@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.blocks;
 
+import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -17,8 +18,6 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-
-import java.util.List;
 
 public class TrafficSignBlock extends FenceBlock implements SimpleWaterloggedBlock {
 

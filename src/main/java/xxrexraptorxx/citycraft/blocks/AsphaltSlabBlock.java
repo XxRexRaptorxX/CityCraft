@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.blocks;
 
+import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -28,8 +29,6 @@ import net.minecraft.world.level.material.Fluids;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Config;
-
-import java.util.List;
 
 public class AsphaltSlabBlock extends SlabBlock {
 

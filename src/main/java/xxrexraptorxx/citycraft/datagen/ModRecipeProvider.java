@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.datagen;
 
+import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -21,8 +22,6 @@ import xxrexraptorxx.citycraft.recipes.PaintingRecipe;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.registry.ModItems;
 import xxrexraptorxx.citycraft.registry.ModTags;
-
-import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
 

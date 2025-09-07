@@ -1,6 +1,7 @@
 package xxrexraptorxx.citycraft.blocks;
 
 import com.mojang.serialization.MapCodec;
+import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -23,8 +24,6 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Config;
-
-import java.util.List;
 
 public class AsphaltBlock extends HorizontalDirectionalBlock {
 

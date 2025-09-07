@@ -1,6 +1,7 @@
 package xxrexraptorxx.citycraft.blocks;
 
 import com.mojang.serialization.MapCodec;
+import java.util.function.ToIntFunction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -19,8 +20,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.function.ToIntFunction;
 
 public class VariableTrafficSignBlock extends HorizontalDirectionalBlock {
 

@@ -1,6 +1,8 @@
 package xxrexraptorxx.citycraft.blocks.container;
 
 import com.google.common.collect.Lists;
+import java.util.List;
+import java.util.Optional;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Container;
@@ -17,9 +19,6 @@ import xxrexraptorxx.citycraft.recipes.RecipeInputWrapper;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.registry.ModMenuTypes;
 import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
-
-import java.util.List;
-import java.util.Optional;
 
 public class PainterMenu extends AbstractContainerMenu {
 

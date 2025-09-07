@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.blocks;
 
+import java.util.function.ToIntFunction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -18,8 +19,6 @@ import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
-
-import java.util.function.ToIntFunction;
 
 public class LanternBlockSlab extends SlabBlock {
 

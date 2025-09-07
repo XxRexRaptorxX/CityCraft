@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.registry;
 
+import java.util.function.Supplier;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -14,8 +15,6 @@ import xxrexraptorxx.citycraft.blocks.*;
 import xxrexraptorxx.citycraft.blocks.LanternBlock;
 import xxrexraptorxx.citycraft.blocks.WallSignBlock;
 import xxrexraptorxx.citycraft.main.References;
-
-import java.util.function.Supplier;
 
 public class ModBlocks {
 

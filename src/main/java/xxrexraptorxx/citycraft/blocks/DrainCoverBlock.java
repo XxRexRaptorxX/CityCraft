@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.blocks;
 
+import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -27,8 +28,6 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.AABB;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.utils.Config;
-
-import java.util.List;
 
 public class DrainCoverBlock extends SlabBlock {
 

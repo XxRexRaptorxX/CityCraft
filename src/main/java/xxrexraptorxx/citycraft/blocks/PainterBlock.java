@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.blocks;
 
+import javax.annotation.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
@@ -17,8 +18,6 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.BlockHitResult;
 import xxrexraptorxx.citycraft.blocks.container.PainterMenu;
 import xxrexraptorxx.citycraft.main.References;
-
-import javax.annotation.Nullable;
 
 public class PainterBlock extends Block {
 

@@ -1,6 +1,10 @@
 package xxrexraptorxx.citycraft.utils;
 
 import com.mojang.authlib.GameProfile;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+import java.util.Scanner;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.Registry;
@@ -29,11 +33,6 @@ import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.main.References;
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.List;
-import java.util.Scanner;
 
 @EventBusSubscriber(modid = References.MODID, bus = EventBusSubscriber.Bus.GAME)
 public class Events {

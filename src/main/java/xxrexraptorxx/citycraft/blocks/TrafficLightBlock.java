@@ -1,6 +1,7 @@
 package xxrexraptorxx.citycraft.blocks;
 
 import com.mojang.serialization.MapCodec;
+import java.util.function.ToIntFunction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -23,8 +24,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
-
-import java.util.function.ToIntFunction;
 
 public class TrafficLightBlock extends HorizontalDirectionalBlock implements SimpleWaterloggedBlock {
 

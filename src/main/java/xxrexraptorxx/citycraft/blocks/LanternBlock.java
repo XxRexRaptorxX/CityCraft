@@ -1,5 +1,7 @@
 package xxrexraptorxx.citycraft.blocks;
 
+import java.util.function.ToIntFunction;
+import javax.annotation.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -13,9 +15,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
-
-import javax.annotation.Nullable;
-import java.util.function.ToIntFunction;
 
 public class LanternBlock extends Block {
 

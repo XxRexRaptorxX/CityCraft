@@ -2,6 +2,7 @@ package xxrexraptorxx.citycraft.recipes;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import java.util.stream.Stream;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
@@ -15,8 +16,6 @@ import net.minecraft.world.level.Level;
 import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.registry.ModRecipeSerializers;
 import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
-
-import java.util.stream.Stream;
 
 public class PaintingRecipe implements IPaintingRecipe {
 

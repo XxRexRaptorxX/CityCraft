@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.blocks.container;
 
+import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
@@ -15,8 +16,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
-
-import java.util.List;
 
 @OnlyIn(Dist.CLIENT)
 public class PainterScreen extends AbstractContainerScreen<PainterMenu> {

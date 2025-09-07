@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.blocks;
 
+import javax.annotation.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.Entity;
@@ -25,8 +26,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.neoforge.common.IShearable;
-
-import javax.annotation.Nullable;
 
 public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBlock, IShearable {
 
