@@ -15,6 +15,8 @@ logoFile="logo.png"
 authors="${mod_authors}"
 description='''This mod expands the game with vanilla friendly streets, signs and other decoration blocks to transform your world into a huge city!'''
 
+[modproperties.${mod_id}]
+configuredBackground="citycraft:textures/block/asphalt.png"
 
 [[dependencies.${mod_id}]]
 modId="neoforge"
