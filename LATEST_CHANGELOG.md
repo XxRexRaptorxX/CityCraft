@@ -1,4 +1,8 @@
-# [v.2.6.0 for MC 1.21,1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.6.0-dev1...v.2.6.0-dev4)
+# [v.2.6.0 for MC 1.21,1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.6.0-dev1...v.2.6.0-dev5)
+
+## ✨ Features
+
+- connected textures for asphalt added ([5776af0](https://github.com/XxRexRaptorxX/CityCraft/commit/5776af0f29f1bc3ba7266b443aca0a839530cd90))
 
 ## 🔨 Refactoring
 
