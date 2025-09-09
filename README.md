@@ -26,6 +26,7 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 - increased movement speed on asphalt
 - vanilla & survival friendly
 - emissive textures
+- connected textures
 - version checker
 
 <p align="center">
@@ -65,12 +66,12 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 - **Just Enough Items (JEI)**
     - Provides some additional info pages and shows all recipes
     - [CurseForge][cf_jei] | [Modrinth][mr_jei]
+- **Continuity**
+    - Enables the emissive and connected textures of the mod
+    - [CurseForge][cf_continuity] | [Modrinth][mr_continuity]
 - **MoreMcmeta Emissive Textures**
     - Enables the emissive textures of the mod
     - [CurseForge][cf_mcmeta] | [Modrinth][mr_mcmeta]
-- **Continuity**
-    - Enables the emissive textures of the mod
-    - [CurseForge][cf_continuity] | [Modrinth][mr_continuity]
 - **Just Enough Effect Descriptions (JEED)**
     - Provides mob effect descriptions in JEI
     - [CurseForge][cf_jeed] | [Modrinth][mr_jeed]
