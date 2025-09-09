@@ -24,7 +24,7 @@ tasks.register("#publishModrinthOnly") {
     group = "publishing"
     description = "Publish only to Modrinth"
 
-    dependsOn "build", "publishCurseForge", "updateVersionsJson"
+    dependsOn "build", "modrinth", "updateVersionsJson"
 
     doLast {
         println "=== Modrinth Publish Completed ==="
