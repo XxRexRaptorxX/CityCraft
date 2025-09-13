@@ -1,9 +1,21 @@
 {
   "replace": false,
   "values": [
+    "#c:traffic_signs/bake",
+    "#c:traffic_signs/cross",
+    "#c:traffic_signs/digital",
     "#c:traffic_signs/guide",
-    "#c:traffic_signs/supplementary",
+    "#c:traffic_signs/octagon",
+    "#c:traffic_signs/rectangle",
     "#c:traffic_signs/regulatory",
+    "#c:traffic_signs/rhombus",
+    "#c:traffic_signs/round",
+    "#c:traffic_signs/service",
+    "#c:traffic_signs/square",
+    "#c:traffic_signs/supplementary",
+    "#c:traffic_signs/triangle",
+    "#c:traffic_signs/upside_down_triangle",
+    "#c:traffic_signs/variable",
     "#c:traffic_signs/warning"
   ]
 }
