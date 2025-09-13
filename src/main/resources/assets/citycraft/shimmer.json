@@ -253,7 +253,136 @@
       },
       "color": "#natural",
       "radius": 15
+    },
+    {
+      "block": "citycraft:black_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#black",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:white_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#white",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:orange_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#orange",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:magenta_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#magenta",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:light_blue_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#light_blue",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:yellow_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#yellow",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:lime_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#lime",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:pink_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#pink",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:gray_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#gray",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:light_gray_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#light_gray",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:cyan_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#cyan",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:purple_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#purple",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:blue_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#blue",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:brown_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#brown",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:green_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#green",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:red_neon_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#red",
+      "radius": 15
     }
   ],
+
   "LightItem": []
 }
