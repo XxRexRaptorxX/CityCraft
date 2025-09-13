@@ -789,6 +789,45 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.EMERGENCY_EXIT_AHEAD_SIGN.get());
                         output.accept(ModBlocks.EMERGENCY_EXIT_DOWNWARDS_SIGN.get());
                         output.accept(ModBlocks.EXIT_SIGN.get());
+
+                        output.accept(ModBlocks.SIGN_0.get());
+                        output.accept(ModBlocks.SIGN_1.get());
+                        output.accept(ModBlocks.SIGN_2.get());
+                        output.accept(ModBlocks.SIGN_3.get());
+                        output.accept(ModBlocks.SIGN_4.get());
+                        output.accept(ModBlocks.SIGN_5.get());
+                        output.accept(ModBlocks.SIGN_6.get());
+                        output.accept(ModBlocks.SIGN_7.get());
+                        output.accept(ModBlocks.SIGN_8.get());
+                        output.accept(ModBlocks.SIGN_9.get());
+                        output.accept(ModBlocks.A_SIGN.get());
+                        output.accept(ModBlocks.B_SIGN.get());
+                        output.accept(ModBlocks.C_SIGN.get());
+                        output.accept(ModBlocks.D_SIGN.get());
+                        output.accept(ModBlocks.E_SIGN.get());
+                        output.accept(ModBlocks.F_SIGN.get());
+                        output.accept(ModBlocks.G_SIGN.get());
+                        output.accept(ModBlocks.H_SIGN.get());
+                        output.accept(ModBlocks.I_SIGN.get());
+                        output.accept(ModBlocks.J_SIGN.get());
+                        output.accept(ModBlocks.K_SIGN.get());
+                        output.accept(ModBlocks.L_SIGN.get());
+                        output.accept(ModBlocks.M_SIGN.get());
+                        output.accept(ModBlocks.N_SIGN.get());
+                        output.accept(ModBlocks.O_SIGN.get());
+                        output.accept(ModBlocks.P_SIGN.get());
+                        output.accept(ModBlocks.Q_SIGN.get());
+                        output.accept(ModBlocks.R_SIGN.get());
+                        output.accept(ModBlocks.S_SIGN.get());
+                        output.accept(ModBlocks.T_SIGN.get());
+                        output.accept(ModBlocks.U_SIGN.get());
+                        output.accept(ModBlocks.V_SIGN.get());
+                        output.accept(ModBlocks.W_SIGN.get());
+                        output.accept(ModBlocks.X_SIGN.get());
+                        output.accept(ModBlocks.Y_SIGN.get());
+                        output.accept(ModBlocks.Z_SIGN.get());
+                        output.accept(ModBlocks.EXCLAMATION_SIGN.get());
+                        output.accept(ModBlocks.QUESTION_SIGN.get());
                     })
                     .build());
 

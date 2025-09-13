@@ -1,0 +1,7 @@
+{
+  "parent": "citycraft:block/wall_sign",
+  "textures": {
+    "back": "citycraft:block/square_sign_back",
+    "front": "citycraft:block/question_sign"
+  }
+}

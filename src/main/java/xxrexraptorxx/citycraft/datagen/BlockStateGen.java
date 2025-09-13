@@ -801,6 +801,45 @@ public class BlockStateGen extends BlockStateProvider {
         wallSignBlock(ModBlocks.EMERGENCY_EXIT_DOWNWARDS_SIGN.get(), SignShape.RECTANGLE);
         wallSignBlock(ModBlocks.EXIT_SIGN.get(), SignShape.RECTANGLE);
 
+        wallSignBlock(ModBlocks.SIGN_0.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.SIGN_1.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.SIGN_2.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.SIGN_3.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.SIGN_4.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.SIGN_5.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.SIGN_6.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.SIGN_7.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.SIGN_8.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.SIGN_9.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.A_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.B_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.C_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.D_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.E_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.F_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.G_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.H_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.I_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.J_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.K_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.L_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.M_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.N_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.O_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.P_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.Q_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.R_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.S_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.T_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.U_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.V_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.W_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.X_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.Y_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.Z_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.EXCLAMATION_SIGN.get(), SignShape.SQUARE);
+        wallSignBlock(ModBlocks.QUESTION_SIGN.get(), SignShape.SQUARE);
+
         fenceBlock(((FenceBlock) ModBlocks.IRON_FENCE.get()), blockTexture(ModBlocks.IRON_POLE.get()));
 
         wallBlock(((WallBlock) ModBlocks.BLACK_CONCRETE_WALL.get()), blockTexture(Blocks.BLACK_CONCRETE));

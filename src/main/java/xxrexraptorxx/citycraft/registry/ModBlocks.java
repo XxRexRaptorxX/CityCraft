@@ -1530,6 +1530,46 @@ public class ModBlocks {
             registerBlock("voltage_warning_sign", WallSignBlock::new);
     public static final DeferredBlock<WallSignBlock> WARNING_SIGN = registerBlock("warning_sign", WallSignBlock::new);
 
+    public static final DeferredBlock<WallSignBlock> SIGN_0 = registerBlock("0_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> SIGN_1 = registerBlock("1_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> SIGN_2 = registerBlock("2_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> SIGN_3 = registerBlock("3_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> SIGN_4 = registerBlock("4_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> SIGN_5 = registerBlock("5_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> SIGN_6 = registerBlock("6_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> SIGN_7 = registerBlock("7_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> SIGN_8 = registerBlock("8_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> SIGN_9 = registerBlock("9_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> A_SIGN = registerBlock("a_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> B_SIGN = registerBlock("b_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> C_SIGN = registerBlock("c_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> D_SIGN = registerBlock("d_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> E_SIGN = registerBlock("e_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> F_SIGN = registerBlock("f_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> G_SIGN = registerBlock("g_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> H_SIGN = registerBlock("h_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> I_SIGN = registerBlock("i_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> J_SIGN = registerBlock("j_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> K_SIGN = registerBlock("k_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> L_SIGN = registerBlock("l_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> M_SIGN = registerBlock("m_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> N_SIGN = registerBlock("n_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> O_SIGN = registerBlock("o_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> P_SIGN = registerBlock("p_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> Q_SIGN = registerBlock("q_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> R_SIGN = registerBlock("r_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> S_SIGN = registerBlock("s_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> T_SIGN = registerBlock("t_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> U_SIGN = registerBlock("u_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> V_SIGN = registerBlock("v_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> W_SIGN = registerBlock("w_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> X_SIGN = registerBlock("x_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> Y_SIGN = registerBlock("y_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> Z_SIGN = registerBlock("z_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> EXCLAMATION_SIGN =
+            registerBlock("exclamation_sign", WallSignBlock::new);
+    public static final DeferredBlock<WallSignBlock> QUESTION_SIGN = registerBlock("question_sign", WallSignBlock::new);
+
     public static final DeferredBlock<DrainCoverBlock> DRAIN_COVER = registerBlock("drain_cover", DrainCoverBlock::new);
     public static final DeferredBlock<DrainCoverBlock> DRAIN_COVER_GRID =
             registerBlock("drain_cover_grid", DrainCoverBlock::new);

@@ -51,6 +51,6 @@ dependencies {
     //Shimmer
     //runtimeOnly ("curse.maven:shimmer-627824:${shimmer_version}")
     //Continuity
-    runtimeOnly ("curse.maven:continuity-531351:${continuity_version}")
+    //runtimeOnly ("curse.maven:continuity-531351:${continuity_version}")
 
 }
