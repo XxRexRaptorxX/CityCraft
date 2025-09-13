@@ -1,4 +1,4 @@
-# [v.2.6.0 for MC 1.21,1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.6.0-dev1...v.2.6.0-dev9)
+# [v.2.6.0 for MC 1.21,1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.6.0-dev1...v.2.6.0-dev10)
 
 ## ✨ Features
 
@@ -8,6 +8,7 @@
 
 ## 🔧 Bug Fixes
 
+- translations fixed ([e6e1001](https://github.com/XxRexRaptorxX/CityCraft/commit/e6e100143348117309d0588f9ded28bad77ee501))
 - missing sign tags added ([4f4cb32](https://github.com/XxRexRaptorxX/CityCraft/commit/4f4cb329c9728d08f30f3be8a17a3065591c776c))
 - colors of asphalt with white markings adjusted ([a36e528](https://github.com/XxRexRaptorxX/CityCraft/commit/a36e528876273295594ef3d0e924eb3a78f75821))
 
