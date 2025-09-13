@@ -1827,6 +1827,71 @@ public class ModBlocks {
             () -> new RedstoneLampBlock(
                     BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.RED)));
 
+    public static final DeferredBlock<NeonBlock> BLACK_NEON_LIGHT = registerBlock(
+            "black_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.BLACK)));
+    public static final DeferredBlock<NeonBlock> BLUE_NEON_LIGHT = registerBlock(
+            "blue_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.BLUE)));
+    public static final DeferredBlock<NeonBlock> BROWN_NEON_LIGHT = registerBlock(
+            "brown_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.BROWN)));
+    public static final DeferredBlock<NeonBlock> CYAN_NEON_LIGHT = registerBlock(
+            "cyan_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.CYAN)));
+    public static final DeferredBlock<NeonBlock> GRAY_NEON_LIGHT = registerBlock(
+            "gray_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.GRAY)));
+    public static final DeferredBlock<NeonBlock> GREEN_NEON_LIGHT = registerBlock(
+            "green_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.GREEN)));
+    public static final DeferredBlock<NeonBlock> LIGHT_BLUE_NEON_LIGHT = registerBlock(
+            "light_blue_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.LIGHT_BLUE)));
+    public static final DeferredBlock<NeonBlock> LIGHT_GRAY_NEON_LIGHT = registerBlock(
+            "light_gray_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.LIGHT_GRAY)));
+    public static final DeferredBlock<NeonBlock> LIME_NEON_LIGHT = registerBlock(
+            "lime_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.LIME)));
+    public static final DeferredBlock<NeonBlock> MAGENTA_NEON_LIGHT = registerBlock(
+            "magenta_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.MAGENTA)));
+    public static final DeferredBlock<NeonBlock> ORANGE_NEON_LIGHT = registerBlock(
+            "orange_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.ORANGE)));
+    public static final DeferredBlock<NeonBlock> PINK_NEON_LIGHT = registerBlock(
+            "pink_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.PINK)));
+    public static final DeferredBlock<NeonBlock> PURPLE_NEON_LIGHT = registerBlock(
+            "purple_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.PURPLE)));
+    public static final DeferredBlock<NeonBlock> RED_NEON_LIGHT = registerBlock(
+            "red_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.RED)));
+    public static final DeferredBlock<NeonBlock> WHITE_NEON_LIGHT = registerBlock(
+            "white_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.WHITE)));
+    public static final DeferredBlock<NeonBlock> YELLOW_NEON_LIGHT = registerBlock(
+            "yellow_neon_light",
+            () -> new NeonBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.YELLOW)));
+
     public static final DeferredBlock<LanternBlockSlab> STREET_LANTERN_PANEL =
             registerBlock("street_lantern_panel", LanternBlockSlab::new);
     public static final DeferredBlock<LanternBlock> STREET_LANTERN = registerBlock("street_lantern", LanternBlock::new);

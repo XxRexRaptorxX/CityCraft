@@ -1312,6 +1312,23 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GREEN_LAMP.get());
         this.dropSelf(ModBlocks.RED_LAMP.get());
 
+        this.dropSelf(ModBlocks.BLACK_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.WHITE_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.ORANGE_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.MAGENTA_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.YELLOW_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.LIME_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.PINK_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.GRAY_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.CYAN_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.PURPLE_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.BLUE_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.BROWN_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.GREEN_NEON_LIGHT.get());
+        this.dropSelf(ModBlocks.RED_NEON_LIGHT.get());
+
         this.dropSelf(ModBlocks.STREET_LANTERN.get());
         this.dropSelf(ModBlocks.MODERN_STREET_LANTERN.get());
         this.add(

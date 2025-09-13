@@ -875,6 +875,23 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.PURPLE_LAMP.get());
                         output.accept(ModBlocks.MAGENTA_LAMP.get());
                         output.accept(ModBlocks.PINK_LAMP.get());
+
+                        output.accept(ModBlocks.WHITE_NEON_LIGHT.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_NEON_LIGHT.get());
+                        output.accept(ModBlocks.GRAY_NEON_LIGHT.get());
+                        output.accept(ModBlocks.BLACK_NEON_LIGHT.get());
+                        output.accept(ModBlocks.BROWN_NEON_LIGHT.get());
+                        output.accept(ModBlocks.RED_NEON_LIGHT.get());
+                        output.accept(ModBlocks.ORANGE_NEON_LIGHT.get());
+                        output.accept(ModBlocks.YELLOW_NEON_LIGHT.get());
+                        output.accept(ModBlocks.LIME_NEON_LIGHT.get());
+                        output.accept(ModBlocks.GREEN_NEON_LIGHT.get());
+                        output.accept(ModBlocks.CYAN_NEON_LIGHT.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_NEON_LIGHT.get());
+                        output.accept(ModBlocks.BLUE_NEON_LIGHT.get());
+                        output.accept(ModBlocks.PURPLE_NEON_LIGHT.get());
+                        output.accept(ModBlocks.MAGENTA_NEON_LIGHT.get());
+                        output.accept(ModBlocks.PINK_NEON_LIGHT.get());
                     })
                     .build());
 

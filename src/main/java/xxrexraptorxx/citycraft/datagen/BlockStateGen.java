@@ -938,6 +938,23 @@ public class BlockStateGen extends BlockStateProvider {
         customLamp(ModBlocks.GREEN_LAMP.get());
         customLamp(ModBlocks.RED_LAMP.get());
 
+        customTranslucentLamp(ModBlocks.BLACK_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.WHITE_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.ORANGE_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.MAGENTA_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.LIGHT_BLUE_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.YELLOW_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.LIME_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.PINK_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.GRAY_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.LIGHT_GRAY_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.CYAN_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.PURPLE_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.BLUE_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.BROWN_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.GREEN_NEON_LIGHT.get());
+        customTranslucentLamp(ModBlocks.RED_NEON_LIGHT.get());
+
         customLantern(ModBlocks.STREET_LANTERN.get());
     }
 
@@ -986,6 +1003,35 @@ public class BlockStateGen extends BlockStateProvider {
         simpleBlockItem(
                 block,
                 models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)));
+    }
+
+    private void customTranslucentLamp(Block block) {
+        String texture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        ResourceLocation translucent =
+                ResourceLocation.fromNamespaceAndPath(ResourceLocation.DEFAULT_NAMESPACE, "translucent");
+
+        getVariantBuilder(block).forAllStates(state -> {
+            if (state.getValue(RedstoneLampBlock.LIT)) {
+                return new ConfiguredModel[] {
+                    new ConfiguredModel(models().cubeAll(
+                                    texture + "_on",
+                                    ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture + "_on"))
+                            .renderType(translucent))
+                };
+            } else {
+                return new ConfiguredModel[] {
+                    new ConfiguredModel(models().cubeAll(
+                                    texture,
+                                    ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture))
+                            .renderType(translucent))
+                };
+            }
+        });
+
+        simpleBlockItem(
+                block,
+                models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture))
+                        .renderType(translucent));
     }
 
     private void customLantern(Block block) {

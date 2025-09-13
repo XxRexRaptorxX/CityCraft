@@ -19,6 +19,22 @@
     "citycraft:red_lamp",
     "citycraft:street_lantern_panel",
     "citycraft:street_lantern",
-    "citycraft:modern_street_lantern"
+    "citycraft:modern_street_lantern",
+    "citycraft:white_neon_light",
+    "citycraft:light_gray_neon_light",
+    "citycraft:gray_neon_light",
+    "citycraft:black_neon_light",
+    "citycraft:brown_neon_light",
+    "citycraft:red_neon_light",
+    "citycraft:orange_neon_light",
+    "citycraft:yellow_neon_light",
+    "citycraft:lime_neon_light",
+    "citycraft:green_neon_light",
+    "citycraft:cyan_neon_light",
+    "citycraft:light_blue_neon_light",
+    "citycraft:blue_neon_light",
+    "citycraft:purple_neon_light",
+    "citycraft:magenta_neon_light",
+    "citycraft:pink_neon_light"
   ]
 }

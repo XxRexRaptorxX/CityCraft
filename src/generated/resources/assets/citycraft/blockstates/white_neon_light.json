@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "citycraft:block/white_neon_light"
+    },
+    "lit=true": {
+      "model": "citycraft:block/white_neon_light_on"
+    }
+  }
+}

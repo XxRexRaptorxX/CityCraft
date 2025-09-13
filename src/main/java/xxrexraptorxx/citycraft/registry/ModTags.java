@@ -44,6 +44,7 @@ public class ModTags {
     public static final TagKey<Item> HANGING_WOOD_SIGNS_TAG = createItemTag("c", "hanging_signs/wood");
 
     public static final TagKey<Item> COLORED_LAMPS_TAG = createItemTag(References.MODID, "colored_lamps");
+    public static final TagKey<Item> NEON_LIGHTS_TAG = createItemTag(References.MODID, "neon_lights");
 
     public static final TagKey<Block> TRAFFIC_BARRIERS_TAG = createBlockTag("c", "traffic_barriers");
 

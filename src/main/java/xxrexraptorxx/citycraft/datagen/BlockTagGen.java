@@ -913,7 +913,23 @@ public class BlockTagGen extends BlockTagsProvider {
                         ModBlocks.RED_LAMP.get(),
                         ModBlocks.STREET_LANTERN.get(),
                         ModBlocks.MODERN_STREET_LANTERN.get(),
-                        ModBlocks.STREET_LANTERN_PANEL.get());
+                        ModBlocks.STREET_LANTERN_PANEL.get(),
+                        ModBlocks.BLACK_NEON_LIGHT.get(),
+                        ModBlocks.WHITE_NEON_LIGHT.get(),
+                        ModBlocks.ORANGE_NEON_LIGHT.get(),
+                        ModBlocks.MAGENTA_NEON_LIGHT.get(),
+                        ModBlocks.LIGHT_BLUE_NEON_LIGHT.get(),
+                        ModBlocks.YELLOW_NEON_LIGHT.get(),
+                        ModBlocks.LIME_NEON_LIGHT.get(),
+                        ModBlocks.PINK_NEON_LIGHT.get(),
+                        ModBlocks.GRAY_NEON_LIGHT.get(),
+                        ModBlocks.LIGHT_GRAY_NEON_LIGHT.get(),
+                        ModBlocks.CYAN_NEON_LIGHT.get(),
+                        ModBlocks.PURPLE_NEON_LIGHT.get(),
+                        ModBlocks.BLUE_NEON_LIGHT.get(),
+                        ModBlocks.BROWN_NEON_LIGHT.get(),
+                        ModBlocks.GREEN_NEON_LIGHT.get(),
+                        ModBlocks.RED_NEON_LIGHT.get());
 
         tag(BlockTags.SLABS)
                 .add(

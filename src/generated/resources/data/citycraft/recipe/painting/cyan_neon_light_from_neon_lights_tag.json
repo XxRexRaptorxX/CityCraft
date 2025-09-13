@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:neon_lights"
+  },
+  "color": {
+    "tag": "c:dyes/cyan"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:cyan_neon_light"
+  }
+}

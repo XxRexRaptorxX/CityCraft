@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "neon_lights",
+  "ingredients": [
+    {
+      "item": "citycraft:blue_lamp"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:blue_neon_light"
+  }
+}

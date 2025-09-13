@@ -8,10 +8,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.DyeItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -4608,6 +4605,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         lampRecipes(ModBlocks.BROWN_LAMP.get(), Blocks.BROWN_STAINED_GLASS_PANE, output);
         lampRecipes(ModBlocks.GREEN_LAMP.get(), Blocks.GREEN_STAINED_GLASS_PANE, output);
         lampRecipes(ModBlocks.RED_LAMP.get(), Blocks.RED_STAINED_GLASS_PANE, output);
+
+        paintingRecipes(ModBlocks.BLACK_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.WHITE_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ORANGE_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.MAGENTA_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(
+                ModBlocks.LIGHT_BLUE_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.YELLOW_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.LIME_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.PINK_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.GRAY_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(
+                ModBlocks.LIGHT_GRAY_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.CYAN_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.PURPLE_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.BLUE_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.BROWN_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.GREEN_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.RED_NEON_LIGHT.get(), ModTags.NEON_LIGHTS_TAG, Tags.Items.DYES_RED, output);
+
+        neonRecipes(ModBlocks.BLACK_NEON_LIGHT.get(), ModBlocks.BLACK_LAMP.get(), output);
+        neonRecipes(ModBlocks.WHITE_NEON_LIGHT.get(), ModBlocks.WHITE_LAMP.get(), output);
+        neonRecipes(ModBlocks.ORANGE_NEON_LIGHT.get(), ModBlocks.ORANGE_LAMP.get(), output);
+        neonRecipes(ModBlocks.MAGENTA_NEON_LIGHT.get(), ModBlocks.MAGENTA_LAMP.get(), output);
+        neonRecipes(ModBlocks.LIGHT_BLUE_NEON_LIGHT.get(), ModBlocks.LIGHT_BLUE_LAMP.get(), output);
+        neonRecipes(ModBlocks.YELLOW_NEON_LIGHT.get(), ModBlocks.YELLOW_LAMP.get(), output);
+        neonRecipes(ModBlocks.LIME_NEON_LIGHT.get(), ModBlocks.LIME_LAMP.get(), output);
+        neonRecipes(ModBlocks.PINK_NEON_LIGHT.get(), ModBlocks.PINK_LAMP.get(), output);
+        neonRecipes(ModBlocks.GRAY_NEON_LIGHT.get(), ModBlocks.GRAY_LAMP.get(), output);
+        neonRecipes(ModBlocks.LIGHT_GRAY_NEON_LIGHT.get(), ModBlocks.LIGHT_GRAY_LAMP.get(), output);
+        neonRecipes(ModBlocks.CYAN_NEON_LIGHT.get(), ModBlocks.CYAN_LAMP.get(), output);
+        neonRecipes(ModBlocks.PURPLE_NEON_LIGHT.get(), ModBlocks.PURPLE_LAMP.get(), output);
+        neonRecipes(ModBlocks.BLUE_NEON_LIGHT.get(), ModBlocks.BLUE_LAMP.get(), output);
+        neonRecipes(ModBlocks.BROWN_NEON_LIGHT.get(), ModBlocks.BROWN_LAMP.get(), output);
+        neonRecipes(ModBlocks.GREEN_NEON_LIGHT.get(), ModBlocks.GREEN_LAMP.get(), output);
+        neonRecipes(ModBlocks.RED_NEON_LIGHT.get(), ModBlocks.RED_LAMP.get(), output);
     }
 
     protected static void slabRecipes(Block result, Block input, RecipeOutput output) {
@@ -4635,6 +4668,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', Blocks.REDSTONE_LAMP)
                 .define('#', glassInput)
                 .unlockedBy(getHasName(Blocks.REDSTONE_LAMP), has(Blocks.REDSTONE_LAMP))
+                .save(output);
+    }
+
+    protected static void neonRecipes(Block result, Block input, RecipeOutput output) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1)
+                .requires(input)
+                .requires(Items.BLAZE_POWDER)
+                .unlockedBy(getHasName(input), has(input))
+                .group("neon_lights")
                 .save(output);
     }
 
