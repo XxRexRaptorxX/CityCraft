@@ -1,7 +1,8 @@
-# [v.2.6.0 for MC 1.21,1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.6.0-dev1...v.2.6.0-dev8)
+# [v.2.6.0 for MC 1.21,1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.6.0-dev1...v.2.6.0-dev9)
 
 ## ✨ Features
 
+- number, letter and symbol wall signs added ([5cce7cb](https://github.com/XxRexRaptorxX/CityCraft/commit/5cce7cb32b57dab743363aca9ad6baf503d5f5d6))
 - connected textures for pothole asphalt added ([5762214](https://github.com/XxRexRaptorxX/CityCraft/commit/5762214bdaf7cf599b2a7595a3d1131b3e2f842d))
 - connected textures for asphalt added ([5776af0](https://github.com/XxRexRaptorxX/CityCraft/commit/5776af0f29f1bc3ba7266b443aca0a839530cd90))
 
