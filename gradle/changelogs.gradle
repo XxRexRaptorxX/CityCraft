@@ -112,6 +112,15 @@ tasks.register("createReleaseTag") {
     }
 }
 
+tasks.register("archiveChangelog") {
+    group = "changelog"
+    description = "Archive LATEST_CHANGELOG.md to CHANGELOG.md"
+
+    doLast {
+        archiveLatestChangelogIfPresent(project.mod_version)
+    }
+}
+
 // Automatically update changelog when building
 tasks.named("jar") {
     dependsOn("updateChangelog")
@@ -337,15 +346,25 @@ def archiveLatestChangelogIfPresent(String releaseVersion) {
         def parts = existing.split("(?m)^# Changelog\\s*")
         def body = parts.size() > 1 ? parts[1].trim() : ""
 
-        // append patch notes
-        def combined = header + "\n\n" + latestText + "\n\n" + body
+        // Create separator line
+        def separator = "\n---\n"
+
+        // append patch notes with separator
+        def combined
+        if (body.isEmpty()) {
+            // First entry, no separator needed
+            combined = header + "\n\n" + latestText
+        } else {
+            // Add separator between new version and existing content
+            combined = header + "\n\n" + latestText + separator + "\n" + body
+        }
 
         writeIfChanged(changelogFile, combined.trim() + "\n")
 
         println "✅ Inserted LATEST_CHANGELOG.md content"
 
         // reset LATEST_CHANGELOG.md
-        def gameVersions = project.findProperty("game_versions") ?: project.minecraft_version
+        def gameVersions = formatGameVersions(project.findProperty("game_versions") ?: project.minecraft_version)
         def newHeader = "# v.${project.mod_version} for MC ${gameVersions}\n\n## 📝 Changes\n\n"
         def currentLatest = latestFile.exists() ? latestFile.getText('UTF-8') : ""
 
@@ -438,6 +457,12 @@ def createGitHubReleaseForVersion(String version) {
     }
 }
 
+def formatGameVersions(gameVersions) {
+    if (!gameVersions) return ""
+    return gameVersions.toString().replaceAll(/,\s*/, ', ')
+}
+
+ext.formatGameVersions = this.&formatGameVersions
 
 def buildChangelogForVersion(String version, List<String> devTags) {
     // Get commits for all dev tags of this version
@@ -484,7 +509,7 @@ def buildChangelogForVersion(String version, List<String> devTags) {
     }
 
     // Build changelog content
-    def gameVersions = project.findProperty("game_versions") ?: minecraft_version
+    def gameVersions = formatGameVersions(project.findProperty("game_versions") ?: minecraft_version)
     def content = new StringBuilder()
 
     content.append("# Release v.${version} for MC ${gameVersions}\n\n")
@@ -1024,8 +1049,9 @@ ext.readLatestChangelog = {
 
     // 4. Final fallback
     logger.lifecycle("No changelog found - returning minimal changelog.")
-    return """# v.${project.mod_version} for MC ${project.minecraft_version}
+    def gameVersions = formatGameVersions(project.minecraft_version)
 
+    return """# v.${project.mod_version} for MC ${gameVersions}
 ## 📝 Changes
 
 - Initial release or changes not documented
