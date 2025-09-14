@@ -34,3 +34,11 @@ versionRange="${minecraft_version_range}"
 ordering="NONE"
 side="BOTH"
 
+[[dependencies.${mod_id}]]
+modId="lostcities"
+mandatory=false
+type="optional"
+versionRange="[1.21,)"
+ordering="AFTER"
+side="BOTH"
+

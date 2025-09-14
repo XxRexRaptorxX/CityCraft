@@ -57,6 +57,9 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 ## 🗃️ Dependencies
 
 ### Supported:
+- **The Lost Cities**
+  - Generates cities with the new CityCraft blocks
+  - [CurseForge][cf_lc] | [Modrinth][mr_lc]
 - **Immersive Engineering**
     - Additional recipes
     - [CurseForge][cf_ie] | [Modrinth][mr_ie]
@@ -136,3 +139,5 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 [mr_ie]: https://modrinth.com/mod/immersiveengineering
 [cf_mek]: https://www.curseforge.com/minecraft/mc-mods/mekanism
 [mr_mek]: https://modrinth.com/mod/mekanism
+[cf_lc]: https://www.curseforge.com/minecraft/mc-mods/the-lost-cities
+[mr_lc]: https://modrinth.com/mod/the-lost-cities
