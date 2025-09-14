@@ -1,7 +1,8 @@
-# [v.2.7.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.7.0-dev1...v.2.7.0-dev4)
+# [v.2.7.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.7.0-dev1...v.2.7.0-dev5)
 
 ## ✨ Features
 
+- basic 'The Lost Cities' support added ([58d5afa](https://github.com/XxRexRaptorxX/CityCraft/commit/58d5afaac29480263c5834773c4c6dd546fd6e10))
 - basic 'The Lost Cities' support added ([5a2d47a](https://github.com/XxRexRaptorxX/CityCraft/commit/5a2d47a8e7e6097a8673651252bda9ef68f15a06))
 
 ## 🔧 Bug Fixes
