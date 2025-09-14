@@ -364,7 +364,7 @@ def archiveLatestChangelogIfPresent(String releaseVersion) {
         println "✅ Inserted LATEST_CHANGELOG.md content"
 
         // reset LATEST_CHANGELOG.md
-        def gameVersions = formatGameVersions(project.findProperty("game_versions") ?: project.minecraft_version)
+        def gameVersions = getFormattedGameVersions()
         def newHeader = "# v.${project.mod_version} for MC ${gameVersions}\n\n## 📝 Changes\n\n"
         def currentLatest = latestFile.exists() ? latestFile.getText('UTF-8') : ""
 
@@ -462,7 +462,10 @@ def formatGameVersions(gameVersions) {
     return gameVersions.toString().replaceAll(/,\s*/, ', ')
 }
 
-ext.formatGameVersions = this.&formatGameVersions
+ext.getFormattedGameVersions = {
+    def rawVersions = project.findProperty("game_versions") ?: project.minecraft_version
+    return formatGameVersions(rawVersions)
+}
 
 def buildChangelogForVersion(String version, List<String> devTags) {
     // Get commits for all dev tags of this version
@@ -509,7 +512,7 @@ def buildChangelogForVersion(String version, List<String> devTags) {
     }
 
     // Build changelog content
-    def gameVersions = formatGameVersions(project.findProperty("game_versions") ?: minecraft_version)
+    def gameVersions = getFormattedGameVersions()
     def content = new StringBuilder()
 
     content.append("# Release v.${version} for MC ${gameVersions}\n\n")
@@ -632,7 +635,7 @@ def createAndPushReleaseTag() {
 
 def buildChangelogFromCommits(List commits) {
     def currentVersion = project.mod_version
-    def gameVersions = project.findProperty("game_versions") ?: minecraft_version
+    def gameVersions = getFormattedGameVersions()
     def dateFormat = new SimpleDateFormat("yyyy-MM-dd")
     def currentDate = dateFormat.format(new Date())
 
@@ -1049,8 +1052,7 @@ ext.readLatestChangelog = {
 
     // 4. Final fallback
     logger.lifecycle("No changelog found - returning minimal changelog.")
-    def gameVersions = formatGameVersions(project.minecraft_version)
-
+    def gameVersions = getFormattedGameVersions()
     return """# v.${project.mod_version} for MC ${gameVersions}
 ## 📝 Changes
 
