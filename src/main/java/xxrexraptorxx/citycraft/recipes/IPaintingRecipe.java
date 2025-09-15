@@ -15,13 +15,17 @@ public interface IPaintingRecipe extends Recipe<RecipeInput> {
         return width >= 2 && height >= 1;
     }
 
+
     default ItemStack getToastSymbol() {
         return new ItemStack(ModBlocks.BLOCK_PAINTER.get());
     }
 
+
     boolean isColorIngredient(ItemStack stack);
 
+
     boolean isBaseIngredient(ItemStack stack);
+
 
     Ingredient getIngredients(Integer id);
 }

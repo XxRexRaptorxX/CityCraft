@@ -23,6 +23,7 @@ public class BlockStateGen extends BlockStateProvider {
         super(packOutput, References.MODID, exFileHelper);
     }
 
+
     @Override
     protected void registerStatesAndModels() {
         makeSimpleBlock(ModBlocks.ASPHALT_BLOCK.get());
@@ -965,74 +966,56 @@ public class BlockStateGen extends BlockStateProvider {
         simpleBlockItem(block, model);
     }
 
+
     private void makeBlockFromParentModel(Block block, String parentModel) {
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
-        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + parentModel)
-                .texture("texture", "block/" + blockTexture);
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + parentModel).texture("texture", "block/" + blockTexture);
 
         simpleBlock(block, model);
         makeBlockItemFromExistingModel(block);
     }
+
 
     private void makeSimpleBlock(Block block) {
         simpleBlock(block);
         makeBlockItemFromExistingModel(block);
     }
 
+
     private void customLamp(Block block) {
         String texture = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
         getVariantBuilder(block).forAllStates(state -> {
             if (state.getValue(RedstoneLampBlock.LIT)) {
-                return new ConfiguredModel[] {
-                    new ConfiguredModel(models().cubeAll(
-                                    texture + "_on",
-                                    ResourceLocation.fromNamespaceAndPath(
-                                            References.MODID, "block/" + texture + "_on")))
-                };
+                return new ConfiguredModel[]{
+                        new ConfiguredModel(models().cubeAll(texture + "_on", ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture + "_on")))};
             } else {
-                return new ConfiguredModel[] {
-                    new ConfiguredModel(models().cubeAll(
-                                    texture,
-                                    ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)))
-                };
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)))};
             }
         });
 
-        simpleBlockItem(
-                block,
-                models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)));
+        simpleBlockItem(block, models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)));
     }
+
 
     private void customTranslucentLamp(Block block) {
         String texture = BuiltInRegistries.BLOCK.getKey(block).getPath();
-        ResourceLocation translucent =
-                ResourceLocation.fromNamespaceAndPath(ResourceLocation.DEFAULT_NAMESPACE, "translucent");
+        ResourceLocation translucent = ResourceLocation.fromNamespaceAndPath(ResourceLocation.DEFAULT_NAMESPACE, "translucent");
 
         getVariantBuilder(block).forAllStates(state -> {
             if (state.getValue(RedstoneLampBlock.LIT)) {
-                return new ConfiguredModel[] {
-                    new ConfiguredModel(models().cubeAll(
-                                    texture + "_on",
-                                    ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture + "_on"))
-                            .renderType(translucent))
-                };
+                return new ConfiguredModel[]{new ConfiguredModel(
+                        models().cubeAll(texture + "_on", ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture + "_on")).renderType(translucent))};
             } else {
-                return new ConfiguredModel[] {
-                    new ConfiguredModel(models().cubeAll(
-                                    texture,
-                                    ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture))
-                            .renderType(translucent))
-                };
+                return new ConfiguredModel[]{
+                        new ConfiguredModel(models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)).renderType(translucent))};
             }
         });
 
-        simpleBlockItem(
-                block,
-                models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture))
-                        .renderType(translucent));
+        simpleBlockItem(block, models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)).renderType(translucent));
     }
+
 
     private void customLantern(Block block) {
         String texture = BuiltInRegistries.BLOCK.getKey(block).getPath();
@@ -1042,104 +1025,92 @@ public class BlockStateGen extends BlockStateProvider {
 
         getVariantBuilder(block).forAllStates(state -> {
             if (state.getValue(RedstoneLampBlock.LIT)) {
-                return new ConfiguredModel[] {
-                    new ConfiguredModel(models().cubeColumnHorizontal(texture + "_on", sideOn, end))
-                };
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeColumnHorizontal(texture + "_on", sideOn, end))};
             } else {
-                return new ConfiguredModel[] {new ConfiguredModel(models().cubeColumnHorizontal(texture, sideOff, end))
-                };
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeColumnHorizontal(texture, sideOff, end))};
             }
         });
 
         simpleBlockItem(block, models().cubeColumnHorizontal(texture, sideOff, end));
     }
 
+
     private void trafficSignBlock(TrafficSignBlock block, SignShape shape) {
         String frontTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
         String backTexture = shape.toString() + "_sign_back";
 
         getVariantBuilder(block).forAllStates(state -> {
-            ModelFile model = models().withExistingParent(frontTexture, References.MODID + ":block/traffic_sign")
-                    .texture("front", "block/" + frontTexture)
-                    .texture("back", modLoc("block/" + backTexture));
+            ModelFile model = models().withExistingParent(frontTexture, References.MODID + ":block/traffic_sign").texture("front", "block/" + frontTexture).texture("back",
+                    modLoc("block/" + backTexture));
 
             Direction dir = state.getValue(AsphaltBlock.FACING);
             int x = 0;
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
-            return ConfiguredModel.builder()
-                    .modelFile(model)
-                    .rotationX(x)
-                    .rotationY(y)
-                    .build();
+            return ConfiguredModel.builder().modelFile(model).rotationX(x).rotationY(y).build();
         });
 
         makeBlockItemFromExistingModel(block);
     }
+
 
     private void wallSignBlock(WallSignBlock block, SignShape shape) {
         String frontTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
         String backTexture = shape.toString() + "_sign_back";
 
         getVariantBuilder(block).forAllStates(state -> {
-            ModelFile model = models().withExistingParent(frontTexture, References.MODID + ":block/wall_sign")
-                    .texture("front", "block/" + frontTexture)
-                    .texture("back", modLoc("block/" + backTexture));
+            ModelFile model = models().withExistingParent(frontTexture, References.MODID + ":block/wall_sign").texture("front", "block/" + frontTexture).texture("back",
+                    modLoc("block/" + backTexture));
 
             Direction dir = state.getValue(AsphaltBlock.FACING);
             int x = 0;
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
-            return ConfiguredModel.builder()
-                    .modelFile(model)
-                    .rotationX(x)
-                    .rotationY(y)
-                    .build();
+            return ConfiguredModel.builder().modelFile(model).rotationX(x).rotationY(y).build();
         });
 
         makeBlockItemFromExistingModel(block);
     }
 
+
     private void directionalAsphaltBlock(AsphaltBlock block) {
-        String asphaltTexture =
-                BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
+        String asphaltTexture = BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
         getVariantBuilder(block).forAllStates(state -> {
-            ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/directional_cube")
-                    .texture("down", "block/" + blockTexture) // down
+            ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/directional_cube").texture("down", "block/" + blockTexture) // down
                     .texture("up", "block/" + blockTexture) // up
                     .texture("north", "block/" + blockTexture) // north
                     .texture("south", "block/" + blockTexture) // south
@@ -1152,30 +1123,27 @@ public class BlockStateGen extends BlockStateProvider {
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
-            return ConfiguredModel.builder()
-                    .modelFile(model)
-                    .rotationX(x)
-                    .rotationY(y)
-                    .build();
+            return ConfiguredModel.builder().modelFile(model).rotationX(x).rotationY(y).build();
         });
 
         makeBlockItemFromExistingModel(block);
     }
+
 
     private void asphaltSlab(AsphaltSlabBlock block) {
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath().replace("_slab", "");
@@ -1184,14 +1152,12 @@ public class BlockStateGen extends BlockStateProvider {
         makeBlockItemFromExistingModel(block);
     }
 
+
     private void directionalAsphaltSlab(AsphaltSlabBlock block) {
-        String asphaltTexture =
-                BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
+        String asphaltTexture = BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath().replace("_slab", "");
 
-        ModelFile bottom = models().withExistingParent(
-                        blockTexture + "_slab", References.MODID + ":block/directional_slab")
-                .texture("down", "block/" + blockTexture) // down
+        ModelFile bottom = models().withExistingParent(blockTexture + "_slab", References.MODID + ":block/directional_slab").texture("down", "block/" + blockTexture) // down
                 .texture("up", "block/" + blockTexture) // up
                 .texture("north", "block/" + blockTexture) // north
                 .texture("south", "block/" + blockTexture) // south
@@ -1199,9 +1165,7 @@ public class BlockStateGen extends BlockStateProvider {
                 .texture("west", "block/" + asphaltTexture) // west
                 .texture("particle", modLoc("block/" + asphaltTexture));
 
-        ModelFile top = models().withExistingParent(
-                        blockTexture + "_slab_top", References.MODID + ":block/directional_slab_top")
-                .texture("down", "block/" + blockTexture) // down
+        ModelFile top = models().withExistingParent(blockTexture + "_slab_top", References.MODID + ":block/directional_slab_top").texture("down", "block/" + blockTexture) // down
                 .texture("up", "block/" + blockTexture) // up
                 .texture("north", "block/" + blockTexture) // north
                 .texture("south", "block/" + blockTexture) // south
@@ -1209,8 +1173,7 @@ public class BlockStateGen extends BlockStateProvider {
                 .texture("west", "block/" + asphaltTexture) // west
                 .texture("particle", modLoc("block/" + asphaltTexture));
 
-        ModelFile full = models().withExistingParent(blockTexture, References.MODID + ":block/directional_cube")
-                .texture("down", "block/" + blockTexture) // down
+        ModelFile full = models().withExistingParent(blockTexture, References.MODID + ":block/directional_cube").texture("down", "block/" + blockTexture) // down
                 .texture("up", "block/" + blockTexture) // up
                 .texture("north", "block/" + blockTexture) // north
                 .texture("south", "block/" + blockTexture) // south
@@ -1225,38 +1188,34 @@ public class BlockStateGen extends BlockStateProvider {
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
-            return ConfiguredModel.builder()
-                    .modelFile(type == SlabType.BOTTOM ? bottom : type == SlabType.TOP ? top : full)
-                    .rotationX(x)
-                    .rotationY(y)
-                    .build();
+            return ConfiguredModel.builder().modelFile(type == SlabType.BOTTOM ? bottom : type == SlabType.TOP ? top : full).rotationX(x).rotationY(y).build();
         });
 
         makeBlockItemFromExistingModel(block);
     }
 
+
     private void variableTrafficSign(VariableTrafficSignBlock block) {
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
-        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/variable_traffic_signs")
-                .texture("texture", "block/" + blockTexture + emissiveTexturesSuffix);
-        ModelFile model_off = models().withExistingParent(
-                        blockTexture + "_off", References.MODID + ":block/variable_traffic_signs_off");
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/variable_traffic_signs").texture("texture",
+                "block/" + blockTexture + emissiveTexturesSuffix);
+        ModelFile model_off = models().withExistingParent(blockTexture + "_off", References.MODID + ":block/variable_traffic_signs_off");
 
         getVariantBuilder(block).forAllStates(state -> {
             Boolean lit = state.getValue(VariableTrafficSignBlock.LIT);
@@ -1265,40 +1224,34 @@ public class BlockStateGen extends BlockStateProvider {
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
-            return ConfiguredModel.builder()
-                    .modelFile(lit == true ? model : model_off)
-                    .rotationX(x)
-                    .rotationY(y)
-                    .build();
+            return ConfiguredModel.builder().modelFile(lit == true ? model : model_off).rotationX(x).rotationY(y).build();
         });
 
         makeBlockItemFromExistingModel(block);
     }
+
 
     private void trafficLights(TrafficLightBlock block) {
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
         String modelType = Helper.getTrafficLightModelType(block);
 
-        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + modelType)
-                .texture("texture", "block/" + blockTexture);
-        ModelFile model_off = models().withExistingParent(
-                        blockTexture + "_off", References.MODID + ":block/" + modelType)
-                .texture("texture", "block/" + blockTexture + "_off");
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + modelType).texture("texture", "block/" + blockTexture);
+        ModelFile model_off = models().withExistingParent(blockTexture + "_off", References.MODID + ":block/" + modelType).texture("texture", "block/" + blockTexture + "_off");
 
         getVariantBuilder(block).forAllStates(state -> {
             Boolean lit = state.getValue(VariableTrafficSignBlock.LIT);
@@ -1307,26 +1260,22 @@ public class BlockStateGen extends BlockStateProvider {
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
-            return ConfiguredModel.builder()
-                    .modelFile(lit == true ? model : model_off)
-                    .rotationX(x)
-                    .rotationY(y)
-                    .build();
+            return ConfiguredModel.builder().modelFile(lit == true ? model : model_off).rotationX(x).rotationY(y).build();
         });
 
         makeBlockItemFromExistingModel(block);

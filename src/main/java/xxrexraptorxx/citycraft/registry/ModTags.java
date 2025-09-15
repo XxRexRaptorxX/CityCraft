@@ -18,8 +18,7 @@ public class ModTags {
     public static final TagKey<Item> CROSS_SIGN_TAG = createItemTag("c", "traffic_signs/cross");
     public static final TagKey<Item> BAKE_SIGN_TAG = createItemTag("c", "traffic_signs/bake");
     public static final TagKey<Item> OCTAGON_SIGN_TAG = createItemTag("c", "traffic_signs/octagon");
-    public static final TagKey<Item> UPSIDE_DOWN_TRIANGLE_SIGN_TAG =
-            createItemTag("c", "traffic_signs/upside_down_triangle");
+    public static final TagKey<Item> UPSIDE_DOWN_TRIANGLE_SIGN_TAG = createItemTag("c", "traffic_signs/upside_down_triangle");
 
     public static final TagKey<Item> CHAINS_TAG = createItemTag("c", "chains");
     public static final TagKey<Item> IRON_POLES_TAG = createItemTag("c", "poles/iron");
@@ -27,14 +26,10 @@ public class ModTags {
     public static final TagKey<Item> CONCRETE_WALLS_TAG = createItemTag("c", "walls/concrete");
     public static final TagKey<Item> BLANK_ASPHALT_TAG = createItemTag(References.MODID, "blank_asphalt");
     public static final TagKey<Item> BLANK_ASPHALT_SLABS_TAG = createItemTag(References.MODID, "blank_asphalt_slabs");
-    public static final TagKey<Item> ASPHALT_WITH_WHITE_MARKINGS_TAG =
-            createItemTag(References.MODID, "white_marked_asphalt");
-    public static final TagKey<Item> ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG =
-            createItemTag(References.MODID, "white_marked_asphalt_slabs");
-    public static final TagKey<Item> ASPHALT_WITH_YELLOW_MARKINGS_TAG =
-            createItemTag(References.MODID, "yellow_marked_asphalt");
-    public static final TagKey<Item> ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG =
-            createItemTag(References.MODID, "yellow_marked_asphalt_slabs");
+    public static final TagKey<Item> ASPHALT_WITH_WHITE_MARKINGS_TAG = createItemTag(References.MODID, "white_marked_asphalt");
+    public static final TagKey<Item> ASPHALT_SLABS_WITH_WHITE_MARKINGS_TAG = createItemTag(References.MODID, "white_marked_asphalt_slabs");
+    public static final TagKey<Item> ASPHALT_WITH_YELLOW_MARKINGS_TAG = createItemTag(References.MODID, "yellow_marked_asphalt");
+    public static final TagKey<Item> ASPHALT_SLABS_WITH_YELLOW_MARKINGS_TAG = createItemTag(References.MODID, "yellow_marked_asphalt_slabs");
     public static final TagKey<Item> CONCRETE_TAG = createItemTag("c", "concrete");
     public static final TagKey<Item> CONCRETE_POWDER_TAG = createItemTag("c", "concrete_powder");
     public static final TagKey<Item> GLAZED_TERRACOTTA_TAG = createItemTag("c", "glazed_terracotta");
@@ -51,6 +46,7 @@ public class ModTags {
     private static TagKey<Item> createItemTag(String id, String name) {
         return ItemTags.create(ResourceLocation.fromNamespaceAndPath(id, name));
     }
+
 
     private static TagKey<Block> createBlockTag(String id, String name) {
         return BlockTags.create(ResourceLocation.fromNamespaceAndPath(id, name));

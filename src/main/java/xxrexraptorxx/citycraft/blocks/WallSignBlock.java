@@ -35,47 +35,33 @@ public class WallSignBlock extends HorizontalDirectionalBlock implements SimpleW
         super(properties);
     }
 
+
     public WallSignBlock() {
-        super(Properties.of()
-                .strength(2.0F, 3.0F)
-                .sound(SoundType.METAL)
-                .mapColor(DyeColor.WHITE)
-                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                .noCollission()
-                .noOcclusion());
-        this.registerDefaultState(this.stateDefinition
-                .any()
-                .setValue(FACING, Direction.NORTH)
-                .setValue(WATERLOGGED, Boolean.valueOf(false)));
+        super(Properties.of().strength(2.0F, 3.0F).sound(SoundType.METAL).mapColor(DyeColor.WHITE).instrument(NoteBlockInstrument.IRON_XYLOPHONE).noCollission().noOcclusion());
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, Boolean.valueOf(false)));
     }
+
 
     @Override
     public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(WATERLOGGED, FACING);
     }
 
+
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction clickedFace = context.getClickedFace();
 
         if (clickedFace.getAxis() != Direction.Axis.Y) {
-            boolean waterlogged =
-                    context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
-            return this.defaultBlockState()
-                    .setValue(FACING, clickedFace.getOpposite())
-                    .setValue(WATERLOGGED, waterlogged);
+            boolean waterlogged = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
+            return this.defaultBlockState().setValue(FACING, clickedFace.getOpposite()).setValue(WATERLOGGED, waterlogged);
         }
         return null;
     }
 
+
     @Override
-    public BlockState updateShape(
-            BlockState state,
-            Direction direction,
-            BlockState facingState,
-            LevelAccessor level,
-            BlockPos pos,
-            BlockPos facingPos) {
+    public BlockState updateShape(BlockState state, Direction direction, BlockState facingState, LevelAccessor level, BlockPos pos, BlockPos facingPos) {
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
@@ -89,6 +75,7 @@ public class WallSignBlock extends HorizontalDirectionalBlock implements SimpleW
         return super.updateShape(state, direction, facingState, level, pos, facingPos);
     }
 
+
     @Override
     public boolean canSurvive(BlockState state, LevelReader world, BlockPos pos) {
         Direction supportDir = state.getValue(FACING);
@@ -97,20 +84,24 @@ public class WallSignBlock extends HorizontalDirectionalBlock implements SimpleW
         return world.getBlockState(supportPos).isFaceSturdy(world, supportPos, state.getValue(FACING));
     }
 
+
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
+
 
     @Override
     public MapCodec<? extends HorizontalDirectionalBlock> codec() {
         return CODEC;
     }
 
+
     @Override
     public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return Shapes.empty();
     }
+
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {

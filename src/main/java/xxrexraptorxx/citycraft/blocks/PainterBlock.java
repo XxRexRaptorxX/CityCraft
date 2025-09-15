@@ -21,20 +21,15 @@ import xxrexraptorxx.citycraft.main.References;
 
 public class PainterBlock extends Block {
 
-    private static final Component CONTAINER_TITLE =
-            Component.translatable("block." + References.MODID + ".block_painter");
+    private static final Component CONTAINER_TITLE = Component.translatable("block." + References.MODID + ".block_painter");
 
     public PainterBlock() {
-        super(Properties.of()
-                .strength(2.5F)
-                .sound(SoundType.METAL)
-                .mapColor(MapColor.METAL)
-                .instrument(NoteBlockInstrument.IRON_XYLOPHONE));
+        super(Properties.of().strength(2.5F).sound(SoundType.METAL).mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE));
     }
 
+
     @Override
-    protected InteractionResult useWithoutItem(
-            BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
+    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
         if (level.isClientSide) {
             return InteractionResult.SUCCESS;
 
@@ -46,12 +41,10 @@ public class PainterBlock extends Block {
         }
     }
 
+
     @Override
     @Nullable
     public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
-        return new SimpleMenuProvider(
-                (id, playerInventory, player) ->
-                        new PainterMenu(id, playerInventory, ContainerLevelAccess.create(worldIn, pos)),
-                CONTAINER_TITLE);
+        return new SimpleMenuProvider((id, playerInventory, player) -> new PainterMenu(id, playerInventory, ContainerLevelAccess.create(worldIn, pos)), CONTAINER_TITLE);
     }
 }

@@ -11,6 +11,7 @@ public class Helper {
         return null;
     }
 
+
     public static String getTrafficLightModelType(TrafficLightBlock block) {
         String blockName = BuiltInRegistries.BLOCK.getKey(block).getPath();
 

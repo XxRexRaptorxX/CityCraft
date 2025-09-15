@@ -20,8 +20,7 @@ import xxrexraptorxx.citycraft.recipes.IPaintingRecipe;
 @OnlyIn(Dist.CLIENT)
 public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
 
-    public static final ResourceLocation BG_LOCATION =
-            ResourceLocation.fromNamespaceAndPath(References.MODID, "textures/gui/container/painter.png");
+    public static final ResourceLocation BG_LOCATION = ResourceLocation.fromNamespaceAndPath(References.MODID, "textures/gui/container/painter.png");
     private static final int SCROLLER_WIDTH = 12;
     private static final int SCROLLER_HEIGHT = 15;
     private static final int RECIPES_COLUMNS = 4;
@@ -36,9 +35,8 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
     /** Is {@code true} if the player clicked on the scroll wheel in the GUI. */
     private boolean scrolling;
     /**
-     * The index of the first recipe to display.
-     * The number of recipes displayed at any time is 12 (4 recipes per row, and 3 rows). If the player scrolled down one
-     * row, this value would be 4 (representing the index of the first slot on the second row).
+     * The index of the first recipe to display. The number of recipes displayed at any time is 12 (4 recipes per row, and 3 rows). If the player scrolled down one row, this value
+     * would be 4 (representing the index of the first slot on the second row).
      */
     private int startIndex;
 
@@ -50,11 +48,13 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
         --this.titleLabelY;
     }
 
+
     @Override
     public void render(GuiGraphics gui, int mouseX, int mouseY, float partialTick) {
         super.render(gui, mouseX, mouseY, partialTick);
         this.renderTooltip(gui, mouseX, mouseY);
     }
+
 
     @Override
     protected void renderBg(GuiGraphics gui, float partialTick, int mouseX, int mouseY) {
@@ -78,6 +78,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
         this.renderRecipes(gui, l, i1, j1);
     }
 
+
     @Override
     protected void renderTooltip(GuiGraphics gui, int x, int y) {
         super.renderTooltip(gui, x, y);
@@ -93,12 +94,12 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
                 int j1 = i + i1 % 4 * 16;
                 int k1 = j + i1 / 4 * 18 + 2;
                 if (x >= j1 && x < j1 + 16 && y >= k1 && y < k1 + 18) {
-                    gui.renderTooltip(
-                            this.font, list.get(l).value().getResultItem(this.minecraft.level.registryAccess()), x, y);
+                    gui.renderTooltip(this.font, list.get(l).value().getResultItem(this.minecraft.level.registryAccess()), x, y);
                 }
             }
         }
     }
+
 
     private void renderButtons(GuiGraphics gui, int mouseX, int mouseY, int x, int y, int lastVisibleElementIndex) {
         for (int i = this.startIndex; i < lastVisibleElementIndex && i < this.menu.getNumRecipes(); ++i) {
@@ -119,6 +120,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
         }
     }
 
+
     private void renderRecipes(GuiGraphics gui, int x, int y, int startIndex) {
         List<RecipeHolder<IPaintingRecipe>> list = this.menu.getRecipes();
 
@@ -130,6 +132,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
             gui.renderItem(list.get(i).value().getResultItem(this.minecraft.level.registryAccess()), k, i1);
         }
     }
+
 
     @Override
     public boolean mouseClicked(double mouseX, double mouseY, int button) {
@@ -144,14 +147,8 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
                 int i1 = l - this.startIndex;
                 double d0 = mouseX - (double) (i + i1 % 4 * 16);
                 double d1 = mouseY - (double) (j + i1 / 4 * 18);
-                if (d0 >= 0.0D
-                        && d1 >= 0.0D
-                        && d0 < 16.0D
-                        && d1 < 18.0D
-                        && this.menu.clickMenuButton(this.minecraft.player, l)) {
-                    Minecraft.getInstance()
-                            .getSoundManager()
-                            .play(SimpleSoundInstance.forUI(SoundEvents.BRUSH_GENERIC, 1.0F));
+                if (d0 >= 0.0D && d1 >= 0.0D && d0 < 16.0D && d1 < 18.0D && this.menu.clickMenuButton(this.minecraft.player, l)) {
+                    Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.BRUSH_GENERIC, 1.0F));
                     this.minecraft.gameMode.handleInventoryButtonClick((this.menu).containerId, l);
                     return true;
                 }
@@ -160,16 +157,14 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
             i = this.leftPos + 119;
             j = this.topPos + 9;
 
-            if (mouseX >= (double) i
-                    && mouseX < (double) (i + 12)
-                    && mouseY >= (double) j
-                    && mouseY < (double) (j + 54)) {
+            if (mouseX >= (double) i && mouseX < (double) (i + 12) && mouseY >= (double) j && mouseY < (double) (j + 54)) {
                 this.scrolling = true;
             }
         }
 
         return super.mouseClicked(mouseX, mouseY, button);
     }
+
 
     @Override
     public boolean mouseDragged(double mouseX, double mouseY, int button, double dragX, double dragY) {
@@ -186,6 +181,7 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
         }
     }
 
+
     @Override
     public boolean mouseScrolled(double mouseX, double mouseY, double scrollX, double scrollY) {
         if (this.isScrollBarActive()) {
@@ -198,13 +194,16 @@ public class PainterScreen extends AbstractContainerScreen<PainterMenu> {
         return true;
     }
 
+
     private boolean isScrollBarActive() {
         return this.displayRecipes && this.menu.getNumRecipes() > 12;
     }
 
+
     protected int getOffscreenRows() {
         return (this.menu.getNumRecipes() + 4 - 1) / 4 - 3;
     }
+
 
     private void containerChanged() {
         this.displayRecipes = this.menu.hasInputItem();

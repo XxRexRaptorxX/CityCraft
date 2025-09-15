@@ -48,21 +48,17 @@ public class Events {
                 var player = Minecraft.getInstance().player;
                 if (player == null) return;
 
-                var modContainer =
-                        ModList.get().getModContainerById(References.MODID).orElse(null);
+                var modContainer = ModList.get().getModContainerById(References.MODID).orElse(null);
 
                 if (modContainer != null) {
                     var versionCheckResult = VersionChecker.getResult(modContainer.getModInfo());
 
-                    if (versionCheckResult.status() == VersionChecker.Status.OUTDATED
-                            || versionCheckResult.status() == VersionChecker.Status.BETA_OUTDATED) {
+                    if (versionCheckResult.status() == VersionChecker.Status.OUTDATED || versionCheckResult.status() == VersionChecker.Status.BETA_OUTDATED) {
                         MutableComponent url = Component.translatable(ChatFormatting.GREEN + "Click here to update!")
-                                .withStyle(style -> style.withClickEvent(
-                                        new ClickEvent(ClickEvent.Action.OPEN_URL, References.URL)));
+                                .withStyle(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, References.URL)));
 
                         player.displayClientMessage(
-                                Component.literal(ChatFormatting.BLUE + "A newer version of " + ChatFormatting.YELLOW
-                                        + References.NAME + ChatFormatting.BLUE + " is available!"),
+                                Component.literal(ChatFormatting.BLUE + "A newer version of " + ChatFormatting.YELLOW + References.NAME + ChatFormatting.BLUE + " is available!"),
                                 false);
                         player.displayClientMessage(url, false);
 
@@ -77,6 +73,7 @@ public class Events {
         }
     }
 
+
     /**
      * Distributes the supporter rewards on first join.
      */
@@ -89,8 +86,7 @@ public class Events {
 
             try {
                 URL SUPPORTER_URL = new URL("https://raw.githubusercontent.com/XxRexRaptorxX/Patreons/main/Supporter");
-                URL PREMIUM_SUPPORTER_URL =
-                        new URL("https://raw.githubusercontent.com/XxRexRaptorxX/Patreons/main/Premium%20Supporter");
+                URL PREMIUM_SUPPORTER_URL = new URL("https://raw.githubusercontent.com/XxRexRaptorxX/Patreons/main/Premium%20Supporter");
                 URL ELITE_URL = new URL("https://raw.githubusercontent.com/XxRexRaptorxX/Patreons/main/Elite");
 
                 // test if a player already has rewards
@@ -104,26 +100,14 @@ public class Events {
                         if (SupporterCheck(SUPPORTER_URL, player)) {
 
                             ItemStack certificate = new ItemStack(Items.PAPER);
-                            certificate.set(
-                                    DataComponents.CUSTOM_NAME,
-                                    Component.literal("Thank you for supporting me in my work!")
-                                            .withStyle(ChatFormatting.GOLD)
-                                            .append(Component.literal(" - XxRexRaptorxX")
-                                                    .withStyle(ChatFormatting.ITALIC)
-                                                    .withStyle(ChatFormatting.GREEN)));
+                            certificate.set(DataComponents.CUSTOM_NAME, Component.literal("Thank you for supporting me in my work!").withStyle(ChatFormatting.GOLD)
+                                    .append(Component.literal(" - XxRexRaptorxX").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.GREEN)));
 
                             ItemStack reward = new ItemStack(Items.PLAYER_HEAD);
-                            var profile = new GameProfile(
-                                    player.getUUID(), player.getName().getString());
+                            var profile = new GameProfile(player.getUUID(), player.getName().getString());
                             reward.set(DataComponents.PROFILE, new ResolvableProfile(profile));
 
-                            level.playSound(
-                                    (Player) null,
-                                    player.blockPosition(),
-                                    SoundEvents.PLAYER_LEVELUP,
-                                    SoundSource.PLAYERS,
-                                    0.5F,
-                                    level.random.nextFloat() * 0.15F + 0.8F);
+                            level.playSound((Player) null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.5F, level.random.nextFloat() * 0.15F + 0.8F);
                             player.addItem(reward);
                             player.addItem(certificate);
                         }
@@ -131,18 +115,13 @@ public class Events {
                         // test if player is premium supporter
                         if (SupporterCheck(PREMIUM_SUPPORTER_URL, player)) {
                             ItemStack reward = new ItemStack(Items.DIAMOND_SWORD, 1);
-                            Registry<Enchantment> enchantmentsRegistry =
-                                    level.registryAccess().registryOrThrow(Registries.ENCHANTMENT);
+                            Registry<Enchantment> enchantmentsRegistry = level.registryAccess().registryOrThrow(Registries.ENCHANTMENT);
 
                             reward.enchant(enchantmentsRegistry.getHolderOrThrow(Enchantments.MENDING), 1);
                             reward.enchant(enchantmentsRegistry.getHolderOrThrow(Enchantments.SHARPNESS), 3);
-                            reward.set(
-                                    DataComponents.ENCHANTMENTS,
-                                    reward.getOrDefault(DataComponents.ENCHANTMENTS, ItemEnchantments.EMPTY));
+                            reward.set(DataComponents.ENCHANTMENTS, reward.getOrDefault(DataComponents.ENCHANTMENTS, ItemEnchantments.EMPTY));
 
-                            reward.set(
-                                    DataComponents.CUSTOM_NAME,
-                                    Component.literal("Rex's Night Sword").withStyle(ChatFormatting.DARK_GRAY));
+                            reward.set(DataComponents.CUSTOM_NAME, Component.literal("Rex's Night Sword").withStyle(ChatFormatting.DARK_GRAY));
 
                             player.addItem(reward);
                         }
@@ -161,6 +140,7 @@ public class Events {
             }
         }
     }
+
 
     /**
      * Tests if a player is a supporter

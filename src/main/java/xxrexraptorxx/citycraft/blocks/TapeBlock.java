@@ -38,29 +38,29 @@ public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBl
 
     public TapeBlock(BlockBehaviour.Properties properties) {
         super(properties);
-        this.registerDefaultState(this.stateDefinition
-                .any()
-                .setValue(WATERLOGGED, Boolean.valueOf(false))
-                .setValue(AXIS, Direction.Axis.Y));
+        this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, Boolean.valueOf(false)).setValue(AXIS, Direction.Axis.Y));
     }
+
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         switch ((Direction.Axis) state.getValue(AXIS)) {
-            case X:
-            default:
+            case X :
+            default :
                 return X_AXIS_AABB;
-            case Z:
+            case Z :
                 return Z_AXIS_AABB;
-            case Y:
+            case Y :
                 return Y_AXIS_AABB;
         }
     }
+
 
     @Override
     public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return Shapes.empty();
     }
+
 
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext context) {
@@ -70,14 +70,9 @@ public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBl
         return super.getStateForPlacement(context).setValue(WATERLOGGED, Boolean.valueOf(flag));
     }
 
+
     @Override
-    public BlockState updateShape(
-            BlockState state,
-            Direction facing,
-            BlockState facingState,
-            LevelAccessor level,
-            BlockPos currentPos,
-            BlockPos facingPos) {
+    public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos) {
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
@@ -85,25 +80,30 @@ public class TapeBlock extends RotatedPillarBlock implements SimpleWaterloggedBl
         return super.updateShape(state, facing, facingState, level, currentPos, facingPos);
     }
 
+
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(WATERLOGGED).add(AXIS);
     }
+
 
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
 
+
     @Override
     public boolean isPathfindable(BlockState state, PathComputationType type) {
         return false;
     }
 
+
     @Override
     public boolean isShearable(@Nullable Player player, ItemStack item, Level level, BlockPos pos) {
         return true;
     }
+
 
     @Override
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {

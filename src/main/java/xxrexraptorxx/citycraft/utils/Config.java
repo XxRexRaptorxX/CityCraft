@@ -30,13 +30,13 @@ public class Config {
         container.registerConfig(ModConfig.Type.CLIENT, CLIENT_CONFIG);
     }
 
+
     public static void initClient() {
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
         builder.comment("General").push(CATEGORY_GENERAL);
         UPDATE_CHECKER = builder.comment("Activate the Update-Checker").define("update-checker", true);
-        ENABLE_TOOLTIPS = builder.comment("Enables tooltips for some blocks/items in your inventory")
-                .define("enable_tooltips", true);
+        ENABLE_TOOLTIPS = builder.comment("Enables tooltips for some blocks/items in your inventory").define("enable_tooltips", true);
         builder.pop();
 
         // builder.comment("Signs").push(CATEGORY_SIGNS);
@@ -47,22 +47,18 @@ public class Config {
         CLIENT_CONFIG = builder.build();
     }
 
+
     public static void initServer() {
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
         builder.comment("General").push(CATEGORY_GENERAL);
-        PATREON_REWARDS = builder.comment("Enables ingame rewards on first spawn for Patreons")
-                .define("patreon_rewards", true);
+        PATREON_REWARDS = builder.comment("Enables ingame rewards on first spawn for Patreons").define("patreon_rewards", true);
         builder.pop();
 
         builder.comment("Roads").push(CATEGORY_ROADS);
-        ENABLE_ASPHALT_SPEED_EFFECT = builder.comment(
-                        "Enables the speed effect you get when you run on asphalt. [not boost blocks]")
-                .define("enable_asphalt_speed_effect", true);
-        SPEED_EFFECT_AMPLIFIER = builder.comment("How strong the speed effect should be.")
-                .defineInRange("speed_effect_amplifier", 1, 0, 5);
-        BOOST_SPEED_EFFECT_AMPLIFIER = builder.comment("How strong the speed effect of Boost blocks should be.")
-                .defineInRange("boost_speed_effect_amplifier", 3, 0, 5);
+        ENABLE_ASPHALT_SPEED_EFFECT = builder.comment("Enables the speed effect you get when you run on asphalt. [not boost blocks]").define("enable_asphalt_speed_effect", true);
+        SPEED_EFFECT_AMPLIFIER = builder.comment("How strong the speed effect should be.").defineInRange("speed_effect_amplifier", 1, 0, 5);
+        BOOST_SPEED_EFFECT_AMPLIFIER = builder.comment("How strong the speed effect of Boost blocks should be.").defineInRange("boost_speed_effect_amplifier", 3, 0, 5);
         builder.pop();
 
         SERVER_CONFIG = builder.build();

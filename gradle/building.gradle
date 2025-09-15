@@ -10,7 +10,7 @@ tasks.named('jar').configure {
 spotless {
     java {
         target 'src/**/*.java'
-        palantirJavaFormat('2.38.0')
+        eclipse().configFile("${rootDir}/eclipse-java-formatter.xml")
         removeUnusedImports()
         trimTrailingWhitespace()
         endWithNewline()

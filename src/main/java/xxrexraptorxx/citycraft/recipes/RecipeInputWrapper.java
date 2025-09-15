@@ -11,10 +11,12 @@ public class RecipeInputWrapper implements RecipeInput {
         this.inventory = inventory;
     }
 
+
     @Override
     public ItemStack getItem(int slot) {
         return inventory.getItem(slot);
     }
+
 
     @Override
     public int size() {

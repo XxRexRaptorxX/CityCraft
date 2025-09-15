@@ -34,26 +34,15 @@ public class DrainCoverBlock extends SlabBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
     public DrainCoverBlock() {
-        super(Properties.of()
-                .strength(5.5F, 6.5F)
-                .sound(SoundType.METAL)
-                .mapColor(MapColor.METAL)
-                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                .requiresCorrectToolForDrops()
+        super(Properties.of().strength(5.5F, 6.5F).sound(SoundType.METAL).mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops()
                 .noOcclusion());
 
-        this.registerDefaultState(
-                this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false)));
+        this.registerDefaultState(this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false)));
     }
 
+
     @Override
-    public BlockState updateShape(
-            BlockState state,
-            Direction direction,
-            BlockState neighborState,
-            LevelAccessor level,
-            BlockPos pos,
-            BlockPos neighborPos) {
+    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
         BlockPos above = pos.above();
         BlockPos below = pos.below();
         FluidState fluidStateAbove = level.getFluidState(above);
@@ -78,14 +67,14 @@ public class DrainCoverBlock extends SlabBlock {
         return state;
     }
 
+
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         BlockPos above = pos.above();
         BlockPos below = pos.below();
 
         // Handle item movement
-        AABB itemCheckBox =
-                new AABB(pos.getX(), pos.getY(), pos.getZ(), above.getX() + 1, above.getY() + 1, above.getZ() + 1);
+        AABB itemCheckBox = new AABB(pos.getX(), pos.getY(), pos.getZ(), above.getX() + 1, above.getY() + 1, above.getZ() + 1);
 
         if (!level.getEntitiesOfClass(ItemEntity.class, itemCheckBox).isEmpty()) {
             level.getEntitiesOfClass(ItemEntity.class, itemCheckBox).forEach(itemEntity -> {
@@ -97,6 +86,7 @@ public class DrainCoverBlock extends SlabBlock {
         level.scheduleTick(pos, this, 5);
     }
 
+
     @Override
     public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
         if (!level.isClientSide) {
@@ -104,10 +94,12 @@ public class DrainCoverBlock extends SlabBlock {
         }
     }
 
+
     @Override
     public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING, TYPE, WATERLOGGED);
     }
+
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
@@ -115,42 +107,37 @@ public class DrainCoverBlock extends SlabBlock {
         BlockState blockstate = context.getLevel().getBlockState(blockpos);
 
         if (blockstate.is(this)) {
-            return blockstate
-                    .setValue(FACING, context.getHorizontalDirection().getOpposite())
-                    .setValue(TYPE, SlabType.DOUBLE)
-                    .setValue(WATERLOGGED, Boolean.valueOf(false));
+            return blockstate.setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(TYPE, SlabType.DOUBLE).setValue(WATERLOGGED, Boolean.valueOf(false));
 
         } else {
             FluidState fluidstate = context.getLevel().getFluidState(blockpos);
-            BlockState blockstate1 = this.defaultBlockState()
-                    .setValue(FACING, context.getHorizontalDirection().getOpposite())
-                    .setValue(TYPE, SlabType.BOTTOM)
-                    .setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
+            BlockState blockstate1 = this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED,
+                    Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
             Direction direction = context.getClickedFace();
 
-            return direction != Direction.DOWN
-                            && (direction == Direction.UP
-                                    || !(context.getClickLocation().y - (double) blockpos.getY() > 0.5D))
+            return direction != Direction.DOWN && (direction == Direction.UP || !(context.getClickLocation().y - (double) blockpos.getY() > 0.5D))
                     ? blockstate1
                     : blockstate1.setValue(TYPE, SlabType.TOP);
         }
     }
+
 
     @Override
     public BlockState rotate(BlockState state, Rotation rot) {
         return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
     }
 
+
     @Override
     public BlockState mirror(BlockState state, Mirror mirror) {
         return state.rotate(mirror.getRotation(state.getValue(FACING)));
     }
 
+
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
         if (Config.ENABLE_TOOLTIPS.get()) {
-            list.add(Component.translatable("message." + References.MODID + ".drain_cover_tooltip")
-                    .withStyle(ChatFormatting.GRAY));
+            list.add(Component.translatable("message." + References.MODID + ".drain_cover_tooltip").withStyle(ChatFormatting.GRAY));
         }
     }
 }

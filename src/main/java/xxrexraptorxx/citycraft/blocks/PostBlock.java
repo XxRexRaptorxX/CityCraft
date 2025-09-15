@@ -13,19 +13,13 @@ import net.minecraft.world.level.material.MapColor;
 public class PostBlock extends WallBlock implements SimpleWaterloggedBlock {
 
     public PostBlock() {
-        super(Properties.of()
-                .strength(1.5F, 6.0F)
-                .sound(SoundType.STONE)
-                .mapColor(MapColor.STONE)
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .requiresCorrectToolForDrops());
+        super(Properties.of().strength(1.5F, 6.0F).sound(SoundType.STONE).mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops());
     }
+
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         FluidState fluidstate = context.getLevel().getFluidState(context.getClickedPos());
-        return this.defaultBlockState()
-                .setValue(UP, true)
-                .setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
+        return this.defaultBlockState().setValue(UP, true).setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
     }
 }

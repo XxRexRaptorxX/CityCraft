@@ -31,6 +31,7 @@ public class CityCraft {
         bus.addListener(this::registerScreens);
     }
 
+
     private void registerScreens(RegisterMenuScreensEvent event) {
         event.register(ModMenuTypes.PAINTER.get(), PainterScreen::new);
     }

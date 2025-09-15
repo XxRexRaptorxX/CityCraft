@@ -31,31 +31,28 @@ public class VariableTrafficSignBlock extends HorizontalDirectionalBlock {
         this.registerDefaultState(this.defaultBlockState().setValue(LIT, Boolean.valueOf(true)));
     }
 
+
     public VariableTrafficSignBlock() {
-        super(Properties.of()
-                .requiresCorrectToolForDrops()
-                .strength(0.5F)
-                .sound(SoundType.METAL)
-                .mapColor(DyeColor.GRAY)
-                .instrument(NoteBlockInstrument.BIT)
+        super(Properties.of().requiresCorrectToolForDrops().strength(0.5F).sound(SoundType.METAL).mapColor(DyeColor.GRAY).instrument(NoteBlockInstrument.BIT)
                 .lightLevel(litBlockEmission(5)));
     }
+
 
     @Override
     public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING, LIT);
     }
 
-    @Override
-    public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState()
-                .setValue(FACING, context.getHorizontalDirection())
-                .setValue(LIT, Boolean.valueOf(!context.getLevel().hasNeighborSignal(context.getClickedPos())));
-    }
 
     @Override
-    public void neighborChanged(
-            BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection()).setValue(LIT,
+                Boolean.valueOf(!context.getLevel().hasNeighborSignal(context.getClickedPos())));
+    }
+
+
+    @Override
+    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
         if (!level.isClientSide) {
             boolean isLit = state.getValue(LIT);
             boolean hasSignal = level.hasNeighborSignal(pos);
@@ -68,6 +65,7 @@ public class VariableTrafficSignBlock extends HorizontalDirectionalBlock {
         }
     }
 
+
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         boolean hasSignal = level.hasNeighborSignal(pos);
@@ -78,17 +76,17 @@ public class VariableTrafficSignBlock extends HorizontalDirectionalBlock {
         }
     }
 
+
     @Override
-    public boolean canConnectRedstone(
-            BlockState state, BlockGetter level, BlockPos pos, @Nullable Direction direction) {
+    public boolean canConnectRedstone(BlockState state, BlockGetter level, BlockPos pos, @Nullable Direction direction) {
         return true;
     }
 
+
     private static ToIntFunction<BlockState> litBlockEmission(int lightValue) {
-        return (block) -> {
-            return block.getValue(BlockStateProperties.LIT) ? lightValue : 0;
-        };
+        return (block) -> { return block.getValue(BlockStateProperties.LIT) ? lightValue : 0; };
     }
+
 
     @Override
     protected MapCodec<? extends HorizontalDirectionalBlock> codec() {

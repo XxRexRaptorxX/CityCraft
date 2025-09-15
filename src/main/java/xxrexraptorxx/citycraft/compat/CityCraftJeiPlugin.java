@@ -21,11 +21,12 @@ public class CityCraftJeiPlugin implements IModPlugin {
         return ResourceLocation.fromNamespaceAndPath(References.MODID, "jei_plugin");
     }
 
+
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
-        registration.addRecipeCategories(
-                new PainterJEICategory(registration.getJeiHelpers().getGuiHelper()));
+        registration.addRecipeCategories(new PainterJEICategory(registration.getJeiHelpers().getGuiHelper()));
     }
+
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
@@ -33,6 +34,7 @@ public class CityCraftJeiPlugin implements IModPlugin {
 
         registration.addRecipes(PainterJEICategory.TYPE, recipeManager.getAllRecipesFor(ModRecipeTypes.PAINTING.get()));
     }
+
 
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {

@@ -13,6 +13,7 @@ public class ItemBasic extends Item {
         super(new Properties());
     }
 
+
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
         if (this == ModItems.COAL_COKE.get()) {
@@ -23,6 +24,7 @@ public class ItemBasic extends Item {
             return 0;
         }
     }
+
 
     @Override
     public ItemStack getCraftingRemainingItem(ItemStack stack) {

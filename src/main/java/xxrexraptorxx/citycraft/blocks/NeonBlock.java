@@ -30,10 +30,12 @@ public class NeonBlock extends HalfTransparentBlock {
         this.registerDefaultState(this.defaultBlockState().setValue(LIT, false));
     }
 
+
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(LIT);
     }
+
 
     private Set<BlockPos> collectConnectedLamps(Level level, BlockPos start, int maxSize) {
         Set<BlockPos> visited = new HashSet<>();
@@ -61,6 +63,7 @@ public class NeonBlock extends HalfTransparentBlock {
 
         return visited;
     }
+
 
     private void updateComponent(Level level, BlockPos pos) {
         if (level.isClientSide) return;
@@ -92,12 +95,13 @@ public class NeonBlock extends HalfTransparentBlock {
         }
     }
 
+
     @Override
-    public void neighborChanged(
-            BlockState state, Level level, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
         if (level.isClientSide) return;
         level.scheduleTick(pos, this, 2);
     }
+
 
     @Override
     public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean moved) {
@@ -106,6 +110,7 @@ public class NeonBlock extends HalfTransparentBlock {
         }
         super.onPlace(state, level, pos, oldState, moved);
     }
+
 
     @Override
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
@@ -121,16 +126,19 @@ public class NeonBlock extends HalfTransparentBlock {
         super.onRemove(state, level, pos, newState, isMoving);
     }
 
+
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         updateComponent(level, pos);
     }
+
 
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         return this.defaultBlockState().setValue(LIT, context.getLevel().hasNeighborSignal(context.getClickedPos()));
     }
+
 
     private static ToIntFunction<BlockState> litBlockEmission(int lightValue) {
         return (block) -> block.getValue(BlockStateProperties.LIT) ? lightValue : 0;

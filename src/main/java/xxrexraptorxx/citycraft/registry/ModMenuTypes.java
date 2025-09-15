@@ -11,13 +11,12 @@ import xxrexraptorxx.citycraft.main.References;
 
 public class ModMenuTypes {
 
-    public static final DeferredRegister<MenuType<?>> MENU_TYPES =
-            DeferredRegister.create(BuiltInRegistries.MENU, References.MODID);
+    public static final DeferredRegister<MenuType<?>> MENU_TYPES = DeferredRegister.create(BuiltInRegistries.MENU, References.MODID);
 
     public static void init(IEventBus bus) {
         MENU_TYPES.register(bus);
     }
 
-    public static final DeferredHolder<MenuType<?>, MenuType<PainterMenu>> PAINTER =
-            MENU_TYPES.register("painting", () -> new MenuType<>(PainterMenu::new, FeatureFlags.DEFAULT_FLAGS));
+    public static final DeferredHolder<MenuType<?>, MenuType<PainterMenu>> PAINTER = MENU_TYPES.register("painting",
+            () -> new MenuType<>(PainterMenu::new, FeatureFlags.DEFAULT_FLAGS));
 }

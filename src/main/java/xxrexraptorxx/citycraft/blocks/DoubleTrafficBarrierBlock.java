@@ -20,13 +20,9 @@ public class DoubleTrafficBarrierBlock extends FenceBlock implements SimpleWater
     private static final VoxelShape FULL_SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
 
     public DoubleTrafficBarrierBlock() {
-        super(Properties.of()
-                .strength(5.0F, 6.5F)
-                .sound(SoundType.METAL)
-                .mapColor(MapColor.METAL)
-                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                .requiresCorrectToolForDrops());
+        super(Properties.of().strength(5.0F, 6.5F).sound(SoundType.METAL).mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops());
     }
+
 
     @Override
     public boolean connectsTo(BlockState state, boolean isSideSolid, Direction direction) {
@@ -34,9 +30,11 @@ public class DoubleTrafficBarrierBlock extends FenceBlock implements SimpleWater
         return !isExceptionForConnection(state) && isSideSolid || flag;
     }
 
+
     private boolean isSameFence(BlockState state) {
         return state.is(ModTags.TRAFFIC_BARRIERS_TAG);
     }
+
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {

@@ -21,10 +21,8 @@ import xxrexraptorxx.citycraft.registry.ModRecipeTypes;
 public class PainterJEICategory implements IRecipeCategory<RecipeHolder<IPaintingRecipe>> {
 
     public static final ResourceLocation UID = ModRecipeTypes.PAINTING.getId();
-    public static final ResourceLocation BACKGROUND =
-            ResourceLocation.fromNamespaceAndPath(References.MODID, "textures/gui/container/painter_jei.png");
-    public static final RecipeType<RecipeHolder<IPaintingRecipe>> TYPE = new RecipeType<>(
-            UID, RecipeType.createFromVanilla(ModRecipeTypes.PAINTING.get()).getRecipeClass());
+    public static final ResourceLocation BACKGROUND = ResourceLocation.fromNamespaceAndPath(References.MODID, "textures/gui/container/painter_jei.png");
+    public static final RecipeType<RecipeHolder<IPaintingRecipe>> TYPE = new RecipeType<>(UID, RecipeType.createFromVanilla(ModRecipeTypes.PAINTING.get()).getRecipeClass());
     // public static final RecipeType<RecipeHolder<IPaintingRecipe>> TYPE =
     // RecipeType.createFromVanilla(ModRecipeTypes.PAINTING);
     private final IDrawable background;
@@ -35,39 +33,36 @@ public class PainterJEICategory implements IRecipeCategory<RecipeHolder<IPaintin
         icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.BLOCK_PAINTER.get()));
     }
 
+
     @Override
     public RecipeType<RecipeHolder<IPaintingRecipe>> getRecipeType() {
         return TYPE;
     }
+
 
     @Override
     public IDrawable getBackground() {
         return background;
     }
 
+
     @Override
     public Component getTitle() {
         return Component.translatable("gui." + References.MODID + ".painting");
     }
+
 
     @Override
     public IDrawable getIcon() {
         return icon;
     }
 
-    @Override
-    public void setRecipe(
-            IRecipeLayoutBuilder iRecipeLayoutBuilder, RecipeHolder<IPaintingRecipe> recipe, IFocusGroup iFocusGroup) {
-        iRecipeLayoutBuilder
-                .addSlot(RecipeIngredientRole.INPUT, 1, 1)
-                .addIngredients(recipe.value().getIngredients(0));
-        iRecipeLayoutBuilder
-                .addSlot(RecipeIngredientRole.INPUT, 1, 29)
-                .addIngredients(recipe.value().getIngredients(1));
 
-        iRecipeLayoutBuilder
-                .addSlot(RecipeIngredientRole.OUTPUT, 61, 15)
-                .addItemStack(recipe.value()
-                        .getResultItem(Minecraft.getInstance().level.registryAccess()));
+    @Override
+    public void setRecipe(IRecipeLayoutBuilder iRecipeLayoutBuilder, RecipeHolder<IPaintingRecipe> recipe, IFocusGroup iFocusGroup) {
+        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.INPUT, 1, 1).addIngredients(recipe.value().getIngredients(0));
+        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.INPUT, 1, 29).addIngredients(recipe.value().getIngredients(1));
+
+        iRecipeLayoutBuilder.addSlot(RecipeIngredientRole.OUTPUT, 61, 15).addItemStack(recipe.value().getResultItem(Minecraft.getInstance().level.registryAccess()));
     }
 }

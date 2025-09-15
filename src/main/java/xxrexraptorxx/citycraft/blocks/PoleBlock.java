@@ -20,49 +20,47 @@ public class PoleBlock extends RodBlock implements SimpleWaterloggedBlock {
         super(properties);
     }
 
+
     public PoleBlock() {
-        super(Properties.of()
-                .strength(5.0F, 6.0F)
-                .sound(SoundType.METAL)
-                .mapColor(MapColor.METAL)
-                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                .requiresCorrectToolForDrops());
+        super(Properties.of().strength(5.0F, 6.0F).sound(SoundType.METAL).mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops());
     }
+
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction direction = context.getClickedFace();
-        BlockState blockstate =
-                context.getLevel().getBlockState(context.getClickedPos().relative(direction.getOpposite()));
+        BlockState blockstate = context.getLevel().getBlockState(context.getClickedPos().relative(direction.getOpposite()));
         return blockstate.is(this) && blockstate.getValue(FACING) == direction
                 ? this.defaultBlockState().setValue(FACING, direction.getOpposite())
                 : this.defaultBlockState().setValue(FACING, direction);
     }
+
 
     @Override
     public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
 
-    // @Override			TODO!
+    // @Override TODO!
     // public void onProjectileHit(Level level, BlockState state, BlockHitResult hit, Projectile projectile) {
-    //	if (level.isThundering() && projectile instanceof ThrownTrident && ((ThrownTrident) projectile).isChanneling()) {
-    //		BlockPos blockpos = hit.getBlockPos();
+    // if (level.isThundering() && projectile instanceof ThrownTrident && ((ThrownTrident) projectile).isChanneling()) {
+    // BlockPos blockpos = hit.getBlockPos();
     //
-    //		if (level.canSeeSky(blockpos)) {
-    //			LightningBolt lightningbolt = EntityType.LIGHTNING_BOLT.create(level);
+    // if (level.canSeeSky(blockpos)) {
+    // LightningBolt lightningbolt = EntityType.LIGHTNING_BOLT.create(level);
     //
-    //			if (lightningbolt != null) {
-    //				lightningbolt.moveTo(Vec3.atBottomCenterOf(blockpos.above()));
-    //				Entity entity = projectile.getOwner();
-    //				lightningbolt.setCause(entity instanceof ServerPlayer ? (ServerPlayer) entity : null);
-    //				level.addFreshEntity(lightningbolt);
-    //			}
-    //
-    //			level.playSound((Player) null, blockpos, SoundEvents.TRIDENT_THUNDER.value(), SoundSource.WEATHER, 5.0F, 1.0F);
-    //		}
-    //	}
+    // if (lightningbolt != null) {
+    // lightningbolt.moveTo(Vec3.atBottomCenterOf(blockpos.above()));
+    // Entity entity = projectile.getOwner();
+    // lightningbolt.setCause(entity instanceof ServerPlayer ? (ServerPlayer) entity : null);
+    // level.addFreshEntity(lightningbolt);
     // }
+    //
+    // level.playSound((Player) null, blockpos, SoundEvents.TRIDENT_THUNDER.value(), SoundSource.WEATHER, 5.0F, 1.0F);
+    // }
+    // }
+    // }
+
 
     @Override
     protected MapCodec<? extends RodBlock> codec() {

@@ -33,14 +33,11 @@ public class AsphaltBlock extends HorizontalDirectionalBlock {
         super(properties);
     }
 
+
     public AsphaltBlock() {
-        super(Properties.of()
-                .requiresCorrectToolForDrops()
-                .strength(1.6F)
-                .sound(SoundType.STONE)
-                .mapColor(DyeColor.BLACK)
-                .instrument(NoteBlockInstrument.BASEDRUM));
+        super(Properties.of().requiresCorrectToolForDrops().strength(1.6F).sound(SoundType.STONE).mapColor(DyeColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM));
     }
+
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
@@ -51,41 +48,40 @@ public class AsphaltBlock extends HorizontalDirectionalBlock {
 
         if (isRegularAsphalt || isBoostAsphalt) {
             int duration = isBoostAsphalt ? 30 : 10;
-            int amplifier =
-                    isBoostAsphalt ? Config.BOOST_SPEED_EFFECT_AMPLIFIER.get() : Config.SPEED_EFFECT_AMPLIFIER.get();
+            int amplifier = isBoostAsphalt ? Config.BOOST_SPEED_EFFECT_AMPLIFIER.get() : Config.SPEED_EFFECT_AMPLIFIER.get();
 
             if (entity instanceof LivingEntity) {
                 LivingEntity livingEntity = (LivingEntity) entity;
-                livingEntity.addEffect(
-                        new MobEffectInstance(MobEffects.MOVEMENT_SPEED, duration, amplifier, false, false, true));
+                livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, duration, amplifier, false, false, true));
             }
         }
     }
+
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
         if (Config.ENABLE_TOOLTIPS.get()) {
             if (this == ModBlocks.BOOST_ASPHALT.get()) {
-                list.add(Component.translatable("message." + References.MODID + ".boost_speed_tooltip")
-                        .withStyle(ChatFormatting.GRAY));
+                list.add(Component.translatable("message." + References.MODID + ".boost_speed_tooltip").withStyle(ChatFormatting.GRAY));
 
             } else if (Config.ENABLE_ASPHALT_SPEED_EFFECT.get() && this != ModBlocks.POTHOLE_ASPHALT.get()) {
-                list.add(Component.translatable("message." + References.MODID + ".speed_tooltip")
-                        .withStyle(ChatFormatting.GRAY));
+                list.add(Component.translatable("message." + References.MODID + ".speed_tooltip").withStyle(ChatFormatting.GRAY));
             }
         }
     }
+
 
     @Override
     public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
 
+
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState()
-                .setValue(FACING, context.getHorizontalDirection().getOpposite());
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
     }
+
 
     @Override
     protected MapCodec<? extends HorizontalDirectionalBlock> codec() {

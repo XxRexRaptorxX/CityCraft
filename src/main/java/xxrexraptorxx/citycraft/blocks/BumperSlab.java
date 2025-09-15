@@ -26,9 +26,9 @@ public class BumperSlab extends SlabBlock {
     public BumperSlab() {
         super(Properties.ofFullCopy(ModBlocks.ASPHALT_BLOCK.get()));
 
-        this.registerDefaultState(
-                this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false)));
+        this.registerDefaultState(this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false)));
     }
+
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
@@ -40,10 +40,12 @@ public class BumperSlab extends SlabBlock {
         }
     }
 
+
     @Override
     public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING, TYPE, WATERLOGGED);
     }
+
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
@@ -51,31 +53,26 @@ public class BumperSlab extends SlabBlock {
         BlockState blockstate = context.getLevel().getBlockState(blockpos);
 
         if (blockstate.is(this)) {
-            return blockstate
-                    .setValue(FACING, context.getHorizontalDirection().getOpposite())
-                    .setValue(TYPE, SlabType.DOUBLE)
-                    .setValue(WATERLOGGED, Boolean.valueOf(false));
+            return blockstate.setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(TYPE, SlabType.DOUBLE).setValue(WATERLOGGED, Boolean.valueOf(false));
 
         } else {
             FluidState fluidstate = context.getLevel().getFluidState(blockpos);
-            BlockState blockstate1 = this.defaultBlockState()
-                    .setValue(FACING, context.getHorizontalDirection().getOpposite())
-                    .setValue(TYPE, SlabType.BOTTOM)
-                    .setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
+            BlockState blockstate1 = this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED,
+                    Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
             Direction direction = context.getClickedFace();
 
-            return direction != Direction.DOWN
-                            && (direction == Direction.UP
-                                    || !(context.getClickLocation().y - (double) blockpos.getY() > 0.5D))
+            return direction != Direction.DOWN && (direction == Direction.UP || !(context.getClickLocation().y - (double) blockpos.getY() > 0.5D))
                     ? blockstate1
                     : blockstate1.setValue(TYPE, SlabType.TOP);
         }
     }
 
+
     @Override
     public BlockState rotate(BlockState state, Rotation rot) {
         return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
     }
+
 
     @Override
     public BlockState mirror(BlockState state, Mirror mirror) {

@@ -12,19 +12,16 @@ import xxrexraptorxx.citycraft.registry.ModTags;
 public class TrafficBarrierBlock extends FenceBlock implements SimpleWaterloggedBlock {
 
     public TrafficBarrierBlock() {
-        super(Properties.of()
-                .strength(5.0F, 6.5F)
-                .sound(SoundType.METAL)
-                .mapColor(MapColor.METAL)
-                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                .requiresCorrectToolForDrops());
+        super(Properties.of().strength(5.0F, 6.5F).sound(SoundType.METAL).mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops());
     }
+
 
     @Override
     public boolean connectsTo(BlockState state, boolean isSideSolid, Direction direction) {
         boolean flag = this.isSameFence(state);
         return !isExceptionForConnection(state) && isSideSolid || flag;
     }
+
 
     private boolean isSameFence(BlockState state) {
         return state.is(ModTags.TRAFFIC_BARRIERS_TAG);
