@@ -1000,6 +1000,23 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CRACKED_MAGENTA_CONCRETE.get());
         this.dropSelf(ModBlocks.CRACKED_PINK_CONCRETE.get());
 
+        this.dropSelf(ModBlocks.MOSSY_WHITE_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_LIGHT_GRAY_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_GRAY_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_BLACK_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_BROWN_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_RED_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_ORANGE_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_YELLOW_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_LIME_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_GREEN_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_CYAN_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_LIGHT_BLUE_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_BLUE_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_PURPLE_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_MAGENTA_CONCRETE.get());
+        this.dropSelf(ModBlocks.MOSSY_PINK_CONCRETE.get());
+
         this.dropSelf(ModBlocks.STREET_LANTERN.get());
         this.dropSelf(ModBlocks.MODERN_STREET_LANTERN.get());
         this.add(ModBlocks.STREET_LANTERN_PANEL.get(), block -> createSlabItemTable(ModBlocks.STREET_LANTERN_PANEL.get()));

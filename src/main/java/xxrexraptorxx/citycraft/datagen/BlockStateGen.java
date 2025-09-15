@@ -974,6 +974,23 @@ public class BlockStateGen extends BlockStateProvider {
         makeSimpleBlock(ModBlocks.CRACKED_PURPLE_CONCRETE.get());
         makeSimpleBlock(ModBlocks.CRACKED_MAGENTA_CONCRETE.get());
         makeSimpleBlock(ModBlocks.CRACKED_PINK_CONCRETE.get());
+
+        makeSimpleBlock(ModBlocks.MOSSY_WHITE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_LIGHT_GRAY_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_GRAY_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_BLACK_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_BROWN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_RED_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_ORANGE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_YELLOW_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_LIME_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_GREEN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_CYAN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_LIGHT_BLUE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_BLUE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_PURPLE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_MAGENTA_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.MOSSY_PINK_CONCRETE.get());
     }
 
     private final String emissiveTexturesSuffix = "_e";

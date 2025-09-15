@@ -82,6 +82,23 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.CRACKED_MAGENTA_CONCRETE.get());
                         output.accept(ModBlocks.CRACKED_PINK_CONCRETE.get());
 
+                        output.accept(ModBlocks.MOSSY_WHITE_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_LIGHT_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_BLACK_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_BROWN_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_RED_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_ORANGE_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_YELLOW_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_LIME_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_GREEN_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_CYAN_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_LIGHT_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_PURPLE_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_MAGENTA_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_PINK_CONCRETE.get());
+
                         output.accept(ModBlocks.DRAIN_COVER.get());
                         output.accept(ModBlocks.DRAIN_COVER_GRID.get());
 

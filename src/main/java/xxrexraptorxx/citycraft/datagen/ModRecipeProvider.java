@@ -1813,6 +1813,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         smeltingResultFromBase(output, ModBlocks.CRACKED_BROWN_CONCRETE.get(), Blocks.BROWN_CONCRETE);
         smeltingResultFromBase(output, ModBlocks.CRACKED_GREEN_CONCRETE.get(), Blocks.GREEN_CONCRETE);
         smeltingResultFromBase(output, ModBlocks.CRACKED_RED_CONCRETE.get(), Blocks.RED_CONCRETE);
+
+        mossyRecipes(ModBlocks.MOSSY_BLACK_CONCRETE.get(), Blocks.BLACK_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_WHITE_CONCRETE.get(), Blocks.WHITE_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_ORANGE_CONCRETE.get(), Blocks.ORANGE_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_MAGENTA_CONCRETE.get(), Blocks.MAGENTA_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_LIGHT_BLUE_CONCRETE.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_YELLOW_CONCRETE.get(), Blocks.YELLOW_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_LIME_CONCRETE.get(), Blocks.LIME_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_PINK_CONCRETE.get(), Blocks.PINK_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_GRAY_CONCRETE.get(), Blocks.GRAY_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_LIGHT_GRAY_CONCRETE.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_CYAN_CONCRETE.get(), Blocks.CYAN_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_PURPLE_CONCRETE.get(), Blocks.PURPLE_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_BLUE_CONCRETE.get(), Blocks.BLUE_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_BROWN_CONCRETE.get(), Blocks.BROWN_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_GREEN_CONCRETE.get(), Blocks.GREEN_CONCRETE, output);
+        mossyRecipes(ModBlocks.MOSSY_RED_CONCRETE.get(), Blocks.RED_CONCRETE, output);
     }
 
 
@@ -1830,6 +1847,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void lampRecipes(Block result, Block glassInput, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 1).pattern(" # ").pattern("#X#").pattern(" # ").define('X', Blocks.REDSTONE_LAMP).define('#', glassInput)
                 .unlockedBy(getHasName(Blocks.REDSTONE_LAMP), has(Blocks.REDSTONE_LAMP)).save(output);
+    }
+
+
+    protected static void mossyRecipes(Block result, Block input, RecipeOutput output) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Blocks.MOSS_BLOCK).unlockedBy(getHasName(input), has(input))
+                .group("mossy").save(output);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Blocks.VINE).unlockedBy(getHasName(input), has(input)).group("mossy")
+                .save(output, BuiltInRegistries.BLOCK.getKey(input) + "_with_vines");
     }
 
 

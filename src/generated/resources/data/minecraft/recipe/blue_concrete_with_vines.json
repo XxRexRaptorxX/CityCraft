@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy",
+  "ingredients": [
+    {
+      "item": "minecraft:blue_concrete"
+    },
+    {
+      "item": "minecraft:vine"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:mossy_blue_concrete"
+  }
+}

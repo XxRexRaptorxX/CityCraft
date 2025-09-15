@@ -1147,6 +1147,39 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CRACKED_RED_CONCRETE = registerBlock("cracked_red_concrete",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE).strength(1.5F)));
 
+    public static final DeferredBlock<Block> MOSSY_BLACK_CONCRETE = registerBlock("mossy_black_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_WHITE_CONCRETE = registerBlock("mossy_white_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_ORANGE_CONCRETE = registerBlock("mossy_orange_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_MAGENTA_CONCRETE = registerBlock("mossy_magenta_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_LIGHT_BLUE_CONCRETE = registerBlock("mossy_light_blue_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_YELLOW_CONCRETE = registerBlock("mossy_yellow_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_LIME_CONCRETE = registerBlock("mossy_lime_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_PINK_CONCRETE = registerBlock("mossy_pink_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_GRAY_CONCRETE = registerBlock("mossy_gray_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_LIGHT_GRAY_CONCRETE = registerBlock("mossy_light_gray_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_CYAN_CONCRETE = registerBlock("mossy_cyan_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_PURPLE_CONCRETE = registerBlock("mossy_purple_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_BLUE_CONCRETE = registerBlock("mossy_blue_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_BROWN_CONCRETE = registerBlock("mossy_brown_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_GREEN_CONCRETE = registerBlock("mossy_green_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE).strength(1.5F)));
+    public static final DeferredBlock<Block> MOSSY_RED_CONCRETE = registerBlock("mossy_red_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE).strength(1.5F)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

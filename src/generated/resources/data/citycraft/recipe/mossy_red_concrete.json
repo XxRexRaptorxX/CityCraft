@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy",
+  "ingredients": [
+    {
+      "item": "minecraft:red_concrete"
+    },
+    {
+      "item": "minecraft:moss_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:mossy_red_concrete"
+  }
+}
