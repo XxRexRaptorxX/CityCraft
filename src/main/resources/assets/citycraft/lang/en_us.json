@@ -927,5 +927,21 @@
   "block.citycraft.red_neon_light": "Red Neon Light",
   "block.citycraft.street_lantern_panel": "Street Lamp Panel",
   "block.citycraft.street_lantern": "Street Lantern",
-  "block.citycraft.modern_street_lantern": "Modern Street Lantern"
+  "block.citycraft.modern_street_lantern": "Modern Street Lantern",
+  "block.citycraft.cracked_black_concrete": "Cracked Black Concrete",
+  "block.citycraft.cracked_white_concrete": "Cracked White Concrete",
+  "block.citycraft.cracked_orange_concrete": "Cracked Orange Concrete",
+  "block.citycraft.cracked_magenta_concrete": "Cracked Magenta Concrete",
+  "block.citycraft.cracked_light_blue_concrete": "Cracked Light Blue Concrete",
+  "block.citycraft.cracked_yellow_concrete": "Cracked Yellow Concrete",
+  "block.citycraft.cracked_lime_concrete": "Cracked Lime Concrete",
+  "block.citycraft.cracked_pink_concrete": "Cracked Pink Concrete",
+  "block.citycraft.cracked_gray_concrete": "Cracked Gray Concrete",
+  "block.citycraft.cracked_light_gray_concrete": "Cracked Light Gray Concrete",
+  "block.citycraft.cracked_cyan_concrete": "Cracked Cyan Concrete",
+  "block.citycraft.cracked_purple_concrete": "Cracked Purple Concrete",
+  "block.citycraft.cracked_blue_concrete": "Cracked Blue Concrete",
+  "block.citycraft.cracked_brown_concrete": "Cracked Brown Concrete",
+  "block.citycraft.cracked_green_concrete": "Cracked Green Concrete",
+  "block.citycraft.cracked_red_concrete": "Cracked Red Concrete"
 }

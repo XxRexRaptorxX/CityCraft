@@ -288,7 +288,11 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.BLACK_NEON_LIGHT.get(), ModBlocks.WHITE_NEON_LIGHT.get(), ModBlocks.ORANGE_NEON_LIGHT.get(), ModBlocks.MAGENTA_NEON_LIGHT.get(),
                 ModBlocks.LIGHT_BLUE_NEON_LIGHT.get(), ModBlocks.YELLOW_NEON_LIGHT.get(), ModBlocks.LIME_NEON_LIGHT.get(), ModBlocks.PINK_NEON_LIGHT.get(),
                 ModBlocks.GRAY_NEON_LIGHT.get(), ModBlocks.LIGHT_GRAY_NEON_LIGHT.get(), ModBlocks.CYAN_NEON_LIGHT.get(), ModBlocks.PURPLE_NEON_LIGHT.get(),
-                ModBlocks.BLUE_NEON_LIGHT.get(), ModBlocks.BROWN_NEON_LIGHT.get(), ModBlocks.GREEN_NEON_LIGHT.get(), ModBlocks.RED_NEON_LIGHT.get());
+                ModBlocks.BLUE_NEON_LIGHT.get(), ModBlocks.BROWN_NEON_LIGHT.get(), ModBlocks.GREEN_NEON_LIGHT.get(), ModBlocks.RED_NEON_LIGHT.get(),
+                ModBlocks.CRACKED_WHITE_CONCRETE.get(), ModBlocks.CRACKED_LIGHT_GRAY_CONCRETE.get(), ModBlocks.CRACKED_GRAY_CONCRETE.get(), ModBlocks.CRACKED_BLACK_CONCRETE.get(),
+                ModBlocks.CRACKED_BROWN_CONCRETE.get(), ModBlocks.CRACKED_RED_CONCRETE.get(), ModBlocks.CRACKED_ORANGE_CONCRETE.get(), ModBlocks.CRACKED_YELLOW_CONCRETE.get(),
+                ModBlocks.CRACKED_LIME_CONCRETE.get(), ModBlocks.CRACKED_GREEN_CONCRETE.get(), ModBlocks.CRACKED_CYAN_CONCRETE.get(), ModBlocks.CRACKED_LIGHT_BLUE_CONCRETE.get(),
+                ModBlocks.CRACKED_BLUE_CONCRETE.get(), ModBlocks.CRACKED_PURPLE_CONCRETE.get(), ModBlocks.CRACKED_MAGENTA_CONCRETE.get(), ModBlocks.CRACKED_PINK_CONCRETE.get());
 
         tag(BlockTags.SLABS).add(ModBlocks.ASPHALT_SLAB.get(), ModBlocks.CRACKED_ASPHALT_SLAB.get(), ModBlocks.POTHOLE_ASPHALT_SLAB.get(), ModBlocks.MOSSY_ASPHALT_SLAB.get(),
                 ModBlocks.DIRTY_ASPHALT_SLAB.get(), ModBlocks.WHITE_ASPHALT_SLAB.get(), ModBlocks.ORANGE_ASPHALT_SLAB.get(), ModBlocks.MAGENTA_ASPHALT_SLAB.get(),

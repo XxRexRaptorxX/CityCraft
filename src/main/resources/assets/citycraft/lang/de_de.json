@@ -933,5 +933,21 @@
   "block.citycraft.60_speed_eu_sign": "'Höchstgeschwindigkeit 60Km/h' Schild",
   "block.citycraft.80_speed_eu_sign": "'Höchstgeschwindigkeit 80Km/h' Schild",
   "block.citycraft.100_speed_eu_sign": "'Höchstgeschwindigkeit 100Km/h' Schild",
-  "block.citycraft.120_speed_eu_sign": "'Höchstgeschwindigkeit 120Km/h' Schild"
+  "block.citycraft.120_speed_eu_sign": "'Höchstgeschwindigkeit 120Km/h' Schild",
+  "block.citycraft.cracked_black_concrete": "Gebrochener Schwarzer Beton",
+  "block.citycraft.cracked_white_concrete": "Gebrochener Weißer Beton",
+  "block.citycraft.cracked_orange_concrete": "Gebrochener Orangener Beton",
+  "block.citycraft.cracked_magenta_concrete": "Gebrochener Magenta Beton",
+  "block.citycraft.cracked_light_blue_concrete": "Gebrochener Hellblauer Beton",
+  "block.citycraft.cracked_yellow_concrete": "Gebrochener Gelber Beton",
+  "block.citycraft.cracked_lime_concrete": "Gebrochener Hellgrüner Beton",
+  "block.citycraft.cracked_pink_concrete": "Gebrochener Rosaner Beton",
+  "block.citycraft.cracked_gray_concrete": "Gebrochener Grauer Beton",
+  "block.citycraft.cracked_light_gray_concrete": "Gebrochener Hellblauer Beton",
+  "block.citycraft.cracked_cyan_concrete": "Gebrochener Türkiser Beton",
+  "block.citycraft.cracked_purple_concrete": "Gebrochener Lilaner Beton",
+  "block.citycraft.cracked_blue_concrete": "Gebrochener Blauer Beton",
+  "block.citycraft.cracked_brown_concrete": "Gebrochener Brauner Beton",
+  "block.citycraft.cracked_green_concrete": "Gebrochener Grüner Beton",
+  "block.citycraft.cracked_red_concrete": "Gebrochener Roter Beton"
 }

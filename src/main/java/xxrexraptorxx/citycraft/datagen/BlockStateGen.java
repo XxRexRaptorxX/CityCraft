@@ -957,6 +957,23 @@ public class BlockStateGen extends BlockStateProvider {
         customTranslucentLamp(ModBlocks.RED_NEON_LIGHT.get());
 
         customLantern(ModBlocks.STREET_LANTERN.get());
+
+        makeSimpleBlock(ModBlocks.CRACKED_WHITE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_LIGHT_GRAY_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_GRAY_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_BLACK_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_BROWN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_RED_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_ORANGE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_YELLOW_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_LIME_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_GREEN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_CYAN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_LIGHT_BLUE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_BLUE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_PURPLE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_MAGENTA_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CRACKED_PINK_CONCRETE.get());
     }
 
     private final String emissiveTexturesSuffix = "_e";

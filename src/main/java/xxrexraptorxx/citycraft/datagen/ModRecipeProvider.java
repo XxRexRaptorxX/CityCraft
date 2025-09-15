@@ -1796,6 +1796,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         neonRecipes(ModBlocks.BROWN_NEON_LIGHT.get(), ModBlocks.BROWN_LAMP.get(), output);
         neonRecipes(ModBlocks.GREEN_NEON_LIGHT.get(), ModBlocks.GREEN_LAMP.get(), output);
         neonRecipes(ModBlocks.RED_NEON_LIGHT.get(), ModBlocks.RED_LAMP.get(), output);
+
+        smeltingResultFromBase(output, ModBlocks.CRACKED_BLACK_CONCRETE.get(), Blocks.BLACK_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_WHITE_CONCRETE.get(), Blocks.WHITE_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_ORANGE_CONCRETE.get(), Blocks.ORANGE_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_MAGENTA_CONCRETE.get(), Blocks.MAGENTA_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_LIGHT_BLUE_CONCRETE.get(), Blocks.LIGHT_BLUE_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_YELLOW_CONCRETE.get(), Blocks.YELLOW_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_LIME_CONCRETE.get(), Blocks.LIME_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_PINK_CONCRETE.get(), Blocks.PINK_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_GRAY_CONCRETE.get(), Blocks.GRAY_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_LIGHT_GRAY_CONCRETE.get(), Blocks.LIGHT_GRAY_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_CYAN_CONCRETE.get(), Blocks.CYAN_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_PURPLE_CONCRETE.get(), Blocks.PURPLE_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_BLUE_CONCRETE.get(), Blocks.BLUE_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_BROWN_CONCRETE.get(), Blocks.BROWN_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_GREEN_CONCRETE.get(), Blocks.GREEN_CONCRETE);
+        smeltingResultFromBase(output, ModBlocks.CRACKED_RED_CONCRETE.get(), Blocks.RED_CONCRETE);
     }
 
 
@@ -1817,8 +1834,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
     protected static void neonRecipes(Block result, Block input, RecipeOutput output) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Items.BLAZE_POWDER).unlockedBy(getHasName(input), has(input))
-                .group("neon_lights").save(output);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Items.BLAZE_POWDER).requires(Items.GLOW_INK_SAC)
+                .unlockedBy(getHasName(input), has(input)).group("neon_lights").save(output);
     }
 
 
