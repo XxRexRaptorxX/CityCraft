@@ -959,6 +959,22 @@
     "citycraft:chiseled_blue_concrete",
     "citycraft:chiseled_purple_concrete",
     "citycraft:chiseled_magenta_concrete",
-    "citycraft:chiseled_pink_concrete"
+    "citycraft:chiseled_pink_concrete",
+    "citycraft:chiseled_white_concrete",
+    "citycraft:polished_light_gray_concrete",
+    "citycraft:polished_gray_concrete",
+    "citycraft:polished_black_concrete",
+    "citycraft:polished_brown_concrete",
+    "citycraft:polished_red_concrete",
+    "citycraft:polished_orange_concrete",
+    "citycraft:polished_yellow_concrete",
+    "citycraft:polished_lime_concrete",
+    "citycraft:polished_green_concrete",
+    "citycraft:polished_cyan_concrete",
+    "citycraft:polished_light_blue_concrete",
+    "citycraft:polished_blue_concrete",
+    "citycraft:polished_purple_concrete",
+    "citycraft:polished_magenta_concrete",
+    "citycraft:polished_pink_concrete"
   ]
 }

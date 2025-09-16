@@ -1898,8 +1898,65 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.MOSSY_BROWN_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_BROWN, output);
         paintingRecipes(ModBlocks.MOSSY_GREEN_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_GREEN, output);
         paintingRecipes(ModBlocks.MOSSY_RED_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_RED, output);
+
+        paintingRecipes(ModBlocks.POLISHED_BLACK_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.POLISHED_WHITE_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.POLISHED_ORANGE_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.POLISHED_YELLOW_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.POLISHED_LIME_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.POLISHED_PINK_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.POLISHED_GRAY_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.POLISHED_CYAN_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.POLISHED_PURPLE_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.POLISHED_BLUE_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.POLISHED_BROWN_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.POLISHED_GREEN_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.POLISHED_RED_CONCRETE.get(), ModTags.COLORED_POLISHED_CONCRETE_TAG, Tags.Items.DYES_RED, output);
+
+        polishedRecipes(ModBlocks.POLISHED_WHITE_CONCRETE.get(), Blocks.WHITE_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_GRAY_CONCRETE.get(), Blocks.GRAY_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_BLACK_CONCRETE.get(), Blocks.BLACK_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_BROWN_CONCRETE.get(), Blocks.BROWN_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_RED_CONCRETE.get(), Blocks.RED_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_ORANGE_CONCRETE.get(), Blocks.ORANGE_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_YELLOW_CONCRETE.get(), Blocks.YELLOW_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_LIME_CONCRETE.get(), Blocks.LIME_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_GREEN_CONCRETE.get(), Blocks.GREEN_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_CYAN_CONCRETE.get(), Blocks.CYAN_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_BLUE_CONCRETE.get(), Blocks.BLUE_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_PURPLE_CONCRETE.get(), Blocks.PURPLE_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), Blocks.MAGENTA_CONCRETE, output);
+        polishedRecipes(ModBlocks.POLISHED_PINK_CONCRETE.get(), Blocks.PINK_CONCRETE, output);
+
+        stoneCuttingRecipes(ModBlocks.POLISHED_WHITE_CONCRETE.get(), 1, Blocks.WHITE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get(), 1, Blocks.LIGHT_GRAY_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_GRAY_CONCRETE.get(), 1, Blocks.GRAY_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_BLACK_CONCRETE.get(), 1, Blocks.BLACK_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_BROWN_CONCRETE.get(), 1, Blocks.BROWN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_RED_CONCRETE.get(), 1, Blocks.RED_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_ORANGE_CONCRETE.get(), 1, Blocks.ORANGE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_YELLOW_CONCRETE.get(), 1, Blocks.YELLOW_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_LIME_CONCRETE.get(), 1, Blocks.LIME_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_GREEN_CONCRETE.get(), 1, Blocks.GREEN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_CYAN_CONCRETE.get(), 1, Blocks.CYAN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get(), 1, Blocks.LIGHT_BLUE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_BLUE_CONCRETE.get(), 1, Blocks.BLUE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_PURPLE_CONCRETE.get(), 1, Blocks.PURPLE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), 1, Blocks.MAGENTA_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.POLISHED_PINK_CONCRETE.get(), 1, Blocks.PINK_CONCRETE, output);
     }
 
+    private static final String STONE_CUTTING_PATH = References.MODID + ":stonecutting/";
+
+
+    protected static void polishedRecipes(Block result, Block input, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4).pattern("##").pattern("##").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
+    }
 
     protected static void slabRecipes(Block result, Block input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 6).pattern("###").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
@@ -1922,7 +1979,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Blocks.MOSS_BLOCK).unlockedBy(getHasName(input), has(input))
                 .group("mossy").save(output);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Blocks.VINE).unlockedBy(getHasName(input), has(input)).group("mossy")
-                .save(output, BuiltInRegistries.BLOCK.getKey(input) + "_with_vines");
+                .save(output, BuiltInRegistries.BLOCK.getKey(result) + "_with_vines");
     }
 
 
@@ -1953,17 +2010,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
     protected static void stoneCuttingRecipes(Block result, Integer resultCount, Item input, RecipeOutput output) {
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, result, resultCount).unlockedBy(getHasName(input), has(input)).save(output);
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, result, resultCount).unlockedBy(getHasName(input), has(input)).save(output,
+                STONE_CUTTING_PATH + BuiltInRegistries.BLOCK.getKey(result).getPath());
     }
 
 
     protected static void stoneCuttingRecipes(Block result, Integer resultCount, Block input, RecipeOutput output) {
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, result, resultCount).unlockedBy(getHasName(input), has(input)).save(output);
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, result, resultCount).unlockedBy(getHasName(input), has(input)).save(output,
+                STONE_CUTTING_PATH + BuiltInRegistries.BLOCK.getKey(result).getPath());
     }
 
 
     protected static void stoneCuttingRecipes(Block result, Integer resultCount, TagKey<Item> input, RecipeOutput output) {
-        SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, result, resultCount).unlockedBy("has_" + input, has(input)).save(output);
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, result, resultCount).unlockedBy("has_" + input, has(input)).save(output,
+                STONE_CUTTING_PATH + BuiltInRegistries.BLOCK.getKey(result).getPath());
     }
 
 

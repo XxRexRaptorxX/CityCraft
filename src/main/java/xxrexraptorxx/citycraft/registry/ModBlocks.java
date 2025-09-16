@@ -1222,6 +1222,39 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHISELED_RED_CONCRETE = registerBlock("chiseled_red_concrete",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
 
+    public static final DeferredBlock<Block> POLISHED_BLACK_CONCRETE = registerBlock("polished_black_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_WHITE_CONCRETE = registerBlock("polished_white_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_ORANGE_CONCRETE = registerBlock("polished_orange_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_MAGENTA_CONCRETE = registerBlock("polished_magenta_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_LIGHT_BLUE_CONCRETE = registerBlock("polished_light_blue_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_YELLOW_CONCRETE = registerBlock("polished_yellow_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_LIME_CONCRETE = registerBlock("polished_lime_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_PINK_CONCRETE = registerBlock("polished_pink_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_GRAY_CONCRETE = registerBlock("polished_gray_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_LIGHT_GRAY_CONCRETE = registerBlock("polished_light_gray_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_CYAN_CONCRETE = registerBlock("polished_cyan_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_PURPLE_CONCRETE = registerBlock("polished_purple_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_BLUE_CONCRETE = registerBlock("polished_blue_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_BROWN_CONCRETE = registerBlock("polished_brown_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_GREEN_CONCRETE = registerBlock("polished_green_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE)));
+    public static final DeferredBlock<Block> POLISHED_RED_CONCRETE = registerBlock("polished_red_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

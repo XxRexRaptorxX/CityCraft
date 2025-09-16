@@ -302,7 +302,12 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.CHISELED_BROWN_CONCRETE.get(), ModBlocks.CHISELED_RED_CONCRETE.get(), ModBlocks.CHISELED_ORANGE_CONCRETE.get(), ModBlocks.CHISELED_YELLOW_CONCRETE.get(),
                 ModBlocks.CHISELED_LIME_CONCRETE.get(), ModBlocks.CHISELED_GREEN_CONCRETE.get(), ModBlocks.CHISELED_CYAN_CONCRETE.get(),
                 ModBlocks.CHISELED_LIGHT_BLUE_CONCRETE.get(), ModBlocks.CHISELED_BLUE_CONCRETE.get(), ModBlocks.CHISELED_PURPLE_CONCRETE.get(),
-                ModBlocks.CHISELED_MAGENTA_CONCRETE.get(), ModBlocks.CHISELED_PINK_CONCRETE.get());
+                ModBlocks.CHISELED_MAGENTA_CONCRETE.get(), ModBlocks.CHISELED_PINK_CONCRETE.get(), ModBlocks.CHISELED_WHITE_CONCRETE.get(),
+                ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get(), ModBlocks.POLISHED_GRAY_CONCRETE.get(), ModBlocks.POLISHED_BLACK_CONCRETE.get(),
+                ModBlocks.POLISHED_BROWN_CONCRETE.get(), ModBlocks.POLISHED_RED_CONCRETE.get(), ModBlocks.POLISHED_ORANGE_CONCRETE.get(), ModBlocks.POLISHED_YELLOW_CONCRETE.get(),
+                ModBlocks.POLISHED_LIME_CONCRETE.get(), ModBlocks.POLISHED_GREEN_CONCRETE.get(), ModBlocks.POLISHED_CYAN_CONCRETE.get(),
+                ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get(), ModBlocks.POLISHED_BLUE_CONCRETE.get(), ModBlocks.POLISHED_PURPLE_CONCRETE.get(),
+                ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), ModBlocks.POLISHED_PINK_CONCRETE.get());
 
         tag(BlockTags.SLABS).add(ModBlocks.ASPHALT_SLAB.get(), ModBlocks.CRACKED_ASPHALT_SLAB.get(), ModBlocks.POTHOLE_ASPHALT_SLAB.get(), ModBlocks.MOSSY_ASPHALT_SLAB.get(),
                 ModBlocks.DIRTY_ASPHALT_SLAB.get(), ModBlocks.WHITE_ASPHALT_SLAB.get(), ModBlocks.ORANGE_ASPHALT_SLAB.get(), ModBlocks.MAGENTA_ASPHALT_SLAB.get(),

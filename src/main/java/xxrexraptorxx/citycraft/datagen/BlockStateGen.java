@@ -1013,6 +1013,23 @@ public class BlockStateGen extends BlockStateProvider {
         makeSimpleBlock(ModBlocks.CHISELED_PURPLE_CONCRETE.get());
         makeSimpleBlock(ModBlocks.CHISELED_MAGENTA_CONCRETE.get());
         makeSimpleBlock(ModBlocks.CHISELED_PINK_CONCRETE.get());
+
+        makeSimpleBlock(ModBlocks.POLISHED_WHITE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_GRAY_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_BLACK_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_BROWN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_RED_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_ORANGE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_YELLOW_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_LIME_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_GREEN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_CYAN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_BLUE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_PURPLE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_MAGENTA_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.POLISHED_PINK_CONCRETE.get());
     }
 
     private final String emissiveTexturesSuffix = "_e";

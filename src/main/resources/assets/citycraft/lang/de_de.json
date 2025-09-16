@@ -986,5 +986,21 @@
   "block.citycraft.chiseled_blue_concrete": "Gemeißelter Blauer Beton",
   "block.citycraft.chiseled_brown_concrete": "Gemeißelter Brauner Beton",
   "block.citycraft.chiseled_green_concrete": "Gemeißelter Grüner Beton",
-  "block.citycraft.chiseled_red_concrete": "Gemeißelter Roter Beton"
+  "block.citycraft.chiseled_red_concrete": "Gemeißelter Roter Beton",
+  "block.citycraft.polished_black_concrete": "Polierter Schwarzer Beton",
+  "block.citycraft.polished_white_concrete": "Polierter Weißer Beton",
+  "block.citycraft.polished_orange_concrete": "Polierter Orangener Beton",
+  "block.citycraft.polished_magenta_concrete": "Polierter Magenta Beton",
+  "block.citycraft.polished_light_blue_concrete": "Polierter Hellblauer Beton",
+  "block.citycraft.polished_yellow_concrete": "Polierter Gelber Beton",
+  "block.citycraft.polished_lime_concrete": "Polierter Hellgrüner Beton",
+  "block.citycraft.polished_pink_concrete": "Polierter Rosaner Beton",
+  "block.citycraft.polished_gray_concrete": "Polierter Grauer Beton",
+  "block.citycraft.polished_light_gray_concrete": "Polierter Hellblauer Beton",
+  "block.citycraft.polished_cyan_concrete": "Polierter Türkiser Beton",
+  "block.citycraft.polished_purple_concrete": "Polierter Lilaner Beton",
+  "block.citycraft.polished_blue_concrete": "Polierter Blauer Beton",
+  "block.citycraft.polished_brown_concrete": "Polierter Brauner Beton",
+  "block.citycraft.polished_green_concrete": "Polierter Grüner Beton",
+  "block.citycraft.polished_red_concrete": "Polierter Roter Beton"
 }

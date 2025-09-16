@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_polished_concrete"
+  },
+  "color": {
+    "tag": "c:dyes/white"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:polished_white_concrete"
+  }
+}
