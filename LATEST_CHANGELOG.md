@@ -1,7 +1,8 @@
-# [v.2.7.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.7.0-dev1...v.2.7.0-dev13)
+# [v.2.7.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.7.0-dev1...v.2.7.0-dev14)
 
 ## ✨ Features
 
+- Polished Concrete blocks added ([c7988e6](https://github.com/XxRexRaptorxX/CityCraft/commit/c7988e6522fd4f508f339f0e542e49c739d7a556))
 - Chiseled Concrete blocks added ([fea71a9](https://github.com/XxRexRaptorxX/CityCraft/commit/fea71a98313d3df594de727983219d9c8ff2ae56))
 - some Infested Concrete blocks added ([03920d4](https://github.com/XxRexRaptorxX/CityCraft/commit/03920d4737dbda9ce9e92c9dd841c6b1af7c4978))
 - Concrete creative tab added ([2eba211](https://github.com/XxRexRaptorxX/CityCraft/commit/2eba2118e2a70046bb2352b99abe362a3e1ca061))
