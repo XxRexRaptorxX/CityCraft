@@ -1830,6 +1830,74 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         mossyRecipes(ModBlocks.MOSSY_BROWN_CONCRETE.get(), Blocks.BROWN_CONCRETE, output);
         mossyRecipes(ModBlocks.MOSSY_GREEN_CONCRETE.get(), Blocks.GREEN_CONCRETE, output);
         mossyRecipes(ModBlocks.MOSSY_RED_CONCRETE.get(), Blocks.RED_CONCRETE, output);
+
+        stoneCuttingRecipes(ModBlocks.CHISELED_WHITE_CONCRETE.get(), 1, Blocks.WHITE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get(), 1, Blocks.LIGHT_GRAY_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_GRAY_CONCRETE.get(), 1, Blocks.GRAY_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_BLACK_CONCRETE.get(), 1, Blocks.BLACK_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_BROWN_CONCRETE.get(), 1, Blocks.BROWN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_RED_CONCRETE.get(), 1, Blocks.RED_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_ORANGE_CONCRETE.get(), 1, Blocks.ORANGE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_YELLOW_CONCRETE.get(), 1, Blocks.YELLOW_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_LIME_CONCRETE.get(), 1, Blocks.LIME_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_GREEN_CONCRETE.get(), 1, Blocks.GREEN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_CYAN_CONCRETE.get(), 1, Blocks.CYAN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_LIGHT_BLUE_CONCRETE.get(), 1, Blocks.LIGHT_BLUE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_BLUE_CONCRETE.get(), 1, Blocks.BLUE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_PURPLE_CONCRETE.get(), 1, Blocks.PURPLE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_MAGENTA_CONCRETE.get(), 1, Blocks.MAGENTA_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CHISELED_PINK_CONCRETE.get(), 1, Blocks.PINK_CONCRETE, output);
+
+        paintingRecipes(ModBlocks.CHISELED_BLACK_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.CHISELED_WHITE_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.CHISELED_ORANGE_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.CHISELED_MAGENTA_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.CHISELED_LIGHT_BLUE_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.CHISELED_YELLOW_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.CHISELED_LIME_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.CHISELED_PINK_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.CHISELED_GRAY_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.CHISELED_CYAN_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.CHISELED_PURPLE_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.CHISELED_BLUE_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.CHISELED_BROWN_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.CHISELED_GREEN_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.CHISELED_RED_CONCRETE.get(), ModTags.COLORED_CHISELED_CONCRETE_TAG, Tags.Items.DYES_RED, output);
+
+        paintingRecipes(ModBlocks.CRACKED_BLACK_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.CRACKED_WHITE_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.CRACKED_ORANGE_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.CRACKED_MAGENTA_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.CRACKED_LIGHT_BLUE_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.CRACKED_YELLOW_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.CRACKED_LIME_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.CRACKED_PINK_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.CRACKED_GRAY_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.CRACKED_LIGHT_GRAY_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.CRACKED_CYAN_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.CRACKED_PURPLE_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.CRACKED_BLUE_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.CRACKED_BROWN_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.CRACKED_GREEN_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.CRACKED_RED_CONCRETE.get(), ModTags.COLORED_CRACKED_CONCRETE_TAG, Tags.Items.DYES_RED, output);
+
+        paintingRecipes(ModBlocks.MOSSY_BLACK_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.MOSSY_WHITE_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.MOSSY_ORANGE_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.MOSSY_MAGENTA_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.MOSSY_LIGHT_BLUE_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.MOSSY_YELLOW_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.MOSSY_LIME_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.MOSSY_PINK_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.MOSSY_GRAY_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.MOSSY_LIGHT_GRAY_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.MOSSY_CYAN_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.MOSSY_PURPLE_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.MOSSY_BLUE_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.MOSSY_BROWN_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.MOSSY_GREEN_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.MOSSY_RED_CONCRETE.get(), ModTags.COLORED_MOSSY_CONCRETE_TAG, Tags.Items.DYES_RED, output);
     }
 
 
@@ -1885,6 +1953,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
     protected static void stoneCuttingRecipes(Block result, Integer resultCount, Item input, RecipeOutput output) {
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, result, resultCount).unlockedBy(getHasName(input), has(input)).save(output);
+    }
+
+
+    protected static void stoneCuttingRecipes(Block result, Integer resultCount, Block input, RecipeOutput output) {
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(input), RecipeCategory.BUILDING_BLOCKS, result, resultCount).unlockedBy(getHasName(input), has(input)).save(output);
     }
 

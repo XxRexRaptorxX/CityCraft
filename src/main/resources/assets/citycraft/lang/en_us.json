@@ -964,5 +964,21 @@
   "block.citycraft.infested_black_concrete": "Infested Black Concrete",
   "block.citycraft.infested_white_concrete": "Infested White Concrete",
   "block.citycraft.infested_gray_concrete": "Infested Gray Concrete",
-  "block.citycraft.infested_light_gray_concrete": "Infested Light Gray Concrete"
+  "block.citycraft.infested_light_gray_concrete": "Infested Light Gray Concrete",
+  "block.citycraft.chiseled_black_concrete": "Chiseled Black Concrete",
+  "block.citycraft.chiseled_white_concrete": "Chiseled White Concrete",
+  "block.citycraft.chiseled_orange_concrete": "Chiseled Orange Concrete",
+  "block.citycraft.chiseled_magenta_concrete": "Chiseled Magenta Concrete",
+  "block.citycraft.chiseled_light_blue_concrete": "Chiseled Light Blue Concrete",
+  "block.citycraft.chiseled_yellow_concrete": "Chiseled Yellow Concrete",
+  "block.citycraft.chiseled_lime_concrete": "Chiseled Lime Concrete",
+  "block.citycraft.chiseled_pink_concrete": "Chiseled Pink Concrete",
+  "block.citycraft.chiseled_gray_concrete": "Chiseled Gray Concrete",
+  "block.citycraft.chiseled_light_gray_concrete": "Chiseled Light Gray Concrete",
+  "block.citycraft.chiseled_cyan_concrete": "Chiseled Cyan Concrete",
+  "block.citycraft.chiseled_purple_concrete": "Chiseled Purple Concrete",
+  "block.citycraft.chiseled_blue_concrete": "Chiseled Blue Concrete",
+  "block.citycraft.chiseled_brown_concrete": "Chiseled Brown Concrete",
+  "block.citycraft.chiseled_green_concrete": "Chiseled Green Concrete",
+  "block.citycraft.chiseled_red_concrete": "Chiseled Red Concrete"
 }

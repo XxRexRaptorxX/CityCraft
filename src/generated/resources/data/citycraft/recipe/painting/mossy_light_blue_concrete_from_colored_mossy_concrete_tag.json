@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_mossy_concrete"
+  },
+  "color": {
+    "tag": "c:dyes/light_blue"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:mossy_light_blue_concrete"
+  }
+}

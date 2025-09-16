@@ -1331,6 +1331,23 @@ public class CreativeModeTabs {
                         output.accept(Blocks.MAGENTA_CONCRETE);
                         output.accept(Blocks.PINK_CONCRETE);
 
+                        output.accept(ModBlocks.CHISELED_WHITE_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_BLACK_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_BROWN_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_RED_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_ORANGE_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_YELLOW_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_LIME_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_GREEN_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_CYAN_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_LIGHT_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_PURPLE_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_MAGENTA_CONCRETE.get());
+                        output.accept(ModBlocks.CHISELED_PINK_CONCRETE.get());
+
                         output.accept(ModBlocks.WHITE_CONCRETE_WALL.get());
                         output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get());
                         output.accept(ModBlocks.GRAY_CONCRETE_WALL.get());

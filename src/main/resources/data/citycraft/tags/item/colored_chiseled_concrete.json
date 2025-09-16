@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:chiseled_black_concrete",
+    "citycraft:chiseled_white_concrete",
+    "citycraft:chiseled_orange_concrete",
+    "citycraft:chiseled_magenta_concrete",
+    "citycraft:chiseled_light_blue_concrete",
+    "citycraft:chiseled_yellow_concrete",
+    "citycraft:chiseled_lime_concrete",
+    "citycraft:chiseled_pink_concrete",
+    "citycraft:chiseled_gray_concrete",
+    "citycraft:chiseled_light_gray_concrete",
+    "citycraft:chiseled_cyan_concrete",
+    "citycraft:chiseled_purple_concrete",
+    "citycraft:chiseled_blue_concrete",
+    "citycraft:chiseled_brown_concrete",
+    "citycraft:chiseled_green_concrete",
+    "citycraft:chiseled_red_concrete"
+  ]
+}

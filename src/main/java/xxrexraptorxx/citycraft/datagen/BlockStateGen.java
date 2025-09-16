@@ -996,6 +996,23 @@ public class BlockStateGen extends BlockStateProvider {
         makeBlockFromParentModel(ModBlocks.INFESTED_WHITE_CONCRETE.get(), BuiltInRegistries.BLOCK.getKey(Blocks.WHITE_CONCRETE));
         makeBlockFromParentModel(ModBlocks.INFESTED_GRAY_CONCRETE.get(), BuiltInRegistries.BLOCK.getKey(Blocks.GRAY_CONCRETE));
         makeBlockFromParentModel(ModBlocks.INFESTED_LIGHT_GRAY_CONCRETE.get(), BuiltInRegistries.BLOCK.getKey(Blocks.LIGHT_GRAY_CONCRETE));
+
+        makeSimpleBlock(ModBlocks.CHISELED_WHITE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_GRAY_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_BLACK_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_BROWN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_RED_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_ORANGE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_YELLOW_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_LIME_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_GREEN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_CYAN_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_LIGHT_BLUE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_BLUE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_PURPLE_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_MAGENTA_CONCRETE.get());
+        makeSimpleBlock(ModBlocks.CHISELED_PINK_CONCRETE.get());
     }
 
     private final String emissiveTexturesSuffix = "_e";

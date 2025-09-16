@@ -970,5 +970,21 @@
   "block.citycraft.infested_black_concrete": "Befallener Schwarzer Beton",
   "block.citycraft.infested_white_concrete": "Befallener Weißer Beton",
   "block.citycraft.infested_gray_concrete": "Befallener Grauer Beton",
-  "block.citycraft.infested_light_gray_concrete": "Befallener Hellgrauer Beton"
+  "block.citycraft.infested_light_gray_concrete": "Befallener Hellgrauer Beton",
+  "block.citycraft.chiseled_black_concrete": "Gemeißelter Schwarzer Beton",
+  "block.citycraft.chiseled_white_concrete": "Gemeißelter Weißer Beton",
+  "block.citycraft.chiseled_orange_concrete": "Gemeißelter Orangener Beton",
+  "block.citycraft.chiseled_magenta_concrete": "Gemeißelter Magenta Beton",
+  "block.citycraft.chiseled_light_blue_concrete": "Gemeißelter Hellblauer Beton",
+  "block.citycraft.chiseled_yellow_concrete": "Gemeißelter Gelber Beton",
+  "block.citycraft.chiseled_lime_concrete": "Gemeißelter Hellgrüner Beton",
+  "block.citycraft.chiseled_pink_concrete": "Gemeißelter Rosaner Beton",
+  "block.citycraft.chiseled_gray_concrete": "Gemeißelter Grauer Beton",
+  "block.citycraft.chiseled_light_gray_concrete": "Gemeißelter Hellblauer Beton",
+  "block.citycraft.chiseled_cyan_concrete": "Gemeißelter Türkiser Beton",
+  "block.citycraft.chiseled_purple_concrete": "Gemeißelter Lilaner Beton",
+  "block.citycraft.chiseled_blue_concrete": "Gemeißelter Blauer Beton",
+  "block.citycraft.chiseled_brown_concrete": "Gemeißelter Brauner Beton",
+  "block.citycraft.chiseled_green_concrete": "Gemeißelter Grüner Beton",
+  "block.citycraft.chiseled_red_concrete": "Gemeißelter Roter Beton"
 }

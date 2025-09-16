@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:black_mossy_concrete",
+    "citycraft:white_mossy_concrete",
+    "citycraft:orange_mossy_concrete",
+    "citycraft:magenta_mossy_concrete",
+    "citycraft:light_blue_mossy_concrete",
+    "citycraft:yellow_mossy_concrete",
+    "citycraft:lime_mossy_concrete",
+    "citycraft:pink_mossy_concrete",
+    "citycraft:gray_mossy_concrete",
+    "citycraft:light_gray_mossy_concrete",
+    "citycraft:cyan_mossy_concrete",
+    "citycraft:purple_mossy_concrete",
+    "citycraft:blue_mossy_concrete",
+    "citycraft:brown_mossy_concrete",
+    "citycraft:green_mossy_concrete",
+    "citycraft:red_mossy_concrete"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_chiseled_concrete"
+  },
+  "color": {
+    "tag": "c:dyes/lime"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:chiseled_lime_concrete"
+  }
+}

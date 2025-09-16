@@ -1189,6 +1189,39 @@ public class ModBlocks {
     public static final DeferredBlock<InfestedBlock> INFESTED_LIGHT_GRAY_CONCRETE = registerBlock("infested_light_gray_concrete",
             () -> new InfestedBlock(Blocks.LIGHT_GRAY_CONCRETE, BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE)));
 
+    public static final DeferredBlock<Block> CHISELED_BLACK_CONCRETE = registerBlock("chiseled_black_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_WHITE_CONCRETE = registerBlock("chiseled_white_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_ORANGE_CONCRETE = registerBlock("chiseled_orange_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_MAGENTA_CONCRETE = registerBlock("chiseled_magenta_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_LIGHT_BLUE_CONCRETE = registerBlock("chiseled_light_blue_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_YELLOW_CONCRETE = registerBlock("chiseled_yellow_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_LIME_CONCRETE = registerBlock("chiseled_lime_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_PINK_CONCRETE = registerBlock("chiseled_pink_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_GRAY_CONCRETE = registerBlock("chiseled_gray_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_LIGHT_GRAY_CONCRETE = registerBlock("chiseled_light_gray_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_CYAN_CONCRETE = registerBlock("chiseled_cyan_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_PURPLE_CONCRETE = registerBlock("chiseled_purple_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_BLUE_CONCRETE = registerBlock("chiseled_blue_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_BROWN_CONCRETE = registerBlock("chiseled_brown_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_GREEN_CONCRETE = registerBlock("chiseled_green_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE)));
+    public static final DeferredBlock<Block> CHISELED_RED_CONCRETE = registerBlock("chiseled_red_concrete",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

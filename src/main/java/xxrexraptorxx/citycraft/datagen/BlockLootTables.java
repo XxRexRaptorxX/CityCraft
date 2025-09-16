@@ -1024,6 +1024,23 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.INFESTED_GRAY_CONCRETE.get(), block -> createSilkTouchDispatchTable(block, LootItem.lootTableItem(Items.GRAY_CONCRETE)));
         this.add(ModBlocks.INFESTED_LIGHT_GRAY_CONCRETE.get(), block -> createSilkTouchDispatchTable(block, LootItem.lootTableItem(Items.LIGHT_GRAY_CONCRETE)));
 
+        this.dropSelf(ModBlocks.CHISELED_WHITE_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_GRAY_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_BLACK_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_BROWN_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_RED_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_ORANGE_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_YELLOW_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_LIME_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_GREEN_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_CYAN_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_LIGHT_BLUE_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_BLUE_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_PURPLE_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_MAGENTA_CONCRETE.get());
+        this.dropSelf(ModBlocks.CHISELED_PINK_CONCRETE.get());
+
         this.dropSelf(ModBlocks.STREET_LANTERN.get());
         this.dropSelf(ModBlocks.MODERN_STREET_LANTERN.get());
         this.add(ModBlocks.STREET_LANTERN_PANEL.get(), block -> createSlabItemTable(ModBlocks.STREET_LANTERN_PANEL.get()));
