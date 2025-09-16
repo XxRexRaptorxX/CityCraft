@@ -4,6 +4,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -47,57 +48,6 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.YELLOW_POST.get());
                         output.accept(ModBlocks.BLACK_POST.get());
                         output.accept(ModBlocks.YELLOW_BLACK_POST.get());
-
-                        output.accept(ModBlocks.WHITE_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.GRAY_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.BLACK_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.BROWN_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.RED_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.ORANGE_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.YELLOW_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.LIME_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.GREEN_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.CYAN_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.BLUE_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.PURPLE_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.MAGENTA_CONCRETE_WALL.get());
-                        output.accept(ModBlocks.PINK_CONCRETE_WALL.get());
-
-                        output.accept(ModBlocks.CRACKED_WHITE_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_LIGHT_GRAY_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_GRAY_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_BLACK_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_BROWN_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_RED_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_ORANGE_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_YELLOW_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_LIME_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_GREEN_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_CYAN_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_LIGHT_BLUE_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_BLUE_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_PURPLE_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_MAGENTA_CONCRETE.get());
-                        output.accept(ModBlocks.CRACKED_PINK_CONCRETE.get());
-
-                        output.accept(ModBlocks.MOSSY_WHITE_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_LIGHT_GRAY_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_GRAY_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_BLACK_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_BROWN_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_RED_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_ORANGE_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_YELLOW_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_LIME_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_GREEN_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_CYAN_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_LIGHT_BLUE_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_BLUE_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_PURPLE_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_MAGENTA_CONCRETE.get());
-                        output.accept(ModBlocks.MOSSY_PINK_CONCRETE.get());
 
                         output.accept(ModBlocks.DRAIN_COVER.get());
                         output.accept(ModBlocks.DRAIN_COVER_GRID.get());
@@ -1359,5 +1309,77 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get());
                         output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get());
                         output.accept(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get());
+                    }).build());
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CONCRETE_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".concrete",
+            () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + References.MODID + ".concrete_tab"))
+                    .icon(() -> new ItemStack(ModBlocks.GRAY_CONCRETE_WALL.get())).displayItems((params, output) -> {
+                        output.accept(Blocks.WHITE_CONCRETE);
+                        output.accept(Blocks.LIGHT_GRAY_CONCRETE);
+                        output.accept(Blocks.GRAY_CONCRETE);
+                        output.accept(Blocks.BLACK_CONCRETE);
+                        output.accept(Blocks.BROWN_CONCRETE);
+                        output.accept(Blocks.RED_CONCRETE);
+                        output.accept(Blocks.ORANGE_CONCRETE);
+                        output.accept(Blocks.YELLOW_CONCRETE);
+                        output.accept(Blocks.LIME_CONCRETE);
+                        output.accept(Blocks.GREEN_CONCRETE);
+                        output.accept(Blocks.CYAN_CONCRETE);
+                        output.accept(Blocks.LIGHT_BLUE_CONCRETE);
+                        output.accept(Blocks.BLUE_CONCRETE);
+                        output.accept(Blocks.PURPLE_CONCRETE);
+                        output.accept(Blocks.MAGENTA_CONCRETE);
+                        output.accept(Blocks.PINK_CONCRETE);
+
+                        output.accept(ModBlocks.WHITE_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.GRAY_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.BLACK_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.BROWN_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.RED_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.ORANGE_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.YELLOW_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.LIME_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.GREEN_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.CYAN_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.BLUE_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.PURPLE_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.MAGENTA_CONCRETE_WALL.get());
+                        output.accept(ModBlocks.PINK_CONCRETE_WALL.get());
+
+                        output.accept(ModBlocks.CRACKED_WHITE_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_LIGHT_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_BLACK_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_BROWN_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_RED_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_ORANGE_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_YELLOW_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_LIME_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_GREEN_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_CYAN_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_LIGHT_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_PURPLE_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_MAGENTA_CONCRETE.get());
+                        output.accept(ModBlocks.CRACKED_PINK_CONCRETE.get());
+
+                        output.accept(ModBlocks.MOSSY_WHITE_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_LIGHT_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_BLACK_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_BROWN_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_RED_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_ORANGE_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_YELLOW_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_LIME_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_GREEN_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_CYAN_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_LIGHT_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_PURPLE_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_MAGENTA_CONCRETE.get());
+                        output.accept(ModBlocks.MOSSY_PINK_CONCRETE.get());
                     }).build());
 }
