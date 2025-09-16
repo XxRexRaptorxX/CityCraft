@@ -1958,6 +1958,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4).pattern("##").pattern("##").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
     }
 
+
     protected static void slabRecipes(Block result, Block input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 6).pattern("###").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
     }
