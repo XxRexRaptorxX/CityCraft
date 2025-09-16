@@ -966,5 +966,9 @@
   "block.citycraft.mossy_blue_concrete": "Bemooster Blauer Beton",
   "block.citycraft.mossy_brown_concrete": "Bemooster Brauner Beton",
   "block.citycraft.mossy_green_concrete": "Bemooster Grüner Beton",
-  "block.citycraft.mossy_red_concrete": "Bemooster Roter Beton"
+  "block.citycraft.mossy_red_concrete": "Bemooster Roter Beton",
+  "block.citycraft.infested_black_concrete": "Befallener Schwarzer Beton",
+  "block.citycraft.infested_white_concrete": "Befallener Weißer Beton",
+  "block.citycraft.infested_gray_concrete": "Befallener Grauer Beton",
+  "block.citycraft.infested_light_gray_concrete": "Befallener Hellgrauer Beton"
 }

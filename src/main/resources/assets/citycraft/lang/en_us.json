@@ -960,5 +960,9 @@
   "block.citycraft.mossy_blue_concrete": "Mossy Blue Concrete",
   "block.citycraft.mossy_brown_concrete": "Mossy Brown Concrete",
   "block.citycraft.mossy_green_concrete": "Mossy Green Concrete",
-  "block.citycraft.mossy_red_concrete": "Mossy Red Concrete"
+  "block.citycraft.mossy_red_concrete": "Mossy Red Concrete",
+  "block.citycraft.infested_black_concrete": "Infested Black Concrete",
+  "block.citycraft.infested_white_concrete": "Infested White Concrete",
+  "block.citycraft.infested_gray_concrete": "Infested Gray Concrete",
+  "block.citycraft.infested_light_gray_concrete": "Infested Light Gray Concrete"
 }

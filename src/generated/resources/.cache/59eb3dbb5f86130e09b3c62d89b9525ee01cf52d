@@ -1,4 +1,4 @@
-// 1.21	2025-09-15T22:52:00.3425807	Loot Tables
+// 1.21	2025-09-16T21:42:47.3430498	Loot Tables
 7368a076406b45a92c20ce5eff9ad50e3450f5a1 data/citycraft/loot_table/blocks/0_sign.json
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_table/blocks/100_speed_eu_sign.json
 7a90e771f0880894a9b1aa172c8080bc9742350f data/citycraft/loot_table/blocks/10_minimum_speed_sign_eu.json
@@ -570,6 +570,10 @@ eb6de1d79989c9d305af4c309a8d2107b5775dd4 data/citycraft/loot_table/blocks/highwa
 0a6fb5f3e513ddbb5f7678c9d0f4a1012e13aab4 data/citycraft/loot_table/blocks/hotel_us_sign.json
 470a9e7a0ca7bfdea6cb14997d6f0064fe9f20fc data/citycraft/loot_table/blocks/hot_warning_sign.json
 fd5369b42c372ef3fca3eb926d582c639187e652 data/citycraft/loot_table/blocks/h_sign.json
+0113c37a7fc2c19b8b7ec02871cf3549ab87e901 data/citycraft/loot_table/blocks/infested_black_concrete.json
+e38895a632ba99edb162002c787e434390e97bfd data/citycraft/loot_table/blocks/infested_gray_concrete.json
+fd30f92e9ff884592557ef32cdd57f522bd69097 data/citycraft/loot_table/blocks/infested_light_gray_concrete.json
+2f5bd84e0320a2983f4a58432c1cbf05d3b79115 data/citycraft/loot_table/blocks/infested_white_concrete.json
 31b3278b9ec37837024e653e16332f6be41fa51a data/citycraft/loot_table/blocks/info_cn_sign.json
 648418441af2783033e700a3223c559cf911ab3b data/citycraft/loot_table/blocks/info_eu_sign.json
 017bea27f5952898cd76e95bc73f0e012c3981c2 data/citycraft/loot_table/blocks/info_us_sign.json

@@ -1312,7 +1312,7 @@ public class CreativeModeTabs {
                     }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CONCRETE_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".concrete",
-            () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + References.MODID + ".concrete_tab"))
+            () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + References.MODID + ".concrete_tab")).withTabsBefore(MAIN_TAB.getId())
                     .icon(() -> new ItemStack(ModBlocks.GRAY_CONCRETE_WALL.get())).displayItems((params, output) -> {
                         output.accept(Blocks.WHITE_CONCRETE);
                         output.accept(Blocks.LIGHT_GRAY_CONCRETE);
@@ -1381,5 +1381,10 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.MOSSY_PURPLE_CONCRETE.get());
                         output.accept(ModBlocks.MOSSY_MAGENTA_CONCRETE.get());
                         output.accept(ModBlocks.MOSSY_PINK_CONCRETE.get());
+
+                        output.accept(ModBlocks.INFESTED_BLACK_CONCRETE.get());
+                        output.accept(ModBlocks.INFESTED_WHITE_CONCRETE.get());
+                        output.accept(ModBlocks.INFESTED_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.INFESTED_LIGHT_GRAY_CONCRETE.get());
                     }).build());
 }

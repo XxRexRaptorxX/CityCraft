@@ -939,6 +939,10 @@
     "citycraft:mossy_blue_concrete",
     "citycraft:mossy_purple_concrete",
     "citycraft:mossy_magenta_concrete",
-    "citycraft:mossy_pink_concrete"
+    "citycraft:mossy_pink_concrete",
+    "citycraft:infested_black_concrete",
+    "citycraft:infested_white_concrete",
+    "citycraft:infested_gray_concrete",
+    "citycraft:infested_light_gray_concrete"
   ]
 }

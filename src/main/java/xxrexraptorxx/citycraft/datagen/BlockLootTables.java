@@ -5,7 +5,9 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
 public class BlockLootTables extends BlockLootSubProvider {
@@ -1016,6 +1018,11 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.MOSSY_PURPLE_CONCRETE.get());
         this.dropSelf(ModBlocks.MOSSY_MAGENTA_CONCRETE.get());
         this.dropSelf(ModBlocks.MOSSY_PINK_CONCRETE.get());
+
+        this.add(ModBlocks.INFESTED_BLACK_CONCRETE.get(), block -> createSilkTouchDispatchTable(block, LootItem.lootTableItem(Items.BLACK_CONCRETE)));
+        this.add(ModBlocks.INFESTED_WHITE_CONCRETE.get(), block -> createSilkTouchDispatchTable(block, LootItem.lootTableItem(Items.WHITE_CONCRETE)));
+        this.add(ModBlocks.INFESTED_GRAY_CONCRETE.get(), block -> createSilkTouchDispatchTable(block, LootItem.lootTableItem(Items.GRAY_CONCRETE)));
+        this.add(ModBlocks.INFESTED_LIGHT_GRAY_CONCRETE.get(), block -> createSilkTouchDispatchTable(block, LootItem.lootTableItem(Items.LIGHT_GRAY_CONCRETE)));
 
         this.dropSelf(ModBlocks.STREET_LANTERN.get());
         this.dropSelf(ModBlocks.MODERN_STREET_LANTERN.get());

@@ -1180,6 +1180,15 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MOSSY_RED_CONCRETE = registerBlock("mossy_red_concrete",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE).strength(1.5F)));
 
+    public static final DeferredBlock<InfestedBlock> INFESTED_BLACK_CONCRETE = registerBlock("infested_black_concrete",
+            () -> new InfestedBlock(Blocks.BLACK_CONCRETE, BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
+    public static final DeferredBlock<InfestedBlock> INFESTED_WHITE_CONCRETE = registerBlock("infested_white_concrete",
+            () -> new InfestedBlock(Blocks.WHITE_CONCRETE, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
+    public static final DeferredBlock<InfestedBlock> INFESTED_GRAY_CONCRETE = registerBlock("infested_gray_concrete",
+            () -> new InfestedBlock(Blocks.GRAY_CONCRETE, BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE)));
+    public static final DeferredBlock<InfestedBlock> INFESTED_LIGHT_GRAY_CONCRETE = registerBlock("infested_light_gray_concrete",
+            () -> new InfestedBlock(Blocks.LIGHT_GRAY_CONCRETE, BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

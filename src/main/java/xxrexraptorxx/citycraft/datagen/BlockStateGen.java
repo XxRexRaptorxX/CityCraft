@@ -991,6 +991,11 @@ public class BlockStateGen extends BlockStateProvider {
         makeSimpleBlock(ModBlocks.MOSSY_PURPLE_CONCRETE.get());
         makeSimpleBlock(ModBlocks.MOSSY_MAGENTA_CONCRETE.get());
         makeSimpleBlock(ModBlocks.MOSSY_PINK_CONCRETE.get());
+
+        makeBlockFromParentModel(ModBlocks.INFESTED_BLACK_CONCRETE.get(), BuiltInRegistries.BLOCK.getKey(Blocks.BLACK_CONCRETE));
+        makeBlockFromParentModel(ModBlocks.INFESTED_WHITE_CONCRETE.get(), BuiltInRegistries.BLOCK.getKey(Blocks.WHITE_CONCRETE));
+        makeBlockFromParentModel(ModBlocks.INFESTED_GRAY_CONCRETE.get(), BuiltInRegistries.BLOCK.getKey(Blocks.GRAY_CONCRETE));
+        makeBlockFromParentModel(ModBlocks.INFESTED_LIGHT_GRAY_CONCRETE.get(), BuiltInRegistries.BLOCK.getKey(Blocks.LIGHT_GRAY_CONCRETE));
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1013,6 +1018,16 @@ public class BlockStateGen extends BlockStateProvider {
 
     private void makeSimpleBlock(Block block) {
         simpleBlock(block);
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeBlockFromParentModel(Block block, ResourceLocation location) {
+        String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        ModelFile model = models().withExistingParent(blockTexture, location);
+
+        simpleBlock(block, model);
         makeBlockItemFromExistingModel(block);
     }
 
