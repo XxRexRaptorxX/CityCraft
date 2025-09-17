@@ -49,6 +49,7 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 
 ![traffic lights](https://github.com/XxRexRaptorxX/General/blob/main/2024-07-02_19.08.58.png?raw=true)
 
+![concrete blocks](https://github.com/XxRexRaptorxX/General/blob/main/2025-09-17_21.53.16.png?raw=true)
 
 <p align="center">
   <img src="https://github.com/XxRexRaptorxX/General/blob/main/page_decorations/line.png?raw=true" alt="line" width="2000"/>
