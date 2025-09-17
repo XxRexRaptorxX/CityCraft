@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_concrete_pillars"
+  },
+  "color": {
+    "tag": "c:dyes/light_gray"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:light_gray_concrete_pillar"
+  }
+}

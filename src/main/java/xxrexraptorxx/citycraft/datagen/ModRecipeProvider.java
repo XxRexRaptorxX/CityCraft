@@ -1949,6 +1949,57 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stoneCuttingRecipes(ModBlocks.POLISHED_PURPLE_CONCRETE.get(), 1, Blocks.PURPLE_CONCRETE, output);
         stoneCuttingRecipes(ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), 1, Blocks.MAGENTA_CONCRETE, output);
         stoneCuttingRecipes(ModBlocks.POLISHED_PINK_CONCRETE.get(), 1, Blocks.PINK_CONCRETE, output);
+
+        pillarRecipes(ModBlocks.WHITE_CONCRETE_PILLAR.get(), Blocks.WHITE_CONCRETE, output);
+        pillarRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
+        pillarRecipes(ModBlocks.GRAY_CONCRETE_PILLAR.get(), Blocks.GRAY_CONCRETE, output);
+        pillarRecipes(ModBlocks.BLACK_CONCRETE_PILLAR.get(), Blocks.BLACK_CONCRETE, output);
+        pillarRecipes(ModBlocks.BROWN_CONCRETE_PILLAR.get(), Blocks.BROWN_CONCRETE, output);
+        pillarRecipes(ModBlocks.RED_CONCRETE_PILLAR.get(), Blocks.RED_CONCRETE, output);
+        pillarRecipes(ModBlocks.ORANGE_CONCRETE_PILLAR.get(), Blocks.ORANGE_CONCRETE, output);
+        pillarRecipes(ModBlocks.YELLOW_CONCRETE_PILLAR.get(), Blocks.YELLOW_CONCRETE, output);
+        pillarRecipes(ModBlocks.LIME_CONCRETE_PILLAR.get(), Blocks.LIME_CONCRETE, output);
+        pillarRecipes(ModBlocks.GREEN_CONCRETE_PILLAR.get(), Blocks.GREEN_CONCRETE, output);
+        pillarRecipes(ModBlocks.CYAN_CONCRETE_PILLAR.get(), Blocks.CYAN_CONCRETE, output);
+        pillarRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_PILLAR.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
+        pillarRecipes(ModBlocks.BLUE_CONCRETE_PILLAR.get(), Blocks.BLUE_CONCRETE, output);
+        pillarRecipes(ModBlocks.PURPLE_CONCRETE_PILLAR.get(), Blocks.PURPLE_CONCRETE, output);
+        pillarRecipes(ModBlocks.MAGENTA_CONCRETE_PILLAR.get(), Blocks.MAGENTA_CONCRETE, output);
+        pillarRecipes(ModBlocks.PINK_CONCRETE_PILLAR.get(), Blocks.PINK_CONCRETE, output);
+
+        stoneCuttingRecipes(ModBlocks.WHITE_CONCRETE_PILLAR.get(), 1, Blocks.WHITE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get(), 1, Blocks.LIGHT_GRAY_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.GRAY_CONCRETE_PILLAR.get(), 1, Blocks.GRAY_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.BLACK_CONCRETE_PILLAR.get(), 1, Blocks.BLACK_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.BROWN_CONCRETE_PILLAR.get(), 1, Blocks.BROWN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.RED_CONCRETE_PILLAR.get(), 1, Blocks.RED_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.ORANGE_CONCRETE_PILLAR.get(), 1, Blocks.ORANGE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.YELLOW_CONCRETE_PILLAR.get(), 1, Blocks.YELLOW_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.LIME_CONCRETE_PILLAR.get(), 1, Blocks.LIME_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.GREEN_CONCRETE_PILLAR.get(), 1, Blocks.GREEN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CYAN_CONCRETE_PILLAR.get(), 1, Blocks.CYAN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_PILLAR.get(), 1, Blocks.LIGHT_BLUE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.BLUE_CONCRETE_PILLAR.get(), 1, Blocks.BLUE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.PURPLE_CONCRETE_PILLAR.get(), 1, Blocks.PURPLE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.MAGENTA_CONCRETE_PILLAR.get(), 1, Blocks.MAGENTA_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.PINK_CONCRETE_PILLAR.get(), 1, Blocks.PINK_CONCRETE, output);
+
+        paintingRecipes(ModBlocks.BLACK_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.WHITE_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ORANGE_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.YELLOW_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.LIME_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.PINK_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.GRAY_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.CYAN_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.PURPLE_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.BLUE_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.BROWN_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.GREEN_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.RED_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_RED, output);
     }
 
     private static final String STONE_CUTTING_PATH = References.MODID + ":stonecutting/";
@@ -1966,6 +2017,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     protected static void wallRecipes(Block result, Block input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 6).pattern("###").pattern("###").define('#', input).unlockedBy(getHasName(input), has(input))
+                .save(output);
+    }
+
+    protected static void pillarRecipes(Block result, Block input, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 2).pattern("#").pattern("#").define('#', input).unlockedBy(getHasName(input), has(input))
                 .save(output);
     }
 

@@ -1030,6 +1030,25 @@ public class BlockStateGen extends BlockStateProvider {
         makeSimpleBlock(ModBlocks.POLISHED_PURPLE_CONCRETE.get());
         makeSimpleBlock(ModBlocks.POLISHED_MAGENTA_CONCRETE.get());
         makeSimpleBlock(ModBlocks.POLISHED_PINK_CONCRETE.get());
+
+        makePillarBlock(ModBlocks.WHITE_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.GRAY_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.BLACK_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.BROWN_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.RED_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.ORANGE_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.YELLOW_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.LIME_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.GREEN_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.CYAN_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.LIGHT_BLUE_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.BLUE_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.PURPLE_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.MAGENTA_CONCRETE_PILLAR.get());
+        makePillarBlock(ModBlocks.PINK_CONCRETE_PILLAR.get());
+
+
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1052,6 +1071,11 @@ public class BlockStateGen extends BlockStateProvider {
 
     private void makeSimpleBlock(Block block) {
         simpleBlock(block);
+        makeBlockItemFromExistingModel(block);
+    }
+
+    private void makePillarBlock(RotatedPillarBlock block) {
+        axisBlock(block);
         makeBlockItemFromExistingModel(block);
     }
 

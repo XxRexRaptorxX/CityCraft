@@ -1002,5 +1002,21 @@
   "block.citycraft.polished_blue_concrete": "Polierter Blauer Beton",
   "block.citycraft.polished_brown_concrete": "Polierter Brauner Beton",
   "block.citycraft.polished_green_concrete": "Polierter Grüner Beton",
-  "block.citycraft.polished_red_concrete": "Polierter Roter Beton"
+  "block.citycraft.polished_red_concrete": "Polierter Roter Beton",
+  "block.citycraft.black_concrete_pillar": "Schwarze Beton Säule",
+  "block.citycraft.white_concrete_pillar": "Weiße Beton Säule",
+  "block.citycraft.orange_concrete_pillar": "Orange Beton Säule",
+  "block.citycraft.magenta_concrete_pillar": "Magenta Beton Säule",
+  "block.citycraft.light_blue_concrete_pillar": "Hellblaue Beton Säule",
+  "block.citycraft.yellow_concrete_pillar": "Gelbe Beton Säule",
+  "block.citycraft.lime_concrete_pillar": "Hellgrüne Beton Säule",
+  "block.citycraft.pink_concrete_pillar": "Rosane Beton Säule",
+  "block.citycraft.gray_concrete_pillar": "Graue Beton Säule",
+  "block.citycraft.light_gray_concrete_pillar": "Hellblaue Beton Säule",
+  "block.citycraft.cyan_concrete_pillar": "Türkise Beton Säule",
+  "block.citycraft.purple_concrete_pillar": "Lila Beton Säule",
+  "block.citycraft.blue_concrete_pillar": "Blaue Beton Säule",
+  "block.citycraft.brown_concrete_pillar": "Braune Beton Säule",
+  "block.citycraft.green_concrete_pillar": "Grüne Beton Säule",
+  "block.citycraft.red_concrete_pillar": "Rote Beton Säule"
 }

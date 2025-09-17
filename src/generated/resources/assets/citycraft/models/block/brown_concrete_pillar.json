@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "citycraft:block/brown_concrete_pillar_end",
+    "side": "citycraft:block/brown_concrete_pillar_side"
+  }
+}

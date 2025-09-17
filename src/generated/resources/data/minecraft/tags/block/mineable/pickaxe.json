@@ -975,6 +975,22 @@
     "citycraft:polished_blue_concrete",
     "citycraft:polished_purple_concrete",
     "citycraft:polished_magenta_concrete",
-    "citycraft:polished_pink_concrete"
+    "citycraft:polished_pink_concrete",
+    "citycraft:white_concrete_pillar",
+    "citycraft:light_gray_concrete_pillar",
+    "citycraft:gray_concrete_pillar",
+    "citycraft:black_concrete_pillar",
+    "citycraft:brown_concrete_pillar",
+    "citycraft:red_concrete_pillar",
+    "citycraft:orange_concrete_pillar",
+    "citycraft:yellow_concrete_pillar",
+    "citycraft:lime_concrete_pillar",
+    "citycraft:green_concrete_pillar",
+    "citycraft:cyan_concrete_pillar",
+    "citycraft:light_blue_concrete_pillar",
+    "citycraft:blue_concrete_pillar",
+    "citycraft:purple_concrete_pillar",
+    "citycraft:magenta_concrete_pillar",
+    "citycraft:pink_concrete_pillar"
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "citycraft:block/black_concrete_pillar_end",
+    "side": "citycraft:block/black_concrete_pillar_side"
+  }
+}

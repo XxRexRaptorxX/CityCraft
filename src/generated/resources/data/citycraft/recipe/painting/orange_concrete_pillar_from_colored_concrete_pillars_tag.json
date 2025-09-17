@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_concrete_pillars"
+  },
+  "color": {
+    "tag": "c:dyes/orange"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:orange_concrete_pillar"
+  }
+}

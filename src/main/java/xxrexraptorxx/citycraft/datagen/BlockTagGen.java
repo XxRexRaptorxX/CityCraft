@@ -307,7 +307,11 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.POLISHED_BROWN_CONCRETE.get(), ModBlocks.POLISHED_RED_CONCRETE.get(), ModBlocks.POLISHED_ORANGE_CONCRETE.get(), ModBlocks.POLISHED_YELLOW_CONCRETE.get(),
                 ModBlocks.POLISHED_LIME_CONCRETE.get(), ModBlocks.POLISHED_GREEN_CONCRETE.get(), ModBlocks.POLISHED_CYAN_CONCRETE.get(),
                 ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get(), ModBlocks.POLISHED_BLUE_CONCRETE.get(), ModBlocks.POLISHED_PURPLE_CONCRETE.get(),
-                ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), ModBlocks.POLISHED_PINK_CONCRETE.get());
+                ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), ModBlocks.POLISHED_PINK_CONCRETE.get(), ModBlocks.WHITE_CONCRETE_PILLAR.get(),
+                ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get(), ModBlocks.GRAY_CONCRETE_PILLAR.get(), ModBlocks.BLACK_CONCRETE_PILLAR.get(), ModBlocks.BROWN_CONCRETE_PILLAR.get(),
+                ModBlocks.RED_CONCRETE_PILLAR.get(), ModBlocks.ORANGE_CONCRETE_PILLAR.get(), ModBlocks.YELLOW_CONCRETE_PILLAR.get(), ModBlocks.LIME_CONCRETE_PILLAR.get(),
+                ModBlocks.GREEN_CONCRETE_PILLAR.get(), ModBlocks.CYAN_CONCRETE_PILLAR.get(), ModBlocks.LIGHT_BLUE_CONCRETE_PILLAR.get(), ModBlocks.BLUE_CONCRETE_PILLAR.get(),
+                ModBlocks.PURPLE_CONCRETE_PILLAR.get(), ModBlocks.MAGENTA_CONCRETE_PILLAR.get(), ModBlocks.PINK_CONCRETE_PILLAR.get());
 
         tag(BlockTags.SLABS).add(ModBlocks.ASPHALT_SLAB.get(), ModBlocks.CRACKED_ASPHALT_SLAB.get(), ModBlocks.POTHOLE_ASPHALT_SLAB.get(), ModBlocks.MOSSY_ASPHALT_SLAB.get(),
                 ModBlocks.DIRTY_ASPHALT_SLAB.get(), ModBlocks.WHITE_ASPHALT_SLAB.get(), ModBlocks.ORANGE_ASPHALT_SLAB.get(), ModBlocks.MAGENTA_ASPHALT_SLAB.get(),

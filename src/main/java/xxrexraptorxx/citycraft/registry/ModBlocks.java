@@ -1255,6 +1255,39 @@ public class ModBlocks {
     public static final DeferredBlock<Block> POLISHED_RED_CONCRETE = registerBlock("polished_red_concrete",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
 
+    public static final DeferredBlock<RotatedPillarBlock> BLACK_CONCRETE_PILLAR = registerBlock("black_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> WHITE_CONCRETE_PILLAR = registerBlock("white_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> ORANGE_CONCRETE_PILLAR = registerBlock("orange_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> MAGENTA_CONCRETE_PILLAR = registerBlock("magenta_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> LIGHT_BLUE_CONCRETE_PILLAR = registerBlock("light_blue_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> YELLOW_CONCRETE_PILLAR = registerBlock("yellow_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> LIME_CONCRETE_PILLAR = registerBlock("lime_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> PINK_CONCRETE_PILLAR = registerBlock("pink_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> GRAY_CONCRETE_PILLAR = registerBlock("gray_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> LIGHT_GRAY_CONCRETE_PILLAR = registerBlock("light_gray_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> CYAN_CONCRETE_PILLAR = registerBlock("cyan_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> PURPLE_CONCRETE_PILLAR = registerBlock("purple_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> BLUE_CONCRETE_PILLAR = registerBlock("blue_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> BROWN_CONCRETE_PILLAR = registerBlock("brown_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> GREEN_CONCRETE_PILLAR = registerBlock("green_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE)));
+    public static final DeferredBlock<RotatedPillarBlock> RED_CONCRETE_PILLAR = registerBlock("red_concrete_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

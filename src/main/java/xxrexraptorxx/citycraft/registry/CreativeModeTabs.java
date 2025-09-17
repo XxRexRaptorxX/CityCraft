@@ -1331,6 +1331,23 @@ public class CreativeModeTabs {
                         output.accept(Blocks.MAGENTA_CONCRETE);
                         output.accept(Blocks.PINK_CONCRETE);
 
+                        output.accept(ModBlocks.POLISHED_WHITE_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_BLACK_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_BROWN_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_RED_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_ORANGE_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_YELLOW_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_LIME_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_GREEN_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_CYAN_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_PURPLE_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_MAGENTA_CONCRETE.get());
+                        output.accept(ModBlocks.POLISHED_PINK_CONCRETE.get());
+
                         output.accept(ModBlocks.CHISELED_WHITE_CONCRETE.get());
                         output.accept(ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get());
                         output.accept(ModBlocks.CHISELED_GRAY_CONCRETE.get());
@@ -1348,22 +1365,22 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.CHISELED_MAGENTA_CONCRETE.get());
                         output.accept(ModBlocks.CHISELED_PINK_CONCRETE.get());
 
-                        output.accept(ModBlocks.POLISHED_WHITE_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_GRAY_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_BLACK_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_BROWN_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_RED_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_ORANGE_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_YELLOW_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_LIME_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_GREEN_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_CYAN_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_BLUE_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_PURPLE_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_MAGENTA_CONCRETE.get());
-                        output.accept(ModBlocks.POLISHED_PINK_CONCRETE.get());
+                        output.accept(ModBlocks.WHITE_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.GRAY_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.BLACK_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.BROWN_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.RED_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.ORANGE_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.YELLOW_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.LIME_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.GREEN_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.CYAN_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.BLUE_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.PURPLE_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.MAGENTA_CONCRETE_PILLAR.get());
+                        output.accept(ModBlocks.PINK_CONCRETE_PILLAR.get());
 
                         output.accept(ModBlocks.WHITE_CONCRETE_WALL.get());
                         output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get());
