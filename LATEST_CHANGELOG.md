@@ -1,7 +1,8 @@
-# [v.2.7.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.7.0-dev1...v.2.7.0-dev18)
+# [v.2.7.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.7.0-dev1...v.2.7.0-dev19)
 
 ## ✨ Features
 
+- Concrete Stairs added ([a8444ed](https://github.com/XxRexRaptorxX/CityCraft/commit/a8444ed4b6a43279f2d0f5716222ceb67403e178))
 - Concrete blocks are now craftable with a water bucket and concrete powder ([e0d65ab](https://github.com/XxRexRaptorxX/CityCraft/commit/e0d65abc4dd504d4d1dbe011eb8090de62e9d85f))
 - Concrete blocks are now craftable with a water bucket and concrete powder ([d682a4d](https://github.com/XxRexRaptorxX/CityCraft/commit/d682a4d977521dbda278b430c78fa4bf6a3740ff))
 - Concrete Pillar blocks added ([71bacc5](https://github.com/XxRexRaptorxX/CityCraft/commit/71bacc5b3d04804fe44392463cc501ec445e9a78))
