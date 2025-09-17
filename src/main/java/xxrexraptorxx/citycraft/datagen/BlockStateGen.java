@@ -1064,6 +1064,23 @@ public class BlockStateGen extends BlockStateProvider {
         makeStairsBlock(ModBlocks.PURPLE_CONCRETE_STAIRS.get(), Blocks.PURPLE_CONCRETE);
         makeStairsBlock(ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), Blocks.MAGENTA_CONCRETE);
         makeStairsBlock(ModBlocks.PINK_CONCRETE_STAIRS.get(), Blocks.PINK_CONCRETE);
+
+        makeSlabBlock(ModBlocks.WHITE_CONCRETE_SLAB.get(), Blocks.WHITE_CONCRETE);
+        makeSlabBlock(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), Blocks.LIGHT_GRAY_CONCRETE);
+        makeSlabBlock(ModBlocks.GRAY_CONCRETE_SLAB.get(), Blocks.GRAY_CONCRETE);
+        makeSlabBlock(ModBlocks.BLACK_CONCRETE_SLAB.get(), Blocks.BLACK_CONCRETE);
+        makeSlabBlock(ModBlocks.BROWN_CONCRETE_SLAB.get(), Blocks.BROWN_CONCRETE);
+        makeSlabBlock(ModBlocks.RED_CONCRETE_SLAB.get(), Blocks.RED_CONCRETE);
+        makeSlabBlock(ModBlocks.ORANGE_CONCRETE_SLAB.get(), Blocks.ORANGE_CONCRETE);
+        makeSlabBlock(ModBlocks.YELLOW_CONCRETE_SLAB.get(), Blocks.YELLOW_CONCRETE);
+        makeSlabBlock(ModBlocks.LIME_CONCRETE_SLAB.get(), Blocks.LIME_CONCRETE);
+        makeSlabBlock(ModBlocks.GREEN_CONCRETE_SLAB.get(), Blocks.GREEN_CONCRETE);
+        makeSlabBlock(ModBlocks.CYAN_CONCRETE_SLAB.get(), Blocks.CYAN_CONCRETE);
+        makeSlabBlock(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), Blocks.LIGHT_BLUE_CONCRETE);
+        makeSlabBlock(ModBlocks.BLUE_CONCRETE_SLAB.get(), Blocks.BLUE_CONCRETE);
+        makeSlabBlock(ModBlocks.PURPLE_CONCRETE_SLAB.get(), Blocks.PURPLE_CONCRETE);
+        makeSlabBlock(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), Blocks.MAGENTA_CONCRETE);
+        makeSlabBlock(ModBlocks.PINK_CONCRETE_SLAB.get(), Blocks.PINK_CONCRETE);
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1101,6 +1118,16 @@ public class BlockStateGen extends BlockStateProvider {
         String texture = location.getPath();
 
         stairsBlock(block, ResourceLocation.fromNamespaceAndPath(location.getNamespace(), "block/" + texture));
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeSlabBlock(SlabBlock block, Block baseBlock) {
+        ResourceLocation location = BuiltInRegistries.BLOCK.getKey(baseBlock);
+        String texture = location.getPath();
+
+        slabBlock(block, ResourceLocation.fromNamespaceAndPath(location.getNamespace(), "block/" + texture),
+                ResourceLocation.fromNamespaceAndPath(location.getNamespace(), "block/" + texture));
         makeBlockItemFromExistingModel(block);
     }
 

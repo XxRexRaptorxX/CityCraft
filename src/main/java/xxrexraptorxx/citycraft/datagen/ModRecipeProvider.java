@@ -2068,6 +2068,57 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.BROWN_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_BROWN, output);
         paintingRecipes(ModBlocks.GREEN_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_GREEN, output);
         paintingRecipes(ModBlocks.RED_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_RED, output);
+
+        slabRecipes(ModBlocks.WHITE_CONCRETE_SLAB.get(), Blocks.WHITE_CONCRETE, output);
+        slabRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
+        slabRecipes(ModBlocks.GRAY_CONCRETE_SLAB.get(), Blocks.GRAY_CONCRETE, output);
+        slabRecipes(ModBlocks.BLACK_CONCRETE_SLAB.get(), Blocks.BLACK_CONCRETE, output);
+        slabRecipes(ModBlocks.BROWN_CONCRETE_SLAB.get(), Blocks.BROWN_CONCRETE, output);
+        slabRecipes(ModBlocks.RED_CONCRETE_SLAB.get(), Blocks.RED_CONCRETE, output);
+        slabRecipes(ModBlocks.ORANGE_CONCRETE_SLAB.get(), Blocks.ORANGE_CONCRETE, output);
+        slabRecipes(ModBlocks.YELLOW_CONCRETE_SLAB.get(), Blocks.YELLOW_CONCRETE, output);
+        slabRecipes(ModBlocks.LIME_CONCRETE_SLAB.get(), Blocks.LIME_CONCRETE, output);
+        slabRecipes(ModBlocks.GREEN_CONCRETE_SLAB.get(), Blocks.GREEN_CONCRETE, output);
+        slabRecipes(ModBlocks.CYAN_CONCRETE_SLAB.get(), Blocks.CYAN_CONCRETE, output);
+        slabRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
+        slabRecipes(ModBlocks.BLUE_CONCRETE_SLAB.get(), Blocks.BLUE_CONCRETE, output);
+        slabRecipes(ModBlocks.PURPLE_CONCRETE_SLAB.get(), Blocks.PURPLE_CONCRETE, output);
+        slabRecipes(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), Blocks.MAGENTA_CONCRETE, output);
+        slabRecipes(ModBlocks.PINK_CONCRETE_SLAB.get(), Blocks.PINK_CONCRETE, output);
+
+        stoneCuttingRecipes(ModBlocks.WHITE_CONCRETE_SLAB.get(), 2, Blocks.WHITE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), 2, Blocks.LIGHT_GRAY_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.GRAY_CONCRETE_SLAB.get(), 2, Blocks.GRAY_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.BLACK_CONCRETE_SLAB.get(), 2, Blocks.BLACK_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.BROWN_CONCRETE_SLAB.get(), 2, Blocks.BROWN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.RED_CONCRETE_SLAB.get(), 2, Blocks.RED_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.ORANGE_CONCRETE_SLAB.get(), 2, Blocks.ORANGE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.YELLOW_CONCRETE_SLAB.get(), 2, Blocks.YELLOW_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.LIME_CONCRETE_SLAB.get(), 2, Blocks.LIME_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.GREEN_CONCRETE_SLAB.get(), 2, Blocks.GREEN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CYAN_CONCRETE_SLAB.get(), 2, Blocks.CYAN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), 2, Blocks.LIGHT_BLUE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.BLUE_CONCRETE_SLAB.get(), 2, Blocks.BLUE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.PURPLE_CONCRETE_SLAB.get(), 2, Blocks.PURPLE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), 2, Blocks.MAGENTA_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.PINK_CONCRETE_SLAB.get(), 2, Blocks.PINK_CONCRETE, output);
+
+        paintingRecipes(ModBlocks.BLACK_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.WHITE_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ORANGE_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.YELLOW_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.LIME_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.PINK_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.GRAY_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.CYAN_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.PURPLE_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.BLUE_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.BROWN_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.GREEN_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.RED_CONCRETE_SLAB.get(), ModTags.COLORED_CONCRETE_SLABS_TAG, Tags.Items.DYES_RED, output);
     }
 
     private static final String STONE_CUTTING_PATH = References.MODID + ":stonecutting/";

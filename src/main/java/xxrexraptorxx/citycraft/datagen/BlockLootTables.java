@@ -1092,6 +1092,23 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.MAGENTA_CONCRETE_STAIRS.get());
         this.dropSelf(ModBlocks.PINK_CONCRETE_STAIRS.get());
 
+        this.add(ModBlocks.WHITE_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.WHITE_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.GRAY_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.GRAY_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.BLACK_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.BLACK_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.BROWN_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.BROWN_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.RED_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.RED_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.ORANGE_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.ORANGE_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.YELLOW_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.YELLOW_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.LIME_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.LIME_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.GREEN_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.GREEN_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.CYAN_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.CYAN_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.BLUE_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.BLUE_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.PURPLE_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.PURPLE_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.MAGENTA_CONCRETE_SLAB.get()));
+        this.add(ModBlocks.PINK_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.PINK_CONCRETE_SLAB.get()));
+
         this.dropSelf(ModBlocks.STREET_LANTERN.get());
         this.dropSelf(ModBlocks.MODERN_STREET_LANTERN.get());
         this.add(ModBlocks.STREET_LANTERN_PANEL.get(), block -> createSlabItemTable(ModBlocks.STREET_LANTERN_PANEL.get()));

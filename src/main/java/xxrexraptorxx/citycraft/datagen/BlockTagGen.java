@@ -315,7 +315,11 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), ModBlocks.GRAY_CONCRETE_STAIRS.get(), ModBlocks.BLACK_CONCRETE_STAIRS.get(), ModBlocks.BROWN_CONCRETE_STAIRS.get(),
                 ModBlocks.RED_CONCRETE_STAIRS.get(), ModBlocks.ORANGE_CONCRETE_STAIRS.get(), ModBlocks.YELLOW_CONCRETE_STAIRS.get(), ModBlocks.LIME_CONCRETE_STAIRS.get(),
                 ModBlocks.GREEN_CONCRETE_STAIRS.get(), ModBlocks.CYAN_CONCRETE_STAIRS.get(), ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), ModBlocks.BLUE_CONCRETE_STAIRS.get(),
-                ModBlocks.PURPLE_CONCRETE_STAIRS.get(), ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), ModBlocks.PINK_CONCRETE_STAIRS.get());
+                ModBlocks.PURPLE_CONCRETE_STAIRS.get(), ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), ModBlocks.PINK_CONCRETE_STAIRS.get(), ModBlocks.WHITE_CONCRETE_SLAB.get(),
+                ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), ModBlocks.GRAY_CONCRETE_SLAB.get(), ModBlocks.BLACK_CONCRETE_SLAB.get(), ModBlocks.BROWN_CONCRETE_SLAB.get(),
+                ModBlocks.RED_CONCRETE_SLAB.get(), ModBlocks.ORANGE_CONCRETE_SLAB.get(), ModBlocks.YELLOW_CONCRETE_SLAB.get(), ModBlocks.LIME_CONCRETE_SLAB.get(),
+                ModBlocks.GREEN_CONCRETE_SLAB.get(), ModBlocks.CYAN_CONCRETE_SLAB.get(), ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), ModBlocks.BLUE_CONCRETE_SLAB.get(),
+                ModBlocks.PURPLE_CONCRETE_SLAB.get(), ModBlocks.MAGENTA_CONCRETE_SLAB.get(), ModBlocks.PINK_CONCRETE_SLAB.get());
 
         tag(BlockTags.SLABS).add(ModBlocks.ASPHALT_SLAB.get(), ModBlocks.CRACKED_ASPHALT_SLAB.get(), ModBlocks.POTHOLE_ASPHALT_SLAB.get(), ModBlocks.MOSSY_ASPHALT_SLAB.get(),
                 ModBlocks.DIRTY_ASPHALT_SLAB.get(), ModBlocks.WHITE_ASPHALT_SLAB.get(), ModBlocks.ORANGE_ASPHALT_SLAB.get(), ModBlocks.MAGENTA_ASPHALT_SLAB.get(),
@@ -393,7 +397,11 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get(),
                 ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(),
                 ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(),
-                ModBlocks.STREET_LANTERN_PANEL.get());
+                ModBlocks.STREET_LANTERN_PANEL.get(), ModBlocks.WHITE_CONCRETE_SLAB.get(), ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), ModBlocks.GRAY_CONCRETE_SLAB.get(),
+                ModBlocks.BLACK_CONCRETE_SLAB.get(), ModBlocks.BROWN_CONCRETE_SLAB.get(), ModBlocks.RED_CONCRETE_SLAB.get(), ModBlocks.ORANGE_CONCRETE_SLAB.get(),
+                ModBlocks.YELLOW_CONCRETE_SLAB.get(), ModBlocks.LIME_CONCRETE_SLAB.get(), ModBlocks.GREEN_CONCRETE_SLAB.get(), ModBlocks.CYAN_CONCRETE_SLAB.get(),
+                ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), ModBlocks.BLUE_CONCRETE_SLAB.get(), ModBlocks.PURPLE_CONCRETE_SLAB.get(), ModBlocks.MAGENTA_CONCRETE_SLAB.get(),
+                ModBlocks.PINK_CONCRETE_SLAB.get());
 
         tag(BlockTags.FENCES).add(ModBlocks.IRON_FENCE.get());
 

@@ -45,6 +45,7 @@ public class ModTags {
     public static final TagKey<Item> COLORED_POLISHED_CONCRETE_TAG = createItemTag(References.MODID, "colored_polished_concrete");
     public static final TagKey<Item> COLORED_CONCRETE_PILLARS_TAG = createItemTag(References.MODID, "colored_concrete_pillars");
     public static final TagKey<Item> COLORED_CONCRETE_STAIRS_TAG = createItemTag(References.MODID, "colored_concrete_stairs");
+    public static final TagKey<Item> COLORED_CONCRETE_SLABS_TAG = createItemTag(References.MODID, "colored_concrete_slabs");
     public static final TagKey<Item> NEON_LIGHTS_TAG = createItemTag(References.MODID, "neon_lights");
 
     public static final TagKey<Block> TRAFFIC_BARRIERS_TAG = createBlockTag("c", "traffic_barriers");
