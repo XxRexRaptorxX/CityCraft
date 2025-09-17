@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "concrete_with_bucket",
+  "ingredients": [
+    {
+      "item": "minecraft:purple_concrete_powder"
+    },
+    {
+      "tag": "c:buckets/water"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:purple_concrete"
+  }
+}

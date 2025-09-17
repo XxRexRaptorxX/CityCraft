@@ -2082,6 +2082,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group(group).save(output);
     }
 
+
     protected static void simpleShapelessRecipes(Block result, Item firstInput, Item secondInput, RecipeOutput output, String group) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(firstInput).requires(secondInput).unlockedBy(getHasName(secondInput), has(secondInput))
                 .group(group).save(output);
