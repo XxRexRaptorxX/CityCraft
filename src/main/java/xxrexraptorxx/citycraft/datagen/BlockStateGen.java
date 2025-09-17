@@ -1048,7 +1048,22 @@ public class BlockStateGen extends BlockStateProvider {
         makePillarBlock(ModBlocks.MAGENTA_CONCRETE_PILLAR.get());
         makePillarBlock(ModBlocks.PINK_CONCRETE_PILLAR.get());
 
-
+        makeStairsBlock(ModBlocks.WHITE_CONCRETE_STAIRS.get(), Blocks.WHITE_CONCRETE);
+        makeStairsBlock(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), Blocks.LIGHT_GRAY_CONCRETE);
+        makeStairsBlock(ModBlocks.GRAY_CONCRETE_STAIRS.get(), Blocks.GRAY_CONCRETE);
+        makeStairsBlock(ModBlocks.BLACK_CONCRETE_STAIRS.get(), Blocks.BLACK_CONCRETE);
+        makeStairsBlock(ModBlocks.BROWN_CONCRETE_STAIRS.get(), Blocks.BROWN_CONCRETE);
+        makeStairsBlock(ModBlocks.RED_CONCRETE_STAIRS.get(), Blocks.RED_CONCRETE);
+        makeStairsBlock(ModBlocks.ORANGE_CONCRETE_STAIRS.get(), Blocks.ORANGE_CONCRETE);
+        makeStairsBlock(ModBlocks.YELLOW_CONCRETE_STAIRS.get(), Blocks.YELLOW_CONCRETE);
+        makeStairsBlock(ModBlocks.LIME_CONCRETE_STAIRS.get(), Blocks.LIME_CONCRETE);
+        makeStairsBlock(ModBlocks.GREEN_CONCRETE_STAIRS.get(), Blocks.GREEN_CONCRETE);
+        makeStairsBlock(ModBlocks.CYAN_CONCRETE_STAIRS.get(), Blocks.CYAN_CONCRETE);
+        makeStairsBlock(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), Blocks.LIGHT_BLUE_CONCRETE);
+        makeStairsBlock(ModBlocks.BLUE_CONCRETE_STAIRS.get(), Blocks.BLUE_CONCRETE);
+        makeStairsBlock(ModBlocks.PURPLE_CONCRETE_STAIRS.get(), Blocks.PURPLE_CONCRETE);
+        makeStairsBlock(ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), Blocks.MAGENTA_CONCRETE);
+        makeStairsBlock(ModBlocks.PINK_CONCRETE_STAIRS.get(), Blocks.PINK_CONCRETE);
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1077,6 +1092,15 @@ public class BlockStateGen extends BlockStateProvider {
 
     private void makePillarBlock(RotatedPillarBlock block) {
         axisBlock(block);
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeStairsBlock(StairBlock block, Block baseBlock) {
+        ResourceLocation location = BuiltInRegistries.BLOCK.getKey(baseBlock);
+        String texture = location.getPath();
+
+        stairsBlock(block, ResourceLocation.fromNamespaceAndPath(location.getNamespace(), "block/" + texture));
         makeBlockItemFromExistingModel(block);
     }
 

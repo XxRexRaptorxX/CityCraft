@@ -1012,5 +1012,21 @@
   "block.citycraft.blue_concrete_pillar": "Blue Concrete Pillar",
   "block.citycraft.brown_concrete_pillar": "Brown Concrete Pillar",
   "block.citycraft.green_concrete_pillar": "Green Concrete Pillar",
-  "block.citycraft.red_concrete_pillar": "Red Concrete Pillar"
+  "block.citycraft.red_concrete_pillar": "Red Concrete Pillar",
+  "block.citycraft.black_concrete_stairs": "Black Concrete Stairs",
+  "block.citycraft.white_concrete_stairs": "White Concrete Stairs",
+  "block.citycraft.orange_concrete_stairs": "Orange Concrete Stairs",
+  "block.citycraft.magenta_concrete_stairs": "Magenta Concrete Stairs",
+  "block.citycraft.light_blue_concrete_stairs": "Light Blue Stairs Concrete",
+  "block.citycraft.yellow_concrete_stairs": "Yellow Concrete Stairs",
+  "block.citycraft.lime_concrete_stairs": "Lime Concrete Stairs",
+  "block.citycraft.pink_concrete_stairs": "Pink Concrete Stairs",
+  "block.citycraft.gray_concrete_stairs": "Gray Concrete Stairs",
+  "block.citycraft.light_gray_concrete_stairs": "Light Gray Stairs Concrete",
+  "block.citycraft.cyan_concrete_stairs": "Cyan Concrete Stairs",
+  "block.citycraft.purple_concrete_stairs": "Purple Concrete Stairs",
+  "block.citycraft.blue_concrete_stairs": "Blue Concrete Stairs",
+  "block.citycraft.brown_concrete_stairs": "Brown Concrete Stairs",
+  "block.citycraft.green_concrete_stairs": "Green Concrete Stairs",
+  "block.citycraft.red_concrete_stairs": "Red Concrete Stairs"
 }

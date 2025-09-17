@@ -2017,6 +2017,57 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         simpleShapelessRecipes(Blocks.BROWN_CONCRETE, Items.BROWN_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
         simpleShapelessRecipes(Blocks.GREEN_CONCRETE, Items.GREEN_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
         simpleShapelessRecipes(Blocks.RED_CONCRETE, Items.RED_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+
+        stairsRecipes(ModBlocks.WHITE_CONCRETE_STAIRS.get(), Blocks.WHITE_CONCRETE, output);
+        stairsRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
+        stairsRecipes(ModBlocks.GRAY_CONCRETE_STAIRS.get(), Blocks.GRAY_CONCRETE, output);
+        stairsRecipes(ModBlocks.BLACK_CONCRETE_STAIRS.get(), Blocks.BLACK_CONCRETE, output);
+        stairsRecipes(ModBlocks.BROWN_CONCRETE_STAIRS.get(), Blocks.BROWN_CONCRETE, output);
+        stairsRecipes(ModBlocks.RED_CONCRETE_STAIRS.get(), Blocks.RED_CONCRETE, output);
+        stairsRecipes(ModBlocks.ORANGE_CONCRETE_STAIRS.get(), Blocks.ORANGE_CONCRETE, output);
+        stairsRecipes(ModBlocks.YELLOW_CONCRETE_STAIRS.get(), Blocks.YELLOW_CONCRETE, output);
+        stairsRecipes(ModBlocks.LIME_CONCRETE_STAIRS.get(), Blocks.LIME_CONCRETE, output);
+        stairsRecipes(ModBlocks.GREEN_CONCRETE_STAIRS.get(), Blocks.GREEN_CONCRETE, output);
+        stairsRecipes(ModBlocks.CYAN_CONCRETE_STAIRS.get(), Blocks.CYAN_CONCRETE, output);
+        stairsRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
+        stairsRecipes(ModBlocks.BLUE_CONCRETE_STAIRS.get(), Blocks.BLUE_CONCRETE, output);
+        stairsRecipes(ModBlocks.PURPLE_CONCRETE_STAIRS.get(), Blocks.PURPLE_CONCRETE, output);
+        stairsRecipes(ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), Blocks.MAGENTA_CONCRETE, output);
+        stairsRecipes(ModBlocks.PINK_CONCRETE_STAIRS.get(), Blocks.PINK_CONCRETE, output);
+
+        stoneCuttingRecipes(ModBlocks.WHITE_CONCRETE_STAIRS.get(), 1, Blocks.WHITE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), 1, Blocks.LIGHT_GRAY_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.GRAY_CONCRETE_STAIRS.get(), 1, Blocks.GRAY_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.BLACK_CONCRETE_STAIRS.get(), 1, Blocks.BLACK_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.BROWN_CONCRETE_STAIRS.get(), 1, Blocks.BROWN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.RED_CONCRETE_STAIRS.get(), 1, Blocks.RED_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.ORANGE_CONCRETE_STAIRS.get(), 1, Blocks.ORANGE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.YELLOW_CONCRETE_STAIRS.get(), 1, Blocks.YELLOW_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.LIME_CONCRETE_STAIRS.get(), 1, Blocks.LIME_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.GREEN_CONCRETE_STAIRS.get(), 1, Blocks.GREEN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.CYAN_CONCRETE_STAIRS.get(), 1, Blocks.CYAN_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), 1, Blocks.LIGHT_BLUE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.BLUE_CONCRETE_STAIRS.get(), 1, Blocks.BLUE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.PURPLE_CONCRETE_STAIRS.get(), 1, Blocks.PURPLE_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), 1, Blocks.MAGENTA_CONCRETE, output);
+        stoneCuttingRecipes(ModBlocks.PINK_CONCRETE_STAIRS.get(), 1, Blocks.PINK_CONCRETE, output);
+
+        paintingRecipes(ModBlocks.BLACK_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.WHITE_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ORANGE_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.YELLOW_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.LIME_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.PINK_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.GRAY_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.CYAN_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.PURPLE_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.BLUE_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.BROWN_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.GREEN_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.RED_CONCRETE_STAIRS.get(), ModTags.COLORED_CONCRETE_STAIRS_TAG, Tags.Items.DYES_RED, output);
     }
 
     private static final String STONE_CUTTING_PATH = References.MODID + ":stonecutting/";
@@ -2040,6 +2091,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     protected static void pillarRecipes(Block result, Block input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 2).pattern("#").pattern("#").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
+    }
+
+
+    protected static void stairsRecipes(Block result, Block input, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4).pattern("#  ").pattern("## ").pattern("###").define('#', input)
+                .unlockedBy(getHasName(input), has(input)).save(output);
     }
 
 

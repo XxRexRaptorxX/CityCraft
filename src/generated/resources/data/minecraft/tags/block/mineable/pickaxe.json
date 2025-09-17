@@ -991,6 +991,22 @@
     "citycraft:blue_concrete_pillar",
     "citycraft:purple_concrete_pillar",
     "citycraft:magenta_concrete_pillar",
-    "citycraft:pink_concrete_pillar"
+    "citycraft:pink_concrete_pillar",
+    "citycraft:white_concrete_stairs",
+    "citycraft:light_gray_concrete_stairs",
+    "citycraft:gray_concrete_stairs",
+    "citycraft:black_concrete_stairs",
+    "citycraft:brown_concrete_stairs",
+    "citycraft:red_concrete_stairs",
+    "citycraft:orange_concrete_stairs",
+    "citycraft:yellow_concrete_stairs",
+    "citycraft:lime_concrete_stairs",
+    "citycraft:green_concrete_stairs",
+    "citycraft:cyan_concrete_stairs",
+    "citycraft:light_blue_concrete_stairs",
+    "citycraft:blue_concrete_stairs",
+    "citycraft:purple_concrete_stairs",
+    "citycraft:magenta_concrete_stairs",
+    "citycraft:pink_concrete_stairs"
   ]
 }

@@ -1018,5 +1018,21 @@
   "block.citycraft.blue_concrete_pillar": "Blaue Beton Säule",
   "block.citycraft.brown_concrete_pillar": "Braune Beton Säule",
   "block.citycraft.green_concrete_pillar": "Grüne Beton Säule",
-  "block.citycraft.red_concrete_pillar": "Rote Beton Säule"
+  "block.citycraft.red_concrete_pillar": "Rote Beton Säule",
+  "block.citycraft.black_concrete_stairs": "Schwarze Beton Treppe",
+  "block.citycraft.white_concrete_stairs": "Weiße Beton Treppe",
+  "block.citycraft.orange_concrete_stairs": "Orangene Beton Treppe",
+  "block.citycraft.magenta_concrete_stairs": "Magentane Beton Treppe",
+  "block.citycraft.light_blue_concrete_stairs": "Hellblaue Beton Treppe",
+  "block.citycraft.yellow_concrete_stairs": "Gelbe Beton Treppe",
+  "block.citycraft.lime_concrete_stairs": "Hellgrüne Beton Treppe",
+  "block.citycraft.pink_concrete_stairs": "Rosane Beton Treppe",
+  "block.citycraft.gray_concrete_stairs": "Graue Beton Treppe",
+  "block.citycraft.light_gray_concrete_stairs": "Hellblaue Beton Treppe",
+  "block.citycraft.cyan_concrete_stairs": "Türkise Beton Treppe",
+  "block.citycraft.purple_concrete_stairs": "Lilane Beton Treppe",
+  "block.citycraft.blue_concrete_stairs": "Blaue Beton Treppe",
+  "block.citycraft.brown_concrete_stairs": "Braune Beton Treppe",
+  "block.citycraft.green_concrete_stairs": "Grüne Beton Treppe",
+  "block.citycraft.red_concrete_stairs": "Rote Beton Treppe"
 }
