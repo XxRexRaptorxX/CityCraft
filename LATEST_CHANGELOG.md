@@ -1,7 +1,8 @@
-# [v.2.7.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.7.0-dev1...v.2.7.0-dev16)
+# [v.2.7.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.7.0-dev1...v.2.7.0-dev17)
 
 ## ✨ Features
 
+- Concrete blocks are now craftable with a water bucket and concrete powder ([d682a4d](https://github.com/XxRexRaptorxX/CityCraft/commit/d682a4d977521dbda278b430c78fa4bf6a3740ff))
 - Concrete Pillar blocks added ([71bacc5](https://github.com/XxRexRaptorxX/CityCraft/commit/71bacc5b3d04804fe44392463cc501ec445e9a78))
 - Polished Concrete blocks added ([c7988e6](https://github.com/XxRexRaptorxX/CityCraft/commit/c7988e6522fd4f508f339f0e542e49c739d7a556))
 - Chiseled Concrete blocks added ([fea71a9](https://github.com/XxRexRaptorxX/CityCraft/commit/fea71a98313d3df594de727983219d9c8ff2ae56))
