@@ -2000,6 +2000,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.BROWN_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_BROWN, output);
         paintingRecipes(ModBlocks.GREEN_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_GREEN, output);
         paintingRecipes(ModBlocks.RED_CONCRETE_PILLAR.get(), ModTags.COLORED_CONCRETE_PILLARS_TAG, Tags.Items.DYES_RED, output);
+
+        simpleShapelessRecipes(Blocks.BLACK_CONCRETE, Items.BLACK_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.WHITE_CONCRETE, Items.WHITE_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.ORANGE_CONCRETE, Items.ORANGE_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.MAGENTA_CONCRETE, Items.MAGENTA_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.LIGHT_BLUE_CONCRETE, Items.LIGHT_BLUE_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.YELLOW_CONCRETE, Items.YELLOW_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.LIME_CONCRETE, Items.LIME_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.PINK_CONCRETE, Items.PINK_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.GRAY_CONCRETE, Items.GRAY_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.LIGHT_GRAY_CONCRETE, Items.LIGHT_GRAY_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.CYAN_CONCRETE, Items.CYAN_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.PURPLE_CONCRETE, Items.PURPLE_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.BLUE_CONCRETE, Items.BLUE_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.BROWN_CONCRETE, Items.BROWN_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.GREEN_CONCRETE, Items.GREEN_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+        simpleShapelessRecipes(Blocks.RED_CONCRETE, Items.RED_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
     }
 
     private static final String STONE_CUTTING_PATH = References.MODID + ":stonecutting/";
@@ -2020,9 +2037,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(output);
     }
 
+
     protected static void pillarRecipes(Block result, Block input, RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 2).pattern("#").pattern("#").define('#', input).unlockedBy(getHasName(input), has(input))
-                .save(output);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 2).pattern("#").pattern("#").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
     }
 
 
@@ -2060,7 +2077,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
 
-    protected static void simpleShapelessRecipes(Block result, TagKey<Item> firstInput, Item secondInput, RecipeOutput output, String group) {
+    protected static void simpleShapelessRecipes(Block result, Item firstInput, TagKey<Item> secondInput, RecipeOutput output, String group) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(firstInput).requires(secondInput).unlockedBy("has_" + secondInput, has(secondInput))
+                .group(group).save(output);
+    }
+
+    protected static void simpleShapelessRecipes(Block result, Item firstInput, Item secondInput, RecipeOutput output, String group) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(firstInput).requires(secondInput).unlockedBy(getHasName(secondInput), has(secondInput))
                 .group(group).save(output);
     }

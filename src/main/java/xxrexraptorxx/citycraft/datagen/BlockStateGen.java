@@ -1074,6 +1074,7 @@ public class BlockStateGen extends BlockStateProvider {
         makeBlockItemFromExistingModel(block);
     }
 
+
     private void makePillarBlock(RotatedPillarBlock block) {
         axisBlock(block);
         makeBlockItemFromExistingModel(block);
