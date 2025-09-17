@@ -1,4 +1,4 @@
-# [v.2.7.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.7.0-dev1...v.2.7.0-dev20)
+# [v.2.7.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.7.0-dev1...v.2.7.0-dev21)
 
 ## ✨ Features
 
@@ -18,6 +18,7 @@
 
 ## 🔧 Bug Fixes
 
+- german color translations fixed ([83dd10d](https://github.com/XxRexRaptorxX/CityCraft/commit/83dd10d6606fbe1bc27c7c0076c92db06552f28c))
 - connected textures fixed ([341d4c4](https://github.com/XxRexRaptorxX/CityCraft/commit/341d4c40f639adb0154925b613f7797fcf9d09ac))
 
 ## 🔨 Refactoring
