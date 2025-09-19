@@ -29,10 +29,9 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
 
     public static final MapCodec<RedstonePoleBlock> CODEC = simpleCodec(RedstonePoleBlock::new);
     public static final EnumProperty<Axis> AXIS = EnumProperty.create("axis", Axis.class);
-    public static final IntegerProperty POWER = BlockStateProperties.POWER; // 0-15
+    public static final IntegerProperty POWER = BlockStateProperties.POWER;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
-    // VoxelShapes für verschiedene Achsen
     private static final VoxelShape SHAPE_Y = Block.box(6, 0, 6, 10, 16, 10);
     private static final VoxelShape SHAPE_Z = Block.box(6, 6, 0, 10, 10, 16);
     private static final VoxelShape SHAPE_X = Block.box(0, 6, 6, 16, 10, 10);
@@ -48,10 +47,12 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
             this.name = name;
         }
 
+
         @Override
         public String getSerializedName() {
             return this.name;
         }
+
 
         public Direction[] getDirections() {
             return switch (this) {
@@ -60,6 +61,7 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
                 case Z -> new Direction[]{Direction.NORTH, Direction.SOUTH};
             };
         }
+
 
         public static Axis fromDirection(Direction direction) {
             return switch (direction) {
@@ -74,14 +76,12 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
         super(properties);
     }
 
+
     public RedstonePoleBlock() {
-        super(Properties.of().strength(5.0F, 6.0F).sound(SoundType.METAL).mapColor(MapColor.METAL)
-                .instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops());
-        this.registerDefaultState(this.stateDefinition.any()
-                .setValue(AXIS, Axis.Y)
-                .setValue(POWER, 0)
-                .setValue(POWERED, false));
+        super(Properties.of().strength(5.0F, 6.0F).sound(SoundType.METAL).mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresCorrectToolForDrops());
+        this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Axis.Y).setValue(POWER, 0).setValue(POWERED, false));
     }
+
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
@@ -92,16 +92,19 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
         };
     }
 
+
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction direction = context.getClickedFace();
         return this.defaultBlockState().setValue(AXIS, Axis.fromDirection(direction));
     }
 
+
     @Override
     public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(AXIS, POWER, POWERED);
     }
+
 
     @Override
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block neighborBlock, BlockPos neighborPos, boolean movedByPiston) {
@@ -110,12 +113,14 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
         }
     }
 
+
     @Override
     public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean movedByPiston) {
         if (!level.isClientSide && !oldState.is(this)) {
             level.scheduleTick(pos, this, 1);
         }
     }
+
 
     @Override
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean movedByPiston) {
@@ -125,10 +130,12 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
         super.onRemove(state, level, pos, newState, movedByPiston);
     }
 
+
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         updatePowerState(level, pos, state);
     }
+
 
     private void updatePowerState(Level level, BlockPos pos, BlockState state) {
         int maxInputPower = getMaxInputPower(level, pos, state);
@@ -142,7 +149,6 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
             BlockState newState = state.setValue(POWER, newPower).setValue(POWERED, shouldBePowered);
             level.setBlock(pos, newState, Block.UPDATE_ALL);
 
-            // Nachbarn über Änderung informieren
             for (Direction direction : Direction.values()) {
                 BlockPos neighborPos = pos.relative(direction);
                 level.updateNeighborsAt(neighborPos, this);
@@ -150,11 +156,11 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
         }
     }
 
+
     private int getMaxInputPower(Level level, BlockPos pos, BlockState state) {
         Axis axis = state.getValue(AXIS);
         int maxPower = 0;
 
-        // Prüfe alle 6 Richtungen
         for (Direction direction : Direction.values()) {
             BlockPos neighborPos = pos.relative(direction);
             int power = getNeighborPower(level, neighborPos, direction.getOpposite(), axis);
@@ -164,31 +170,29 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
         return maxPower;
     }
 
+
     private int getNeighborPower(Level level, BlockPos pos, Direction fromDirection, Axis sourceAxis) {
         BlockState neighborState = level.getBlockState(pos);
 
-        // Spezielle Behandlung für andere RedstonePole
         if (neighborState.getBlock() instanceof RedstonePoleBlock) {
             Axis neighborAxis = neighborState.getValue(AXIS);
 
-            // Nur Verbindungen auf der gleichen Achse
             if (neighborAxis == sourceAxis && neighborState.getValue(POWERED)) {
                 return neighborState.getValue(POWER);
             }
             return 0;
         }
 
-        // Standard Redstone-Signalstärke von anderen Blöcken
         int directSignal = level.getDirectSignal(pos, fromDirection);
         int indirectSignal = level.getSignal(pos, fromDirection);
         return Math.max(directSignal, indirectSignal);
     }
 
+
     private void updateConnectedPoles(Level level, BlockPos startPos, Set<BlockPos> visited, boolean isRemoving) {
         if (visited.contains(startPos)) return;
         visited.add(startPos);
 
-        // Alle benachbarten Pole aktualisieren
         for (Direction direction : Direction.values()) {
             BlockPos neighborPos = startPos.relative(direction);
 
@@ -205,10 +209,12 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
         }
     }
 
+
     @Override
     public int getDirectSignal(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return getSignal(state, level, pos, direction);
     }
+
 
     @Override
     public int getSignal(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -217,32 +223,33 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
         Axis axis = state.getValue(AXIS);
         int power = state.getValue(POWER);
 
-        // Prüfe ob die Richtung auf unserer Achse liegt
         Axis requestAxis = Axis.fromDirection(direction);
 
         if (requestAxis == axis) {
-            // Signal wird auf der gleichen Achse weitergegeben
             return power;
         }
 
-        // Für andere Richtungen: Reduziertes Signal an normale Redstone-Verbraucher
         return Math.max(0, power - 1);
     }
+
 
     @Override
     public boolean isSignalSource(BlockState state) {
         return state.getValue(POWERED);
     }
 
+
     @Override
     protected boolean hasAnalogOutputSignal(BlockState state) {
         return true;
     }
 
+
     @Override
     protected int getAnalogOutputSignal(BlockState state, Level level, BlockPos pos) {
         return state.getValue(POWER);
     }
+
 
     @Override
     public BlockState rotate(BlockState state, Rotation rotation) {
@@ -256,10 +263,12 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
         };
     }
 
+
     @Override
     public boolean canConnectRedstone(BlockState state, BlockGetter level, BlockPos pos, @Nullable Direction direction) {
         return direction != null;
     }
+
 
     @Override
     protected MapCodec<? extends Block> codec() {
