@@ -10,7 +10,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.citycraft.main.References;
 
-public class CreativeModeTabs {
+public class CreativeTabs {
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, References.MODID);
 
@@ -75,6 +75,7 @@ public class CreativeModeTabs {
 
                         // EU
                         output.accept(ModBlocks.IRON_POLE.get());
+                        output.accept(ModBlocks.REDSTONE_POLE.get());
 
                         output.accept(ModBlocks.DANGER_EU_SIGN.get());
                         output.accept(ModBlocks.ROADWORKS_EU_SIGN.get());
@@ -808,6 +809,7 @@ public class CreativeModeTabs {
             () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + References.MODID + ".traffic_lights_tab"))
                     .icon(() -> new ItemStack(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get())).displayItems((params, output) -> {
                         output.accept(ModBlocks.IRON_POLE.get());
+                        output.accept(ModBlocks.REDSTONE_POLE.get());
 
                         output.accept(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
                         output.accept(ModBlocks.TRIPPLE_TRAFFIC_LIGHT.get());

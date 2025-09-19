@@ -421,6 +421,7 @@ public class BlockStateGen extends BlockStateProvider {
         makeBlockFromParentModel(ModBlocks.YELLOW_BLACK_POST.get(), "post");
 
         makeBlockItemFromExistingModel(ModBlocks.IRON_POLE.get());
+        makeBlockItemFromExistingModel(ModBlocks.REDSTONE_POLE.get());
         makeBlockItemFromExistingModel(ModBlocks.BLACK_POLE.get());
         makeBlockItemFromExistingModel(ModBlocks.RED_POLE.get());
         makeBlockItemFromExistingModel(ModBlocks.WHITE_POLE.get());

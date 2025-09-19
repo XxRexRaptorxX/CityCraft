@@ -1,4 +1,4 @@
-// 1.21	2025-09-17T21:42:57.8353537	Loot Tables
+// 1.21	2025-09-19T19:34:03.6210631	Loot Tables
 7368a076406b45a92c20ce5eff9ad50e3450f5a1 data/citycraft/loot_table/blocks/0_sign.json
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_table/blocks/100_speed_eu_sign.json
 7a90e771f0880894a9b1aa172c8080bc9742350f data/citycraft/loot_table/blocks/10_minimum_speed_sign_eu.json
@@ -839,6 +839,7 @@ cf073886325f281ab26abd88b61e1f90f2b7d78a data/citycraft/loot_table/blocks/railro
 4285199feef75db998b2e6badfa83097b47ffd36 data/citycraft/loot_table/blocks/railway_countdown_marker_240_eu_sign.json
 398251de3c1f1909196e5d08e9dae5162bfd995d data/citycraft/loot_table/blocks/railway_countdown_marker_80_eu_sign.json
 3d524ed3d5d270c42b8fc1caa98b1c45bcc12a42 data/citycraft/loot_table/blocks/rectangle_sign.json
+fc07c52804f18fb521a26d16776b1f8a0484c214 data/citycraft/loot_table/blocks/redstone_pole.json
 d32726896d30d8c420a2ecc054f5f6dd79b14503 data/citycraft/loot_table/blocks/red_asphalt.json
 d54b0af2b734b1673a116708e95be2e8184aaee3 data/citycraft/loot_table/blocks/red_asphalt_slab.json
 64d0ba09a420f59117ea73c8ce9b99f4b14d9d7d data/citycraft/loot_table/blocks/red_bumper_slab.json

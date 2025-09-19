@@ -475,7 +475,8 @@ public class ModBlocks {
     public static final DeferredBlock<BumperSlab> YELLOW_BUMPER_SLAB = registerBlock("yellow_bumper_slab", BumperSlab::new);
     public static final DeferredBlock<BumperSlab> RED_BUMPER_SLAB = registerBlock("red_bumper_slab", BumperSlab::new);
 
-    public static final DeferredBlock<Block> IRON_POLE = registerBlock("iron_pole", PoleBlock::new);
+    public static final DeferredBlock<PoleBlock> IRON_POLE = registerBlock("iron_pole", PoleBlock::new);
+    public static final DeferredBlock<RedstonePoleBlock> REDSTONE_POLE = registerBlock("redstone_pole", RedstonePoleBlock::new);
     public static final DeferredBlock<PoleBlock> RED_POLE = registerBlock("red_pole", PoleBlock::new);
     public static final DeferredBlock<PoleBlock> WHITE_POLE = registerBlock("white_pole", PoleBlock::new);
     public static final DeferredBlock<PoleBlock> YELLOW_POLE = registerBlock("yellow_pole", PoleBlock::new);

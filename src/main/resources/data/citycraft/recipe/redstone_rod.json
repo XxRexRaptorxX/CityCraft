@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "#I#",
+    "#I#",
+    "#I#"
+  ],
+  "key": {
+    "#": [
+      {
+        "tag": "c:ingots/iron"
+      }
+    ],
+    "I": [
+      {
+        "tag": "c:dusts/redstone"
+      }
+    ]
+  },
+  "result": {
+    "id": "citycraft:redstone_pole",
+    "count": 6
+  }
+}

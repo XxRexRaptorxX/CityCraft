@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "citycraft:block/redstone_pole",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "citycraft:block/redstone_pole"
+    },
+    "axis=z": {
+      "model": "citycraft:block/redstone_pole",
+      "x": 90
+    }
+  }
+}

@@ -421,6 +421,7 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ASPHALT_WITH_YELLOW_SLASH_SLAB.get(), block -> createSlabItemTable(ModBlocks.ASPHALT_WITH_YELLOW_SLASH_SLAB.get()));
 
         this.dropSelf(ModBlocks.IRON_POLE.get());
+        this.dropSelf(ModBlocks.REDSTONE_POLE.get());
         this.dropSelf(ModBlocks.YELLOW_POLE.get());
         this.dropSelf(ModBlocks.BLACK_POLE.get());
         this.dropSelf(ModBlocks.WHITE_POLE.get());
