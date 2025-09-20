@@ -5,7 +5,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.properties.SlabType;
+import net.minecraft.world.level.block.state.properties.*;
+import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -17,6 +18,7 @@ import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Enums.LightPhase;
 import xxrexraptorxx.citycraft.utils.Enums.SignShape;
 import xxrexraptorxx.citycraft.utils.Helper;
+
 
 public class BlockStateGen extends BlockStateProvider {
 
@@ -1118,6 +1120,25 @@ public class BlockStateGen extends BlockStateProvider {
         makePressurePlateBlock(ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.get(), Blocks.PURPLE_CONCRETE);
         makePressurePlateBlock(ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.get(), Blocks.MAGENTA_CONCRETE);
         makePressurePlateBlock(ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get(), Blocks.PINK_CONCRETE);
+
+        makeLever(ModBlocks.WHITE_CONCRETE_LEVER.get(), Blocks.WHITE_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/white_concrete_lever"));
+        makeLever(ModBlocks.LIGHT_GRAY_CONCRETE_LEVER.get(), Blocks.LIGHT_GRAY_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/light_gray_concrete_lever"));
+        makeLever(ModBlocks.GRAY_CONCRETE_LEVER.get(), Blocks.GRAY_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/gray_concrete_lever"));
+        makeLever(ModBlocks.BLACK_CONCRETE_LEVER.get(), Blocks.BLACK_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/black_concrete_lever"));
+        makeLever(ModBlocks.BROWN_CONCRETE_LEVER.get(), Blocks.BROWN_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/brown_concrete_lever"));
+        makeLever(ModBlocks.RED_CONCRETE_LEVER.get(), Blocks.RED_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/red_concrete_lever"));
+        makeLever(ModBlocks.ORANGE_CONCRETE_LEVER.get(), Blocks.ORANGE_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/orange_concrete_lever"));
+        makeLever(ModBlocks.YELLOW_CONCRETE_LEVER.get(), Blocks.YELLOW_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/yellow_concrete_lever"));
+        makeLever(ModBlocks.LIME_CONCRETE_LEVER.get(), Blocks.LIME_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/lime_concrete_lever"));
+        makeLever(ModBlocks.GREEN_CONCRETE_LEVER.get(), Blocks.GREEN_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/green_concrete_lever"));
+        makeLever(ModBlocks.CYAN_CONCRETE_LEVER.get(), Blocks.CYAN_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/cyan_concrete_lever"));
+        makeLever(ModBlocks.LIGHT_BLUE_CONCRETE_LEVER.get(), Blocks.LIGHT_BLUE_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/light_blue_concrete_lever"));
+        makeLever(ModBlocks.BLUE_CONCRETE_LEVER.get(), Blocks.BLUE_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/blue_concrete_lever"));
+        makeLever(ModBlocks.PURPLE_CONCRETE_LEVER.get(), Blocks.PURPLE_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/purple_concrete_lever"));
+        makeLever(ModBlocks.MAGENTA_CONCRETE_LEVER.get(), Blocks.MAGENTA_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/magenta_concrete_lever"));
+        makeLever(ModBlocks.PINK_CONCRETE_LEVER.get(), Blocks.PINK_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/pink_concrete_lever"));
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1135,6 +1156,73 @@ public class BlockStateGen extends BlockStateProvider {
 
         simpleBlock(block, model);
         makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeLever(LeverBlock block, Block baseBlock, ResourceLocation leverTexture) {
+        String blockPath = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        ResourceLocation baseTexture = BuiltInRegistries.BLOCK.getKey(baseBlock);
+
+        BlockModelBuilder leverOffModel = models().withExistingParent(blockPath + "_off", mcLoc("block/lever"))
+                .texture("base", ResourceLocation.fromNamespaceAndPath(baseTexture.getNamespace(), "block/" + baseTexture.getPath())).texture("lever", leverTexture.toString())
+                .texture("particle", ResourceLocation.fromNamespaceAndPath(baseTexture.getNamespace(), "block/" + baseTexture.getPath()));
+
+        BlockModelBuilder leverOnModel = models().withExistingParent(blockPath + "_on", mcLoc("block/lever_on"))
+                .texture("base", ResourceLocation.fromNamespaceAndPath(baseTexture.getNamespace(), "block/" + baseTexture.getPath())).texture("lever", leverTexture.toString())
+                .texture("particle", ResourceLocation.fromNamespaceAndPath(baseTexture.getNamespace(), "block/" + baseTexture.getPath()));
+
+        EnumProperty<AttachFace> FACE = BlockStateProperties.ATTACH_FACE; // values: floor, wall, ceiling
+        DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING; // north,east,south,west
+        BooleanProperty POWERED = BlockStateProperties.POWERED;
+
+        getVariantBuilder(block).forAllStates(state -> {
+            boolean powered = state.getValue(POWERED);
+            AttachFace face = state.getValue(FACE);
+            Direction facing = state.getValue(FACING);
+
+            BlockModelBuilder modelFile = powered ? leverOnModel : leverOffModel;
+
+            int xRot = 0;
+            int yRot = 0;
+
+            switch (face) {
+                case FLOOR -> xRot = 0;
+                case CEILING -> xRot = 180;
+                case WALL -> xRot = 90;
+            }
+
+            switch (face) {
+                case FLOOR -> {
+                    yRot = switch (facing) {
+                        case NORTH -> 0;
+                        case EAST -> 90;
+                        case SOUTH -> 180;
+                        case WEST -> 270;
+                        default -> 0;
+                    };
+                }
+                case WALL -> {
+                    yRot = switch (facing) {
+                        case NORTH -> 0;
+                        case EAST -> 90;
+                        case SOUTH -> 180;
+                        case WEST -> 270;
+                        default -> 0;
+                    };
+                }
+                case CEILING -> {
+                    yRot = switch (facing) {
+                        case NORTH -> 180;
+                        case EAST -> 270;
+                        case SOUTH -> 0;
+                        case WEST -> 90;
+                        default -> 0;
+                    };
+                }
+            }
+
+            return ConfiguredModel.builder().modelFile(modelFile).rotationX(xRot).rotationY(yRot).uvLock(false).build();
+        });
     }
 
 

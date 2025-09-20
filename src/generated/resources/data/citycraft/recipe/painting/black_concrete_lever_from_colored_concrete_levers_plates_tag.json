@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_concrete_levers_plates"
+  },
+  "color": {
+    "tag": "c:dyes/black"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:black_concrete_lever"
+  }
+}

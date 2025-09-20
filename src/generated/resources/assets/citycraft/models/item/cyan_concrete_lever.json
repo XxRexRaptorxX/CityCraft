@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "citycraft:block/cyan_concrete_lever"
+  }
+}

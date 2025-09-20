@@ -215,6 +215,22 @@
     "citycraft:blue_concrete_slab",
     "citycraft:purple_concrete_slab",
     "citycraft:magenta_concrete_slab",
-    "citycraft:pink_concrete_slab"
+    "citycraft:pink_concrete_slab",
+    "citycraft:white_concrete_lever",
+    "citycraft:light_gray_concrete_lever",
+    "citycraft:gray_concrete_lever",
+    "citycraft:black_concrete_lever",
+    "citycraft:brown_concrete_lever",
+    "citycraft:red_concrete_lever",
+    "citycraft:orange_concrete_lever",
+    "citycraft:yellow_concrete_lever",
+    "citycraft:lime_concrete_lever",
+    "citycraft:green_concrete_lever",
+    "citycraft:cyan_concrete_lever",
+    "citycraft:light_blue_concrete_lever",
+    "citycraft:blue_concrete_lever",
+    "citycraft:purple_concrete_lever",
+    "citycraft:magenta_concrete_lever",
+    "citycraft:pink_concrete_lever"
   ]
 }

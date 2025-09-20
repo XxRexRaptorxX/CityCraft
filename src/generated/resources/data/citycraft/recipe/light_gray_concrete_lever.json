@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "tag": "c:rods/wooden"
+    },
+    "I": {
+      "item": "minecraft:light_gray_concrete"
+    }
+  },
+  "pattern": [
+    "I",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:light_gray_concrete_lever"
+  }
+}

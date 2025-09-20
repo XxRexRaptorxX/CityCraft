@@ -69,6 +69,23 @@ public class ItemModelGen extends ItemModelProvider {
 
         itemBlock(ModBlocks.RED_WHITE_BARRIER_TAPE);
         itemBlock(ModBlocks.YELLOW_BLACK_BARRIER_TAPE);
+
+        leverItem(ModBlocks.BLACK_CONCRETE_LEVER);
+        leverItem(ModBlocks.WHITE_CONCRETE_LEVER);
+        leverItem(ModBlocks.ORANGE_CONCRETE_LEVER);
+        leverItem(ModBlocks.MAGENTA_CONCRETE_LEVER);
+        leverItem(ModBlocks.LIGHT_BLUE_CONCRETE_LEVER);
+        leverItem(ModBlocks.YELLOW_CONCRETE_LEVER);
+        leverItem(ModBlocks.LIME_CONCRETE_LEVER);
+        leverItem(ModBlocks.PINK_CONCRETE_LEVER);
+        leverItem(ModBlocks.GRAY_CONCRETE_LEVER);
+        leverItem(ModBlocks.LIGHT_GRAY_CONCRETE_LEVER);
+        leverItem(ModBlocks.CYAN_CONCRETE_LEVER);
+        leverItem(ModBlocks.PURPLE_CONCRETE_LEVER);
+        leverItem(ModBlocks.BLUE_CONCRETE_LEVER);
+        leverItem(ModBlocks.BROWN_CONCRETE_LEVER);
+        leverItem(ModBlocks.GREEN_CONCRETE_LEVER);
+        leverItem(ModBlocks.RED_CONCRETE_LEVER);
     }
 
 
@@ -110,5 +127,11 @@ public class ItemModelGen extends ItemModelProvider {
     private void buttonItem(DeferredBlock<ButtonBlock> block, Block textureBlock) {
         this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/button_inventory")).texture("texture",
                 ResourceLocation.withDefaultNamespace("block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+    }
+
+
+    private void leverItem(DeferredBlock<LeverBlock> block) {
+        singleTexture(block.getId().getPath(), ResourceLocation.withDefaultNamespace(ITEM_FOLDER + "/generated"), "layer0",
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + block.getId().getPath()));
     }
 }

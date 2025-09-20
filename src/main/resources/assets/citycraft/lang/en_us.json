@@ -1077,5 +1077,21 @@
   "block.citycraft.blue_concrete_pressure_plate": "Blue Concrete Pressure Plate",
   "block.citycraft.brown_concrete_pressure_plate": "Brown Concrete Pressure Plate",
   "block.citycraft.green_concrete_pressure_plate": "Green Concrete Pressure Plate",
-  "block.citycraft.red_concrete_pressure_plate": "Red Concrete Pressure Plate"
+  "block.citycraft.red_concrete_pressure_plate": "Red Concrete Pressure Plate",
+  "block.citycraft.black_concrete_lever": "Black Concrete Lever",
+  "block.citycraft.white_concrete_lever": "White Concrete Lever",
+  "block.citycraft.orange_concrete_lever": "Orange Concrete Lever",
+  "block.citycraft.magenta_concrete_lever": "Magenta Concrete Lever",
+  "block.citycraft.light_blue_concrete_lever": "Light Blue Concrete Lever",
+  "block.citycraft.yellow_concrete_lever": "Yellow Concrete Lever",
+  "block.citycraft.lime_concrete_lever": "Lime Concrete Lever",
+  "block.citycraft.pink_concrete_lever": "Pink Concrete Lever",
+  "block.citycraft.gray_concrete_lever": "Gray Concrete Lever",
+  "block.citycraft.light_gray_concrete_lever": "Light Gray Concrete Lever",
+  "block.citycraft.cyan_concrete_lever": "Cyan Concrete Lever",
+  "block.citycraft.purple_concrete_lever": "Purple Concrete Lever",
+  "block.citycraft.blue_concrete_lever": "Blue Concrete Lever",
+  "block.citycraft.brown_concrete_lever": "Brown Concrete Lever",
+  "block.citycraft.green_concrete_lever": "Green Concrete Lever",
+  "block.citycraft.red_concrete_lever": "Red Concrete Lever"
 }

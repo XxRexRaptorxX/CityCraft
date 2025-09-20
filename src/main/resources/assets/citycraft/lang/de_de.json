@@ -1083,5 +1083,21 @@
   "block.citycraft.blue_concrete_pressure_plate": "Blaue Beton Druckplatte",
   "block.citycraft.brown_concrete_pressure_plate": "Braune Beton Druckplatte",
   "block.citycraft.green_concrete_pressure_plate": "Grüne Beton Druckplatte",
-  "block.citycraft.red_concrete_pressure_plate": "Rote Beton Druckplatte"
+  "block.citycraft.red_concrete_pressure_plate": "Rote Beton Druckplatte",
+  "block.citycraft.black_concrete_lever": "Schwarzer Beton Hebel",
+  "block.citycraft.white_concrete_lever": "Weißer Beton Hebel",
+  "block.citycraft.orange_concrete_lever": "Orangener Beton Hebel",
+  "block.citycraft.magenta_concrete_lever": "Magenta Beton Hebel",
+  "block.citycraft.light_blue_concrete_lever": "Hellblauer Beton Hebel",
+  "block.citycraft.yellow_concrete_lever": "Gelber Beton Hebel",
+  "block.citycraft.lime_concrete_lever": "Hellgrüner Beton Hebel",
+  "block.citycraft.pink_concrete_lever": "Rosa Beton Hebel",
+  "block.citycraft.gray_concrete_lever": "Grauer Beton Hebel",
+  "block.citycraft.light_gray_concrete_lever": "Hellblauer Beton Hebel",
+  "block.citycraft.cyan_concrete_lever": "Türkiser Beton Hebel",
+  "block.citycraft.purple_concrete_lever": "Lila Beton Hebel",
+  "block.citycraft.blue_concrete_lever": "Blauer Beton Hebel",
+  "block.citycraft.brown_concrete_lever": "Brauner Beton Hebel",
+  "block.citycraft.green_concrete_lever": "Grüner Beton Hebel",
+  "block.citycraft.red_concrete_lever": "Roter Beton Hebel"
 }
