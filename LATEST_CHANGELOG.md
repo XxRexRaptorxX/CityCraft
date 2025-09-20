@@ -1,7 +1,8 @@
-# [v.2.8.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.8.0-dev1...v.2.8.0-dev11)
+# [v.2.8.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.8.0-dev1...v.2.8.0-dev13)
 
 ## ✨ Features
 
+- Concrete Bricks added ([a231634](https://github.com/XxRexRaptorxX/CityCraft/commit/a23163476f5727b8cdceb330901e455f018c0a7c))
 - Concrete Levers added ([2ec29e8](https://github.com/XxRexRaptorxX/CityCraft/commit/2ec29e878d6a52196b6d411dbd3ee2240b33439e))
 - Concrete Pressure Plates added ([f0ee9f8](https://github.com/XxRexRaptorxX/CityCraft/commit/f0ee9f8f8bfa47e3e0e1260a727d1f42df540b66))
 - Concrete Buttons added ([26f6bb2](https://github.com/XxRexRaptorxX/CityCraft/commit/26f6bb22dc84ee1fa99e7f02b704ed589ec00993))
