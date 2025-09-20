@@ -1,7 +1,7 @@
 package xxrexraptorxx.citycraft.utils;
 
 import net.minecraft.core.registries.BuiltInRegistries;
-import xxrexraptorxx.citycraft.blocks.TrafficLightBlock;
+import net.minecraft.world.level.block.Block;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 
 public class Helper {
@@ -12,7 +12,7 @@ public class Helper {
     }
 
 
-    public static String getTrafficLightModelType(TrafficLightBlock block) {
+    public static String getTrafficLightModelType(Block block) {
         String blockName = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
         if (blockName.contains("triple")) {

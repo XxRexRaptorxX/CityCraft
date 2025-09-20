@@ -16,15 +16,15 @@ import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
-import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.utils.Enums.LightPhase;
 
 public class TrafficLightBlock extends HorizontalDirectionalBlock implements SimpleWaterloggedBlock {
@@ -43,9 +43,6 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
 
     private static final VoxelShape TRIPLE = Block.box(4.0D, 0.0D, 4.0D, 12.0D, 16.0D, 12.0D);
     private static final VoxelShape DOUBLE = Block.box(4.0D, 0.0D, 4.0D, 12.0D, 12.0D, 12.0D);
-    private static final VoxelShape SINGLE = Block.box(4.0D, 0.0D, 4.0D, 12.0D, 8.0D, 12.0D);
-    private static final VoxelShape SIDE_EAST_WEST = Block.box(4.0D, 0.0D, 0.0D, 12.0D, 8.0D, 16.0D);
-    private static final VoxelShape SIDE_NORTH_SOUTH = Block.box(0.0D, 0.0D, 4.0D, 16.0D, 8.0D, 12.0D);
 
     private final boolean constructorInverted;
 
@@ -53,22 +50,22 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         super(properties);
         this.constructorInverted = inverted;
 
-        this.registerDefaultState(this.stateDefinition.any()
-                .setValue(FACING, Direction.NORTH)
-                .setValue(PHASE, calculatePhaseFromWorldTime(0, Direction.NORTH, inverted))
-                .setValue(POWERED, false)
-                .setValue(WATERLOGGED, false));
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(PHASE, calculatePhaseFromWorldTime(0, Direction.NORTH, inverted))
+                .setValue(POWERED, false).setValue(WATERLOGGED, false));
     }
+
 
     @Override
     protected MapCodec<? extends TrafficLightBlock> codec() {
         return CODEC;
     }
 
+
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING, PHASE, POWERED, WATERLOGGED);
     }
+
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
@@ -79,12 +76,10 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
 
         LightPhase initialPhase = calculatePhaseFromWorldTime(context.getLevel().getGameTime(), facing, constructorInverted);
 
-        return this.defaultBlockState()
-                .setValue(FACING, facing)
-                .setValue(PHASE, powered ? LightPhase.RED : initialPhase)
-                .setValue(POWERED, powered)
-                .setValue(WATERLOGGED, waterlogged);
+        return this.defaultBlockState().setValue(FACING, facing).setValue(PHASE, powered ? LightPhase.RED : initialPhase).setValue(POWERED, powered).setValue(WATERLOGGED,
+                waterlogged);
     }
+
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
@@ -94,22 +89,17 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
             return TRIPLE;
         } else if (blockName.contains("double")) {
             return DOUBLE;
-        } else if (this == ModBlocks.SIGNAL_LIGHT.get() || this == ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get()) {
-            return SINGLE;
         } else {
-            // SIDE
-            if (state.getValue(FACING) == Direction.NORTH || state.getValue(FACING) == Direction.SOUTH) {
-                return SIDE_NORTH_SOUTH;
-            } else {
-                return SIDE_EAST_WEST;
-            }
+            return Shapes.block();
         }
     }
+
 
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
+
 
     @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
@@ -118,6 +108,7 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         }
         return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
     }
+
 
     @Override
     public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
@@ -139,9 +130,9 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         super.onPlace(state, level, pos, oldState, isMoving);
     }
 
+
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        // Redstone-Check
         boolean powered = level.hasNeighborSignal(pos);
         boolean wasPowered = state.getValue(POWERED);
 
@@ -153,7 +144,6 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
             level.setBlock(pos, newState, Block.UPDATE_ALL);
 
             if (!powered) {
-                // Synchronisiere wieder mit Weltzeit
                 long worldTime = level.getGameTime();
                 Direction facing = state.getValue(FACING);
                 LightPhase correctPhase = calculatePhaseFromWorldTime(worldTime, facing, constructorInverted);
@@ -166,7 +156,6 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
             return;
         }
 
-        // Normale Phasenschaltung nur wenn nicht powered
         if (!powered) {
             long worldTime = level.getGameTime();
             Direction facing = state.getValue(FACING);
@@ -175,11 +164,11 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
             BlockState newState = state.setValue(PHASE, correctPhase);
             level.setBlock(pos, newState, Block.UPDATE_ALL);
 
-            // Nächsten Tick planen - immer zum nächsten Phasenwechsel
             int ticksUntilNextPhase = calculateTicksUntilNextPhase(worldTime, facing, constructorInverted);
             level.scheduleTick(pos, this, ticksUntilNextPhase);
         }
     }
+
 
     @Override
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
@@ -195,10 +184,8 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
                 level.setBlock(pos, newState, Block.UPDATE_ALL);
 
                 if (powered) {
-                    // Stoppe alle geplanten Ticks
                     level.getBlockTicks().willTickThisTick(pos, this);
                 } else {
-                    // Synchronisiere wieder mit Weltzeit
                     long worldTime = level.getGameTime();
                     Direction facing = state.getValue(FACING);
                     LightPhase correctPhase = calculatePhaseFromWorldTime(worldTime, facing, constructorInverted);
@@ -212,10 +199,12 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         }
     }
 
+
     @Override
     public boolean hasAnalogOutputSignal(BlockState state) {
         return true;
     }
+
 
     @Override
     public int getAnalogOutputSignal(BlockState state, Level level, BlockPos pos) {
@@ -232,15 +221,8 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         };
     }
 
-    /**
-     * Berechnet die aktuelle Phase basierend auf der Weltzeit
-     * @param worldTime Aktuelle Weltzeit
-     * @param facing Richtung des Blocks
-     * @param constructorInverted Zusätzliche Invertierung aus dem Konstruktor
-     * @return Die berechnete Phase
-     */
+
     private LightPhase calculatePhaseFromWorldTime(long worldTime, Direction facing, boolean constructorInverted) {
-        // Basis-Phasenberechnung ohne Invertierung
         long cycleTime = worldTime % TOTAL_CYCLE_DURATION;
 
         LightPhase basePhase;
@@ -254,13 +236,11 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
             basePhase = LightPhase.YELLOW;
         }
 
-        // Anwenden der Rotations-basierten Invertierung
         boolean rotationInverted = isOppositeDirection(facing);
         if (rotationInverted) {
             basePhase = invertPhase(basePhase);
         }
 
-        // Anwenden der Konstruktor-basierten Invertierung
         if (constructorInverted) {
             basePhase = invertPhase(basePhase);
         }
@@ -268,9 +248,7 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         return basePhase;
     }
 
-    /**
-     * Berechnet wie viele Ticks bis zur nächsten Phase vergehen
-     */
+
     private int calculateTicksUntilNextPhase(long worldTime, Direction facing, boolean constructorInverted) {
         long cycleTime = worldTime % TOTAL_CYCLE_DURATION;
 
@@ -288,6 +266,7 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         return Math.max(1, ticksInCurrentPhase);
     }
 
+
     private LightPhase invertPhase(LightPhase phase) {
         return switch (phase) {
             case RED -> LightPhase.GREEN;
@@ -297,14 +276,11 @@ public class TrafficLightBlock extends HorizontalDirectionalBlock implements Sim
         };
     }
 
-    /**
-     * Prüft ob die Richtung eine "gegenüberliegende" Richtung ist
-     * NORTH/SOUTH sind ein Paar, EAST/WEST sind ein Paar
-     * SOUTH und WEST werden als "gegenüberliegend" betrachtet
-     */
+
     private boolean isOppositeDirection(Direction facing) {
         return facing == Direction.SOUTH || facing == Direction.WEST;
     }
+
 
     @Override
     public boolean canConnectRedstone(BlockState state, BlockGetter level, BlockPos pos, @Nullable Direction direction) {

@@ -909,20 +909,21 @@ public class BlockStateGen extends BlockStateProvider {
 
         trafficLights(ModBlocks.BICYCLE_DOUBLE_TRAFFIC_LIGHT.get());
         trafficLights(ModBlocks.BICYCLE_TRIPLE_TRAFFIC_LIGHT.get());
-        //trafficLights(ModBlocks.DANGER_SIGNAL_LIGHT.get());
         trafficLights(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
         trafficLights(ModBlocks.LEFT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
         trafficLights(ModBlocks.LEFT_TURN_TRIPLE_TRAFFIC_LIGHT.get());
         trafficLights(ModBlocks.PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT.get());
-        //trafficLights(ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get());
         trafficLights(ModBlocks.PEDESTRIAN_TRIPLE_TRAFFIC_LIGHT.get());
         trafficLights(ModBlocks.RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT.get());
         trafficLights(ModBlocks.RIGHT_TURN_TRIPLE_TRAFFIC_LIGHT.get());
-        //trafficLights(ModBlocks.SIGNAL_LIGHT.get());
         trafficLights(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
         trafficLights(ModBlocks.STRAIGHT_TRIPLE_TRAFFIC_LIGHT.get());
-        //trafficLights(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
         trafficLights(ModBlocks.TRIPLE_TRAFFIC_LIGHT.get());
+
+        signalLights(ModBlocks.DANGER_SIGNAL_LIGHT.get());
+        signalLights(ModBlocks.PEDESTRIAN_SIGNAL_LIGHT.get());
+        signalLights(ModBlocks.SIGNAL_LIGHT.get());
+        signalLights(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
 
         customLamp(ModBlocks.BLACK_LAMP.get());
         customLamp(ModBlocks.WHITE_LAMP.get());
@@ -1411,14 +1412,13 @@ public class BlockStateGen extends BlockStateProvider {
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
         String modelType = Helper.getTrafficLightModelType(block);
 
-        ModelFile model_red = models().withExistingParent(blockTexture + "_red", References.MODID + ":block/" + modelType)
-                .texture("texture", "block/" + blockTexture + "_red");
-        ModelFile model_red_yellow = models().withExistingParent(blockTexture + "_yellow_red", References.MODID + ":block/" + modelType)
-                .texture("texture", "block/" + blockTexture + "_yellow_red");
-        ModelFile model_green = models().withExistingParent(blockTexture + "_green", References.MODID + ":block/" + modelType)
-                .texture("texture", "block/" + blockTexture + "_green");
-        ModelFile model_yellow = models().withExistingParent(blockTexture + "_yellow", References.MODID + ":block/" + modelType)
-                .texture("texture", "block/" + blockTexture + "_yellow");
+        ModelFile model_red = models().withExistingParent(blockTexture + "_red", References.MODID + ":block/" + modelType).texture("texture", "block/" + blockTexture + "_red");
+        ModelFile model_red_yellow = models().withExistingParent(blockTexture + "_yellow_red", References.MODID + ":block/" + modelType).texture("texture",
+                "block/" + blockTexture + "_yellow_red");
+        ModelFile model_green = models().withExistingParent(blockTexture + "_green", References.MODID + ":block/" + modelType).texture("texture",
+                "block/" + blockTexture + "_green");
+        ModelFile model_yellow = models().withExistingParent(blockTexture + "_yellow", References.MODID + ":block/" + modelType).texture("texture",
+                "block/" + blockTexture + "_yellow");
 
         getVariantBuilder(block).forAllStates(state -> {
             LightPhase phase = state.getValue(TrafficLightBlock.PHASE);
@@ -1458,14 +1458,54 @@ public class BlockStateGen extends BlockStateProvider {
                 };
             }
 
-            return ConfiguredModel.builder()
-                    .modelFile(selectedModel)
-                    .rotationX(x)
-                    .rotationY(y)
-                    .build();
+            return ConfiguredModel.builder().modelFile(selectedModel).rotationX(x).rotationY(y).build();
         });
 
         itemModels().withExistingParent(blockTexture, References.MODID + ":block/" + blockTexture + "_green");
+    }
+
+    private void signalLights(SignalLightBlock block) {
+        String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        String modelType = Helper.getTrafficLightModelType(block);
+
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + modelType)
+                .texture("texture", "block/" + blockTexture);
+        ModelFile model_off = models().withExistingParent(blockTexture + "_off", References.MODID + ":block/" + modelType)
+                .texture("texture", "block/" + blockTexture + "_off");
+
+        getVariantBuilder(block)
+                .forAllStates(state -> {
+
+                    Boolean lit = state.getValue(VariableTrafficSignBlock.LIT);
+                    Direction dir = state.getValue(VariableTrafficSignBlock.FACING);
+                    int x = 0;
+                    int y = 0;
+
+                    switch (dir) {
+                        case EAST:
+                            y = 270;
+                            break;
+                        case NORTH:
+                            y = 180;
+                            break;
+                        case SOUTH:
+                            break;
+                        case WEST:
+                            y = 90;
+                            break;
+                        default:
+                            break;
+                    }
+
+
+                    return ConfiguredModel.builder()
+                            .modelFile(lit == true ? model : model_off)
+                            .rotationX(x)
+                            .rotationY(y)
+                            .build();
+                });
+
+        makeBlockItemFromExistingModel(block);
     }
 }
 

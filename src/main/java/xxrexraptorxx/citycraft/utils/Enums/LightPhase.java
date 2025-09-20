@@ -14,10 +14,12 @@ public enum LightPhase implements StringRepresentable {
         this.name = name;
     }
 
+
     @Override
     public String getSerializedName() {
         return this.name;
     }
+
 
     @Override
     public String toString() {

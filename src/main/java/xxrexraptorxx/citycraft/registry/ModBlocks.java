@@ -1028,22 +1028,34 @@ public class ModBlocks {
     public static final DeferredBlock<VariableTrafficSignBlock> VARIABLE_TRAFFIC_SIGN_SLIPPERINESS = registerBlock("variable_traffic_sign_slipperiness",
             VariableTrafficSignBlock::new);
 
-    public static final DeferredBlock<TrafficLightBlock> BICYCLE_DOUBLE_TRAFFIC_LIGHT = registerBlock("bicycle_double_traffic_light", () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
-    public static final DeferredBlock<TrafficLightBlock> BICYCLE_TRIPLE_TRAFFIC_LIGHT = registerBlock("bicycle_triple_traffic_light", () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
-    public static final DeferredBlock<Block> DANGER_SIGNAL_LIGHT = registerBlock("danger_signal_light", () -> new Block(BlockBehaviour.Properties.of()));
-    public static final DeferredBlock<TrafficLightBlock> DOUBLE_TRAFFIC_LIGHT = registerBlock("double_traffic_light", () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
-    public static final DeferredBlock<TrafficLightBlock> LEFT_TURN_DOUBLE_TRAFFIC_LIGHT = registerBlock("left_turn_double_traffic_light", () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
-    public static final DeferredBlock<TrafficLightBlock> LEFT_TURN_TRIPLE_TRAFFIC_LIGHT = registerBlock("left_turn_triple_traffic_light",  () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
-    public static final DeferredBlock<TrafficLightBlock> PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT = registerBlock("pedestrian_double_traffic_light", () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
-    public static final DeferredBlock<Block> PEDESTRIAN_SIGNAL_LIGHT = registerBlock("pedestrian_signal_light", () -> new Block(BlockBehaviour.Properties.of()));
-    public static final DeferredBlock<TrafficLightBlock> PEDESTRIAN_TRIPLE_TRAFFIC_LIGHT = registerBlock("pedestrian_triple_traffic_light",  () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
-    public static final DeferredBlock<TrafficLightBlock> RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT = registerBlock("right_turn_double_traffic_light", () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
-    public static final DeferredBlock<TrafficLightBlock> RIGHT_TURN_TRIPLE_TRAFFIC_LIGHT = registerBlock("right_turn_triple_traffic_light", () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
-    public static final DeferredBlock<Block> SIGNAL_LIGHT = registerBlock("signal_light", () -> new Block(BlockBehaviour.Properties.of()));
-    public static final DeferredBlock<TrafficLightBlock> STRAIGHT_DOUBLE_TRAFFIC_LIGHT = registerBlock("straight_double_traffic_light", () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
-    public static final DeferredBlock<TrafficLightBlock> STRAIGHT_TRIPLE_TRAFFIC_LIGHT = registerBlock("straight_triple_traffic_light", () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
-    public static final DeferredBlock<Block> TRAIN_SIGNAL_LIGHT = registerBlock("train_signal_light", () -> new Block(BlockBehaviour.Properties.of()));
-    public static final DeferredBlock<TrafficLightBlock> TRIPLE_TRAFFIC_LIGHT = registerBlock("triple_traffic_light",  () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
+    public static final DeferredBlock<TrafficLightBlock> BICYCLE_DOUBLE_TRAFFIC_LIGHT = registerBlock("bicycle_double_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
+    public static final DeferredBlock<TrafficLightBlock> BICYCLE_TRIPLE_TRAFFIC_LIGHT = registerBlock("bicycle_triple_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
+    public static final DeferredBlock<SignalLightBlock> DANGER_SIGNAL_LIGHT = registerBlock("danger_signal_light", () -> new SignalLightBlock(BlockBehaviour.Properties.of()));
+    public static final DeferredBlock<TrafficLightBlock> DOUBLE_TRAFFIC_LIGHT = registerBlock("double_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
+    public static final DeferredBlock<TrafficLightBlock> LEFT_TURN_DOUBLE_TRAFFIC_LIGHT = registerBlock("left_turn_double_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
+    public static final DeferredBlock<TrafficLightBlock> LEFT_TURN_TRIPLE_TRAFFIC_LIGHT = registerBlock("left_turn_triple_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
+    public static final DeferredBlock<TrafficLightBlock> PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT = registerBlock("pedestrian_double_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
+    public static final DeferredBlock<SignalLightBlock> PEDESTRIAN_SIGNAL_LIGHT = registerBlock("pedestrian_signal_light", () -> new SignalLightBlock(BlockBehaviour.Properties.of()));
+    public static final DeferredBlock<TrafficLightBlock> PEDESTRIAN_TRIPLE_TRAFFIC_LIGHT = registerBlock("pedestrian_triple_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
+    public static final DeferredBlock<TrafficLightBlock> RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT = registerBlock("right_turn_double_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
+    public static final DeferredBlock<TrafficLightBlock> RIGHT_TURN_TRIPLE_TRAFFIC_LIGHT = registerBlock("right_turn_triple_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
+    public static final DeferredBlock<SignalLightBlock> SIGNAL_LIGHT = registerBlock("signal_light", () -> new SignalLightBlock(BlockBehaviour.Properties.of()));
+    public static final DeferredBlock<TrafficLightBlock> STRAIGHT_DOUBLE_TRAFFIC_LIGHT = registerBlock("straight_double_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
+    public static final DeferredBlock<TrafficLightBlock> STRAIGHT_TRIPLE_TRAFFIC_LIGHT = registerBlock("straight_triple_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
+    public static final DeferredBlock<SignalLightBlock> TRAIN_SIGNAL_LIGHT = registerBlock("train_signal_light", () -> new SignalLightBlock(BlockBehaviour.Properties.of()));
+    public static final DeferredBlock<TrafficLightBlock> TRIPLE_TRAFFIC_LIGHT = registerBlock("triple_traffic_light",
+            () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
 
     public static final DeferredBlock<RedstoneLampBlock> BLACK_LAMP = registerBlock("black_lamp",
             () -> new RedstoneLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_LAMP).mapColor(DyeColor.BLACK)));

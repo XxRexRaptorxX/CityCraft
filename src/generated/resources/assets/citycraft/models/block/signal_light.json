@@ -1,0 +1,6 @@
+{
+  "parent": "citycraft:block/traffic_lights",
+  "textures": {
+    "texture": "citycraft:block/signal_light"
+  }
+}
