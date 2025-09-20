@@ -1,7 +1,8 @@
-# [v.2.8.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.8.0-dev1...v.2.8.0-dev9)
+# [v.2.8.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.8.0-dev1...v.2.8.0-dev10)
 
 ## ✨ Features
 
+- Concrete Levers added ([2ec29e8](https://github.com/XxRexRaptorxX/CityCraft/commit/2ec29e878d6a52196b6d411dbd3ee2240b33439e))
 - Concrete Pressure Plates added ([f0ee9f8](https://github.com/XxRexRaptorxX/CityCraft/commit/f0ee9f8f8bfa47e3e0e1260a727d1f42df540b66))
 - Concrete Buttons added ([26f6bb2](https://github.com/XxRexRaptorxX/CityCraft/commit/26f6bb22dc84ee1fa99e7f02b704ed589ec00993))
 - Signal Lights improved! They now have different block states depending on their state and can be controlled and read by redstone. ([1bddca2](https://github.com/XxRexRaptorxX/CityCraft/commit/1bddca234f0ba1c6bbae17ce992d7ac4d8afb0d9))
