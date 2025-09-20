@@ -1099,5 +1099,21 @@
   "block.citycraft.blue_concrete_lever": "Blauer Beton Hebel",
   "block.citycraft.brown_concrete_lever": "Brauner Beton Hebel",
   "block.citycraft.green_concrete_lever": "Grüner Beton Hebel",
-  "block.citycraft.red_concrete_lever": "Roter Beton Hebel"
+  "block.citycraft.red_concrete_lever": "Roter Beton Hebel",
+  "block.citycraft.black_concrete_bricks": "Schwarze Betonziegel",
+  "block.citycraft.white_concrete_bricks": "Weiße Betonziegel",
+  "block.citycraft.orange_concrete_bricks": "Orangene Betonziegel",
+  "block.citycraft.magenta_concrete_bricks": "Magenta Betonziegel",
+  "block.citycraft.light_blue_concrete_bricks": "Hellblaue Betonziegel",
+  "block.citycraft.yellow_concrete_bricks": "Gelbe Betonziegel",
+  "block.citycraft.lime_concrete_bricks": "Hellgrüne Betonziegel",
+  "block.citycraft.pink_concrete_bricks": "Rosane Betonziegel",
+  "block.citycraft.gray_concrete_bricks": "Graue Betonziegel",
+  "block.citycraft.light_gray_concrete_bricks": "Hellblaue Betonziegel",
+  "block.citycraft.cyan_concrete_bricks": "Türkise Betonziegel",
+  "block.citycraft.purple_concrete_bricks": "Lila Betonziegel",
+  "block.citycraft.blue_concrete_bricks": "Blaue Betonziegel",
+  "block.citycraft.brown_concrete_bricks": "Braune Betonziegel",
+  "block.citycraft.green_concrete_bricks": "Grüne Betonziegel",
+  "block.citycraft.red_concrete_bricks": "Rote Betonziegel"
 }

@@ -1093,5 +1093,21 @@
   "block.citycraft.blue_concrete_lever": "Blue Concrete Lever",
   "block.citycraft.brown_concrete_lever": "Brown Concrete Lever",
   "block.citycraft.green_concrete_lever": "Green Concrete Lever",
-  "block.citycraft.red_concrete_lever": "Red Concrete Lever"
+  "block.citycraft.red_concrete_lever": "Red Concrete Lever",
+  "block.citycraft.black_concrete_bricks": "Black Concrete Bricks",
+  "block.citycraft.white_concrete_bricks": "White Concrete Bricks",
+  "block.citycraft.orange_concrete_bricks": "Orange Concrete Bricks",
+  "block.citycraft.magenta_concrete_bricks": "Magenta Concrete Bricks",
+  "block.citycraft.light_blue_concrete_bricks": "Light Blue Concrete Bricks",
+  "block.citycraft.yellow_concrete_bricks": "Yellow Concrete Bricks",
+  "block.citycraft.lime_concrete_bricks": "Lime Concrete Bricks",
+  "block.citycraft.pink_concrete_bricks": "Pink Concrete Bricks",
+  "block.citycraft.gray_concrete_bricks": "Gray Concrete Bricks",
+  "block.citycraft.light_gray_concrete_bricks": "Light Gray Concrete Bricks",
+  "block.citycraft.cyan_concrete_bricks": "Cyan Concrete Bricks",
+  "block.citycraft.purple_concrete_bricks": "Purple Concrete Bricks",
+  "block.citycraft.blue_concrete_bricks": "Blue Concrete Bricks",
+  "block.citycraft.brown_concrete_bricks": "Brown Concrete Bricks",
+  "block.citycraft.green_concrete_bricks": "Green Concrete Bricks",
+  "block.citycraft.red_concrete_bricks": "Red Concrete Bricks"
 }

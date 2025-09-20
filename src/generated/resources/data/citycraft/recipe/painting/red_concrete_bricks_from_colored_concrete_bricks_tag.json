@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_concrete_bricks"
+  },
+  "color": {
+    "tag": "c:dyes/red"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:red_concrete_bricks"
+  }
+}

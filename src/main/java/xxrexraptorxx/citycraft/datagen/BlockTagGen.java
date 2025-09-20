@@ -416,7 +416,11 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.BLACK_CONCRETE_LEVER.get(), ModBlocks.BROWN_CONCRETE_LEVER.get(), ModBlocks.RED_CONCRETE_LEVER.get(), ModBlocks.ORANGE_CONCRETE_LEVER.get(),
                 ModBlocks.YELLOW_CONCRETE_LEVER.get(), ModBlocks.LIME_CONCRETE_LEVER.get(), ModBlocks.GREEN_CONCRETE_LEVER.get(), ModBlocks.CYAN_CONCRETE_LEVER.get(),
                 ModBlocks.LIGHT_BLUE_CONCRETE_LEVER.get(), ModBlocks.BLUE_CONCRETE_LEVER.get(), ModBlocks.PURPLE_CONCRETE_LEVER.get(), ModBlocks.MAGENTA_CONCRETE_LEVER.get(),
-                ModBlocks.PINK_CONCRETE_LEVER.get());
+                ModBlocks.PINK_CONCRETE_LEVER.get(), ModBlocks.WHITE_CONCRETE_BRICKS.get(), ModBlocks.LIGHT_GRAY_CONCRETE_BRICKS.get(), ModBlocks.GRAY_CONCRETE_BRICKS.get(),
+                ModBlocks.BLACK_CONCRETE_BRICKS.get(), ModBlocks.BROWN_CONCRETE_BRICKS.get(), ModBlocks.RED_CONCRETE_BRICKS.get(), ModBlocks.ORANGE_CONCRETE_BRICKS.get(),
+                ModBlocks.YELLOW_CONCRETE_BRICKS.get(), ModBlocks.LIME_CONCRETE_BRICKS.get(), ModBlocks.GREEN_CONCRETE_BRICKS.get(), ModBlocks.CYAN_CONCRETE_BRICKS.get(),
+                ModBlocks.LIGHT_BLUE_CONCRETE_BRICKS.get(), ModBlocks.BLUE_CONCRETE_BRICKS.get(), ModBlocks.PURPLE_CONCRETE_BRICKS.get(), ModBlocks.MAGENTA_CONCRETE_BRICKS.get(),
+                ModBlocks.PINK_CONCRETE_BRICKS.get());
 
         tag(BlockTags.FENCES).add(ModBlocks.IRON_FENCE.get());
 

@@ -1367,6 +1367,23 @@ public class CreativeTabs {
                         output.accept(ModBlocks.CHISELED_MAGENTA_CONCRETE.get());
                         output.accept(ModBlocks.CHISELED_PINK_CONCRETE.get());
 
+                        output.accept(ModBlocks.WHITE_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.GRAY_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.BLACK_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.BROWN_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.RED_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.ORANGE_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.YELLOW_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.LIME_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.GREEN_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.CYAN_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.BLUE_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.PURPLE_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.MAGENTA_CONCRETE_BRICKS.get());
+                        output.accept(ModBlocks.PINK_CONCRETE_BRICKS.get());
+
                         output.accept(ModBlocks.WHITE_CONCRETE_PILLAR.get());
                         output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get());
                         output.accept(ModBlocks.GRAY_CONCRETE_PILLAR.get());

@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_concrete_levers"
+  },
+  "color": {
+    "tag": "c:dyes/brown"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:brown_concrete_lever"
+  }
+}

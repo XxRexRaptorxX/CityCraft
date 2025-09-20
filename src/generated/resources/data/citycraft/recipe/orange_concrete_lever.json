@@ -3,10 +3,10 @@
   "category": "redstone",
   "key": {
     "#": {
-      "tag": "c:rods/wooden"
+      "item": "minecraft:orange_concrete"
     },
     "I": {
-      "item": "minecraft:orange_concrete"
+      "tag": "c:rods/wooden"
     }
   },
   "pattern": [
