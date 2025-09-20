@@ -230,6 +230,7 @@ afterEvaluate {
         failSilently = true
         syncBodyFrom = rootProject.file("README.md").text
         dependencies {
+            optional.project "the-lost-cities"
             optional.project "moremcmeta-emissive"
             optional.project "continuity"
             optional.project "mekanism"
