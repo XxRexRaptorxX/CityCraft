@@ -1040,6 +1040,22 @@
     "citycraft:blue_concrete_button",
     "citycraft:purple_concrete_button",
     "citycraft:magenta_concrete_button",
-    "citycraft:pink_concrete_button"
+    "citycraft:pink_concrete_button",
+    "citycraft:white_concrete_pressure_plate",
+    "citycraft:light_gray_concrete_pressure_plate",
+    "citycraft:gray_concrete_pressure_plate",
+    "citycraft:black_concrete_pressure_plate",
+    "citycraft:brown_concrete_pressure_plate",
+    "citycraft:red_concrete_pressure_plate",
+    "citycraft:orange_concrete_pressure_plate",
+    "citycraft:yellow_concrete_pressure_plate",
+    "citycraft:lime_concrete_pressure_plate",
+    "citycraft:green_concrete_pressure_plate",
+    "citycraft:cyan_concrete_pressure_plate",
+    "citycraft:light_blue_concrete_pressure_plate",
+    "citycraft:blue_concrete_pressure_plate",
+    "citycraft:purple_concrete_pressure_plate",
+    "citycraft:magenta_concrete_pressure_plate",
+    "citycraft:pink_concrete_pressure_plate"
   ]
 }

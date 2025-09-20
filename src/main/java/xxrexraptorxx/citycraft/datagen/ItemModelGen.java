@@ -106,6 +106,7 @@ public class ItemModelGen extends ItemModelProvider {
                 ResourceLocation.withDefaultNamespace("block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
 
+
     private void buttonItem(DeferredBlock<ButtonBlock> block, Block textureBlock) {
         this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/button_inventory")).texture("texture",
                 ResourceLocation.withDefaultNamespace("block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));

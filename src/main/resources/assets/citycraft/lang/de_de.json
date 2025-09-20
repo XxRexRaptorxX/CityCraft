@@ -1067,5 +1067,21 @@
   "block.citycraft.blue_concrete_button": "Blauer Beton Knopf",
   "block.citycraft.brown_concrete_button": "Brauner Beton Knopf",
   "block.citycraft.green_concrete_button": "Grüner Beton Knopf",
-  "block.citycraft.red_concrete_button": "Roter Beton Knopf"
+  "block.citycraft.red_concrete_button": "Roter Beton Knopf",
+  "block.citycraft.black_concrete_pressure_plate": "Schwarze Beton Druckplatte",
+  "block.citycraft.white_concrete_pressure_plate": "Weiße Beton Druckplatte",
+  "block.citycraft.orange_concrete_pressure_plate": "Orangene Beton Druckplatte",
+  "block.citycraft.magenta_concrete_pressure_plate": "Magenta Beton Druckplatte",
+  "block.citycraft.light_blue_concrete_pressure_plate": "Hellblaue Beton Druckplatte",
+  "block.citycraft.yellow_concrete_pressure_plate": "Gelbe Beton Druckplatte",
+  "block.citycraft.lime_concrete_pressure_plate": "Hellgrüne Beton Druckplatte",
+  "block.citycraft.pink_concrete_pressure_plate": "Rosane Beton Druckplatte",
+  "block.citycraft.gray_concrete_pressure_plate": "Graue Beton Druckplatte",
+  "block.citycraft.light_gray_concrete_pressure_plate": "Hellblaue Beton Druckplatte",
+  "block.citycraft.cyan_concrete_pressure_plate": "Türkise Beton Druckplatte",
+  "block.citycraft.purple_concrete_pressure_plate": "Lila Beton Druckplatte",
+  "block.citycraft.blue_concrete_pressure_plate": "Blaue Beton Druckplatte",
+  "block.citycraft.brown_concrete_pressure_plate": "Braune Beton Druckplatte",
+  "block.citycraft.green_concrete_pressure_plate": "Grüne Beton Druckplatte",
+  "block.citycraft.red_concrete_pressure_plate": "Rote Beton Druckplatte"
 }

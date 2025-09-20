@@ -1,7 +1,8 @@
-// 1.21	2025-09-20T15:49:02.6567137	Tags for minecraft:block mod id citycraft
+// 1.21	2025-09-20T16:21:08.7087258	Tags for minecraft:block mod id citycraft
 e8d66ce405b77a4bb3aec9e83ead54e139c39191 data/minecraft/tags/block/buttons.json
 94ba0098c5aced5815411f47a64a017f29885004 data/minecraft/tags/block/fences.json
-2dac22ba729692c3f83edece1cda2ec4bb54f930 data/minecraft/tags/block/mineable/pickaxe.json
+70726a78ed92e01b8acebaca348b2866e5db2784 data/minecraft/tags/block/mineable/pickaxe.json
+22cbfab1e3d8cdb0463729cb21431599d47fe44a data/minecraft/tags/block/pressure_plates.json
 4cf295279d81ef22e84cd86d7daf4a870c454877 data/minecraft/tags/block/slabs.json
 ca9f3a6932e4bdec18c49fabef17ccd3c5311914 data/minecraft/tags/block/stairs.json
 9358f50b1d078facbaba4686e68982789fb3d438 data/minecraft/tags/block/walls.json

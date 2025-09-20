@@ -2153,6 +2153,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.BROWN_CONCRETE_BUTTON.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_BROWN, output);
         paintingRecipes(ModBlocks.GREEN_CONCRETE_BUTTON.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_GREEN, output);
         paintingRecipes(ModBlocks.RED_CONCRETE_BUTTON.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_RED, output);
+
+        pressurePlateRecipes(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.get(), Blocks.WHITE_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.get(), Blocks.GRAY_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE.get(), Blocks.BLACK_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE.get(), Blocks.BROWN_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.RED_CONCRETE_PRESSURE_PLATE.get(), Blocks.RED_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.get(), Blocks.ORANGE_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.get(), Blocks.YELLOW_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.get(), Blocks.LIME_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.get(), Blocks.GREEN_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.get(), Blocks.CYAN_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.get(), Blocks.BLUE_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.get(), Blocks.PURPLE_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.get(), Blocks.MAGENTA_CONCRETE, output);
+        pressurePlateRecipes(ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get(), Blocks.PINK_CONCRETE, output);
+
+        paintingRecipes(ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.RED_CONCRETE_PRESSURE_PLATE.get(), ModTags.COLORED_CONCRETE_BUTTONS_TAG, Tags.Items.DYES_RED, output);
     }
 
     private static final String STONE_CUTTING_PATH = References.MODID + ":stonecutting/";
@@ -2181,6 +2215,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     protected static void buttonRecipes(Block result, Block input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, result, 1).pattern("#").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
+    }
+
+
+    protected static void pressurePlateRecipes(Block result, Block input, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, result, 1).pattern("##").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
     }
 
 

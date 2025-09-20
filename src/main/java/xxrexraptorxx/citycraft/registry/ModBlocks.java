@@ -1403,6 +1403,55 @@ public class ModBlocks {
     public static final DeferredBlock<ButtonBlock> RED_CONCRETE_BUTTON = registerBlock("red_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
             BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
+    public static final DeferredBlock<PressurePlateBlock> BLACK_CONCRETE_PRESSURE_PLATE = registerBlock("black_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> WHITE_CONCRETE_PRESSURE_PLATE = registerBlock("white_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> ORANGE_CONCRETE_PRESSURE_PLATE = registerBlock("orange_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> MAGENTA_CONCRETE_PRESSURE_PLATE = registerBlock("magenta_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> LIGHT_BLUE_CONCRETE_PRESSURE_PLATE = registerBlock("light_blue_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> YELLOW_CONCRETE_PRESSURE_PLATE = registerBlock("yellow_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> LIME_CONCRETE_PRESSURE_PLATE = registerBlock("lime_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> PINK_CONCRETE_PRESSURE_PLATE = registerBlock("pink_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> GRAY_CONCRETE_PRESSURE_PLATE = registerBlock("gray_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> LIGHT_GRAY_CONCRETE_PRESSURE_PLATE = registerBlock("light_gray_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> CYAN_CONCRETE_PRESSURE_PLATE = registerBlock("cyan_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> PURPLE_CONCRETE_PRESSURE_PLATE = registerBlock("purple_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> BLUE_CONCRETE_PRESSURE_PLATE = registerBlock("blue_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> BROWN_CONCRETE_PRESSURE_PLATE = registerBlock("brown_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> GREEN_CONCRETE_PRESSURE_PLATE = registerBlock("green_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<PressurePlateBlock> RED_CONCRETE_PRESSURE_PLATE = registerBlock("red_concrete_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.STONE,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -1101,6 +1101,23 @@ public class BlockStateGen extends BlockStateProvider {
         makeButtonBlock(ModBlocks.PURPLE_CONCRETE_BUTTON.get(), Blocks.PURPLE_CONCRETE);
         makeButtonBlock(ModBlocks.MAGENTA_CONCRETE_BUTTON.get(), Blocks.MAGENTA_CONCRETE);
         makeButtonBlock(ModBlocks.PINK_CONCRETE_BUTTON.get(), Blocks.PINK_CONCRETE);
+
+        makePressurePlateBlock(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.get(), Blocks.WHITE_CONCRETE);
+        makePressurePlateBlock(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.get(), Blocks.LIGHT_GRAY_CONCRETE);
+        makePressurePlateBlock(ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.get(), Blocks.GRAY_CONCRETE);
+        makePressurePlateBlock(ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE.get(), Blocks.BLACK_CONCRETE);
+        makePressurePlateBlock(ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE.get(), Blocks.BROWN_CONCRETE);
+        makePressurePlateBlock(ModBlocks.RED_CONCRETE_PRESSURE_PLATE.get(), Blocks.RED_CONCRETE);
+        makePressurePlateBlock(ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.get(), Blocks.ORANGE_CONCRETE);
+        makePressurePlateBlock(ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.get(), Blocks.YELLOW_CONCRETE);
+        makePressurePlateBlock(ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.get(), Blocks.LIME_CONCRETE);
+        makePressurePlateBlock(ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.get(), Blocks.GREEN_CONCRETE);
+        makePressurePlateBlock(ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.get(), Blocks.CYAN_CONCRETE);
+        makePressurePlateBlock(ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.get(), Blocks.LIGHT_BLUE_CONCRETE);
+        makePressurePlateBlock(ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.get(), Blocks.BLUE_CONCRETE);
+        makePressurePlateBlock(ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.get(), Blocks.PURPLE_CONCRETE);
+        makePressurePlateBlock(ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.get(), Blocks.MAGENTA_CONCRETE);
+        makePressurePlateBlock(ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get(), Blocks.PINK_CONCRETE);
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1147,6 +1164,15 @@ public class BlockStateGen extends BlockStateProvider {
         String texture = location.getPath();
 
         buttonBlock(block, ResourceLocation.fromNamespaceAndPath(location.getNamespace(), "block/" + texture));
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makePressurePlateBlock(PressurePlateBlock block, Block baseBlock) {
+        ResourceLocation location = BuiltInRegistries.BLOCK.getKey(baseBlock);
+        String texture = location.getPath();
+
+        pressurePlateBlock(block, ResourceLocation.fromNamespaceAndPath(location.getNamespace(), "block/" + texture));
         makeBlockItemFromExistingModel(block);
     }
 
