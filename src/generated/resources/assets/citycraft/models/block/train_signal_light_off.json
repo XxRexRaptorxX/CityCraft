@@ -1,6 +1,0 @@
-{
-  "parent": "citycraft:block/side_traffic_lights",
-  "textures": {
-    "texture": "citycraft:block/train_signal_light_off"
-  }
-}

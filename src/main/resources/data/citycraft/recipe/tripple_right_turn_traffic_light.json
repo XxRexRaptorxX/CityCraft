@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "citycraft:tripple_traffic_light"
+      "item": "citycraft:triple_traffic_light"
     },
     {
       "item": "citycraft:right_here_eu_sign"
     }
   ],
   "result": {
-    "id": "citycraft:right_turn_tripple_traffic_light"
+    "id": "citycraft:right_turn_triple_traffic_light"
   }
 }

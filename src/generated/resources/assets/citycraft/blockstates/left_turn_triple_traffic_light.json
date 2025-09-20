@@ -1,0 +1,244 @@
+{
+  "variants": {
+    "facing=east,phase=green,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_green",
+      "y": 270
+    },
+    "facing=east,phase=green,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_green",
+      "y": 270
+    },
+    "facing=east,phase=green,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 270
+    },
+    "facing=east,phase=green,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 270
+    },
+    "facing=east,phase=red,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 270
+    },
+    "facing=east,phase=red,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 270
+    },
+    "facing=east,phase=red,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 270
+    },
+    "facing=east,phase=red,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 270
+    },
+    "facing=east,phase=red_yellow,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow_red",
+      "y": 270
+    },
+    "facing=east,phase=red_yellow,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow_red",
+      "y": 270
+    },
+    "facing=east,phase=red_yellow,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 270
+    },
+    "facing=east,phase=red_yellow,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 270
+    },
+    "facing=east,phase=yellow,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow",
+      "y": 270
+    },
+    "facing=east,phase=yellow,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow",
+      "y": 270
+    },
+    "facing=east,phase=yellow,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 270
+    },
+    "facing=east,phase=yellow,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 270
+    },
+    "facing=north,phase=green,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_green",
+      "y": 180
+    },
+    "facing=north,phase=green,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_green",
+      "y": 180
+    },
+    "facing=north,phase=green,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 180
+    },
+    "facing=north,phase=green,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 180
+    },
+    "facing=north,phase=red,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 180
+    },
+    "facing=north,phase=red,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 180
+    },
+    "facing=north,phase=red,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 180
+    },
+    "facing=north,phase=red,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 180
+    },
+    "facing=north,phase=red_yellow,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow_red",
+      "y": 180
+    },
+    "facing=north,phase=red_yellow,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow_red",
+      "y": 180
+    },
+    "facing=north,phase=red_yellow,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 180
+    },
+    "facing=north,phase=red_yellow,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 180
+    },
+    "facing=north,phase=yellow,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow",
+      "y": 180
+    },
+    "facing=north,phase=yellow,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow",
+      "y": 180
+    },
+    "facing=north,phase=yellow,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 180
+    },
+    "facing=north,phase=yellow,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 180
+    },
+    "facing=south,phase=green,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_green"
+    },
+    "facing=south,phase=green,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_green"
+    },
+    "facing=south,phase=green,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red"
+    },
+    "facing=south,phase=green,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red"
+    },
+    "facing=south,phase=red,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red"
+    },
+    "facing=south,phase=red,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red"
+    },
+    "facing=south,phase=red,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red"
+    },
+    "facing=south,phase=red,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red"
+    },
+    "facing=south,phase=red_yellow,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow_red"
+    },
+    "facing=south,phase=red_yellow,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow_red"
+    },
+    "facing=south,phase=red_yellow,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red"
+    },
+    "facing=south,phase=red_yellow,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red"
+    },
+    "facing=south,phase=yellow,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow"
+    },
+    "facing=south,phase=yellow,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow"
+    },
+    "facing=south,phase=yellow,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red"
+    },
+    "facing=south,phase=yellow,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red"
+    },
+    "facing=west,phase=green,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_green",
+      "y": 90
+    },
+    "facing=west,phase=green,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_green",
+      "y": 90
+    },
+    "facing=west,phase=green,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 90
+    },
+    "facing=west,phase=green,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 90
+    },
+    "facing=west,phase=red,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 90
+    },
+    "facing=west,phase=red,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 90
+    },
+    "facing=west,phase=red,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 90
+    },
+    "facing=west,phase=red,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 90
+    },
+    "facing=west,phase=red_yellow,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow_red",
+      "y": 90
+    },
+    "facing=west,phase=red_yellow,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow_red",
+      "y": 90
+    },
+    "facing=west,phase=red_yellow,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 90
+    },
+    "facing=west,phase=red_yellow,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 90
+    },
+    "facing=west,phase=yellow,powered=false,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow",
+      "y": 90
+    },
+    "facing=west,phase=yellow,powered=false,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_yellow",
+      "y": 90
+    },
+    "facing=west,phase=yellow,powered=true,waterlogged=false": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 90
+    },
+    "facing=west,phase=yellow,powered=true,waterlogged=true": {
+      "model": "citycraft:block/left_turn_triple_traffic_light_red",
+      "y": 90
+    }
+  }
+}

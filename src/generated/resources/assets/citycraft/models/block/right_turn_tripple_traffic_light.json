@@ -1,6 +1,0 @@
-{
-  "parent": "citycraft:block/tripple_traffic_lights",
-  "textures": {
-    "texture": "citycraft:block/right_turn_tripple_traffic_light"
-  }
-}

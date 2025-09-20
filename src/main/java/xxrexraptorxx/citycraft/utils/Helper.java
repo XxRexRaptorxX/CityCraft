@@ -15,8 +15,8 @@ public class Helper {
     public static String getTrafficLightModelType(TrafficLightBlock block) {
         String blockName = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
-        if (blockName.contains("tripple")) {
-            return "tripple_traffic_lights";
+        if (blockName.contains("triple")) {
+            return "triple_traffic_lights";
 
         } else if (blockName.contains("double")) {
             return "double_traffic_lights";

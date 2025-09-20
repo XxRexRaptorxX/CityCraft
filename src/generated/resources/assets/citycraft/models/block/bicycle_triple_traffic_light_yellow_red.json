@@ -1,0 +1,6 @@
+{
+  "parent": "citycraft:block/triple_traffic_lights",
+  "textures": {
+    "texture": "citycraft:block/bicycle_triple_traffic_light_yellow_red"
+  }
+}

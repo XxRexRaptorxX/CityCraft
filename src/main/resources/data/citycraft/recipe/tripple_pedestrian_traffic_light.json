@@ -3,13 +3,13 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "citycraft:tripple_traffic_light"
+      "item": "citycraft:triple_traffic_light"
     },
     {
       "item": "citycraft:sidewalk_eu_sign"
     }
   ],
   "result": {
-    "id": "citycraft:pedestrian_tripple_traffic_light"
+    "id": "citycraft:pedestrian_triple_traffic_light"
   }
 }
