@@ -41,6 +41,7 @@ public class ModTags {
     public static final TagKey<Item> COLORED_LAMPS_TAG = createItemTag(References.MODID, "colored_lamps");
     public static final TagKey<Item> COLORED_CHISELED_CONCRETE_TAG = createItemTag(References.MODID, "colored_chiseled_concrete");
     public static final TagKey<Item> COLORED_CRACKED_CONCRETE_TAG = createItemTag(References.MODID, "colored_cracked_concrete");
+    public static final TagKey<Item> COLORED_CONCRETE_BUTTONS_TAG = createItemTag(References.MODID, "colored_concrete_buttons");
     public static final TagKey<Item> COLORED_MOSSY_CONCRETE_TAG = createItemTag(References.MODID, "colored_mossy_concrete");
     public static final TagKey<Item> COLORED_POLISHED_CONCRETE_TAG = createItemTag(References.MODID, "colored_polished_concrete");
     public static final TagKey<Item> COLORED_CONCRETE_PILLARS_TAG = createItemTag(References.MODID, "colored_concrete_pillars");

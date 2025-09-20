@@ -1110,6 +1110,23 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.MAGENTA_CONCRETE_SLAB.get()));
         this.add(ModBlocks.PINK_CONCRETE_SLAB.get(), block -> createSlabItemTable(ModBlocks.PINK_CONCRETE_SLAB.get()));
 
+        this.dropSelf(ModBlocks.WHITE_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.GRAY_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.BLACK_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.BROWN_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.RED_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.ORANGE_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.YELLOW_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.LIME_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.GREEN_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.CYAN_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.BLUE_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.PURPLE_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.MAGENTA_CONCRETE_BUTTON.get());
+        this.dropSelf(ModBlocks.PINK_CONCRETE_BUTTON.get());
+
         this.dropSelf(ModBlocks.STREET_LANTERN.get());
         this.dropSelf(ModBlocks.MODERN_STREET_LANTERN.get());
         this.add(ModBlocks.STREET_LANTERN_PANEL.get(), block -> createSlabItemTable(ModBlocks.STREET_LANTERN_PANEL.get()));

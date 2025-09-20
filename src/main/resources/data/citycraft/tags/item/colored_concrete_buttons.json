@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "citycraft:black_concrete_button",
+    "citycraft:white_concrete_button",
+    "citycraft:orange_concrete_button",
+    "citycraft:magenta_concrete_button",
+    "citycraft:light_blue_concrete_button",
+    "citycraft:yellow_concrete_button",
+    "citycraft:lime_concrete_button",
+    "citycraft:pink_concrete_button",
+    "citycraft:gray_concrete_button",
+    "citycraft:light_gray_concrete_button",
+    "citycraft:cyan_concrete_button",
+    "citycraft:purple_concrete_button",
+    "citycraft:blue_concrete_button",
+    "citycraft:brown_concrete_button",
+    "citycraft:green_concrete_button",
+    "citycraft:red_concrete_button"
+  ]
+}

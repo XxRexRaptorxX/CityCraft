@@ -6,7 +6,9 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -1367,6 +1369,39 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE)));
     public static final DeferredBlock<SlabBlock> RED_CONCRETE_SLAB = registerBlock("red_concrete_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
+
+    public static final DeferredBlock<ButtonBlock> BLACK_CONCRETE_BUTTON = registerBlock("black_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> WHITE_CONCRETE_BUTTON = registerBlock("white_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> ORANGE_CONCRETE_BUTTON = registerBlock("orange_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> MAGENTA_CONCRETE_BUTTON = registerBlock("magenta_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> LIGHT_BLUE_CONCRETE_BUTTON = registerBlock("light_blue_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> YELLOW_CONCRETE_BUTTON = registerBlock("yellow_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> LIME_CONCRETE_BUTTON = registerBlock("lime_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> PINK_CONCRETE_BUTTON = registerBlock("pink_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> GRAY_CONCRETE_BUTTON = registerBlock("gray_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> LIGHT_GRAY_CONCRETE_BUTTON = registerBlock("light_gray_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> CYAN_CONCRETE_BUTTON = registerBlock("cyan_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> PURPLE_CONCRETE_BUTTON = registerBlock("purple_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> BLUE_CONCRETE_BUTTON = registerBlock("blue_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> BROWN_CONCRETE_BUTTON = registerBlock("brown_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> GREEN_CONCRETE_BUTTON = registerBlock("green_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<ButtonBlock> RED_CONCRETE_BUTTON = registerBlock("red_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

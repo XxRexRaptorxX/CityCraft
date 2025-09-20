@@ -1051,5 +1051,21 @@
   "block.citycraft.blue_concrete_slab": "Blaue Betonstufe",
   "block.citycraft.brown_concrete_slab": "Braune Betonstufe",
   "block.citycraft.green_concrete_slab": "Grüne Betonstufe",
-  "block.citycraft.red_concrete_slab": "Rote Betonstufe"
+  "block.citycraft.red_concrete_slab": "Rote Betonstufe",
+  "block.citycraft.black_concrete_button": "Schwarzer Beton Knopf",
+  "block.citycraft.white_concrete_button": "Weißer Beton Knopf",
+  "block.citycraft.orange_concrete_button": "Orangener Beton Knopf",
+  "block.citycraft.magenta_concrete_button": "Magenta Beton Knopf",
+  "block.citycraft.light_blue_concrete_button": "Hellblauer Beton Knopf",
+  "block.citycraft.yellow_concrete_button": "Gelber Beton Knopf",
+  "block.citycraft.lime_concrete_button": "Hellgrüner Beton Knopf",
+  "block.citycraft.pink_concrete_button": "Rosa Beton Knopf",
+  "block.citycraft.gray_concrete_button": "Grauer Beton Knopf",
+  "block.citycraft.light_gray_concrete_button": "Hellblauer Beton Knopf",
+  "block.citycraft.cyan_concrete_button": "Türkiser Beton Knopf",
+  "block.citycraft.purple_concrete_button": "Lila Beton Knopf",
+  "block.citycraft.blue_concrete_button": "Blauer Beton Knopf",
+  "block.citycraft.brown_concrete_button": "Brauner Beton Knopf",
+  "block.citycraft.green_concrete_button": "Grüner Beton Knopf",
+  "block.citycraft.red_concrete_button": "Roter Beton Knopf"
 }

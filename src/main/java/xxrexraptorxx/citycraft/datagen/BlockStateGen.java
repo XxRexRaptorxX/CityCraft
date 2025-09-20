@@ -1084,6 +1084,23 @@ public class BlockStateGen extends BlockStateProvider {
         makeSlabBlock(ModBlocks.PURPLE_CONCRETE_SLAB.get(), Blocks.PURPLE_CONCRETE);
         makeSlabBlock(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), Blocks.MAGENTA_CONCRETE);
         makeSlabBlock(ModBlocks.PINK_CONCRETE_SLAB.get(), Blocks.PINK_CONCRETE);
+
+        makeButtonBlock(ModBlocks.WHITE_CONCRETE_BUTTON.get(), Blocks.WHITE_CONCRETE);
+        makeButtonBlock(ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON.get(), Blocks.LIGHT_GRAY_CONCRETE);
+        makeButtonBlock(ModBlocks.GRAY_CONCRETE_BUTTON.get(), Blocks.GRAY_CONCRETE);
+        makeButtonBlock(ModBlocks.BLACK_CONCRETE_BUTTON.get(), Blocks.BLACK_CONCRETE);
+        makeButtonBlock(ModBlocks.BROWN_CONCRETE_BUTTON.get(), Blocks.BROWN_CONCRETE);
+        makeButtonBlock(ModBlocks.RED_CONCRETE_BUTTON.get(), Blocks.RED_CONCRETE);
+        makeButtonBlock(ModBlocks.ORANGE_CONCRETE_BUTTON.get(), Blocks.ORANGE_CONCRETE);
+        makeButtonBlock(ModBlocks.YELLOW_CONCRETE_BUTTON.get(), Blocks.YELLOW_CONCRETE);
+        makeButtonBlock(ModBlocks.LIME_CONCRETE_BUTTON.get(), Blocks.LIME_CONCRETE);
+        makeButtonBlock(ModBlocks.GREEN_CONCRETE_BUTTON.get(), Blocks.GREEN_CONCRETE);
+        makeButtonBlock(ModBlocks.CYAN_CONCRETE_BUTTON.get(), Blocks.CYAN_CONCRETE);
+        makeButtonBlock(ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON.get(), Blocks.LIGHT_BLUE_CONCRETE);
+        makeButtonBlock(ModBlocks.BLUE_CONCRETE_BUTTON.get(), Blocks.BLUE_CONCRETE);
+        makeButtonBlock(ModBlocks.PURPLE_CONCRETE_BUTTON.get(), Blocks.PURPLE_CONCRETE);
+        makeButtonBlock(ModBlocks.MAGENTA_CONCRETE_BUTTON.get(), Blocks.MAGENTA_CONCRETE);
+        makeButtonBlock(ModBlocks.PINK_CONCRETE_BUTTON.get(), Blocks.PINK_CONCRETE);
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1121,6 +1138,15 @@ public class BlockStateGen extends BlockStateProvider {
         String texture = location.getPath();
 
         stairsBlock(block, ResourceLocation.fromNamespaceAndPath(location.getNamespace(), "block/" + texture));
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeButtonBlock(ButtonBlock block, Block baseBlock) {
+        ResourceLocation location = BuiltInRegistries.BLOCK.getKey(baseBlock);
+        String texture = location.getPath();
+
+        buttonBlock(block, ResourceLocation.fromNamespaceAndPath(location.getNamespace(), "block/" + texture));
         makeBlockItemFromExistingModel(block);
     }
 
