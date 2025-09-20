@@ -1041,7 +1041,8 @@ public class ModBlocks {
             () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
     public static final DeferredBlock<TrafficLightBlock> PEDESTRIAN_DOUBLE_TRAFFIC_LIGHT = registerBlock("pedestrian_double_traffic_light",
             () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), true));
-    public static final DeferredBlock<SignalLightBlock> PEDESTRIAN_SIGNAL_LIGHT = registerBlock("pedestrian_signal_light", () -> new SignalLightBlock(BlockBehaviour.Properties.of()));
+    public static final DeferredBlock<SignalLightBlock> PEDESTRIAN_SIGNAL_LIGHT = registerBlock("pedestrian_signal_light",
+            () -> new SignalLightBlock(BlockBehaviour.Properties.of()));
     public static final DeferredBlock<TrafficLightBlock> PEDESTRIAN_TRIPLE_TRAFFIC_LIGHT = registerBlock("pedestrian_triple_traffic_light",
             () -> new TrafficLightBlock(BlockBehaviour.Properties.of(), false));
     public static final DeferredBlock<TrafficLightBlock> RIGHT_TURN_DOUBLE_TRAFFIC_LIGHT = registerBlock("right_turn_double_traffic_light",

@@ -36,21 +36,21 @@ public class SignalLightBlock extends HorizontalDirectionalBlock implements Simp
     public SignalLightBlock(BlockBehaviour.Properties properties) {
         super(properties);
 
-        this.registerDefaultState(this.stateDefinition.any()
-                .setValue(FACING, Direction.NORTH)
-                .setValue(LIT, true)
-                .setValue(WATERLOGGED, false));
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(LIT, true).setValue(WATERLOGGED, false));
     }
+
 
     @Override
     protected MapCodec<? extends SignalLightBlock> codec() {
         return CODEC;
     }
 
+
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING, LIT, WATERLOGGED);
     }
+
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
@@ -59,11 +59,9 @@ public class SignalLightBlock extends HorizontalDirectionalBlock implements Simp
         FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
         boolean waterlogged = fluidState.getType() == Fluids.WATER;
 
-        return this.defaultBlockState()
-                .setValue(FACING, facing)
-                .setValue(LIT, !powered)
-                .setValue(WATERLOGGED, waterlogged);
+        return this.defaultBlockState().setValue(FACING, facing).setValue(LIT, !powered).setValue(WATERLOGGED, waterlogged);
     }
+
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
@@ -80,10 +78,12 @@ public class SignalLightBlock extends HorizontalDirectionalBlock implements Simp
         }
     }
 
+
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }
+
 
     @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
@@ -92,6 +92,7 @@ public class SignalLightBlock extends HorizontalDirectionalBlock implements Simp
         }
         return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
     }
+
 
     @Override
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
@@ -106,15 +107,18 @@ public class SignalLightBlock extends HorizontalDirectionalBlock implements Simp
         }
     }
 
+
     @Override
     public boolean hasAnalogOutputSignal(BlockState state) {
         return true;
     }
 
+
     @Override
     public int getAnalogOutputSignal(BlockState state, Level level, BlockPos pos) {
         return state.getValue(LIT) ? 15 : 0;
     }
+
 
     @Override
     public boolean canConnectRedstone(BlockState state, BlockGetter level, BlockPos pos, @Nullable Direction direction) {

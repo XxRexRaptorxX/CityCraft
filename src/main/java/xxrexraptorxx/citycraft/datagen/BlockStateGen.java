@@ -1210,18 +1210,18 @@ public class BlockStateGen extends BlockStateProvider {
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
@@ -1245,18 +1245,18 @@ public class BlockStateGen extends BlockStateProvider {
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
@@ -1285,18 +1285,18 @@ public class BlockStateGen extends BlockStateProvider {
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
@@ -1350,18 +1350,18 @@ public class BlockStateGen extends BlockStateProvider {
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
@@ -1386,18 +1386,18 @@ public class BlockStateGen extends BlockStateProvider {
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
@@ -1430,19 +1430,19 @@ public class BlockStateGen extends BlockStateProvider {
             int y = 0;
 
             switch (dir) {
-                case EAST:
+                case EAST :
                     y = 270;
                     break;
-                case NORTH:
+                case NORTH :
                     y = 180;
                     break;
-                case SOUTH:
+                case SOUTH :
                     y = 0;
                     break;
-                case WEST:
+                case WEST :
                     y = 90;
                     break;
-                default:
+                default :
                     break;
             }
 
@@ -1464,46 +1464,40 @@ public class BlockStateGen extends BlockStateProvider {
         itemModels().withExistingParent(blockTexture, References.MODID + ":block/" + blockTexture + "_green");
     }
 
+
     private void signalLights(SignalLightBlock block) {
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
         String modelType = Helper.getTrafficLightModelType(block);
 
-        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + modelType)
-                .texture("texture", "block/" + blockTexture);
-        ModelFile model_off = models().withExistingParent(blockTexture + "_off", References.MODID + ":block/" + modelType)
-                .texture("texture", "block/" + blockTexture + "_off");
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + modelType).texture("texture", "block/" + blockTexture);
+        ModelFile model_off = models().withExistingParent(blockTexture + "_off", References.MODID + ":block/" + modelType).texture("texture", "block/" + blockTexture + "_off");
 
-        getVariantBuilder(block)
-                .forAllStates(state -> {
+        getVariantBuilder(block).forAllStates(state -> {
 
-                    Boolean lit = state.getValue(VariableTrafficSignBlock.LIT);
-                    Direction dir = state.getValue(VariableTrafficSignBlock.FACING);
-                    int x = 0;
-                    int y = 0;
+            Boolean lit = state.getValue(VariableTrafficSignBlock.LIT);
+            Direction dir = state.getValue(VariableTrafficSignBlock.FACING);
+            int x = 0;
+            int y = 0;
 
-                    switch (dir) {
-                        case EAST:
-                            y = 270;
-                            break;
-                        case NORTH:
-                            y = 180;
-                            break;
-                        case SOUTH:
-                            break;
-                        case WEST:
-                            y = 90;
-                            break;
-                        default:
-                            break;
-                    }
+            switch (dir) {
+                case EAST :
+                    y = 270;
+                    break;
+                case NORTH :
+                    y = 180;
+                    break;
+                case SOUTH :
+                    break;
+                case WEST :
+                    y = 90;
+                    break;
+                default :
+                    break;
+            }
 
 
-                    return ConfiguredModel.builder()
-                            .modelFile(lit == true ? model : model_off)
-                            .rotationX(x)
-                            .rotationY(y)
-                            .build();
-                });
+            return ConfiguredModel.builder().modelFile(lit == true ? model : model_off).rotationX(x).rotationY(y).build();
+        });
 
         makeBlockItemFromExistingModel(block);
     }
