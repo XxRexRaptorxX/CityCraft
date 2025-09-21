@@ -11,6 +11,9 @@ tasks.matching { it.name == 'runData' }.configureEach {
     finalizedBy('spotlessApply')
 }
 
+tasks.matching { it.name == 'runClient' }.configureEach {
+    finalizedBy('spotlessApply')
+}
 
 spotless {
     java {
