@@ -1,7 +1,8 @@
-# [v.2.9.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.9.0-dev1...v.2.9.0-dev10)
+# [v.2.9.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.9.0-dev1...v.2.9.0-dev11)
 
 ## ✨ Features
 
+- Cracked Concrete Bricks added ([e5bd931](https://github.com/XxRexRaptorxX/CityCraft/commit/e5bd931ff999b2650d1adf30c705f4b4364a6194))
 - CityCraft items and blocks now also appear in the vanilla tabs where they make sense. ([08a54c2](https://github.com/XxRexRaptorxX/CityCraft/commit/08a54c2106019b2f07d97b471d6bc21b8b4c7ae1))
 - JADE/WAILA support added ([d3fa21c](https://github.com/XxRexRaptorxX/CityCraft/commit/d3fa21cea02ddb4a95bfb52dc0a9bbeb7f27ffe4))
 - emissive textures for boost asphalt blocks added ([5d73d61](https://github.com/XxRexRaptorxX/CityCraft/commit/5d73d61fcf5a764ff4ca02dca2aaecbb756cc38d))
