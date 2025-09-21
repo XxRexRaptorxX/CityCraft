@@ -76,6 +76,9 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 - **MoreMcmeta Emissive Textures**
     - Enables the emissive textures of the mod
     - [CurseForge][cf_mcmeta] | [Modrinth][mr_mcmeta]
+- **Shimmer**
+    - Enables colored lightning
+    - [CurseForge][cf_shimmer] | [Modrinth][mr_shimmer]
 - **Just Enough Effect Descriptions (JEED)**
     - Provides mob effect descriptions in JEI
     - [CurseForge][cf_jeed] | [Modrinth][mr_jeed]
@@ -142,3 +145,5 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 [mr_mek]: https://modrinth.com/mod/mekanism
 [cf_lc]: https://www.curseforge.com/minecraft/mc-mods/the-lost-cities
 [mr_lc]: https://modrinth.com/mod/the-lost-cities
+[cf_shimmer]: https://www.curseforge.com/minecraft/mc-mods/shimmer
+[mr_shimmer]: https://modrinth.com/mod/shimmer!

@@ -234,6 +234,7 @@ afterEvaluate {
             optional.project "moremcmeta-emissive"
             optional.project "continuity"
             optional.project "mekanism"
+            optional.project "shimmer!"
             optional.project "immersiveengineering"
         }
     }
