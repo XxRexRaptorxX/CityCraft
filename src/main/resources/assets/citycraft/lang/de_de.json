@@ -1123,5 +1123,21 @@
   "block.citycraft.blue_concrete_bricks": "Blaue Betonziegel",
   "block.citycraft.brown_concrete_bricks": "Braune Betonziegel",
   "block.citycraft.green_concrete_bricks": "Grüne Betonziegel",
-  "block.citycraft.red_concrete_bricks": "Rote Betonziegel"
+  "block.citycraft.red_concrete_bricks": "Rote Betonziegel",
+  "block.citycraft.black_concrete_cracked_bricks": "Gerissene Schwarze Betonziegel",
+  "block.citycraft.white_concrete_cracked_bricks": "Gerissene Weiße Betonziegel",
+  "block.citycraft.orange_concrete_cracked_bricks": "Gerissene Orangene Betonziegel",
+  "block.citycraft.magenta_concrete_cracked_bricks": "Gerissene Magenta Betonziegel",
+  "block.citycraft.light_blue_concrete_cracked_bricks": "Gerissene Hellblaue Betonziegel",
+  "block.citycraft.yellow_concrete_cracked_bricks": "Gerissene Gelbe Betonziegel",
+  "block.citycraft.lime_concrete_cracked_bricks": "Gerissene Hellgrüne Betonziegel",
+  "block.citycraft.pink_concrete_cracked_bricks": "Gerissene Rosane Betonziegel",
+  "block.citycraft.gray_concrete_cracked_bricks": "Gerissene Graue Betonziegel",
+  "block.citycraft.light_gray_concrete_cracked_bricks": "Gerissene Hellblaue Betonziegel",
+  "block.citycraft.cyan_concrete_cracked_bricks": "Gerissene Türkise Betonziegel",
+  "block.citycraft.purple_concrete_cracked_bricks": "Gerissene Lila Betonziegel",
+  "block.citycraft.blue_concrete_cracked_bricks": "Gerissene Blaue Betonziegel",
+  "block.citycraft.brown_concrete_cracked_bricks": "Gerissene Braune Betonziegel",
+  "block.citycraft.green_concrete_cracked_bricks": "Gerissene Grüne Betonziegel",
+  "block.citycraft.red_concrete_cracked_bricks": "Gerissene Rote Betonziegel"
 }

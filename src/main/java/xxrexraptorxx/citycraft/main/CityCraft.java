@@ -230,6 +230,23 @@ public class CityCraft {
             event.accept(ModBlocks.MAGENTA_CONCRETE_BRICKS.get());
             event.accept(ModBlocks.PINK_CONCRETE_BRICKS.get());
 
+            event.accept(ModBlocks.WHITE_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.LIGHT_GRAY_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.GRAY_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.BLACK_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.BROWN_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.RED_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.ORANGE_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.YELLOW_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.LIME_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.GREEN_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.CYAN_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.LIGHT_BLUE_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.BLUE_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.PURPLE_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.MAGENTA_CONCRETE_CRACKED_BRICKS.get());
+            event.accept(ModBlocks.PINK_CONCRETE_CRACKED_BRICKS.get());
+
             event.accept(ModBlocks.WHITE_CONCRETE_PILLAR.get());
             event.accept(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get());
             event.accept(ModBlocks.GRAY_CONCRETE_PILLAR.get());

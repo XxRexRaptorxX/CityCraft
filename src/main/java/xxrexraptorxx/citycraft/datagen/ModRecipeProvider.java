@@ -2273,7 +2273,39 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.GREEN_CONCRETE_BRICKS.get(), ModTags.COLORED_CONCRETE_BRICKS_TAG, Tags.Items.DYES_GREEN, output);
         paintingRecipes(ModBlocks.RED_CONCRETE_BRICKS.get(), ModTags.COLORED_CONCRETE_BRICKS_TAG, Tags.Items.DYES_RED, output);
 
+        smeltingResultFromBase(output, ModBlocks.WHITE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.WHITE_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.LIGHT_GRAY_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.LIGHT_GRAY_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.GRAY_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.GRAY_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.BLACK_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.BLACK_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.BROWN_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.BROWN_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.RED_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.RED_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.ORANGE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.ORANGE_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.YELLOW_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.YELLOW_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.LIME_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.LIME_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.GREEN_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.GREEN_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.CYAN_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.CYAN_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.LIGHT_BLUE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.LIGHT_BLUE_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.BLUE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.BLUE_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.PURPLE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.PURPLE_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.MAGENTA_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.MAGENTA_CONCRETE_BRICKS.get());
+        smeltingResultFromBase(output, ModBlocks.PINK_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.PINK_CONCRETE_BRICKS.get());
 
+        paintingRecipes(ModBlocks.BLACK_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.WHITE_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.ORANGE_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.YELLOW_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.LIME_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.PINK_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.GRAY_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.CYAN_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.PURPLE_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.BLUE_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.BROWN_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.GREEN_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.RED_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_RED, output);
     }
 
     private static final String STONE_CUTTING_PATH = References.MODID + ":stonecutting/";

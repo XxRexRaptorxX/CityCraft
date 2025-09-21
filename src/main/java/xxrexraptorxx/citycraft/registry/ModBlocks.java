@@ -1303,6 +1303,39 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE)));
     public static final DeferredBlock<Block> RED_CONCRETE_BRICKS = registerBlock("red_concrete_bricks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
 
+    public static final DeferredBlock<Block> BLACK_CONCRETE_CRACKED_BRICKS = registerBlock("black_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
+    public static final DeferredBlock<Block> WHITE_CONCRETE_CRACKED_BRICKS = registerBlock("white_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
+    public static final DeferredBlock<Block> ORANGE_CONCRETE_CRACKED_BRICKS = registerBlock("orange_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE)));
+    public static final DeferredBlock<Block> MAGENTA_CONCRETE_CRACKED_BRICKS = registerBlock("magenta_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE)));
+    public static final DeferredBlock<Block> LIGHT_BLUE_CONCRETE_CRACKED_BRICKS = registerBlock("light_blue_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE)));
+    public static final DeferredBlock<Block> YELLOW_CONCRETE_CRACKED_BRICKS = registerBlock("yellow_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE)));
+    public static final DeferredBlock<Block> LIME_CONCRETE_CRACKED_BRICKS = registerBlock("lime_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE)));
+    public static final DeferredBlock<Block> PINK_CONCRETE_CRACKED_BRICKS = registerBlock("pink_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE)));
+    public static final DeferredBlock<Block> GRAY_CONCRETE_CRACKED_BRICKS = registerBlock("gray_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE)));
+    public static final DeferredBlock<Block> LIGHT_GRAY_CONCRETE_CRACKED_BRICKS = registerBlock("light_gray_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE)));
+    public static final DeferredBlock<Block> CYAN_CONCRETE_CRACKED_BRICKS = registerBlock("cyan_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE)));
+    public static final DeferredBlock<Block> PURPLE_CONCRETE_CRACKED_BRICKS = registerBlock("purple_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE)));
+    public static final DeferredBlock<Block> BLUE_CONCRETE_CRACKED_BRICKS = registerBlock("blue_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE)));
+    public static final DeferredBlock<Block> BROWN_CONCRETE_CRACKED_BRICKS = registerBlock("brown_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE)));
+    public static final DeferredBlock<Block> GREEN_CONCRETE_CRACKED_BRICKS = registerBlock("green_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE)));
+    public static final DeferredBlock<Block> RED_CONCRETE_CRACKED_BRICKS = registerBlock("red_concrete_cracked_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
+
     public static final DeferredBlock<RotatedPillarBlock> BLACK_CONCRETE_PILLAR = registerBlock("black_concrete_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
     public static final DeferredBlock<RotatedPillarBlock> WHITE_CONCRETE_PILLAR = registerBlock("white_concrete_pillar",

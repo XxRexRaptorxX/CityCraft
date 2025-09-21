@@ -1053,6 +1053,23 @@ public class BlockStateGen extends BlockStateProvider {
         makeSimpleBlock(ModBlocks.MAGENTA_CONCRETE_BRICKS.get());
         makeSimpleBlock(ModBlocks.PINK_CONCRETE_BRICKS.get());
 
+        makeSimpleBlock(ModBlocks.WHITE_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.LIGHT_GRAY_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.GRAY_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.BLACK_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.BROWN_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.RED_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.ORANGE_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.YELLOW_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.LIME_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.GREEN_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.CYAN_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.LIGHT_BLUE_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.BLUE_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.PURPLE_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.MAGENTA_CONCRETE_CRACKED_BRICKS.get());
+        makeSimpleBlock(ModBlocks.PINK_CONCRETE_CRACKED_BRICKS.get());
+
         makePillarBlock(ModBlocks.WHITE_CONCRETE_PILLAR.get());
         makePillarBlock(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get());
         makePillarBlock(ModBlocks.GRAY_CONCRETE_PILLAR.get());
