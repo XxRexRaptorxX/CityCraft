@@ -263,6 +263,22 @@
     "citycraft:blue_concrete_cracked_bricks",
     "citycraft:purple_concrete_cracked_bricks",
     "citycraft:magenta_concrete_cracked_bricks",
-    "citycraft:pink_concrete_cracked_bricks"
+    "citycraft:pink_concrete_cracked_bricks",
+    "citycraft:reinforced_black_concrete",
+    "citycraft:reinforced_white_concrete",
+    "citycraft:reinforced_orange_concrete",
+    "citycraft:reinforced_magenta_concrete",
+    "citycraft:reinforced_light_blue_concrete",
+    "citycraft:reinforced_yellow_concrete",
+    "citycraft:reinforced_lime_concrete",
+    "citycraft:reinforced_pink_concrete",
+    "citycraft:reinforced_gray_concrete",
+    "citycraft:reinforced_light_gray_concrete",
+    "citycraft:reinforced_cyan_concrete",
+    "citycraft:reinforced_purple_concrete",
+    "citycraft:reinforced_blue_concrete",
+    "citycraft:reinforced_brown_concrete",
+    "citycraft:reinforced_green_concrete",
+    "citycraft:reinforced_red_concrete"
   ]
 }

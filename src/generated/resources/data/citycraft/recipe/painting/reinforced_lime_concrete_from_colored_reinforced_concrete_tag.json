@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_reinforced_concrete"
+  },
+  "color": {
+    "tag": "c:dyes/lime"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:reinforced_lime_concrete"
+  }
+}

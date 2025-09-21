@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "reinforced_concrete",
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_concrete_powder"
+    },
+    {
+      "item": "minecraft:iron_bars"
+    },
+    {
+      "tag": "c:buckets/water"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:reinforced_yellow_concrete"
+  }
+}

@@ -1173,6 +1173,40 @@ public class BlockStateGen extends BlockStateProvider {
         makeLever(ModBlocks.PURPLE_CONCRETE_LEVER.get(), Blocks.PURPLE_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/purple_concrete_lever"));
         makeLever(ModBlocks.MAGENTA_CONCRETE_LEVER.get(), Blocks.MAGENTA_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/magenta_concrete_lever"));
         makeLever(ModBlocks.PINK_CONCRETE_LEVER.get(), Blocks.PINK_CONCRETE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/pink_concrete_lever"));
+
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_WHITE_CONCRETE.get(), Blocks.WHITE_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get(), Blocks.LIGHT_GRAY_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_GRAY_CONCRETE.get(), Blocks.GRAY_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_BLACK_CONCRETE.get(), Blocks.BLACK_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_BROWN_CONCRETE.get(), Blocks.BROWN_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_RED_CONCRETE.get(), Blocks.RED_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_ORANGE_CONCRETE.get(), Blocks.ORANGE_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_YELLOW_CONCRETE.get(), Blocks.YELLOW_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_LIME_CONCRETE.get(), Blocks.LIME_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_GREEN_CONCRETE.get(), Blocks.GREEN_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_CYAN_CONCRETE.get(), Blocks.CYAN_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get(), Blocks.LIGHT_BLUE_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_BLUE_CONCRETE.get(), Blocks.BLUE_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_PURPLE_CONCRETE.get(), Blocks.PURPLE_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_MAGENTA_CONCRETE.get(), Blocks.MAGENTA_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+        pillarBlockWithOverlay(ModBlocks.REINFORCED_PINK_CONCRETE.get(), Blocks.PINK_CONCRETE,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
+
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1368,6 +1402,41 @@ public class BlockStateGen extends BlockStateProvider {
         });
 
         simpleBlockItem(block, models().cubeColumnHorizontal(texture, sideOff, end));
+    }
+
+
+    private void pillarBlockWithOverlay(RotatedPillarBlock block, Block baseBlock, ResourceLocation overlayTexture) {
+        ResourceLocation baseKey = BuiltInRegistries.BLOCK.getKey(baseBlock);
+        String path = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        String texture = baseKey.getPath();
+        ResourceLocation baseTexture = ResourceLocation.fromNamespaceAndPath(baseKey.getNamespace(), "block/" + texture);
+
+        BlockModelBuilder model = models().withExistingParent(path, mcLoc("block/cube_all")).texture("all", baseTexture).texture("overlay", overlayTexture)
+                .texture("particle", baseTexture).renderType(mcLoc("cutout"));
+
+        model.element().from(0, 0, 0).to(16, 16, 16).face(Direction.UP).uvs(0, 0, 16, 16).texture("#all").end().face(Direction.DOWN).uvs(0, 0, 16, 16).texture("#all").end()
+                .face(Direction.NORTH).uvs(0, 0, 16, 16).texture("#all").end().face(Direction.SOUTH).uvs(0, 0, 16, 16).texture("#all").end().face(Direction.EAST).uvs(0, 0, 16, 16)
+                .texture("#all").end().face(Direction.WEST).uvs(0, 0, 16, 16).texture("#all").end().end();
+
+        model.element().from(0, 15.5F, 0).to(16, 16, 16).face(Direction.UP).uvs(0, 0, 16, 16).texture("#overlay").end().end();
+
+        model.element().from(0, 0, 0).to(16, 0.5F, 16).face(Direction.DOWN).uvs(0, 0, 16, 16).texture("#overlay").end().end();
+
+        simpleBlockItem(block, models().getExistingFile(modLoc("block/" + path)));
+
+        getVariantBuilder(block).forAllStates(state -> {
+            Direction.Axis axis = state.getValue(RotatedPillarBlock.AXIS);
+
+            ConfiguredModel.Builder cfg = ConfiguredModel.builder().modelFile(models().getExistingFile(modLoc("block/" + path)));
+
+            if (axis == Direction.Axis.Y) {
+                return cfg.build();
+            } else if (axis == Direction.Axis.Z) {
+                return cfg.rotationX(90).build();
+            } else { // Axis.X
+                return cfg.rotationX(90).rotationY(90).build();
+            }
+        });
     }
 
 

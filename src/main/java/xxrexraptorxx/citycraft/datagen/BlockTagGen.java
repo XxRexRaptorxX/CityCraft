@@ -425,7 +425,12 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.RED_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.ORANGE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.YELLOW_CONCRETE_CRACKED_BRICKS.get(),
                 ModBlocks.LIME_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.GREEN_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.CYAN_CONCRETE_CRACKED_BRICKS.get(),
                 ModBlocks.LIGHT_BLUE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.BLUE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.PURPLE_CONCRETE_CRACKED_BRICKS.get(),
-                ModBlocks.MAGENTA_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.PINK_CONCRETE_CRACKED_BRICKS.get());
+                ModBlocks.MAGENTA_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.PINK_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.REINFORCED_BLACK_CONCRETE.get(),
+                ModBlocks.REINFORCED_WHITE_CONCRETE.get(), ModBlocks.REINFORCED_ORANGE_CONCRETE.get(), ModBlocks.REINFORCED_MAGENTA_CONCRETE.get(),
+                ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get(), ModBlocks.REINFORCED_YELLOW_CONCRETE.get(), ModBlocks.REINFORCED_LIME_CONCRETE.get(),
+                ModBlocks.REINFORCED_PINK_CONCRETE.get(), ModBlocks.REINFORCED_GRAY_CONCRETE.get(), ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get(),
+                ModBlocks.REINFORCED_CYAN_CONCRETE.get(), ModBlocks.REINFORCED_PURPLE_CONCRETE.get(), ModBlocks.REINFORCED_BLUE_CONCRETE.get(),
+                ModBlocks.REINFORCED_BROWN_CONCRETE.get(), ModBlocks.REINFORCED_GREEN_CONCRETE.get(), ModBlocks.REINFORCED_RED_CONCRETE.get());
 
         tag(BlockTags.FENCES).add(ModBlocks.IRON_FENCE.get());
 

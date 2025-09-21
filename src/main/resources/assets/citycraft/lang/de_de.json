@@ -1139,5 +1139,21 @@
   "block.citycraft.blue_concrete_cracked_bricks": "Gerissene Blaue Betonziegel",
   "block.citycraft.brown_concrete_cracked_bricks": "Gerissene Braune Betonziegel",
   "block.citycraft.green_concrete_cracked_bricks": "Gerissene Grüne Betonziegel",
-  "block.citycraft.red_concrete_cracked_bricks": "Gerissene Rote Betonziegel"
+  "block.citycraft.red_concrete_cracked_bricks": "Gerissene Rote Betonziegel",
+  "block.citycraft.reinforced_black_concrete": "Verstärkter Schwarzer Beton",
+  "block.citycraft.reinforced_white_concrete": "Verstärkter Weißer Beton",
+  "block.citycraft.reinforced_orange_concrete": "Verstärkter Orangener Beton",
+  "block.citycraft.reinforced_magenta_concrete": "Verstärkter Magenta Beton",
+  "block.citycraft.reinforced_light_blue_concrete": "Verstärkter Hellblauer Beton",
+  "block.citycraft.reinforced_yellow_concrete": "Verstärkter Gelber Beton",
+  "block.citycraft.reinforced_lime_concrete": "Verstärkter Hellgrüner Beton",
+  "block.citycraft.reinforced_pink_concrete": "Verstärkter Rosa Beton",
+  "block.citycraft.reinforced_gray_concrete": "Verstärkter Grauer Beton",
+  "block.citycraft.reinforced_light_gray_concrete": "Verstärkter Hellblauer Beton",
+  "block.citycraft.reinforced_cyan_concrete": "Verstärkter Türkiser Beton",
+  "block.citycraft.reinforced_purple_concrete": "Verstärkter Lila Beton",
+  "block.citycraft.reinforced_blue_concrete": "Verstärkter Blauer Beton",
+  "block.citycraft.reinforced_brown_concrete": "Verstärkter Brauner Beton",
+  "block.citycraft.reinforced_green_concrete": "Verstärkter Grüner Beton",
+  "block.citycraft.reinforced_red_concrete": "Verstärkter Roter Beton"
 }

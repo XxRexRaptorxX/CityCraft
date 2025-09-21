@@ -12,7 +12,7 @@ tasks.matching { it.name == 'runData' }.configureEach {
 }
 
 tasks.matching { it.name == 'runClient' }.configureEach {
-    finalizedBy('spotlessApply')
+    dependsOn('spotlessApply')
 }
 
 spotless {

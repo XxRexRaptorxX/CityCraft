@@ -1550,6 +1550,39 @@ public class ModBlocks {
     public static final DeferredBlock<LeverBlock> RED_CONCRETE_LEVER = registerBlock("red_concrete_lever",
             () -> new LeverBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
 
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_BLACK_CONCRETE = registerBlock("reinforced_black_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_WHITE_CONCRETE = registerBlock("reinforced_white_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_ORANGE_CONCRETE = registerBlock("reinforced_orange_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_MAGENTA_CONCRETE = registerBlock("reinforced_magenta_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_LIGHT_BLUE_CONCRETE = registerBlock("reinforced_light_blue_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_YELLOW_CONCRETE = registerBlock("reinforced_yellow_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_LIME_CONCRETE = registerBlock("reinforced_lime_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_PINK_CONCRETE = registerBlock("reinforced_pink_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_GRAY_CONCRETE = registerBlock("reinforced_gray_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_LIGHT_GRAY_CONCRETE = registerBlock("reinforced_light_gray_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_CYAN_CONCRETE = registerBlock("reinforced_cyan_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_PURPLE_CONCRETE = registerBlock("reinforced_purple_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_BLUE_CONCRETE = registerBlock("reinforced_blue_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_BROWN_CONCRETE = registerBlock("reinforced_brown_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_GREEN_CONCRETE = registerBlock("reinforced_green_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+    public static final DeferredBlock<RotatedPillarBlock> REINFORCED_RED_CONCRETE = registerBlock("reinforced_red_concrete",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

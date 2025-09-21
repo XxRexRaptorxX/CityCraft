@@ -2306,6 +2306,43 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.BROWN_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_BROWN, output);
         paintingRecipes(ModBlocks.GREEN_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_GREEN, output);
         paintingRecipes(ModBlocks.RED_CONCRETE_CRACKED_BRICKS.get(), ModTags.COLORED_CONCRETE_CRACKED_BRICKS_TAG, Tags.Items.DYES_RED, output);
+
+        simpleShapelessRecipes(ModBlocks.REINFORCED_BLACK_CONCRETE.get(), Items.BLACK_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_WHITE_CONCRETE.get(), Items.WHITE_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_ORANGE_CONCRETE.get(), Items.ORANGE_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_MAGENTA_CONCRETE.get(), Items.MAGENTA_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output,
+                "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get(), Items.LIGHT_BLUE_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output,
+                "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_YELLOW_CONCRETE.get(), Items.YELLOW_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_LIME_CONCRETE.get(), Items.LIME_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_PINK_CONCRETE.get(), Items.PINK_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_GRAY_CONCRETE.get(), Items.GRAY_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get(), Items.LIGHT_GRAY_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output,
+                "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_CYAN_CONCRETE.get(), Items.CYAN_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_PURPLE_CONCRETE.get(), Items.PURPLE_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_BLUE_CONCRETE.get(), Items.BLUE_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_BROWN_CONCRETE.get(), Items.BROWN_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_GREEN_CONCRETE.get(), Items.GREEN_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+        simpleShapelessRecipes(ModBlocks.REINFORCED_RED_CONCRETE.get(), Items.RED_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
+
+        paintingRecipes(ModBlocks.REINFORCED_BLACK_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_BLACK, output);
+        paintingRecipes(ModBlocks.REINFORCED_WHITE_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_WHITE, output);
+        paintingRecipes(ModBlocks.REINFORCED_ORANGE_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_ORANGE, output);
+        paintingRecipes(ModBlocks.REINFORCED_MAGENTA_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_MAGENTA, output);
+        paintingRecipes(ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_LIGHT_BLUE, output);
+        paintingRecipes(ModBlocks.REINFORCED_YELLOW_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_YELLOW, output);
+        paintingRecipes(ModBlocks.REINFORCED_LIME_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_LIME, output);
+        paintingRecipes(ModBlocks.REINFORCED_PINK_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_PINK, output);
+        paintingRecipes(ModBlocks.REINFORCED_GRAY_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_GRAY, output);
+        paintingRecipes(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_LIGHT_GRAY, output);
+        paintingRecipes(ModBlocks.REINFORCED_CYAN_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_CYAN, output);
+        paintingRecipes(ModBlocks.REINFORCED_PURPLE_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_PURPLE, output);
+        paintingRecipes(ModBlocks.REINFORCED_BLUE_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_BLUE, output);
+        paintingRecipes(ModBlocks.REINFORCED_BROWN_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_BROWN, output);
+        paintingRecipes(ModBlocks.REINFORCED_GREEN_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_GREEN, output);
+        paintingRecipes(ModBlocks.REINFORCED_RED_CONCRETE.get(), ModTags.COLORED_REINFORCED_CONCRETE_TAG, Tags.Items.DYES_RED, output);
     }
 
     private static final String STONE_CUTTING_PATH = References.MODID + ":stonecutting/";
@@ -2396,6 +2433,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void simpleShapelessRecipes(Block result, Item firstInput, TagKey<Item> secondInput, RecipeOutput output, String group) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(firstInput).requires(secondInput).unlockedBy("has_" + secondInput, has(secondInput))
                 .group(group).save(output);
+    }
+
+
+    protected static void simpleShapelessRecipes(Block result, Item firstInput, Item secondInput, TagKey<Item> thirdInput, RecipeOutput output, String group) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(firstInput).requires(secondInput).requires(thirdInput)
+                .unlockedBy("has_" + secondInput, has(secondInput)).group(group).save(output);
     }
 
 

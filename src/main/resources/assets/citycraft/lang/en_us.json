@@ -1133,5 +1133,21 @@
   "block.citycraft.blue_concrete_cracked_bricks": "Cracked Blue Concrete Bricks",
   "block.citycraft.brown_concrete_cracked_bricks": "Cracked Brown Concrete Bricks",
   "block.citycraft.green_concrete_cracked_bricks": "Cracked Green Concrete Bricks",
-  "block.citycraft.red_concrete_cracked_bricks": "Cracked Red Concrete Bricks"
+  "block.citycraft.red_concrete_cracked_bricks": "Cracked Red Concrete Bricks",
+  "block.citycraft.reinforced_black_concrete": "Reinforced Black Concrete",
+  "block.citycraft.reinforced_white_concrete": "Reinforced White Concrete",
+  "block.citycraft.reinforced_orange_concrete": "Reinforced Orange Concrete",
+  "block.citycraft.reinforced_magenta_concrete": "Reinforced Magenta Concrete",
+  "block.citycraft.reinforced_light_blue_concrete": "Reinforced Light Blue Concrete",
+  "block.citycraft.reinforced_yellow_concrete": "Reinforced Yellow Concrete",
+  "block.citycraft.reinforced_lime_concrete": "Reinforced Lime Concrete",
+  "block.citycraft.reinforced_pink_concrete": "Reinforced Pink Concrete",
+  "block.citycraft.reinforced_gray_concrete": "Reinforced Gray Concrete",
+  "block.citycraft.reinforced_light_gray_concrete": "Reinforced Light Gray Concrete",
+  "block.citycraft.reinforced_cyan_concrete": "Reinforced Cyan Concrete",
+  "block.citycraft.reinforced_purple_concrete": "Reinforced Purple Concrete",
+  "block.citycraft.reinforced_blue_concrete": "Reinforced Blue Concrete",
+  "block.citycraft.reinforced_brown_concrete": "Reinforced Brown Concrete",
+  "block.citycraft.reinforced_green_concrete": "Reinforced Green Concrete",
+  "block.citycraft.reinforced_red_concrete": "Reinforced Red Concrete"
 }

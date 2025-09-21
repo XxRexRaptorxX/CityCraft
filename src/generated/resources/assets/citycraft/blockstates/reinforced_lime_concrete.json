@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "citycraft:block/reinforced_lime_concrete",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "citycraft:block/reinforced_lime_concrete"
+    },
+    "axis=z": {
+      "model": "citycraft:block/reinforced_lime_concrete",
+      "x": 90
+    }
+  }
+}

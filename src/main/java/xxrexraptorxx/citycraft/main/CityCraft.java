@@ -179,6 +179,23 @@ public class CityCraft {
             event.accept(ModBlocks.STONE_POST.get());
 
         } else if (key == CreativeModeTabs.COLORED_BLOCKS) {
+            event.accept(ModBlocks.REINFORCED_WHITE_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_GRAY_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_BLACK_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_BROWN_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_RED_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_ORANGE_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_YELLOW_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_LIME_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_GREEN_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_CYAN_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_BLUE_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_PURPLE_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_MAGENTA_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_PINK_CONCRETE.get());
+
             event.accept(ModBlocks.POLISHED_WHITE_CONCRETE.get());
             event.accept(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get());
             event.accept(ModBlocks.POLISHED_GRAY_CONCRETE.get());

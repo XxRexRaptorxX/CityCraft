@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_reinforced_concrete"
+  },
+  "color": {
+    "tag": "c:dyes/cyan"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:reinforced_cyan_concrete"
+  }
+}
