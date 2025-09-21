@@ -381,6 +381,390 @@
       },
       "color": "#red",
       "radius": 15
+    },
+    {
+      "block": "citycraft:bicycle_double_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:bicycle_double_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:bicycle_double_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:bicycle_double_traffic_light",
+      "state": {
+        "phase": "red"
+      },
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:bicycle_triple_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:bicycle_triple_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:bicycle_triple_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#orange",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:bicycle_triple_traffic_light",
+      "state": {
+        "phase": "red"
+      },
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:double_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:double_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:double_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:left_turn_double_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:left_turn_double_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:left_turn_double_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:left_turn_triple_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:left_turn_triple_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:left_turn_triple_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#orange",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:left_turn_triple_traffic_light",
+      "state": {
+        "phase": "red"
+      },
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:pedestrian_double_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:pedestrian_double_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:pedestrian_double_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:pedestrian_double_traffic_light",
+      "state": {
+        "phase": "red"
+      },
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:pedestrian_triple_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:pedestrian_triple_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:pedestrian_triple_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#orange",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:pedestrian_triple_traffic_light",
+      "state": {
+        "phase": "red"
+      },
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:right_turn_double_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:right_turn_double_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:right_turn_double_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:right_turn_triple_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:right_turn_triple_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:right_turn_triple_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#orange",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:right_turn_triple_traffic_light",
+      "state": {
+        "phase": "red"
+      },
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:straight_double_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:straight_double_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:straight_double_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:straight_triple_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:straight_triple_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:straight_triple_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#orange",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:straight_triple_traffic_light",
+      "state": {
+        "phase": "red"
+      },
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:triple_traffic_light",
+      "state": {
+        "phase": "green"
+      },
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:triple_traffic_light",
+      "state": {
+        "phase": "yellow"
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:triple_traffic_light",
+      "state": {
+        "phase": "yellow_red"
+      },
+      "color": "#orange",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:triple_traffic_light",
+      "state": {
+        "phase": "red"
+      },
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:danger_signal_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:pedestrian_signal_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:signal_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "block": "citycraft:train_signal_light",
+      "state": {
+        "lit": true
+      },
+      "color": "#red",
+      "radius": 3
     }
   ],
   "LightItem": []
