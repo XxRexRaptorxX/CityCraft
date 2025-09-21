@@ -51,6 +51,7 @@ public class CityCraftWailaPlugin implements IWailaPlugin {
             tooltip.add(Component.translatable("jade.citycraft.state").append(": ").append(powerStatus));
         }
 
+
         @Override
         public ResourceLocation getUid() {
             return ResourceLocation.fromNamespaceAndPath(References.MODID, "traffic_light_info");
@@ -75,6 +76,7 @@ public class CityCraftWailaPlugin implements IWailaPlugin {
 
             tooltip.add(Component.translatable("jade.citycraft.state").append(": ").append(lightStatus));
         }
+
 
         @Override
         public ResourceLocation getUid() {
