@@ -17,6 +17,11 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        // location of the modrinthmaven
+        url = "https://api.modrinth.com/maven"
+    }
+
 
     flatDir {
         dir 'libs'
@@ -32,7 +37,7 @@ dependencies {
     //JEED
     runtimeOnly ("curse.maven:jeed-532286:${jeed_version}")
     //JADE
-    runtimeOnly ("curse.maven:jade-324717:${jade_version}")
+    implementation "maven.modrinth:jade:${jade_version}+neoforge"
     //IMMERSIVE ENGINEERING
     //runtimeOnly ("curse.maven:ie-231951:${immersive_engineering_version}")
     //IMMERSIVE PETROLEUM
