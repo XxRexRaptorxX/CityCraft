@@ -721,7 +721,7 @@ public class CreativeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WALL_SIGNS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".wall_signs_tab",
             () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + References.MODID + ".wall_signs_tab"))
-                    .icon(() -> new ItemStack(ModBlocks.MONSTER_WARNING_SIGN.get())).displayItems((params, output) -> {
+                    .icon(() -> new ItemStack(ModBlocks.MONSTER_WARNING_SIGN.get())).withTabsBefore(SIGN_TAB.getId()).displayItems((params, output) -> {
                         output.accept(ModBlocks.WARNING_SIGN.get());
                         output.accept(ModBlocks.MONSTER_WARNING_SIGN.get());
                         output.accept(ModBlocks.TOXIC_WARNING_SIGN.get());
@@ -807,7 +807,7 @@ public class CreativeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TRAFFIC_LIGHTS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".traffic_lights_tab",
             () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + References.MODID + ".traffic_lights_tab"))
-                    .icon(() -> new ItemStack(ModBlocks.TRIPLE_TRAFFIC_LIGHT.get())).displayItems((params, output) -> {
+                    .icon(() -> new ItemStack(ModBlocks.TRIPLE_TRAFFIC_LIGHT.get())).withTabsBefore(WALL_SIGNS_TAB.getId()).displayItems((params, output) -> {
                         output.accept(ModBlocks.IRON_POLE.get());
                         output.accept(ModBlocks.REDSTONE_POLE.get());
 
@@ -869,7 +869,8 @@ public class CreativeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ROAD_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".roads",
             () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + References.MODID + ".roads_tab"))
-                    .icon(() -> new ItemStack(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE.get())).withTabsBefore(MAIN_TAB.getId()).displayItems((params, output) -> {
+                    .icon(() -> new ItemStack(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE.get())).withTabsBefore(TRAFFIC_LIGHTS_TAB.getId())
+                    .displayItems((params, output) -> {
                         output.accept(ModBlocks.ASPHALT_BLOCK.get());
                         output.accept(ModBlocks.ASPHALT_SLAB.get());
                         output.accept(ModBlocks.CRACKED_ASPHALT.get());
@@ -1315,7 +1316,7 @@ public class CreativeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CONCRETE_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".concrete",
             () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + References.MODID + ".concrete_tab")).withTabsBefore(MAIN_TAB.getId())
-                    .icon(() -> new ItemStack(ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get())).displayItems((params, output) -> {
+                    .icon(() -> new ItemStack(ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get())).withTabsBefore(ROAD_TAB.getId()).displayItems((params, output) -> {
                         output.accept(Blocks.WHITE_CONCRETE);
                         output.accept(Blocks.LIGHT_GRAY_CONCRETE);
                         output.accept(Blocks.GRAY_CONCRETE);
