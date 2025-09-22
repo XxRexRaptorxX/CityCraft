@@ -1,0 +1,21 @@
+{
+  "values": [
+    "minecraft:redstone_lamp",
+    "citycraft:black_lamp",
+    "citycraft:white_lamp",
+    "citycraft:orange_lamp",
+    "citycraft:magenta_lamp",
+    "citycraft:light_blue_lamp",
+    "citycraft:yellow_lamp",
+    "citycraft:lime_lamp",
+    "citycraft:pink_lamp",
+    "citycraft:gray_lamp",
+    "citycraft:light_gray_lamp",
+    "citycraft:cyan_lamp",
+    "citycraft:purple_lamp",
+    "citycraft:blue_lamp",
+    "citycraft:brown_lamp",
+    "citycraft:green_lamp",
+    "citycraft:red_lamp"
+  ]
+}

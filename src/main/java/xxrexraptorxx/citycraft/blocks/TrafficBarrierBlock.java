@@ -7,7 +7,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
-import xxrexraptorxx.citycraft.registry.ModTags;
+import xxrexraptorxx.citycraft.registry.ModBlockTags;
 
 public class TrafficBarrierBlock extends FenceBlock implements SimpleWaterloggedBlock {
 
@@ -24,6 +24,6 @@ public class TrafficBarrierBlock extends FenceBlock implements SimpleWaterlogged
 
 
     private boolean isSameFence(BlockState state) {
-        return state.is(ModTags.TRAFFIC_BARRIERS_TAG);
+        return state.is(ModBlockTags.TRAFFIC_BARRIERS);
     }
 }

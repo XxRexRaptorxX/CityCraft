@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import xxrexraptorxx.citycraft.registry.ModTags;
+import xxrexraptorxx.citycraft.registry.ModBlockTags;
 
 public class DoubleTrafficBarrierBlock extends FenceBlock implements SimpleWaterloggedBlock {
 
@@ -32,7 +32,7 @@ public class DoubleTrafficBarrierBlock extends FenceBlock implements SimpleWater
 
 
     private boolean isSameFence(BlockState state) {
-        return state.is(ModTags.TRAFFIC_BARRIERS_TAG);
+        return state.is(ModBlockTags.TRAFFIC_BARRIERS);
     }
 
 

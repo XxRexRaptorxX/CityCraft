@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:concretes"
+  },
+  "color": {
+    "tag": "c:dyes/blue"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:blue_concrete"
+  }
+}

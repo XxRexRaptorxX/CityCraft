@@ -1,13 +1,21 @@
 package xxrexraptorxx.citycraft.datagen;
 
-import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import xxrexraptorxx.citycraft.main.References;
+import xxrexraptorxx.citycraft.registry.ModBlockTags;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
+
+import java.util.Locale;
+import java.util.concurrent.CompletableFuture;
+import java.util.function.Predicate;
 
 public class BlockTagGen extends BlockTagsProvider {
 
@@ -18,6 +26,45 @@ public class BlockTagGen extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        var lookup = provider.lookupOrThrow(Registries.BLOCK);
+
+        addByPathPredicate(lookup, ModBlockTags.BLANK_ASPHALT, path -> (path.equals("asphalt") || path.endsWith("_asphalt")) && !path.startsWith("asphalt_with"));
+        addByPathPredicate(lookup, ModBlockTags.BLANK_ASPHALT_SLABS, path -> path.endsWith("_asphalt_slab") || (path.contains("_asphalt") && path.endsWith("_slab")));
+
+        addByPathPredicate(lookup, ModBlockTags.WHITE_MARKED_ASPHALT, path -> path.startsWith("asphalt_with_white"));
+        addByPathPredicate(lookup, ModBlockTags.WHITE_MARKED_ASPHALT_SLABS, path -> path.startsWith("asphalt_with_white") && path.endsWith("_slab"));
+
+        addByPathPredicate(lookup, ModBlockTags.YELLOW_MARKED_ASPHALT, path -> path.startsWith("asphalt_with_yellow"));
+        addByPathPredicate(lookup, ModBlockTags.YELLOW_MARKED_ASPHALT_SLABS, path -> path.startsWith("asphalt_with_yellow") && path.endsWith("_slab"));
+
+        tag(ModBlockTags.ASPHALT_WITH_MARKINGS).addTag(ModBlockTags.WHITE_MARKED_ASPHALT).addTag(ModBlockTags.YELLOW_MARKED_ASPHALT);
+        tag(ModBlockTags.ASPHALT_SLABS_WITH_MARKINGS).addTag(ModBlockTags.WHITE_MARKED_ASPHALT_SLABS).addTag(ModBlockTags.YELLOW_MARKED_ASPHALT_SLABS);
+
+        tag(ModBlockTags.ASPHALT).addTag(ModBlockTags.BLANK_ASPHALT).addTag(ModBlockTags.ASPHALT_WITH_MARKINGS).add(ModBlocks.CRACKED_ASPHALT.get())
+                .add(ModBlocks.CRACKED_ASPHALT_SLAB.get()).add(ModBlocks.POTHOLE_ASPHALT.get()).add(ModBlocks.POTHOLE_ASPHALT_SLAB.get()).add(ModBlocks.DIRTY_ASPHALT.get())
+                .add(ModBlocks.DIRTY_ASPHALT_SLAB.get()).add(ModBlocks.BOOST_ASPHALT.get()).add(ModBlocks.BOOST_ASPHALT_SLAB.get()).add(ModBlocks.RED_BUMPER_SLAB.get())
+                .add(ModBlocks.YELLOW_BUMPER_SLAB.get());
+
+        addByPathPredicate(lookup, ModBlockTags.TRAFFIC_BARRIERS, path -> path.contains("traffic_barrier"));
+        addByPathPredicate(lookup, ModBlockTags.CONCRETES, path -> path.contains("concrete"));
+        addByPathPredicate(lookup, ModBlockTags.LEVERS, path -> path.endsWith("lever"));
+        addByPathPredicate(lookup, ModBlockTags.POSTS, path -> path.endsWith("_post"));
+        addByPathPredicate(lookup, ModBlockTags.POLES, path -> path.endsWith("_pole"));
+        addByPathPredicate(lookup, ModBlockTags.LAMPS, path -> path.endsWith("_lamp") || path.endsWith("_light") || path.contains("lantern"));
+        addByPathPredicate(lookup, ModBlockTags.SPEED_BOOST_BLOCKS, path -> path.contains("asphalt") && !path.contains("pothole"));
+
+        addByPathModPredicate(lookup, BlockTags.SLABS, path -> path.endsWith("_slab") || path.endsWith("_panel") || path.startsWith("drain_cover"));
+        addByPathModPredicate(lookup, BlockTags.STAIRS, path -> path.endsWith("_stairs"));
+        addByPathModPredicate(lookup, BlockTags.FENCES, path -> path.endsWith("_fence"));
+        addByPathModPredicate(lookup, BlockTags.PRESSURE_PLATES, path -> path.endsWith("_pressure_plate"));
+        addByPathModPredicate(lookup, BlockTags.BUTTONS, path -> path.endsWith("_button"));
+        addByPathModPredicate(lookup, BlockTags.WALLS, path -> path.endsWith("_wall"));
+
+
+        tag(ModBlockTags.createBlockTag("c", "asphalt")).addTag(ModBlockTags.ASPHALT);
+        tag(ModBlockTags.createBlockTag("c", "traffic_barrier")).addTag(ModBlockTags.TRAFFIC_BARRIERS);
+        tag(ModBlockTags.createBlockTag("car", "drivable_blocks")).addTag(ModBlockTags.ASPHALT);
+
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.ASPHALT_BLOCK.get(), ModBlocks.CRACKED_ASPHALT.get(), ModBlocks.POTHOLE_ASPHALT.get(), ModBlocks.MOSSY_ASPHALT.get(),
                 ModBlocks.DIRTY_ASPHALT.get(), ModBlocks.WHITE_ASPHALT.get(), ModBlocks.ORANGE_ASPHALT.get(), ModBlocks.MAGENTA_ASPHALT.get(), ModBlocks.LIGHT_BLUE_ASPHALT.get(),
                 ModBlocks.YELLOW_ASPHALT.get(), ModBlocks.LIME_ASPHALT.get(), ModBlocks.RED_ASPHALT.get(), ModBlocks.PINK_ASPHALT.get(), ModBlocks.GRAY_ASPHALT.get(),
@@ -330,89 +377,7 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.get(),
                 ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.get(),
                 ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.get(),
-                ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get());
-
-        tag(BlockTags.SLABS).add(ModBlocks.ASPHALT_SLAB.get(), ModBlocks.CRACKED_ASPHALT_SLAB.get(), ModBlocks.POTHOLE_ASPHALT_SLAB.get(), ModBlocks.MOSSY_ASPHALT_SLAB.get(),
-                ModBlocks.DIRTY_ASPHALT_SLAB.get(), ModBlocks.WHITE_ASPHALT_SLAB.get(), ModBlocks.ORANGE_ASPHALT_SLAB.get(), ModBlocks.MAGENTA_ASPHALT_SLAB.get(),
-                ModBlocks.LIGHT_BLUE_ASPHALT_SLAB.get(), ModBlocks.YELLOW_ASPHALT_SLAB.get(), ModBlocks.LIME_ASPHALT_SLAB.get(), ModBlocks.RED_ASPHALT_SLAB.get(),
-                ModBlocks.PINK_ASPHALT_SLAB.get(), ModBlocks.GRAY_ASPHALT_SLAB.get(), ModBlocks.LIGHT_GRAY_ASPHALT_SLAB.get(), ModBlocks.CYAN_ASPHALT_SLAB.get(),
-                ModBlocks.PURPLE_ASPHALT_SLAB.get(), ModBlocks.BLUE_ASPHALT_SLAB.get(), ModBlocks.BROWN_ASPHALT_SLAB.get(), ModBlocks.GREEN_ASPHALT_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_HATCHING_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_FRAME_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_HATCHING_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_FRAME_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_EDGE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(),
-                ModBlocks.BOOST_ASPHALT_SLAB.get(), ModBlocks.RED_BUMPER_SLAB.get(), ModBlocks.YELLOW_BUMPER_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_B_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_C_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_D_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_E_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_F_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_G_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_H_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_I_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_J_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_K_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_L_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_M_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_N_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_O_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_P_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_Q_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_R_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_S_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_T_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_U_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_V_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_W_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_X_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_Y_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_Z_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_A_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_B_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_C_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_D_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_E_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_F_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_G_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_H_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_I_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_J_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_K_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_L_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_M_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_N_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_O_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_P_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Q_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_R_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_S_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_T_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_U_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_V_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_W_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_0_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_1_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_2_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_3_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_4_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_5_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_6_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_7_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_8_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_9_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_COMMA_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DASH_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_DOT_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_EXCLAMATION_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_QUESTION_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_SLASH_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_0_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_1_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_2_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_3_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_4_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_5_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_6_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_7_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_8_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_9_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_COMMA_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_DASH_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DOT_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_EXCLAMATION_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_QUESTION_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_SLASH_SLAB.get(), ModBlocks.DRAIN_COVER.get(), ModBlocks.DRAIN_COVER_GRID.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(),
-                ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(),
-                ModBlocks.STREET_LANTERN_PANEL.get(), ModBlocks.WHITE_CONCRETE_SLAB.get(), ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), ModBlocks.GRAY_CONCRETE_SLAB.get(),
-                ModBlocks.BLACK_CONCRETE_SLAB.get(), ModBlocks.BROWN_CONCRETE_SLAB.get(), ModBlocks.RED_CONCRETE_SLAB.get(), ModBlocks.ORANGE_CONCRETE_SLAB.get(),
-                ModBlocks.YELLOW_CONCRETE_SLAB.get(), ModBlocks.LIME_CONCRETE_SLAB.get(), ModBlocks.GREEN_CONCRETE_SLAB.get(), ModBlocks.CYAN_CONCRETE_SLAB.get(),
-                ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), ModBlocks.BLUE_CONCRETE_SLAB.get(), ModBlocks.PURPLE_CONCRETE_SLAB.get(), ModBlocks.MAGENTA_CONCRETE_SLAB.get(),
-                ModBlocks.PINK_CONCRETE_SLAB.get(), ModBlocks.WHITE_CONCRETE_LEVER.get(), ModBlocks.LIGHT_GRAY_CONCRETE_LEVER.get(), ModBlocks.GRAY_CONCRETE_LEVER.get(),
+                ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.WHITE_CONCRETE_LEVER.get(), ModBlocks.LIGHT_GRAY_CONCRETE_LEVER.get(), ModBlocks.GRAY_CONCRETE_LEVER.get(),
                 ModBlocks.BLACK_CONCRETE_LEVER.get(), ModBlocks.BROWN_CONCRETE_LEVER.get(), ModBlocks.RED_CONCRETE_LEVER.get(), ModBlocks.ORANGE_CONCRETE_LEVER.get(),
                 ModBlocks.YELLOW_CONCRETE_LEVER.get(), ModBlocks.LIME_CONCRETE_LEVER.get(), ModBlocks.GREEN_CONCRETE_LEVER.get(), ModBlocks.CYAN_CONCRETE_LEVER.get(),
                 ModBlocks.LIGHT_BLUE_CONCRETE_LEVER.get(), ModBlocks.BLUE_CONCRETE_LEVER.get(), ModBlocks.PURPLE_CONCRETE_LEVER.get(), ModBlocks.MAGENTA_CONCRETE_LEVER.get(),
@@ -431,32 +396,47 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.REINFORCED_PINK_CONCRETE.get(), ModBlocks.REINFORCED_GRAY_CONCRETE.get(), ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get(),
                 ModBlocks.REINFORCED_CYAN_CONCRETE.get(), ModBlocks.REINFORCED_PURPLE_CONCRETE.get(), ModBlocks.REINFORCED_BLUE_CONCRETE.get(),
                 ModBlocks.REINFORCED_BROWN_CONCRETE.get(), ModBlocks.REINFORCED_GREEN_CONCRETE.get(), ModBlocks.REINFORCED_RED_CONCRETE.get());
+    }
 
-        tag(BlockTags.FENCES).add(ModBlocks.IRON_FENCE.get());
 
-        tag(BlockTags.WALLS).add(ModBlocks.BLACK_CONCRETE_WALL.get(), ModBlocks.WHITE_CONCRETE_WALL.get(), ModBlocks.ORANGE_CONCRETE_WALL.get(),
-                ModBlocks.MAGENTA_CONCRETE_WALL.get(), ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get(), ModBlocks.YELLOW_CONCRETE_WALL.get(), ModBlocks.LIME_CONCRETE_WALL.get(),
-                ModBlocks.PINK_CONCRETE_WALL.get(), ModBlocks.GRAY_CONCRETE_WALL.get(), ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get(), ModBlocks.CYAN_CONCRETE_WALL.get(),
-                ModBlocks.PURPLE_CONCRETE_WALL.get(), ModBlocks.BLUE_CONCRETE_WALL.get(), ModBlocks.BROWN_CONCRETE_WALL.get(), ModBlocks.GREEN_CONCRETE_WALL.get(),
-                ModBlocks.RED_CONCRETE_WALL.get());
+    private void addByPathPredicate(HolderLookup.RegistryLookup<Block> blockLookup, TagKey<Block> tag, Predicate<String> pathPredicate) {
+        var appender = tag(tag);
 
-        tag(BlockTags.STAIRS).add(ModBlocks.WHITE_CONCRETE_STAIRS.get(), ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), ModBlocks.GRAY_CONCRETE_STAIRS.get(),
-                ModBlocks.BLACK_CONCRETE_STAIRS.get(), ModBlocks.BROWN_CONCRETE_STAIRS.get(), ModBlocks.RED_CONCRETE_STAIRS.get(), ModBlocks.ORANGE_CONCRETE_STAIRS.get(),
-                ModBlocks.YELLOW_CONCRETE_STAIRS.get(), ModBlocks.LIME_CONCRETE_STAIRS.get(), ModBlocks.GREEN_CONCRETE_STAIRS.get(), ModBlocks.CYAN_CONCRETE_STAIRS.get(),
-                ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), ModBlocks.BLUE_CONCRETE_STAIRS.get(), ModBlocks.PURPLE_CONCRETE_STAIRS.get(), ModBlocks.MAGENTA_CONCRETE_STAIRS.get(),
-                ModBlocks.PINK_CONCRETE_STAIRS.get());
+        blockLookup.listElementIds().forEach(id -> {
+            String ns = id.location().getNamespace();
+            if (!References.MODID.equals(ns) && !"minecraft".equals(ns)) return;
 
-        tag(BlockTags.BUTTONS).add(ModBlocks.WHITE_CONCRETE_BUTTON.get(), ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON.get(), ModBlocks.GRAY_CONCRETE_BUTTON.get(),
-                ModBlocks.BLACK_CONCRETE_BUTTON.get(), ModBlocks.BROWN_CONCRETE_BUTTON.get(), ModBlocks.RED_CONCRETE_BUTTON.get(), ModBlocks.ORANGE_CONCRETE_BUTTON.get(),
-                ModBlocks.YELLOW_CONCRETE_BUTTON.get(), ModBlocks.LIME_CONCRETE_BUTTON.get(), ModBlocks.GREEN_CONCRETE_BUTTON.get(), ModBlocks.CYAN_CONCRETE_BUTTON.get(),
-                ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON.get(), ModBlocks.BLUE_CONCRETE_BUTTON.get(), ModBlocks.PURPLE_CONCRETE_BUTTON.get(), ModBlocks.MAGENTA_CONCRETE_BUTTON.get(),
-                ModBlocks.PINK_CONCRETE_BUTTON.get());
+            String path = id.location().getPath().toLowerCase(Locale.ROOT);
+            try {
+                if (pathPredicate.test(path)) {
+                    ResourceKey<Block> key = ResourceKey.create(Registries.BLOCK, id.location());
+                    appender.add(key);
+                }
+            } catch (Exception ignored) {
+            }
+        });
 
-        tag(BlockTags.PRESSURE_PLATES).add(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.get(),
-                ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE.get(),
-                ModBlocks.RED_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.get(),
-                ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.get(),
-                ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.get(),
-                ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.get(), ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get());
+        appender.replace(false);
+    }
+
+
+    private void addByPathModPredicate(HolderLookup.RegistryLookup<Block> blockLookup, TagKey<Block> tag, Predicate<String> pathPredicate) {
+        var appender = tag(tag);
+
+        blockLookup.listElementIds().forEach(id -> {
+            String ns = id.location().getNamespace();
+            if (!References.MODID.equals(ns)) return;
+
+            String path = id.location().getPath().toLowerCase(Locale.ROOT);
+            try {
+                if (pathPredicate.test(path)) {
+                    ResourceKey<Block> key = ResourceKey.create(Registries.BLOCK, id.location());
+                    appender.add(key);
+                }
+            } catch (Exception ignored) {
+            }
+        });
+
+        appender.replace(false);
     }
 }

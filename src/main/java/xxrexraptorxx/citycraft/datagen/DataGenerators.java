@@ -1,6 +1,5 @@
 package xxrexraptorxx.citycraft.datagen;
 
-import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -9,6 +8,8 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import xxrexraptorxx.citycraft.main.References;
+
+import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(modid = References.MODID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
@@ -23,8 +24,12 @@ public class DataGenerators {
         generator.addProvider(event.includeClient(), new ItemModelGen(packOutput, helper));
         generator.addProvider(event.includeClient(), new BlockStateGen(packOutput, helper));
 
-        generator.addProvider(event.includeServer(), new BlockTagGen(packOutput, lookupProvider, helper));
-        generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
+        BlockTagGen blockTagProvider = new BlockTagGen(packOutput, lookupProvider, helper);
+        ItemTagGen itemTagProvider = new ItemTagGen(packOutput, lookupProvider, blockTagProvider, helper);
+        generator.addProvider(event.includeServer(), blockTagProvider);
+        generator.addProvider(event.includeServer(), itemTagProvider);
+        generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput, lookupProvider));
+
     }
 }
