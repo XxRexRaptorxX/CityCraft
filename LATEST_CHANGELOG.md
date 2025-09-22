@@ -1,4 +1,4 @@
-# [v.2.9.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.9.0-dev1...v.2.9.0-dev12)
+# [v.2.9.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.9.0-dev1...v.2.9.0-dev13)
 
 ## ✨ Features
 
@@ -11,6 +11,7 @@
 
 ## 🔨 Refactoring
 
+- block / item tag datagen enhanced and improved ([2e02265](https://github.com/XxRexRaptorxX/CityCraft/commit/2e02265af4dc01646925081000a76a0e5bd49f25))
 - road tab reorganized ([f09d5f4](https://github.com/XxRexRaptorxX/CityCraft/commit/f09d5f428c3a0eec1664895b5dbc5baf0e045ed0))
 - creative tabs sorted ([45d9998](https://github.com/XxRexRaptorxX/CityCraft/commit/45d99985e9cd3867d37960fbd7b7769576999535))
 
