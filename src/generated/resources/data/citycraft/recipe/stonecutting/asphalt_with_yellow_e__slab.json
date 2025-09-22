@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "citycraft:asphalt_with_yellow_e_"
+  },
+  "result": {
+    "count": 2,
+    "id": "citycraft:asphalt_with_yellow_e__slab"
+  }
+}
