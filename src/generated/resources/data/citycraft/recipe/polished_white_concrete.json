@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:white_concrete"
+      "item": "citycraft:polished_white_concrete"
     }
   },
   "pattern": [

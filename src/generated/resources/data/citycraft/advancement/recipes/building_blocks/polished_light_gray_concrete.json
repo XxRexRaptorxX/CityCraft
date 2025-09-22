@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_light_gray_concrete": {
+    "has_polished_light_gray_concrete": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:light_gray_concrete"
+            "items": "citycraft:polished_light_gray_concrete"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_light_gray_concrete"
+      "has_polished_light_gray_concrete"
     ]
   ],
   "rewards": {

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_TagKey[minecraft:item / c:buckets/water]": {
+    "has_Block{minecraft:light_gray_concrete_powder}": {
       "conditions": {
         "items": [
           {
-            "items": "#c:buckets/water"
+            "items": "minecraft:light_gray_concrete_powder"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_TagKey[minecraft:item / c:buckets/water]"
+      "has_Block{minecraft:light_gray_concrete_powder}"
     ]
   ],
   "rewards": {

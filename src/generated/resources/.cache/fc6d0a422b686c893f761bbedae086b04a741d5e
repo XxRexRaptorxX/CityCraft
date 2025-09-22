@@ -1,15 +1,15 @@
-// 1.21	2025-09-22T19:12:33.7952192	Tags for minecraft:block mod id citycraft
+// 1.21	2025-09-22T22:58:13.5136516	Tags for minecraft:block mod id citycraft
 661b44d584785e996f41d8ac960a9c771fe513d1 data/car/tags/block/drivable_blocks.json
 7c9bb93a1fc8f0739b2d217b188507e005114f2d data/citycraft/tags/block/asphalt.json
 b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/block/asphalt_slabs_with_markings.json
 47f60bc7f566d7e79607e77d2ab1f24026498c88 data/citycraft/tags/block/asphalt_with_markings.json
-9a2047512bfaa373aefffd7abc0eeb88cd40084e data/citycraft/tags/block/blank_asphalt.json
-cf4e07ef4c5c6b308d3272223c520243158f8c7d data/citycraft/tags/block/blank_asphalt_slabs.json
+17d1732614266d4c8f466deb91cf393029e781db data/citycraft/tags/block/blank_asphalt.json
+17e86ea829dc75c3fd053837b34d56c18abcc841 data/citycraft/tags/block/blank_asphalt_slabs.json
 a3ca97688cff7ca5c3fb4a5291231b6f2d884175 data/citycraft/tags/block/blocks_with_speed_boost.json
 d8d9268c4928d5270d824608a8f71ca1903a979d data/citycraft/tags/block/traffic_barriers.json
-09dabe3150a2565ca0eb3606cae0cdf69d14d419 data/citycraft/tags/block/white_marked_asphalt.json
+9e8101a3ec6c6c66454f490891543f1a61b12ee6 data/citycraft/tags/block/white_marked_asphalt.json
 63cfd476ec92aee37fd5e54d069a4b399a04c427 data/citycraft/tags/block/white_marked_asphalt_slabs.json
-efb15cd799d56207717b0918369aed1d50f9dd0f data/citycraft/tags/block/yellow_marked_asphalt.json
+4280747ac617f31048c361e84885e84fad8f6d9e data/citycraft/tags/block/yellow_marked_asphalt.json
 438d8351191632515e53704124fae23914832df1 data/citycraft/tags/block/yellow_marked_asphalt_slabs.json
 661b44d584785e996f41d8ac960a9c771fe513d1 data/c/tags/block/asphalt.json
 f5fdadf10d6e257e3d66b6541ca6568ef8721d99 data/c/tags/block/concretes.json

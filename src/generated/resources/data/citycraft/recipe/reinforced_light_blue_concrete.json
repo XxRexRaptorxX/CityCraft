@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "group": "reinforced_concrete",
+  "group": "reinforced_concrete_with_bucket",
   "ingredients": [
     {
       "item": "minecraft:light_blue_concrete_powder"

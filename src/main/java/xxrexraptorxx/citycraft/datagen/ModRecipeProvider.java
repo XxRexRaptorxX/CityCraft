@@ -1,6 +1,9 @@
 package xxrexraptorxx.citycraft.datagen;
 
+import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
+
+import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -14,6 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.recipes.PaintingRecipe;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
@@ -29,223 +33,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput output) {
-        slabRecipes(ModBlocks.ASPHALT_SLAB.get(), ModBlocks.ASPHALT_BLOCK.get(), output);
-        slabRecipes(ModBlocks.CRACKED_ASPHALT_SLAB.get(), ModBlocks.CRACKED_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.POTHOLE_ASPHALT_SLAB.get(), ModBlocks.POTHOLE_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.MOSSY_ASPHALT_SLAB.get(), ModBlocks.MOSSY_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.DIRTY_ASPHALT_SLAB.get(), ModBlocks.DIRTY_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.WHITE_ASPHALT_SLAB.get(), ModBlocks.WHITE_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.ORANGE_ASPHALT_SLAB.get(), ModBlocks.ORANGE_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.MAGENTA_ASPHALT_SLAB.get(), ModBlocks.MAGENTA_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.LIGHT_BLUE_ASPHALT_SLAB.get(), ModBlocks.LIGHT_BLUE_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.YELLOW_ASPHALT_SLAB.get(), ModBlocks.YELLOW_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.LIME_ASPHALT_SLAB.get(), ModBlocks.LIME_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.RED_ASPHALT_SLAB.get(), ModBlocks.RED_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.PINK_ASPHALT_SLAB.get(), ModBlocks.PINK_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.GRAY_ASPHALT_SLAB.get(), ModBlocks.GRAY_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.LIGHT_GRAY_ASPHALT_SLAB.get(), ModBlocks.LIGHT_GRAY_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.CYAN_ASPHALT_SLAB.get(), ModBlocks.CYAN_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.PURPLE_ASPHALT_SLAB.get(), ModBlocks.PURPLE_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.BLUE_ASPHALT_SLAB.get(), ModBlocks.BLUE_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.BROWN_ASPHALT_SLAB.get(), ModBlocks.BROWN_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.GREEN_ASPHALT_SLAB.get(), ModBlocks.GREEN_ASPHALT.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_HATCHING_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_HATCHING.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_FRAME_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_FRAME.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HATCHING_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_HATCHING.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_FRAME_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_FRAME.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING.get(), output);
 
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE.get(), output);
-
-        slabRecipes(ModBlocks.BOOST_ASPHALT_SLAB.get(), ModBlocks.BOOST_ASPHALT.get(), output);
-
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_A.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_B_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_B.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_C_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_C.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_D_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_D.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_E_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_E.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_F_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_F.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_G_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_G.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_H_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_H.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_I_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_I.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_J_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_J.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_K_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_K.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_L_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_L.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_M_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_M.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_N_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_N.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_O_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_O.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_P_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_P.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_Q_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_Q.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_R_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_R.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_S_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_S.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_T_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_T.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_U_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_U.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_V_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_V.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_W_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_W.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_X_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_X.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_Y_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_Y.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_Z_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_Z.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_A_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_A.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_B_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_B.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_C_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_C.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_D_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_D.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_E_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_E.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_F_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_F.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_G_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_G.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_H_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_H.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_I_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_I.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_J_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_J.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_K_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_K.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_L_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_L.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_M_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_M.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_N_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_N.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_O_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_O.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_P_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_P.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Q_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Q.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_R_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_R.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_S_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_S.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_T_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_T.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_U_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_U.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_V_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_V.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_W_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_W.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_X.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Y.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_Z.get(), output);
-
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_0_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_0.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_1_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_1.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_2_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_2.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_3_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_3.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_4_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_4.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_5_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_5.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_6_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_6.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_7_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_7.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_8_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_8.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_9_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_9.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_COMMA_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_COMMA.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_DASH_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DASH.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_DOT_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DOT.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_EXCLAMATION_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_EXCLAMATION.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_QUESTION_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_QUESTION.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_SLASH_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_SLASH.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_0_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_0.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_1_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_1.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_2_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_2.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_3_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_3.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_4_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_4.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_5_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_5.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_6_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_6.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_7_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_7.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_8_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_8.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_9_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_9.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_COMMA_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_COMMA.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DASH_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DASH.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DOT_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DOT.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_EXCLAMATION_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_EXCLAMATION.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_QUESTION_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_QUESTION.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SLASH_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_SLASH.get(), output);
-
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get(), ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get(), output);
-        slabRecipes(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(), ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get(), output);
-
-        wallRecipes(ModBlocks.BLACK_CONCRETE_WALL.get(), Blocks.BLACK_CONCRETE, output);
-        wallRecipes(ModBlocks.WHITE_CONCRETE_WALL.get(), Blocks.WHITE_CONCRETE, output);
-        wallRecipes(ModBlocks.ORANGE_CONCRETE_WALL.get(), Blocks.ORANGE_CONCRETE, output);
-        wallRecipes(ModBlocks.MAGENTA_CONCRETE_WALL.get(), Blocks.MAGENTA_CONCRETE, output);
-        wallRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
-        wallRecipes(ModBlocks.YELLOW_CONCRETE_WALL.get(), Blocks.YELLOW_CONCRETE, output);
-        wallRecipes(ModBlocks.LIME_CONCRETE_WALL.get(), Blocks.LIME_CONCRETE, output);
-        wallRecipes(ModBlocks.PINK_CONCRETE_WALL.get(), Blocks.PINK_CONCRETE, output);
-        wallRecipes(ModBlocks.GRAY_CONCRETE_WALL.get(), Blocks.GRAY_CONCRETE, output);
-        wallRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
-        wallRecipes(ModBlocks.CYAN_CONCRETE_WALL.get(), Blocks.CYAN_CONCRETE, output);
-        wallRecipes(ModBlocks.PURPLE_CONCRETE_WALL.get(), Blocks.PURPLE_CONCRETE, output);
-        wallRecipes(ModBlocks.BLUE_CONCRETE_WALL.get(), Blocks.BLUE_CONCRETE, output);
-        wallRecipes(ModBlocks.BROWN_CONCRETE_WALL.get(), Blocks.BROWN_CONCRETE, output);
-        wallRecipes(ModBlocks.GREEN_CONCRETE_WALL.get(), Blocks.GREEN_CONCRETE, output);
-        wallRecipes(ModBlocks.RED_CONCRETE_WALL.get(), Blocks.RED_CONCRETE, output); //
 
         paintingRecipes(ModBlocks.WARNING_BEACON_LEFT_EU_SIGN.get(), ModItemTags.BAKE_SIGN, ModItems.DYE_MIX.get(), output);
         paintingRecipes(ModBlocks.WARNING_BEACON_RIGHT_EU_SIGN.get(), ModItemTags.BAKE_SIGN, ModItems.DYE_MIX.get(), output);
@@ -508,7 +296,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.WARN_US_SIGN.get(), ModItemTags.RECTANGLE_SIGN, ModItems.DYE_MIX.get(), output);
         paintingRecipes(ModBlocks.WARNING_BEACON_ALT_US_SIGN.get(), ModItemTags.BAKE_SIGN, ModItems.DYE_MIX.get(), output);
         paintingRecipes(ModBlocks.WARNING_BEACON_LEFT_US_SIGN.get(), ModItemTags.BAKE_SIGN, ModItems.DYE_MIX.get(), output);
-        paintingRecipes(ModBlocks.WARNING_BEACON_RIGHT_US_SIGN.get(), ModItemTags.BAKE_SIGN, ModItems.DYE_MIX.get(), output); //
+        paintingRecipes(ModBlocks.WARNING_BEACON_RIGHT_US_SIGN.get(), ModItemTags.BAKE_SIGN, ModItems.DYE_MIX.get(), output);
 
         paintingRecipes(ModBlocks.ONCOMING_TRAFFIC_CN_SIGN.get(), ModItemTags.TRIANGLE_SIGN, ModItems.DYE_MIX.get(), output);
         paintingRecipes(ModBlocks.INTERSECTION_CN_SIGN.get(), ModItemTags.TRIANGLE_SIGN, ModItems.DYE_MIX.get(), output);
@@ -664,920 +452,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(ModBlocks.YELLOW_POST.get(), ModItemTags.STONE_POSTS, Tags.Items.DYES_YELLOW, output);
         paintingRecipes(ModBlocks.BLACK_POST.get(), ModItemTags.STONE_POSTS, Tags.Items.DYES_BLACK, output); //
 
-        paintingRecipes(ModBlocks.BLACK_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_CONCRETE_WALL.get(), ModItemTags.CONCRETE_WALLS, Tags.Items.DYES_RED, output); //
-
-        paintingRecipes(ModBlocks.ASPHALT_BLOCK.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_ASPHALT.get(), ModItemTags.BLANK_ASPHALT, Tags.Items.DYES_RED, output); //
-
-        paintingRecipes(ModBlocks.ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_ASPHALT_SLAB.get(), ModItemTags.BLANK_ASPHALT_SLABS, Tags.Items.DYES_RED, output); //
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_HATCHING.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_FRAME.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_EDGE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_A.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_B.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_C.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_D.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_E.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_F.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_G.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_H.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_I.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_J.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_K.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_L.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_M.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_N.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_O.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_P.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Q.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_R.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_S.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_T.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_U.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_V.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_W.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_X.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Y.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Z.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_0.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_1.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_2.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_3.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_4.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_5.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_6.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_7.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_8.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_9.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_COMMA.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DASH.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DOT.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_EXCLAMATION.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_QUESTION.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SLASH.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_0.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_1.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_2.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_3.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_4.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_5.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_6.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_7.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_8.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_9.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_COMMA.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DASH.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DOT.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_EXCLAMATION.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_QUESTION.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SLASH.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE.get(), ModItemTags.WHITE_MARKED_ASPHALT, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_HATCHING.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_FRAME.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_EDGE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_A.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_B.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_C.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_D.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_E.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_F.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_G.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_H.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_I.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_J.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_K.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_L.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_M.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_N.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_O.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_P.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Q.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_R.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_S.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_T.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_U.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_V.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_W.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_X.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Y.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Z.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_0.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_1.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_2.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_3.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_4.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_5.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_6.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_7.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_8.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_9.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_COMMA.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DASH.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DOT.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_EXCLAMATION.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_QUESTION.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SLASH.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_0.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_1.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_2.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_3.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_4.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_5.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_6.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_7.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_8.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_9.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_COMMA.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DASH.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DOT.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_EXCLAMATION.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_QUESTION.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SLASH.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HATCHING.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_FRAME.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_EDGE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_A.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_B.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_C.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_D.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_E.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_F.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_G.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_H.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_I.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_J.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_K.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_L.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_M.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_N.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_O.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_P.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Q.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_R.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_S.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_T.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_U.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_V.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_W.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_X.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Y.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Z.get(), ModItemTags.YELLOW_MARKED_ASPHALT, Tags.Items.DYES_YELLOW, output); //
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HATCHING.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_FRAME.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_EDGE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_A.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_B.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_C.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_D.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_E.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_F.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_G.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_H.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_I.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_J.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_K.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_L.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_M.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_N.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_O.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_P.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Q.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_R.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_S.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_T.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_U.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_V.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_W.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_X.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Y.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Z.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-
-        //// SLABS
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_HATCHING_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_FRAME_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_B_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_C_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_D_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_E_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_F_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_G_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_H_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_I_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_J_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_K_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_L_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_M_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_N_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_O_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_P_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Q_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_R_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_S_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_T_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_U_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_V_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_W_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_X_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Y_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Z_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_0_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_1_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_2_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_3_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_4_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_5_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_6_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_7_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_8_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_9_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_COMMA_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DASH_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DOT_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_EXCLAMATION_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_QUESTION_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SLASH_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_0_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_1_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_2_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_3_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_4_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_5_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_6_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_7_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_8_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_9_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_COMMA_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DASH_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DOT_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_EXCLAMATION_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_QUESTION_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SLASH_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LEFT_EDGE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_RIGHT_EDGE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(), ModItemTags.WHITE_MARKED_ASPHALT_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LEFT_EDGE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_RIGHT_EDGE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LEFT_EDGE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_RIGHT_EDGE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LEFT_EDGE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_RIGHT_EDGE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_HATCHING_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SIDE_DOTS_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_FRAME_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_EDGE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DOUBLE_SIDE_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_FRAME_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_EDGE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_THICK_HATCHING_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_A_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_B_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_C_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_D_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_E_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_F_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_G_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_H_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_I_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_J_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_K_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_L_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_M_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_N_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_O_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_P_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Q_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_R_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_S_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_T_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_U_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_V_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_W_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_X_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Y_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_Z_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_0_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_1_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_2_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_3_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_4_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_5_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_6_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_7_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_8_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_9_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_COMMA_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DASH_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DOT_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_EXCLAMATION_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_QUESTION_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_SLASH_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_0_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_1_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_2_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_3_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_4_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_5_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_6_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_7_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_8_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_9_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_COMMA_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DASH_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DOT_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_EXCLAMATION_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_QUESTION_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SLASH_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HATCHING_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_FRAME_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_EDGE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_A_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_B_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_C_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_D_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_E_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_F_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_G_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_H_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_I_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_J_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_K_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_L_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_M_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_N_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_O_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_P_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Q_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_R_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_S_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_T_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_U_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_V_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_W_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(), ModItemTags.YELLOW_MARKED_ASPHALT_SLABS, Tags.Items.DYES_YELLOW, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HATCHING_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_SIDE_DOTS_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SIDE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_FRAME_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_EDGE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_STRAIGHT_AND_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DOUBLE_SIDE_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_MIDDLE_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_SOLID_AND_BROKEN_MIDDLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_BROKEN_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_DIAGONAL_DOUBLE_LINE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_FRAME_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_EDGE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_THICK_HATCHING_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_A_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_B_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_C_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_D_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_E_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_F_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_G_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_H_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_I_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_J_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_K_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_L_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_M_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_N_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_O_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_P_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Q_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_R_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_S_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_T_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_U_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_V_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_W_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_X_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Y_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_Z_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_BICYCLE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_DIAGONAL_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_HANDICAPPED_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_WHITE_TRIANGLE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE.get(), ModBlocks.ASPHALT_BLOCK.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_BICYCLE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_LEFT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_DIAGONAL_RIGHT_ARROW_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_HANDICAPPED_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_PEDESTRIAN_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.ASPHALT_WITH_YELLOW_TRIANGLE_SLAB.get(), ModBlocks.ASPHALT_SLAB.get(), Tags.Items.DYES_YELLOW, output);
-
-        paintingRecipes(Blocks.BLACK_WOOL, ItemTags.WOOL, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_WOOL, ItemTags.WOOL, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_WOOL, ItemTags.WOOL, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_WOOL, ItemTags.WOOL, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_WOOL, ItemTags.WOOL, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_WOOL, ItemTags.WOOL, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_WOOL, ItemTags.WOOL, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_WOOL, ItemTags.WOOL, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_WOOL, ItemTags.WOOL, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_WOOL, ItemTags.WOOL, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_WOOL, ItemTags.WOOL, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_WOOL, ItemTags.WOOL, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_WOOL, ItemTags.WOOL, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_WOOL, ItemTags.WOOL, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_WOOL, ItemTags.WOOL, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_WOOL, ItemTags.WOOL, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_BANNER, ItemTags.BANNERS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_BANNER, ItemTags.BANNERS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_BANNER, ItemTags.BANNERS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_BANNER, ItemTags.BANNERS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_BANNER, ItemTags.BANNERS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_BANNER, ItemTags.BANNERS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_BANNER, ItemTags.BANNERS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_BANNER, ItemTags.BANNERS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_BANNER, ItemTags.BANNERS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_BANNER, ItemTags.BANNERS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_BANNER, ItemTags.BANNERS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_BANNER, ItemTags.BANNERS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_BANNER, ItemTags.BANNERS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_BANNER, ItemTags.BANNERS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_BANNER, ItemTags.BANNERS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_BANNER, ItemTags.BANNERS, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_CONCRETE, Tags.Items.CONCRETES, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_CANDLE, ItemTags.CANDLES, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_CARPET, ItemTags.WOOL_CARPETS, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_CONCRETE_POWDER, Tags.Items.CONCRETE_POWDERS, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_GLAZED_TERRACOTTA, Tags.Items.GLAZED_TERRACOTTAS, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_TERRACOTTA, ItemTags.TERRACOTTA, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_SHULKER_BOX, Tags.Items.SHULKER_BOXES, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_STAINED_GLASS, Tags.Items.GLASS_BLOCKS, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_STAINED_GLASS_PANE, Tags.Items.GLASS_PANES, Tags.Items.DYES_RED, output);
-
-        paintingRecipes(Blocks.BLACK_BED, ItemTags.BEDS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(Blocks.WHITE_BED, ItemTags.BEDS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(Blocks.ORANGE_BED, ItemTags.BEDS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(Blocks.MAGENTA_BED, ItemTags.BEDS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(Blocks.LIGHT_BLUE_BED, ItemTags.BEDS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(Blocks.YELLOW_BED, ItemTags.BEDS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(Blocks.LIME_BED, ItemTags.BEDS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(Blocks.PINK_BED, ItemTags.BEDS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(Blocks.GRAY_BED, ItemTags.BEDS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(Blocks.LIGHT_GRAY_BED, ItemTags.BEDS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(Blocks.CYAN_BED, ItemTags.BEDS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(Blocks.PURPLE_BED, ItemTags.BEDS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(Blocks.BLUE_BED, ItemTags.BEDS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(Blocks.BROWN_BED, ItemTags.BEDS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(Blocks.GREEN_BED, ItemTags.BEDS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(Blocks.RED_BED, ItemTags.BEDS, Tags.Items.DYES_RED, output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_OPEN.get(), ModBlocks.STRAIGHT_AHEAD_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CLOSED.get(), ModBlocks.CROSS_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT.get(), ModBlocks.PASS_LEFT_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT.get(), ModBlocks.PASS_RIGHT_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT.get(), ModBlocks.SIXTY_SPEED_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT.get(), ModBlocks.EIGHTY_SPEED_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT.get(), ModBlocks.HUNDRED_SPEED_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT.get(), ModBlocks.HUNDRED_TWENTY_SPEED_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_CREEPER.get(), ModBlocks.CREEPER_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_DANGER.get(), ModBlocks.DANGER_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS.get(), ModBlocks.END_ALL_LIMITS_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get(), ModBlocks.JAMS_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get(), ModBlocks.NO_PASSING_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get(), ModBlocks.NO_TRUCK_PASSING_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get(), ModBlocks.ROADWORKS_EU_SIGN.get(), output);
+        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get(), ModBlocks.SLIPPERINESS_EU_SIGN.get(), output);
 
         paintingRecipes(Blocks.OAK_PLANKS, ItemTags.PLANKS, Tags.Items.DYES_YELLOW, output);
         paintingRecipes(Blocks.SPRUCE_PLANKS, ItemTags.PLANKS, Tags.Items.DYES_BROWN, output);
@@ -1710,655 +600,234 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(Blocks.CUT_SANDSTONE_SLAB, Blocks.CUT_RED_SANDSTONE_SLAB, Tags.Items.DYES_YELLOW, output);
         paintingRecipes(Blocks.CUT_RED_SANDSTONE_SLAB, Blocks.CUT_SANDSTONE_SLAB, Tags.Items.DYES_RED, output);
 
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_OPEN.get(), ModBlocks.STRAIGHT_AHEAD_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CLOSED.get(), ModBlocks.CROSS_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_LEFT.get(), ModBlocks.PASS_LEFT_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_LANE_CHANGE_RIGHT.get(), ModBlocks.PASS_RIGHT_EU_SIGN.get(), output);
+        registerConcreteRecipes(output);
+        registerBasicColorRecipes(output);
+        registerAsphaltPaintingRecipes(output);
+        registerSlabRecipes(output);
+    }
 
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_SIXTY_SPEED_LIMIT.get(), ModBlocks.SIXTY_SPEED_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_EIGHTY_SPEED_LIMIT.get(), ModBlocks.EIGHTY_SPEED_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_SPEED_LIMIT.get(), ModBlocks.HUNDRED_SPEED_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_HUNDRED_TWENTY_SPEED_LIMIT.get(), ModBlocks.HUNDRED_TWENTY_SPEED_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_CREEPER.get(), ModBlocks.CREEPER_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_DANGER.get(), ModBlocks.DANGER_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_END_ALL_LIMITS.get(), ModBlocks.END_ALL_LIMITS_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_JAMS.get(), ModBlocks.JAMS_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_PASSING.get(), ModBlocks.NO_PASSING_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_NO_TRUCK_PASSING.get(), ModBlocks.NO_TRUCK_PASSING_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_ROADWORKS.get(), ModBlocks.ROADWORKS_EU_SIGN.get(), output);
-        variableTrafficSignRecipes(ModBlocks.VARIABLE_TRAFFIC_SIGN_SLIPPERINESS.get(), ModBlocks.SLIPPERINESS_EU_SIGN.get(), output);
 
-        paintingRecipes(ModBlocks.BLACK_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_LAMP.get(), ModItemTags.COLORED_LAMPS, Tags.Items.DYES_RED, output);
+    public static void registerBasicColorRecipes(RecipeOutput output) {
+        for (DyeColor dye : DyeColor.values()) {
+            String color = dye.getName();
 
-        lampRecipes(ModBlocks.BLACK_LAMP.get(), Blocks.BLACK_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.WHITE_LAMP.get(), Blocks.WHITE_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.ORANGE_LAMP.get(), Blocks.ORANGE_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.MAGENTA_LAMP.get(), Blocks.MAGENTA_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.LIGHT_BLUE_LAMP.get(), Blocks.LIGHT_BLUE_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.YELLOW_LAMP.get(), Blocks.YELLOW_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.LIME_LAMP.get(), Blocks.LIME_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.PINK_LAMP.get(), Blocks.PINK_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.GRAY_LAMP.get(), Blocks.GRAY_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.LIGHT_GRAY_LAMP.get(), Blocks.LIGHT_GRAY_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.CYAN_LAMP.get(), Blocks.CYAN_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.PURPLE_LAMP.get(), Blocks.PURPLE_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.BLUE_LAMP.get(), Blocks.BLUE_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.BROWN_LAMP.get(), Blocks.BROWN_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.GREEN_LAMP.get(), Blocks.GREEN_STAINED_GLASS_PANE, output);
-        lampRecipes(ModBlocks.RED_LAMP.get(), Blocks.RED_STAINED_GLASS_PANE, output);
+            CityCraft.LOGGER.info("Create basic color recipes for " + color + " dye");
 
-        paintingRecipes(ModBlocks.BLACK_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_NEON_LIGHT.get(), ModItemTags.NEON_LIGHTS, Tags.Items.DYES_RED, output);
+            String neonLightPath = color + "_neon_light";
+            String asphaltPath = color + "_asphalt";
+            String asphaltSlabPath = color + "_asphalt_slab";
+            String lampPath = color + "_lamp";
+            String panePath = color + "_stained_glass_pane";
+            String woolPath = color + "_wool";
+            String bannerPath = color + "_banner";
+            String candlePath = color + "_candle";
+            String carpetPath = color + "_carpet";
+            String terracottaPath = color + "_terracotta";
+            String shulkerPath = color + "_shulker_box";
+            String glassPath = color + "_stained_glass";
+            String bedPath = color + "_bed";
 
-        neonRecipes(ModBlocks.BLACK_NEON_LIGHT.get(), ModBlocks.BLACK_LAMP.get(), output);
-        neonRecipes(ModBlocks.WHITE_NEON_LIGHT.get(), ModBlocks.WHITE_LAMP.get(), output);
-        neonRecipes(ModBlocks.ORANGE_NEON_LIGHT.get(), ModBlocks.ORANGE_LAMP.get(), output);
-        neonRecipes(ModBlocks.MAGENTA_NEON_LIGHT.get(), ModBlocks.MAGENTA_LAMP.get(), output);
-        neonRecipes(ModBlocks.LIGHT_BLUE_NEON_LIGHT.get(), ModBlocks.LIGHT_BLUE_LAMP.get(), output);
-        neonRecipes(ModBlocks.YELLOW_NEON_LIGHT.get(), ModBlocks.YELLOW_LAMP.get(), output);
-        neonRecipes(ModBlocks.LIME_NEON_LIGHT.get(), ModBlocks.LIME_LAMP.get(), output);
-        neonRecipes(ModBlocks.PINK_NEON_LIGHT.get(), ModBlocks.PINK_LAMP.get(), output);
-        neonRecipes(ModBlocks.GRAY_NEON_LIGHT.get(), ModBlocks.GRAY_LAMP.get(), output);
-        neonRecipes(ModBlocks.LIGHT_GRAY_NEON_LIGHT.get(), ModBlocks.LIGHT_GRAY_LAMP.get(), output);
-        neonRecipes(ModBlocks.CYAN_NEON_LIGHT.get(), ModBlocks.CYAN_LAMP.get(), output);
-        neonRecipes(ModBlocks.PURPLE_NEON_LIGHT.get(), ModBlocks.PURPLE_LAMP.get(), output);
-        neonRecipes(ModBlocks.BLUE_NEON_LIGHT.get(), ModBlocks.BLUE_LAMP.get(), output);
-        neonRecipes(ModBlocks.BROWN_NEON_LIGHT.get(), ModBlocks.BROWN_LAMP.get(), output);
-        neonRecipes(ModBlocks.GREEN_NEON_LIGHT.get(), ModBlocks.GREEN_LAMP.get(), output);
-        neonRecipes(ModBlocks.RED_NEON_LIGHT.get(), ModBlocks.RED_LAMP.get(), output);
+            // name fix
+            if (asphaltPath.equals("black_asphalt")) {
+                asphaltPath = "asphalt";
+            }
+            if (asphaltSlabPath.equals("black_asphalt_slab")) {
+                asphaltSlabPath = "asphalt_slab";
+            }
 
-        smeltingResultFromBase(output, ModBlocks.CRACKED_BLACK_CONCRETE.get(), Blocks.BLACK_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_WHITE_CONCRETE.get(), Blocks.WHITE_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_ORANGE_CONCRETE.get(), Blocks.ORANGE_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_MAGENTA_CONCRETE.get(), Blocks.MAGENTA_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_LIGHT_BLUE_CONCRETE.get(), Blocks.LIGHT_BLUE_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_YELLOW_CONCRETE.get(), Blocks.YELLOW_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_LIME_CONCRETE.get(), Blocks.LIME_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_PINK_CONCRETE.get(), Blocks.PINK_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_GRAY_CONCRETE.get(), Blocks.GRAY_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_LIGHT_GRAY_CONCRETE.get(), Blocks.LIGHT_GRAY_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_CYAN_CONCRETE.get(), Blocks.CYAN_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_PURPLE_CONCRETE.get(), Blocks.PURPLE_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_BLUE_CONCRETE.get(), Blocks.BLUE_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_BROWN_CONCRETE.get(), Blocks.BROWN_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_GREEN_CONCRETE.get(), Blocks.GREEN_CONCRETE);
-        smeltingResultFromBase(output, ModBlocks.CRACKED_RED_CONCRETE.get(), Blocks.RED_CONCRETE);
+            Block paneBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, panePath);
+            Block woolBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, woolPath);
+            Block bannerBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, bannerPath);
+            Block candleBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, candlePath);
+            Block carpetBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, carpetPath);
+            Block terracottaBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, terracottaPath);
+            Block shulkerBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, shulkerPath);
+            Block glassBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, glassPath);
+            Block bedBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, bedPath);
+            Block neonLightBlock = getBlockOrThrow(References.MODID, neonLightPath);
+            Block lampBlock = getBlockOrThrow(References.MODID, lampPath);
+            Block asphaltBlock = getBlockOrThrow(References.MODID, asphaltPath);
+            Block asphaltSlab = getBlockOrThrow(References.MODID, asphaltSlabPath);
 
-        mossyRecipes(ModBlocks.MOSSY_BLACK_CONCRETE.get(), Blocks.BLACK_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_WHITE_CONCRETE.get(), Blocks.WHITE_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_ORANGE_CONCRETE.get(), Blocks.ORANGE_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_MAGENTA_CONCRETE.get(), Blocks.MAGENTA_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_LIGHT_BLUE_CONCRETE.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_YELLOW_CONCRETE.get(), Blocks.YELLOW_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_LIME_CONCRETE.get(), Blocks.LIME_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_PINK_CONCRETE.get(), Blocks.PINK_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_GRAY_CONCRETE.get(), Blocks.GRAY_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_LIGHT_GRAY_CONCRETE.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_CYAN_CONCRETE.get(), Blocks.CYAN_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_PURPLE_CONCRETE.get(), Blocks.PURPLE_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_BLUE_CONCRETE.get(), Blocks.BLUE_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_BROWN_CONCRETE.get(), Blocks.BROWN_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_GREEN_CONCRETE.get(), Blocks.GREEN_CONCRETE, output);
-        mossyRecipes(ModBlocks.MOSSY_RED_CONCRETE.get(), Blocks.RED_CONCRETE, output);
+            paintingRecipes(neonLightBlock, ModItemTags.NEON_LIGHTS, dye.getTag(), output);
+            paintingRecipes(lampBlock, ModItemTags.COLORED_LAMPS, dye.getTag(), output);
+            paintingRecipes(woolBlock, ItemTags.WOOL, dye.getTag(), output);
+            paintingRecipes(bannerBlock, ItemTags.BANNERS, dye.getTag(), output);
+            paintingRecipes(candleBlock, ItemTags.CANDLES, dye.getTag(), output);
+            paintingRecipes(carpetBlock, ItemTags.WOOL_CARPETS, dye.getTag(), output);
+            paintingRecipes(terracottaBlock, ItemTags.TERRACOTTA, dye.getTag(), output);
+            paintingRecipes(bedBlock, ItemTags.BEDS, dye.getTag(), output);
+            paintingRecipes(shulkerBlock, Tags.Items.SHULKER_BOXES, dye.getTag(), output);
+            paintingRecipes(glassBlock, Tags.Items.GLASS_BLOCKS_TINTED, dye.getTag(), output);
+            paintingRecipes(asphaltBlock, ModItemTags.BLANK_ASPHALT, dye.getTag(), output);
+            paintingRecipes(asphaltSlab, ModItemTags.BLANK_ASPHALT_SLABS, dye.getTag(), output);
 
-        stoneCuttingRecipes(ModBlocks.CHISELED_WHITE_CONCRETE.get(), 1, Blocks.WHITE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get(), 1, Blocks.LIGHT_GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_GRAY_CONCRETE.get(), 1, Blocks.GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_BLACK_CONCRETE.get(), 1, Blocks.BLACK_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_BROWN_CONCRETE.get(), 1, Blocks.BROWN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_RED_CONCRETE.get(), 1, Blocks.RED_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_ORANGE_CONCRETE.get(), 1, Blocks.ORANGE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_YELLOW_CONCRETE.get(), 1, Blocks.YELLOW_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_LIME_CONCRETE.get(), 1, Blocks.LIME_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_GREEN_CONCRETE.get(), 1, Blocks.GREEN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_CYAN_CONCRETE.get(), 1, Blocks.CYAN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_LIGHT_BLUE_CONCRETE.get(), 1, Blocks.LIGHT_BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_BLUE_CONCRETE.get(), 1, Blocks.BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_PURPLE_CONCRETE.get(), 1, Blocks.PURPLE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_MAGENTA_CONCRETE.get(), 1, Blocks.MAGENTA_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CHISELED_PINK_CONCRETE.get(), 1, Blocks.PINK_CONCRETE, output);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, lampBlock, 1).pattern(" # ").pattern("#X#").pattern(" # ").define('X', Blocks.REDSTONE_LAMP)
+                    .define('#', paneBlock).unlockedBy(getHasName(Blocks.REDSTONE_LAMP), has(Blocks.REDSTONE_LAMP)).save(output);
 
-        paintingRecipes(ModBlocks.CHISELED_BLACK_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.CHISELED_WHITE_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.CHISELED_ORANGE_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.CHISELED_MAGENTA_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.CHISELED_LIGHT_BLUE_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.CHISELED_YELLOW_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.CHISELED_LIME_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.CHISELED_PINK_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.CHISELED_GRAY_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CHISELED_CYAN_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.CHISELED_PURPLE_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.CHISELED_BLUE_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.CHISELED_BROWN_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.CHISELED_GREEN_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.CHISELED_RED_CONCRETE.get(), ModItemTags.COLORED_CHISELED_CONCRETE, Tags.Items.DYES_RED, output);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, neonLightBlock, 1).requires(lampBlock).requires(Tags.Items.DUSTS_GLOWSTONE)
+                    .requires(Items.BLAZE_POWDER).unlockedBy(getHasName(lampBlock), has(lampBlock)).group("neon_lights").save(output);
 
-        paintingRecipes(ModBlocks.CRACKED_BLACK_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.CRACKED_WHITE_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.CRACKED_ORANGE_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.CRACKED_MAGENTA_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.CRACKED_LIGHT_BLUE_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.CRACKED_YELLOW_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.CRACKED_LIME_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.CRACKED_PINK_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.CRACKED_GRAY_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.CRACKED_LIGHT_GRAY_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CRACKED_CYAN_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.CRACKED_PURPLE_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.CRACKED_BLUE_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.CRACKED_BROWN_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.CRACKED_GREEN_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.CRACKED_RED_CONCRETE.get(), ModItemTags.COLORED_CRACKED_CONCRETE, Tags.Items.DYES_RED, output);
+        }
+    }
 
-        paintingRecipes(ModBlocks.MOSSY_BLACK_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.MOSSY_WHITE_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.MOSSY_ORANGE_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MOSSY_MAGENTA_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.MOSSY_LIGHT_BLUE_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.MOSSY_YELLOW_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.MOSSY_LIME_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.MOSSY_PINK_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.MOSSY_GRAY_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.MOSSY_LIGHT_GRAY_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.MOSSY_CYAN_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.MOSSY_PURPLE_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.MOSSY_BLUE_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.MOSSY_BROWN_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.MOSSY_GREEN_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.MOSSY_RED_CONCRETE.get(), ModItemTags.COLORED_MOSSY_CONCRETE, Tags.Items.DYES_RED, output);
 
-        paintingRecipes(ModBlocks.POLISHED_BLACK_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.POLISHED_WHITE_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.POLISHED_ORANGE_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.POLISHED_YELLOW_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.POLISHED_LIME_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.POLISHED_PINK_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.POLISHED_GRAY_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.POLISHED_CYAN_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.POLISHED_PURPLE_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.POLISHED_BLUE_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.POLISHED_BROWN_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.POLISHED_GREEN_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.POLISHED_RED_CONCRETE.get(), ModItemTags.COLORED_POLISHED_CONCRETE, Tags.Items.DYES_RED, output);
+    public static void registerAsphaltPaintingRecipes(RecipeOutput output) {
+        for (Block block : BuiltInRegistries.BLOCK) {
+            ResourceLocation id = BuiltInRegistries.BLOCK.getKey(block);
+            CityCraft.LOGGER.info("Create asphalt painting recipes for " + id);
 
-        polishedRecipes(ModBlocks.POLISHED_WHITE_CONCRETE.get(), Blocks.WHITE_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_GRAY_CONCRETE.get(), Blocks.GRAY_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_BLACK_CONCRETE.get(), Blocks.BLACK_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_BROWN_CONCRETE.get(), Blocks.BROWN_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_RED_CONCRETE.get(), Blocks.RED_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_ORANGE_CONCRETE.get(), Blocks.ORANGE_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_YELLOW_CONCRETE.get(), Blocks.YELLOW_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_LIME_CONCRETE.get(), Blocks.LIME_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_GREEN_CONCRETE.get(), Blocks.GREEN_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_CYAN_CONCRETE.get(), Blocks.CYAN_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_BLUE_CONCRETE.get(), Blocks.BLUE_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_PURPLE_CONCRETE.get(), Blocks.PURPLE_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), Blocks.MAGENTA_CONCRETE, output);
-        polishedRecipes(ModBlocks.POLISHED_PINK_CONCRETE.get(), Blocks.PINK_CONCRETE, output);
+            if (id.getNamespace().equals(References.MODID)) {
+                if (id.getPath().contains("asphalt_with_white") && !id.getPath().contains("slab")) {
+                    paintingRecipes(block, ModItemTags.MARKED_ASPHALT_CRAFTING_MATERIALS, Tags.Items.DYES_WHITE, output);
+                } else if (id.getPath().contains("asphalt_with_white") && id.getPath().contains("slab")) {
+                    paintingRecipes(block, ModItemTags.MARKED_ASPHALT_SLAB_CRAFTING_MATERIALS, Tags.Items.DYES_WHITE, output);
 
-        stoneCuttingRecipes(ModBlocks.POLISHED_WHITE_CONCRETE.get(), 1, Blocks.WHITE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get(), 1, Blocks.LIGHT_GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_GRAY_CONCRETE.get(), 1, Blocks.GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_BLACK_CONCRETE.get(), 1, Blocks.BLACK_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_BROWN_CONCRETE.get(), 1, Blocks.BROWN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_RED_CONCRETE.get(), 1, Blocks.RED_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_ORANGE_CONCRETE.get(), 1, Blocks.ORANGE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_YELLOW_CONCRETE.get(), 1, Blocks.YELLOW_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_LIME_CONCRETE.get(), 1, Blocks.LIME_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_GREEN_CONCRETE.get(), 1, Blocks.GREEN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_CYAN_CONCRETE.get(), 1, Blocks.CYAN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get(), 1, Blocks.LIGHT_BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_BLUE_CONCRETE.get(), 1, Blocks.BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_PURPLE_CONCRETE.get(), 1, Blocks.PURPLE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), 1, Blocks.MAGENTA_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.POLISHED_PINK_CONCRETE.get(), 1, Blocks.PINK_CONCRETE, output);
+                } else if (id.getPath().contains("asphalt_with_yellow") && !id.getPath().contains("slab")) {
+                    paintingRecipes(block, ModItemTags.MARKED_ASPHALT_CRAFTING_MATERIALS, Tags.Items.DYED_YELLOW, output);
+                } else if (id.getPath().contains("asphalt_with_yellow") && id.getPath().contains("slab")) {
+                    paintingRecipes(block, ModItemTags.MARKED_ASPHALT_SLAB_CRAFTING_MATERIALS, Tags.Items.DYED_YELLOW, output);
+                }
+            }
+        }
+    }
 
-        pillarRecipes(ModBlocks.WHITE_CONCRETE_PILLAR.get(), Blocks.WHITE_CONCRETE, output);
-        pillarRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
-        pillarRecipes(ModBlocks.GRAY_CONCRETE_PILLAR.get(), Blocks.GRAY_CONCRETE, output);
-        pillarRecipes(ModBlocks.BLACK_CONCRETE_PILLAR.get(), Blocks.BLACK_CONCRETE, output);
-        pillarRecipes(ModBlocks.BROWN_CONCRETE_PILLAR.get(), Blocks.BROWN_CONCRETE, output);
-        pillarRecipes(ModBlocks.RED_CONCRETE_PILLAR.get(), Blocks.RED_CONCRETE, output);
-        pillarRecipes(ModBlocks.ORANGE_CONCRETE_PILLAR.get(), Blocks.ORANGE_CONCRETE, output);
-        pillarRecipes(ModBlocks.YELLOW_CONCRETE_PILLAR.get(), Blocks.YELLOW_CONCRETE, output);
-        pillarRecipes(ModBlocks.LIME_CONCRETE_PILLAR.get(), Blocks.LIME_CONCRETE, output);
-        pillarRecipes(ModBlocks.GREEN_CONCRETE_PILLAR.get(), Blocks.GREEN_CONCRETE, output);
-        pillarRecipes(ModBlocks.CYAN_CONCRETE_PILLAR.get(), Blocks.CYAN_CONCRETE, output);
-        pillarRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_PILLAR.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
-        pillarRecipes(ModBlocks.BLUE_CONCRETE_PILLAR.get(), Blocks.BLUE_CONCRETE, output);
-        pillarRecipes(ModBlocks.PURPLE_CONCRETE_PILLAR.get(), Blocks.PURPLE_CONCRETE, output);
-        pillarRecipes(ModBlocks.MAGENTA_CONCRETE_PILLAR.get(), Blocks.MAGENTA_CONCRETE, output);
-        pillarRecipes(ModBlocks.PINK_CONCRETE_PILLAR.get(), Blocks.PINK_CONCRETE, output);
 
-        stoneCuttingRecipes(ModBlocks.WHITE_CONCRETE_PILLAR.get(), 1, Blocks.WHITE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get(), 1, Blocks.LIGHT_GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.GRAY_CONCRETE_PILLAR.get(), 1, Blocks.GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BLACK_CONCRETE_PILLAR.get(), 1, Blocks.BLACK_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BROWN_CONCRETE_PILLAR.get(), 1, Blocks.BROWN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.RED_CONCRETE_PILLAR.get(), 1, Blocks.RED_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.ORANGE_CONCRETE_PILLAR.get(), 1, Blocks.ORANGE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.YELLOW_CONCRETE_PILLAR.get(), 1, Blocks.YELLOW_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIME_CONCRETE_PILLAR.get(), 1, Blocks.LIME_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.GREEN_CONCRETE_PILLAR.get(), 1, Blocks.GREEN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CYAN_CONCRETE_PILLAR.get(), 1, Blocks.CYAN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_PILLAR.get(), 1, Blocks.LIGHT_BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BLUE_CONCRETE_PILLAR.get(), 1, Blocks.BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.PURPLE_CONCRETE_PILLAR.get(), 1, Blocks.PURPLE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.MAGENTA_CONCRETE_PILLAR.get(), 1, Blocks.MAGENTA_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.PINK_CONCRETE_PILLAR.get(), 1, Blocks.PINK_CONCRETE, output);
+    public static void registerSlabRecipes(RecipeOutput output) {
+        for (Block block : BuiltInRegistries.BLOCK) {
+            ResourceLocation id = BuiltInRegistries.BLOCK.getKey(block);
 
-        paintingRecipes(ModBlocks.BLACK_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_CONCRETE_PILLAR.get(), ModItemTags.COLORED_CONCRETE_PILLARS, Tags.Items.DYES_RED, output);
+            if (id.getNamespace().equals(References.MODID)) {
+                if (BuiltInRegistries.BLOCK.getOptional(ResourceLocation.parse(id + "_slab")).isPresent()) {
+                    CityCraft.LOGGER.info("Create slab recipes for " + id);
 
-        simpleShapelessRecipes(Blocks.BLACK_CONCRETE, Items.BLACK_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.WHITE_CONCRETE, Items.WHITE_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.ORANGE_CONCRETE, Items.ORANGE_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.MAGENTA_CONCRETE, Items.MAGENTA_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.LIGHT_BLUE_CONCRETE, Items.LIGHT_BLUE_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.YELLOW_CONCRETE, Items.YELLOW_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.LIME_CONCRETE, Items.LIME_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.PINK_CONCRETE, Items.PINK_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.GRAY_CONCRETE, Items.GRAY_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.LIGHT_GRAY_CONCRETE, Items.LIGHT_GRAY_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.CYAN_CONCRETE, Items.CYAN_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.PURPLE_CONCRETE, Items.PURPLE_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.BLUE_CONCRETE, Items.BLUE_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.BROWN_CONCRETE, Items.BROWN_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.GREEN_CONCRETE, Items.GREEN_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
-        simpleShapelessRecipes(Blocks.RED_CONCRETE, Items.RED_CONCRETE_POWDER, Tags.Items.BUCKETS_WATER, output, "concrete_with_bucket");
+                    Block slab = BuiltInRegistries.BLOCK.getOptional(ResourceLocation.parse(id + "_slab")).get();
 
-        stairsRecipes(ModBlocks.WHITE_CONCRETE_STAIRS.get(), Blocks.WHITE_CONCRETE, output);
-        stairsRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
-        stairsRecipes(ModBlocks.GRAY_CONCRETE_STAIRS.get(), Blocks.GRAY_CONCRETE, output);
-        stairsRecipes(ModBlocks.BLACK_CONCRETE_STAIRS.get(), Blocks.BLACK_CONCRETE, output);
-        stairsRecipes(ModBlocks.BROWN_CONCRETE_STAIRS.get(), Blocks.BROWN_CONCRETE, output);
-        stairsRecipes(ModBlocks.RED_CONCRETE_STAIRS.get(), Blocks.RED_CONCRETE, output);
-        stairsRecipes(ModBlocks.ORANGE_CONCRETE_STAIRS.get(), Blocks.ORANGE_CONCRETE, output);
-        stairsRecipes(ModBlocks.YELLOW_CONCRETE_STAIRS.get(), Blocks.YELLOW_CONCRETE, output);
-        stairsRecipes(ModBlocks.LIME_CONCRETE_STAIRS.get(), Blocks.LIME_CONCRETE, output);
-        stairsRecipes(ModBlocks.GREEN_CONCRETE_STAIRS.get(), Blocks.GREEN_CONCRETE, output);
-        stairsRecipes(ModBlocks.CYAN_CONCRETE_STAIRS.get(), Blocks.CYAN_CONCRETE, output);
-        stairsRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
-        stairsRecipes(ModBlocks.BLUE_CONCRETE_STAIRS.get(), Blocks.BLUE_CONCRETE, output);
-        stairsRecipes(ModBlocks.PURPLE_CONCRETE_STAIRS.get(), Blocks.PURPLE_CONCRETE, output);
-        stairsRecipes(ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), Blocks.MAGENTA_CONCRETE, output);
-        stairsRecipes(ModBlocks.PINK_CONCRETE_STAIRS.get(), Blocks.PINK_CONCRETE, output);
+                    slabRecipes(slab, block, output);
+                    stoneCuttingRecipes(slab, 2, block, output);
+                    ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, block, 2).pattern("#").pattern("#").define('#', slab).unlockedBy(getHasName(block), has(block))
+                            .save(output, References.MODID + ":" + id.getPath() + "_from_slabs");
+                }
+            }
+        }
+    }
 
-        stoneCuttingRecipes(ModBlocks.WHITE_CONCRETE_STAIRS.get(), 1, Blocks.WHITE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), 1, Blocks.LIGHT_GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.GRAY_CONCRETE_STAIRS.get(), 1, Blocks.GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BLACK_CONCRETE_STAIRS.get(), 1, Blocks.BLACK_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BROWN_CONCRETE_STAIRS.get(), 1, Blocks.BROWN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.RED_CONCRETE_STAIRS.get(), 1, Blocks.RED_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.ORANGE_CONCRETE_STAIRS.get(), 1, Blocks.ORANGE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.YELLOW_CONCRETE_STAIRS.get(), 1, Blocks.YELLOW_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIME_CONCRETE_STAIRS.get(), 1, Blocks.LIME_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.GREEN_CONCRETE_STAIRS.get(), 1, Blocks.GREEN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CYAN_CONCRETE_STAIRS.get(), 1, Blocks.CYAN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), 1, Blocks.LIGHT_BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BLUE_CONCRETE_STAIRS.get(), 1, Blocks.BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.PURPLE_CONCRETE_STAIRS.get(), 1, Blocks.PURPLE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), 1, Blocks.MAGENTA_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.PINK_CONCRETE_STAIRS.get(), 1, Blocks.PINK_CONCRETE, output);
 
-        paintingRecipes(ModBlocks.BLACK_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_CONCRETE_STAIRS.get(), ModItemTags.COLORED_CONCRETE_STAIRS, Tags.Items.DYES_RED, output);
+    public static void registerConcreteRecipes(RecipeOutput output) {
+        for (DyeColor dye : DyeColor.values()) {
+            String color = dye.getName();
 
-        slabRecipes(ModBlocks.WHITE_CONCRETE_SLAB.get(), Blocks.WHITE_CONCRETE, output);
-        slabRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
-        slabRecipes(ModBlocks.GRAY_CONCRETE_SLAB.get(), Blocks.GRAY_CONCRETE, output);
-        slabRecipes(ModBlocks.BLACK_CONCRETE_SLAB.get(), Blocks.BLACK_CONCRETE, output);
-        slabRecipes(ModBlocks.BROWN_CONCRETE_SLAB.get(), Blocks.BROWN_CONCRETE, output);
-        slabRecipes(ModBlocks.RED_CONCRETE_SLAB.get(), Blocks.RED_CONCRETE, output);
-        slabRecipes(ModBlocks.ORANGE_CONCRETE_SLAB.get(), Blocks.ORANGE_CONCRETE, output);
-        slabRecipes(ModBlocks.YELLOW_CONCRETE_SLAB.get(), Blocks.YELLOW_CONCRETE, output);
-        slabRecipes(ModBlocks.LIME_CONCRETE_SLAB.get(), Blocks.LIME_CONCRETE, output);
-        slabRecipes(ModBlocks.GREEN_CONCRETE_SLAB.get(), Blocks.GREEN_CONCRETE, output);
-        slabRecipes(ModBlocks.CYAN_CONCRETE_SLAB.get(), Blocks.CYAN_CONCRETE, output);
-        slabRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
-        slabRecipes(ModBlocks.BLUE_CONCRETE_SLAB.get(), Blocks.BLUE_CONCRETE, output);
-        slabRecipes(ModBlocks.PURPLE_CONCRETE_SLAB.get(), Blocks.PURPLE_CONCRETE, output);
-        slabRecipes(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), Blocks.MAGENTA_CONCRETE, output);
-        slabRecipes(ModBlocks.PINK_CONCRETE_SLAB.get(), Blocks.PINK_CONCRETE, output);
+            CityCraft.LOGGER.info("Create concrete color recipes for " + color + " dye");
+            String concrete = "_concrete";
 
-        stoneCuttingRecipes(ModBlocks.WHITE_CONCRETE_SLAB.get(), 2, Blocks.WHITE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), 2, Blocks.LIGHT_GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.GRAY_CONCRETE_SLAB.get(), 2, Blocks.GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BLACK_CONCRETE_SLAB.get(), 2, Blocks.BLACK_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BROWN_CONCRETE_SLAB.get(), 2, Blocks.BROWN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.RED_CONCRETE_SLAB.get(), 2, Blocks.RED_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.ORANGE_CONCRETE_SLAB.get(), 2, Blocks.ORANGE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.YELLOW_CONCRETE_SLAB.get(), 2, Blocks.YELLOW_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIME_CONCRETE_SLAB.get(), 2, Blocks.LIME_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.GREEN_CONCRETE_SLAB.get(), 2, Blocks.GREEN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CYAN_CONCRETE_SLAB.get(), 2, Blocks.CYAN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), 2, Blocks.LIGHT_BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BLUE_CONCRETE_SLAB.get(), 2, Blocks.BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.PURPLE_CONCRETE_SLAB.get(), 2, Blocks.PURPLE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), 2, Blocks.MAGENTA_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.PINK_CONCRETE_SLAB.get(), 2, Blocks.PINK_CONCRETE, output);
+            String basePath = color + concrete;
+            String powderPath = color + "_concrete_powder";
+            String crackedPath = "cracked_" + color + concrete;
+            String mossyPath = "mossy_" + color + concrete;
+            String chiseledPath = "chiseled_" + color + concrete;
+            String polishedPath = "polished_" + color + concrete;
+            String pillarPath = color + concrete + "_pillar";
+            String wallPath = color + concrete + "_wall";
+            String stairsPath = color + concrete + "_stairs";
+            String slabPath = color + concrete + "_slab";
+            String buttonPath = color + concrete + "_button";
+            String pressurePath = color + concrete + "_pressure_plate";
+            String leverPath = color + concrete + "_lever";
+            String bricksPath = color + concrete + "_bricks";
+            String crackedBricksPath = color + concrete + "_cracked_bricks";
+            String reinforcedPath = "reinforced_" + color + concrete;
 
-        paintingRecipes(ModBlocks.BLACK_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_CONCRETE_SLAB.get(), ModItemTags.COLORED_CONCRETE_SLABS, Tags.Items.DYES_RED, output);
+            Block baseBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, basePath);
+            Block powderBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, powderPath);
+            Block crackedBlock = getBlockOrThrow(References.MODID, crackedPath);
+            Block mossyBlock = getBlockOrThrow(References.MODID, mossyPath);
+            Block chiseledBlock = getBlockOrThrow(References.MODID, chiseledPath);
+            Block polishedBlock = getBlockOrThrow(References.MODID, polishedPath);
+            Block pillarBlock = getBlockOrThrow(References.MODID, pillarPath);
+            Block wallBlock = getBlockOrThrow(References.MODID, wallPath);
+            Block stairsBlock = getBlockOrThrow(References.MODID, stairsPath);
+            Block slabBlock = getBlockOrThrow(References.MODID, slabPath);
+            Block buttonBlock = getBlockOrThrow(References.MODID, buttonPath);
+            Block pressureBlock = getBlockOrThrow(References.MODID, pressurePath);
+            Block leverBlock = getBlockOrThrow(References.MODID, leverPath);
+            Block bricksBlock = getBlockOrThrow(References.MODID, bricksPath);
+            Block crackedBricksBlock = getBlockOrThrow(References.MODID, crackedBricksPath);
+            Block reinforcedBlock = getBlockOrThrow(References.MODID, reinforcedPath);
 
-        buttonRecipes(ModBlocks.WHITE_CONCRETE_BUTTON.get(), Blocks.WHITE_CONCRETE, output);
-        buttonRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
-        buttonRecipes(ModBlocks.GRAY_CONCRETE_BUTTON.get(), Blocks.GRAY_CONCRETE, output);
-        buttonRecipes(ModBlocks.BLACK_CONCRETE_BUTTON.get(), Blocks.BLACK_CONCRETE, output);
-        buttonRecipes(ModBlocks.BROWN_CONCRETE_BUTTON.get(), Blocks.BROWN_CONCRETE, output);
-        buttonRecipes(ModBlocks.RED_CONCRETE_BUTTON.get(), Blocks.RED_CONCRETE, output);
-        buttonRecipes(ModBlocks.ORANGE_CONCRETE_BUTTON.get(), Blocks.ORANGE_CONCRETE, output);
-        buttonRecipes(ModBlocks.YELLOW_CONCRETE_BUTTON.get(), Blocks.YELLOW_CONCRETE, output);
-        buttonRecipes(ModBlocks.LIME_CONCRETE_BUTTON.get(), Blocks.LIME_CONCRETE, output);
-        buttonRecipes(ModBlocks.GREEN_CONCRETE_BUTTON.get(), Blocks.GREEN_CONCRETE, output);
-        buttonRecipes(ModBlocks.CYAN_CONCRETE_BUTTON.get(), Blocks.CYAN_CONCRETE, output);
-        buttonRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
-        buttonRecipes(ModBlocks.BLUE_CONCRETE_BUTTON.get(), Blocks.BLUE_CONCRETE, output);
-        buttonRecipes(ModBlocks.PURPLE_CONCRETE_BUTTON.get(), Blocks.PURPLE_CONCRETE, output);
-        buttonRecipes(ModBlocks.MAGENTA_CONCRETE_BUTTON.get(), Blocks.MAGENTA_CONCRETE, output);
-        buttonRecipes(ModBlocks.PINK_CONCRETE_BUTTON.get(), Blocks.PINK_CONCRETE, output);
+            smeltingResultFromBase(output, crackedBlock, baseBlock);
+            smeltingResultFromBase(output, crackedBricksBlock, bricksBlock);
 
-        paintingRecipes(ModBlocks.BLACK_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_CONCRETE_BUTTON.get(), ModItemTags.COLORED_CONCRETE_BUTTONS, Tags.Items.DYES_RED, output);
+            stoneCuttingRecipes(chiseledBlock, 1, baseBlock, output);
+            stoneCuttingRecipes(polishedBlock, 1, baseBlock, output);
+            stoneCuttingRecipes(pillarBlock, 1, baseBlock, output);
+            stoneCuttingRecipes(stairsBlock, 1, baseBlock, output);
+            stoneCuttingRecipes(slabBlock, 2, baseBlock, output);
+            stoneCuttingRecipes(bricksBlock, 1, baseBlock, output);
 
-        pressurePlateRecipes(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.get(), Blocks.WHITE_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.get(), Blocks.GRAY_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE.get(), Blocks.BLACK_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE.get(), Blocks.BROWN_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.RED_CONCRETE_PRESSURE_PLATE.get(), Blocks.RED_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.get(), Blocks.ORANGE_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.get(), Blocks.YELLOW_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.get(), Blocks.LIME_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.get(), Blocks.GREEN_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.get(), Blocks.CYAN_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.get(), Blocks.BLUE_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.get(), Blocks.PURPLE_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.get(), Blocks.MAGENTA_CONCRETE, output);
-        pressurePlateRecipes(ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get(), Blocks.PINK_CONCRETE, output);
+            slabRecipes(slabBlock, baseBlock, output);
+            stairsRecipes(stairsBlock, baseBlock, output);
+            wallRecipes(wallBlock, baseBlock, output);
+            mossyRecipes(mossyBlock, baseBlock, output);
 
-        paintingRecipes(ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_CONCRETE_PRESSURE_PLATE.get(), ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, Tags.Items.DYES_RED, output);
+            paintingRecipes(baseBlock, Tags.Items.CONCRETES, dye.getTag(), output);
+            paintingRecipes(powderBlock, Tags.Items.CONCRETE_POWDERS, dye.getTag(), output);
+            paintingRecipes(chiseledBlock, ModItemTags.COLORED_CHISELED_CONCRETE, dye.getTag(), output);
+            paintingRecipes(polishedBlock, ModItemTags.COLORED_POLISHED_CONCRETE, dye.getTag(), output);
+            paintingRecipes(pillarBlock, ModItemTags.COLORED_CONCRETE_PILLARS, dye.getTag(), output);
+            paintingRecipes(stairsBlock, ModItemTags.COLORED_CONCRETE_STAIRS, dye.getTag(), output);
+            paintingRecipes(slabBlock, ModItemTags.COLORED_CONCRETE_SLABS, dye.getTag(), output);
+            paintingRecipes(buttonBlock, ModItemTags.COLORED_CONCRETE_BUTTONS, dye.getTag(), output);
+            paintingRecipes(pressureBlock, ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, dye.getTag(), output);
+            paintingRecipes(leverBlock, ModItemTags.COLORED_CONCRETE_LEVERS, dye.getTag(), output);
+            paintingRecipes(bricksBlock, ModItemTags.COLORED_CONCRETE_BRICKS, dye.getTag(), output);
+            paintingRecipes(crackedBricksBlock, ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, dye.getTag(), output);
+            paintingRecipes(reinforcedBlock, ModItemTags.COLORED_REINFORCED_CONCRETE, dye.getTag(), output);
 
-        leverRecipes(ModBlocks.WHITE_CONCRETE_LEVER.get(), Blocks.WHITE_CONCRETE, output);
-        leverRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_LEVER.get(), Blocks.LIGHT_GRAY_CONCRETE, output);
-        leverRecipes(ModBlocks.GRAY_CONCRETE_LEVER.get(), Blocks.GRAY_CONCRETE, output);
-        leverRecipes(ModBlocks.BLACK_CONCRETE_LEVER.get(), Blocks.BLACK_CONCRETE, output);
-        leverRecipes(ModBlocks.BROWN_CONCRETE_LEVER.get(), Blocks.BROWN_CONCRETE, output);
-        leverRecipes(ModBlocks.RED_CONCRETE_LEVER.get(), Blocks.RED_CONCRETE, output);
-        leverRecipes(ModBlocks.ORANGE_CONCRETE_LEVER.get(), Blocks.ORANGE_CONCRETE, output);
-        leverRecipes(ModBlocks.YELLOW_CONCRETE_LEVER.get(), Blocks.YELLOW_CONCRETE, output);
-        leverRecipes(ModBlocks.LIME_CONCRETE_LEVER.get(), Blocks.LIME_CONCRETE, output);
-        leverRecipes(ModBlocks.GREEN_CONCRETE_LEVER.get(), Blocks.GREEN_CONCRETE, output);
-        leverRecipes(ModBlocks.CYAN_CONCRETE_LEVER.get(), Blocks.CYAN_CONCRETE, output);
-        leverRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_LEVER.get(), Blocks.LIGHT_BLUE_CONCRETE, output);
-        leverRecipes(ModBlocks.BLUE_CONCRETE_LEVER.get(), Blocks.BLUE_CONCRETE, output);
-        leverRecipes(ModBlocks.PURPLE_CONCRETE_LEVER.get(), Blocks.PURPLE_CONCRETE, output);
-        leverRecipes(ModBlocks.MAGENTA_CONCRETE_LEVER.get(), Blocks.MAGENTA_CONCRETE, output);
-        leverRecipes(ModBlocks.PINK_CONCRETE_LEVER.get(), Blocks.PINK_CONCRETE, output);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, baseBlock, 1).requires(powderBlock).requires(Tags.Items.BUCKETS_WATER)
+                    .unlockedBy("has_" + powderBlock, has(powderBlock)).group("concrete_with_bucket").save(output);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, reinforcedBlock, 1).requires(powderBlock).requires(Items.IRON_BARS).requires(Tags.Items.BUCKETS_WATER)
+                    .unlockedBy("has_" + powderBlock, has(powderBlock)).group("reinforced_concrete_with_bucket").save(output);
 
-        paintingRecipes(ModBlocks.BLACK_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_CONCRETE_LEVER.get(), ModItemTags.COLORED_CONCRETE_LEVERS, Tags.Items.DYES_RED, output);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, polishedBlock, 4).pattern("##").pattern("##").define('#', polishedBlock)
+                    .unlockedBy(getHasName(polishedBlock), has(polishedBlock)).save(output);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, bricksBlock, 4).pattern("##").pattern("##").define('#', baseBlock)
+                    .unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, pillarBlock, 2).pattern("#").pattern("#").define('#', baseBlock)
+                    .unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
+            ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, buttonBlock, 1).pattern("#").define('#', baseBlock).unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
+            ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, leverBlock, 1).pattern("I").pattern("#").define('I', Tags.Items.RODS_WOODEN).define('#', baseBlock)
+                    .unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
+            ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, pressureBlock, 1).pattern("##").define('#', baseBlock).unlockedBy(getHasName(baseBlock), has(baseBlock))
+                    .save(output);
+        }
+    }
 
-        brickRecipes(ModBlocks.WHITE_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_WHITE_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.GRAY_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_GRAY_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.BLACK_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_BLACK_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.BROWN_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_BROWN_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.RED_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_RED_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.ORANGE_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_ORANGE_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.YELLOW_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_YELLOW_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.LIME_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_LIME_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.GREEN_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_GREEN_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.CYAN_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_CYAN_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.BLUE_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_BLUE_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.PURPLE_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_PURPLE_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.MAGENTA_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_MAGENTA_CONCRETE.get(), output);
-        brickRecipes(ModBlocks.PINK_CONCRETE_BRICKS.get(), ModBlocks.POLISHED_PINK_CONCRETE.get(), output);
 
-        stoneCuttingRecipes(ModBlocks.WHITE_CONCRETE_BRICKS.get(), 1, Blocks.WHITE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_BRICKS.get(), 1, Blocks.LIGHT_GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.GRAY_CONCRETE_BRICKS.get(), 1, Blocks.GRAY_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BLACK_CONCRETE_BRICKS.get(), 1, Blocks.BLACK_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BROWN_CONCRETE_BRICKS.get(), 1, Blocks.BROWN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.RED_CONCRETE_BRICKS.get(), 1, Blocks.RED_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.ORANGE_CONCRETE_BRICKS.get(), 1, Blocks.ORANGE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.YELLOW_CONCRETE_BRICKS.get(), 1, Blocks.YELLOW_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIME_CONCRETE_BRICKS.get(), 1, Blocks.LIME_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.GREEN_CONCRETE_BRICKS.get(), 1, Blocks.GREEN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.CYAN_CONCRETE_BRICKS.get(), 1, Blocks.CYAN_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_BRICKS.get(), 1, Blocks.LIGHT_BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.BLUE_CONCRETE_BRICKS.get(), 1, Blocks.BLUE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.PURPLE_CONCRETE_BRICKS.get(), 1, Blocks.PURPLE_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.MAGENTA_CONCRETE_BRICKS.get(), 1, Blocks.MAGENTA_CONCRETE, output);
-        stoneCuttingRecipes(ModBlocks.PINK_CONCRETE_BRICKS.get(), 1, Blocks.PINK_CONCRETE, output);
+    private static Block getBlockOrThrow(String namespace, String path) {
+        ResourceLocation location = ResourceLocation.parse(namespace + ":" + path);
+        Optional<Holder.Reference<Block>> holder = BuiltInRegistries.BLOCK.getHolder(location);
+        return holder.map(Holder::value).orElseThrow(() -> new IllegalStateException("Missing required Block in registry: " + location));
+    }
 
-        paintingRecipes(ModBlocks.BLACK_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_CONCRETE_BRICKS.get(), ModItemTags.COLORED_CONCRETE_BRICKS, Tags.Items.DYES_RED, output);
 
-        smeltingResultFromBase(output, ModBlocks.WHITE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.WHITE_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.LIGHT_GRAY_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.LIGHT_GRAY_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.GRAY_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.GRAY_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.BLACK_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.BLACK_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.BROWN_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.BROWN_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.RED_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.RED_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.ORANGE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.ORANGE_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.YELLOW_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.YELLOW_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.LIME_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.LIME_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.GREEN_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.GREEN_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.CYAN_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.CYAN_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.LIGHT_BLUE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.LIGHT_BLUE_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.BLUE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.BLUE_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.PURPLE_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.PURPLE_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.MAGENTA_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.MAGENTA_CONCRETE_BRICKS.get());
-        smeltingResultFromBase(output, ModBlocks.PINK_CONCRETE_CRACKED_BRICKS.get(), ModBlocks.PINK_CONCRETE_BRICKS.get());
-
-        paintingRecipes(ModBlocks.BLACK_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.WHITE_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.ORANGE_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.MAGENTA_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.LIGHT_BLUE_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.YELLOW_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.LIME_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.PINK_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.GRAY_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.LIGHT_GRAY_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.CYAN_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.PURPLE_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.BLUE_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.BROWN_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.GREEN_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.RED_CONCRETE_CRACKED_BRICKS.get(), ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, Tags.Items.DYES_RED, output);
-
-        simpleShapelessRecipes(ModBlocks.REINFORCED_BLACK_CONCRETE.get(), Items.BLACK_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_WHITE_CONCRETE.get(), Items.WHITE_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_ORANGE_CONCRETE.get(), Items.ORANGE_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_MAGENTA_CONCRETE.get(), Items.MAGENTA_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output,
-                "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get(), Items.LIGHT_BLUE_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output,
-                "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_YELLOW_CONCRETE.get(), Items.YELLOW_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_LIME_CONCRETE.get(), Items.LIME_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_PINK_CONCRETE.get(), Items.PINK_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_GRAY_CONCRETE.get(), Items.GRAY_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get(), Items.LIGHT_GRAY_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output,
-                "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_CYAN_CONCRETE.get(), Items.CYAN_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_PURPLE_CONCRETE.get(), Items.PURPLE_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_BLUE_CONCRETE.get(), Items.BLUE_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_BROWN_CONCRETE.get(), Items.BROWN_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_GREEN_CONCRETE.get(), Items.GREEN_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-        simpleShapelessRecipes(ModBlocks.REINFORCED_RED_CONCRETE.get(), Items.RED_CONCRETE_POWDER, Items.IRON_BARS, Tags.Items.BUCKETS_WATER, output, "reinforced_concrete");
-
-        paintingRecipes(ModBlocks.REINFORCED_BLACK_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_BLACK, output);
-        paintingRecipes(ModBlocks.REINFORCED_WHITE_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_WHITE, output);
-        paintingRecipes(ModBlocks.REINFORCED_ORANGE_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_ORANGE, output);
-        paintingRecipes(ModBlocks.REINFORCED_MAGENTA_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_MAGENTA, output);
-        paintingRecipes(ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_LIGHT_BLUE, output);
-        paintingRecipes(ModBlocks.REINFORCED_YELLOW_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_YELLOW, output);
-        paintingRecipes(ModBlocks.REINFORCED_LIME_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_LIME, output);
-        paintingRecipes(ModBlocks.REINFORCED_PINK_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_PINK, output);
-        paintingRecipes(ModBlocks.REINFORCED_GRAY_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_GRAY, output);
-        paintingRecipes(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_LIGHT_GRAY, output);
-        paintingRecipes(ModBlocks.REINFORCED_CYAN_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_CYAN, output);
-        paintingRecipes(ModBlocks.REINFORCED_PURPLE_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_PURPLE, output);
-        paintingRecipes(ModBlocks.REINFORCED_BLUE_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_BLUE, output);
-        paintingRecipes(ModBlocks.REINFORCED_BROWN_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_BROWN, output);
-        paintingRecipes(ModBlocks.REINFORCED_GREEN_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_GREEN, output);
-        paintingRecipes(ModBlocks.REINFORCED_RED_CONCRETE.get(), ModItemTags.COLORED_REINFORCED_CONCRETE, Tags.Items.DYES_RED, output);
+    private static Item getItemOrThrow(String namespace, String path) {
+        ResourceLocation location = ResourceLocation.parse(namespace + ":" + path);
+        Optional<Holder.Reference<Item>> holder = BuiltInRegistries.ITEM.getHolder(location);
+        return holder.map(Holder::value).orElseThrow(() -> new IllegalStateException("Missing required Item in registry: " + location));
     }
 
     private static final String STONE_CUTTING_PATH = References.MODID + ":stonecutting/";
 
 
-    protected static void polishedRecipes(Block result, Block input, RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4).pattern("##").pattern("##").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
-    }
-
-
-    protected static void brickRecipes(Block result, Block input, RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4).pattern("##").pattern("##").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
-    }
-
-
     protected static void slabRecipes(Block result, Block input, RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 6).pattern("###").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 6).pattern("###").define('#', input).unlockedBy(getHasName(input), has(input)).save(output,
+                References.MODID + ":slabs/" + BuiltInRegistries.BLOCK.getKey(result).getPath());
+    }
+
+
+    protected static void stairsRecipes(Block result, Block input, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4).pattern("#  ").pattern("## ").pattern("###").define('#', input)
+                .unlockedBy(getHasName(input), has(input)).save(output, References.MODID + ":stairs/" + BuiltInRegistries.BLOCK.getKey(result).getPath());
     }
 
 
@@ -2368,50 +837,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
 
-    protected static void pillarRecipes(Block result, Block input, RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 2).pattern("#").pattern("#").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
-    }
-
-
-    protected static void buttonRecipes(Block result, Block input, RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, result, 1).pattern("#").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
-    }
-
-
-    protected static void leverRecipes(Block result, Block input, RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, result, 1).pattern("I").pattern("#").define('I', Tags.Items.RODS_WOODEN).define('#', input)
-                .unlockedBy(getHasName(input), has(input)).save(output);
-    }
-
-
-    protected static void pressurePlateRecipes(Block result, Block input, RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, result, 1).pattern("##").define('#', input).unlockedBy(getHasName(input), has(input)).save(output);
-    }
-
-
-    protected static void stairsRecipes(Block result, Block input, RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4).pattern("#  ").pattern("## ").pattern("###").define('#', input)
-                .unlockedBy(getHasName(input), has(input)).save(output);
-    }
-
-
-    protected static void lampRecipes(Block result, Block glassInput, RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 1).pattern(" # ").pattern("#X#").pattern(" # ").define('X', Blocks.REDSTONE_LAMP).define('#', glassInput)
-                .unlockedBy(getHasName(Blocks.REDSTONE_LAMP), has(Blocks.REDSTONE_LAMP)).save(output);
-    }
-
-
     protected static void mossyRecipes(Block result, Block input, RecipeOutput output) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Blocks.MOSS_BLOCK).unlockedBy(getHasName(input), has(input))
                 .group("mossy").save(output);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Blocks.VINE).unlockedBy(getHasName(input), has(input)).group("mossy")
                 .save(output, BuiltInRegistries.BLOCK.getKey(result) + "_with_vines");
-    }
-
-
-    protected static void neonRecipes(Block result, Block input, RecipeOutput output) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Items.BLAZE_POWDER).requires(Items.GLOW_INK_SAC)
-                .unlockedBy(getHasName(input), has(input)).group("neon_lights").save(output);
     }
 
 

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pink_concrete": {
+    "has_polished_pink_concrete": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:pink_concrete"
+            "items": "citycraft:polished_pink_concrete"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pink_concrete"
+      "has_polished_pink_concrete"
     ]
   ],
   "rewards": {

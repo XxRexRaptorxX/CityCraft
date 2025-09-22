@@ -31,6 +31,10 @@ public class ModItemTags {
     public static final TagKey<Item> WHITE_MARKED_ASPHALT_SLABS = createItemTag(References.MODID, "white_marked_asphalt_slabs");
     public static final TagKey<Item> YELLOW_MARKED_ASPHALT = createItemTag(References.MODID, "yellow_marked_asphalt");
     public static final TagKey<Item> YELLOW_MARKED_ASPHALT_SLABS = createItemTag(References.MODID, "yellow_marked_asphalt_slabs");
+
+    public static final TagKey<Item> MARKED_ASPHALT_CRAFTING_MATERIALS = createItemTag(References.MODID, "marked_asphalt_crafting_materials");
+    public static final TagKey<Item> MARKED_ASPHALT_SLAB_CRAFTING_MATERIALS = createItemTag(References.MODID, "marked_asphalt_crafting_materials");
+
     public static final TagKey<Item> SIGNS_WOOD = createItemTag("c", "signs/wood");
     public static final TagKey<Item> HANGING_WOOD_SIGNS = createItemTag("c", "hanging_signs/wood");
     public static final TagKey<Item> TRAFFIC_BARRIERS = createItemTag(References.MODID, "traffic_barriers");

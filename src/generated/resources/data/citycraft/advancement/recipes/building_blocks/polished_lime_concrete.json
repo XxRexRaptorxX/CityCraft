@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lime_concrete": {
+    "has_polished_lime_concrete": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:lime_concrete"
+            "items": "citycraft:polished_lime_concrete"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_lime_concrete"
+      "has_polished_lime_concrete"
     ]
   ],
   "rewards": {

@@ -7,10 +7,10 @@
       "item": "citycraft:cyan_lamp"
     },
     {
-      "item": "minecraft:blaze_powder"
+      "tag": "c:dusts/glowstone"
     },
     {
-      "item": "minecraft:glow_ink_sac"
+      "item": "minecraft:blaze_powder"
     }
   ],
   "result": {

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polished_cyan_concrete": {
+    "has_cyan_concrete": {
       "conditions": {
         "items": [
           {
-            "items": "citycraft:polished_cyan_concrete"
+            "items": "minecraft:cyan_concrete"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_polished_cyan_concrete"
+      "has_cyan_concrete"
     ]
   ],
   "rewards": {

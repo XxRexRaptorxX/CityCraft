@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_minecraft:iron_bars": {
+    "has_Block{minecraft:cyan_concrete_powder}": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_bars"
+            "items": "minecraft:cyan_concrete_powder"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_minecraft:iron_bars"
+      "has_Block{minecraft:cyan_concrete_powder}"
     ]
   ],
   "rewards": {

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_light_blue_concrete": {
+    "has_polished_light_blue_concrete": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:light_blue_concrete"
+            "items": "citycraft:polished_light_blue_concrete"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_light_blue_concrete"
+      "has_polished_light_blue_concrete"
     ]
   ],
   "rewards": {

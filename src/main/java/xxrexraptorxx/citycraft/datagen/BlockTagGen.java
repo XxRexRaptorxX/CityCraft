@@ -9,6 +9,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlockTags;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
@@ -28,13 +29,13 @@ public class BlockTagGen extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         var lookup = provider.lookupOrThrow(Registries.BLOCK);
 
-        addByPathPredicate(lookup, ModBlockTags.BLANK_ASPHALT, path -> (path.equals("asphalt") || path.endsWith("_asphalt")) && !path.startsWith("asphalt_with"));
-        addByPathPredicate(lookup, ModBlockTags.BLANK_ASPHALT_SLABS, path -> path.endsWith("_asphalt_slab") || (path.contains("_asphalt") && path.endsWith("_slab")));
+        addByPathPredicate(lookup, ModBlockTags.BLANK_ASPHALT, path -> (path.equals("asphalt") || path.endsWith("_asphalt")) && !isSpecialAsphalt(path));
+        addByPathPredicate(lookup, ModBlockTags.BLANK_ASPHALT_SLABS, path -> path.endsWith("_asphalt_slab") || (path.contains("_asphalt") && !isSpecialAsphalt(path)));
 
-        addByPathPredicate(lookup, ModBlockTags.WHITE_MARKED_ASPHALT, path -> path.startsWith("asphalt_with_white"));
+        addByPathPredicate(lookup, ModBlockTags.WHITE_MARKED_ASPHALT, path -> path.startsWith("asphalt_with_white") && !path.contains("slab"));
         addByPathPredicate(lookup, ModBlockTags.WHITE_MARKED_ASPHALT_SLABS, path -> path.startsWith("asphalt_with_white") && path.endsWith("_slab"));
 
-        addByPathPredicate(lookup, ModBlockTags.YELLOW_MARKED_ASPHALT, path -> path.startsWith("asphalt_with_yellow"));
+        addByPathPredicate(lookup, ModBlockTags.YELLOW_MARKED_ASPHALT, path -> path.startsWith("asphalt_with_yellow") && !path.contains("slab"));
         addByPathPredicate(lookup, ModBlockTags.YELLOW_MARKED_ASPHALT_SLABS, path -> path.startsWith("asphalt_with_yellow") && path.endsWith("_slab"));
 
         tag(ModBlockTags.ASPHALT_WITH_MARKINGS).addTag(ModBlockTags.WHITE_MARKED_ASPHALT).addTag(ModBlockTags.YELLOW_MARKED_ASPHALT);
@@ -48,7 +49,7 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathPredicate(lookup, ModBlockTags.TRAFFIC_BARRIERS, path -> path.contains("traffic_barrier"));
         addByPathPredicate(lookup, ModBlockTags.CONCRETES, path -> path.contains("concrete"));
         addByPathPredicate(lookup, ModBlockTags.LEVERS, path -> path.endsWith("lever"));
-        addByPathPredicate(lookup, ModBlockTags.POSTS, path -> path.endsWith("_post"));
+        addByPathPredicate(lookup, ModBlockTags.POSTS, path -> path.endsWith("_post") && !path.contains("road_edge"));
         addByPathPredicate(lookup, ModBlockTags.POLES, path -> path.endsWith("_pole"));
         addByPathPredicate(lookup, ModBlockTags.LAMPS, path -> path.endsWith("_lamp") || path.endsWith("_light") || path.contains("lantern"));
         addByPathPredicate(lookup, ModBlockTags.SPEED_BOOST_BLOCKS, path -> path.contains("asphalt") && !path.contains("pothole"));
@@ -407,9 +408,12 @@ public class BlockTagGen extends BlockTagsProvider {
             if (!References.MODID.equals(ns) && !"minecraft".equals(ns)) return;
 
             String path = id.location().getPath().toLowerCase(Locale.ROOT);
+
             try {
                 if (pathPredicate.test(path)) {
                     ResourceKey<Block> key = ResourceKey.create(Registries.BLOCK, id.location());
+
+                    CityCraft.LOGGER.info("Generate block tag with " + path);
                     appender.add(key);
                 }
             } catch (Exception ignored) {
@@ -428,9 +432,12 @@ public class BlockTagGen extends BlockTagsProvider {
             if (!References.MODID.equals(ns)) return;
 
             String path = id.location().getPath().toLowerCase(Locale.ROOT);
+
             try {
                 if (pathPredicate.test(path)) {
                     ResourceKey<Block> key = ResourceKey.create(Registries.BLOCK, id.location());
+                    CityCraft.LOGGER.info("Generate block tag with " + path);
+
                     appender.add(key);
                 }
             } catch (Exception ignored) {
@@ -439,4 +446,10 @@ public class BlockTagGen extends BlockTagsProvider {
 
         appender.replace(false);
     }
+
+
+    public static boolean isSpecialAsphalt(String path) {
+        return path.contains("pothole") || path.contains("mossy") || path.contains("dirty") || path.contains("boost") || path.contains("cracked") || path.contains("asphalt_with");
+    }
+
 }

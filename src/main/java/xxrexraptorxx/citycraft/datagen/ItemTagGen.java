@@ -13,8 +13,10 @@ import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlockTags;
+import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.registry.ModItemTags;
 import xxrexraptorxx.citycraft.registry.ModItems;
 
@@ -58,21 +60,28 @@ public class ItemTagGen extends ItemTagsProvider {
         copy(ModBlockTags.LEVERS, ModItemTags.createItemTag(ResourceLocation.DEFAULT_NAMESPACE, "levers"));
 
         addByPathPredicate(lookup, ModItemTags.CHAINS, path -> path.endsWith("_chain"));
-        addByPathPredicate(lookup, ModItemTags.NEON_LIGHTS, path -> path.endsWith("_neon_light"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_LAMPS, path -> path.endsWith("_lamp"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_CHISELED_CONCRETE, path -> path.contains("chiseled_concrete"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_CONCRETE_BUTTONS, path -> path.contains("concrete_button"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_POLISHED_CONCRETE, path -> path.contains("polished_concrete"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_CONCRETE_BRICKS, path -> path.contains("concrete_bricks"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, path -> path.contains("concrete_cracked_bricks"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_CONCRETE_PILLARS, path -> path.contains("concrete_pillar"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_REINFORCED_CONCRETE, path -> path.contains("reinforced_concrete"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_CONCRETE_STAIRS, path -> path.contains("concrete_stairs"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_CONCRETE_SLABS, path -> path.contains("concrete_slab"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, path -> path.contains("concrete_pressure_plate"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_CONCRETE_LEVERS, path -> path.contains("concrete_laver"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_CRACKED_CONCRETE, path -> path.contains("cracked_concrete") && !path.contains("bricks"));
-        addByPathPredicate(lookup, ModItemTags.COLORED_MOSSY_CONCRETE, path -> path.contains("concrete") && path.contains("mossy") && !path.contains("bricks"));
+        addByPathModPredicate(lookup, ModItemTags.NEON_LIGHTS, path -> path.endsWith("_neon_light"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_LAMPS, path -> path.endsWith("_lamp"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CHISELED_CONCRETE, path -> path.contains("chiseled_concrete"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CONCRETE_BUTTONS, path -> path.contains("concrete_button"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_POLISHED_CONCRETE, path -> path.contains("polished_concrete"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CONCRETE_BRICKS, path -> path.contains("concrete_bricks"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, path -> path.contains("concrete_cracked_bricks"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CONCRETE_PILLARS, path -> path.contains("concrete_pillar"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_REINFORCED_CONCRETE, path -> path.contains("reinforced_concrete"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CONCRETE_STAIRS, path -> path.contains("concrete_stairs"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CONCRETE_SLABS, path -> path.contains("concrete_slab"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES, path -> path.contains("concrete_pressure_plate"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CONCRETE_LEVERS, path -> path.contains("concrete_laver"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CRACKED_CONCRETE, path -> path.contains("cracked_concrete") && !path.contains("bricks"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_MOSSY_CONCRETE, path -> path.contains("concrete") && path.contains("mossy") && !path.contains("bricks"));
+
+        addByPathModPredicate(lookup, ModItemTags.MARKED_ASPHALT_CRAFTING_MATERIALS, path -> (path.contains("asphalt_with_yellow") && !path.contains("slab")));
+        addByPathModPredicate(lookup, ModItemTags.MARKED_ASPHALT_CRAFTING_MATERIALS, path -> (path.contains("asphalt_with_white") && !path.contains("slab")));
+        addByPathModPredicate(lookup, ModItemTags.MARKED_ASPHALT_CRAFTING_MATERIALS, path -> (path.contains("asphalt_with_white") && path.contains("slab")));
+        addByPathModPredicate(lookup, ModItemTags.MARKED_ASPHALT_CRAFTING_MATERIALS, path -> (path.contains("asphalt_with_yellow") && path.contains("slab")));
+        tag(ModItemTags.MARKED_ASPHALT_CRAFTING_MATERIALS).add(ModBlocks.ASPHALT_BLOCK.get().asItem());
+        tag(ModItemTags.MARKED_ASPHALT_SLAB_CRAFTING_MATERIALS).add(ModBlocks.ASPHALT_SLAB.get().asItem());
 
         addByPathMCPredicate(lookup, ModItemTags.SIGNS_WOOD, path -> path.endsWith("_sign") && !path.contains("hanging") && !isNetherWood(path));
         addByPathMCPredicate(lookup, ModItemTags.HANGING_WOOD_SIGNS, path -> path.endsWith("hanging_sign") && !isNetherWood(path));
@@ -98,9 +107,12 @@ public class ItemTagGen extends ItemTagsProvider {
             if (!References.MODID.equals(ns) && !"minecraft".equals(ns)) return;
 
             String path = id.location().getPath().toLowerCase(Locale.ROOT);
+
             try {
                 if (pathPredicate.test(path)) {
                     ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, id.location());
+                    CityCraft.LOGGER.info("Generate item tag with " + path);
+
                     appender.add(key);
                 }
             } catch (Exception ignored) {
@@ -119,9 +131,12 @@ public class ItemTagGen extends ItemTagsProvider {
             if (!References.MODID.equals(ns)) return;
 
             String path = id.location().getPath().toLowerCase(Locale.ROOT);
+
             try {
                 if (pathPredicate.test(path)) {
                     ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, id.location());
+                    CityCraft.LOGGER.info("Generate item tag with " + path);
+
                     appender.add(key);
                 }
             } catch (Exception ignored) {
@@ -140,9 +155,12 @@ public class ItemTagGen extends ItemTagsProvider {
             if (!"minecraft".equals(ns)) return;
 
             String path = id.location().getPath().toLowerCase(Locale.ROOT);
+
             try {
                 if (pathPredicate.test(path)) {
                     ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, id.location());
+                    CityCraft.LOGGER.info("Generate item tag with " + path);
+
                     appender.add(key);
                 }
             } catch (Exception ignored) {
