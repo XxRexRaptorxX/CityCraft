@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:marked_asphalt_crafting_materials"
+  },
+  "color": {
+    "tag": "c:dyes/white"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:asphalt_with_white_7"
+  }
+}

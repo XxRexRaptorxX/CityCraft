@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_asphalt": {
+      "conditions": {
+        "items": [
+          {
+            "items": "citycraft:blue_asphalt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "citycraft:blue_asphalt_from_slabs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blue_asphalt"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "citycraft:blue_asphalt_from_slabs"
+    ]
+  }
+}

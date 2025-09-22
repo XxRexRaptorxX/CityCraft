@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "citycraft:pothole_asphalt"
+  },
+  "result": {
+    "count": 2,
+    "id": "citycraft:pothole_asphalt_slab"
+  }
+}

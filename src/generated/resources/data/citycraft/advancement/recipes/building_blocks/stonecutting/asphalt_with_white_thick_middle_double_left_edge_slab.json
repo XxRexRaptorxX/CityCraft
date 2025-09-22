@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_asphalt_with_white_thick_middle_double_left_edge": {
+      "conditions": {
+        "items": [
+          {
+            "items": "citycraft:asphalt_with_white_thick_middle_double_left_edge"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "citycraft:stonecutting/asphalt_with_white_thick_middle_double_left_edge_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_asphalt_with_white_thick_middle_double_left_edge"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "citycraft:stonecutting/asphalt_with_white_thick_middle_double_left_edge_slab"
+    ]
+  }
+}

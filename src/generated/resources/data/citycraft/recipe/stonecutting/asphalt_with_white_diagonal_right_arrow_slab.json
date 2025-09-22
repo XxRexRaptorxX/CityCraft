@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "citycraft:asphalt_with_white_diagonal_right_arrow"
+  },
+  "result": {
+    "count": 2,
+    "id": "citycraft:asphalt_with_white_diagonal_right_arrow_slab"
+  }
+}
