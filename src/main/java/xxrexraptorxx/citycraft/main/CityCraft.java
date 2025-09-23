@@ -100,6 +100,10 @@ public class CityCraft {
             event.accept(ModBlocks.PINK_NEON_LIGHT.get());
 
         } else if (key == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.INFESTED_BLACK_CONCRETE.get());
+            event.accept(ModBlocks.INFESTED_WHITE_CONCRETE.get());
+            event.accept(ModBlocks.INFESTED_GRAY_CONCRETE.get());
+            event.accept(ModBlocks.INFESTED_LIGHT_GRAY_CONCRETE.get());
             event.accept(ModBlocks.BLOCK_PAINTER.get());
             event.accept(ModBlocks.ASPHALT_BLOCK);
             event.accept(ModBlocks.BOOST_ASPHALT);
@@ -160,10 +164,31 @@ public class CityCraft {
             event.accept(ModBlocks.BLACK_CHAIN.get());
             event.accept(ModBlocks.DRAIN_COVER.get());
             event.accept(ModBlocks.DRAIN_COVER_GRID.get());
-            event.accept(ModBlocks.INFESTED_BLACK_CONCRETE.get());
-            event.accept(ModBlocks.INFESTED_WHITE_CONCRETE.get());
-            event.accept(ModBlocks.INFESTED_GRAY_CONCRETE.get());
-            event.accept(ModBlocks.INFESTED_LIGHT_GRAY_CONCRETE.get());
+            event.accept(ModBlocks.STONE_CHIMNEY.get());
+            event.accept(ModBlocks.MOSSY_STONE_CHIMNEY.get());
+            event.accept(ModBlocks.CRACKED_STONE_CHIMNEY.get());
+            event.accept(ModBlocks.DEEPSLATE_CHIMNEY.get());
+            event.accept(ModBlocks.CRACKED_DEEPSLATE_CHIMNEY.get());
+            event.accept(ModBlocks.BLACKSTONE_CHIMNEY.get());
+            event.accept(ModBlocks.CRACKED_BLACKSTONE_CHIMNEY.get());
+            event.accept(ModBlocks.BRICKS_CHIMNEY.get());
+            event.accept(ModBlocks.MUD_CHIMNEY.get());
+            event.accept(ModBlocks.WHITE_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.LIGHT_GRAY_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.GRAY_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.BLACK_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.BROWN_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.RED_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.ORANGE_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.YELLOW_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.LIME_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.GREEN_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.CYAN_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.LIGHT_BLUE_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.BLUE_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.PURPLE_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.PINK_CONCRETE_CHIMNEY.get());
 
         } else if (key == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COAL_COKE.get());
@@ -179,23 +204,6 @@ public class CityCraft {
             event.accept(ModBlocks.STONE_POST.get());
 
         } else if (key == CreativeModeTabs.COLORED_BLOCKS) {
-            event.accept(ModBlocks.REINFORCED_WHITE_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_GRAY_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_BLACK_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_BROWN_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_RED_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_ORANGE_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_YELLOW_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_LIME_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_GREEN_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_CYAN_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_BLUE_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_PURPLE_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_MAGENTA_CONCRETE.get());
-            event.accept(ModBlocks.REINFORCED_PINK_CONCRETE.get());
-
             event.accept(ModBlocks.POLISHED_WHITE_CONCRETE.get());
             event.accept(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get());
             event.accept(ModBlocks.POLISHED_GRAY_CONCRETE.get());
@@ -416,6 +424,40 @@ public class CityCraft {
             event.accept(ModBlocks.MOSSY_PURPLE_CONCRETE.get());
             event.accept(ModBlocks.MOSSY_MAGENTA_CONCRETE.get());
             event.accept(ModBlocks.MOSSY_PINK_CONCRETE.get());
+
+            event.accept(ModBlocks.WHITE_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.LIGHT_GRAY_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.GRAY_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.BLACK_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.BROWN_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.RED_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.ORANGE_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.YELLOW_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.LIME_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.GREEN_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.CYAN_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.LIGHT_BLUE_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.BLUE_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.PURPLE_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get());
+            event.accept(ModBlocks.PINK_CONCRETE_CHIMNEY.get());
+
+            event.accept(ModBlocks.REINFORCED_WHITE_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_GRAY_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_BLACK_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_BROWN_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_RED_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_ORANGE_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_YELLOW_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_LIME_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_GREEN_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_CYAN_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_BLUE_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_PURPLE_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_MAGENTA_CONCRETE.get());
+            event.accept(ModBlocks.REINFORCED_PINK_CONCRETE.get());
 
             event.accept(ModBlocks.WHITE_ASPHALT.get());
             event.accept(ModBlocks.LIGHT_GRAY_ASPHALT.get());

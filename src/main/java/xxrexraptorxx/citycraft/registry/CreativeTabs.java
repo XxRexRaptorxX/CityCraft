@@ -62,6 +62,32 @@ public class CreativeTabs {
 
                         output.accept(ModBlocks.BLOCK_PAINTER.get());
 
+                        output.accept(ModBlocks.STONE_CHIMNEY.get());
+                        output.accept(ModBlocks.MOSSY_STONE_CHIMNEY.get());
+                        output.accept(ModBlocks.CRACKED_STONE_CHIMNEY.get());
+                        output.accept(ModBlocks.DEEPSLATE_CHIMNEY.get());
+                        output.accept(ModBlocks.CRACKED_DEEPSLATE_CHIMNEY.get());
+                        output.accept(ModBlocks.BLACKSTONE_CHIMNEY.get());
+                        output.accept(ModBlocks.CRACKED_BLACKSTONE_CHIMNEY.get());
+                        output.accept(ModBlocks.BRICKS_CHIMNEY.get());
+                        output.accept(ModBlocks.MUD_CHIMNEY.get());
+                        output.accept(ModBlocks.WHITE_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.GRAY_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.BLACK_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.BROWN_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.RED_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.ORANGE_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.YELLOW_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.LIME_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.GREEN_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.CYAN_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.BLUE_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.PURPLE_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.PINK_CONCRETE_CHIMNEY.get());
+
                         output.accept(ModItems.COAL_COKE.get());
                         output.accept(ModItems.ASPHALT_MIXTURE.get());
                         output.accept(ModItems.DYE_MIX.get());
@@ -1334,23 +1360,6 @@ public class CreativeTabs {
                         output.accept(Blocks.MAGENTA_CONCRETE);
                         output.accept(Blocks.PINK_CONCRETE);
 
-                        output.accept(ModBlocks.REINFORCED_WHITE_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_GRAY_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_BLACK_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_BROWN_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_RED_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_ORANGE_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_YELLOW_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_LIME_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_GREEN_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_CYAN_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_BLUE_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_PURPLE_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_MAGENTA_CONCRETE.get());
-                        output.accept(ModBlocks.REINFORCED_PINK_CONCRETE.get());
-
                         output.accept(ModBlocks.POLISHED_WHITE_CONCRETE.get());
                         output.accept(ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get());
                         output.accept(ModBlocks.POLISHED_GRAY_CONCRETE.get());
@@ -1571,6 +1580,40 @@ public class CreativeTabs {
                         output.accept(ModBlocks.MOSSY_PURPLE_CONCRETE.get());
                         output.accept(ModBlocks.MOSSY_MAGENTA_CONCRETE.get());
                         output.accept(ModBlocks.MOSSY_PINK_CONCRETE.get());
+
+                        output.accept(ModBlocks.WHITE_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.GRAY_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.BLACK_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.BROWN_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.RED_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.ORANGE_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.YELLOW_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.LIME_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.GREEN_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.CYAN_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.BLUE_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.PURPLE_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get());
+                        output.accept(ModBlocks.PINK_CONCRETE_CHIMNEY.get());
+
+                        output.accept(ModBlocks.REINFORCED_WHITE_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_GRAY_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_BLACK_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_BROWN_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_RED_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_ORANGE_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_YELLOW_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_LIME_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_GREEN_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_CYAN_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_BLUE_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_PURPLE_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_MAGENTA_CONCRETE.get());
+                        output.accept(ModBlocks.REINFORCED_PINK_CONCRETE.get());
 
                         output.accept(ModBlocks.INFESTED_BLACK_CONCRETE.get());
                         output.accept(ModBlocks.INFESTED_WHITE_CONCRETE.get());

@@ -13,6 +13,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
@@ -33,8 +34,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput output) {
-
-
         paintingRecipes(ModBlocks.WARNING_BEACON_LEFT_EU_SIGN.get(), ModItemTags.BAKE_SIGN, ModItems.DYE_MIX.get(), output);
         paintingRecipes(ModBlocks.WARNING_BEACON_RIGHT_EU_SIGN.get(), ModItemTags.BAKE_SIGN, ModItems.DYE_MIX.get(), output);
         paintingRecipes(ModBlocks.WARNING_BEACON_ALT_EU_SIGN.get(), ModItemTags.BAKE_SIGN, ModItems.DYE_MIX.get(), output);
@@ -600,6 +599,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         paintingRecipes(Blocks.CUT_SANDSTONE_SLAB, Blocks.CUT_RED_SANDSTONE_SLAB, Tags.Items.DYES_YELLOW, output);
         paintingRecipes(Blocks.CUT_RED_SANDSTONE_SLAB, Blocks.CUT_SANDSTONE_SLAB, Tags.Items.DYES_RED, output);
 
+        chimneyRecipes(ModBlocks.STONE_CHIMNEY.get(), Blocks.STONE_BRICKS, output);
+        chimneyRecipes(ModBlocks.MOSSY_STONE_CHIMNEY.get(), Blocks.MOSSY_STONE_BRICKS, output);
+        chimneyRecipes(ModBlocks.CRACKED_STONE_CHIMNEY.get(), Blocks.CRACKED_STONE_BRICKS, output);
+        chimneyRecipes(ModBlocks.DEEPSLATE_CHIMNEY.get(), Blocks.DEEPSLATE, output);
+        chimneyRecipes(ModBlocks.CRACKED_DEEPSLATE_CHIMNEY.get(), Blocks.CRACKED_DEEPSLATE_BRICKS, output);
+        chimneyRecipes(ModBlocks.BRICKS_CHIMNEY.get(), Blocks.BRICKS, output);
+        chimneyRecipes(ModBlocks.MUD_CHIMNEY.get(), Blocks.MUD_BRICKS, output);
+        chimneyRecipes(ModBlocks.BLACKSTONE_CHIMNEY.get(), Blocks.POLISHED_BLACKSTONE_BRICKS, output);
+        chimneyRecipes(ModBlocks.CRACKED_BLACKSTONE_CHIMNEY.get(), Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, output);
+
+        simpleSmeltingRecipes(ModBlocks.CRACKED_STONE_CHIMNEY.get(), ModBlocks.STONE_CHIMNEY.get(), output);
+        simpleSmeltingRecipes(ModBlocks.CRACKED_BLACKSTONE_CHIMNEY.get(), ModBlocks.BLACKSTONE_CHIMNEY.get(), output);
+        simpleSmeltingRecipes(ModBlocks.CRACKED_DEEPSLATE_CHIMNEY.get(), ModBlocks.DEEPSLATE_CHIMNEY.get(), output);
+        mossyRecipes(ModBlocks.MOSSY_STONE_CHIMNEY.get(), ModBlocks.STONE_CHIMNEY.get(), output);
+
         registerConcreteRecipes(output);
         registerBasicColorRecipes(output);
         registerAsphaltPaintingRecipes(output);
@@ -736,6 +750,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             String bricksPath = color + concrete + "_bricks";
             String crackedBricksPath = color + concrete + "_cracked_bricks";
             String reinforcedPath = "reinforced_" + color + concrete;
+            String chimneyPath = color + concrete + "_chimney";
 
             Block baseBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, basePath);
             Block powderBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, powderPath);
@@ -753,9 +768,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             Block bricksBlock = getBlockOrThrow(References.MODID, bricksPath);
             Block crackedBricksBlock = getBlockOrThrow(References.MODID, crackedBricksPath);
             Block reinforcedBlock = getBlockOrThrow(References.MODID, reinforcedPath);
+            Block chimneyBlock = getBlockOrThrow(References.MODID, chimneyPath);
 
-            smeltingResultFromBase(output, crackedBlock, baseBlock);
-            smeltingResultFromBase(output, crackedBricksBlock, bricksBlock);
+            simpleSmeltingRecipes(crackedBlock, baseBlock, output);
+            simpleSmeltingRecipes(crackedBricksBlock, bricksBlock, output);
 
             stoneCuttingRecipes(chiseledBlock, 1, baseBlock, output);
             stoneCuttingRecipes(polishedBlock, 1, baseBlock, output);
@@ -768,6 +784,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             stairsRecipes(stairsBlock, baseBlock, output);
             wallRecipes(wallBlock, baseBlock, output);
             mossyRecipes(mossyBlock, baseBlock, output);
+            chimneyRecipes(chimneyBlock, baseBlock, output);
 
             paintingRecipes(baseBlock, Tags.Items.CONCRETES, dye.getTag(), output);
             paintingRecipes(powderBlock, Tags.Items.CONCRETE_POWDERS, dye.getTag(), output);
@@ -782,6 +799,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             paintingRecipes(bricksBlock, ModItemTags.COLORED_CONCRETE_BRICKS, dye.getTag(), output);
             paintingRecipes(crackedBricksBlock, ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, dye.getTag(), output);
             paintingRecipes(reinforcedBlock, ModItemTags.COLORED_REINFORCED_CONCRETE, dye.getTag(), output);
+            paintingRecipes(chimneyBlock, ModItemTags.COLORED_CONCRETE_CHIMNEYS, dye.getTag(), output);
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, baseBlock, 1).requires(powderBlock).requires(Tags.Items.BUCKETS_WATER)
                     .unlockedBy("has_" + powderBlock, has(powderBlock)).group("concrete_with_bucket").save(output);
@@ -839,9 +857,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     protected static void mossyRecipes(Block result, Block input, RecipeOutput output) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Blocks.MOSS_BLOCK).unlockedBy(getHasName(input), has(input))
-                .group("mossy").save(output);
+                .group("mossy").save(output, BuiltInRegistries.BLOCK.getKey(result) + "_with_moss");
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Blocks.VINE).unlockedBy(getHasName(input), has(input)).group("mossy")
                 .save(output, BuiltInRegistries.BLOCK.getKey(result) + "_with_vines");
+    }
+
+
+    protected static void chimneyRecipes(Block result, Block input, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 3).pattern("# #").pattern("# #").pattern("# #").define('#', input)
+                .unlockedBy(getHasName(input), has(input)).save(output);
     }
 
 
@@ -874,6 +898,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void simpleShapelessRecipes(Block result, Item firstInput, Item secondInput, RecipeOutput output, String group) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(firstInput).requires(secondInput).unlockedBy(getHasName(secondInput), has(secondInput))
                 .group(group).save(output);
+    }
+
+
+    protected static void simpleSmeltingRecipes(ItemLike result, ItemLike input, RecipeOutput output) {
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(new ItemLike[]{input}), RecipeCategory.BUILDING_BLOCKS, result, 0.1F, 200).unlockedBy(getHasName(input), has(input))
+                .save(output, References.MODID + ":smelting/" + BuiltInRegistries.ITEM.getKey(result.asItem()).getPath());
     }
 
 

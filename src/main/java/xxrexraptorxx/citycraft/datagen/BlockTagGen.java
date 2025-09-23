@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import xxrexraptorxx.citycraft.main.CityCraft;
@@ -46,6 +47,8 @@ public class BlockTagGen extends BlockTagsProvider {
                 .add(ModBlocks.DIRTY_ASPHALT_SLAB.get()).add(ModBlocks.BOOST_ASPHALT.get()).add(ModBlocks.BOOST_ASPHALT_SLAB.get()).add(ModBlocks.RED_BUMPER_SLAB.get())
                 .add(ModBlocks.YELLOW_BUMPER_SLAB.get());
 
+        tag(ModBlockTags.CHIMNEYS_BOOSTER).addTags(BlockTags.FIRE, BlockTags.CAMPFIRES, Tags.Blocks.PLAYER_WORKSTATIONS_FURNACES);
+
         addByPathPredicate(lookup, ModBlockTags.TRAFFIC_BARRIERS, path -> path.contains("traffic_barrier"));
         addByPathPredicate(lookup, ModBlockTags.CONCRETES, path -> path.contains("concrete"));
         addByPathPredicate(lookup, ModBlockTags.LEVERS, path -> path.endsWith("lever"));
@@ -53,6 +56,7 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathPredicate(lookup, ModBlockTags.POLES, path -> path.endsWith("_pole"));
         addByPathPredicate(lookup, ModBlockTags.LAMPS, path -> path.endsWith("_lamp") || path.endsWith("_light") || path.contains("lantern"));
         addByPathPredicate(lookup, ModBlockTags.SPEED_BOOST_BLOCKS, path -> path.contains("asphalt") && !path.contains("pothole"));
+        addByPathPredicate(lookup, ModBlockTags.CHIMNEYS, path -> path.endsWith("_chimney"));
 
         addByPathModPredicate(lookup, BlockTags.SLABS, path -> path.endsWith("_slab") || path.endsWith("_panel") || path.startsWith("drain_cover"));
         addByPathModPredicate(lookup, BlockTags.STAIRS, path -> path.endsWith("_stairs"));
@@ -396,7 +400,13 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.REINFORCED_LIGHT_BLUE_CONCRETE.get(), ModBlocks.REINFORCED_YELLOW_CONCRETE.get(), ModBlocks.REINFORCED_LIME_CONCRETE.get(),
                 ModBlocks.REINFORCED_PINK_CONCRETE.get(), ModBlocks.REINFORCED_GRAY_CONCRETE.get(), ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get(),
                 ModBlocks.REINFORCED_CYAN_CONCRETE.get(), ModBlocks.REINFORCED_PURPLE_CONCRETE.get(), ModBlocks.REINFORCED_BLUE_CONCRETE.get(),
-                ModBlocks.REINFORCED_BROWN_CONCRETE.get(), ModBlocks.REINFORCED_GREEN_CONCRETE.get(), ModBlocks.REINFORCED_RED_CONCRETE.get());
+                ModBlocks.REINFORCED_BROWN_CONCRETE.get(), ModBlocks.REINFORCED_GREEN_CONCRETE.get(), ModBlocks.REINFORCED_RED_CONCRETE.get(), ModBlocks.STONE_CHIMNEY.get(),
+                ModBlocks.MOSSY_STONE_CHIMNEY.get(), ModBlocks.CRACKED_STONE_CHIMNEY.get(), ModBlocks.DEEPSLATE_CHIMNEY.get(), ModBlocks.CRACKED_DEEPSLATE_CHIMNEY.get(),
+                ModBlocks.BRICKS_CHIMNEY.get(), ModBlocks.MUD_CHIMNEY.get(), ModBlocks.BLACKSTONE_CHIMNEY.get(), ModBlocks.CRACKED_BLACKSTONE_CHIMNEY.get(),
+                ModBlocks.BLACK_CONCRETE_CHIMNEY.get(), ModBlocks.WHITE_CONCRETE_CHIMNEY.get(), ModBlocks.ORANGE_CONCRETE_CHIMNEY.get(), ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get(),
+                ModBlocks.LIGHT_BLUE_CONCRETE_CHIMNEY.get(), ModBlocks.YELLOW_CONCRETE_CHIMNEY.get(), ModBlocks.LIME_CONCRETE_CHIMNEY.get(), ModBlocks.PINK_CONCRETE_CHIMNEY.get(),
+                ModBlocks.GRAY_CONCRETE_CHIMNEY.get(), ModBlocks.LIGHT_GRAY_CONCRETE_CHIMNEY.get(), ModBlocks.CYAN_CONCRETE_CHIMNEY.get(), ModBlocks.PURPLE_CONCRETE_CHIMNEY.get(),
+                ModBlocks.BLUE_CONCRETE_CHIMNEY.get(), ModBlocks.BROWN_CONCRETE_CHIMNEY.get(), ModBlocks.GREEN_CONCRETE_CHIMNEY.get(), ModBlocks.RED_CONCRETE_CHIMNEY.get());
     }
 
 

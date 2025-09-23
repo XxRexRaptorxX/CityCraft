@@ -1583,6 +1583,55 @@ public class ModBlocks {
     public static final DeferredBlock<RotatedPillarBlock> REINFORCED_RED_CONCRETE = registerBlock("reinforced_red_concrete",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE).strength(8.0F, 15.8F).pushReaction(PushReaction.BLOCK)));
 
+    public static final DeferredBlock<ChimneyBlock> STONE_CHIMNEY = registerBlock("stone_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
+    public static final DeferredBlock<ChimneyBlock> MOSSY_STONE_CHIMNEY = registerBlock("mossy_stone_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICKS)));
+    public static final DeferredBlock<ChimneyBlock> CRACKED_STONE_CHIMNEY = registerBlock("cracked_stone_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS)));
+    public static final DeferredBlock<ChimneyBlock> DEEPSLATE_CHIMNEY = registerBlock("deepslate_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS)));
+    public static final DeferredBlock<ChimneyBlock> CRACKED_DEEPSLATE_CHIMNEY = registerBlock("cracked_deepslate_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_DEEPSLATE_BRICKS)));
+    public static final DeferredBlock<ChimneyBlock> BRICKS_CHIMNEY = registerBlock("bricks_chimney", () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)));
+    public static final DeferredBlock<ChimneyBlock> MUD_CHIMNEY = registerBlock("mud_chimney", () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD_BRICKS)));
+    public static final DeferredBlock<ChimneyBlock> BLACKSTONE_CHIMNEY = registerBlock("blackstone_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_BLACKSTONE_BRICKS)));
+    public static final DeferredBlock<ChimneyBlock> CRACKED_BLACKSTONE_CHIMNEY = registerBlock("cracked_blackstone_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)));
+    public static final DeferredBlock<ChimneyBlock> BLACK_CONCRETE_CHIMNEY = registerBlock("black_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> WHITE_CONCRETE_CHIMNEY = registerBlock("white_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> ORANGE_CONCRETE_CHIMNEY = registerBlock("orange_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> MAGENTA_CONCRETE_CHIMNEY = registerBlock("magenta_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> LIGHT_BLUE_CONCRETE_CHIMNEY = registerBlock("light_blue_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> YELLOW_CONCRETE_CHIMNEY = registerBlock("yellow_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> LIME_CONCRETE_CHIMNEY = registerBlock("lime_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> PINK_CONCRETE_CHIMNEY = registerBlock("pink_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> GRAY_CONCRETE_CHIMNEY = registerBlock("gray_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> LIGHT_GRAY_CONCRETE_CHIMNEY = registerBlock("light_gray_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> CYAN_CONCRETE_CHIMNEY = registerBlock("cyan_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> PURPLE_CONCRETE_CHIMNEY = registerBlock("purple_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> BLUE_CONCRETE_CHIMNEY = registerBlock("blue_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> BROWN_CONCRETE_CHIMNEY = registerBlock("brown_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> GREEN_CONCRETE_CHIMNEY = registerBlock("green_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE)));
+    public static final DeferredBlock<ChimneyBlock> RED_CONCRETE_CHIMNEY = registerBlock("red_concrete_chimney",
+            () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

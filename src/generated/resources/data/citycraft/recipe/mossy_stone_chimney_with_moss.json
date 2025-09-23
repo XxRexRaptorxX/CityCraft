@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mossy",
+  "ingredients": [
+    {
+      "item": "citycraft:stone_chimney"
+    },
+    {
+      "item": "minecraft:moss_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:mossy_stone_chimney"
+  }
+}

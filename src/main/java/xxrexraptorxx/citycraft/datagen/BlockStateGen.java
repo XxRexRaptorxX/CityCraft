@@ -1207,6 +1207,51 @@ public class BlockStateGen extends BlockStateProvider {
         pillarBlockWithOverlay(ModBlocks.REINFORCED_PINK_CONCRETE.get(), Blocks.PINK_CONCRETE,
                 ResourceLocation.fromNamespaceAndPath(References.MODID, "block/reinforced_concrete_overlay"));
 
+        pillarBlockWithOverlay(ModBlocks.STONE_CHIMNEY.get(), Blocks.STONE_BRICKS, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.MOSSY_STONE_CHIMNEY.get(), Blocks.MOSSY_STONE_BRICKS, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.CRACKED_STONE_CHIMNEY.get(), Blocks.CRACKED_STONE_BRICKS,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.DEEPSLATE_CHIMNEY.get(), Blocks.DEEPSLATE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.CRACKED_DEEPSLATE_CHIMNEY.get(), Blocks.CRACKED_DEEPSLATE_BRICKS,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.BRICKS_CHIMNEY.get(), Blocks.BRICKS, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.MUD_CHIMNEY.get(), Blocks.MUD_BRICKS, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.BLACKSTONE_CHIMNEY.get(), Blocks.POLISHED_BLACKSTONE_BRICKS,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.CRACKED_BLACKSTONE_CHIMNEY.get(), Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS,
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.BLACK_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_BLACK_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.WHITE_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_WHITE_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.ORANGE_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_ORANGE_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_MAGENTA_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.LIGHT_BLUE_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.YELLOW_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_YELLOW_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.LIME_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_LIME_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.PINK_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_PINK_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.GRAY_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_GRAY_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.LIGHT_GRAY_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.CYAN_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_CYAN_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.PURPLE_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_PURPLE_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.BLUE_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_BLUE_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.BROWN_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_BROWN_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.GREEN_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_GREEN_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+        pillarBlockWithOverlay(ModBlocks.RED_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_RED_CONCRETE.get(),
+                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
     }
 
     private final String emissiveTexturesSuffix = "_e";

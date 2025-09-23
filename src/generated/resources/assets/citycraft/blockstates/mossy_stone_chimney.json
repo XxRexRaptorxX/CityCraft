@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "citycraft:block/mossy_stone_chimney",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "citycraft:block/mossy_stone_chimney"
+    },
+    "axis=z": {
+      "model": "citycraft:block/mossy_stone_chimney",
+      "x": 90
+    }
+  }
+}

@@ -50,6 +50,7 @@ public class ItemTagGen extends ItemTagsProvider {
         copy(ModBlockTags.TRAFFIC_BARRIERS, ModItemTags.TRAFFIC_BARRIERS);
         copy(ModBlockTags.POLES, ModItemTags.POLES);
         copy(ModBlockTags.POSTS, ModItemTags.POSTS);
+        copy(ModBlockTags.CHIMNEYS, ModItemTags.CHIMNEYS);
 
         copy(BlockTags.SLABS, ItemTags.SLABS);
         copy(BlockTags.STAIRS, ItemTags.STAIRS);
@@ -75,6 +76,7 @@ public class ItemTagGen extends ItemTagsProvider {
         addByPathModPredicate(lookup, ModItemTags.COLORED_CONCRETE_LEVERS, path -> path.contains("concrete_laver"));
         addByPathModPredicate(lookup, ModItemTags.COLORED_CRACKED_CONCRETE, path -> path.contains("cracked_concrete") && !path.contains("bricks"));
         addByPathModPredicate(lookup, ModItemTags.COLORED_MOSSY_CONCRETE, path -> path.contains("concrete") && path.contains("mossy") && !path.contains("bricks"));
+        addByPathModPredicate(lookup, ModItemTags.COLORED_CONCRETE_CHIMNEYS, path -> path.contains("concrete_chimney"));
 
         addByPathModPredicate(lookup, ModItemTags.MARKED_ASPHALT_CRAFTING_MATERIALS, path -> (path.contains("asphalt_with_yellow") && !path.contains("slab")));
         addByPathModPredicate(lookup, ModItemTags.MARKED_ASPHALT_CRAFTING_MATERIALS, path -> (path.contains("asphalt_with_white") && !path.contains("slab")));
