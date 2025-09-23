@@ -25,6 +25,7 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 - traffic lights, lamps and lanterns
 - increased movement speed on asphalt
 - vanilla & survival friendly
+- some blocks are built from vanilla textures, making them compatible with texture packs!
 - emissive textures
 - connected textures
 - version checker
