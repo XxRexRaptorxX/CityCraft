@@ -190,6 +190,9 @@ public class CityCraft {
             event.accept(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get());
             event.accept(ModBlocks.PINK_CONCRETE_CHIMNEY.get());
 
+            event.accept(ModBlocks.IRON_FLUE);
+            event.accept(ModBlocks.COPPER_FLUE);
+
         } else if (key == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COAL_COKE.get());
             event.accept(ModItems.ASPHALT_MIXTURE.get());

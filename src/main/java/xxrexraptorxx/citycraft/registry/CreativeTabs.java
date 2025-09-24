@@ -88,6 +88,9 @@ public class CreativeTabs {
                         output.accept(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get());
                         output.accept(ModBlocks.PINK_CONCRETE_CHIMNEY.get());
 
+                        output.accept(ModBlocks.IRON_FLUE);
+                        output.accept(ModBlocks.COPPER_FLUE);
+
                         output.accept(ModItems.COAL_COKE.get());
                         output.accept(ModItems.ASPHALT_MIXTURE.get());
                         output.accept(ModItems.DYE_MIX.get());

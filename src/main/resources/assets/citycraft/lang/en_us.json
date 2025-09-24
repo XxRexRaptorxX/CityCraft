@@ -1175,5 +1175,7 @@
   "block.citycraft.blue_concrete_chimney": "Blue Concrete Chimney",
   "block.citycraft.brown_concrete_chimney": "Brown Concrete Chimney",
   "block.citycraft.green_concrete_chimney": "Green Concrete Chimney",
-  "block.citycraft.red_concrete_chimney": "Red Concrete Chimney"
+  "block.citycraft.red_concrete_chimney": "Red Concrete Chimney",
+  "block.citycraft.iron_flue": "Iron Flue",
+  "block.citycraft.copper_flue": "Copper Flue"
 }

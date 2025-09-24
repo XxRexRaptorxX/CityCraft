@@ -1180,5 +1180,7 @@
   "block.citycraft.blue_concrete_chimney": "Blauer Betonkamin",
   "block.citycraft.brown_concrete_chimney": "Brauner Betonkamin",
   "block.citycraft.green_concrete_chimney": "Grüner Betonkamin",
-  "block.citycraft.red_concrete_chimney": "Roter Betonkamin"
+  "block.citycraft.red_concrete_chimney": "Roter Betonkamin",
+  "block.citycraft.iron_flue": "Eisen Rauchrohr",
+  "block.citycraft.copper_flue": "Kupfer Rauchrohr"
 }

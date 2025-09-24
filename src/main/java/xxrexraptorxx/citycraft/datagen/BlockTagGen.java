@@ -57,6 +57,7 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathPredicate(lookup, ModBlockTags.LAMPS, path -> path.endsWith("_lamp") || path.endsWith("_light") || path.contains("lantern"));
         addByPathPredicate(lookup, ModBlockTags.SPEED_BOOST_BLOCKS, path -> path.contains("asphalt") && !path.contains("pothole"));
         addByPathPredicate(lookup, ModBlockTags.CHIMNEYS, path -> path.endsWith("_chimney"));
+        addByPathPredicate(lookup, ModBlockTags.FLUES, path -> path.endsWith("_flue"));
 
         addByPathModPredicate(lookup, BlockTags.SLABS, path -> path.endsWith("_slab") || path.endsWith("_panel") || path.startsWith("drain_cover"));
         addByPathModPredicate(lookup, BlockTags.STAIRS, path -> path.endsWith("_stairs"));
@@ -64,7 +65,6 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathModPredicate(lookup, BlockTags.PRESSURE_PLATES, path -> path.endsWith("_pressure_plate"));
         addByPathModPredicate(lookup, BlockTags.BUTTONS, path -> path.endsWith("_button"));
         addByPathModPredicate(lookup, BlockTags.WALLS, path -> path.endsWith("_wall"));
-
 
         tag(ModBlockTags.createBlockTag("c", "asphalt")).addTag(ModBlockTags.ASPHALT);
         tag(ModBlockTags.createBlockTag("c", "traffic_barrier")).addTag(ModBlockTags.TRAFFIC_BARRIERS);

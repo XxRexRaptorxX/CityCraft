@@ -42,6 +42,7 @@ public class ModItemTags {
     public static final TagKey<Item> POSTS = createItemTag("c", "posts/stone");
 
     public static final TagKey<Item> CHIMNEYS = createItemTag(References.MODID, "chimneys");
+    public static final TagKey<Item> FLUES = createItemTag(References.MODID, "flues");
     public static final TagKey<Item> COLORED_LAMPS = createItemTag(References.MODID, "colored_lamps");
     public static final TagKey<Item> COLORED_CHISELED_CONCRETE = createItemTag(References.MODID, "colored_chiseled_concrete");
     public static final TagKey<Item> COLORED_CRACKED_CONCRETE = createItemTag(References.MODID, "colored_cracked_concrete");

@@ -1,0 +1,6 @@
+{
+  "parent": "citycraft:block/flue",
+  "textures": {
+    "texture": "citycraft:block/copper_flue"
+  }
+}

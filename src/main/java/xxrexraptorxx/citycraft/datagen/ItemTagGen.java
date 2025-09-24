@@ -51,6 +51,7 @@ public class ItemTagGen extends ItemTagsProvider {
         copy(ModBlockTags.POLES, ModItemTags.POLES);
         copy(ModBlockTags.POSTS, ModItemTags.POSTS);
         copy(ModBlockTags.CHIMNEYS, ModItemTags.CHIMNEYS);
+        copy(ModBlockTags.FLUES, ModItemTags.FLUES);
 
         copy(BlockTags.SLABS, ItemTags.SLABS);
         copy(BlockTags.STAIRS, ItemTags.STAIRS);

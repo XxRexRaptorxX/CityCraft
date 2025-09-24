@@ -61,7 +61,7 @@ public class ChimneyBlock extends RotatedPillarBlock {
     }
 
 
-    private static int getSmokeIntensity(Level level, BlockPos pos) {
+    public static int getSmokeIntensity(Level level, BlockPos pos) {
         int maxDepth = 10;
         int count = 0;
 
@@ -72,7 +72,7 @@ public class ChimneyBlock extends RotatedPillarBlock {
             if (level.getBlockState(posBelow).is(ModBlockTags.CHIMNEYS_BOOSTER)) {
                 count = count + 3;
             }
-            if (state.getBlock() instanceof ChimneyBlock) {
+            if (state.getBlock() instanceof ChimneyBlock || state.getBlock() instanceof FlueBlock) {
                 count++;
             } else {
                 break;

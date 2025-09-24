@@ -608,6 +608,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chimneyRecipes(ModBlocks.MUD_CHIMNEY.get(), Blocks.MUD_BRICKS, output);
         chimneyRecipes(ModBlocks.BLACKSTONE_CHIMNEY.get(), Blocks.POLISHED_BLACKSTONE_BRICKS, output);
         chimneyRecipes(ModBlocks.CRACKED_BLACKSTONE_CHIMNEY.get(), Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, output);
+        flueRecipes(ModBlocks.IRON_FLUE.get(), Tags.Items.INGOTS_IRON, output);
+        flueRecipes(ModBlocks.COPPER_FLUE.get(), Tags.Items.INGOTS_COPPER, output);
 
         simpleSmeltingRecipes(ModBlocks.CRACKED_STONE_CHIMNEY.get(), ModBlocks.STONE_CHIMNEY.get(), output);
         simpleSmeltingRecipes(ModBlocks.CRACKED_BLACKSTONE_CHIMNEY.get(), ModBlocks.BLACKSTONE_CHIMNEY.get(), output);
@@ -863,9 +865,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
 
-    protected static void chimneyRecipes(Block result, Block input, RecipeOutput output) {
+    protected static void chimneyRecipes(Block result, ItemLike input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 3).pattern("# #").pattern("# #").pattern("# #").define('#', input)
                 .unlockedBy(getHasName(input), has(input)).save(output);
+    }
+
+
+    protected static void flueRecipes(Block result, TagKey<Item> input, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 3).pattern("# #").pattern("# #").pattern("# #").define('#', input).unlockedBy("has_" + input, has(input))
+                .save(output);
     }
 
 

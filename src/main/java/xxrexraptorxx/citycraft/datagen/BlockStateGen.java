@@ -1252,6 +1252,10 @@ public class BlockStateGen extends BlockStateProvider {
                 ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
         pillarBlockWithOverlay(ModBlocks.RED_CONCRETE_CHIMNEY.get(), ModBlocks.POLISHED_RED_CONCRETE.get(),
                 ResourceLocation.fromNamespaceAndPath(References.MODID, "block/chimney_overlay"));
+
+        makeBlockFromParentModel(ModBlocks.IRON_FLUE.get(), "flue");
+        makeBlockFromParentModel(ModBlocks.COPPER_FLUE.get(), "flue");
+
     }
 
     private final String emissiveTexturesSuffix = "_e";

@@ -1,4 +1,4 @@
-// 1.21	2025-09-23T21:03:34.645022	Loot Tables
+// 1.21	2025-09-24T19:52:24.2380601	Loot Tables
 7368a076406b45a92c20ce5eff9ad50e3450f5a1 data/citycraft/loot_table/blocks/0_sign.json
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_table/blocks/100_speed_eu_sign.json
 7a90e771f0880894a9b1aa172c8080bc9742350f data/citycraft/loot_table/blocks/10_minimum_speed_sign_eu.json
@@ -481,6 +481,7 @@ fa517cfd86a28417a00f5ac4daccd22eaec3368b data/citycraft/loot_table/blocks/chisel
 7c52e77bca997ed48f39a293053394a515586272 data/citycraft/loot_table/blocks/chiseled_yellow_concrete.json
 f0d1af3003a7e75f4f50fe80ed9608b992337e0e data/citycraft/loot_table/blocks/church_eu_sign.json
 fe7114017a23586d0c6793b7f58abdaf0f6166b7 data/citycraft/loot_table/blocks/circular_intersection_us_sign.json
+2a54cd877d434b492d109948b3191cb78eccadfa data/citycraft/loot_table/blocks/copper_flue.json
 b72c222e2bb35f0a85b72aab03f888ae0e66779c data/citycraft/loot_table/blocks/cracked_asphalt.json
 d3c33c3a38257001b399d42e38cece72b6cacfea data/citycraft/loot_table/blocks/cracked_asphalt_slab.json
 3e9bbba2845ddd24c4f373deb5396bd020b27c65 data/citycraft/loot_table/blocks/cracked_blackstone_chimney.json
@@ -656,6 +657,7 @@ fd30f92e9ff884592557ef32cdd57f522bd69097 data/citycraft/loot_table/blocks/infest
 cced77adc4eab50aaeb236b24393ed3cf05e3882 data/citycraft/loot_table/blocks/intersection_cn_sign.json
 5bcc3af408443f488a66430ee1c21441ad0d3bd4 data/citycraft/loot_table/blocks/intersection_eu_sign.json
 16dc8debe05093ab3ff5092323cad7359a24c556 data/citycraft/loot_table/blocks/iron_fence.json
+ac497cf305e25f61ac766deb60cc660ae144df56 data/citycraft/loot_table/blocks/iron_flue.json
 344a3c1bbf24f6c61ff35d62792b8dd6d31fb4f9 data/citycraft/loot_table/blocks/iron_pole.json
 6d7931047cf715e868e6b00142a1fc077b4df416 data/citycraft/loot_table/blocks/i_sign.json
 f0d833a8e5492756b229812549e25e34abe45755 data/citycraft/loot_table/blocks/jams_cn_sign.json

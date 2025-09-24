@@ -1632,6 +1632,10 @@ public class ModBlocks {
     public static final DeferredBlock<ChimneyBlock> RED_CONCRETE_CHIMNEY = registerBlock("red_concrete_chimney",
             () -> new ChimneyBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
 
+    public static final DeferredBlock<FlueBlock> IRON_FLUE = registerBlock("iron_flue", () -> new FlueBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final DeferredBlock<FlueBlock> COPPER_FLUE = registerBlock("copper_flue", () -> new FlueBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)));
+
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
