@@ -1244,6 +1244,31 @@ public class BlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.IRON_FLUE.get());
         this.dropSelf(ModBlocks.COPPER_FLUE.get());
+
+        this.dropSelf(ModBlocks.TUFF_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.BLACKSTONE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.NETHER_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.SANDSTONE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.RED_SANDSTONE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.DEEPSLATE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.STONE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.QUARTZ_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.BLACK_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.WHITE_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.ORANGE_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.MAGENTA_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.YELLOW_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.LIME_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.PINK_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.GRAY_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.CYAN_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.PURPLE_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.BLUE_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.BROWN_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get());
+        this.dropSelf(ModBlocks.RED_CONCRETE_FLOWER_BOX.get());
     }
 
 

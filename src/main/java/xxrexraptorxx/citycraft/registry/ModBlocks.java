@@ -1635,6 +1635,53 @@ public class ModBlocks {
     public static final DeferredBlock<FlueBlock> IRON_FLUE = registerBlock("iron_flue", () -> new FlueBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
     public static final DeferredBlock<FlueBlock> COPPER_FLUE = registerBlock("copper_flue", () -> new FlueBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)));
 
+    public static final DeferredBlock<Block> TUFF_FLOWER_BOX = registerBlock("tuff_flower_box", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_TUFF_BRICKS)));
+    public static final DeferredBlock<Block> BLACKSTONE_FLOWER_BOX = registerBlock("blackstone_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_POLISHED_BLACKSTONE)));
+    public static final DeferredBlock<Block> NETHER_FLOWER_BOX = registerBlock("nether_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_NETHER_BRICKS)));
+    public static final DeferredBlock<Block> SANDSTONE_FLOWER_BOX = registerBlock("sandstone_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_SANDSTONE)));
+    public static final DeferredBlock<Block> RED_SANDSTONE_FLOWER_BOX = registerBlock("red_sandstone_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_RED_SANDSTONE)));
+    public static final DeferredBlock<Block> DEEPSLATE_FLOWER_BOX = registerBlock("deepslate_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_DEEPSLATE)));
+    public static final DeferredBlock<Block> STONE_FLOWER_BOX = registerBlock("stone_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_STONE_BRICKS)));
+    public static final DeferredBlock<Block> QUARTZ_FLOWER_BOX = registerBlock("quartz_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_QUARTZ_BLOCK)));
+    public static final DeferredBlock<Block> BLACK_CONCRETE_FLOWER_BOX = registerBlock("black_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
+    public static final DeferredBlock<Block> WHITE_CONCRETE_FLOWER_BOX = registerBlock("white_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
+    public static final DeferredBlock<Block> ORANGE_CONCRETE_FLOWER_BOX = registerBlock("orange_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE)));
+    public static final DeferredBlock<Block> MAGENTA_CONCRETE_FLOWER_BOX = registerBlock("magenta_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE)));
+    public static final DeferredBlock<Block> LIGHT_BLUE_CONCRETE_FLOWER_BOX = registerBlock("light_blue_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE)));
+    public static final DeferredBlock<Block> YELLOW_CONCRETE_FLOWER_BOX = registerBlock("yellow_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE)));
+    public static final DeferredBlock<Block> LIME_CONCRETE_FLOWER_BOX = registerBlock("lime_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE)));
+    public static final DeferredBlock<Block> PINK_CONCRETE_FLOWER_BOX = registerBlock("pink_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE)));
+    public static final DeferredBlock<Block> GRAY_CONCRETE_FLOWER_BOX = registerBlock("gray_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE)));
+    public static final DeferredBlock<Block> LIGHT_GRAY_CONCRETE_FLOWER_BOX = registerBlock("light_gray_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE)));
+    public static final DeferredBlock<Block> CYAN_CONCRETE_FLOWER_BOX = registerBlock("cyan_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE)));
+    public static final DeferredBlock<Block> PURPLE_CONCRETE_FLOWER_BOX = registerBlock("purple_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE)));
+    public static final DeferredBlock<Block> BLUE_CONCRETE_FLOWER_BOX = registerBlock("blue_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE)));
+    public static final DeferredBlock<Block> BROWN_CONCRETE_FLOWER_BOX = registerBlock("brown_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE)));
+    public static final DeferredBlock<Block> GREEN_CONCRETE_FLOWER_BOX = registerBlock("green_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE)));
+    public static final DeferredBlock<Block> RED_CONCRETE_FLOWER_BOX = registerBlock("red_concrete_flower_box",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

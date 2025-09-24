@@ -1,0 +1,11 @@
+{
+  "parent": "citycraft:block/flower_box",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "minecraft:block/cut_red_sandstone",
+    "overlay": "citycraft:block/flower_box_top",
+    "particle": "minecraft:block/chiseled_red_sandstone",
+    "side": "minecraft:block/chiseled_red_sandstone",
+    "top": "minecraft:block/cut_red_sandstone"
+  }
+}

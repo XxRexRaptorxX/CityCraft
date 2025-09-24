@@ -58,6 +58,7 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathPredicate(lookup, ModBlockTags.SPEED_BOOST_BLOCKS, path -> path.contains("asphalt") && !path.contains("pothole"));
         addByPathPredicate(lookup, ModBlockTags.CHIMNEYS, path -> path.endsWith("_chimney"));
         addByPathPredicate(lookup, ModBlockTags.FLUES, path -> path.endsWith("_flue"));
+        addByPathPredicate(lookup, ModBlockTags.FLOWER_BOXES, path -> path.endsWith("_flower_box"));
 
         addByPathModPredicate(lookup, BlockTags.SLABS, path -> path.endsWith("_slab") || path.endsWith("_panel") || path.startsWith("drain_cover"));
         addByPathModPredicate(lookup, BlockTags.STAIRS, path -> path.endsWith("_stairs"));
@@ -65,6 +66,10 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathModPredicate(lookup, BlockTags.PRESSURE_PLATES, path -> path.endsWith("_pressure_plate"));
         addByPathModPredicate(lookup, BlockTags.BUTTONS, path -> path.endsWith("_button"));
         addByPathModPredicate(lookup, BlockTags.WALLS, path -> path.endsWith("_wall"));
+        addByPathModPredicate(lookup, BlockTags.DEAD_BUSH_MAY_PLACE_ON, path -> path.endsWith("_flower_box"));
+        addByPathModPredicate(lookup, BlockTags.MUSHROOM_GROW_BLOCK, path -> path.endsWith("_flower_box"));
+        addByPathModPredicate(lookup, BlockTags.SMALL_DRIPLEAF_PLACEABLE, path -> path.endsWith("_flower_box"));
+        addByPathModPredicate(lookup, BlockTags.DIRT, path -> path.endsWith("_flower_box"));
 
         tag(ModBlockTags.createBlockTag("c", "asphalt")).addTag(ModBlockTags.ASPHALT);
         tag(ModBlockTags.createBlockTag("c", "traffic_barrier")).addTag(ModBlockTags.TRAFFIC_BARRIERS);
@@ -406,7 +411,15 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.BLACK_CONCRETE_CHIMNEY.get(), ModBlocks.WHITE_CONCRETE_CHIMNEY.get(), ModBlocks.ORANGE_CONCRETE_CHIMNEY.get(), ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get(),
                 ModBlocks.LIGHT_BLUE_CONCRETE_CHIMNEY.get(), ModBlocks.YELLOW_CONCRETE_CHIMNEY.get(), ModBlocks.LIME_CONCRETE_CHIMNEY.get(), ModBlocks.PINK_CONCRETE_CHIMNEY.get(),
                 ModBlocks.GRAY_CONCRETE_CHIMNEY.get(), ModBlocks.LIGHT_GRAY_CONCRETE_CHIMNEY.get(), ModBlocks.CYAN_CONCRETE_CHIMNEY.get(), ModBlocks.PURPLE_CONCRETE_CHIMNEY.get(),
-                ModBlocks.BLUE_CONCRETE_CHIMNEY.get(), ModBlocks.BROWN_CONCRETE_CHIMNEY.get(), ModBlocks.GREEN_CONCRETE_CHIMNEY.get(), ModBlocks.RED_CONCRETE_CHIMNEY.get());
+                ModBlocks.BLUE_CONCRETE_CHIMNEY.get(), ModBlocks.BROWN_CONCRETE_CHIMNEY.get(), ModBlocks.GREEN_CONCRETE_CHIMNEY.get(), ModBlocks.RED_CONCRETE_CHIMNEY.get(),
+                ModBlocks.IRON_FLUE.get(), ModBlocks.COPPER_FLUE.get(), ModBlocks.BLACKSTONE_FLOWER_BOX.get(), ModBlocks.NETHER_FLOWER_BOX.get(),
+                ModBlocks.SANDSTONE_FLOWER_BOX.get(), ModBlocks.RED_SANDSTONE_FLOWER_BOX.get(), ModBlocks.DEEPSLATE_FLOWER_BOX.get(), ModBlocks.STONE_FLOWER_BOX.get(),
+                ModBlocks.TUFF_FLOWER_BOX.get(), ModBlocks.QUARTZ_FLOWER_BOX.get(), ModBlocks.BLACK_CONCRETE_FLOWER_BOX.get(), ModBlocks.WHITE_CONCRETE_FLOWER_BOX.get(),
+                ModBlocks.ORANGE_CONCRETE_FLOWER_BOX.get(), ModBlocks.MAGENTA_CONCRETE_FLOWER_BOX.get(), ModBlocks.LIGHT_BLUE_CONCRETE_FLOWER_BOX.get(),
+                ModBlocks.YELLOW_CONCRETE_FLOWER_BOX.get(), ModBlocks.LIME_CONCRETE_FLOWER_BOX.get(), ModBlocks.PINK_CONCRETE_FLOWER_BOX.get(),
+                ModBlocks.GRAY_CONCRETE_FLOWER_BOX.get(), ModBlocks.LIGHT_GRAY_CONCRETE_FLOWER_BOX.get(), ModBlocks.CYAN_CONCRETE_FLOWER_BOX.get(),
+                ModBlocks.PURPLE_CONCRETE_FLOWER_BOX.get(), ModBlocks.BLUE_CONCRETE_FLOWER_BOX.get(), ModBlocks.BROWN_CONCRETE_FLOWER_BOX.get(),
+                ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get(), ModBlocks.RED_CONCRETE_FLOWER_BOX.get());
     }
 
 

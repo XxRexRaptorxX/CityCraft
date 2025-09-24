@@ -616,6 +616,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         simpleSmeltingRecipes(ModBlocks.CRACKED_DEEPSLATE_CHIMNEY.get(), ModBlocks.DEEPSLATE_CHIMNEY.get(), output);
         mossyRecipes(ModBlocks.MOSSY_STONE_CHIMNEY.get(), ModBlocks.STONE_CHIMNEY.get(), output);
 
+        flowerBoxRecipes(ModBlocks.BLACKSTONE_FLOWER_BOX.get(), Blocks.CHISELED_POLISHED_BLACKSTONE, output);
+        flowerBoxRecipes(ModBlocks.NETHER_FLOWER_BOX.get(), Blocks.CHISELED_NETHER_BRICKS, output);
+        flowerBoxRecipes(ModBlocks.SANDSTONE_FLOWER_BOX.get(), Blocks.CHISELED_SANDSTONE, output);
+        flowerBoxRecipes(ModBlocks.RED_SANDSTONE_FLOWER_BOX.get(), Blocks.CHISELED_RED_SANDSTONE, output);
+        flowerBoxRecipes(ModBlocks.DEEPSLATE_FLOWER_BOX.get(), Blocks.CHISELED_DEEPSLATE, output);
+        flowerBoxRecipes(ModBlocks.STONE_FLOWER_BOX.get(), Blocks.CHISELED_STONE_BRICKS, output);
+        flowerBoxRecipes(ModBlocks.QUARTZ_FLOWER_BOX.get(), Blocks.CHISELED_QUARTZ_BLOCK, output);
+        flowerBoxRecipes(ModBlocks.TUFF_FLOWER_BOX.get(), Blocks.CHISELED_TUFF_BRICKS, output);
+
         registerConcreteRecipes(output);
         registerBasicColorRecipes(output);
         registerAsphaltPaintingRecipes(output);
@@ -753,6 +762,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             String crackedBricksPath = color + concrete + "_cracked_bricks";
             String reinforcedPath = "reinforced_" + color + concrete;
             String chimneyPath = color + concrete + "_chimney";
+            String flowerBoxPath = color + concrete + "_flower_box";
 
             Block baseBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, basePath);
             Block powderBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, powderPath);
@@ -771,6 +781,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             Block crackedBricksBlock = getBlockOrThrow(References.MODID, crackedBricksPath);
             Block reinforcedBlock = getBlockOrThrow(References.MODID, reinforcedPath);
             Block chimneyBlock = getBlockOrThrow(References.MODID, chimneyPath);
+            Block flowerBoxBlock = getBlockOrThrow(References.MODID, flowerBoxPath);
 
             simpleSmeltingRecipes(crackedBlock, baseBlock, output);
             simpleSmeltingRecipes(crackedBricksBlock, bricksBlock, output);
@@ -787,6 +798,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             wallRecipes(wallBlock, baseBlock, output);
             mossyRecipes(mossyBlock, baseBlock, output);
             chimneyRecipes(chimneyBlock, baseBlock, output);
+            flowerBoxRecipes(flowerBoxBlock, chiseledBlock, output);
 
             paintingRecipes(baseBlock, Tags.Items.CONCRETES, dye.getTag(), output);
             paintingRecipes(powderBlock, Tags.Items.CONCRETE_POWDERS, dye.getTag(), output);
@@ -802,6 +814,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             paintingRecipes(crackedBricksBlock, ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS, dye.getTag(), output);
             paintingRecipes(reinforcedBlock, ModItemTags.COLORED_REINFORCED_CONCRETE, dye.getTag(), output);
             paintingRecipes(chimneyBlock, ModItemTags.COLORED_CONCRETE_CHIMNEYS, dye.getTag(), output);
+            paintingRecipes(flowerBoxBlock, ModItemTags.COLORED_CONCRETE_FLOWER_BOXES, dye.getTag(), output);
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, baseBlock, 1).requires(powderBlock).requires(Tags.Items.BUCKETS_WATER)
                     .unlockedBy("has_" + powderBlock, has(powderBlock)).group("concrete_with_bucket").save(output);
@@ -867,6 +880,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     protected static void chimneyRecipes(Block result, ItemLike input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 3).pattern("# #").pattern("# #").pattern("# #").define('#', input)
+                .unlockedBy(getHasName(input), has(input)).save(output);
+    }
+
+
+    protected static void flowerBoxRecipes(Block result, ItemLike input, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 2).pattern("#X#").pattern("###").define('#', input).define('X', ItemTags.DIRT)
                 .unlockedBy(getHasName(input), has(input)).save(output);
     }
 

@@ -1,0 +1,11 @@
+{
+  "parent": "citycraft:block/flower_box",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "minecraft:block/quartz_pillar",
+    "overlay": "citycraft:block/flower_box_top",
+    "particle": "minecraft:block/chiseled_quartz_block",
+    "side": "minecraft:block/chiseled_quartz_block",
+    "top": "minecraft:block/quartz_pillar"
+  }
+}

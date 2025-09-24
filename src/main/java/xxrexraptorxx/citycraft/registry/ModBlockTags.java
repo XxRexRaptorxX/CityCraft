@@ -21,6 +21,7 @@ public class ModBlockTags {
     public static final TagKey<Block> SPEED_BOOST_BLOCKS = createBlockTag(References.MODID, "blocks_with_speed_boost");
     public static final TagKey<Block> CHIMNEYS = createBlockTag(References.MODID, "chimneys");
     public static final TagKey<Block> FLUES = createBlockTag(References.MODID, "flues");
+    public static final TagKey<Block> FLOWER_BOXES = createBlockTag(References.MODID, "flower_boxes");
     public static final TagKey<Block> CHIMNEYS_BOOSTER = createBlockTag(References.MODID, "boost_chimneys");
 
     public static final TagKey<Block> CONCRETES = createBlockTag("c", "concretes");

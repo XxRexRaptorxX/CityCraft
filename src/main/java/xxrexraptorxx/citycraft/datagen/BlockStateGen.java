@@ -1256,6 +1256,30 @@ public class BlockStateGen extends BlockStateProvider {
         makeBlockFromParentModel(ModBlocks.IRON_FLUE.get(), "flue");
         makeBlockFromParentModel(ModBlocks.COPPER_FLUE.get(), "flue");
 
+        flowerBoxBlock(ModBlocks.BLACKSTONE_FLOWER_BOX.get(), Blocks.CHISELED_POLISHED_BLACKSTONE, Blocks.POLISHED_BLACKSTONE);
+        flowerBoxBlock(ModBlocks.TUFF_FLOWER_BOX.get(), Blocks.CHISELED_TUFF_BRICKS, Blocks.POLISHED_TUFF);
+        flowerBoxBlock(ModBlocks.NETHER_FLOWER_BOX.get(), Blocks.CHISELED_NETHER_BRICKS, Blocks.NETHER_BRICKS);
+        flowerBoxBlock(ModBlocks.SANDSTONE_FLOWER_BOX.get(), Blocks.CHISELED_SANDSTONE, Blocks.CUT_SANDSTONE);
+        flowerBoxBlock(ModBlocks.RED_SANDSTONE_FLOWER_BOX.get(), Blocks.CHISELED_RED_SANDSTONE, Blocks.CUT_RED_SANDSTONE);
+        flowerBoxBlock(ModBlocks.DEEPSLATE_FLOWER_BOX.get(), Blocks.CHISELED_DEEPSLATE, Blocks.POLISHED_DEEPSLATE);
+        flowerBoxBlock(ModBlocks.STONE_FLOWER_BOX.get(), Blocks.CHISELED_STONE_BRICKS, Blocks.SMOOTH_STONE);
+        flowerBoxBlock(ModBlocks.QUARTZ_FLOWER_BOX.get(), Blocks.CHISELED_QUARTZ_BLOCK, Blocks.QUARTZ_PILLAR);
+        flowerBoxBlock(ModBlocks.BLACK_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_BLACK_CONCRETE.get(), ModBlocks.POLISHED_BLACK_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.WHITE_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_WHITE_CONCRETE.get(), ModBlocks.POLISHED_WHITE_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.ORANGE_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_ORANGE_CONCRETE.get(), ModBlocks.POLISHED_ORANGE_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.MAGENTA_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_MAGENTA_CONCRETE.get(), ModBlocks.POLISHED_MAGENTA_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.LIGHT_BLUE_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_LIGHT_BLUE_CONCRETE.get(), ModBlocks.POLISHED_LIGHT_BLUE_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.YELLOW_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_YELLOW_CONCRETE.get(), ModBlocks.POLISHED_YELLOW_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.LIME_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_LIME_CONCRETE.get(), ModBlocks.POLISHED_LIME_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.PINK_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_PINK_CONCRETE.get(), ModBlocks.POLISHED_PINK_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.GRAY_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_GRAY_CONCRETE.get(), ModBlocks.POLISHED_GRAY_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.LIGHT_GRAY_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_LIGHT_GRAY_CONCRETE.get(), ModBlocks.POLISHED_LIGHT_GRAY_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.CYAN_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_CYAN_CONCRETE.get(), ModBlocks.POLISHED_CYAN_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.PURPLE_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_PURPLE_CONCRETE.get(), ModBlocks.POLISHED_PURPLE_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.BLUE_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_BLUE_CONCRETE.get(), ModBlocks.POLISHED_BLUE_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.BROWN_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_BROWN_CONCRETE.get(), ModBlocks.POLISHED_BROWN_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_GREEN_CONCRETE.get(), ModBlocks.POLISHED_GREEN_CONCRETE.get());
+        flowerBoxBlock(ModBlocks.RED_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_RED_CONCRETE.get(), ModBlocks.POLISHED_RED_CONCRETE.get());
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1559,6 +1583,21 @@ public class BlockStateGen extends BlockStateProvider {
     }
 
 
+    private void flowerBoxBlock(Block block, Block baseBlock, Block endBlock) {
+        String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        String sideTexture = BuiltInRegistries.BLOCK.getKey(baseBlock).getPath();
+        String endTexture = BuiltInRegistries.BLOCK.getKey(endBlock).getPath();
+        ResourceLocation overlayTexture = ResourceLocation.fromNamespaceAndPath(References.MODID, "block/flower_box_top");
+
+        BlockModelBuilder base = models().withExistingParent(blockTexture, modLoc("block/flower_box")).texture("side", getLoc(baseBlock) + sideTexture)
+                .texture("top", getLoc(endBlock) + endTexture).texture("bottom", getLoc(endBlock) + endTexture).texture("overlay", overlayTexture)
+                .texture("particle", getLoc(baseBlock) + sideTexture).renderType(mcLoc("cutout"));
+
+        simpleBlock(block, base);
+        makeBlockItemFromExistingModel(block);
+    }
+
+
     private void directionalAsphaltBlock(AsphaltBlock block) {
         String asphaltTexture = BuiltInRegistries.BLOCK.getKey(ModBlocks.ASPHALT_BLOCK.get()).getPath();
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
@@ -1792,6 +1831,11 @@ public class BlockStateGen extends BlockStateProvider {
         });
 
         makeBlockItemFromExistingModel(block);
+    }
+
+
+    public static String getLoc(Block block) {
+        return BuiltInRegistries.BLOCK.getKey(block).getNamespace() + ":block/";
     }
 }
 

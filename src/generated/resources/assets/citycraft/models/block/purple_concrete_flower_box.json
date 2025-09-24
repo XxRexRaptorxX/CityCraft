@@ -1,0 +1,11 @@
+{
+  "parent": "citycraft:block/flower_box",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "citycraft:block/polished_purple_concrete",
+    "overlay": "citycraft:block/flower_box_top",
+    "particle": "citycraft:block/chiseled_purple_concrete",
+    "side": "citycraft:block/chiseled_purple_concrete",
+    "top": "citycraft:block/polished_purple_concrete"
+  }
+}

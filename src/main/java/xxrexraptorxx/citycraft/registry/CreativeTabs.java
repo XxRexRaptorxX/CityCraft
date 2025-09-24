@@ -62,6 +62,9 @@ public class CreativeTabs {
 
                         output.accept(ModBlocks.BLOCK_PAINTER.get());
 
+                        output.accept(ModBlocks.IRON_FLUE);
+                        output.accept(ModBlocks.COPPER_FLUE);
+
                         output.accept(ModBlocks.STONE_CHIMNEY.get());
                         output.accept(ModBlocks.MOSSY_STONE_CHIMNEY.get());
                         output.accept(ModBlocks.CRACKED_STONE_CHIMNEY.get());
@@ -88,8 +91,30 @@ public class CreativeTabs {
                         output.accept(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get());
                         output.accept(ModBlocks.PINK_CONCRETE_CHIMNEY.get());
 
-                        output.accept(ModBlocks.IRON_FLUE);
-                        output.accept(ModBlocks.COPPER_FLUE);
+                        output.accept(ModBlocks.NETHER_FLOWER_BOX.get());
+                        output.accept(ModBlocks.BLACKSTONE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.DEEPSLATE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.TUFF_FLOWER_BOX.get());
+                        output.accept(ModBlocks.STONE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.RED_SANDSTONE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.SANDSTONE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.QUARTZ_FLOWER_BOX.get());
+                        output.accept(ModBlocks.WHITE_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.GRAY_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.BLACK_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.BROWN_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.RED_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.ORANGE_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.YELLOW_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.LIME_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.CYAN_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.BLUE_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.PURPLE_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.MAGENTA_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.PINK_CONCRETE_FLOWER_BOX.get());
 
                         output.accept(ModItems.COAL_COKE.get());
                         output.accept(ModItems.ASPHALT_MIXTURE.get());
@@ -1600,6 +1625,23 @@ public class CreativeTabs {
                         output.accept(ModBlocks.PURPLE_CONCRETE_CHIMNEY.get());
                         output.accept(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get());
                         output.accept(ModBlocks.PINK_CONCRETE_CHIMNEY.get());
+
+                        output.accept(ModBlocks.WHITE_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.GRAY_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.BLACK_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.BROWN_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.RED_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.ORANGE_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.YELLOW_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.LIME_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.CYAN_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.BLUE_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.PURPLE_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.MAGENTA_CONCRETE_FLOWER_BOX.get());
+                        output.accept(ModBlocks.PINK_CONCRETE_FLOWER_BOX.get());
 
                         output.accept(ModBlocks.REINFORCED_WHITE_CONCRETE.get());
                         output.accept(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get());

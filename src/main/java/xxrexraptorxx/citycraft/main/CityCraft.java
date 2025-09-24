@@ -47,6 +47,7 @@ public class CityCraft {
 
         if (key == CreativeModeTabs.REDSTONE_BLOCKS) {
             event.accept(ModBlocks.REDSTONE_POLE);
+
             event.accept(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
             event.accept(ModBlocks.TRIPLE_TRAFFIC_LIGHT.get());
             event.accept(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
@@ -63,9 +64,11 @@ public class CityCraft {
             event.accept(ModBlocks.SIGNAL_LIGHT.get());
             event.accept(ModBlocks.DANGER_SIGNAL_LIGHT.get());
             event.accept(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
+
             event.accept(ModBlocks.MODERN_STREET_LANTERN.get());
             event.accept(ModBlocks.STREET_LANTERN.get());
             event.accept(ModBlocks.STREET_LANTERN_PANEL.get());
+
             event.accept(ModBlocks.WHITE_LAMP.get());
             event.accept(ModBlocks.LIGHT_GRAY_LAMP.get());
             event.accept(ModBlocks.GRAY_LAMP.get());
@@ -82,6 +85,7 @@ public class CityCraft {
             event.accept(ModBlocks.PURPLE_LAMP.get());
             event.accept(ModBlocks.MAGENTA_LAMP.get());
             event.accept(ModBlocks.PINK_LAMP.get());
+
             event.accept(ModBlocks.WHITE_NEON_LIGHT.get());
             event.accept(ModBlocks.LIGHT_GRAY_NEON_LIGHT.get());
             event.accept(ModBlocks.GRAY_NEON_LIGHT.get());
@@ -104,9 +108,11 @@ public class CityCraft {
             event.accept(ModBlocks.INFESTED_WHITE_CONCRETE.get());
             event.accept(ModBlocks.INFESTED_GRAY_CONCRETE.get());
             event.accept(ModBlocks.INFESTED_LIGHT_GRAY_CONCRETE.get());
+
             event.accept(ModBlocks.BLOCK_PAINTER.get());
             event.accept(ModBlocks.ASPHALT_BLOCK);
             event.accept(ModBlocks.BOOST_ASPHALT);
+
             event.accept(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
             event.accept(ModBlocks.TRIPLE_TRAFFIC_LIGHT.get());
             event.accept(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
@@ -123,9 +129,11 @@ public class CityCraft {
             event.accept(ModBlocks.SIGNAL_LIGHT.get());
             event.accept(ModBlocks.DANGER_SIGNAL_LIGHT.get());
             event.accept(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
+
             event.accept(ModBlocks.MODERN_STREET_LANTERN.get());
             event.accept(ModBlocks.STREET_LANTERN.get());
             event.accept(ModBlocks.STREET_LANTERN_PANEL.get());
+
             event.accept(ModBlocks.WHITE_LAMP.get());
             event.accept(ModBlocks.LIGHT_GRAY_LAMP.get());
             event.accept(ModBlocks.GRAY_LAMP.get());
@@ -142,6 +150,7 @@ public class CityCraft {
             event.accept(ModBlocks.PURPLE_LAMP.get());
             event.accept(ModBlocks.MAGENTA_LAMP.get());
             event.accept(ModBlocks.PINK_LAMP.get());
+
             event.accept(ModBlocks.WHITE_NEON_LIGHT.get());
             event.accept(ModBlocks.LIGHT_GRAY_NEON_LIGHT.get());
             event.accept(ModBlocks.GRAY_NEON_LIGHT.get());
@@ -158,12 +167,16 @@ public class CityCraft {
             event.accept(ModBlocks.PURPLE_NEON_LIGHT.get());
             event.accept(ModBlocks.MAGENTA_NEON_LIGHT.get());
             event.accept(ModBlocks.PINK_NEON_LIGHT.get());
+
             event.accept(ModBlocks.WHITE_CHAIN.get());
             event.accept(ModBlocks.RED_CHAIN.get());
             event.accept(ModBlocks.YELLOW_CHAIN.get());
             event.accept(ModBlocks.BLACK_CHAIN.get());
             event.accept(ModBlocks.DRAIN_COVER.get());
             event.accept(ModBlocks.DRAIN_COVER_GRID.get());
+
+            event.accept(ModBlocks.IRON_FLUE);
+            event.accept(ModBlocks.COPPER_FLUE);
             event.accept(ModBlocks.STONE_CHIMNEY.get());
             event.accept(ModBlocks.MOSSY_STONE_CHIMNEY.get());
             event.accept(ModBlocks.CRACKED_STONE_CHIMNEY.get());
@@ -190,8 +203,30 @@ public class CityCraft {
             event.accept(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get());
             event.accept(ModBlocks.PINK_CONCRETE_CHIMNEY.get());
 
-            event.accept(ModBlocks.IRON_FLUE);
-            event.accept(ModBlocks.COPPER_FLUE);
+            event.accept(ModBlocks.NETHER_FLOWER_BOX.get());
+            event.accept(ModBlocks.BLACKSTONE_FLOWER_BOX.get());
+            event.accept(ModBlocks.DEEPSLATE_FLOWER_BOX.get());
+            event.accept(ModBlocks.TUFF_FLOWER_BOX.get());
+            event.accept(ModBlocks.STONE_FLOWER_BOX.get());
+            event.accept(ModBlocks.RED_SANDSTONE_FLOWER_BOX.get());
+            event.accept(ModBlocks.SANDSTONE_FLOWER_BOX.get());
+            event.accept(ModBlocks.QUARTZ_FLOWER_BOX.get());
+            event.accept(ModBlocks.WHITE_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.LIGHT_GRAY_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.GRAY_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.BLACK_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.BROWN_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.RED_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.ORANGE_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.YELLOW_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.LIME_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.CYAN_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.LIGHT_BLUE_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.BLUE_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.PURPLE_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.MAGENTA_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.PINK_CONCRETE_FLOWER_BOX.get());
 
         } else if (key == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COAL_COKE.get());
@@ -444,6 +479,23 @@ public class CityCraft {
             event.accept(ModBlocks.PURPLE_CONCRETE_CHIMNEY.get());
             event.accept(ModBlocks.MAGENTA_CONCRETE_CHIMNEY.get());
             event.accept(ModBlocks.PINK_CONCRETE_CHIMNEY.get());
+
+            event.accept(ModBlocks.WHITE_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.LIGHT_GRAY_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.GRAY_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.BLACK_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.BROWN_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.RED_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.ORANGE_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.YELLOW_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.LIME_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.CYAN_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.LIGHT_BLUE_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.BLUE_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.PURPLE_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.MAGENTA_CONCRETE_FLOWER_BOX.get());
+            event.accept(ModBlocks.PINK_CONCRETE_FLOWER_BOX.get());
 
             event.accept(ModBlocks.REINFORCED_WHITE_CONCRETE.get());
             event.accept(ModBlocks.REINFORCED_LIGHT_GRAY_CONCRETE.get());

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "citycraft:chiseled_brown_concrete"
+    },
+    "X": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "citycraft:brown_concrete_flower_box"
+  }
+}

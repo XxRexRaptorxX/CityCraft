@@ -1,0 +1,11 @@
+{
+  "parent": "citycraft:block/flower_box",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "minecraft:block/polished_tuff",
+    "overlay": "citycraft:block/flower_box_top",
+    "particle": "minecraft:block/chiseled_tuff_bricks",
+    "side": "minecraft:block/chiseled_tuff_bricks",
+    "top": "minecraft:block/polished_tuff"
+  }
+}
