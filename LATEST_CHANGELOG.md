@@ -1,7 +1,8 @@
-# [v.2.9.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.9.0-dev1...v.2.9.0-dev18)
+# [v.2.9.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.9.0-dev1...v.2.9.0-dev19)
 
 ## ✨ Features
 
+- Flue Blocks added (behaves like chimneys) ([cf46f0f](https://github.com/XxRexRaptorxX/CityCraft/commit/cf46f0f1184c86204d07ad69bbc315cbfacb8a26))
 - Chimneys added! (Generate smoke particles. The higher it is, the more smoke appears. Furnaces & fires under the chimney also increase the smoke) ([dd0d489](https://github.com/XxRexRaptorxX/CityCraft/commit/dd0d489d8c2088cb8e58542dcc36802b433ebc57))
 - Reinforced Concrete blocks added ([c1fbf5e](https://github.com/XxRexRaptorxX/CityCraft/commit/c1fbf5eaba7c410250fe06d5e5d2ce27900db9e5))
 - Cracked Concrete Bricks added ([e5bd931](https://github.com/XxRexRaptorxX/CityCraft/commit/e5bd931ff999b2650d1adf30c705f4b4364a6194))
