@@ -1,6 +1,8 @@
 package xxrexraptorxx.citycraft.blocks;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -8,8 +10,10 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RedstoneLampBlock;
@@ -19,6 +23,10 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import xxrexraptorxx.citycraft.main.References;
+import xxrexraptorxx.citycraft.utils.Config;
+
+import java.util.List;
 
 
 public class LampBlock extends RedstoneLampBlock {
@@ -124,6 +132,14 @@ public class LampBlock extends RedstoneLampBlock {
         if ((powered || forced) && flick) {
             int delay = 1 + random.nextInt(6);
             level.scheduleTick(pos, this, delay);
+        }
+    }
+
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+        if (Config.ENABLE_TOOLTIPS.get()) {
+            list.add(Component.translatable("message." + References.MODID + ".flicker_info").withStyle(ChatFormatting.GRAY));
         }
     }
 }

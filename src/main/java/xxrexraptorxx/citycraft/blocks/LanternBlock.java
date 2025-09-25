@@ -1,15 +1,21 @@
 package xxrexraptorxx.citycraft.blocks;
 
+import java.util.List;
 import java.util.function.ToIntFunction;
 import javax.annotation.Nullable;
+
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -23,6 +29,8 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.phys.BlockHitResult;
+import xxrexraptorxx.citycraft.main.References;
+import xxrexraptorxx.citycraft.utils.Config;
 
 public class LanternBlock extends Block {
 
@@ -218,5 +226,13 @@ public class LanternBlock extends Block {
         LIT = BlockStateProperties.LIT;
         FORCED_ON = BooleanProperty.create("forced_on");
         FLICKERING = BooleanProperty.create("flickering");
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+        if (Config.ENABLE_TOOLTIPS.get()) {
+            list.add(Component.translatable("message." + References.MODID + ".solar_info").withStyle(ChatFormatting.GRAY));
+            list.add(Component.translatable("message." + References.MODID + ".flicker_info").withStyle(ChatFormatting.GRAY));
+        }
     }
 }

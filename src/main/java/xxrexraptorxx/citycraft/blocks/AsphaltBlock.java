@@ -62,10 +62,10 @@ public class AsphaltBlock extends HorizontalDirectionalBlock {
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
         if (Config.ENABLE_TOOLTIPS.get()) {
             if (this == ModBlocks.BOOST_ASPHALT.get()) {
-                list.add(Component.translatable("message." + References.MODID + ".boost_speed_tooltip").withStyle(ChatFormatting.GRAY));
+                list.add(Component.translatable("message." + References.MODID + ".boost_speed_info").withStyle(ChatFormatting.GRAY));
 
             } else if (Config.ENABLE_ASPHALT_SPEED_EFFECT.get() && this != ModBlocks.POTHOLE_ASPHALT.get()) {
-                list.add(Component.translatable("message." + References.MODID + ".speed_tooltip").withStyle(ChatFormatting.GRAY));
+                list.add(Component.translatable("message." + References.MODID + ".speed_info").withStyle(ChatFormatting.GRAY));
             }
         }
     }

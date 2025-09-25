@@ -85,7 +85,7 @@ public class ChimneyBlock extends RotatedPillarBlock {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
         if (Config.ENABLE_TOOLTIPS.get()) {
-            list.add(Component.translatable("message." + References.MODID + ".chimney_tooltip").withStyle(ChatFormatting.GRAY));
+            list.add(Component.translatable("message." + References.MODID + ".chimney_info").withStyle(ChatFormatting.GRAY));
         }
     }
 

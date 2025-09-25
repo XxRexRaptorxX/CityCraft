@@ -1,11 +1,16 @@
 package xxrexraptorxx.citycraft.blocks;
 
 import com.mojang.serialization.MapCodec;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.StringRepresentable;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -21,8 +26,11 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
+import xxrexraptorxx.citycraft.main.References;
+import xxrexraptorxx.citycraft.utils.Config;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
@@ -273,5 +281,13 @@ public class RedstonePoleBlock extends Block implements SimpleWaterloggedBlock {
     @Override
     protected MapCodec<? extends Block> codec() {
         return CODEC;
+    }
+
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+        if (Config.ENABLE_TOOLTIPS.get()) {
+            list.add(Component.translatable("message." + References.MODID + ".redstone_info").withStyle(ChatFormatting.GRAY));
+        }
     }
 }

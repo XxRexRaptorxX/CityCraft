@@ -17,6 +17,7 @@ public class Config {
     public static ModConfigSpec.BooleanValue PATREON_REWARDS;
 
     public static ModConfigSpec.BooleanValue ENABLE_TOOLTIPS;
+    public static ModConfigSpec.BooleanValue ENABLE_JEI_DESCRIPTIONS;
     public static ModConfigSpec.BooleanValue ENABLE_ASPHALT_SPEED_EFFECT;
     public static ModConfigSpec.BooleanValue SPLIT_TRAFFIC_SIGN_TAB;
     public static ModConfigSpec.IntValue SPEED_EFFECT_AMPLIFIER;
@@ -36,7 +37,8 @@ public class Config {
 
         builder.comment("General").push(CATEGORY_GENERAL);
         UPDATE_CHECKER = builder.comment("Activate the Update-Checker").define("update-checker", true);
-        ENABLE_TOOLTIPS = builder.comment("Enables tooltips for some blocks/items in your inventory").define("enable_tooltips", true);
+        ENABLE_TOOLTIPS = builder.comment("Enables tooltips for some blocks/items in your inventory").define("enable_tooltips", false);
+        ENABLE_JEI_DESCRIPTIONS = builder.comment("Enables some description for some blocks/items in JEI").define("enable_descriptions", true);
         builder.pop();
 
         // builder.comment("Signs").push(CATEGORY_SIGNS);

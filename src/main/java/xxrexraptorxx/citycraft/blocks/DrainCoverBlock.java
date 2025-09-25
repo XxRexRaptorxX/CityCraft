@@ -137,7 +137,7 @@ public class DrainCoverBlock extends SlabBlock {
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
         if (Config.ENABLE_TOOLTIPS.get()) {
-            list.add(Component.translatable("message." + References.MODID + ".drain_cover_tooltip").withStyle(ChatFormatting.GRAY));
+            list.add(Component.translatable("message." + References.MODID + ".drain_cover_info").withStyle(ChatFormatting.GRAY));
         }
     }
 }
