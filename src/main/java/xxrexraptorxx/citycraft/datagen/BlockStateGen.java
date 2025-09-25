@@ -927,22 +927,22 @@ public class BlockStateGen extends BlockStateProvider {
         signalLights(ModBlocks.SIGNAL_LIGHT.get());
         signalLights(ModBlocks.TRAIN_SIGNAL_LIGHT.get());
 
-        customLamp(ModBlocks.BLACK_LAMP.get());
-        customLamp(ModBlocks.WHITE_LAMP.get());
-        customLamp(ModBlocks.ORANGE_LAMP.get());
-        customLamp(ModBlocks.MAGENTA_LAMP.get());
-        customLamp(ModBlocks.LIGHT_BLUE_LAMP.get());
-        customLamp(ModBlocks.YELLOW_LAMP.get());
-        customLamp(ModBlocks.LIME_LAMP.get());
-        customLamp(ModBlocks.PINK_LAMP.get());
-        customLamp(ModBlocks.GRAY_LAMP.get());
-        customLamp(ModBlocks.LIGHT_GRAY_LAMP.get());
-        customLamp(ModBlocks.CYAN_LAMP.get());
-        customLamp(ModBlocks.PURPLE_LAMP.get());
-        customLamp(ModBlocks.BLUE_LAMP.get());
-        customLamp(ModBlocks.BROWN_LAMP.get());
-        customLamp(ModBlocks.GREEN_LAMP.get());
-        customLamp(ModBlocks.RED_LAMP.get());
+        customSpecialLamp(ModBlocks.BLACK_LAMP.get());
+        customSpecialLamp(ModBlocks.WHITE_LAMP.get());
+        customSpecialLamp(ModBlocks.ORANGE_LAMP.get());
+        customSpecialLamp(ModBlocks.MAGENTA_LAMP.get());
+        customSpecialLamp(ModBlocks.LIGHT_BLUE_LAMP.get());
+        customSpecialLamp(ModBlocks.YELLOW_LAMP.get());
+        customSpecialLamp(ModBlocks.LIME_LAMP.get());
+        customSpecialLamp(ModBlocks.PINK_LAMP.get());
+        customSpecialLamp(ModBlocks.GRAY_LAMP.get());
+        customSpecialLamp(ModBlocks.LIGHT_GRAY_LAMP.get());
+        customSpecialLamp(ModBlocks.CYAN_LAMP.get());
+        customSpecialLamp(ModBlocks.PURPLE_LAMP.get());
+        customSpecialLamp(ModBlocks.BLUE_LAMP.get());
+        customSpecialLamp(ModBlocks.BROWN_LAMP.get());
+        customSpecialLamp(ModBlocks.GREEN_LAMP.get());
+        customSpecialLamp(ModBlocks.RED_LAMP.get());
 
         customTranslucentLamp(ModBlocks.BLACK_NEON_LIGHT.get());
         customTranslucentLamp(ModBlocks.WHITE_NEON_LIGHT.get());
@@ -1436,6 +1436,24 @@ public class BlockStateGen extends BlockStateProvider {
             } else {
                 return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)))};
             }
+        });
+
+        simpleBlockItem(block, models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)));
+    }
+
+
+    private void customSpecialLamp(Block block) {
+        String texture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        models().withExistingParent(texture + "_off", mcLoc("block/cube_all")).texture("all", modLoc("block/" + texture));
+
+        models().withExistingParent(texture + "_on", mcLoc("block/cube_all")).texture("all", modLoc("block/" + texture + "_on"));
+
+        getVariantBuilder(block).forAllStates(state -> {
+            boolean lit = state.getValue(BlockStateProperties.LIT);
+            String modelName = "block/" + texture + "_" + (lit ? "on" : "off");
+            ModelFile model = models().getExistingFile(modLoc(modelName));
+            return ConfiguredModel.builder().modelFile(model).build();
         });
 
         simpleBlockItem(block, models().cubeAll(texture, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + texture)));

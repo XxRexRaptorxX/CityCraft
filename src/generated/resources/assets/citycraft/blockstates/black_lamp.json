@@ -1,9 +1,27 @@
 {
   "variants": {
-    "lit=false": {
-      "model": "citycraft:block/black_lamp"
+    "flickering=false,forced_on=false,lit=false": {
+      "model": "citycraft:block/black_lamp_off"
     },
-    "lit=true": {
+    "flickering=false,forced_on=false,lit=true": {
+      "model": "citycraft:block/black_lamp_on"
+    },
+    "flickering=false,forced_on=true,lit=false": {
+      "model": "citycraft:block/black_lamp_off"
+    },
+    "flickering=false,forced_on=true,lit=true": {
+      "model": "citycraft:block/black_lamp_on"
+    },
+    "flickering=true,forced_on=false,lit=false": {
+      "model": "citycraft:block/black_lamp_off"
+    },
+    "flickering=true,forced_on=false,lit=true": {
+      "model": "citycraft:block/black_lamp_on"
+    },
+    "flickering=true,forced_on=true,lit=false": {
+      "model": "citycraft:block/black_lamp_off"
+    },
+    "flickering=true,forced_on=true,lit=true": {
       "model": "citycraft:block/black_lamp_on"
     }
   }
