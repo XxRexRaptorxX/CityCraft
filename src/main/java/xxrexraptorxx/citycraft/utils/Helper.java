@@ -123,6 +123,7 @@ public class Helper {
         return blocks;
     }
 
+
     public static List<ItemStack> getAllNeonBlocks() {
         List<ItemStack> blocks = new ArrayList<>();
 

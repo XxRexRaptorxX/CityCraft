@@ -44,7 +44,8 @@ public class CityCraftJeiPlugin implements IModPlugin {
             registration.addIngredientInfo(Helper.getAllAsphaltSpeedBlocks(), VanillaTypes.ITEM_STACK, Component.translatable("message." + References.MODID + ".speed_info"));
             registration.addIngredientInfo(Helper.getAllNeonBlocks(), VanillaTypes.ITEM_STACK, Component.translatable("message." + References.MODID + ".neon_info"));
             registration.addIngredientInfo(Helper.getAllBoostBlocks(), VanillaTypes.ITEM_STACK, Component.translatable("message." + References.MODID + ".boost_info"));
-            registration.addIngredientInfo(new ItemStack(ModBlocks.REDSTONE_POLE), VanillaTypes.ITEM_STACK, Component.translatable("message." + References.MODID + ".redstone_info"));
+            registration.addIngredientInfo(new ItemStack(ModBlocks.REDSTONE_POLE), VanillaTypes.ITEM_STACK,
+                    Component.translatable("message." + References.MODID + ".redstone_info"));
         }
 
         registration.addRecipes(PainterJEICategory.TYPE, recipeManager.getAllRecipesFor(ModRecipeTypes.PAINTING.get()));
