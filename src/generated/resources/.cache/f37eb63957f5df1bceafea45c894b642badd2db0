@@ -1,4 +1,4 @@
-// 1.21	2025-09-25T20:30:58.2570862	Block States: citycraft
+// 1.21	2025-09-25T20:54:12.8189471	Block States: citycraft
 34d865f45cb185f8a8864c62731517a9c0d5f978 assets/citycraft/blockstates/0_sign.json
 b51850f16e80dab0090eda4583a749cebcc5b44c assets/citycraft/blockstates/100_speed_eu_sign.json
 f2d1988ae893964ed56315a0670002e877f30a3c assets/citycraft/blockstates/10_minimum_speed_sign_eu.json
@@ -1046,7 +1046,7 @@ db5a969d4bb3e984888bd6f9320e526f4d1dbe76 assets/citycraft/blockstates/stop_eu_si
 0608478beb0c0ac3153cb9b0af4f4bad66bd3788 assets/citycraft/blockstates/straight_left_eu_sign.json
 7df20cd8bd8ed5c710e50b9ed385ebab2abd2c91 assets/citycraft/blockstates/straight_right_eu_sign.json
 9855b4ebe3dccbb1827a67a15be05a729584b8b8 assets/citycraft/blockstates/straight_triple_traffic_light.json
-d2ab79a61aafa7d1910d07e2d63f575d6d87656b assets/citycraft/blockstates/street_lantern.json
+e0d49610810b083e3295680a52adc76799b189e6 assets/citycraft/blockstates/street_lantern.json
 814ca694c9ec50377e83aedba026c2d2652498ce assets/citycraft/blockstates/swimming_area_us_sign.json
 3296fc220df47e944d677df797a07f4af03a5eb0 assets/citycraft/blockstates/s_sign.json
 a0ae173ba7c6d3f074cf40e83bfc26ed009f2049 assets/citycraft/blockstates/taxi_eu_sign.json

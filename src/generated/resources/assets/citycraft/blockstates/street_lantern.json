@@ -1,9 +1,27 @@
 {
   "variants": {
-    "lit=false": {
+    "flickering=false,forced_on=false,lit=false": {
       "model": "citycraft:block/street_lantern"
     },
-    "lit=true": {
+    "flickering=false,forced_on=false,lit=true": {
+      "model": "citycraft:block/street_lantern_on"
+    },
+    "flickering=false,forced_on=true,lit=false": {
+      "model": "citycraft:block/street_lantern"
+    },
+    "flickering=false,forced_on=true,lit=true": {
+      "model": "citycraft:block/street_lantern_on"
+    },
+    "flickering=true,forced_on=false,lit=false": {
+      "model": "citycraft:block/street_lantern"
+    },
+    "flickering=true,forced_on=false,lit=true": {
+      "model": "citycraft:block/street_lantern_on"
+    },
+    "flickering=true,forced_on=true,lit=false": {
+      "model": "citycraft:block/street_lantern"
+    },
+    "flickering=true,forced_on=true,lit=true": {
       "model": "citycraft:block/street_lantern_on"
     }
   }
