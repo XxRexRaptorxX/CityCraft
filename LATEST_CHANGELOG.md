@@ -1,7 +1,8 @@
-# [v.2.9.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.9.0-dev1...v.2.9.0-dev22)
+# [v.2.9.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.9.0-dev1...v.2.9.0-dev23)
 
 ## ✨ Features
 
+- JEI info pages added + new block infos added + info tooltips & info pages are now configurable ([ef6c823](https://github.com/XxRexRaptorxX/CityCraft/commit/ef6c8236315008af97eb4ae4494e7f7a23a17af1))
 - Flower Box blocks added ([29f9fc6](https://github.com/XxRexRaptorxX/CityCraft/commit/29f9fc6ed10b46f9ec214fc84af032476c6663ac))
 - Flue Blocks added (behaves like chimneys) ([cf46f0f](https://github.com/XxRexRaptorxX/CityCraft/commit/cf46f0f1184c86204d07ad69bbc315cbfacb8a26))
 - Chimneys added! (Generate smoke particles. The higher it is, the more smoke appears. Furnaces & fires under the chimney also increase the smoke) ([dd0d489](https://github.com/XxRexRaptorxX/CityCraft/commit/dd0d489d8c2088cb8e58542dcc36802b433ebc57))
