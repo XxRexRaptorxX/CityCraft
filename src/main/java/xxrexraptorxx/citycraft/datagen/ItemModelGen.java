@@ -31,6 +31,8 @@ public class ItemModelGen extends ItemModelProvider {
         itemGenerated(ModBlocks.BLACK_CHAIN);
         itemGenerated(ModBlocks.YELLOW_CHAIN);
 
+        itemBlock(ModBlocks.IRON_LADDER);
+
         fenceItem(ModBlocks.IRON_FENCE, ModBlocks.IRON_POLE.get());
 
         wallItem(ModBlocks.BLACK_CONCRETE_WALL, Blocks.BLACK_CONCRETE);

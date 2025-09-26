@@ -49,6 +49,9 @@ public class BlockTagGen extends BlockTagsProvider {
 
         tag(ModBlockTags.CHIMNEYS_BOOSTER).addTags(BlockTags.FIRE, BlockTags.CAMPFIRES, Tags.Blocks.PLAYER_WORKSTATIONS_FURNACES);
 
+        tag(BlockTags.CLIMBABLE).add(ModBlocks.IRON_LADDER.get());
+        tag(BlockTags.FALL_DAMAGE_RESETTING).add(ModBlocks.IRON_LADDER.get());
+
         addByPathPredicate(lookup, ModBlockTags.TRAFFIC_BARRIERS, path -> path.contains("traffic_barrier"));
         addByPathPredicate(lookup, ModBlockTags.CONCRETES, path -> path.contains("concrete"));
         addByPathPredicate(lookup, ModBlockTags.LEVERS, path -> path.endsWith("lever"));
@@ -423,7 +426,7 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get(), ModBlocks.RED_CONCRETE_FLOWER_BOX.get(), ModBlocks.BLACK_BRICKS.get(), ModBlocks.WHITE_BRICKS.get(),
                 ModBlocks.ORANGE_BRICKS.get(), ModBlocks.MAGENTA_BRICKS.get(), ModBlocks.LIGHT_BLUE_BRICKS.get(), ModBlocks.YELLOW_BRICKS.get(), ModBlocks.LIME_BRICKS.get(),
                 ModBlocks.PINK_BRICKS.get(), ModBlocks.GRAY_BRICKS.get(), ModBlocks.LIGHT_GRAY_BRICKS.get(), ModBlocks.CYAN_BRICKS.get(), ModBlocks.PURPLE_BRICKS.get(),
-                ModBlocks.BLUE_BRICKS.get(), ModBlocks.BROWN_BRICKS.get(), ModBlocks.GREEN_BRICKS.get(), ModBlocks.RED_BRICKS.get());
+                ModBlocks.BLUE_BRICKS.get(), ModBlocks.BROWN_BRICKS.get(), ModBlocks.GREEN_BRICKS.get(), ModBlocks.RED_BRICKS.get(), ModBlocks.IRON_LADDER.get());
     }
 
 

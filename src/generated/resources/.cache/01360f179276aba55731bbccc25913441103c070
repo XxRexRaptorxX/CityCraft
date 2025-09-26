@@ -1,4 +1,4 @@
-// 1.21	2025-09-20T17:31:22.8531824	Item Models: citycraft
+// 1.21	2025-09-26T21:41:34.6349466	Item Models: citycraft
 7b5af6a3e4b44fd4abf41140a7c4970f7cc7b90e assets/citycraft/models/item/asphalt_mixture.json
 3fc1709a84300ce1e7d899cfb7159917fd547ea6 assets/citycraft/models/item/black_chain.json
 c89fff127cee38293851bd913631536082551a1b assets/citycraft/models/item/black_concrete_button.json
@@ -23,6 +23,7 @@ d5dfad70e431b2860f3e10b064a043570e08f35b assets/citycraft/models/item/dye_mix.js
 3fd6d2ecd300c1d71fc64c268e9b9b297cc43f9c assets/citycraft/models/item/green_concrete_lever.json
 0d8daa42b0b8857e4365012334c1fe0fb4221994 assets/citycraft/models/item/green_concrete_wall.json
 5ece7d0207c75addbf4ed8c08d09a2ef2cceecac assets/citycraft/models/item/iron_fence.json
+55912ca6180b738287a2e6336c13473c7ac3d125 assets/citycraft/models/item/iron_ladder.json
 3bdcc65388f901e8ae325d54ec972108d3f00ab9 assets/citycraft/models/item/light_blue_concrete_button.json
 d6d39cf08049d54346cdc9b1c2bf34a3123caef4 assets/citycraft/models/item/light_blue_concrete_lever.json
 9183260459247d2a5424ab12c19b0e2394a62173 assets/citycraft/models/item/light_blue_concrete_wall.json

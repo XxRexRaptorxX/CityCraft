@@ -32,6 +32,7 @@ public class CreativeTabs {
                         output.accept(ModBlocks.YELLOW_BLACK_POLE.get());
 
                         output.accept(ModBlocks.IRON_FENCE.get());
+                        output.accept(ModBlocks.IRON_LADDER.get());
 
                         output.accept(ModBlocks.TRAFFIC_BARRIER.get());
                         output.accept(ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get());

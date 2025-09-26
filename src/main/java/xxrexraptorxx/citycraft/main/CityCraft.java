@@ -172,6 +172,9 @@ public class CityCraft {
             event.accept(ModBlocks.RED_CHAIN.get());
             event.accept(ModBlocks.YELLOW_CHAIN.get());
             event.accept(ModBlocks.BLACK_CHAIN.get());
+
+            event.accept(ModBlocks.IRON_LADDER.get());
+
             event.accept(ModBlocks.DRAIN_COVER.get());
             event.accept(ModBlocks.DRAIN_COVER_GRID.get());
 

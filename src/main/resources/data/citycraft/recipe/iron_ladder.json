@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:rods/iron"
+      },
+      "type": "neoforge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "# #",
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:rods/iron"
+    }
+  },
+  "result": {
+    "id": "citycraft:iron_ladder",
+    "count": 3
+  }
+}
