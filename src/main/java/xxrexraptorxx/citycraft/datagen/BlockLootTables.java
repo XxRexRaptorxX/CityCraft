@@ -1269,6 +1269,23 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.BROWN_CONCRETE_FLOWER_BOX.get());
         this.dropSelf(ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get());
         this.dropSelf(ModBlocks.RED_CONCRETE_FLOWER_BOX.get());
+
+        this.dropSelf(ModBlocks.BLACK_BRICKS.get());
+        this.dropSelf(ModBlocks.WHITE_BRICKS.get());
+        this.dropSelf(ModBlocks.ORANGE_BRICKS.get());
+        this.dropSelf(ModBlocks.MAGENTA_BRICKS.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_BRICKS.get());
+        this.dropSelf(ModBlocks.YELLOW_BRICKS.get());
+        this.dropSelf(ModBlocks.LIME_BRICKS.get());
+        this.dropSelf(ModBlocks.PINK_BRICKS.get());
+        this.dropSelf(ModBlocks.GRAY_BRICKS.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_BRICKS.get());
+        this.dropSelf(ModBlocks.CYAN_BRICKS.get());
+        this.dropSelf(ModBlocks.PURPLE_BRICKS.get());
+        this.dropSelf(ModBlocks.BLUE_BRICKS.get());
+        this.dropSelf(ModBlocks.BROWN_BRICKS.get());
+        this.dropSelf(ModBlocks.GREEN_BRICKS.get());
+        this.dropSelf(ModBlocks.RED_BRICKS.get());
     }
 
 

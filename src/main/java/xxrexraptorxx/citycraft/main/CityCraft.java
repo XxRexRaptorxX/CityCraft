@@ -582,6 +582,23 @@ public class CityCraft {
             event.accept(ModBlocks.MAGENTA_NEON_LIGHT.get());
             event.accept(ModBlocks.PINK_NEON_LIGHT.get());
 
+            event.accept(ModBlocks.WHITE_BRICKS.get());
+            event.accept(ModBlocks.LIGHT_GRAY_BRICKS.get());
+            event.accept(ModBlocks.GRAY_BRICKS.get());
+            event.accept(ModBlocks.BLACK_BRICKS.get());
+            event.accept(ModBlocks.BROWN_BRICKS.get());
+            event.accept(ModBlocks.RED_BRICKS.get());
+            event.accept(ModBlocks.ORANGE_BRICKS.get());
+            event.accept(ModBlocks.YELLOW_BRICKS.get());
+            event.accept(ModBlocks.LIME_BRICKS.get());
+            event.accept(ModBlocks.GREEN_BRICKS.get());
+            event.accept(ModBlocks.CYAN_BRICKS.get());
+            event.accept(ModBlocks.LIGHT_BLUE_BRICKS.get());
+            event.accept(ModBlocks.BLUE_BRICKS.get());
+            event.accept(ModBlocks.PURPLE_BRICKS.get());
+            event.accept(ModBlocks.MAGENTA_BRICKS.get());
+            event.accept(ModBlocks.PINK_BRICKS.get());
+
             event.accept(ModBlocks.WHITE_POST.get());
             event.accept(ModBlocks.RED_POST.get());
             event.accept(ModBlocks.RED_WHITE_POST.get());

@@ -1205,5 +1205,21 @@
   "block.citycraft.blue_concrete_flower_box": "Blue Concrete Flower Box",
   "block.citycraft.brown_concrete_flower_box": "Brown Concrete Flower Box",
   "block.citycraft.green_concrete_flower_box": "Green Concrete Flower Box",
-  "block.citycraft.red_concrete_flower_box": "Red Concrete Flower Box"
+  "block.citycraft.red_concrete_flower_box": "Red Concrete Flower Box",
+  "block.citycraft.black_bricks": "Black Bricks",
+  "block.citycraft.white_bricks": "White Bricks",
+  "block.citycraft.orange_bricks": "Orange Bricks",
+  "block.citycraft.magenta_bricks": "Magenta Bricks",
+  "block.citycraft.light_blue_bricks": "Light Blue Bricks",
+  "block.citycraft.yellow_bricks": "Yellow Bricks",
+  "block.citycraft.lime_bricks": "Lime Bricks",
+  "block.citycraft.pink_bricks": "Pink Bricks",
+  "block.citycraft.gray_bricks": "Gray Bricks",
+  "block.citycraft.light_gray_bricks": "Light Gray Bricks",
+  "block.citycraft.cyan_bricks": "Cyan Bricks",
+  "block.citycraft.purple_bricks": "Purple Bricks",
+  "block.citycraft.blue_bricks": "Blue Bricks",
+  "block.citycraft.brown_bricks": "Brown Bricks",
+  "block.citycraft.green_bricks": "Green Bricks",
+  "block.citycraft.red_bricks": "Red Bricks"
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "light_blue_bricks_dyed",
+  "ingredients": [
+    {
+      "item": "minecraft:bricks"
+    },
+    {
+      "tag": "c:dyes/light_blue"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:light_blue_bricks"
+  }
+}

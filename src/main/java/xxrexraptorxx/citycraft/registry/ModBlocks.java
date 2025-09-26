@@ -1683,6 +1683,38 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RED_CONCRETE_FLOWER_BOX = registerBlock("red_concrete_flower_box",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
 
+    public static final DeferredBlock<Block> BLACK_BRICKS = registerBlock("black_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.BLACK)));
+    public static final DeferredBlock<Block> WHITE_BRICKS = registerBlock("white_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.WHITE)));
+    public static final DeferredBlock<Block> ORANGE_BRICKS = registerBlock("orange_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.ORANGE)));
+    public static final DeferredBlock<Block> MAGENTA_BRICKS = registerBlock("magenta_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.MAGENTA)));
+    public static final DeferredBlock<Block> LIGHT_BLUE_BRICKS = registerBlock("light_blue_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_BLUE)));
+    public static final DeferredBlock<Block> YELLOW_BRICKS = registerBlock("yellow_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.YELLOW)));
+    public static final DeferredBlock<Block> LIME_BRICKS = registerBlock("lime_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.LIME)));
+    public static final DeferredBlock<Block> PINK_BRICKS = registerBlock("pink_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.PINK)));
+    public static final DeferredBlock<Block> GRAY_BRICKS = registerBlock("gray_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.GRAY)));
+    public static final DeferredBlock<Block> LIGHT_GRAY_BRICKS = registerBlock("light_gray_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.LIGHT_GRAY)));
+    public static final DeferredBlock<Block> CYAN_BRICKS = registerBlock("cyan_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.CYAN)));
+    public static final DeferredBlock<Block> PURPLE_BRICKS = registerBlock("purple_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.PURPLE)));
+    public static final DeferredBlock<Block> BLUE_BRICKS = registerBlock("blue_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.BLUE)));
+    public static final DeferredBlock<Block> BROWN_BRICKS = registerBlock("brown_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.BROWN)));
+    public static final DeferredBlock<Block> GREEN_BRICKS = registerBlock("green_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.GREEN)));
+    public static final DeferredBlock<Block> RED_BRICKS = registerBlock("red_bricks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.RED)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

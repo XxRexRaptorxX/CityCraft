@@ -1,4 +1,4 @@
-// 1.21	2025-09-24T21:41:55.6622885	Tags for minecraft:block mod id citycraft
+// 1.21	2025-09-26T21:18:01.9751714	Tags for minecraft:block mod id citycraft
 661b44d584785e996f41d8ac960a9c771fe513d1 data/car/tags/block/drivable_blocks.json
 7c9bb93a1fc8f0739b2d217b188507e005114f2d data/citycraft/tags/block/asphalt.json
 b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/block/asphalt_slabs_with_markings.json
@@ -16,6 +16,7 @@ d8d9268c4928d5270d824608a8f71ca1903a979d data/citycraft/tags/block/traffic_barri
 4280747ac617f31048c361e84885e84fad8f6d9e data/citycraft/tags/block/yellow_marked_asphalt.json
 438d8351191632515e53704124fae23914832df1 data/citycraft/tags/block/yellow_marked_asphalt_slabs.json
 661b44d584785e996f41d8ac960a9c771fe513d1 data/c/tags/block/asphalt.json
+38e72b3b4d250366b9329625eb458713fa69f1f5 data/c/tags/block/bricks.json
 51b3ba89e7e3273dcf682ab75ff32b01f686520b data/c/tags/block/concretes.json
 d9cd63c835bf840b3b23e862dd81fedbf2c19431 data/c/tags/block/lamps.json
 647632d5b00f25dd6a27e35681962f640cd6d3f9 data/c/tags/block/levers.json
@@ -26,7 +27,7 @@ d9cd63c835bf840b3b23e862dd81fedbf2c19431 data/c/tags/block/lamps.json
 c3e803c1cd648e7c3d5df826202d237a54f98e5f data/minecraft/tags/block/dead_bush_may_place_on.json
 c3e803c1cd648e7c3d5df826202d237a54f98e5f data/minecraft/tags/block/dirt.json
 94ba0098c5aced5815411f47a64a017f29885004 data/minecraft/tags/block/fences.json
-2067e6cd6b696d50f243c853698c0cfeee3f0943 data/minecraft/tags/block/mineable/pickaxe.json
+e2e40ab517c2603afc1844c2296d635a49d72a3e data/minecraft/tags/block/mineable/pickaxe.json
 c3e803c1cd648e7c3d5df826202d237a54f98e5f data/minecraft/tags/block/mushroom_grow_block.json
 6bfc565923165a40abeac788ef0b76ee430e3e17 data/minecraft/tags/block/pressure_plates.json
 562a273243a121e69b5b5969d6b7522b2a19f0b2 data/minecraft/tags/block/slabs.json

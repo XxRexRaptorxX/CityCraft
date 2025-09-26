@@ -58,6 +58,7 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathPredicate(lookup, ModBlockTags.SPEED_BOOST_BLOCKS, path -> path.contains("asphalt") && !path.contains("pothole"));
         addByPathPredicate(lookup, ModBlockTags.CHIMNEYS, path -> path.endsWith("_chimney"));
         addByPathPredicate(lookup, ModBlockTags.FLUES, path -> path.endsWith("_flue"));
+        addByPathPredicate(lookup, ModBlockTags.BRICKS, path -> path.endsWith("bricks"));
         addByPathPredicate(lookup, ModBlockTags.FLOWER_BOXES, path -> path.endsWith("_flower_box"));
 
         addByPathModPredicate(lookup, BlockTags.SLABS, path -> path.endsWith("_slab") || path.endsWith("_panel") || path.startsWith("drain_cover"));
@@ -419,7 +420,10 @@ public class BlockTagGen extends BlockTagsProvider {
                 ModBlocks.YELLOW_CONCRETE_FLOWER_BOX.get(), ModBlocks.LIME_CONCRETE_FLOWER_BOX.get(), ModBlocks.PINK_CONCRETE_FLOWER_BOX.get(),
                 ModBlocks.GRAY_CONCRETE_FLOWER_BOX.get(), ModBlocks.LIGHT_GRAY_CONCRETE_FLOWER_BOX.get(), ModBlocks.CYAN_CONCRETE_FLOWER_BOX.get(),
                 ModBlocks.PURPLE_CONCRETE_FLOWER_BOX.get(), ModBlocks.BLUE_CONCRETE_FLOWER_BOX.get(), ModBlocks.BROWN_CONCRETE_FLOWER_BOX.get(),
-                ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get(), ModBlocks.RED_CONCRETE_FLOWER_BOX.get());
+                ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get(), ModBlocks.RED_CONCRETE_FLOWER_BOX.get(), ModBlocks.BLACK_BRICKS.get(), ModBlocks.WHITE_BRICKS.get(),
+                ModBlocks.ORANGE_BRICKS.get(), ModBlocks.MAGENTA_BRICKS.get(), ModBlocks.LIGHT_BLUE_BRICKS.get(), ModBlocks.YELLOW_BRICKS.get(), ModBlocks.LIME_BRICKS.get(),
+                ModBlocks.PINK_BRICKS.get(), ModBlocks.GRAY_BRICKS.get(), ModBlocks.LIGHT_GRAY_BRICKS.get(), ModBlocks.CYAN_BRICKS.get(), ModBlocks.PURPLE_BRICKS.get(),
+                ModBlocks.BLUE_BRICKS.get(), ModBlocks.BROWN_BRICKS.get(), ModBlocks.GREEN_BRICKS.get(), ModBlocks.RED_BRICKS.get());
     }
 
 

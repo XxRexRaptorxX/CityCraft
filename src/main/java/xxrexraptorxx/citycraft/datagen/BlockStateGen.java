@@ -1280,6 +1280,23 @@ public class BlockStateGen extends BlockStateProvider {
         flowerBoxBlock(ModBlocks.BROWN_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_BROWN_CONCRETE.get(), ModBlocks.POLISHED_BROWN_CONCRETE.get());
         flowerBoxBlock(ModBlocks.GREEN_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_GREEN_CONCRETE.get(), ModBlocks.POLISHED_GREEN_CONCRETE.get());
         flowerBoxBlock(ModBlocks.RED_CONCRETE_FLOWER_BOX.get(), ModBlocks.CHISELED_RED_CONCRETE.get(), ModBlocks.POLISHED_RED_CONCRETE.get());
+
+        makeSimpleBlock(ModBlocks.BLACK_BRICKS.get());
+        makeSimpleBlock(ModBlocks.WHITE_BRICKS.get());
+        makeSimpleBlock(ModBlocks.ORANGE_BRICKS.get());
+        makeSimpleBlock(ModBlocks.MAGENTA_BRICKS.get());
+        makeSimpleBlock(ModBlocks.LIGHT_BLUE_BRICKS.get());
+        makeSimpleBlock(ModBlocks.YELLOW_BRICKS.get());
+        makeSimpleBlock(ModBlocks.LIME_BRICKS.get());
+        makeSimpleBlock(ModBlocks.PINK_BRICKS.get());
+        makeSimpleBlock(ModBlocks.GRAY_BRICKS.get());
+        makeSimpleBlock(ModBlocks.LIGHT_GRAY_BRICKS.get());
+        makeSimpleBlock(ModBlocks.CYAN_BRICKS.get());
+        makeSimpleBlock(ModBlocks.PURPLE_BRICKS.get());
+        makeSimpleBlock(ModBlocks.BLUE_BRICKS.get());
+        makeSimpleBlock(ModBlocks.BROWN_BRICKS.get());
+        makeSimpleBlock(ModBlocks.GREEN_BRICKS.get());
+        makeSimpleBlock(ModBlocks.RED_BRICKS.get());
     }
 
     private final String emissiveTexturesSuffix = "_e";

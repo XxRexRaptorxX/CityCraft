@@ -651,6 +651,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             String shulkerPath = color + "_shulker_box";
             String glassPath = color + "_stained_glass";
             String bedPath = color + "_bed";
+            String bricksPath = color + "_bricks";
 
             // name fix
             if (asphaltPath.equals("black_asphalt")) {
@@ -669,6 +670,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             Block shulkerBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, shulkerPath);
             Block glassBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, glassPath);
             Block bedBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, bedPath);
+            Block bricksBlock = getBlockOrThrow(References.MODID, bricksPath);
             Block neonLightBlock = getBlockOrThrow(References.MODID, neonLightPath);
             Block lampBlock = getBlockOrThrow(References.MODID, lampPath);
             Block asphaltBlock = getBlockOrThrow(References.MODID, asphaltPath);
@@ -686,6 +688,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             paintingRecipes(glassBlock, Tags.Items.GLASS_BLOCKS_TINTED, dye.getTag(), output);
             paintingRecipes(asphaltBlock, ModItemTags.BLANK_ASPHALT, dye.getTag(), output);
             paintingRecipes(asphaltSlab, ModItemTags.BLANK_ASPHALT_SLABS, dye.getTag(), output);
+            paintingRecipes(bricksBlock, ModItemTags.BRICKS, dye.getTag(), output);
 
             ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, lampBlock, 1).pattern(" # ").pattern("#X#").pattern(" # ").define('X', Blocks.REDSTONE_LAMP)
                     .define('#', paneBlock).unlockedBy(getHasName(Blocks.REDSTONE_LAMP), has(Blocks.REDSTONE_LAMP)).save(output);
@@ -693,6 +696,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, neonLightBlock, 1).requires(lampBlock).requires(Tags.Items.DUSTS_GLOWSTONE)
                     .requires(Items.BLAZE_POWDER).unlockedBy(getHasName(lampBlock), has(lampBlock)).group("neon_lights").save(output);
 
+            dyeRecipes(bricksBlock, Items.BRICKS, dye.getTag(), output);
         }
     }
 
@@ -855,6 +859,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void slabRecipes(Block result, Block input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 6).pattern("###").define('#', input).unlockedBy(getHasName(input), has(input)).save(output,
                 References.MODID + ":slabs/" + BuiltInRegistries.BLOCK.getKey(result).getPath());
+    }
+
+
+    protected static void dyeRecipes(Block result, TagKey<Item> input, TagKey<Item> dye, RecipeOutput output) {
+        ResourceLocation location = BuiltInRegistries.BLOCK.getKey(result);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(dye).unlockedBy("has_" + input, has(input))
+                .group(location.getPath() + "_dyed").save(output, location + "_from_dye");
+    }
+
+
+    protected static void dyeRecipes(Block result, ItemLike input, TagKey<Item> dye, RecipeOutput output) {
+        ResourceLocation location = BuiltInRegistries.BLOCK.getKey(result);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(dye).unlockedBy(getHasName(input), has(input))
+                .group(location.getPath() + "_dyed").save(output, location + "_from_dye");
     }
 
 

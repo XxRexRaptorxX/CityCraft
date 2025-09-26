@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:bricks"
+  },
+  "color": {
+    "tag": "c:dyes/black"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:black_bricks"
+  }
+}

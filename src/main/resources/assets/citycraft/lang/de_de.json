@@ -1209,5 +1209,21 @@
   "block.citycraft.blue_concrete_flower_box": "Blauer Beton Blumenkübel",
   "block.citycraft.brown_concrete_flower_box": "Brauner Beton Blumenkübel",
   "block.citycraft.green_concrete_flower_box": "Grüner Beton Blumenkübel",
-  "block.citycraft.red_concrete_flower_box": "Roter Beton Blumenkübel"
+  "block.citycraft.red_concrete_flower_box": "Roter Beton Blumenkübel",
+  "block.citycraft.black_bricks": "Schwarze Ziegelsteine",
+  "block.citycraft.white_bricks": "Weiße Ziegelsteine",
+  "block.citycraft.orange_bricks": "Orangene Ziegelsteine",
+  "block.citycraft.magenta_bricks": "Magenta Ziegelsteine",
+  "block.citycraft.light_blue_bricks": "Hellblaue Ziegelsteine",
+  "block.citycraft.yellow_bricks": "Gelbe Ziegelsteine",
+  "block.citycraft.lime_bricks": "Hellgrüne Ziegelsteine",
+  "block.citycraft.pink_bricks": "Rosane Ziegelsteine",
+  "block.citycraft.gray_bricks": "Graue Ziegelsteine",
+  "block.citycraft.light_gray_bricks": "Hellblaue Ziegelsteine",
+  "block.citycraft.cyan_bricks": "Türkise Ziegelsteine",
+  "block.citycraft.purple_bricks": "Lila Ziegelsteine",
+  "block.citycraft.blue_bricks": "Blaue Ziegelsteine",
+  "block.citycraft.brown_bricks": "Braune Ziegelsteine",
+  "block.citycraft.green_bricks": "Grüne Ziegelsteine",
+  "block.citycraft.red_bricks": "Rote Ziegelsteine"
 }

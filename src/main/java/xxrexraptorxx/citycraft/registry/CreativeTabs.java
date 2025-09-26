@@ -116,6 +116,23 @@ public class CreativeTabs {
                         output.accept(ModBlocks.MAGENTA_CONCRETE_FLOWER_BOX.get());
                         output.accept(ModBlocks.PINK_CONCRETE_FLOWER_BOX.get());
 
+                        output.accept(ModBlocks.WHITE_BRICKS.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_BRICKS.get());
+                        output.accept(ModBlocks.GRAY_BRICKS.get());
+                        output.accept(ModBlocks.BLACK_BRICKS.get());
+                        output.accept(ModBlocks.BROWN_BRICKS.get());
+                        output.accept(ModBlocks.RED_BRICKS.get());
+                        output.accept(ModBlocks.ORANGE_BRICKS.get());
+                        output.accept(ModBlocks.YELLOW_BRICKS.get());
+                        output.accept(ModBlocks.LIME_BRICKS.get());
+                        output.accept(ModBlocks.GREEN_BRICKS.get());
+                        output.accept(ModBlocks.CYAN_BRICKS.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_BRICKS.get());
+                        output.accept(ModBlocks.BLUE_BRICKS.get());
+                        output.accept(ModBlocks.PURPLE_BRICKS.get());
+                        output.accept(ModBlocks.MAGENTA_BRICKS.get());
+                        output.accept(ModBlocks.PINK_BRICKS.get());
+
                         output.accept(ModItems.COAL_COKE.get());
                         output.accept(ModItems.ASPHALT_MIXTURE.get());
                         output.accept(ModItems.DYE_MIX.get());

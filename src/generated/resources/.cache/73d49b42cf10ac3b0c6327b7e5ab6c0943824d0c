@@ -1,4 +1,4 @@
-// 1.21	2025-09-24T21:13:09.9286941	Tags for minecraft:item mod id citycraft
+// 1.21	2025-09-26T21:18:01.9213155	Tags for minecraft:item mod id citycraft
 7c9bb93a1fc8f0739b2d217b188507e005114f2d data/citycraft/tags/item/asphalt.json
 b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/item/asphalt_slabs_with_markings.json
 47f60bc7f566d7e79607e77d2ab1f24026498c88 data/citycraft/tags/item/asphalt_with_markings.json
@@ -6,6 +6,7 @@ b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/item/asphalt_slabs_
 17e86ea829dc75c3fd053837b34d56c18abcc841 data/citycraft/tags/item/blank_asphalt_slabs.json
 a3ca97688cff7ca5c3fb4a5291231b6f2d884175 data/citycraft/tags/item/blocks_with_speed_boost.json
 135dc25fd3203f1c6c09406de6e76254d9d07aa6 data/citycraft/tags/item/chimneys.json
+edf7d24b27a81b6e51494799f241c4f898779785 data/citycraft/tags/item/colored_bricks.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/citycraft/tags/item/colored_chiseled_concrete.json
 6ea9192e6808051e456a3e2fcb0a48fd51ed46ff data/citycraft/tags/item/colored_concrete_bricks.json
 704a5caea37c07627bfb0db3c150a03bab5a922e data/citycraft/tags/item/colored_concrete_buttons.json
@@ -31,6 +32,7 @@ d8d9268c4928d5270d824608a8f71ca1903a979d data/citycraft/tags/item/traffic_barrie
 63cfd476ec92aee37fd5e54d069a4b399a04c427 data/citycraft/tags/item/white_marked_asphalt_slabs.json
 4280747ac617f31048c361e84885e84fad8f6d9e data/citycraft/tags/item/yellow_marked_asphalt.json
 438d8351191632515e53704124fae23914832df1 data/citycraft/tags/item/yellow_marked_asphalt_slabs.json
+38e72b3b4d250366b9329625eb458713fa69f1f5 data/c/tags/item/bricks.json
 af9a703060dd81271897fe8b2b6d452efe7f11e1 data/c/tags/item/chains.json
 a3cf020247cfc39f0886267cbd1e190334d8aea9 data/c/tags/item/dusts.json
 b6b4d92c62e4490e17fb202e59ce7cc8c4279a67 data/c/tags/item/dusts/asphalt.json

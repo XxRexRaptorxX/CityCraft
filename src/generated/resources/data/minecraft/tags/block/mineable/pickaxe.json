@@ -1171,6 +1171,22 @@
     "citycraft:blue_concrete_flower_box",
     "citycraft:brown_concrete_flower_box",
     "citycraft:green_concrete_flower_box",
-    "citycraft:red_concrete_flower_box"
+    "citycraft:red_concrete_flower_box",
+    "citycraft:black_bricks",
+    "citycraft:white_bricks",
+    "citycraft:orange_bricks",
+    "citycraft:magenta_bricks",
+    "citycraft:light_blue_bricks",
+    "citycraft:yellow_bricks",
+    "citycraft:lime_bricks",
+    "citycraft:pink_bricks",
+    "citycraft:gray_bricks",
+    "citycraft:light_gray_bricks",
+    "citycraft:cyan_bricks",
+    "citycraft:purple_bricks",
+    "citycraft:blue_bricks",
+    "citycraft:brown_bricks",
+    "citycraft:green_bricks",
+    "citycraft:red_bricks"
   ]
 }

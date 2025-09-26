@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "brown_bricks_dyed",
+  "ingredients": [
+    {
+      "item": "minecraft:bricks"
+    },
+    {
+      "tag": "c:dyes/brown"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:brown_bricks"
+  }
+}
