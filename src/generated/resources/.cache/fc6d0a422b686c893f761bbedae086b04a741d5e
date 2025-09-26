@@ -1,4 +1,4 @@
-// 1.21	2025-09-26T21:45:38.6973335	Tags for minecraft:block mod id citycraft
+// 1.21	2025-09-26T22:09:27.9641335	Tags for minecraft:block mod id citycraft
 661b44d584785e996f41d8ac960a9c771fe513d1 data/car/tags/block/drivable_blocks.json
 7c9bb93a1fc8f0739b2d217b188507e005114f2d data/citycraft/tags/block/asphalt.json
 b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/block/asphalt_slabs_with_markings.json
@@ -8,6 +8,23 @@ b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/block/asphalt_slabs
 a3ca97688cff7ca5c3fb4a5291231b6f2d884175 data/citycraft/tags/block/blocks_with_speed_boost.json
 d4ac1aa9d0eeed31ee3d933933fb8e99ca49126b data/citycraft/tags/block/boost_chimneys.json
 135dc25fd3203f1c6c09406de6e76254d9d07aa6 data/citycraft/tags/block/chimneys.json
+edf7d24b27a81b6e51494799f241c4f898779785 data/citycraft/tags/block/colored_bricks.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/citycraft/tags/block/colored_chiseled_concrete.json
+6ea9192e6808051e456a3e2fcb0a48fd51ed46ff data/citycraft/tags/block/colored_concrete_bricks.json
+704a5caea37c07627bfb0db3c150a03bab5a922e data/citycraft/tags/block/colored_concrete_buttons.json
+b2a91017c76d9b4c8718ba568cfbf4a0e5142f8b data/citycraft/tags/block/colored_concrete_chimneys.json
+220ce46cd1cd09633135aa0a6f14d34760228e78 data/citycraft/tags/block/colored_concrete_flower_boxes.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/citycraft/tags/block/colored_concrete_levers.json
+351d815c0b15ef9359ebd880d6caa0d0b2a5077d data/citycraft/tags/block/colored_concrete_pillars.json
+6bfc565923165a40abeac788ef0b76ee430e3e17 data/citycraft/tags/block/colored_concrete_pressure_plates.json
+bfb4fb3e9b7c28f69874b1d4631f3e7de066b884 data/citycraft/tags/block/colored_concrete_slabs.json
+377412d810647267ed1f48bb340975e759187405 data/citycraft/tags/block/colored_concrete_stairs.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/citycraft/tags/block/colored_cracked_concrete.json
+dd0b61e6d4b22f86469525c801b284918026771d data/citycraft/tags/block/colored_cracked_concrete_bricks.json
+cd55a99ac2570666230406f0c514911b43a0b5cc data/citycraft/tags/block/colored_lamps.json
+2166665655df012612aa35e202151a12bb8c2588 data/citycraft/tags/block/colored_mossy_concrete.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/citycraft/tags/block/colored_polished_concrete.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/citycraft/tags/block/colored_reinforced_concrete.json
 c3e803c1cd648e7c3d5df826202d237a54f98e5f data/citycraft/tags/block/flower_boxes.json
 58219fb5aee1fec1aa3af5d84799ba727d50f468 data/citycraft/tags/block/flues.json
 d8d9268c4928d5270d824608a8f71ca1903a979d data/citycraft/tags/block/traffic_barriers.json
@@ -18,6 +35,22 @@ d8d9268c4928d5270d824608a8f71ca1903a979d data/citycraft/tags/block/traffic_barri
 661b44d584785e996f41d8ac960a9c771fe513d1 data/c/tags/block/asphalt.json
 38e72b3b4d250366b9329625eb458713fa69f1f5 data/c/tags/block/bricks.json
 51b3ba89e7e3273dcf682ab75ff32b01f686520b data/c/tags/block/concretes.json
+6a298dd0a6fdccea7e9de802488c01b1805dd8d0 data/c/tags/block/dyed/black.json
+af77d7b4e6b6039e3a6891481d3cf8912e216b43 data/c/tags/block/dyed/blue.json
+e88114f8414560ffc71bce31390555847b3c5dfd data/c/tags/block/dyed/brown.json
+0dbacb2b3ddda8e4772c2376d090f0cdca581c09 data/c/tags/block/dyed/cyan.json
+60a477556ed0d1cc9c6f4a1c0b1e7694ed44e6dd data/c/tags/block/dyed/gray.json
+27c6c8785736a82c0e4a36a2b87bb887ce250772 data/c/tags/block/dyed/green.json
+2f2d6aaa980bb12c1b1ff3e2145e01fd894ab073 data/c/tags/block/dyed/light_blue.json
+908f5205952cdabbe35ead8205cfd1ace33b15ec data/c/tags/block/dyed/light_gray.json
+b0d52c65d799397b0ffd544dfcaf9163e4fde45c data/c/tags/block/dyed/lime.json
+f2a49cb2eec315bc315b599ee48cb0f2afe0b782 data/c/tags/block/dyed/magenta.json
+c16d4c73cfdfdea986b72a46459322c7777971b6 data/c/tags/block/dyed/orange.json
+116d3e9cfcb25c62c78fe5eaf234a2719098931c data/c/tags/block/dyed/pink.json
+bae279bcf2bb1e723ae25512a7f858784e3e4895 data/c/tags/block/dyed/purple.json
+505cf6b7ac592c112902e0b9a933d7eeaca63cd0 data/c/tags/block/dyed/red.json
+6b13ceb91b37e766e95e17bfd8e96c3641b93373 data/c/tags/block/dyed/white.json
+ba6d732b745b04643fb826f79bfd964c2e1bdbce data/c/tags/block/dyed/yellow.json
 d9cd63c835bf840b3b23e862dd81fedbf2c19431 data/c/tags/block/lamps.json
 647632d5b00f25dd6a27e35681962f640cd6d3f9 data/c/tags/block/levers.json
 3eec0bb7da17ebdf3ba5daf533c6be314e192265 data/c/tags/block/poles/iron.json

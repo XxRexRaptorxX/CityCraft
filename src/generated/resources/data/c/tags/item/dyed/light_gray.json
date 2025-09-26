@@ -1,0 +1,26 @@
+{
+  "values": [
+    "citycraft:light_gray_asphalt",
+    "citycraft:light_gray_asphalt_slab",
+    "citycraft:light_gray_concrete_wall",
+    "citycraft:light_gray_lamp",
+    "citycraft:light_gray_neon_light",
+    "citycraft:cracked_light_gray_concrete",
+    "citycraft:mossy_light_gray_concrete",
+    "citycraft:infested_light_gray_concrete",
+    "citycraft:chiseled_light_gray_concrete",
+    "citycraft:polished_light_gray_concrete",
+    "citycraft:light_gray_concrete_bricks",
+    "citycraft:light_gray_concrete_cracked_bricks",
+    "citycraft:light_gray_concrete_pillar",
+    "citycraft:light_gray_concrete_stairs",
+    "citycraft:light_gray_concrete_slab",
+    "citycraft:light_gray_concrete_button",
+    "citycraft:light_gray_concrete_pressure_plate",
+    "citycraft:light_gray_concrete_lever",
+    "citycraft:reinforced_light_gray_concrete",
+    "citycraft:light_gray_concrete_chimney",
+    "citycraft:light_gray_concrete_flower_box",
+    "citycraft:light_gray_bricks"
+  ]
+}

@@ -23,6 +23,23 @@ public class ModBlockTags {
     public static final TagKey<Block> FLUES = createBlockTag(References.MODID, "flues");
     public static final TagKey<Block> FLOWER_BOXES = createBlockTag(References.MODID, "flower_boxes");
     public static final TagKey<Block> CHIMNEYS_BOOSTER = createBlockTag(References.MODID, "boost_chimneys");
+    public static final TagKey<Block> COLORED_LAMPS = createBlockTag(References.MODID, "colored_lamps");
+    public static final TagKey<Block> COLORED_CHISELED_CONCRETE = createBlockTag(References.MODID, "colored_chiseled_concrete");
+    public static final TagKey<Block> COLORED_CRACKED_CONCRETE = createBlockTag(References.MODID, "colored_cracked_concrete");
+    public static final TagKey<Block> COLORED_CONCRETE_BUTTONS = createBlockTag(References.MODID, "colored_concrete_buttons");
+    public static final TagKey<Block> COLORED_MOSSY_CONCRETE = createBlockTag(References.MODID, "colored_mossy_concrete");
+    public static final TagKey<Block> COLORED_POLISHED_CONCRETE = createBlockTag(References.MODID, "colored_polished_concrete");
+    public static final TagKey<Block> COLORED_CONCRETE_BRICKS = createBlockTag(References.MODID, "colored_concrete_bricks");
+    public static final TagKey<Block> COLORED_CONCRETE_CRACKED_BRICKS = createBlockTag(References.MODID, "colored_cracked_concrete_bricks");
+    public static final TagKey<Block> COLORED_CONCRETE_PILLARS = createBlockTag(References.MODID, "colored_concrete_pillars");
+    public static final TagKey<Block> COLORED_REINFORCED_CONCRETE = createBlockTag(References.MODID, "colored_reinforced_concrete");
+    public static final TagKey<Block> COLORED_CONCRETE_STAIRS = createBlockTag(References.MODID, "colored_concrete_stairs");
+    public static final TagKey<Block> COLORED_CONCRETE_SLABS = createBlockTag(References.MODID, "colored_concrete_slabs");
+    public static final TagKey<Block> COLORED_CONCRETE_PRESSURE_PLATES = createBlockTag(References.MODID, "colored_concrete_pressure_plates");
+    public static final TagKey<Block> COLORED_CONCRETE_LEVERS = createBlockTag(References.MODID, "colored_concrete_levers");
+    public static final TagKey<Block> COLORED_CONCRETE_CHIMNEYS = createBlockTag(References.MODID, "colored_concrete_chimneys");
+    public static final TagKey<Block> COLORED_CONCRETE_FLOWER_BOXES = createBlockTag(References.MODID, "colored_concrete_flower_boxes");
+    public static final TagKey<Block> COLORED_BRICKS = createBlockTag(References.MODID, "colored_bricks");
 
     public static final TagKey<Block> CONCRETES = createBlockTag("c", "concretes");
     public static final TagKey<Block> LEVERS = createBlockTag("c", "levers");

@@ -1,4 +1,4 @@
-// 1.21	2025-09-26T21:18:01.9213155	Tags for minecraft:item mod id citycraft
+// 1.21	2025-09-26T22:09:27.9501708	Tags for minecraft:item mod id citycraft
 7c9bb93a1fc8f0739b2d217b188507e005114f2d data/citycraft/tags/item/asphalt.json
 b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/item/asphalt_slabs_with_markings.json
 47f60bc7f566d7e79607e77d2ab1f24026498c88 data/citycraft/tags/item/asphalt_with_markings.json
@@ -36,6 +36,22 @@ d8d9268c4928d5270d824608a8f71ca1903a979d data/citycraft/tags/item/traffic_barrie
 af9a703060dd81271897fe8b2b6d452efe7f11e1 data/c/tags/item/chains.json
 a3cf020247cfc39f0886267cbd1e190334d8aea9 data/c/tags/item/dusts.json
 b6b4d92c62e4490e17fb202e59ce7cc8c4279a67 data/c/tags/item/dusts/asphalt.json
+6a298dd0a6fdccea7e9de802488c01b1805dd8d0 data/c/tags/item/dyed/black.json
+af77d7b4e6b6039e3a6891481d3cf8912e216b43 data/c/tags/item/dyed/blue.json
+e88114f8414560ffc71bce31390555847b3c5dfd data/c/tags/item/dyed/brown.json
+0dbacb2b3ddda8e4772c2376d090f0cdca581c09 data/c/tags/item/dyed/cyan.json
+60a477556ed0d1cc9c6f4a1c0b1e7694ed44e6dd data/c/tags/item/dyed/gray.json
+27c6c8785736a82c0e4a36a2b87bb887ce250772 data/c/tags/item/dyed/green.json
+2f2d6aaa980bb12c1b1ff3e2145e01fd894ab073 data/c/tags/item/dyed/light_blue.json
+908f5205952cdabbe35ead8205cfd1ace33b15ec data/c/tags/item/dyed/light_gray.json
+b0d52c65d799397b0ffd544dfcaf9163e4fde45c data/c/tags/item/dyed/lime.json
+f2a49cb2eec315bc315b599ee48cb0f2afe0b782 data/c/tags/item/dyed/magenta.json
+c16d4c73cfdfdea986b72a46459322c7777971b6 data/c/tags/item/dyed/orange.json
+116d3e9cfcb25c62c78fe5eaf234a2719098931c data/c/tags/item/dyed/pink.json
+bae279bcf2bb1e723ae25512a7f858784e3e4895 data/c/tags/item/dyed/purple.json
+505cf6b7ac592c112902e0b9a933d7eeaca63cd0 data/c/tags/item/dyed/red.json
+6b13ceb91b37e766e95e17bfd8e96c3641b93373 data/c/tags/item/dyed/white.json
+ba6d732b745b04643fb826f79bfd964c2e1bdbce data/c/tags/item/dyed/yellow.json
 5f04715e0e5f22f49a808dbe0bcfea5086d25f4f data/c/tags/item/dyes.json
 0a10758b9a1786f66711e82097530f67735508ac data/c/tags/item/dyes/mix.json
 93433fd308f6d9993712749cf17727ea02138207 data/c/tags/item/hanging_signs/wood.json

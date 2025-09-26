@@ -49,6 +49,23 @@ public class BlockTagGen extends BlockTagsProvider {
 
         tag(ModBlockTags.CHIMNEYS_BOOSTER).addTags(BlockTags.FIRE, BlockTags.CAMPFIRES, Tags.Blocks.PLAYER_WORKSTATIONS_FURNACES);
 
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_BLACK, path -> (path.contains("black")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_WHITE, path -> (path.contains("white")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_ORANGE, path -> (path.contains("orange")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_MAGENTA, path -> (path.contains("magenta")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_LIGHT_BLUE, path -> (path.contains("light_blue")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_YELLOW, path -> (path.contains("yellow")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_LIME, path -> (path.contains("lime")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_PINK, path -> (path.contains("pink")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_GRAY, path -> (path.contains("gray") && !path.contains("light")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_LIGHT_GRAY, path -> (path.contains("light_gray")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_CYAN, path -> (path.contains("cyan")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_PURPLE, path -> (path.contains("purple")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_BLUE, path -> (path.contains("blue") && !path.contains("light")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_BROWN, path -> (path.contains("brown")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_GREEN, path -> (path.contains("green")));
+        addByPathModPredicate(lookup, Tags.Blocks.DYED_RED, path -> (path.contains("red")));
+
         tag(BlockTags.CLIMBABLE).add(ModBlocks.IRON_LADDER.get());
         tag(BlockTags.FALL_DAMAGE_RESETTING).add(ModBlocks.IRON_LADDER.get());
 
@@ -74,6 +91,24 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathModPredicate(lookup, BlockTags.MUSHROOM_GROW_BLOCK, path -> path.endsWith("_flower_box"));
         addByPathModPredicate(lookup, BlockTags.SMALL_DRIPLEAF_PLACEABLE, path -> path.endsWith("_flower_box"));
         addByPathModPredicate(lookup, BlockTags.DIRT, path -> path.endsWith("_flower_box"));
+
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_LAMPS, path -> path.endsWith("_lamp"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CHISELED_CONCRETE, path -> path.contains("chiseled_concrete"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_BUTTONS, path -> path.contains("concrete_button"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_POLISHED_CONCRETE, path -> path.contains("polished_concrete"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_BRICKS, path -> path.contains("concrete_bricks"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_CRACKED_BRICKS, path -> path.contains("concrete_cracked_bricks"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_PILLARS, path -> path.contains("concrete_pillar"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_REINFORCED_CONCRETE, path -> path.contains("reinforced_concrete"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_STAIRS, path -> path.contains("concrete_stairs"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_SLABS, path -> path.contains("concrete_slab"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_PRESSURE_PLATES, path -> path.contains("concrete_pressure_plate"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_LEVERS, path -> path.contains("concrete_laver"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CRACKED_CONCRETE, path -> path.contains("cracked_concrete") && !path.contains("bricks"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_MOSSY_CONCRETE, path -> path.contains("concrete") && path.contains("mossy") && !path.contains("bricks"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_CHIMNEYS, path -> path.contains("concrete_chimney"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_FLOWER_BOXES, path -> path.contains("concrete_flower_box"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_BRICKS, path -> path.contains("bricks"));
 
         tag(ModBlockTags.createBlockTag("c", "asphalt")).addTag(ModBlockTags.ASPHALT);
         tag(ModBlockTags.createBlockTag("c", "traffic_barrier")).addTag(ModBlockTags.TRAFFIC_BARRIERS);
