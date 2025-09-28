@@ -113,6 +113,8 @@ public class CityCraft {
             event.accept(ModBlocks.ASPHALT_BLOCK);
             event.accept(ModBlocks.BOOST_ASPHALT);
 
+            event.accept(ModItems.LIGHTING_ROD_BLOCK_ITEM);
+
             event.accept(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
             event.accept(ModBlocks.TRIPLE_TRAFFIC_LIGHT.get());
             event.accept(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());

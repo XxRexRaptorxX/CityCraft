@@ -1,4 +1,4 @@
-// 1.21	2025-09-26T21:41:34.637939	Loot Tables
+// 1.21	2025-09-28T21:46:48.8044881	Loot Tables
 7368a076406b45a92c20ce5eff9ad50e3450f5a1 data/citycraft/loot_table/blocks/0_sign.json
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_table/blocks/100_speed_eu_sign.json
 7a90e771f0880894a9b1aa172c8080bc9742350f data/citycraft/loot_table/blocks/10_minimum_speed_sign_eu.json
@@ -714,6 +714,7 @@ f0a12ccff43eee33cf9f171f297433ffffc24881 data/citycraft/loot_table/blocks/left_r
 52f12daf45fb730752594bbaf25678fe0cf1e325 data/citycraft/loot_table/blocks/left_turn_only_us_sign.json
 1b71158118e883264aeb2890ffe29a08563dc423 data/citycraft/loot_table/blocks/left_turn_triple_traffic_light.json
 9dce47a2d99ae5da338f9bc0f1a8ccd6dba15764 data/citycraft/loot_table/blocks/left_turn_us_sign.json
+7faa213c32c2e08752847139927ec2af739d0343 data/citycraft/loot_table/blocks/lighting_rod.json
 202cded55bcb01ce2c55e3ce772da2c0e99c1825 data/citycraft/loot_table/blocks/light_blue_asphalt.json
 cbe889fa5dda8e067ab7e0d9e4bcbefdbc0b38b2 data/citycraft/loot_table/blocks/light_blue_asphalt_slab.json
 201b4f245ef743081c518c34ad36bf7462127aef data/citycraft/loot_table/blocks/light_blue_bricks.json

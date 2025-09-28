@@ -1222,5 +1222,7 @@
   "block.citycraft.brown_bricks": "Brown Bricks",
   "block.citycraft.green_bricks": "Green Bricks",
   "block.citycraft.red_bricks": "Red Bricks",
-  "block.citycraft.iron_ladder": "Iron Ladder"
+  "block.citycraft.iron_ladder": "Iron Ladder",
+  "block.citycraft.lighting_rod": "Lighting Rod",
+  "block.citycraft.wall_lighting_rod": "Wall Lighting Rod"
 }

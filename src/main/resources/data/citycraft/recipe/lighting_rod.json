@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "I"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:dusts/glowstone"
+    },
+    "I": {
+      "tag": "c:rods/iron"
+    }
+  },
+  "result": {
+    "id": "citycraft:lighting_rod",
+    "count": 4
+  }
+}

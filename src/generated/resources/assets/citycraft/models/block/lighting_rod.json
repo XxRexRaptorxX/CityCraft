@@ -1,0 +1,6 @@
+{
+  "parent": "citycraft:block/torch_like",
+  "textures": {
+    "texture": "citycraft:block/lighting_rod"
+  }
+}

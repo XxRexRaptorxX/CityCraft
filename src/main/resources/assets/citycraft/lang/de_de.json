@@ -1226,5 +1226,7 @@
   "block.citycraft.brown_bricks": "Braune Ziegelsteine",
   "block.citycraft.green_bricks": "Grüne Ziegelsteine",
   "block.citycraft.red_bricks": "Rote Ziegelsteine",
-  "block.citycraft.iron_ladder": "Eisenleiter"
+  "block.citycraft.iron_ladder": "Eisenleiter",
+  "block.citycraft.lighting_rod": "Stablampe",
+  "block.citycraft.wall_lighting_rod": "Wand Stablampe"
 }

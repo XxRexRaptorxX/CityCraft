@@ -1,0 +1,219 @@
+{
+  "format_version": "1.21.6",
+  "credit": "Made with Blockbench by XxRexRaptorxX",
+  "ambientocclusion": false,
+  "render_type": "cutout_mipped",
+  "textures": {
+    "particle": "citycraft:block/lighting_rod",
+    "texture": "citycraft:block/lighting_rod"
+  },
+  "elements": [
+    {
+      "name": "lamp_ew",
+      "from": [
+        7,
+        0,
+        12
+      ],
+      "to": [
+        9,
+        10,
+        14
+      ],
+      "shade": false,
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          5,
+          13
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            14,
+            14,
+            16,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "down": {
+          "uv": [
+            14,
+            9,
+            16,
+            11
+          ],
+          "texture": "#texture"
+        }
+      }
+    },
+    {
+      "name": "lamp_ud",
+      "from": [
+        7,
+        0,
+        8
+      ],
+      "to": [
+        9,
+        16,
+        18
+      ],
+      "shade": false,
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          8,
+          13
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            3,
+            0,
+            13,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "west": {
+          "uv": [
+            3,
+            0,
+            13,
+            16
+          ],
+          "texture": "#texture"
+        }
+      }
+    },
+    {
+      "name": "lamp_ns",
+      "from": [
+        3,
+        0,
+        12
+      ],
+      "to": [
+        13,
+        16,
+        14
+      ],
+      "shade": false,
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          8,
+          13
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            0,
+            13,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "south": {
+          "uv": [
+            3,
+            0,
+            13,
+            16
+          ],
+          "texture": "#texture"
+        }
+      }
+    },
+    {
+      "name": "stand",
+      "from": [
+        7,
+        2,
+        14
+      ],
+      "to": [
+        9,
+        5,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          3.5,
+          15
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            14,
+            11,
+            16,
+            14
+          ],
+          "texture": "#texture"
+        },
+        "east": {
+          "uv": [
+            14,
+            11,
+            16,
+            14
+          ],
+          "texture": "#texture"
+        },
+        "south": {
+          "uv": [
+            14,
+            11,
+            16,
+            14
+          ],
+          "texture": "#texture"
+        },
+        "west": {
+          "uv": [
+            14,
+            11,
+            16,
+            14
+          ],
+          "texture": "#texture"
+        },
+        "up": {
+          "uv": [
+            14,
+            9,
+            16,
+            11
+          ],
+          "texture": "#texture"
+        },
+        "down": {
+          "uv": [
+            14,
+            14,
+            16,
+            16
+          ],
+          "texture": "#texture"
+        }
+      }
+    }
+  ]
+}

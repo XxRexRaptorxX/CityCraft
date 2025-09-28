@@ -1289,6 +1289,7 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GREEN_BRICKS.get());
         this.dropSelf(ModBlocks.RED_BRICKS.get());
 
+        this.dropSelf(ModBlocks.LIGHTING_ROD.get());
     }
 
 

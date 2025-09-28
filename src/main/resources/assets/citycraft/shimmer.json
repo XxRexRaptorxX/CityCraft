@@ -765,7 +765,28 @@
       },
       "color": "#red",
       "radius": 3
+    },
+    {
+      "block": "citycraft:lighting_rod",
+      "color": "#natural",
+      "radius": 15
+    },
+    {
+      "block": "citycraft:wall_lighting_rod",
+      "color": "#natural",
+      "radius": 15
     }
   ],
-  "LightItem": []
+  "LightItem": [
+    {
+      "item_id": "citycraft:lighting_rod",
+      "color": "#natural",
+      "radius": 15
+    },
+    {
+      "item_id": "citycraft:wall_lighting_rod",
+      "color": "#natural",
+      "radius": 15
+    }
+  ]
 }

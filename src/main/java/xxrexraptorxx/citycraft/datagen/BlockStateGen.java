@@ -1297,6 +1297,9 @@ public class BlockStateGen extends BlockStateProvider {
         makeSimpleBlock(ModBlocks.BROWN_BRICKS.get());
         makeSimpleBlock(ModBlocks.GREEN_BRICKS.get());
         makeSimpleBlock(ModBlocks.RED_BRICKS.get());
+
+        makeBlockFromParentModel(ModBlocks.LIGHTING_ROD.get(), "torch_like");
+        makeHorizontalBlock(ModBlocks.WALL_LIGHTING_ROD.get(), "wall_torch_like", ResourceLocation.fromNamespaceAndPath(References.MODID, "block/lighting_rod"));
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1386,6 +1389,24 @@ public class BlockStateGen extends BlockStateProvider {
 
     private void makeSimpleBlock(Block block) {
         simpleBlock(block);
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeHorizontalBlock(Block block, String parentModel) {
+        String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + parentModel).texture("texture", "block/" + blockTexture);
+
+        horizontalBlock(block, model);
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeHorizontalBlock(Block block, String parentModel, ResourceLocation texture) {
+        String name = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        ModelFile model = models().withExistingParent(name, References.MODID + ":block/" + parentModel).texture("texture", texture);
+
+        horizontalBlock(block, model);
         makeBlockItemFromExistingModel(block);
     }
 

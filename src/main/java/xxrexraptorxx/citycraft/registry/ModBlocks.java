@@ -1716,8 +1716,16 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.GREEN)));
     public static final DeferredBlock<Block> RED_BRICKS = registerBlock("red_bricks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.RED)));
 
-    public static final DeferredBlock<LadderBlock> IRON_LADDER = registerBlock("iron_ladder", () -> new LadderBlock(
-            BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).strength(0.8F).sound(SoundType.METAL).mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)));
+    public static final DeferredBlock<LadderBlock> IRON_LADDER = registerBlock("iron_ladder",
+            () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).strength(0.8F).sound(SoundType.METAL).mapColor(MapColor.METAL)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE).forceSolidOff().noOcclusion().pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<LightingRod> LIGHTING_ROD = BLOCKS.register("lighting_rod", () -> new LightingRod(BlockBehaviour.Properties.of().sound(SoundType.METAL)
+            .mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE).noCollission().instabreak().lightLevel(p -> 14).pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<WallLightingRod> WALL_LIGHTING_ROD = BLOCKS.register("wall_lighting_rod",
+            () -> new WallLightingRod(BlockBehaviour.Properties.of().dropsLike(LIGHTING_ROD.get()).sound(SoundType.METAL).mapColor(MapColor.METAL)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE).noCollission().instabreak().lightLevel(p -> 14).pushReaction(PushReaction.DESTROY)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
@@ -1727,7 +1735,15 @@ public class ModBlocks {
     }
 
 
+    private static <T extends Block> DeferredBlock<T> registerTorchBlock(String name, Supplier<T> block) {
+        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
+
     private static <T extends Block> DeferredItem registerBlockItem(String name, DeferredBlock<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+
 }

@@ -1,0 +1,141 @@
+{
+  "format_version": "1.21.6",
+  "credit": "Made with Blockbench by XxRexRaptorxX",
+  "ambientocclusion": false,
+  "render_type": "cutout_mipped",
+  "textures": {
+    "texture": "#texture",
+    "particle": "#texture"
+  },
+  "elements": [
+    {
+      "name": "lamp_ew",
+      "from": [
+        7,
+        0,
+        7
+      ],
+      "to": [
+        9,
+        10,
+        9
+      ],
+      "shade": false,
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8,
+          0.5,
+          8
+        ]
+      },
+      "faces": {
+        "up": {
+          "uv": [
+            14,
+            14,
+            16,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "down": {
+          "uv": [
+            14,
+            9,
+            16,
+            11
+          ],
+          "texture": "#texture"
+        }
+      }
+    },
+    {
+      "name": "lamp_ud",
+      "from": [
+        7,
+        0,
+        3
+      ],
+      "to": [
+        9,
+        16,
+        13
+      ],
+      "shade": false,
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8,
+          0.5,
+          11
+        ]
+      },
+      "faces": {
+        "east": {
+          "uv": [
+            3,
+            0,
+            13,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "west": {
+          "uv": [
+            3,
+            0,
+            13,
+            16
+          ],
+          "texture": "#texture"
+        }
+      }
+    },
+    {
+      "name": "lamp_ns",
+      "from": [
+        3,
+        0,
+        7
+      ],
+      "to": [
+        13,
+        16,
+        9
+      ],
+      "shade": false,
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          11,
+          0.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            0,
+            13,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "south": {
+          "uv": [
+            3,
+            0,
+            13,
+            16
+          ],
+          "texture": "#texture"
+        }
+      }
+    }
+  ]
+}

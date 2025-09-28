@@ -883,6 +883,8 @@ public class CreativeTabs {
                         output.accept(ModBlocks.IRON_POLE.get());
                         output.accept(ModBlocks.REDSTONE_POLE.get());
 
+                        output.accept(ModItems.LIGHTING_ROD_BLOCK_ITEM);
+
                         output.accept(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
                         output.accept(ModBlocks.TRIPLE_TRAFFIC_LIGHT.get());
                         output.accept(ModBlocks.STRAIGHT_DOUBLE_TRAFFIC_LIGHT.get());
