@@ -880,10 +880,10 @@ public class CreativeTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TRAFFIC_LIGHTS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".traffic_lights_tab",
             () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + References.MODID + ".traffic_lights_tab"))
                     .icon(() -> new ItemStack(ModBlocks.TRIPLE_TRAFFIC_LIGHT.get())).withTabsBefore(WALL_SIGNS_TAB.getId()).displayItems((params, output) -> {
+                        output.accept(ModItems.LIGHTING_ROD_BLOCK_ITEM);
+
                         output.accept(ModBlocks.IRON_POLE.get());
                         output.accept(ModBlocks.REDSTONE_POLE.get());
-
-                        output.accept(ModItems.LIGHTING_ROD_BLOCK_ITEM);
 
                         output.accept(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
                         output.accept(ModBlocks.TRIPLE_TRAFFIC_LIGHT.get());
