@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "random": 300,
+      "block": "citycraft:modern_street_lantern[forced_on=true,lit=true,flickering=true]"
+    },
+    {
+      "random": 1000,
+      "block": "citycraft:modern_street_lantern[forced_on=true,lit=true]"
+    }
+  ]
+}

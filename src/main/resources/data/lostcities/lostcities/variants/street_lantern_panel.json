@@ -1,0 +1,12 @@
+{
+  "blocks": [
+    {
+      "random": 300,
+      "block": "citycraft:street_lantern_panel[type=top,flickering=true,lit=true]"
+    },
+    {
+      "random": 1000,
+      "block": "citycraft:street_lantern_panel[type=top,lit=true]"
+    }
+  ]
+}

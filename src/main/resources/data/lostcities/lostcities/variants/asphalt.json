@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {
+      "random": 5,
+      "block": "citycraft:cracked_asphalt"
+    },
+    {
+      "random": 2,
+      "block": "citycraft:pothole_asphalt"
+    },
+    {
+      "random": 3,
+      "block": "citycraft:mossy_asphalt"
+    },
+    {
+      "random": 3,
+      "block": "citycraft:dirty_asphalt"
+    },
+    {
+      "random": 1000,
+      "block": "citycraft:asphalt"
+    }
+  ]
+}

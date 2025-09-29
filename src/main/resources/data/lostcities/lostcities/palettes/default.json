@@ -2,7 +2,7 @@
   "palette": [
     {
       "char": "R",
-      "block": "minecraft:cyan_terracotta",
+      "variant": "asphalt",
       "damaged": "minecraft:iron_bars"
     },
     {
@@ -31,7 +31,7 @@
     },
     {
       "char": "S",
-      "block": "citycraft:asphalt",
+      "variant": "asphalt",
       "damaged": "minecraft:iron_bars"
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "char": "y",
-      "variant": "stonebrick",
+      "variant": "gray_concrete",
       "damaged": "minecraft:iron_bars"
     },
     {

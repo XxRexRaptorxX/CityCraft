@@ -1,0 +1,16 @@
+{
+  "blocks": [
+    {
+      "random": 9,
+      "block": "citycraft:cyan_concrete_cracked_bricks"
+    },
+    {
+      "random": 8,
+      "block": "citycraft:cyan_concrete_bricks"
+    },
+    {
+      "random": 1000,
+      "block": "citycraft:cyan_concrete_bricks"
+    }
+  ]
+}

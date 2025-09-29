@@ -12,12 +12,12 @@
     },
     {
       "char": "T",
-      "block": "minecraft:wall_torch[facing=north]",
+      "block": "citycraft:wall_lighting_rod[facing=north]",
       "torch": true
     },
     {
       "char": "h",
-      "block": "minecraft:glowstone"
+      "variant": "lamp"
     },
     {
       "char": "g",
@@ -192,7 +192,7 @@
     },
     {
       "char": "l",
-      "block": "minecraft:ladder[facing=north]"
+      "block": "citycraft:iron_ladder[facing=north]"
     },
     {
       "char": "-",
@@ -230,6 +230,14 @@
     {
       "char": "~",
       "block": "minecraft:structure_void"
+    },
+    {
+      "char": "²",
+      "block": "minecraft:gray_concrete"
+    },
+    {
+      "char": "³",
+      "variant": "street_lantern_panel"
     }
   ]
 }

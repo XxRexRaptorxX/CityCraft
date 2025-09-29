@@ -1,0 +1,20 @@
+{
+  "blocks": [
+    {
+      "random": 3,
+      "block": "citycraft:cracked_gray_concrete"
+    },
+    {
+      "random": 1,
+      "block": "citycraft:mossy_gray_concrete"
+    },
+    {
+      "random": 1,
+      "block": "citycraft:infested_gray_concrete"
+    },
+    {
+      "random": 1000,
+      "block": "minecraft:gray_concrete"
+    }
+  ]
+}
