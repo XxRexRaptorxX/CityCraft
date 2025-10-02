@@ -16,6 +16,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Check DISCORD_WEBHOOK present
+        run: |
+          if [ -z "${{ secrets.DISCORD_WEBHOOK }}" ]; then
+            echo "DISCORD_WEBHOOK is EMPTY"
+          else
+            echo "DISCORD_WEBHOOK is PRESENT"
+          fi
+
       - name: Send Discord message
         uses: sarisia/actions-status-discord@v1
         if: >
