@@ -57,6 +57,8 @@ dependencies {
     //runtimeOnly ("curse.maven:shimmer-627824:${shimmer_version}")
     //Continuity
     //runtimeOnly ("curse.maven:continuity-531351:${continuity_version}")
+    //CTM
+    runtimeOnly ("curse.maven:ctm-267602:${ctm_version}")
     //Lost Cities
     runtimeOnly ("curse.maven:lostcities-269024:${lost_cities_version}")
 }
