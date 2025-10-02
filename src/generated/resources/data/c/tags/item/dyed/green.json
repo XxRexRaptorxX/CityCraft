@@ -26,6 +26,8 @@
     "citycraft:reinforced_green_concrete",
     "citycraft:green_concrete_chimney",
     "citycraft:green_concrete_flower_box",
-    "citycraft:green_bricks"
+    "citycraft:green_bricks",
+    "citycraft:green_brick_stairs",
+    "citycraft:green_brick_slab"
   ]
 }

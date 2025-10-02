@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "citycraft:block/lime_brick_slab"
+    },
+    "type=double": {
+      "model": "citycraft:block/lime_bricks"
+    },
+    "type=top": {
+      "model": "citycraft:block/lime_brick_slab_top"
+    }
+  }
+}

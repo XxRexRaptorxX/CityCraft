@@ -20,6 +20,8 @@
     "citycraft:reinforced_cyan_concrete",
     "citycraft:cyan_concrete_chimney",
     "citycraft:cyan_concrete_flower_box",
-    "citycraft:cyan_bricks"
+    "citycraft:cyan_bricks",
+    "citycraft:cyan_brick_stairs",
+    "citycraft:cyan_brick_slab"
   ]
 }

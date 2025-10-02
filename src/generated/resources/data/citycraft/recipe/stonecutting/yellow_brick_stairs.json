@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "citycraft:yellow_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:yellow_brick_stairs"
+  }
+}

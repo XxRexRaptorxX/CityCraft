@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_brick_stairs"
+  },
+  "color": {
+    "tag": "c:dyes/cyan"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:cyan_brick_stairs"
+  }
+}

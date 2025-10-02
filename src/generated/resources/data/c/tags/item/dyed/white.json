@@ -203,6 +203,8 @@
     "citycraft:reinforced_white_concrete",
     "citycraft:white_concrete_chimney",
     "citycraft:white_concrete_flower_box",
-    "citycraft:white_bricks"
+    "citycraft:white_bricks",
+    "citycraft:white_brick_stairs",
+    "citycraft:white_brick_slab"
   ]
 }

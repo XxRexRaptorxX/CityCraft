@@ -53,7 +53,6 @@ public class ItemTagGen extends ItemTagsProvider {
         copy(ModBlockTags.CHIMNEYS, ModItemTags.CHIMNEYS);
         copy(ModBlockTags.FLUES, ModItemTags.FLUES);
         copy(ModBlockTags.FLOWER_BOXES, ModItemTags.FLOWER_BOXES);
-        copy(ModBlockTags.BRICKS, ModItemTags.BRICKS);
         copy(ModBlockTags.COLORED_LAMPS, ModItemTags.COLORED_LAMPS);
         copy(ModBlockTags.COLORED_CHISELED_CONCRETE, ModItemTags.COLORED_CHISELED_CONCRETE);
         copy(ModBlockTags.COLORED_CONCRETE_BUTTONS, ModItemTags.COLORED_CONCRETE_BUTTONS);
@@ -71,6 +70,8 @@ public class ItemTagGen extends ItemTagsProvider {
         copy(ModBlockTags.COLORED_CONCRETE_CHIMNEYS, ModItemTags.COLORED_CONCRETE_CHIMNEYS);
         copy(ModBlockTags.COLORED_CONCRETE_FLOWER_BOXES, ModItemTags.COLORED_CONCRETE_FLOWER_BOXES);
         copy(ModBlockTags.COLORED_BRICKS, ModItemTags.COLORED_BRICKS);
+        copy(ModBlockTags.COLORED_BRICK_SLABS, ModItemTags.COLORED_BRICK_SLABS);
+        copy(ModBlockTags.COLORED_BRICK_STAIRS, ModItemTags.COLORED_BRICK_STAIRS);
 
         copy(BlockTags.SLABS, ItemTags.SLABS);
         copy(BlockTags.STAIRS, ItemTags.STAIRS);

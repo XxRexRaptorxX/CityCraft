@@ -209,6 +209,8 @@
     "citycraft:reinforced_yellow_concrete",
     "citycraft:yellow_concrete_chimney",
     "citycraft:yellow_concrete_flower_box",
-    "citycraft:yellow_bricks"
+    "citycraft:yellow_bricks",
+    "citycraft:yellow_brick_stairs",
+    "citycraft:yellow_brick_slab"
   ]
 }

@@ -604,6 +604,40 @@ public class CityCraft {
             event.accept(ModBlocks.MAGENTA_BRICKS.get());
             event.accept(ModBlocks.PINK_BRICKS.get());
 
+            event.accept(ModBlocks.WHITE_BRICK_SLAB.get());
+            event.accept(ModBlocks.LIGHT_GRAY_BRICK_SLAB.get());
+            event.accept(ModBlocks.GRAY_BRICK_SLAB.get());
+            event.accept(ModBlocks.BLACK_BRICK_SLAB.get());
+            event.accept(ModBlocks.BROWN_BRICK_SLAB.get());
+            event.accept(ModBlocks.RED_BRICK_SLAB.get());
+            event.accept(ModBlocks.ORANGE_BRICK_SLAB.get());
+            event.accept(ModBlocks.YELLOW_BRICK_SLAB.get());
+            event.accept(ModBlocks.LIME_BRICK_SLAB.get());
+            event.accept(ModBlocks.GREEN_BRICK_SLAB.get());
+            event.accept(ModBlocks.CYAN_BRICK_SLAB.get());
+            event.accept(ModBlocks.LIGHT_BLUE_BRICK_SLAB.get());
+            event.accept(ModBlocks.BLUE_BRICK_SLAB.get());
+            event.accept(ModBlocks.PURPLE_BRICK_SLAB.get());
+            event.accept(ModBlocks.MAGENTA_BRICK_SLAB.get());
+            event.accept(ModBlocks.PINK_BRICK_SLAB.get());
+
+            event.accept(ModBlocks.WHITE_BRICK_STAIRS.get());
+            event.accept(ModBlocks.LIGHT_GRAY_BRICK_STAIRS.get());
+            event.accept(ModBlocks.GRAY_BRICK_STAIRS.get());
+            event.accept(ModBlocks.BLACK_BRICK_STAIRS.get());
+            event.accept(ModBlocks.BROWN_BRICK_STAIRS.get());
+            event.accept(ModBlocks.RED_BRICK_STAIRS.get());
+            event.accept(ModBlocks.ORANGE_BRICK_STAIRS.get());
+            event.accept(ModBlocks.YELLOW_BRICK_STAIRS.get());
+            event.accept(ModBlocks.LIME_BRICK_STAIRS.get());
+            event.accept(ModBlocks.GREEN_BRICK_STAIRS.get());
+            event.accept(ModBlocks.CYAN_BRICK_STAIRS.get());
+            event.accept(ModBlocks.LIGHT_BLUE_BRICK_STAIRS.get());
+            event.accept(ModBlocks.BLUE_BRICK_STAIRS.get());
+            event.accept(ModBlocks.PURPLE_BRICK_STAIRS.get());
+            event.accept(ModBlocks.MAGENTA_BRICK_STAIRS.get());
+            event.accept(ModBlocks.PINK_BRICK_STAIRS.get());
+
             event.accept(ModBlocks.WHITE_POST.get());
             event.accept(ModBlocks.RED_POST.get());
             event.accept(ModBlocks.RED_WHITE_POST.get());

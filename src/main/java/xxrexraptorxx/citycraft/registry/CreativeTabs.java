@@ -117,23 +117,6 @@ public class CreativeTabs {
                         output.accept(ModBlocks.MAGENTA_CONCRETE_FLOWER_BOX.get());
                         output.accept(ModBlocks.PINK_CONCRETE_FLOWER_BOX.get());
 
-                        output.accept(ModBlocks.WHITE_BRICKS.get());
-                        output.accept(ModBlocks.LIGHT_GRAY_BRICKS.get());
-                        output.accept(ModBlocks.GRAY_BRICKS.get());
-                        output.accept(ModBlocks.BLACK_BRICKS.get());
-                        output.accept(ModBlocks.BROWN_BRICKS.get());
-                        output.accept(ModBlocks.RED_BRICKS.get());
-                        output.accept(ModBlocks.ORANGE_BRICKS.get());
-                        output.accept(ModBlocks.YELLOW_BRICKS.get());
-                        output.accept(ModBlocks.LIME_BRICKS.get());
-                        output.accept(ModBlocks.GREEN_BRICKS.get());
-                        output.accept(ModBlocks.CYAN_BRICKS.get());
-                        output.accept(ModBlocks.LIGHT_BLUE_BRICKS.get());
-                        output.accept(ModBlocks.BLUE_BRICKS.get());
-                        output.accept(ModBlocks.PURPLE_BRICKS.get());
-                        output.accept(ModBlocks.MAGENTA_BRICKS.get());
-                        output.accept(ModBlocks.PINK_BRICKS.get());
-
                         output.accept(ModItems.COAL_COKE.get());
                         output.accept(ModItems.ASPHALT_MIXTURE.get());
                         output.accept(ModItems.DYE_MIX.get());
@@ -1684,5 +1667,74 @@ public class CreativeTabs {
                         output.accept(ModBlocks.INFESTED_WHITE_CONCRETE.get());
                         output.accept(ModBlocks.INFESTED_GRAY_CONCRETE.get());
                         output.accept(ModBlocks.INFESTED_LIGHT_GRAY_CONCRETE.get());
+                    }).build());
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BRICKS_TAB = CREATIVE_MODE_TABS.register(References.MODID + ".bricks",
+            () -> CreativeModeTab.builder().title(Component.translatable("itemGroup." + References.MODID + ".bricks_tab")).withTabsBefore(MAIN_TAB.getId())
+                    .icon(() -> new ItemStack(ModBlocks.LIGHT_GRAY_BRICKS.get())).withTabsBefore(CONCRETE_TAB.getId()).displayItems((params, output) -> {
+
+                        output.accept(Blocks.BRICKS);
+                        output.accept(ModBlocks.WHITE_BRICKS.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_BRICKS.get());
+                        output.accept(ModBlocks.GRAY_BRICKS.get());
+                        output.accept(ModBlocks.BLACK_BRICKS.get());
+                        output.accept(ModBlocks.BROWN_BRICKS.get());
+                        output.accept(ModBlocks.RED_BRICKS.get());
+                        output.accept(ModBlocks.ORANGE_BRICKS.get());
+                        output.accept(ModBlocks.YELLOW_BRICKS.get());
+                        output.accept(ModBlocks.LIME_BRICKS.get());
+                        output.accept(ModBlocks.GREEN_BRICKS.get());
+                        output.accept(ModBlocks.CYAN_BRICKS.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_BRICKS.get());
+                        output.accept(ModBlocks.BLUE_BRICKS.get());
+                        output.accept(ModBlocks.PURPLE_BRICKS.get());
+                        output.accept(ModBlocks.MAGENTA_BRICKS.get());
+                        output.accept(ModBlocks.PINK_BRICKS.get());
+
+                        output.accept(Blocks.BRICK_SLAB);
+                        output.accept(ModBlocks.WHITE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_BRICK_SLAB.get());
+                        output.accept(ModBlocks.GRAY_BRICK_SLAB.get());
+                        output.accept(ModBlocks.BLACK_BRICK_SLAB.get());
+                        output.accept(ModBlocks.BROWN_BRICK_SLAB.get());
+                        output.accept(ModBlocks.RED_BRICK_SLAB.get());
+                        output.accept(ModBlocks.ORANGE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.YELLOW_BRICK_SLAB.get());
+                        output.accept(ModBlocks.LIME_BRICK_SLAB.get());
+                        output.accept(ModBlocks.GREEN_BRICK_SLAB.get());
+                        output.accept(ModBlocks.CYAN_BRICK_SLAB.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.BLUE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.PURPLE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.MAGENTA_BRICK_SLAB.get());
+                        output.accept(ModBlocks.PINK_BRICK_SLAB.get());
+
+                        output.accept(Blocks.BRICK_STAIRS);
+                        output.accept(ModBlocks.WHITE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.GRAY_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.BLACK_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.BROWN_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.RED_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.ORANGE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.YELLOW_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.LIME_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.GREEN_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.CYAN_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.BLUE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.PURPLE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.MAGENTA_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.PINK_BRICK_STAIRS.get());
+
+                        output.accept(ModBlocks.STONE_CHIMNEY.get());
+                        output.accept(ModBlocks.MOSSY_STONE_CHIMNEY.get());
+                        output.accept(ModBlocks.CRACKED_STONE_CHIMNEY.get());
+                        output.accept(ModBlocks.DEEPSLATE_CHIMNEY.get());
+                        output.accept(ModBlocks.CRACKED_DEEPSLATE_CHIMNEY.get());
+                        output.accept(ModBlocks.BLACKSTONE_CHIMNEY.get());
+                        output.accept(ModBlocks.CRACKED_BLACKSTONE_CHIMNEY.get());
+                        output.accept(ModBlocks.BRICKS_CHIMNEY.get());
+                        output.accept(ModBlocks.MUD_CHIMNEY.get());
                     }).build());
 }

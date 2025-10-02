@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "c:bricks/normal"
+  },
+  "color": {
+    "tag": "c:dyes/orange"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:orange_bricks"
+  }
+}

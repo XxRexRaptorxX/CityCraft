@@ -1289,6 +1289,40 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GREEN_BRICKS.get());
         this.dropSelf(ModBlocks.RED_BRICKS.get());
 
+        this.dropSelf(ModBlocks.WHITE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.GRAY_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.BLACK_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.BROWN_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.RED_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.ORANGE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.YELLOW_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.LIME_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.GREEN_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.CYAN_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.BLUE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.PURPLE_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.MAGENTA_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.PINK_BRICK_STAIRS.get());
+
+        this.add(ModBlocks.WHITE_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.WHITE_BRICK_SLAB.get()));
+        this.add(ModBlocks.LIGHT_GRAY_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.LIGHT_GRAY_BRICK_SLAB.get()));
+        this.add(ModBlocks.GRAY_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.GRAY_BRICK_SLAB.get()));
+        this.add(ModBlocks.BLACK_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.BLACK_BRICK_SLAB.get()));
+        this.add(ModBlocks.BROWN_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.BROWN_BRICK_SLAB.get()));
+        this.add(ModBlocks.RED_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.RED_BRICK_SLAB.get()));
+        this.add(ModBlocks.ORANGE_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.ORANGE_BRICK_SLAB.get()));
+        this.add(ModBlocks.YELLOW_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.YELLOW_BRICK_SLAB.get()));
+        this.add(ModBlocks.LIME_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.LIME_BRICK_SLAB.get()));
+        this.add(ModBlocks.GREEN_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.GREEN_BRICK_SLAB.get()));
+        this.add(ModBlocks.CYAN_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.CYAN_BRICK_SLAB.get()));
+        this.add(ModBlocks.LIGHT_BLUE_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.LIGHT_BLUE_BRICK_SLAB.get()));
+        this.add(ModBlocks.BLUE_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.BLUE_BRICK_SLAB.get()));
+        this.add(ModBlocks.PURPLE_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.PURPLE_BRICK_SLAB.get()));
+        this.add(ModBlocks.MAGENTA_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.MAGENTA_BRICK_SLAB.get()));
+        this.add(ModBlocks.PINK_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.PINK_BRICK_SLAB.get()));
+
         this.dropSelf(ModBlocks.LIGHTING_ROD.get());
     }
 

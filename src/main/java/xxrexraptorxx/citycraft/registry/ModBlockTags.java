@@ -40,6 +40,8 @@ public class ModBlockTags {
     public static final TagKey<Block> COLORED_CONCRETE_CHIMNEYS = createBlockTag(References.MODID, "colored_concrete_chimneys");
     public static final TagKey<Block> COLORED_CONCRETE_FLOWER_BOXES = createBlockTag(References.MODID, "colored_concrete_flower_boxes");
     public static final TagKey<Block> COLORED_BRICKS = createBlockTag(References.MODID, "colored_bricks");
+    public static final TagKey<Block> COLORED_BRICK_SLABS = createBlockTag(References.MODID, "colored_brick_slabs");
+    public static final TagKey<Block> COLORED_BRICK_STAIRS = createBlockTag(References.MODID, "colored_brick_stairs");
 
     public static final TagKey<Block> CONCRETES = createBlockTag("c", "concretes");
     public static final TagKey<Block> LEVERS = createBlockTag("c", "levers");

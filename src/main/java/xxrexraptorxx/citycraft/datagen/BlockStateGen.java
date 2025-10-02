@@ -1298,6 +1298,40 @@ public class BlockStateGen extends BlockStateProvider {
         makeSimpleBlock(ModBlocks.GREEN_BRICKS.get());
         makeSimpleBlock(ModBlocks.RED_BRICKS.get());
 
+        makeStairsBlock(ModBlocks.WHITE_BRICK_STAIRS.get(), ModBlocks.WHITE_BRICKS.get());
+        makeStairsBlock(ModBlocks.LIGHT_GRAY_BRICK_STAIRS.get(), ModBlocks.LIGHT_GRAY_BRICKS.get());
+        makeStairsBlock(ModBlocks.GRAY_BRICK_STAIRS.get(), ModBlocks.GRAY_BRICKS.get());
+        makeStairsBlock(ModBlocks.BLACK_BRICK_STAIRS.get(), ModBlocks.BLACK_BRICKS.get());
+        makeStairsBlock(ModBlocks.BROWN_BRICK_STAIRS.get(), ModBlocks.BROWN_BRICKS.get());
+        makeStairsBlock(ModBlocks.RED_BRICK_STAIRS.get(), ModBlocks.RED_BRICKS.get());
+        makeStairsBlock(ModBlocks.ORANGE_BRICK_STAIRS.get(), ModBlocks.ORANGE_BRICKS.get());
+        makeStairsBlock(ModBlocks.YELLOW_BRICK_STAIRS.get(), ModBlocks.YELLOW_BRICKS.get());
+        makeStairsBlock(ModBlocks.LIME_BRICK_STAIRS.get(), ModBlocks.LIME_BRICKS.get());
+        makeStairsBlock(ModBlocks.GREEN_BRICK_STAIRS.get(), ModBlocks.GREEN_BRICKS.get());
+        makeStairsBlock(ModBlocks.CYAN_BRICK_STAIRS.get(), ModBlocks.CYAN_BRICKS.get());
+        makeStairsBlock(ModBlocks.LIGHT_BLUE_BRICK_STAIRS.get(), ModBlocks.LIGHT_BLUE_BRICKS.get());
+        makeStairsBlock(ModBlocks.BLUE_BRICK_STAIRS.get(), ModBlocks.BLUE_BRICKS.get());
+        makeStairsBlock(ModBlocks.PURPLE_BRICK_STAIRS.get(), ModBlocks.PURPLE_BRICKS.get());
+        makeStairsBlock(ModBlocks.MAGENTA_BRICK_STAIRS.get(), ModBlocks.MAGENTA_BRICKS.get());
+        makeStairsBlock(ModBlocks.PINK_BRICK_STAIRS.get(), ModBlocks.PINK_BRICKS.get());
+
+        makeSlabBlock(ModBlocks.WHITE_BRICK_SLAB.get(), ModBlocks.WHITE_BRICKS.get());
+        makeSlabBlock(ModBlocks.LIGHT_GRAY_BRICK_SLAB.get(), ModBlocks.LIGHT_GRAY_BRICKS.get());
+        makeSlabBlock(ModBlocks.GRAY_BRICK_SLAB.get(), ModBlocks.GRAY_BRICKS.get());
+        makeSlabBlock(ModBlocks.BLACK_BRICK_SLAB.get(), ModBlocks.BLACK_BRICKS.get());
+        makeSlabBlock(ModBlocks.BROWN_BRICK_SLAB.get(), ModBlocks.BROWN_BRICKS.get());
+        makeSlabBlock(ModBlocks.RED_BRICK_SLAB.get(), ModBlocks.RED_BRICKS.get());
+        makeSlabBlock(ModBlocks.ORANGE_BRICK_SLAB.get(), ModBlocks.ORANGE_BRICKS.get());
+        makeSlabBlock(ModBlocks.YELLOW_BRICK_SLAB.get(), ModBlocks.YELLOW_BRICKS.get());
+        makeSlabBlock(ModBlocks.LIME_BRICK_SLAB.get(), ModBlocks.LIME_BRICKS.get());
+        makeSlabBlock(ModBlocks.GREEN_BRICK_SLAB.get(), ModBlocks.GREEN_BRICKS.get());
+        makeSlabBlock(ModBlocks.CYAN_BRICK_SLAB.get(), ModBlocks.CYAN_BRICKS.get());
+        makeSlabBlock(ModBlocks.LIGHT_BLUE_BRICK_SLAB.get(), ModBlocks.LIGHT_BLUE_BRICKS.get());
+        makeSlabBlock(ModBlocks.BLUE_BRICK_SLAB.get(), ModBlocks.BLUE_BRICKS.get());
+        makeSlabBlock(ModBlocks.PURPLE_BRICK_SLAB.get(), ModBlocks.PURPLE_BRICKS.get());
+        makeSlabBlock(ModBlocks.MAGENTA_BRICK_SLAB.get(), ModBlocks.MAGENTA_BRICKS.get());
+        makeSlabBlock(ModBlocks.PINK_BRICK_SLAB.get(), ModBlocks.PINK_BRICKS.get());
+
         makeBlockFromParentModel(ModBlocks.LIGHTING_ROD.get(), "torch_like");
         makeHorizontalBlock(ModBlocks.WALL_LIGHTING_ROD.get(), "wall_torch_like", ResourceLocation.fromNamespaceAndPath(References.MODID, "block/lighting_rod"));
     }

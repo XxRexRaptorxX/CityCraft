@@ -1716,6 +1716,72 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.GREEN)));
     public static final DeferredBlock<Block> RED_BRICKS = registerBlock("red_bricks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS).mapColor(DyeColor.RED)));
 
+    public static final DeferredBlock<StairBlock> BLACK_BRICK_STAIRS = registerBlock("black_brick_stairs",
+            () -> new StairBlock(ModBlocks.BLACK_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.BLACK_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> WHITE_BRICK_STAIRS = registerBlock("white_brick_stairs",
+            () -> new StairBlock(ModBlocks.WHITE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.WHITE_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> ORANGE_BRICK_STAIRS = registerBlock("orange_brick_stairs",
+            () -> new StairBlock(ModBlocks.ORANGE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.ORANGE_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> MAGENTA_BRICK_STAIRS = registerBlock("magenta_brick_stairs",
+            () -> new StairBlock(ModBlocks.MAGENTA_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.MAGENTA_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> LIGHT_BLUE_BRICK_STAIRS = registerBlock("light_blue_brick_stairs",
+            () -> new StairBlock(ModBlocks.LIGHT_BLUE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIGHT_BLUE_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> YELLOW_BRICK_STAIRS = registerBlock("yellow_brick_stairs",
+            () -> new StairBlock(ModBlocks.YELLOW_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.YELLOW_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> LIME_BRICK_STAIRS = registerBlock("lime_brick_stairs",
+            () -> new StairBlock(ModBlocks.LIME_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIME_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> PINK_BRICK_STAIRS = registerBlock("pink_brick_stairs",
+            () -> new StairBlock(ModBlocks.PINK_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.PINK_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> GRAY_BRICK_STAIRS = registerBlock("gray_brick_stairs",
+            () -> new StairBlock(ModBlocks.GRAY_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.GRAY_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> LIGHT_GRAY_BRICK_STAIRS = registerBlock("light_gray_brick_stairs",
+            () -> new StairBlock(ModBlocks.LIGHT_GRAY_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIGHT_GRAY_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> CYAN_BRICK_STAIRS = registerBlock("cyan_brick_stairs",
+            () -> new StairBlock(ModBlocks.CYAN_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.CYAN_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> PURPLE_BRICK_STAIRS = registerBlock("purple_brick_stairs",
+            () -> new StairBlock(ModBlocks.PURPLE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.PURPLE_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> BLUE_BRICK_STAIRS = registerBlock("blue_brick_stairs",
+            () -> new StairBlock(ModBlocks.BLUE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.BLUE_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> BROWN_BRICK_STAIRS = registerBlock("brown_brick_stairs",
+            () -> new StairBlock(ModBlocks.BROWN_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.BROWN_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> GREEN_BRICK_STAIRS = registerBlock("green_brick_stairs",
+            () -> new StairBlock(ModBlocks.GREEN_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.GREEN_BRICKS.get())));
+    public static final DeferredBlock<StairBlock> RED_BRICK_STAIRS = registerBlock("red_brick_stairs",
+            () -> new StairBlock(ModBlocks.RED_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.RED_BRICKS.get())));
+
+    public static final DeferredBlock<SlabBlock> BLACK_BRICK_SLAB = registerBlock("black_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.BLACK_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> WHITE_BRICK_SLAB = registerBlock("white_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.WHITE_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> ORANGE_BRICK_SLAB = registerBlock("orange_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.ORANGE_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> MAGENTA_BRICK_SLAB = registerBlock("magenta_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.MAGENTA_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> LIGHT_BLUE_BRICK_SLAB = registerBlock("light_blue_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIGHT_BLUE_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> YELLOW_BRICK_SLAB = registerBlock("yellow_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.YELLOW_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> LIME_BRICK_SLAB = registerBlock("lime_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIME_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> PINK_BRICK_SLAB = registerBlock("pink_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.PINK_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> GRAY_BRICK_SLAB = registerBlock("gray_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.GRAY_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> LIGHT_GRAY_BRICK_SLAB = registerBlock("light_gray_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIGHT_GRAY_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> CYAN_BRICK_SLAB = registerBlock("cyan_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.CYAN_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> PURPLE_BRICK_SLAB = registerBlock("purple_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.PURPLE_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> BLUE_BRICK_SLAB = registerBlock("blue_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.BLUE_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> BROWN_BRICK_SLAB = registerBlock("brown_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.BROWN_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> GREEN_BRICK_SLAB = registerBlock("green_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.GREEN_BRICKS.get())));
+    public static final DeferredBlock<SlabBlock> RED_BRICK_SLAB = registerBlock("red_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.RED_BRICKS.get())));
+
     public static final DeferredBlock<LadderBlock> IRON_LADDER = registerBlock("iron_ladder",
             () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).strength(0.8F).sound(SoundType.METAL).mapColor(MapColor.METAL)
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE).forceSolidOff().noOcclusion().pushReaction(PushReaction.DESTROY)));

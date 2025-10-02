@@ -626,6 +626,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         flowerBoxRecipes(ModBlocks.TUFF_FLOWER_BOX.get(), Blocks.CHISELED_TUFF_BRICKS, output);
 
         registerConcreteRecipes(output);
+        registerBrickRecipes(output);
         registerBasicColorRecipes(output);
         registerAsphaltPaintingRecipes(output);
         registerSlabRecipes(output);
@@ -688,7 +689,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             paintingRecipes(glassBlock, Tags.Items.GLASS_BLOCKS_TINTED, dye.getTag(), output);
             paintingRecipes(asphaltBlock, ModItemTags.BLANK_ASPHALT, dye.getTag(), output);
             paintingRecipes(asphaltSlab, ModItemTags.BLANK_ASPHALT_SLABS, dye.getTag(), output);
-            paintingRecipes(bricksBlock, ModItemTags.BRICKS, dye.getTag(), output);
+            paintingRecipes(bricksBlock, Tags.Items.BRICKS_NORMAL, dye.getTag(), output);
 
             ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, lampBlock, 1).pattern(" # ").pattern("#X#").pattern(" # ").define('X', Blocks.REDSTONE_LAMP)
                     .define('#', paneBlock).unlockedBy(getHasName(Blocks.REDSTONE_LAMP), has(Blocks.REDSTONE_LAMP)).save(output);
@@ -836,6 +837,33 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     .unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
             ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, pressureBlock, 1).pattern("##").define('#', baseBlock).unlockedBy(getHasName(baseBlock), has(baseBlock))
                     .save(output);
+        }
+    }
+
+
+    public static void registerBrickRecipes(RecipeOutput output) {
+        for (DyeColor dye : DyeColor.values()) {
+            String color = dye.getName();
+
+            CityCraft.LOGGER.info("Create brick color recipes for " + color + " dye");
+            String brick = "_brick";
+
+            String basePath = color + brick + "s";
+            String stairsPath = color + brick + "_stairs";
+            String slabPath = color + brick + "_slab";
+
+            Block baseBlock = getBlockOrThrow(References.MODID, basePath);
+            Block stairsBlock = getBlockOrThrow(References.MODID, stairsPath);
+            Block slabBlock = getBlockOrThrow(References.MODID, slabPath);
+
+            stoneCuttingRecipes(stairsBlock, 1, baseBlock, output);
+            stoneCuttingRecipes(slabBlock, 2, baseBlock, output);
+
+            slabRecipes(slabBlock, baseBlock, output);
+            stairsRecipes(stairsBlock, baseBlock, output);
+
+            paintingRecipes(stairsBlock, ModItemTags.COLORED_BRICK_STAIRS, dye.getTag(), output);
+            paintingRecipes(slabBlock, ModItemTags.COLORED_BRICK_SLABS, dye.getTag(), output);
         }
     }
 

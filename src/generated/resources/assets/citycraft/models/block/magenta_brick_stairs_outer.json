@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "citycraft:block/magenta_bricks",
+    "side": "citycraft:block/magenta_bricks",
+    "top": "citycraft:block/magenta_bricks"
+  }
+}
