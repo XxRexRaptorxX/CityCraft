@@ -1,4 +1,4 @@
-# [v.2.10.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.10.0-dev1...v.2.10.0-dev17)
+# [v.2.10.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.10.0-dev1...v.2.10.0-dev18)
 
 ## ✨ Features
 
@@ -13,6 +13,7 @@
 
 ## 🔧 Bug Fixes
 
+- Lamps and lanterns do not update correctly when generated in a 'Lost City' ([4572e6e](https://github.com/XxRexRaptorxX/CityCraft/commit/4572e6ecf0d461da9346f2619f3b165d46f43b5e))
 - missing colored concrete wall painting recipes added ([c3a8963](https://github.com/XxRexRaptorxX/CityCraft/commit/c3a8963a36451d1aeb229a07772599b10c09892a))
 
 ## 🔨 Refactoring
