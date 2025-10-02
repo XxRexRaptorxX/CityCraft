@@ -1,7 +1,8 @@
-# [v.2.10.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.10.0-dev1...v.2.10.0-dev15)
+# [v.2.10.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.10.0-dev1...v.2.10.0-dev16)
 
 ## ✨ Features
 
+- Colored Brick Walls added ([80d16b4](https://github.com/XxRexRaptorxX/CityCraft/commit/80d16b49d6f12542b90b30d342024a7d92b8dd41))
 - bricks recipe changes ([7a34dc1](https://github.com/XxRexRaptorxX/CityCraft/commit/7a34dc1b3c565e2d0d12ebfdd6100604ca3fb284))
 - Colored Brick Stair & Colored Brick Slabs added ([88d377e](https://github.com/XxRexRaptorxX/CityCraft/commit/88d377e695435ac9cbcf467529d70bc265463f93))
 - 'The Lost Cities'-integration expanded ([5e6ff39](https://github.com/XxRexRaptorxX/CityCraft/commit/5e6ff39e3e1fb82338bde50e53b71e85c30a3670))
