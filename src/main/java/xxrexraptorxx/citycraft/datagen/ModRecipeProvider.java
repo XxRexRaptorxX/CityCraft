@@ -1,8 +1,5 @@
 package xxrexraptorxx.citycraft.datagen;
 
-import java.util.Optional;
-import java.util.concurrent.CompletableFuture;
-
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -22,8 +19,11 @@ import xxrexraptorxx.citycraft.main.CityCraft;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.recipes.PaintingRecipe;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
-import xxrexraptorxx.citycraft.registry.ModItems;
 import xxrexraptorxx.citycraft.registry.ModItemTags;
+import xxrexraptorxx.citycraft.registry.ModItems;
+
+import java.util.Optional;
+import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
 
@@ -696,8 +696,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, neonLightBlock, 1).requires(lampBlock).requires(Tags.Items.DUSTS_GLOWSTONE)
                     .requires(Items.BLAZE_POWDER).unlockedBy(getHasName(lampBlock), has(lampBlock)).group("neon_lights").save(output);
-
-            dyeRecipes(bricksBlock, Items.BRICKS, dye.getTag(), output);
         }
     }
 
@@ -864,6 +862,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
             paintingRecipes(stairsBlock, ModItemTags.COLORED_BRICK_STAIRS, dye.getTag(), output);
             paintingRecipes(slabBlock, ModItemTags.COLORED_BRICK_SLABS, dye.getTag(), output);
+
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, baseBlock, 1).requires(Items.BRICK).requires(Items.BRICK).requires(Items.BRICK).requires(Items.BRICK)
+                    .requires(dye.getTag()).unlockedBy(getHasName(Items.BRICK), has(Items.BRICK)).group("colored_bricks_from_dye").save(output);
         }
     }
 

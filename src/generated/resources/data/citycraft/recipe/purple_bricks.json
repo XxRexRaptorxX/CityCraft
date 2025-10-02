@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "colored_bricks_from_dye",
+  "ingredients": [
+    {
+      "item": "minecraft:brick"
+    },
+    {
+      "item": "minecraft:brick"
+    },
+    {
+      "item": "minecraft:brick"
+    },
+    {
+      "item": "minecraft:brick"
+    },
+    {
+      "tag": "c:dyes/purple"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:purple_bricks"
+  }
+}
