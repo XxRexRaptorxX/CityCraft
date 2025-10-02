@@ -807,6 +807,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             paintingRecipes(powderBlock, Tags.Items.CONCRETE_POWDERS, dye.getTag(), output);
             paintingRecipes(chiseledBlock, ModItemTags.COLORED_CHISELED_CONCRETE, dye.getTag(), output);
             paintingRecipes(polishedBlock, ModItemTags.COLORED_POLISHED_CONCRETE, dye.getTag(), output);
+            paintingRecipes(wallBlock, ModItemTags.COLORED_CONCRETE_WALLS, dye.getTag(), output);
             paintingRecipes(pillarBlock, ModItemTags.COLORED_CONCRETE_PILLARS, dye.getTag(), output);
             paintingRecipes(stairsBlock, ModItemTags.COLORED_CONCRETE_STAIRS, dye.getTag(), output);
             paintingRecipes(slabBlock, ModItemTags.COLORED_CONCRETE_SLABS, dye.getTag(), output);
@@ -849,19 +850,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             String basePath = color + brick + "s";
             String stairsPath = color + brick + "_stairs";
             String slabPath = color + brick + "_slab";
+            String wallPath = color + brick + "_wall";
 
             Block baseBlock = getBlockOrThrow(References.MODID, basePath);
             Block stairsBlock = getBlockOrThrow(References.MODID, stairsPath);
             Block slabBlock = getBlockOrThrow(References.MODID, slabPath);
+            Block wallBlock = getBlockOrThrow(References.MODID, wallPath);
 
             stoneCuttingRecipes(stairsBlock, 1, baseBlock, output);
             stoneCuttingRecipes(slabBlock, 2, baseBlock, output);
 
             slabRecipes(slabBlock, baseBlock, output);
             stairsRecipes(stairsBlock, baseBlock, output);
+            wallRecipes(wallBlock, baseBlock, output);
 
             paintingRecipes(stairsBlock, ModItemTags.COLORED_BRICK_STAIRS, dye.getTag(), output);
             paintingRecipes(slabBlock, ModItemTags.COLORED_BRICK_SLABS, dye.getTag(), output);
+            paintingRecipes(wallBlock, ModItemTags.COLORED_BRICK_WALLS, dye.getTag(), output);
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, baseBlock, 1).requires(Items.BRICK).requires(Items.BRICK).requires(Items.BRICK).requires(Items.BRICK)
                     .requires(dye.getTag()).unlockedBy(getHasName(Items.BRICK), has(Items.BRICK)).group("colored_bricks_from_dye").save(output);

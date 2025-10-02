@@ -1782,6 +1782,39 @@ public class ModBlocks {
     public static final DeferredBlock<SlabBlock> RED_BRICK_SLAB = registerBlock("red_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.RED_BRICKS.get())));
 
+    public static final DeferredBlock<WallBlock> BLACK_BRICK_WALL = registerBlock("black_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.BLACK_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> WHITE_BRICK_WALL = registerBlock("white_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.WHITE_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> ORANGE_BRICK_WALL = registerBlock("orange_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.ORANGE_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> MAGENTA_BRICK_WALL = registerBlock("magenta_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.MAGENTA_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> LIGHT_BLUE_BRICK_WALL = registerBlock("light_blue_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIGHT_BLUE_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> YELLOW_BRICK_WALL = registerBlock("yellow_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.YELLOW_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> LIME_BRICK_WALL = registerBlock("lime_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIME_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> PINK_BRICK_WALL = registerBlock("pink_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.PINK_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> GRAY_BRICK_WALL = registerBlock("gray_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.GRAY_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> LIGHT_GRAY_BRICK_WALL = registerBlock("light_gray_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.LIGHT_GRAY_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> CYAN_BRICK_WALL = registerBlock("cyan_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.CYAN_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> PURPLE_BRICK_WALL = registerBlock("purple_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.PURPLE_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> BLUE_BRICK_WALL = registerBlock("blue_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.BLUE_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> BROWN_BRICK_WALL = registerBlock("brown_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.BROWN_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> GREEN_BRICK_WALL = registerBlock("green_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.GREEN_BRICKS.get())));
+    public static final DeferredBlock<WallBlock> RED_BRICK_WALL = registerBlock("red_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.RED_BRICKS.get())));
+
     public static final DeferredBlock<LadderBlock> IRON_LADDER = registerBlock("iron_ladder",
             () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).strength(0.8F).sound(SoundType.METAL).mapColor(MapColor.METAL)
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE).forceSolidOff().noOcclusion().pushReaction(PushReaction.DESTROY)));

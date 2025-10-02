@@ -61,6 +61,7 @@ public class ItemTagGen extends ItemTagsProvider {
         copy(ModBlockTags.COLORED_CONCRETE_CRACKED_BRICKS, ModItemTags.COLORED_CONCRETE_CRACKED_BRICKS);
         copy(ModBlockTags.COLORED_CONCRETE_PILLARS, ModItemTags.COLORED_CONCRETE_PILLARS);
         copy(ModBlockTags.COLORED_REINFORCED_CONCRETE, ModItemTags.COLORED_REINFORCED_CONCRETE);
+        copy(ModBlockTags.COLORED_CONCRETE_WALLS, ModItemTags.COLORED_CONCRETE_WALLS);
         copy(ModBlockTags.COLORED_CONCRETE_STAIRS, ModItemTags.COLORED_CONCRETE_STAIRS);
         copy(ModBlockTags.COLORED_CONCRETE_SLABS, ModItemTags.COLORED_CONCRETE_SLABS);
         copy(ModBlockTags.COLORED_CONCRETE_PRESSURE_PLATES, ModItemTags.COLORED_CONCRETE_PRESSURE_PLATES);
@@ -72,6 +73,7 @@ public class ItemTagGen extends ItemTagsProvider {
         copy(ModBlockTags.COLORED_BRICKS, ModItemTags.COLORED_BRICKS);
         copy(ModBlockTags.COLORED_BRICK_SLABS, ModItemTags.COLORED_BRICK_SLABS);
         copy(ModBlockTags.COLORED_BRICK_STAIRS, ModItemTags.COLORED_BRICK_STAIRS);
+        copy(ModBlockTags.COLORED_BRICK_WALLS, ModItemTags.COLORED_BRICK_WALLS);
 
         copy(BlockTags.SLABS, ItemTags.SLABS);
         copy(BlockTags.STAIRS, ItemTags.STAIRS);

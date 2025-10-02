@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_brick_walls"
+  },
+  "color": {
+    "tag": "c:dyes/blue"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:blue_brick_wall"
+  }
+}

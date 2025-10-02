@@ -50,6 +50,7 @@ public class ModItemTags {
     public static final TagKey<Item> COLORED_CONCRETE_BUTTONS = createItemTag(References.MODID, "colored_concrete_buttons");
     public static final TagKey<Item> COLORED_MOSSY_CONCRETE = createItemTag(References.MODID, "colored_mossy_concrete");
     public static final TagKey<Item> COLORED_POLISHED_CONCRETE = createItemTag(References.MODID, "colored_polished_concrete");
+    public static final TagKey<Item> COLORED_CONCRETE_WALLS = createItemTag(References.MODID, "colored_concrete_walls");
     public static final TagKey<Item> COLORED_CONCRETE_BRICKS = createItemTag(References.MODID, "colored_concrete_bricks");
     public static final TagKey<Item> COLORED_CONCRETE_CRACKED_BRICKS = createItemTag(References.MODID, "colored_cracked_concrete_bricks");
     public static final TagKey<Item> COLORED_CONCRETE_PILLARS = createItemTag(References.MODID, "colored_concrete_pillars");
@@ -62,6 +63,7 @@ public class ModItemTags {
     public static final TagKey<Item> COLORED_CONCRETE_FLOWER_BOXES = createItemTag(References.MODID, "colored_concrete_flower_boxes");
     public static final TagKey<Item> COLORED_BRICK_SLABS = createItemTag(References.MODID, "colored_brick_slabs");
     public static final TagKey<Item> COLORED_BRICK_STAIRS = createItemTag(References.MODID, "colored_brick_stairs");
+    public static final TagKey<Item> COLORED_BRICK_WALLS = createItemTag(References.MODID, "colored_brick_walls");
     public static final TagKey<Item> COLORED_BRICKS = createItemTag(References.MODID, "colored_bricks");
     public static final TagKey<Item> NEON_LIGHTS = createItemTag(References.MODID, "neon_lights");
     public static final TagKey<Item> SPEED_BOOST_BLOCKS = createItemTag(References.MODID, "blocks_with_speed_boost");

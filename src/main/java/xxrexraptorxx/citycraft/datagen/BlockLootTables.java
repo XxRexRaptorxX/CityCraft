@@ -1306,6 +1306,23 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.MAGENTA_BRICK_STAIRS.get());
         this.dropSelf(ModBlocks.PINK_BRICK_STAIRS.get());
 
+        this.dropSelf(ModBlocks.WHITE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.GRAY_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.BLACK_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.BROWN_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.RED_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.ORANGE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.YELLOW_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.LIME_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.GREEN_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.CYAN_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.BLUE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.PURPLE_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.MAGENTA_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.PINK_BRICK_WALL.get());
+
         this.add(ModBlocks.WHITE_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.WHITE_BRICK_SLAB.get()));
         this.add(ModBlocks.LIGHT_GRAY_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.LIGHT_GRAY_BRICK_SLAB.get()));
         this.add(ModBlocks.GRAY_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.GRAY_BRICK_SLAB.get()));

@@ -1,4 +1,4 @@
-// 1.21	2025-10-02T20:22:35.1765406	Tags for minecraft:item mod id citycraft
+// 1.21	2025-10-02T21:27:38.6991308	Tags for minecraft:item mod id citycraft
 7c9bb93a1fc8f0739b2d217b188507e005114f2d data/citycraft/tags/item/asphalt.json
 b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/item/asphalt_slabs_with_markings.json
 47f60bc7f566d7e79607e77d2ab1f24026498c88 data/citycraft/tags/item/asphalt_with_markings.json
@@ -9,6 +9,7 @@ a3ca97688cff7ca5c3fb4a5291231b6f2d884175 data/citycraft/tags/item/blocks_with_sp
 546813aa9f39e0c56881ea84f676a0441b998730 data/citycraft/tags/item/colored_bricks.json
 8fb9a3e6e9a978f53ce510e88d6642161dc05972 data/citycraft/tags/item/colored_brick_slabs.json
 a279968f8e78e6c082d1b88e1235e3e053de2320 data/citycraft/tags/item/colored_brick_stairs.json
+98d9b5ad99585067aa2c4bfca7369b2b9a42850d data/citycraft/tags/item/colored_brick_walls.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/citycraft/tags/item/colored_chiseled_concrete.json
 6ea9192e6808051e456a3e2fcb0a48fd51ed46ff data/citycraft/tags/item/colored_concrete_bricks.json
 704a5caea37c07627bfb0db3c150a03bab5a922e data/citycraft/tags/item/colored_concrete_buttons.json
@@ -19,6 +20,7 @@ b2a91017c76d9b4c8718ba568cfbf4a0e5142f8b data/citycraft/tags/item/colored_concre
 6bfc565923165a40abeac788ef0b76ee430e3e17 data/citycraft/tags/item/colored_concrete_pressure_plates.json
 bfb4fb3e9b7c28f69874b1d4631f3e7de066b884 data/citycraft/tags/item/colored_concrete_slabs.json
 377412d810647267ed1f48bb340975e759187405 data/citycraft/tags/item/colored_concrete_stairs.json
+9358f50b1d078facbaba4686e68982789fb3d438 data/citycraft/tags/item/colored_concrete_walls.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/citycraft/tags/item/colored_cracked_concrete.json
 dd0b61e6d4b22f86469525c801b284918026771d data/citycraft/tags/item/colored_cracked_concrete_bricks.json
 cd55a99ac2570666230406f0c514911b43a0b5cc data/citycraft/tags/item/colored_lamps.json
@@ -37,22 +39,22 @@ d8d9268c4928d5270d824608a8f71ca1903a979d data/citycraft/tags/item/traffic_barrie
 af9a703060dd81271897fe8b2b6d452efe7f11e1 data/c/tags/item/chains.json
 a3cf020247cfc39f0886267cbd1e190334d8aea9 data/c/tags/item/dusts.json
 b6b4d92c62e4490e17fb202e59ce7cc8c4279a67 data/c/tags/item/dusts/asphalt.json
-d86b6dc83d5354431d1d4958d697f59488ee9c7e data/c/tags/item/dyed/black.json
-2b28a9fda142f79227e1b59005dbe2a329b05720 data/c/tags/item/dyed/blue.json
-e4abb850acdd63d1ee8db168b597e0de2ac248aa data/c/tags/item/dyed/brown.json
-d820b3f230765ff49bb4a0cdc0b94939df186aea data/c/tags/item/dyed/cyan.json
-5a9e06d71946947bb92f69603de929a837cc1b00 data/c/tags/item/dyed/gray.json
-ce95cd0e59911bcb47caaa296c78ad5f07946923 data/c/tags/item/dyed/green.json
-5556734ee9a3e1030163da92703d34d49d8a11c9 data/c/tags/item/dyed/light_blue.json
-362ae4a3982fe6dd72de8c37bac00983e6fae80b data/c/tags/item/dyed/light_gray.json
-66fd9f4b030b1a2c9406db801391917b61d0f8c6 data/c/tags/item/dyed/lime.json
-98428be9083b5006a10dc98707190befffb15e8f data/c/tags/item/dyed/magenta.json
-bdf02464baf88db2a99f3fa9df953a3c0600acad data/c/tags/item/dyed/orange.json
-863fe63e04074ac5e6fe97ffa367b06e80e1bdf4 data/c/tags/item/dyed/pink.json
-577726d342ba4f77ea9349bb95a056aa02b97e10 data/c/tags/item/dyed/purple.json
-df939a4d57fcda595a0c33ad1db3f7d91d4a9ffb data/c/tags/item/dyed/red.json
-10c8b14fe39a23d5c005e442b3ff5071eddf3b3a data/c/tags/item/dyed/white.json
-3ccdbd25f7d113467bd7677514f4fc00900de694 data/c/tags/item/dyed/yellow.json
+1875dcb455aae26dc7cd185da67c7a8278b7797f data/c/tags/item/dyed/black.json
+32bc65be5efa67a1198da04153191c5b0ed606d6 data/c/tags/item/dyed/blue.json
+68eb02fb3e05c56be09be8b2ad5e26b4aee02e38 data/c/tags/item/dyed/brown.json
+ec857ae3906460657afb29d090e4b5c3e5aa69ff data/c/tags/item/dyed/cyan.json
+652418dd0c731e00a3fabc61de9cdb9607ba75b7 data/c/tags/item/dyed/gray.json
+330d6702df5b0cd6446ac2e9202b9ef82084c1fc data/c/tags/item/dyed/green.json
+5e7477f612347a6403c7a915a13925b296cdfb2f data/c/tags/item/dyed/light_blue.json
+df5e1bba60a1b14709ddac4afd9279d7a71ab1a5 data/c/tags/item/dyed/light_gray.json
+c37159ee58452dce70f5c0216a919d3db9c89e32 data/c/tags/item/dyed/lime.json
+e32a976dc8bf89ad0fd9a6e42c5fa01e47450c62 data/c/tags/item/dyed/magenta.json
+631935ade9b0a8b241f453b7ab83eae8f65266b1 data/c/tags/item/dyed/orange.json
+f64098b4f9a6b77cec534e52c0591a226cf922b2 data/c/tags/item/dyed/pink.json
+fc0c520884b63de22af431da4edb9a74e464cf34 data/c/tags/item/dyed/purple.json
+fd5a458c875a4c9ae964a66386edea061024f5ee data/c/tags/item/dyed/red.json
+10bae99837f4f6c2e4a0e49fe92d6b2291613eeb data/c/tags/item/dyed/white.json
+1f676f071a8549102c4c9f5e9b1546abdb329de8 data/c/tags/item/dyed/yellow.json
 5f04715e0e5f22f49a808dbe0bcfea5086d25f4f data/c/tags/item/dyes.json
 0a10758b9a1786f66711e82097530f67735508ac data/c/tags/item/dyes/mix.json
 93433fd308f6d9993712749cf17727ea02138207 data/c/tags/item/hanging_signs/wood.json
@@ -66,4 +68,4 @@ b6bad468f2095888018ed1b07350b14284ae4ac9 data/minecraft/tags/item/coals.json
 6bfc565923165a40abeac788ef0b76ee430e3e17 data/minecraft/tags/item/pressure_plates.json
 1ddefb1e83a38929cad8d721be99a1473daf0597 data/minecraft/tags/item/slabs.json
 d9236974e326caa85c8b04da7efb4a564a1a6904 data/minecraft/tags/item/stairs.json
-9358f50b1d078facbaba4686e68982789fb3d438 data/minecraft/tags/item/walls.json
+4d47c4b671b99afcd8694fa4e7bdb8f95283e0c6 data/minecraft/tags/item/walls.json

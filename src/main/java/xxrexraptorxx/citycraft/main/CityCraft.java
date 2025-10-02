@@ -638,6 +638,23 @@ public class CityCraft {
             event.accept(ModBlocks.MAGENTA_BRICK_STAIRS.get());
             event.accept(ModBlocks.PINK_BRICK_STAIRS.get());
 
+            event.accept(ModBlocks.WHITE_BRICK_WALL.get());
+            event.accept(ModBlocks.LIGHT_GRAY_BRICK_WALL.get());
+            event.accept(ModBlocks.GRAY_BRICK_WALL.get());
+            event.accept(ModBlocks.BLACK_BRICK_WALL.get());
+            event.accept(ModBlocks.BROWN_BRICK_WALL.get());
+            event.accept(ModBlocks.RED_BRICK_WALL.get());
+            event.accept(ModBlocks.ORANGE_BRICK_WALL.get());
+            event.accept(ModBlocks.YELLOW_BRICK_WALL.get());
+            event.accept(ModBlocks.LIME_BRICK_WALL.get());
+            event.accept(ModBlocks.GREEN_BRICK_WALL.get());
+            event.accept(ModBlocks.CYAN_BRICK_WALL.get());
+            event.accept(ModBlocks.LIGHT_BLUE_BRICK_WALL.get());
+            event.accept(ModBlocks.BLUE_BRICK_WALL.get());
+            event.accept(ModBlocks.PURPLE_BRICK_WALL.get());
+            event.accept(ModBlocks.MAGENTA_BRICK_WALL.get());
+            event.accept(ModBlocks.PINK_BRICK_WALL.get());
+
             event.accept(ModBlocks.WHITE_POST.get());
             event.accept(ModBlocks.RED_POST.get());
             event.accept(ModBlocks.RED_WHITE_POST.get());

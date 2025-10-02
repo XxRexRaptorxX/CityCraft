@@ -1332,6 +1332,23 @@ public class BlockStateGen extends BlockStateProvider {
         makeSlabBlock(ModBlocks.MAGENTA_BRICK_SLAB.get(), ModBlocks.MAGENTA_BRICKS.get());
         makeSlabBlock(ModBlocks.PINK_BRICK_SLAB.get(), ModBlocks.PINK_BRICKS.get());
 
+        wallBlock(((WallBlock) ModBlocks.BLACK_BRICK_WALL.get()), blockTexture(ModBlocks.BLACK_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.WHITE_BRICK_WALL.get()), blockTexture(ModBlocks.WHITE_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.ORANGE_BRICK_WALL.get()), blockTexture(ModBlocks.ORANGE_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.MAGENTA_BRICK_WALL.get()), blockTexture(ModBlocks.MAGENTA_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.LIGHT_BLUE_BRICK_WALL.get()), blockTexture(ModBlocks.LIGHT_BLUE_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.YELLOW_BRICK_WALL.get()), blockTexture(ModBlocks.YELLOW_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.LIME_BRICK_WALL.get()), blockTexture(ModBlocks.LIME_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.PINK_BRICK_WALL.get()), blockTexture(ModBlocks.PINK_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.GRAY_BRICK_WALL.get()), blockTexture(ModBlocks.GRAY_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.LIGHT_GRAY_BRICK_WALL.get()), blockTexture(ModBlocks.LIGHT_GRAY_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.CYAN_BRICK_WALL.get()), blockTexture(ModBlocks.CYAN_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.PURPLE_BRICK_WALL.get()), blockTexture(ModBlocks.PURPLE_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.BLUE_BRICK_WALL.get()), blockTexture(ModBlocks.BLUE_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.BROWN_BRICK_WALL.get()), blockTexture(ModBlocks.BROWN_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.GREEN_BRICK_WALL.get()), blockTexture(ModBlocks.GREEN_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.RED_BRICK_WALL.get()), blockTexture(ModBlocks.RED_BRICKS.get()));
+
         makeBlockFromParentModel(ModBlocks.LIGHTING_ROD.get(), "torch_like");
         makeHorizontalBlock(ModBlocks.WALL_LIGHTING_ROD.get(), "wall_torch_like", ResourceLocation.fromNamespaceAndPath(References.MODID, "block/lighting_rod"));
     }

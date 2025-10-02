@@ -52,6 +52,23 @@ public class ItemModelGen extends ItemModelProvider {
         wallItem(ModBlocks.GREEN_CONCRETE_WALL, Blocks.GREEN_CONCRETE);
         wallItem(ModBlocks.RED_CONCRETE_WALL, Blocks.RED_CONCRETE);
 
+        wallItem(ModBlocks.BLACK_BRICK_WALL, ModBlocks.BLACK_BRICKS.get());
+        wallItem(ModBlocks.WHITE_BRICK_WALL, ModBlocks.WHITE_BRICKS.get());
+        wallItem(ModBlocks.ORANGE_BRICK_WALL, ModBlocks.ORANGE_BRICKS.get());
+        wallItem(ModBlocks.MAGENTA_BRICK_WALL, ModBlocks.MAGENTA_BRICKS.get());
+        wallItem(ModBlocks.LIGHT_BLUE_BRICK_WALL, ModBlocks.LIGHT_BLUE_BRICKS.get());
+        wallItem(ModBlocks.YELLOW_BRICK_WALL, ModBlocks.YELLOW_BRICKS.get());
+        wallItem(ModBlocks.LIME_BRICK_WALL, ModBlocks.LIME_BRICKS.get());
+        wallItem(ModBlocks.PINK_BRICK_WALL, ModBlocks.PINK_BRICKS.get());
+        wallItem(ModBlocks.GRAY_BRICK_WALL, ModBlocks.GRAY_BRICKS.get());
+        wallItem(ModBlocks.LIGHT_GRAY_BRICK_WALL, ModBlocks.LIGHT_GRAY_BRICKS.get());
+        wallItem(ModBlocks.CYAN_BRICK_WALL, ModBlocks.CYAN_BRICKS.get());
+        wallItem(ModBlocks.PURPLE_BRICK_WALL, ModBlocks.PURPLE_BRICKS.get());
+        wallItem(ModBlocks.BLUE_BRICK_WALL, ModBlocks.BLUE_BRICKS.get());
+        wallItem(ModBlocks.BROWN_BRICK_WALL, ModBlocks.BROWN_BRICKS.get());
+        wallItem(ModBlocks.GREEN_BRICK_WALL, ModBlocks.GREEN_BRICKS.get());
+        wallItem(ModBlocks.RED_BRICK_WALL, ModBlocks.RED_BRICKS.get());
+
         buttonItem(ModBlocks.BLACK_CONCRETE_BUTTON, Blocks.BLACK_CONCRETE);
         buttonItem(ModBlocks.WHITE_CONCRETE_BUTTON, Blocks.WHITE_CONCRETE);
         buttonItem(ModBlocks.ORANGE_CONCRETE_BUTTON, Blocks.ORANGE_CONCRETE);
@@ -115,25 +132,25 @@ public class ItemModelGen extends ItemModelProvider {
 
 
     public void fenceItem(DeferredBlock<FenceBlock> block, Block textureBlock) {
-        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/fence_inventory")).texture("texture",
-                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/fence_inventory")).texture("texture", ResourceLocation
+                .fromNamespaceAndPath(BuiltInRegistries.BLOCK.getKey(textureBlock).getNamespace(), "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
 
 
     public void wallItem(DeferredBlock<WallBlock> block, Block textureBlock) {
-        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/wall_inventory")).texture("wall",
-                ResourceLocation.withDefaultNamespace("block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/wall_inventory")).texture("wall", ResourceLocation
+                .fromNamespaceAndPath(BuiltInRegistries.BLOCK.getKey(textureBlock).getNamespace(), "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
 
 
     private void buttonItem(DeferredBlock<ButtonBlock> block, Block textureBlock) {
-        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/button_inventory")).texture("texture",
-                ResourceLocation.withDefaultNamespace("block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/button_inventory")).texture("texture", ResourceLocation
+                .fromNamespaceAndPath(BuiltInRegistries.BLOCK.getKey(textureBlock).getNamespace(), "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
 
 
     private void leverItem(DeferredBlock<LeverBlock> block) {
         singleTexture(block.getId().getPath(), ResourceLocation.withDefaultNamespace(ITEM_FOLDER + "/generated"), "layer0",
-                ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + block.getId().getPath()));
+                ResourceLocation.fromNamespaceAndPath(block.getId().getNamespace(), "block/" + block.getId().getPath()));
     }
 }

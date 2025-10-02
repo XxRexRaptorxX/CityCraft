@@ -27,6 +27,7 @@ public class ModBlockTags {
     public static final TagKey<Block> COLORED_CHISELED_CONCRETE = createBlockTag(References.MODID, "colored_chiseled_concrete");
     public static final TagKey<Block> COLORED_CRACKED_CONCRETE = createBlockTag(References.MODID, "colored_cracked_concrete");
     public static final TagKey<Block> COLORED_CONCRETE_BUTTONS = createBlockTag(References.MODID, "colored_concrete_buttons");
+    public static final TagKey<Block> COLORED_CONCRETE_WALLS = createBlockTag(References.MODID, "colored_concrete_walls");
     public static final TagKey<Block> COLORED_MOSSY_CONCRETE = createBlockTag(References.MODID, "colored_mossy_concrete");
     public static final TagKey<Block> COLORED_POLISHED_CONCRETE = createBlockTag(References.MODID, "colored_polished_concrete");
     public static final TagKey<Block> COLORED_CONCRETE_BRICKS = createBlockTag(References.MODID, "colored_concrete_bricks");
@@ -42,6 +43,7 @@ public class ModBlockTags {
     public static final TagKey<Block> COLORED_BRICKS = createBlockTag(References.MODID, "colored_bricks");
     public static final TagKey<Block> COLORED_BRICK_SLABS = createBlockTag(References.MODID, "colored_brick_slabs");
     public static final TagKey<Block> COLORED_BRICK_STAIRS = createBlockTag(References.MODID, "colored_brick_stairs");
+    public static final TagKey<Block> COLORED_BRICK_WALLS = createBlockTag(References.MODID, "colored_brick_walls");
 
     public static final TagKey<Block> CONCRETES = createBlockTag("c", "concretes");
     public static final TagKey<Block> LEVERS = createBlockTag("c", "levers");
