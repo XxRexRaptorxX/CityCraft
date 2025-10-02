@@ -1,7 +1,8 @@
-# [v.2.10.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.10.0-dev1...v.2.10.0-dev10)
+# [v.2.10.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.10.0-dev1...v.2.10.0-dev11)
 
 ## ✨ Features
 
+- Colored Brick Stair & Colored Brick Slabs added ([88d377e](https://github.com/XxRexRaptorxX/CityCraft/commit/88d377e695435ac9cbcf467529d70bc265463f93))
 - 'The Lost Cities'-integration expanded ([5e6ff39](https://github.com/XxRexRaptorxX/CityCraft/commit/5e6ff39e3e1fb82338bde50e53b71e85c30a3670))
 - Lighting Rod added ([6efcf10](https://github.com/XxRexRaptorxX/CityCraft/commit/6efcf10bde281c242cea12faa820cded5090e5de))
 - items & blocks added to the DYED_#-tags ([8242829](https://github.com/XxRexRaptorxX/CityCraft/commit/8242829a6e85a4a9eb19fcf795246000d16f0f54))
