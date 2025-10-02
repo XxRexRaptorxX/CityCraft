@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "random": 300,
+      "random": 100,
       "block": "citycraft:street_lantern_panel[type=top,flickering=true,lit=true]"
     },
     {

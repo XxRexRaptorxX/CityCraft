@@ -37,11 +37,12 @@ public class LanternBlock extends Block {
     public static final BooleanProperty LIT;
     public static final BooleanProperty FORCED_ON;
     public static final BooleanProperty FLICKERING;
+    public static final BooleanProperty INITIALIZED;
 
     public LanternBlock() {
         super(Properties.of().strength(5.0F, 6.0F).sound(SoundType.GLASS).mapColor(MapColor.METAL).instrument(NoteBlockInstrument.BELL).requiresCorrectToolForDrops()
-                .lightLevel(litBlockEmission(15)).noOcclusion());
-        this.registerDefaultState(this.defaultBlockState().setValue(LIT, false).setValue(FORCED_ON, false).setValue(FLICKERING, false));
+                .lightLevel(litBlockEmission(15)).noOcclusion().randomTicks());
+        this.registerDefaultState(this.defaultBlockState().setValue(LIT, false).setValue(FORCED_ON, false).setValue(FLICKERING, false).setValue(INITIALIZED, false));
     }
 
 
@@ -125,7 +126,7 @@ public class LanternBlock extends Block {
      */
     @Override
     public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(LIT, FORCED_ON, FLICKERING);
+        builder.add(LIT, FORCED_ON, FLICKERING, INITIALIZED);
     }
 
 
@@ -222,11 +223,6 @@ public class LanternBlock extends Block {
         return (block) -> (block.getValue(LIT) || block.getValue(FORCED_ON)) ? lightValue : 0;
     }
 
-    static {
-        LIT = BlockStateProperties.LIT;
-        FORCED_ON = BooleanProperty.create("forced_on");
-        FLICKERING = BooleanProperty.create("flickering");
-    }
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
@@ -234,5 +230,24 @@ public class LanternBlock extends Block {
             list.add(Component.translatable("message." + References.MODID + ".solar_info").withStyle(ChatFormatting.GRAY));
             list.add(Component.translatable("message." + References.MODID + ".flicker_info").withStyle(ChatFormatting.GRAY));
         }
+    }
+
+
+    // Worldgen fix
+    @Override
+    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+        super.randomTick(state, level, pos, random);
+
+        if (!state.getValue(INITIALIZED)) {
+            BlockState newState = state.setValue(INITIALIZED, true);
+            level.setBlock(pos, newState, 3);
+        }
+    }
+
+    static {
+        LIT = BlockStateProperties.LIT;
+        FORCED_ON = BooleanProperty.create("forced_on");
+        FLICKERING = BooleanProperty.create("flickering");
+        INITIALIZED = BooleanProperty.create("initialized");
     }
 }

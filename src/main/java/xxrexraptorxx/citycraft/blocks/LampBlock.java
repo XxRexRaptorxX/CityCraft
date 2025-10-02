@@ -30,20 +30,21 @@ import java.util.List;
 
 
 public class LampBlock extends RedstoneLampBlock {
-    public static final BooleanProperty FORCED_ON = BooleanProperty.create("forced_on");
-    public static final BooleanProperty FLICKERING = BooleanProperty.create("flickering");
+    public static final BooleanProperty FORCED_ON;
+    public static final BooleanProperty FLICKERING;
+    public static final BooleanProperty INITIALIZED;
 
 
     public LampBlock(BlockBehaviour.Properties properties) {
-        super(properties);
-        this.registerDefaultState(this.stateDefinition.any().setValue(FORCED_ON, false).setValue(FLICKERING, false));
+        super(properties.randomTicks());
+        this.registerDefaultState(this.stateDefinition.any().setValue(FORCED_ON, false).setValue(FLICKERING, false).setValue(INITIALIZED, false));
     }
 
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
-        builder.add(FORCED_ON, FLICKERING);
+        builder.add(FORCED_ON, FLICKERING, INITIALIZED);
     }
 
 
@@ -141,5 +142,12 @@ public class LampBlock extends RedstoneLampBlock {
         if (Config.ENABLE_TOOLTIPS.get()) {
             list.add(Component.translatable("message." + References.MODID + ".flicker_info").withStyle(ChatFormatting.GRAY));
         }
+    }
+
+
+    static {
+        FORCED_ON = BooleanProperty.create("forced_on");
+        FLICKERING = BooleanProperty.create("flickering");
+        INITIALIZED = BooleanProperty.create("initialized");
     }
 }

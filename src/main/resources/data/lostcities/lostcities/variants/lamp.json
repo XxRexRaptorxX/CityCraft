@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "random": 500,
+      "random": 100,
       "block": "citycraft:white_lamp[forced_on=true,flickering=true]"
     },
     {

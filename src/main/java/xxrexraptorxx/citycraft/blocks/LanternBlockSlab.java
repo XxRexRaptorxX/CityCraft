@@ -41,12 +41,13 @@ public class LanternBlockSlab extends SlabBlock {
     public static final BooleanProperty LIT;
     public static final BooleanProperty FORCED_ON;
     public static final BooleanProperty FLICKERING;
+    public static final BooleanProperty INITIALIZED;
 
     public LanternBlockSlab() {
         super(Properties.of().strength(5.0F, 6.0F).sound(SoundType.GLASS).mapColor(MapColor.METAL).instrument(NoteBlockInstrument.BELL).requiresCorrectToolForDrops()
-                .lightLevel(litBlockEmission(15)));
-        this.registerDefaultState(
-                this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, false).setValue(LIT, false).setValue(FORCED_ON, false).setValue(FLICKERING, false));
+                .lightLevel(litBlockEmission(15)).randomTicks());
+        this.registerDefaultState(this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, false).setValue(LIT, false).setValue(FORCED_ON, false)
+                .setValue(FLICKERING, false).setValue(INITIALIZED, false));
     }
 
 
@@ -114,7 +115,7 @@ public class LanternBlockSlab extends SlabBlock {
 
     @Override
     public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(LIT, FORCED_ON, FLICKERING, TYPE, WATERLOGGED);
+        builder.add(LIT, FORCED_ON, FLICKERING, TYPE, WATERLOGGED, INITIALIZED);
     }
 
 
@@ -233,11 +234,6 @@ public class LanternBlockSlab extends SlabBlock {
         return (block) -> (block.getValue(LIT) || block.getValue(FORCED_ON)) ? lightValue : 0;
     }
 
-    static {
-        LIT = BlockStateProperties.LIT;
-        FORCED_ON = BooleanProperty.create("forced_on");
-        FLICKERING = BooleanProperty.create("flickering");
-    }
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
@@ -245,5 +241,24 @@ public class LanternBlockSlab extends SlabBlock {
             list.add(Component.translatable("message." + References.MODID + ".solar_info").withStyle(ChatFormatting.GRAY));
             list.add(Component.translatable("message." + References.MODID + ".flicker_info").withStyle(ChatFormatting.GRAY));
         }
+    }
+
+
+    // Worldgen fix
+    @Override
+    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+        super.randomTick(state, level, pos, random);
+
+        if (!state.getValue(INITIALIZED)) {
+            BlockState newState = state.setValue(INITIALIZED, true);
+            level.setBlock(pos, newState, 3);
+        }
+    }
+
+    static {
+        LIT = BlockStateProperties.LIT;
+        FORCED_ON = BooleanProperty.create("forced_on");
+        FLICKERING = BooleanProperty.create("flickering");
+        INITIALIZED = BooleanProperty.create("initialized");
     }
 }
