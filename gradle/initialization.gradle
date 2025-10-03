@@ -627,6 +627,37 @@ jobs:
           MOD_NAME=$(grep "^mod_name=" gradle.properties | cut -d'=' -f2)
           echo "mod_name=$MOD_NAME" >> $GITHUB_OUTPUT
 
+      - name: Build image and page URL from repo with fallbacks
+        id: get_repository_content
+        run: |
+          REPO="${{ github.repository }}"
+          PATH="src/main/resources/logo.png"   # Pfad relativ zum Branch
+          RAW_BASE="https://raw.githubusercontent.com/${REPO}"
+          BRANCH="main"
+          FALLBACK_PAGE="https://github.com/XxRexRaptorxX?tab=repositories"
+          FALLBACK_IMAGE="https://raw.githubusercontent.com/XxRexRaptorxX/General/refs/heads/main/icons/profile_pic.png"
+
+          RAW_URL="${RAW_BASE}/${BRANCH}/${PATH}"
+          status=$(curl -s -o /dev/null -w "%{http_code}" "$RAW_URL")
+
+          if [ "$status" -ne 200 ]; then
+            DEF_BRANCH=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${REPO}" \\
+              | sed -n 's/.*"default_branch": "\\([^"]*\\)".*/\\1/p')
+
+            if [ -n "$DEF_BRANCH" ] && [ "$DEF_BRANCH" != "$BRANCH" ]; then
+              RAW_URL="${RAW_BASE}/${DEF_BRANCH}/${PATH}"
+              status=$(curl -s -o /dev/null -w "%{http_code}" "$RAW_URL")
+            fi
+          fi
+
+          if [ "$status" -eq 200 ]; then
+            echo "image_url=${RAW_URL}" >> $GITHUB_OUTPUT
+            echo "page_url=https://github.com/${REPO}" >> $GITHUB_OUTPUT
+          else
+            echo "image_url=${FALLBACK_IMAGE}" >> $GITHUB_OUTPUT
+            echo "page_url=${FALLBACK_PAGE}" >> $GITHUB_OUTPUT
+          fi
+
       - name: Send Discord message
         uses: sarisia/actions-status-discord@v1
         if: >
@@ -637,7 +668,8 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           title: "New ${{ steps.get_mod_name.outputs.mod_name }} stuff is coming soon!"
-          url: "https://github.com/XxRexRaptorxX?tab=repositories"
+          url: ${{ steps.get_repository_content.outputs.page_url }}
+          image: ${{ steps.get_repository_content.image_url }}
           username: Villager News
           avatar_url: "https://github.com/XxRexRaptorxX/General/blob/main/page_decorations/villager_news.png?raw=true"
           noprefix: true
