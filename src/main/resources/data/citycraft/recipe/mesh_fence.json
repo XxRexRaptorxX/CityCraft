@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:chain_link_fence"
+    },
+    {
+      "item": "citycraft:chain_link_fence"
+    }
+  ],
+  "result": {
+    "id": "citycraft:mesh_fence"
+  }
+}

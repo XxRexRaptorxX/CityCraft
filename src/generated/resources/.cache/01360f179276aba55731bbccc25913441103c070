@@ -1,5 +1,6 @@
-// 1.21	2025-10-02T21:36:56.4460448	Item Models: citycraft
+// 1.21	2025-10-03T17:30:22.4042944	Item Models: citycraft
 7b5af6a3e4b44fd4abf41140a7c4970f7cc7b90e assets/citycraft/models/item/asphalt_mixture.json
+7a70edb89933c9349e37b6f3c3cf72ffd589da26 assets/citycraft/models/item/barbed_wire_fence.json
 95e83f203833a303fcef6055c8788bf0e1296ae4 assets/citycraft/models/item/black_brick_wall.json
 3fc1709a84300ce1e7d899cfb7159917fd547ea6 assets/citycraft/models/item/black_chain.json
 c89fff127cee38293851bd913631536082551a1b assets/citycraft/models/item/black_concrete_button.json
@@ -13,6 +14,7 @@ db9ac584000dc0f0c36d6c19801aaa3b087e36b3 assets/citycraft/models/item/blue_concr
 fc58a2808d808e6deb4aa1764ecb1a845fcf10b0 assets/citycraft/models/item/brown_concrete_button.json
 27a68cc3ccfe4c43b0e7cb6fa907d62def68a691 assets/citycraft/models/item/brown_concrete_lever.json
 c0e511d82c06f579d0192e5d3b49e8088795cee0 assets/citycraft/models/item/brown_concrete_wall.json
+eaf448cb514acb2f8f4b35ff21aa5a92e7222671 assets/citycraft/models/item/chain_link_fence.json
 0b4bef31e63713c0cde65f2aadfbf674a5fddea8 assets/citycraft/models/item/coal_coke.json
 54f66d1fb96b3280732b3e72e40746e15461e635 assets/citycraft/models/item/coal_tar.json
 d12e3f1e3f1d1078fa8a0eacc76a2dc746e7a0b4 assets/citycraft/models/item/cyan_brick_wall.json
@@ -30,6 +32,7 @@ d5dfad70e431b2860f3e10b064a043570e08f35b assets/citycraft/models/item/dye_mix.js
 0d8daa42b0b8857e4365012334c1fe0fb4221994 assets/citycraft/models/item/green_concrete_wall.json
 5ece7d0207c75addbf4ed8c08d09a2ef2cceecac assets/citycraft/models/item/iron_fence.json
 55912ca6180b738287a2e6336c13473c7ac3d125 assets/citycraft/models/item/iron_ladder.json
+f9d69af136512981e33663da6d469d1ec3ff5cc9 assets/citycraft/models/item/iron_rod.json
 5f6cc925f475e9458475298a5f8e55e601e4d673 assets/citycraft/models/item/light_blue_brick_wall.json
 3bdcc65388f901e8ae325d54ec972108d3f00ab9 assets/citycraft/models/item/light_blue_concrete_button.json
 d6d39cf08049d54346cdc9b1c2bf34a3123caef4 assets/citycraft/models/item/light_blue_concrete_lever.json
@@ -46,6 +49,7 @@ b8d8ce638dd1bcf2a161aeac005b3721701e8a59 assets/citycraft/models/item/lime_concr
 a07e210f5ee2f0424b8ac9fc2d5b859c18a31358 assets/citycraft/models/item/magenta_concrete_button.json
 4800fc1fb063c66dfff01282b3553b2fecbcdf7f assets/citycraft/models/item/magenta_concrete_lever.json
 6957ab69f3edf2cb398b210a190395e9fb163b27 assets/citycraft/models/item/magenta_concrete_wall.json
+737fc3a87765f32aefbcd8b2d7d6e92f53664c5e assets/citycraft/models/item/mesh_fence.json
 ff68991a5f3f3f630087bcbb0bb68d154b4f0501 assets/citycraft/models/item/orange_brick_wall.json
 fd09a6f8b18751ccecf71b688746629eae5ff254 assets/citycraft/models/item/orange_concrete_button.json
 29644c7d2fcf957f07c21807c1f08b650fb21520 assets/citycraft/models/item/orange_concrete_lever.json
@@ -69,6 +73,7 @@ a9d5c2d64c68016044c4dd1b3cc06366776ffed8 assets/citycraft/models/item/white_bric
 fd0e7075ff8450adc6004ff41f8304d06be9fdee assets/citycraft/models/item/white_concrete_button.json
 41acf6704dce8ca9dc3f2ac3b4eeba350b4812df assets/citycraft/models/item/white_concrete_lever.json
 1ec9bfade81ddc0d9b7fed46adc4115684c0267b assets/citycraft/models/item/white_concrete_wall.json
+c4a2484b443ae086cc54ba5cbf40a3486fd1c4e7 assets/citycraft/models/item/wire_fence.json
 a7f59f26eb7b6151d23dec3296720ef0e290fa44 assets/citycraft/models/item/yellow_black_barrier_tape.json
 d9510e3900ec62065adb4235c85d760d0926e878 assets/citycraft/models/item/yellow_brick_wall.json
 6a31cb8b5c79e899affca4a8923ae931a884640f assets/citycraft/models/item/yellow_chain.json

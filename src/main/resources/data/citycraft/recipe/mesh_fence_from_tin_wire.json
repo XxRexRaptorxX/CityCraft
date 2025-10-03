@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:wires/tin"
+      },
+      "type": "neoforge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:chain_link_fence"
+    },
+    {
+      "tag": "c:wires/tin"
+    },
+    {
+      "tag": "c:wires/tin"
+    },
+    {
+      "tag": "c:wires/tin"
+    },
+    {
+      "tag": "c:wires/tin"
+    }
+  ],
+  "result": {
+    "id": "citycraft:mesh_fence"
+  }
+}

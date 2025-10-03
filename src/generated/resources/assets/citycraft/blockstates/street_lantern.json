@@ -1,27 +1,51 @@
 {
   "variants": {
-    "flickering=false,forced_on=false,lit=false": {
+    "flickering=false,forced_on=false,initialized=false,lit=false": {
       "model": "citycraft:block/street_lantern"
     },
-    "flickering=false,forced_on=false,lit=true": {
+    "flickering=false,forced_on=false,initialized=false,lit=true": {
       "model": "citycraft:block/street_lantern_on"
     },
-    "flickering=false,forced_on=true,lit=false": {
+    "flickering=false,forced_on=false,initialized=true,lit=false": {
       "model": "citycraft:block/street_lantern"
     },
-    "flickering=false,forced_on=true,lit=true": {
+    "flickering=false,forced_on=false,initialized=true,lit=true": {
       "model": "citycraft:block/street_lantern_on"
     },
-    "flickering=true,forced_on=false,lit=false": {
+    "flickering=false,forced_on=true,initialized=false,lit=false": {
       "model": "citycraft:block/street_lantern"
     },
-    "flickering=true,forced_on=false,lit=true": {
+    "flickering=false,forced_on=true,initialized=false,lit=true": {
       "model": "citycraft:block/street_lantern_on"
     },
-    "flickering=true,forced_on=true,lit=false": {
+    "flickering=false,forced_on=true,initialized=true,lit=false": {
       "model": "citycraft:block/street_lantern"
     },
-    "flickering=true,forced_on=true,lit=true": {
+    "flickering=false,forced_on=true,initialized=true,lit=true": {
+      "model": "citycraft:block/street_lantern_on"
+    },
+    "flickering=true,forced_on=false,initialized=false,lit=false": {
+      "model": "citycraft:block/street_lantern"
+    },
+    "flickering=true,forced_on=false,initialized=false,lit=true": {
+      "model": "citycraft:block/street_lantern_on"
+    },
+    "flickering=true,forced_on=false,initialized=true,lit=false": {
+      "model": "citycraft:block/street_lantern"
+    },
+    "flickering=true,forced_on=false,initialized=true,lit=true": {
+      "model": "citycraft:block/street_lantern_on"
+    },
+    "flickering=true,forced_on=true,initialized=false,lit=false": {
+      "model": "citycraft:block/street_lantern"
+    },
+    "flickering=true,forced_on=true,initialized=false,lit=true": {
+      "model": "citycraft:block/street_lantern_on"
+    },
+    "flickering=true,forced_on=true,initialized=true,lit=false": {
+      "model": "citycraft:block/street_lantern"
+    },
+    "flickering=true,forced_on=true,initialized=true,lit=true": {
       "model": "citycraft:block/street_lantern_on"
     }
   }

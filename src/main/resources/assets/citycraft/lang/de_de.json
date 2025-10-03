@@ -30,6 +30,7 @@
   "item.citycraft.coal_tar": "Steinkohlenteer",
   "item.citycraft.asphalt_mixture": "Asphalt Gemisch",
   "item.citycraft.dye_mix": "Farbstoff Mischung",
+  "item.citycraft.iron_rod": "Eisenstab",
   "block.citycraft.asphalt": "Asphalt",
   "block.citycraft.cracked_asphalt": "Gerissener Asphalt",
   "block.citycraft.pothole_asphalt": "Asphalt mit Schlagloch",
@@ -1277,5 +1278,9 @@
   "block.citycraft.red_brick_wall": "Rote Ziegelstein Mauer",
   "block.citycraft.iron_ladder": "Eisenleiter",
   "block.citycraft.lighting_rod": "Stablampe",
-  "block.citycraft.wall_lighting_rod": "Wand Stablampe"
+  "block.citycraft.wall_lighting_rod": "Wand Stablampe",
+  "block.citycraft.wire_fence": "Drahtzaun",
+  "block.citycraft.chain_link_fence": "Maschendrahtzaun",
+  "block.citycraft.mesh_fence": "Enger Maschendrahtzaun",
+  "block.citycraft.barbed_wire_fence": "Stacheldrahtzaun"
 }

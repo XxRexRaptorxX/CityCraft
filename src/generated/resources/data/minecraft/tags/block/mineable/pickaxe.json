@@ -1244,6 +1244,10 @@
     "citycraft:red_brick_wall",
     "citycraft:iron_ladder",
     "citycraft:lighting_rod",
-    "citycraft:wall_lighting_rod"
+    "citycraft:wall_lighting_rod",
+    "citycraft:wire_fence",
+    "citycraft:chain_link_fence",
+    "citycraft:mesh_fence",
+    "citycraft:barbed_wire_fence"
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:tag_empty",
+          "tag": "c:wires/iron"
+        },
+        {
+          "type": "neoforge:tag_empty",
+          "tag": "c:wires/tin"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "I#I",
+    "I#I"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_bars"
+    },
+    "I": {
+      "item": "citycraft:iron_pole"
+    }
+  },
+  "result": {
+    "id": "citycraft:wire_fence",
+    "count": 16
+  }
+}

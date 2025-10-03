@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:shards/iron"
+      },
+      "type": "neoforge:not"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "citycraft:wire_fence"
+    },
+    {
+      "tag": "c:shards/iron"
+    },
+    {
+      "tag": "c:shards/iron"
+    },
+    {
+      "tag": "c:shards/iron"
+    },
+    {
+      "tag": "c:shards/iron"
+    },
+    {
+      "tag": "c:shards/iron"
+    }
+  ],
+  "result": {
+    "id": "citycraft:barbed_wire_fence"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side_alt",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "edge": "citycraft:block/mesh_fence",
+    "pane": "citycraft:block/mesh_fence"
+  }
+}

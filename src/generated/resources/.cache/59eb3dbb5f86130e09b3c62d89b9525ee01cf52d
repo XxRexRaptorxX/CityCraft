@@ -1,4 +1,4 @@
-// 1.21	2025-10-02T21:27:38.7089652	Loot Tables
+// 1.21	2025-10-03T16:47:25.779535	Loot Tables
 7368a076406b45a92c20ce5eff9ad50e3450f5a1 data/citycraft/loot_table/blocks/0_sign.json
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_table/blocks/100_speed_eu_sign.json
 7a90e771f0880894a9b1aa172c8080bc9742350f data/citycraft/loot_table/blocks/10_minimum_speed_sign_eu.json
@@ -383,6 +383,7 @@ ef6fd5f6b9a3828350d7a30c7784ff5d511acdce data/citycraft/loot_table/blocks/asphal
 f516dee1b79da15b2f283594076a462ac0039359 data/citycraft/loot_table/blocks/assembly_point_sign.json
 3e59569bd6591910802b996b2cc3083b32a480a3 data/citycraft/loot_table/blocks/a_sign.json
 ecea940260662489c165d2304de4c45fa1a579d9 data/citycraft/loot_table/blocks/bake_sign.json
+595531625d7135eb119cf827338cb12a96786d36 data/citycraft/loot_table/blocks/barbed_wire_fence.json
 b47cf213714ceccce4a5aca335b325f75f38e81b data/citycraft/loot_table/blocks/bathrooms_us_sign.json
 79a409bf2149bd65b606d8bc0990aabade6abc0e data/citycraft/loot_table/blocks/bicycle_crossing_us_sign.json
 c4d88ca6c1369293a09aa01c55400a36f5173831 data/citycraft/loot_table/blocks/bicycle_double_traffic_light.json
@@ -476,6 +477,7 @@ b0c1b4e2bd85549fffdafaf25020eb5749e92e7f data/citycraft/loot_table/blocks/calmin
 db2405c641bf19766944815af8fa895e7648d7be data/citycraft/loot_table/blocks/cattle_cn_sign.json
 38b2ebd97613e8e04ac050434f03dfecc7b8a154 data/citycraft/loot_table/blocks/cattle_eu_sign.json
 b79136c9344cd275c3eb61dbe80362245ea80f50 data/citycraft/loot_table/blocks/cattle_us_sign.json
+e053756399528e6defd9b9f5ab5295dc3e51dfee data/citycraft/loot_table/blocks/chain_link_fence.json
 253dc15added4423303b435353ae040decd6c91b data/citycraft/loot_table/blocks/charging_station_eu_sign.json
 910157d29b3f5439b6d81582e9db764397140933 data/citycraft/loot_table/blocks/children_cn_sign.json
 89abfe1e9576230c0e8981981c585227d577d36c data/citycraft/loot_table/blocks/children_eu_sign.json
@@ -817,6 +819,7 @@ e1baf7ba9af46f12a5e3654d242665a8b5c22598 data/citycraft/loot_table/blocks/magent
 715080b82781aca06315fde03b4b2370659c59a0 data/citycraft/loot_table/blocks/magnetic_warning_sign.json
 595c31694206ee56f28947f333f2f7acf8d4856f data/citycraft/loot_table/blocks/mandatory_sign.json
 d90428ec0dd8431b00f510f937adfda952b06016 data/citycraft/loot_table/blocks/medical_service_us_sign.json
+8850b2136d43d352e1dc0be1a4dddfdd9e5dcd9d data/citycraft/loot_table/blocks/mesh_fence.json
 77995324539f095987bc1b05cbf9aba3f9f16b95 data/citycraft/loot_table/blocks/modern_street_lantern.json
 5fc36db56075a4dedcc5c636296efc7b2bd36613 data/citycraft/loot_table/blocks/monster_warning_sign.json
 35425d1bcf0d24c6fc20c3d366eae4953849ba39 data/citycraft/loot_table/blocks/mossy_asphalt.json
@@ -1209,6 +1212,7 @@ baa87b186b39354a39cce98d6bbd2f5691440402 data/citycraft/loot_table/blocks/white_
 bff76ef5271b5791be1e33d5a5c2bee855d71263 data/citycraft/loot_table/blocks/white_post.json
 6c715d22e7d8061fba0961ac5a4cde7f0f67909a data/citycraft/loot_table/blocks/winding_road_us_sign.json
 e02f7ff4042e5f41e5abc56c0409a344e7b55714 data/citycraft/loot_table/blocks/winter_recreation_area_us_sign.json
+68d12bcdbac147ee5f3defcaa981d9d45810aa4e data/citycraft/loot_table/blocks/wire_fence.json
 653829ba15407211d09a8c6d98962ef4aef2945f data/citycraft/loot_table/blocks/workers_us_sign.json
 84f5333642cbba80feb273ea851729b7a639d765 data/citycraft/loot_table/blocks/w_sign.json
 cd2e8cd09746d11dc3b588a4f87dbc3a5fd75b99 data/citycraft/loot_table/blocks/x_sign.json

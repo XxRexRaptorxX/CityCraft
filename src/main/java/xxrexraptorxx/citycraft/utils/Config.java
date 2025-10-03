@@ -9,6 +9,7 @@ public class Config {
     public static final String CATEGORY_GENERAL = "general";
     public static final String CATEGORY_ROADS = "roads";
     public static final String CATEGORY_SIGNS = "signs";
+    public static final String CATEGORY_FENCES = "fences";
 
     public static ModConfigSpec SERVER_CONFIG;
     public static ModConfigSpec CLIENT_CONFIG;
@@ -22,6 +23,8 @@ public class Config {
     public static ModConfigSpec.BooleanValue SPLIT_TRAFFIC_SIGN_TAB;
     public static ModConfigSpec.IntValue SPEED_EFFECT_AMPLIFIER;
     public static ModConfigSpec.IntValue BOOST_SPEED_EFFECT_AMPLIFIER;
+    public static ModConfigSpec.BooleanValue BARBED_WIRE_DESTROY_ITEMS;
+    public static ModConfigSpec.IntValue BARBED_WIRE_FENCE_DAMAGE;
 
     public static void init(ModContainer container) {
         initServer();
@@ -61,6 +64,11 @@ public class Config {
         ENABLE_ASPHALT_SPEED_EFFECT = builder.comment("Enables the speed effect you get when you run on asphalt. [not boost blocks]").define("enable_asphalt_speed_effect", true);
         SPEED_EFFECT_AMPLIFIER = builder.comment("How strong the speed effect should be.").defineInRange("speed_effect_amplifier", 1, 0, 5);
         BOOST_SPEED_EFFECT_AMPLIFIER = builder.comment("How strong the speed effect of Boost blocks should be.").defineInRange("boost_speed_effect_amplifier", 3, 0, 5);
+        builder.pop();
+
+        builder.comment("Fences").push(CATEGORY_FENCES);
+        BARBED_WIRE_DESTROY_ITEMS = builder.comment("If enabled, barbed wire and razor wire destroys items").define("barbed_wire_destroy_items", false);
+        BARBED_WIRE_FENCE_DAMAGE = builder.comment("Defines how much damage the Barbed Wire Fence do").defineInRange("barbed_wire_fence_damage", 1, 1, 50);
         builder.pop();
 
         SERVER_CONFIG = builder.build();

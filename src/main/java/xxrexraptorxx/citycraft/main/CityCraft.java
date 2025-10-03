@@ -237,6 +237,7 @@ public class CityCraft {
             event.accept(ModItems.COAL_COKE.get());
             event.accept(ModItems.ASPHALT_MIXTURE.get());
             event.accept(ModItems.DYE_MIX.get());
+            event.accept(ModItems.IRON_ROD.get());
 
         } else if (key == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.COAL_TAR.get());
@@ -245,6 +246,10 @@ public class CityCraft {
             event.accept(ModBlocks.IRON_FENCE.get());
             event.accept(ModBlocks.IRON_POLE.get());
             event.accept(ModBlocks.STONE_POST.get());
+            event.accept(ModBlocks.WIRE_FENCE.get());
+            event.accept(ModBlocks.CHAIN_LINK_FENCE.get());
+            event.accept(ModBlocks.MESH_FENCE.get());
+            event.accept(ModBlocks.BARBED_WIRE_FENCE.get());
 
         } else if (key == CreativeModeTabs.COLORED_BLOCKS) {
             event.accept(ModBlocks.POLISHED_WHITE_CONCRETE.get());

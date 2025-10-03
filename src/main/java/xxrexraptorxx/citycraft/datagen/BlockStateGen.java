@@ -1351,6 +1351,11 @@ public class BlockStateGen extends BlockStateProvider {
 
         makeBlockFromParentModel(ModBlocks.LIGHTING_ROD.get(), "torch_like");
         makeHorizontalBlock(ModBlocks.WALL_LIGHTING_ROD.get(), "wall_torch_like", ResourceLocation.fromNamespaceAndPath(References.MODID, "block/lighting_rod"));
+
+        makeBarsBlock(ModBlocks.WIRE_FENCE.get());
+        makeBarsBlock(ModBlocks.CHAIN_LINK_FENCE.get());
+        makeBarsBlock(ModBlocks.MESH_FENCE.get());
+        makeBarsBlock(ModBlocks.BARBED_WIRE_FENCE.get());
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1465,6 +1470,13 @@ public class BlockStateGen extends BlockStateProvider {
     private void makePillarBlock(RotatedPillarBlock block) {
         axisBlock(block);
         makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeBarsBlock(IronBarsBlock block) {
+        String name = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        paneBlockWithRenderType(block, modLoc("block/" + name), modLoc("block/" + name), ResourceLocation.withDefaultNamespace("cutout_mipped"));
     }
 
 

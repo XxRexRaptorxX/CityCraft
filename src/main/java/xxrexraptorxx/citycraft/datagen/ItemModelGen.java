@@ -25,6 +25,7 @@ public class ItemModelGen extends ItemModelProvider {
         itemGenerated(ModItems.COAL_TAR);
         itemGenerated(ModItems.ASPHALT_MIXTURE);
         itemGenerated(ModItems.DYE_MIX);
+        itemGenerated(ModItems.IRON_ROD);
 
         itemGenerated(ModBlocks.WHITE_CHAIN);
         itemGenerated(ModBlocks.RED_CHAIN);
@@ -105,6 +106,11 @@ public class ItemModelGen extends ItemModelProvider {
         leverItem(ModBlocks.BROWN_CONCRETE_LEVER);
         leverItem(ModBlocks.GREEN_CONCRETE_LEVER);
         leverItem(ModBlocks.RED_CONCRETE_LEVER);
+
+        itemGenerated(ModBlocks.WIRE_FENCE, "block");
+        itemGenerated(ModBlocks.CHAIN_LINK_FENCE, "block");
+        itemGenerated(ModBlocks.MESH_FENCE, "block");
+        itemGenerated(ModBlocks.BARBED_WIRE_FENCE, "block");
     }
 
 
@@ -115,8 +121,13 @@ public class ItemModelGen extends ItemModelProvider {
 
 
     private void itemGenerated(DeferredBlock item) {
+        itemGenerated(item, "item");
+    }
+
+
+    private void itemGenerated(DeferredBlock item, String textureFolder) {
         singleTexture(item.getId().getPath(), ResourceLocation.withDefaultNamespace(ITEM_FOLDER + "/generated"), "layer0",
-                ResourceLocation.fromNamespaceAndPath(References.MODID, "item/" + item.getId().getPath()));
+                ResourceLocation.fromNamespaceAndPath(References.MODID, textureFolder + "/" + item.getId().getPath()));
     }
 
 

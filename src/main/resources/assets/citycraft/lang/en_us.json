@@ -30,6 +30,7 @@
   "item.citycraft.coal_tar": "Coal Tar",
   "item.citycraft.asphalt_mixture": "Asphalt Mixture",
   "item.citycraft.dye_mix": "Dye Mix",
+  "item.citycraft.iron_rod": "Iron Rod",
   "block.citycraft.asphalt": "Asphalt",
   "block.citycraft.cracked_asphalt": "Cracked Asphalt",
   "block.citycraft.pothole_asphalt": "Asphalt with Pothole",
@@ -1273,5 +1274,9 @@
   "block.citycraft.red_brick_wall": "Red Brick Wall",
   "block.citycraft.iron_ladder": "Iron Ladder",
   "block.citycraft.lighting_rod": "Lighting Rod",
-  "block.citycraft.wall_lighting_rod": "Wall Lighting Rod"
+  "block.citycraft.wall_lighting_rod": "Wall Lighting Rod",
+  "block.citycraft.wire_fence": "Wire Fence",
+  "block.citycraft.chain_link_fence": "Chain Link Fence",
+  "block.citycraft.mesh_fence": "Iron Mesh Fence",
+  "block.citycraft.barbed_wire_fence": "Barbed Wire Fence"
 }

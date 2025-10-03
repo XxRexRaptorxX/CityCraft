@@ -15,6 +15,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.citycraft.blocks.*;
+import xxrexraptorxx.citycraft.blocks.ThinFenceBlock;
 import xxrexraptorxx.citycraft.blocks.LanternBlock;
 import xxrexraptorxx.citycraft.blocks.WallSignBlock;
 import xxrexraptorxx.citycraft.main.References;
@@ -921,7 +922,8 @@ public class ModBlocks {
     public static final DeferredBlock<DrainCoverBlock> DRAIN_COVER = registerBlock("drain_cover", DrainCoverBlock::new);
     public static final DeferredBlock<DrainCoverBlock> DRAIN_COVER_GRID = registerBlock("drain_cover_grid", DrainCoverBlock::new);
 
-    public static final DeferredBlock<FenceBlock> IRON_FENCE = registerBlock("iron_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.IRON_POLE.get())));
+    public static final DeferredBlock<net.minecraft.world.level.block.FenceBlock> IRON_FENCE = registerBlock("iron_fence",
+            () -> new net.minecraft.world.level.block.FenceBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.IRON_POLE.get())));
     public static final DeferredBlock<TrafficBarrierBlock> TRAFFIC_BARRIER = registerBlock("traffic_barrier", TrafficBarrierBlock::new);
     public static final DeferredBlock<TrafficBarrierBlock> RED_WHITE_TRAFFIC_BARRIER = registerBlock("red_white_traffic_barrier", TrafficBarrierBlock::new);
     public static final DeferredBlock<TrafficBarrierBlock> YELLOW_BLACK_TRAFFIC_BARRIER = registerBlock("yellow_black_traffic_barrier", TrafficBarrierBlock::new);
@@ -1825,6 +1827,12 @@ public class ModBlocks {
     public static final DeferredBlock<WallLightingRod> WALL_LIGHTING_ROD = BLOCKS.register("wall_lighting_rod",
             () -> new WallLightingRod(BlockBehaviour.Properties.of().dropsLike(LIGHTING_ROD.get()).sound(SoundType.METAL).mapColor(MapColor.METAL)
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE).noCollission().instabreak().lightLevel(p -> 14).pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<ThinFenceBlock> WIRE_FENCE = registerBlock("wire_fence", () -> new ThinFenceBlock(BlockBehaviour.Properties.of()));
+    public static final DeferredBlock<ThinFenceBlock> CHAIN_LINK_FENCE = registerBlock("chain_link_fence", () -> new ThinFenceBlock(BlockBehaviour.Properties.of()));
+    public static final DeferredBlock<ThinFenceBlock> MESH_FENCE = registerBlock("mesh_fence", () -> new ThinFenceBlock(BlockBehaviour.Properties.of()));
+    public static final DeferredBlock<ThinFenceBlock> BARBED_WIRE_FENCE = registerBlock("barbed_wire_fence",
+            () -> new ThinFenceBlock(BlockBehaviour.Properties.of().noCollission()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

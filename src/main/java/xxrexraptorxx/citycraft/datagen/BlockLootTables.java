@@ -1341,6 +1341,10 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.PINK_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.PINK_BRICK_SLAB.get()));
 
         this.dropSelf(ModBlocks.LIGHTING_ROD.get());
+        this.dropSelf(ModBlocks.WIRE_FENCE.get());
+        this.dropSelf(ModBlocks.CHAIN_LINK_FENCE.get());
+        this.dropSelf(ModBlocks.MESH_FENCE.get());
+        this.dropSelf(ModBlocks.BARBED_WIRE_FENCE.get());
     }
 
 

@@ -101,6 +101,8 @@ public class ItemTagGen extends ItemTagsProvider {
         tag(ModItemTags.createItemTag("c", "dusts/asphalt")).add(ModItems.ASPHALT_MIXTURE.get());
         tag(Tags.Items.DUSTS).addTag(ModItemTags.createItemTag("c", "dusts/asphalt"));
         tag(ItemTags.COALS).add(ModItems.COAL_COKE.get());
+        tag(ModItemTags.IRON_RODS).add(ModItems.IRON_ROD.get());
+        tag(Tags.Items.RODS).addTag(ModItemTags.IRON_RODS);
 
         addByPathModPredicate(lookup, Tags.Items.DYED_BLACK, path -> (path.contains("black")));
         addByPathModPredicate(lookup, Tags.Items.DYED_WHITE, path -> (path.contains("white")));

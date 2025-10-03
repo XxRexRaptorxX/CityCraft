@@ -53,6 +53,11 @@ public class CreativeTabs {
                         output.accept(ModBlocks.DRAIN_COVER.get());
                         output.accept(ModBlocks.DRAIN_COVER_GRID.get());
 
+                        output.accept(ModBlocks.WIRE_FENCE.get());
+                        output.accept(ModBlocks.CHAIN_LINK_FENCE.get());
+                        output.accept(ModBlocks.MESH_FENCE.get());
+                        output.accept(ModBlocks.BARBED_WIRE_FENCE.get());
+
                         output.accept(ModBlocks.WHITE_CHAIN.get());
                         output.accept(ModBlocks.RED_CHAIN.get());
                         output.accept(ModBlocks.YELLOW_CHAIN.get());
@@ -117,6 +122,7 @@ public class CreativeTabs {
                         output.accept(ModBlocks.MAGENTA_CONCRETE_FLOWER_BOX.get());
                         output.accept(ModBlocks.PINK_CONCRETE_FLOWER_BOX.get());
 
+                        output.accept(ModItems.IRON_ROD.get());
                         output.accept(ModItems.COAL_COKE.get());
                         output.accept(ModItems.ASPHALT_MIXTURE.get());
                         output.accept(ModItems.DYE_MIX.get());
