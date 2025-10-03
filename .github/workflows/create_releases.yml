@@ -26,29 +26,16 @@ jobs:
         id: get_repository_content
         run: |
           REPO="${{ github.repository }}"
-          PATH="src/main/resources/logo.png"   # Pfad relativ zum Branch
-          RAW_BASE="https://raw.githubusercontent.com/${REPO}"
-          BRANCH="main"
+          PATH="src/main/resources/logo.png"
           FALLBACK_PAGE="https://github.com/XxRexRaptorxX?tab=repositories"
           FALLBACK_IMAGE="https://raw.githubusercontent.com/XxRexRaptorxX/General/refs/heads/main/icons/profile_pic.png"
 
-          RAW_URL="${RAW_BASE}/${BRANCH}/${PATH}"
-          status=$(curl -s -o /dev/null -w "%{http_code}" "$RAW_URL")
-
-          if [ "$status" -ne 200 ]; then
-            DEF_BRANCH=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${REPO}" \
-              | sed -n 's/.*"default_branch": "\([^"]*\)".*/\1/p')
-
-            if [ -n "$DEF_BRANCH" ] && [ "$DEF_BRANCH" != "$BRANCH" ]; then
-              RAW_URL="${RAW_BASE}/${DEF_BRANCH}/${PATH}"
-              status=$(curl -s -o /dev/null -w "%{http_code}" "$RAW_URL")
-            fi
-          fi
-
-          if [ "$status" -eq 200 ]; then
+          if [ -f "${GITHUB_WORKSPACE}/${PATH}" ]; then
+            RAW_URL="https://raw.githubusercontent.com/${REPO}/${{ github.sha }}/${PATH}"
             echo "image_url=${RAW_URL}" >> $GITHUB_OUTPUT
             echo "page_url=https://github.com/${REPO}" >> $GITHUB_OUTPUT
           else
+            # kein Logo im Repo -> Fallbacks verwenden
             echo "image_url=${FALLBACK_IMAGE}" >> $GITHUB_OUTPUT
             echo "page_url=${FALLBACK_PAGE}" >> $GITHUB_OUTPUT
           fi
