@@ -1345,6 +1345,8 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHAIN_LINK_FENCE.get());
         this.dropSelf(ModBlocks.MESH_FENCE.get());
         this.dropSelf(ModBlocks.BARBED_WIRE_FENCE.get());
+
+        this.dropSelf(ModBlocks.IRON_GRATE.get());
     }
 
 

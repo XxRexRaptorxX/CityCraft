@@ -1,5 +1,6 @@
 package xxrexraptorxx.citycraft.datagen;
 
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -1356,6 +1357,8 @@ public class BlockStateGen extends BlockStateProvider {
         makeBarsBlock(ModBlocks.CHAIN_LINK_FENCE.get());
         makeBarsBlock(ModBlocks.MESH_FENCE.get());
         makeBarsBlock(ModBlocks.BARBED_WIRE_FENCE.get());
+
+        makeSimpleBlockWithRenderType(ModBlocks.IRON_GRATE.get(), RenderType.cutoutMipped());
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1476,7 +1479,18 @@ public class BlockStateGen extends BlockStateProvider {
     private void makeBarsBlock(IronBarsBlock block) {
         String name = BuiltInRegistries.BLOCK.getKey(block).getPath();
 
-        paneBlockWithRenderType(block, modLoc("block/" + name), modLoc("block/" + name), ResourceLocation.withDefaultNamespace("cutout_mipped"));
+        paneBlockWithRenderType(block, modLoc("block/" + name), modLoc("block/" + name), ResourceLocation.withDefaultNamespace(RenderType.CUTOUT_MIPPED.name));
+    }
+
+
+    private void makeSimpleBlockWithRenderType(Block block, RenderType renderType) {
+        String name = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        BlockModelBuilder builder = models().getBuilder(name).parent(new ModelFile.UncheckedModelFile(ResourceLocation.withDefaultNamespace("block/cube_all")))
+                .texture("all", ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + name)).renderType(mcLoc(renderType.name));
+
+        simpleBlock(block, builder);
+        makeBlockItemFromExistingModel(block);
     }
 
 
@@ -1692,7 +1706,7 @@ public class BlockStateGen extends BlockStateProvider {
 
         BlockModelBuilder base = models().withExistingParent(blockTexture, modLoc("block/flower_box")).texture("side", getLoc(baseBlock) + sideTexture)
                 .texture("top", getLoc(endBlock) + endTexture).texture("bottom", getLoc(endBlock) + endTexture).texture("overlay", overlayTexture)
-                .texture("particle", getLoc(baseBlock) + sideTexture).renderType(mcLoc("cutout"));
+                .texture("particle", getLoc(baseBlock) + sideTexture).renderType(mcLoc(RenderType.CUTOUT.name));
 
         simpleBlock(block, base);
         makeBlockItemFromExistingModel(block);

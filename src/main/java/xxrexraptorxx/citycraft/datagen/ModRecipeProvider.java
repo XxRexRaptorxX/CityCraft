@@ -625,6 +625,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         flowerBoxRecipes(ModBlocks.QUARTZ_FLOWER_BOX.get(), Blocks.CHISELED_QUARTZ_BLOCK, output);
         flowerBoxRecipes(ModBlocks.TUFF_FLOWER_BOX.get(), Blocks.CHISELED_TUFF_BRICKS, output);
 
+        grateRecipes(ModBlocks.IRON_GRATE.get(), Tags.Items.STORAGE_BLOCKS_IRON, output);
+
         registerConcreteRecipes(output);
         registerBrickRecipes(output);
         registerBasicColorRecipes(output);
@@ -890,7 +892,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     private static final String STONE_CUTTING_PATH = References.MODID + ":stonecutting/";
 
 
-    protected static void slabRecipes(Block result, Block input, RecipeOutput output) {
+    protected static void slabRecipes(Block result, ItemLike input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 6).pattern("###").define('#', input).unlockedBy(getHasName(input), has(input)).save(output,
                 References.MODID + ":slabs/" + BuiltInRegistries.BLOCK.getKey(result).getPath());
     }
@@ -912,19 +914,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
 
-    protected static void stairsRecipes(Block result, Block input, RecipeOutput output) {
+    protected static void stairsRecipes(Block result, ItemLike input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4).pattern("#  ").pattern("## ").pattern("###").define('#', input)
                 .unlockedBy(getHasName(input), has(input)).save(output, References.MODID + ":stairs/" + BuiltInRegistries.BLOCK.getKey(result).getPath());
     }
 
 
-    protected static void wallRecipes(Block result, Block input, RecipeOutput output) {
+    protected static void wallRecipes(Block result, ItemLike input, RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 6).pattern("###").pattern("###").define('#', input).unlockedBy(getHasName(input), has(input))
                 .save(output);
     }
 
 
-    protected static void mossyRecipes(Block result, Block input, RecipeOutput output) {
+    protected static void grateRecipes(Block result, TagKey<Item> input, RecipeOutput output) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result, 4).pattern(" # ").pattern("# #").pattern(" # ").define('#', input).unlockedBy("has_" + input, has(input))
+                .save(output);
+    }
+
+
+    protected static void mossyRecipes(Block result, ItemLike input, RecipeOutput output) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Blocks.MOSS_BLOCK).unlockedBy(getHasName(input), has(input))
                 .group("mossy").save(output, BuiltInRegistries.BLOCK.getKey(result) + "_with_moss");
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(Blocks.VINE).unlockedBy(getHasName(input), has(input)).group("mossy")
@@ -950,7 +958,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
 
-    protected static void variableTrafficSignRecipes(Block result, Block input, RecipeOutput output) {
+    protected static void variableTrafficSignRecipes(Block result, ItemLike input, RecipeOutput output) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(input).requires(ModBlocks.VARIABLE_TRAFFIC_SIGN.get())
                 .unlockedBy(getHasName(input), has(input)).group("variable_traffic_signs").save(output);
     }
@@ -964,19 +972,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
 
-    protected static void simpleShapelessRecipes(Block result, Item firstInput, TagKey<Item> secondInput, RecipeOutput output, String group) {
+    protected static void simpleShapelessRecipes(Block result, ItemLike firstInput, TagKey<Item> secondInput, RecipeOutput output, String group) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(firstInput).requires(secondInput).unlockedBy("has_" + secondInput, has(secondInput))
                 .group(group).save(output);
     }
 
 
-    protected static void simpleShapelessRecipes(Block result, Item firstInput, Item secondInput, TagKey<Item> thirdInput, RecipeOutput output, String group) {
+    protected static void simpleShapelessRecipes(Block result, ItemLike firstInput, ItemLike secondInput, TagKey<Item> thirdInput, RecipeOutput output, String group) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(firstInput).requires(secondInput).requires(thirdInput)
                 .unlockedBy("has_" + secondInput, has(secondInput)).group(group).save(output);
     }
 
 
-    protected static void simpleShapelessRecipes(Block result, Item firstInput, Item secondInput, RecipeOutput output, String group) {
+    protected static void simpleShapelessRecipes(Block result, ItemLike firstInput, ItemLike secondInput, RecipeOutput output, String group) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, result, 1).requires(firstInput).requires(secondInput).unlockedBy(getHasName(secondInput), has(secondInput))
                 .group(group).save(output);
     }

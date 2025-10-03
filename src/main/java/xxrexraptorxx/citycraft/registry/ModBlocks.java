@@ -1834,6 +1834,9 @@ public class ModBlocks {
     public static final DeferredBlock<ThinFenceBlock> BARBED_WIRE_FENCE = registerBlock("barbed_wire_fence",
             () -> new ThinFenceBlock(BlockBehaviour.Properties.of().noCollission()));
 
+    public static final DeferredBlock<GrateBlock> IRON_GRATE = registerBlock("iron_grate",
+            () -> new GrateBlock(BlockBehaviour.Properties.of().strength(3.5F, 6.5F).sound(SoundType.METAL).mapColor(MapColor.METAL)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

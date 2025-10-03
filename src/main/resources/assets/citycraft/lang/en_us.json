@@ -1278,5 +1278,6 @@
   "block.citycraft.wire_fence": "Wire Fence",
   "block.citycraft.chain_link_fence": "Chain Link Fence",
   "block.citycraft.mesh_fence": "Iron Mesh Fence",
-  "block.citycraft.barbed_wire_fence": "Barbed Wire Fence"
+  "block.citycraft.barbed_wire_fence": "Barbed Wire Fence",
+  "block.citycraft.iron_grate": "Iron Grate"
 }

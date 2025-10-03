@@ -1,4 +1,4 @@
-// 1.21	2025-10-03T17:17:30.3602572	Block States: citycraft
+// 1.21	2025-10-03T23:19:33.1802711	Block States: citycraft
 34d865f45cb185f8a8864c62731517a9c0d5f978 assets/citycraft/blockstates/0_sign.json
 b51850f16e80dab0090eda4583a749cebcc5b44c assets/citycraft/blockstates/100_speed_eu_sign.json
 f2d1988ae893964ed56315a0670002e877f30a3c assets/citycraft/blockstates/10_minimum_speed_sign_eu.json
@@ -684,6 +684,7 @@ a02a8dfc8a939a211fe06ddd355c7a5dadd51bdb assets/citycraft/blockstates/infested_w
 8b100223da33178c2198aa533296e27d4bd6f152 assets/citycraft/blockstates/intersection_eu_sign.json
 202c33a65a505ffbd531943ac9f7a8de3d1c7c8c assets/citycraft/blockstates/iron_fence.json
 b8a465638cba038f09759ef736624eb5aacf24e2 assets/citycraft/blockstates/iron_flue.json
+b93fb169a5073fd24d800e7c03189c351362cc0e assets/citycraft/blockstates/iron_grate.json
 a87cd9f4a162c1b31790e1bef6c1217598e7b37e assets/citycraft/blockstates/i_sign.json
 afab89418a5231f20c90185e0be0fde4e1855309 assets/citycraft/blockstates/jams_cn_sign.json
 569534cae5e9b6a8f4457f21a7a4731f04fcc0bf assets/citycraft/blockstates/jams_eu_sign.json
@@ -2206,6 +2207,7 @@ e6086527dc1b52368d0312a7c2c264eb3d361c81 assets/citycraft/models/block/intersect
 932e2fe0e1b905949ae0a82c2e704c87f60e2247 assets/citycraft/models/block/iron_fence_post.json
 683f8e014a25659733ab9123443ba620ad529c2c assets/citycraft/models/block/iron_fence_side.json
 a3b5fdf1a899eb9168ef46d2f5d131a34fc4fdfa assets/citycraft/models/block/iron_flue.json
+4dc6a8332558924afc7cfea7df2e5080bddf9114 assets/citycraft/models/block/iron_grate.json
 64e87a2df0c8cc3c73a26be7f189d5624dd97ec9 assets/citycraft/models/block/i_sign.json
 a6a66002022b9efdf467c6bd2275ebac90b48b9d assets/citycraft/models/block/jams_cn_sign.json
 1df6ac26c29c337237abb590e075ab48c2f6e213 assets/citycraft/models/block/jams_eu_sign.json
@@ -3642,6 +3644,7 @@ da4380dad633f1d7827b55a8d85cfdbc1bcae4d4 assets/citycraft/models/item/info_us_si
 b3c29824a02bcbb7b64dfa4e726f21ff96244bc2 assets/citycraft/models/item/intersection_cn_sign.json
 46d48304631a8537f026ca78fdde7f387ef585ff assets/citycraft/models/item/intersection_eu_sign.json
 dabac06bfed920efaddd3eab9cfdf018d82f7db0 assets/citycraft/models/item/iron_flue.json
+3d6a0ab58e8ffb5b50670d66b95da7f51adfe9ca assets/citycraft/models/item/iron_grate.json
 2661577f41115e7ada2f15f986ac2e82d038c325 assets/citycraft/models/item/iron_pole.json
 3de29a9f4cdc7aa834cf6f349c45a438958972f5 assets/citycraft/models/item/i_sign.json
 67b12497809d7ce3df704cd54c69a49fffee9789 assets/citycraft/models/item/jams_cn_sign.json

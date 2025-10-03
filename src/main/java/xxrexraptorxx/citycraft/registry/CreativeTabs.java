@@ -53,6 +53,8 @@ public class CreativeTabs {
                         output.accept(ModBlocks.DRAIN_COVER.get());
                         output.accept(ModBlocks.DRAIN_COVER_GRID.get());
 
+                        output.accept(ModBlocks.IRON_GRATE.get());
+
                         output.accept(ModBlocks.WIRE_FENCE.get());
                         output.accept(ModBlocks.CHAIN_LINK_FENCE.get());
                         output.accept(ModBlocks.MESH_FENCE.get());
