@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "gabion",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "citycraft:iron_grate"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:stone_gabion_fence"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.21	2025-10-03T17:30:22.4013026	Tags for minecraft:item mod id citycraft
+// 1.21	2025-10-04T00:00:46.6461894	Tags for minecraft:item mod id citycraft
 7c9bb93a1fc8f0739b2d217b188507e005114f2d data/citycraft/tags/item/asphalt.json
 b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/item/asphalt_slabs_with_markings.json
 47f60bc7f566d7e79607e77d2ab1f24026498c88 data/citycraft/tags/item/asphalt_with_markings.json
@@ -57,6 +57,8 @@ fd5a458c875a4c9ae964a66386edea061024f5ee data/c/tags/item/dyed/red.json
 1f676f071a8549102c4c9f5e9b1546abdb329de8 data/c/tags/item/dyed/yellow.json
 5f04715e0e5f22f49a808dbe0bcfea5086d25f4f data/c/tags/item/dyes.json
 0a10758b9a1786f66711e82097530f67735508ac data/c/tags/item/dyes/mix.json
+995b5453749a74d1195d37a9a635350588663d33 data/c/tags/item/fences/gabion.json
+df19c065fb725efead89509b91b6c531dbd73540 data/c/tags/item/fences/thin.json
 93433fd308f6d9993712749cf17727ea02138207 data/c/tags/item/hanging_signs/wood.json
 3eec0bb7da17ebdf3ba5daf533c6be314e192265 data/c/tags/item/poles/iron.json
 7c18a5550bf07548ca739e5170507d8c8901d205 data/c/tags/item/posts/stone.json
@@ -65,7 +67,7 @@ bb93087f00d50be8f986165711a25f22f976998c data/c/tags/item/rods/iron.json
 e5f4ffd4d95a4b566b06cd7001b5413cd34b094e data/c/tags/item/signs/wood.json
 704a5caea37c07627bfb0db3c150a03bab5a922e data/minecraft/tags/item/buttons.json
 b6bad468f2095888018ed1b07350b14284ae4ac9 data/minecraft/tags/item/coals.json
-585b0c0ac0dc82658d705d736a101761ca40bbf8 data/minecraft/tags/item/fences.json
+94ba0098c5aced5815411f47a64a017f29885004 data/minecraft/tags/item/fences.json
 647632d5b00f25dd6a27e35681962f640cd6d3f9 data/minecraft/tags/item/levers.json
 6bfc565923165a40abeac788ef0b76ee430e3e17 data/minecraft/tags/item/pressure_plates.json
 1ddefb1e83a38929cad8d721be99a1473daf0597 data/minecraft/tags/item/slabs.json

@@ -1,9 +1,5 @@
 {
   "values": [
-    "citycraft:iron_fence",
-    "citycraft:wire_fence",
-    "citycraft:chain_link_fence",
-    "citycraft:mesh_fence",
-    "citycraft:barbed_wire_fence"
+    "citycraft:iron_fence"
   ]
 }

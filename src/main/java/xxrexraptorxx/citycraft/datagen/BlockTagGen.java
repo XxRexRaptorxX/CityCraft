@@ -68,6 +68,7 @@ public class BlockTagGen extends BlockTagsProvider {
 
         tag(BlockTags.CLIMBABLE).add(ModBlocks.IRON_LADDER.get());
         tag(BlockTags.FALL_DAMAGE_RESETTING).add(ModBlocks.IRON_LADDER.get());
+        tag(BlockTags.FENCES).add(ModBlocks.IRON_FENCE.get());
 
         addByPathPredicate(lookup, ModBlockTags.TRAFFIC_BARRIERS, path -> path.contains("traffic_barrier"));
         addByPathPredicate(lookup, ModBlockTags.CONCRETES, path -> path.contains("concrete"));
@@ -83,7 +84,7 @@ public class BlockTagGen extends BlockTagsProvider {
 
         addByPathModPredicate(lookup, BlockTags.SLABS, path -> path.endsWith("_slab") || path.endsWith("_panel") || path.startsWith("drain_cover"));
         addByPathModPredicate(lookup, BlockTags.STAIRS, path -> path.endsWith("_stairs"));
-        addByPathModPredicate(lookup, BlockTags.FENCES, path -> path.endsWith("_fence"));
+        // addByPathModPredicate(lookup, BlockTags.FENCES, path -> path.endsWith("_fence")); Note: Too many different model types, can confuse other mods
         addByPathModPredicate(lookup, BlockTags.PRESSURE_PLATES, path -> path.endsWith("_pressure_plate"));
         addByPathModPredicate(lookup, BlockTags.BUTTONS, path -> path.endsWith("_button"));
         addByPathModPredicate(lookup, BlockTags.WALLS, path -> path.endsWith("_wall"));
@@ -92,6 +93,8 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathModPredicate(lookup, BlockTags.SMALL_DRIPLEAF_PLACEABLE, path -> path.endsWith("_flower_box"));
         addByPathModPredicate(lookup, BlockTags.DIRT, path -> path.endsWith("_flower_box"));
 
+        addByPathModPredicate(lookup, ModBlockTags.GABION_FENCES, path -> path.endsWith("_gabion_fence"));
+        addByPathModPredicate(lookup, ModBlockTags.THIN_FENCES, path -> path.endsWith("_fence") && !path.endsWith("iron_fence") && !path.contains("gabion"));
         addByPathModPredicate(lookup, ModBlockTags.COLORED_LAMPS, path -> path.endsWith("_lamp"));
         addByPathModPredicate(lookup, ModBlockTags.COLORED_CHISELED_CONCRETE, path -> path.contains("chiseled_concrete"));
         addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_BUTTONS, path -> path.contains("concrete_button"));

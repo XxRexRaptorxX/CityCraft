@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "gabion",
+  "ingredients": [
+    {
+      "item": "minecraft:mossy_cobblestone"
+    },
+    {
+      "item": "citycraft:iron_grate"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "citycraft:mossy_stone_gabion_fence"
+  }
+}

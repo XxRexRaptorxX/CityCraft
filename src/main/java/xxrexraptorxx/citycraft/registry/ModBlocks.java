@@ -1837,6 +1837,12 @@ public class ModBlocks {
     public static final DeferredBlock<GrateBlock> IRON_GRATE = registerBlock("iron_grate",
             () -> new GrateBlock(BlockBehaviour.Properties.of().strength(3.5F, 6.5F).sound(SoundType.METAL).mapColor(MapColor.METAL)));
 
+    public static final DeferredBlock<Block> STONE_GABION_FENCE = registerBlock("stone_gabion_fence", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)));
+    public static final DeferredBlock<Block> MOSSY_STONE_GABION_FENCE = registerBlock("mossy_stone_gabion_fence",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE)));
+    public static final DeferredBlock<Block> DEEPSLATE_GABION_FENCE = registerBlock("deepslate_gabion_fence",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

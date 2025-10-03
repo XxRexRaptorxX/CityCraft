@@ -1279,5 +1279,8 @@
   "block.citycraft.chain_link_fence": "Chain Link Fence",
   "block.citycraft.mesh_fence": "Iron Mesh Fence",
   "block.citycraft.barbed_wire_fence": "Barbed Wire Fence",
-  "block.citycraft.iron_grate": "Iron Grate"
+  "block.citycraft.iron_grate": "Iron Grate",
+  "block.citycraft.stone_gabion_fence": "Stone Gabion Fence",
+  "block.citycraft.mossy_stone_gabion_fence": "Mossy Stone Gabion Fence",
+  "block.citycraft.deepslate_gabion_fence": "Deepslate Gabion Fence"
 }

@@ -1,4 +1,4 @@
-// 1.21	2025-10-03T22:50:01.9754474	Loot Tables
+// 1.21	2025-10-04T00:00:46.6496403	Loot Tables
 7368a076406b45a92c20ce5eff9ad50e3450f5a1 data/citycraft/loot_table/blocks/0_sign.json
 0646b93d92eaff19afda2215fd4f55b4238658da data/citycraft/loot_table/blocks/100_speed_eu_sign.json
 7a90e771f0880894a9b1aa172c8080bc9742350f data/citycraft/loot_table/blocks/10_minimum_speed_sign_eu.json
@@ -558,6 +558,7 @@ b14461ee1dde37a0606f817ac2c442bd8c2a0eb1 data/citycraft/loot_table/blocks/danger
 5f76c4149216c87bf3a68991f6add7e397ef79cd data/citycraft/loot_table/blocks/danger_signal_light.json
 80a2df76ef428c05ea3144b8fd27bfb2d276f661 data/citycraft/loot_table/blocks/deepslate_chimney.json
 9b7998bc4e8fa61c075234ea43b986ce5df260cc data/citycraft/loot_table/blocks/deepslate_flower_box.json
+da04347e60aff5b7800c3d7a1838089f9e0d6f8d data/citycraft/loot_table/blocks/deepslate_gabion_fence.json
 9802276b83cdceb40b8b63a137872f3ee3f163a2 data/citycraft/loot_table/blocks/descend_cn_sign.json
 64c98427c261c1d7a26b6d2fd1e2accec3de0429 data/citycraft/loot_table/blocks/descend_eu_sign.json
 f44eb3b541a7d07bde1474c10ae990bd4fb65757 data/citycraft/loot_table/blocks/detour_ahead_eu_sign.json
@@ -840,6 +841,7 @@ e08d6ce6e70930be9ea07e4eec7c4a33a3819bed data/citycraft/loot_table/blocks/mossy_
 560fe0dcaaa0000fee2de38b5f55e5c0fcb4bfa3 data/citycraft/loot_table/blocks/mossy_purple_concrete.json
 27ea93c00b2a3c8896e662c241ebb966c6b2d5af data/citycraft/loot_table/blocks/mossy_red_concrete.json
 76f969ddc701c253791d7e3bd6defa60681c357b data/citycraft/loot_table/blocks/mossy_stone_chimney.json
+a617c0ebd77f0c2ad42f9785029e7c5dc55fac9a data/citycraft/loot_table/blocks/mossy_stone_gabion_fence.json
 0d1933d106f2b5f9e06af5c6d05044b236c9b41c data/citycraft/loot_table/blocks/mossy_white_concrete.json
 f5ed79c5742dc4894bd3e3755ab98da638bcdaf9 data/citycraft/loot_table/blocks/mossy_yellow_concrete.json
 70c5bdd26143009add77f12733e470283bcc1dd2 data/citycraft/loot_table/blocks/motorway_end_eu_sign.json
@@ -1118,6 +1120,7 @@ d815db6bde6f24048f92fb76de03d201bf94df81 data/citycraft/loot_table/blocks/snow_e
 59de8917fc54b5e2cfc6af5e6c8939a52c8e3b55 data/citycraft/loot_table/blocks/square_sign.json
 825bfbfd03031ed89535a73d60ba43436b8f958a data/citycraft/loot_table/blocks/stone_chimney.json
 30c03e1d93d9bb2a9f821f730f4f4268e44038e3 data/citycraft/loot_table/blocks/stone_flower_box.json
+15faa49900fcc3fde99984218fb8ef3d356cc6ae data/citycraft/loot_table/blocks/stone_gabion_fence.json
 c057c3e594c061c116002efa8ea0aa977c30ae7d data/citycraft/loot_table/blocks/stone_post.json
 da3074b339883ebe12a7ef1f7f855e142c39367a data/citycraft/loot_table/blocks/stop_cn_sign.json
 0e9a32258dd8f3a7e856c5f1a594d46113ac4836 data/citycraft/loot_table/blocks/stop_eu_sign.json

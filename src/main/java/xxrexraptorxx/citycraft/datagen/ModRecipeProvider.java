@@ -627,6 +627,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         grateRecipes(ModBlocks.IRON_GRATE.get(), Tags.Items.STORAGE_BLOCKS_IRON, output);
 
+        simpleShapelessRecipes(ModBlocks.STONE_GABION_FENCE.get(), Blocks.COBBLESTONE, ModBlocks.IRON_GRATE.get(), output, "gabion");
+        simpleShapelessRecipes(ModBlocks.MOSSY_STONE_GABION_FENCE.get(), Blocks.MOSSY_COBBLESTONE, ModBlocks.IRON_GRATE.get(), output, "gabion");
+        simpleShapelessRecipes(ModBlocks.DEEPSLATE_GABION_FENCE.get(), Blocks.COBBLED_DEEPSLATE, ModBlocks.IRON_GRATE.get(), output, "gabion");
+
+        mossyRecipes(ModBlocks.MOSSY_STONE_GABION_FENCE.get(), ModBlocks.STONE_GABION_FENCE, output);
+
         registerConcreteRecipes(output);
         registerBrickRecipes(output);
         registerBasicColorRecipes(output);

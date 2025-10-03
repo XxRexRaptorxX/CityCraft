@@ -1249,6 +1249,9 @@
     "citycraft:chain_link_fence",
     "citycraft:mesh_fence",
     "citycraft:barbed_wire_fence",
-    "citycraft:iron_grate"
+    "citycraft:iron_grate",
+    "citycraft:stone_gabion_fence",
+    "citycraft:mossy_stone_gabion_fence",
+    "citycraft:deepslate_gabion_fence"
   ]
 }

@@ -1359,6 +1359,10 @@ public class BlockStateGen extends BlockStateProvider {
         makeBarsBlock(ModBlocks.BARBED_WIRE_FENCE.get());
 
         makeSimpleBlockWithRenderType(ModBlocks.IRON_GRATE.get(), RenderType.cutoutMipped());
+
+        blockWithFaceOverlays(ModBlocks.STONE_GABION_FENCE.get(), Blocks.COBBLESTONE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/iron_grate"));
+        blockWithFaceOverlays(ModBlocks.MOSSY_STONE_GABION_FENCE.get(), Blocks.MOSSY_COBBLESTONE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/iron_grate"));
+        blockWithFaceOverlays(ModBlocks.DEEPSLATE_GABION_FENCE.get(), Blocks.COBBLED_DEEPSLATE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/iron_grate"));
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1509,6 +1513,31 @@ public class BlockStateGen extends BlockStateProvider {
 
         buttonBlock(block, ResourceLocation.fromNamespaceAndPath(location.getNamespace(), "block/" + texture));
         makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void blockWithFaceOverlays(Block block, Block baseBlock, ResourceLocation overlayTexture) {
+        ResourceLocation baseKey = BuiltInRegistries.BLOCK.getKey(baseBlock);
+        String path = BuiltInRegistries.BLOCK.getKey(block).getPath();
+        String texture = baseKey.getPath();
+        ResourceLocation baseTexture = ResourceLocation.fromNamespaceAndPath(baseKey.getNamespace(), "block/" + texture);
+
+        BlockModelBuilder model = models().withExistingParent(path, mcLoc("block/cube_all")).texture("all", baseTexture).texture("overlay", overlayTexture)
+                .texture("particle", baseTexture).renderType(mcLoc("cutout"));
+
+        model.element().from(0, 0, 0).to(16, 16, 16).face(Direction.UP).uvs(0, 0, 16, 16).texture("#all").end().face(Direction.DOWN).uvs(0, 0, 16, 16).texture("#all").end()
+                .face(Direction.NORTH).uvs(0, 0, 16, 16).texture("#all").end().face(Direction.SOUTH).uvs(0, 0, 16, 16).texture("#all").end().face(Direction.EAST).uvs(0, 0, 16, 16)
+                .texture("#all").end().face(Direction.WEST).uvs(0, 0, 16, 16).texture("#all").end().end();
+
+        model.element().from(0, 15.5F, 0).to(16, 16, 16).face(Direction.UP).uvs(0, 0, 16, 16).texture("#overlay").end().end();
+        model.element().from(0, 0, 0).to(16, 0.5F, 16).face(Direction.DOWN).uvs(0, 0, 16, 16).texture("#overlay").end().end();
+        model.element().from(0, 0, 0).to(16, 16, 0.5F).face(Direction.NORTH).uvs(0, 0, 16, 16).texture("#overlay").end().end();
+        model.element().from(0, 0, 15.5F).to(16, 16, 16).face(Direction.SOUTH).uvs(0, 0, 16, 16).texture("#overlay").end().end();
+        model.element().from(0, 0, 0).to(0.5F, 16, 16).face(Direction.WEST).uvs(0, 0, 16, 16).texture("#overlay").end().end();
+        model.element().from(15.5F, 0, 0).to(16, 16, 16).face(Direction.EAST).uvs(0, 0, 16, 16).texture("#overlay").end().end();
+
+        simpleBlockItem(block, models().getExistingFile(modLoc("block/" + path)));
+        simpleBlock(block, models().getExistingFile(modLoc("block/" + path)));
     }
 
 

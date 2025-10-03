@@ -1,4 +1,4 @@
-// 1.21	2025-10-03T22:50:02.0381303	Tags for minecraft:block mod id citycraft
+// 1.21	2025-10-04T00:00:46.7007762	Tags for minecraft:block mod id citycraft
 661b44d584785e996f41d8ac960a9c771fe513d1 data/car/tags/block/drivable_blocks.json
 7c9bb93a1fc8f0739b2d217b188507e005114f2d data/citycraft/tags/block/asphalt.json
 b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/block/asphalt_slabs_with_markings.json
@@ -55,6 +55,8 @@ fc0c520884b63de22af431da4edb9a74e464cf34 data/c/tags/block/dyed/purple.json
 fd5a458c875a4c9ae964a66386edea061024f5ee data/c/tags/block/dyed/red.json
 10bae99837f4f6c2e4a0e49fe92d6b2291613eeb data/c/tags/block/dyed/white.json
 1f676f071a8549102c4c9f5e9b1546abdb329de8 data/c/tags/block/dyed/yellow.json
+995b5453749a74d1195d37a9a635350588663d33 data/c/tags/block/fences/gabion.json
+df19c065fb725efead89509b91b6c531dbd73540 data/c/tags/block/fences/thin.json
 d9cd63c835bf840b3b23e862dd81fedbf2c19431 data/c/tags/block/lamps.json
 647632d5b00f25dd6a27e35681962f640cd6d3f9 data/c/tags/block/levers.json
 3eec0bb7da17ebdf3ba5daf533c6be314e192265 data/c/tags/block/poles/iron.json
@@ -65,8 +67,8 @@ d9cd63c835bf840b3b23e862dd81fedbf2c19431 data/c/tags/block/lamps.json
 c3e803c1cd648e7c3d5df826202d237a54f98e5f data/minecraft/tags/block/dead_bush_may_place_on.json
 c3e803c1cd648e7c3d5df826202d237a54f98e5f data/minecraft/tags/block/dirt.json
 5f048439d2eeb07829518743dc3495f1510d745d data/minecraft/tags/block/fall_damage_resetting.json
-585b0c0ac0dc82658d705d736a101761ca40bbf8 data/minecraft/tags/block/fences.json
-e70f31dbda02e95d6140047addb852c26ef23fee data/minecraft/tags/block/mineable/pickaxe.json
+94ba0098c5aced5815411f47a64a017f29885004 data/minecraft/tags/block/fences.json
+443ffc1579b71ec0300caf05e0fc3ab7e1036584 data/minecraft/tags/block/mineable/pickaxe.json
 c3e803c1cd648e7c3d5df826202d237a54f98e5f data/minecraft/tags/block/mushroom_grow_block.json
 6bfc565923165a40abeac788ef0b76ee430e3e17 data/minecraft/tags/block/pressure_plates.json
 1ddefb1e83a38929cad8d721be99a1473daf0597 data/minecraft/tags/block/slabs.json

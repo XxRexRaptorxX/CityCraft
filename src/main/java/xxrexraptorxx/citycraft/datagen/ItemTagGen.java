@@ -74,6 +74,8 @@ public class ItemTagGen extends ItemTagsProvider {
         copy(ModBlockTags.COLORED_BRICK_SLABS, ModItemTags.COLORED_BRICK_SLABS);
         copy(ModBlockTags.COLORED_BRICK_STAIRS, ModItemTags.COLORED_BRICK_STAIRS);
         copy(ModBlockTags.COLORED_BRICK_WALLS, ModItemTags.COLORED_BRICK_WALLS);
+        copy(ModBlockTags.THIN_FENCES, ModItemTags.THIN_FENCES);
+        copy(ModBlockTags.GABION_FENCES, ModItemTags.GABION_FENCES);
 
         copy(BlockTags.SLABS, ItemTags.SLABS);
         copy(BlockTags.STAIRS, ItemTags.STAIRS);

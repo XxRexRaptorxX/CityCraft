@@ -1283,5 +1283,8 @@
   "block.citycraft.chain_link_fence": "Maschendrahtzaun",
   "block.citycraft.mesh_fence": "Enger Maschendrahtzaun",
   "block.citycraft.barbed_wire_fence": "Stacheldrahtzaun",
-  "block.citycraft.iron_grate": "Eisenrost"
+  "block.citycraft.iron_grate": "Eisenrost",
+  "block.citycraft.stone_gabion_fence": "Stein Gabionenzaun",
+  "block.citycraft.mossy_stone_gabion_fence": "Bemooster Stein Gabionenzaun",
+  "block.citycraft.deepslate_gabion_fence": "Tiefenschiefer Gabionenzaun"
 }

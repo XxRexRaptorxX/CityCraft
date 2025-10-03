@@ -70,6 +70,10 @@ public class CreativeTabs {
 
                         output.accept(ModBlocks.BLOCK_PAINTER.get());
 
+                        output.accept(ModBlocks.STONE_GABION_FENCE.get());
+                        output.accept(ModBlocks.MOSSY_STONE_GABION_FENCE.get());
+                        output.accept(ModBlocks.DEEPSLATE_GABION_FENCE.get());
+
                         output.accept(ModBlocks.IRON_FLUE);
                         output.accept(ModBlocks.COPPER_FLUE);
 

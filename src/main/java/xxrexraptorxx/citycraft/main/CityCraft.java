@@ -243,6 +243,9 @@ public class CityCraft {
             event.accept(ModItems.COAL_TAR.get());
 
         } else if (key == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.STONE_GABION_FENCE.get());
+            event.accept(ModBlocks.MOSSY_STONE_GABION_FENCE.get());
+            event.accept(ModBlocks.DEEPSLATE_GABION_FENCE.get());
             event.accept(ModBlocks.IRON_GRATE.get());
             event.accept(ModBlocks.IRON_FENCE.get());
             event.accept(ModBlocks.IRON_POLE.get());
