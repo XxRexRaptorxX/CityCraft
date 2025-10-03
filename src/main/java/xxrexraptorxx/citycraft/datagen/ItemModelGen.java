@@ -131,21 +131,31 @@ public class ItemModelGen extends ItemModelProvider {
     }
 
 
-    public void fenceItem(DeferredBlock<FenceBlock> block, Block textureBlock) {
-        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/fence_inventory")).texture("texture", ResourceLocation
-                .fromNamespaceAndPath(BuiltInRegistries.BLOCK.getKey(textureBlock).getNamespace(), "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+    public void wallItem(DeferredBlock<WallBlock> block, Block textureBlock) {
+        generateInventoryModel(block, textureBlock, "wall", "wall");
+
     }
 
 
-    public void wallItem(DeferredBlock<WallBlock> block, Block textureBlock) {
-        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/wall_inventory")).texture("wall", ResourceLocation
-                .fromNamespaceAndPath(BuiltInRegistries.BLOCK.getKey(textureBlock).getNamespace(), "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+    public void fenceItem(DeferredBlock<FenceBlock> block, Block textureBlock) {
+        generateInventoryModel(block, textureBlock, "fence");
     }
 
 
     private void buttonItem(DeferredBlock<ButtonBlock> block, Block textureBlock) {
-        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/button_inventory")).texture("texture", ResourceLocation
-                .fromNamespaceAndPath(BuiltInRegistries.BLOCK.getKey(textureBlock).getNamespace(), "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+        generateInventoryModel(block, textureBlock, "button");
+    }
+
+
+    private void generateInventoryModel(DeferredBlock<?> block, Block textureBlock, String modelName) {
+        generateInventoryModel(block, textureBlock, modelName, "texture");
+    }
+
+
+    private void generateInventoryModel(DeferredBlock<?> block, Block textureBlock, String modelName, String textureKeyName) {
+        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/" + modelName + "_inventory")).texture(textureKeyName,
+                ResourceLocation.fromNamespaceAndPath(BuiltInRegistries.BLOCK.getKey(textureBlock).getNamespace(),
+                        "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
 
 
