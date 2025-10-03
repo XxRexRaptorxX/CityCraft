@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "result": {
+    "id": "citycraft:iron_rod"
+  }
+}

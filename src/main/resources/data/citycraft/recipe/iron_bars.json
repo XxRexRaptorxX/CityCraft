@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "II",
+    "II"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:rods/iron"
+    }
+  },
+  "result": {
+    "id": "minecraft:iron_bars",
+    "count": 20
+  }
+}

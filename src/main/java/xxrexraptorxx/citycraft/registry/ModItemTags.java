@@ -40,6 +40,7 @@ public class ModItemTags {
     public static final TagKey<Item> TRAFFIC_BARRIERS = createItemTag(References.MODID, "traffic_barriers");
     public static final TagKey<Item> POLES = createItemTag("c", "poles/iron");
     public static final TagKey<Item> POSTS = createItemTag("c", "posts/stone");
+    public static final TagKey<Item> IRON_RODS = createItemTag("c", "rods/iron");
 
     public static final TagKey<Item> CHIMNEYS = createItemTag(References.MODID, "chimneys");
     public static final TagKey<Item> FLUES = createItemTag(References.MODID, "flues");

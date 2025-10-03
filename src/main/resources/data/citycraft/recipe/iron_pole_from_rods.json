@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "I",
+    "I"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:rods/iron"
+    }
+  },
+  "result": {
+    "id": "citycraft:iron_pole",
+    "count": 2
+  }
+}
