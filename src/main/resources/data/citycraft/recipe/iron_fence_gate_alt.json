@@ -3,7 +3,7 @@
     {
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "c:rods/iron"
+        "tag": "c:plates/iron"
       },
       "type": "neoforge:not"
     }
@@ -11,19 +11,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "#I#",
-    "#I#"
+    "I#I",
+    "I#I"
   ],
   "key": {
     "#": {
-      "tag": "c:ingots/iron"
+      "tag": "c:plates/iron"
     },
     "I": {
       "tag": "c:rods/iron"
     }
   },
   "result": {
-    "id": "citycraft:iron_fence",
-    "count": 3
+    "id": "citycraft:iron_fence_gate",
+    "count": 1
   }
 }

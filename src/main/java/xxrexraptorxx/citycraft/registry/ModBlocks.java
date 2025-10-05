@@ -1,6 +1,8 @@
 package xxrexraptorxx.citycraft.registry;
 
 import java.util.function.Supplier;
+
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -922,8 +924,10 @@ public class ModBlocks {
     public static final DeferredBlock<DrainCoverBlock> DRAIN_COVER = registerBlock("drain_cover", DrainCoverBlock::new);
     public static final DeferredBlock<DrainCoverBlock> DRAIN_COVER_GRID = registerBlock("drain_cover_grid", DrainCoverBlock::new);
 
-    public static final DeferredBlock<net.minecraft.world.level.block.FenceBlock> IRON_FENCE = registerBlock("iron_fence",
-            () -> new net.minecraft.world.level.block.FenceBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.IRON_POLE.get())));
+    public static final DeferredBlock<FenceBlock> IRON_FENCE = registerBlock("iron_fence", () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.IRON_POLE.get())));
+    public static final DeferredBlock<IronFenceGateBlock> IRON_FENCE_GATE = registerBlock("iron_fence_gate",
+            () -> new IronFenceGateBlock(BlockBehaviour.Properties.ofFullCopy(ModBlocks.IRON_FENCE.get()), SoundEvents.IRON_TRAPDOOR_OPEN, SoundEvents.IRON_TRAPDOOR_CLOSE));
+
     public static final DeferredBlock<TrafficBarrierBlock> TRAFFIC_BARRIER = registerBlock("traffic_barrier", TrafficBarrierBlock::new);
     public static final DeferredBlock<TrafficBarrierBlock> RED_WHITE_TRAFFIC_BARRIER = registerBlock("red_white_traffic_barrier", TrafficBarrierBlock::new);
     public static final DeferredBlock<TrafficBarrierBlock> YELLOW_BLACK_TRAFFIC_BARRIER = registerBlock("yellow_black_traffic_barrier", TrafficBarrierBlock::new);

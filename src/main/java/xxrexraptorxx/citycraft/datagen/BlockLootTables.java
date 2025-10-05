@@ -733,6 +733,7 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.DRAIN_COVER_GRID.get(), block -> createSlabItemTable(ModBlocks.DRAIN_COVER_GRID.get()));
 
         this.dropSelf(ModBlocks.IRON_FENCE.get());
+        this.dropSelf(ModBlocks.IRON_FENCE_GATE.get());
         this.dropSelf(ModBlocks.IRON_LADDER.get());
 
         this.dropSelf(ModBlocks.TRAFFIC_BARRIER.get());

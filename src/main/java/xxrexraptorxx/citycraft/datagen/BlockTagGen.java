@@ -68,7 +68,11 @@ public class BlockTagGen extends BlockTagsProvider {
 
         tag(BlockTags.CLIMBABLE).add(ModBlocks.IRON_LADDER.get());
         tag(BlockTags.FALL_DAMAGE_RESETTING).add(ModBlocks.IRON_LADDER.get());
+        tag(ModBlockTags.createBlockTag("c", "ladders")).add(ModBlocks.IRON_LADDER.get());
         tag(BlockTags.FENCES).add(ModBlocks.IRON_FENCE.get());
+        tag(ModBlockTags.createBlockTag("c", "fences/iron")).add(ModBlocks.IRON_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.IRON_FENCE_GATE.get());
+        tag(ModBlockTags.createBlockTag("c", "fence_gates/iron")).add(ModBlocks.IRON_FENCE_GATE.get());
 
         addByPathPredicate(lookup, ModBlockTags.TRAFFIC_BARRIERS, path -> path.contains("traffic_barrier"));
         addByPathPredicate(lookup, ModBlockTags.CONCRETES, path -> path.contains("concrete"));

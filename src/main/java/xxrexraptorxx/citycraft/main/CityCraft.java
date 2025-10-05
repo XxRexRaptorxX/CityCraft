@@ -47,6 +47,7 @@ public class CityCraft {
 
         if (key == CreativeModeTabs.REDSTONE_BLOCKS) {
             event.accept(ModBlocks.REDSTONE_POLE);
+            event.accept(ModBlocks.IRON_FENCE_GATE.get());
 
             event.accept(ModBlocks.DOUBLE_TRAFFIC_LIGHT.get());
             event.accept(ModBlocks.TRIPLE_TRAFFIC_LIGHT.get());
@@ -248,6 +249,7 @@ public class CityCraft {
             event.accept(ModBlocks.DEEPSLATE_GABION_FENCE.get());
             event.accept(ModBlocks.IRON_GRATE.get());
             event.accept(ModBlocks.IRON_FENCE.get());
+            event.accept(ModBlocks.IRON_FENCE_GATE.get());
             event.accept(ModBlocks.IRON_POLE.get());
             event.accept(ModBlocks.STONE_POST.get());
             event.accept(ModBlocks.WIRE_FENCE.get());

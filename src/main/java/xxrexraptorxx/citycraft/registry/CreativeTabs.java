@@ -126,6 +126,7 @@ public class CreativeTabs {
                         output.accept(ModBlocks.MESH_FENCE.get());
 
                         output.accept(ModBlocks.IRON_FENCE.get());
+                        output.accept(ModBlocks.IRON_FENCE_GATE.get());
 
                         output.accept(ModBlocks.TRAFFIC_BARRIER.get());
                         output.accept(ModBlocks.RED_WHITE_TRAFFIC_BARRIER.get());

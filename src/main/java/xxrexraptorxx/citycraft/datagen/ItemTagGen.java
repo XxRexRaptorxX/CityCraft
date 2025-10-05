@@ -82,8 +82,12 @@ public class ItemTagGen extends ItemTagsProvider {
         copy(BlockTags.WALLS, ItemTags.WALLS);
         copy(BlockTags.BUTTONS, ItemTags.BUTTONS);
         copy(BlockTags.FENCES, ItemTags.FENCES);
+        copy(BlockTags.FENCE_GATES, ItemTags.FENCE_GATES);
         copy(BlockTags.PRESSURE_PLATES, ModItemTags.createItemTag(ResourceLocation.DEFAULT_NAMESPACE, "pressure_plates"));
         copy(ModBlockTags.LEVERS, ModItemTags.createItemTag(ResourceLocation.DEFAULT_NAMESPACE, "levers"));
+
+        tag(ModItemTags.createItemTag("c", "fences/iron")).add(ModBlocks.IRON_FENCE.asItem());
+        tag(ModItemTags.createItemTag("c", "fence_gates/iron")).add(ModBlocks.IRON_FENCE_GATE.asItem());
 
         addByPathPredicate(lookup, ModItemTags.CHAINS, path -> path.endsWith("_chain"));
         addByPathModPredicate(lookup, ModItemTags.NEON_LIGHTS, path -> path.endsWith("_neon_light"));

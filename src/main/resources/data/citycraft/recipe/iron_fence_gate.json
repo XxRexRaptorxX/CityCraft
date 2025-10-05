@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "#I#",
-    "#I#"
+    "I#I",
+    "I#I"
   ],
   "key": {
     "#": {
@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "id": "citycraft:iron_fence",
-    "count": 3
+    "id": "citycraft:iron_fence_gate",
+    "count": 1
   }
 }

@@ -847,6 +847,8 @@ public class BlockStateGen extends BlockStateProvider {
         wallSignBlock(ModBlocks.QUESTION_SIGN.get(), SignShape.SQUARE);
 
         fenceBlock(((FenceBlock) ModBlocks.IRON_FENCE.get()), blockTexture(ModBlocks.IRON_POLE.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.IRON_FENCE_GATE.get()), blockTexture(ModBlocks.IRON_POLE.get()));
+        makeBlockItemFromExistingModel(ModBlocks.IRON_FENCE_GATE.get());
 
         wallBlock(((WallBlock) ModBlocks.BLACK_CONCRETE_WALL.get()), blockTexture(Blocks.BLACK_CONCRETE));
         wallBlock(((WallBlock) ModBlocks.WHITE_CONCRETE_WALL.get()), blockTexture(Blocks.WHITE_CONCRETE));
