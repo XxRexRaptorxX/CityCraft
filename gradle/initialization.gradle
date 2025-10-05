@@ -635,13 +635,11 @@ jobs:
           FALLBACK_PAGE="https://github.com/XxRexRaptorxX?tab=repositories"
           FALLBACK_IMAGE="https://raw.githubusercontent.com/XxRexRaptorxX/General/refs/heads/main/icons/profile_pic.png"
 
-          # Wenn die Datei im Workspace vorhanden ist, verwende die raw-URL mit Commit-SHA
           if [ -f "${GITHUB_WORKSPACE}/${PATH}" ]; then
             RAW_URL="https://raw.githubusercontent.com/${REPO}/${{ github.sha }}/${PATH}"
             echo "image_url=${RAW_URL}" >> $GITHUB_OUTPUT
             echo "page_url=https://github.com/${REPO}" >> $GITHUB_OUTPUT
           else
-            # kein Logo im Repo -> Fallbacks verwenden
             echo "image_url=${FALLBACK_IMAGE}" >> $GITHUB_OUTPUT
             echo "page_url=${FALLBACK_PAGE}" >> $GITHUB_OUTPUT
           fi
