@@ -1,7 +1,8 @@
-# [v.2.11.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.11.0-dev1...v.2.11.0-dev13)
+# [v.2.11.0 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.11.0-dev1...v.2.11.0-dev14)
 
 ## ✨ Features
 
+- colored concrete step barriers added ([6e5e670](https://github.com/XxRexRaptorxX/CityCraft/commit/6e5e670ea9b04d8b05b4d665a3d87373b712ffa9))
 - iron fence gates added ([5cb3036](https://github.com/XxRexRaptorxX/CityCraft/commit/5cb3036153bb9f158703e62836f9e04954a4eb9e))
 - "Barriers" creative tab added ([5532b97](https://github.com/XxRexRaptorxX/CityCraft/commit/5532b97c3b121f689edea2e116eb198b1a73b227))
 - gabion fences added ([cc52448](https://github.com/XxRexRaptorxX/CityCraft/commit/cc524487c67b65d078c9a8a195319abbe06b8d50))
