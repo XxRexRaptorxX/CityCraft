@@ -394,6 +394,23 @@ public class CityCraft {
             event.accept(ModBlocks.MAGENTA_CONCRETE_WALL.get());
             event.accept(ModBlocks.PINK_CONCRETE_WALL.get());
 
+            event.accept(ModBlocks.WHITE_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.LIGHT_GRAY_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.GRAY_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.BLACK_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.BROWN_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.RED_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.ORANGE_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.YELLOW_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.LIME_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.GREEN_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.CYAN_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.LIGHT_BLUE_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.BLUE_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.PURPLE_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.MAGENTA_CONCRETE_BARRIER.get());
+            event.accept(ModBlocks.PINK_CONCRETE_BARRIER.get());
+
             event.accept(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.get());
             event.accept(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.get());
             event.accept(ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.get());

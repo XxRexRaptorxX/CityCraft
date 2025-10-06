@@ -7,10 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.*;
-import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
-import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
-import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
-import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.*;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import xxrexraptorxx.citycraft.blocks.*;
 import xxrexraptorxx.citycraft.blocks.WallSignBlock;
@@ -1365,6 +1362,24 @@ public class BlockStateGen extends BlockStateProvider {
         blockWithFaceOverlays(ModBlocks.STONE_GABION_FENCE.get(), Blocks.COBBLESTONE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/iron_grate"));
         blockWithFaceOverlays(ModBlocks.MOSSY_STONE_GABION_FENCE.get(), Blocks.MOSSY_COBBLESTONE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/iron_grate"));
         blockWithFaceOverlays(ModBlocks.DEEPSLATE_GABION_FENCE.get(), Blocks.COBBLED_DEEPSLATE, ResourceLocation.fromNamespaceAndPath(References.MODID, "block/iron_grate"));
+
+        makeBarrierBlock(ModBlocks.WHITE_CONCRETE_BARRIER.get(), Blocks.WHITE_CONCRETE);
+        makeBarrierBlock(ModBlocks.LIGHT_GRAY_CONCRETE_BARRIER.get(), Blocks.LIGHT_GRAY_CONCRETE);
+        makeBarrierBlock(ModBlocks.GRAY_CONCRETE_BARRIER.get(), Blocks.GRAY_CONCRETE);
+        makeBarrierBlock(ModBlocks.BLACK_CONCRETE_BARRIER.get(), Blocks.BLACK_CONCRETE);
+        makeBarrierBlock(ModBlocks.BROWN_CONCRETE_BARRIER.get(), Blocks.BROWN_CONCRETE);
+        makeBarrierBlock(ModBlocks.RED_CONCRETE_BARRIER.get(), Blocks.RED_CONCRETE);
+        makeBarrierBlock(ModBlocks.ORANGE_CONCRETE_BARRIER.get(), Blocks.ORANGE_CONCRETE);
+        makeBarrierBlock(ModBlocks.YELLOW_CONCRETE_BARRIER.get(), Blocks.YELLOW_CONCRETE);
+        makeBarrierBlock(ModBlocks.LIME_CONCRETE_BARRIER.get(), Blocks.LIME_CONCRETE);
+        makeBarrierBlock(ModBlocks.GREEN_CONCRETE_BARRIER.get(), Blocks.GREEN_CONCRETE);
+        makeBarrierBlock(ModBlocks.CYAN_CONCRETE_BARRIER.get(), Blocks.CYAN_CONCRETE);
+        makeBarrierBlock(ModBlocks.LIGHT_BLUE_CONCRETE_BARRIER.get(), Blocks.LIGHT_BLUE_CONCRETE);
+        makeBarrierBlock(ModBlocks.BLUE_CONCRETE_BARRIER.get(), Blocks.BLUE_CONCRETE);
+        makeBarrierBlock(ModBlocks.PURPLE_CONCRETE_BARRIER.get(), Blocks.PURPLE_CONCRETE);
+        makeBarrierBlock(ModBlocks.MAGENTA_CONCRETE_BARRIER.get(), Blocks.MAGENTA_CONCRETE);
+        makeBarrierBlock(ModBlocks.PINK_CONCRETE_BARRIER.get(), Blocks.PINK_CONCRETE);
+
     }
 
     private final String emissiveTexturesSuffix = "_e";
@@ -1377,6 +1392,16 @@ public class BlockStateGen extends BlockStateProvider {
 
     private void makeBlockFromParentModel(Block block, String parentModel) {
         String blockTexture = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + parentModel).texture("texture", "block/" + blockTexture);
+
+        simpleBlock(block, model);
+        makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeBlockFromParentModel(Block block, Block baseBlock, String parentModel) {
+        String blockTexture = BuiltInRegistries.BLOCK.getKey(baseBlock).getPath();
 
         ModelFile model = models().withExistingParent(blockTexture, References.MODID + ":block/" + parentModel).texture("texture", "block/" + blockTexture);
 
@@ -1497,6 +1522,32 @@ public class BlockStateGen extends BlockStateProvider {
 
         simpleBlock(block, builder);
         makeBlockItemFromExistingModel(block);
+    }
+
+
+    private void makeBarrierBlock(StepBarrierBlock block, Block baseBlock) {
+        ResourceLocation blockId = BuiltInRegistries.BLOCK.getKey(block);
+        ResourceLocation baseBlockId = BuiltInRegistries.BLOCK.getKey(baseBlock);
+
+        String name = blockId.getPath();
+        ResourceLocation texture = ResourceLocation.fromNamespaceAndPath(baseBlockId.getNamespace(), "block/" + baseBlockId.getPath());
+
+        ModelFile post = models().withExistingParent(name + "_post", modLoc("block/step_barrier_post")).texture("texture", texture);
+
+        ModelFile side = models().withExistingParent(name + "_side", modLoc("block/step_barrier_side")).texture("texture", texture);
+
+        ModelFile inventory = models().withExistingParent(name + "_inventory", modLoc("block/step_barrier_inventory")).texture("texture", texture);
+
+
+        MultiPartBlockStateBuilder builder = ((MultiPartBlockStateBuilder.PartBuilder) this.getMultipartBuilder(block).part().modelFile(post).addModel()).end();
+
+        PipeBlock.PROPERTY_BY_DIRECTION.entrySet().forEach(e -> {
+            Direction dir = (Direction) e.getKey();
+            if (dir.getAxis().isHorizontal()) {
+                ((MultiPartBlockStateBuilder.PartBuilder) builder.part().modelFile(side).rotationY(((int) dir.toYRot() + 180) % 360).uvLock(true).addModel())
+                        .condition((Property) e.getValue(), new Boolean[]{true});
+            }
+        });
     }
 
 

@@ -1,0 +1,13 @@
+{
+  "type": "citycraft:painting",
+  "base": {
+    "tag": "citycraft:colored_concrete_barriers"
+  },
+  "color": {
+    "tag": "c:dyes/purple"
+  },
+  "result": {
+    "count": 1,
+    "id": "citycraft:purple_concrete_barrier"
+  }
+}

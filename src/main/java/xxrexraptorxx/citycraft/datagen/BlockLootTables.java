@@ -1096,6 +1096,23 @@ public class BlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.MAGENTA_CONCRETE_CRACKED_BRICKS.get());
         this.dropSelf(ModBlocks.PINK_CONCRETE_CRACKED_BRICKS.get());
 
+        this.dropSelf(ModBlocks.WHITE_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.GRAY_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.BLACK_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.BROWN_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.RED_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.ORANGE_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.YELLOW_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.LIME_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.GREEN_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.CYAN_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.BLUE_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.PURPLE_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.MAGENTA_CONCRETE_BARRIER.get());
+        this.dropSelf(ModBlocks.PINK_CONCRETE_BARRIER.get());
+
         this.dropSelf(ModBlocks.WHITE_CONCRETE_PILLAR.get());
         this.dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_PILLAR.get());
         this.dropSelf(ModBlocks.GRAY_CONCRETE_PILLAR.get());

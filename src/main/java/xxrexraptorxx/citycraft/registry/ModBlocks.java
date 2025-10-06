@@ -1442,6 +1442,39 @@ public class ModBlocks {
     public static final DeferredBlock<SlabBlock> RED_CONCRETE_SLAB = registerBlock("red_concrete_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
 
+    public static final DeferredBlock<StepBarrierBlock> BLACK_CONCRETE_BARRIER = registerBlock("black_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> WHITE_CONCRETE_BARRIER = registerBlock("white_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> ORANGE_CONCRETE_BARRIER = registerBlock("orange_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> MAGENTA_CONCRETE_BARRIER = registerBlock("magenta_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> LIGHT_BLUE_CONCRETE_BARRIER = registerBlock("light_blue_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> YELLOW_CONCRETE_BARRIER = registerBlock("yellow_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> LIME_CONCRETE_BARRIER = registerBlock("lime_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> PINK_CONCRETE_BARRIER = registerBlock("pink_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> GRAY_CONCRETE_BARRIER = registerBlock("gray_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> LIGHT_GRAY_CONCRETE_BARRIER = registerBlock("light_gray_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> CYAN_CONCRETE_BARRIER = registerBlock("cyan_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> PURPLE_CONCRETE_BARRIER = registerBlock("purple_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> BLUE_CONCRETE_BARRIER = registerBlock("blue_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> BROWN_CONCRETE_BARRIER = registerBlock("brown_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> GREEN_CONCRETE_BARRIER = registerBlock("green_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_CONCRETE)));
+    public static final DeferredBlock<StepBarrierBlock> RED_CONCRETE_BARRIER = registerBlock("red_concrete_barrier",
+            () -> new StepBarrierBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CONCRETE)));
+
     public static final DeferredBlock<ButtonBlock> BLACK_CONCRETE_BUTTON = registerBlock("black_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,
             BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_CONCRETE).noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<ButtonBlock> WHITE_CONCRETE_BUTTON = registerBlock("white_concrete_button", () -> new ButtonBlock(BlockSetType.STONE, 25,

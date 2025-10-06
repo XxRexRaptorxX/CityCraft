@@ -1,0 +1,6 @@
+{
+  "parent": "citycraft:block/step_barrier_inventory",
+  "textures": {
+    "texture": "minecraft:block/orange_concrete"
+  }
+}

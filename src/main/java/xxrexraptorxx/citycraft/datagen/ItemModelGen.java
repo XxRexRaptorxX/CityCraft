@@ -8,6 +8,7 @@ import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
+import xxrexraptorxx.citycraft.blocks.StepBarrierBlock;
 import xxrexraptorxx.citycraft.main.References;
 import xxrexraptorxx.citycraft.registry.ModBlocks;
 import xxrexraptorxx.citycraft.registry.ModItems;
@@ -107,6 +108,23 @@ public class ItemModelGen extends ItemModelProvider {
         leverItem(ModBlocks.GREEN_CONCRETE_LEVER);
         leverItem(ModBlocks.RED_CONCRETE_LEVER);
 
+        generateBarrierInventoryModel(ModBlocks.BLACK_CONCRETE_BARRIER, Blocks.BLACK_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.WHITE_CONCRETE_BARRIER, Blocks.WHITE_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.ORANGE_CONCRETE_BARRIER, Blocks.ORANGE_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.MAGENTA_CONCRETE_BARRIER, Blocks.MAGENTA_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.LIGHT_BLUE_CONCRETE_BARRIER, Blocks.LIGHT_BLUE_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.YELLOW_CONCRETE_BARRIER, Blocks.YELLOW_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.LIME_CONCRETE_BARRIER, Blocks.LIME_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.PINK_CONCRETE_BARRIER, Blocks.PINK_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.GRAY_CONCRETE_BARRIER, Blocks.GRAY_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.LIGHT_GRAY_CONCRETE_BARRIER, Blocks.LIGHT_GRAY_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.CYAN_CONCRETE_BARRIER, Blocks.CYAN_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.PURPLE_CONCRETE_BARRIER, Blocks.PURPLE_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.BLUE_CONCRETE_BARRIER, Blocks.BLUE_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.BROWN_CONCRETE_BARRIER, Blocks.BROWN_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.GREEN_CONCRETE_BARRIER, Blocks.GREEN_CONCRETE);
+        generateBarrierInventoryModel(ModBlocks.RED_CONCRETE_BARRIER, Blocks.RED_CONCRETE);
+
         itemGenerated(ModBlocks.WIRE_FENCE, "block");
         itemGenerated(ModBlocks.CHAIN_LINK_FENCE, "block");
         itemGenerated(ModBlocks.MESH_FENCE, "block");
@@ -167,6 +185,12 @@ public class ItemModelGen extends ItemModelProvider {
         this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc(BLOCK_FOLDER + "/" + modelName + "_inventory")).texture(textureKeyName,
                 ResourceLocation.fromNamespaceAndPath(BuiltInRegistries.BLOCK.getKey(textureBlock).getNamespace(),
                         "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
+    }
+
+
+    private void generateBarrierInventoryModel(DeferredBlock<StepBarrierBlock> block, Block textureBlock) {
+        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), modLoc(BLOCK_FOLDER + "/" + "step_barrier_inventory")).texture("texture", ResourceLocation
+                .fromNamespaceAndPath(BuiltInRegistries.BLOCK.getKey(textureBlock).getNamespace(), "block/" + BuiltInRegistries.BLOCK.getKey(textureBlock).getPath()));
     }
 
 

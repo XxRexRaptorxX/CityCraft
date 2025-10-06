@@ -171,6 +171,23 @@ public class CreativeTabs {
                         output.accept(ModBlocks.MAGENTA_BRICK_WALL.get());
                         output.accept(ModBlocks.PINK_BRICK_WALL.get());
 
+                        output.accept(ModBlocks.WHITE_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.GRAY_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.BLACK_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.BROWN_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.RED_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.ORANGE_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.YELLOW_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.LIME_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.GREEN_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.CYAN_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.BLUE_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.PURPLE_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.MAGENTA_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.PINK_CONCRETE_BARRIER.get());
+
                         output.accept(ModBlocks.STONE_GABION_FENCE.get());
                         output.accept(ModBlocks.MOSSY_STONE_GABION_FENCE.get());
                         output.accept(ModBlocks.DEEPSLATE_GABION_FENCE.get());
@@ -1316,6 +1333,23 @@ public class CreativeTabs {
                         output.accept(ModBlocks.PURPLE_CONCRETE_WALL.get());
                         output.accept(ModBlocks.MAGENTA_CONCRETE_WALL.get());
                         output.accept(ModBlocks.PINK_CONCRETE_WALL.get());
+
+                        output.accept(ModBlocks.WHITE_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.GRAY_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.BLACK_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.BROWN_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.RED_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.ORANGE_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.YELLOW_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.LIME_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.GREEN_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.CYAN_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.BLUE_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.PURPLE_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.MAGENTA_CONCRETE_BARRIER.get());
+                        output.accept(ModBlocks.PINK_CONCRETE_BARRIER.get());
 
                         output.accept(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.get());

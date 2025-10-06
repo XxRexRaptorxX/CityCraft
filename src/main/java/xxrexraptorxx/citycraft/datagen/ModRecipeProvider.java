@@ -774,6 +774,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             String reinforcedPath = "reinforced_" + color + concrete;
             String chimneyPath = color + concrete + "_chimney";
             String flowerBoxPath = color + concrete + "_flower_box";
+            String barrierPath = color + concrete + "_barrier";
 
             Block baseBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, basePath);
             Block powderBlock = getBlockOrThrow(ResourceLocation.DEFAULT_NAMESPACE, powderPath);
@@ -793,6 +794,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             Block reinforcedBlock = getBlockOrThrow(References.MODID, reinforcedPath);
             Block chimneyBlock = getBlockOrThrow(References.MODID, chimneyPath);
             Block flowerBoxBlock = getBlockOrThrow(References.MODID, flowerBoxPath);
+            Block barrierBlock = getBlockOrThrow(References.MODID, barrierPath);
 
             simpleSmeltingRecipes(crackedBlock, baseBlock, output);
             simpleSmeltingRecipes(crackedBricksBlock, bricksBlock, output);
@@ -803,6 +805,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             stoneCuttingRecipes(stairsBlock, 1, baseBlock, output);
             stoneCuttingRecipes(slabBlock, 2, baseBlock, output);
             stoneCuttingRecipes(bricksBlock, 1, baseBlock, output);
+            stoneCuttingRecipes(barrierBlock, 1, baseBlock, output);
 
             slabRecipes(slabBlock, baseBlock, output);
             stairsRecipes(stairsBlock, baseBlock, output);
@@ -827,6 +830,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             paintingRecipes(reinforcedBlock, ModItemTags.COLORED_REINFORCED_CONCRETE, dye.getTag(), output);
             paintingRecipes(chimneyBlock, ModItemTags.COLORED_CONCRETE_CHIMNEYS, dye.getTag(), output);
             paintingRecipes(flowerBoxBlock, ModItemTags.COLORED_CONCRETE_FLOWER_BOXES, dye.getTag(), output);
+            paintingRecipes(barrierBlock, ModItemTags.COLORED_CONCRETE_BARRIERS, dye.getTag(), output);
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, baseBlock, 1).requires(powderBlock).requires(Tags.Items.BUCKETS_WATER)
                     .unlockedBy("has_" + powderBlock, has(powderBlock)).group("concrete_with_bucket").save(output);
@@ -838,6 +842,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, bricksBlock, 4).pattern("##").pattern("##").define('#', baseBlock)
                     .unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
             ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, pillarBlock, 2).pattern("#").pattern("#").define('#', baseBlock)
+                    .unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, barrierBlock, 4).pattern(" # ").pattern("###").define('#', baseBlock)
                     .unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
             ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, buttonBlock, 1).pattern("#").define('#', baseBlock).unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
             ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, leverBlock, 1).pattern("I").pattern("#").define('I', Tags.Items.RODS_WOODEN).define('#', baseBlock)

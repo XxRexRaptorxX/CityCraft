@@ -1,0 +1,6 @@
+{
+  "parent": "citycraft:block/step_barrier_side",
+  "textures": {
+    "texture": "minecraft:block/gray_concrete"
+  }
+}

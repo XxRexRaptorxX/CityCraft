@@ -40,6 +40,7 @@ public class ModBlockTags {
     public static final TagKey<Block> COLORED_CONCRETE_LEVERS = createBlockTag(References.MODID, "colored_concrete_levers");
     public static final TagKey<Block> COLORED_CONCRETE_CHIMNEYS = createBlockTag(References.MODID, "colored_concrete_chimneys");
     public static final TagKey<Block> COLORED_CONCRETE_FLOWER_BOXES = createBlockTag(References.MODID, "colored_concrete_flower_boxes");
+    public static final TagKey<Block> COLORED_CONCRETE_BARRIERS = createBlockTag(References.MODID, "colored_concrete_barriers");
     public static final TagKey<Block> COLORED_BRICKS = createBlockTag(References.MODID, "colored_bricks");
     public static final TagKey<Block> COLORED_BRICK_SLABS = createBlockTag(References.MODID, "colored_brick_slabs");
     public static final TagKey<Block> COLORED_BRICK_STAIRS = createBlockTag(References.MODID, "colored_brick_stairs");
@@ -53,6 +54,7 @@ public class ModBlockTags {
     public static final TagKey<Block> BRICKS = createBlockTag("c", "bricks");
     public static final TagKey<Block> GABION_FENCES = createBlockTag("c", "fences/gabion");
     public static final TagKey<Block> THIN_FENCES = createBlockTag("c", "fences/thin");
+    public static final TagKey<Block> CONCRETE_BARRIERS = createBlockTag("c", "barriers/concrete");
 
     public static TagKey<Block> createBlockTag(String id, String name) {
         return BlockTags.create(ResourceLocation.fromNamespaceAndPath(id, name));

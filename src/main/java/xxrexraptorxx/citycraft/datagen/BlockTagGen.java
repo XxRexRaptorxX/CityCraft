@@ -85,6 +85,7 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathPredicate(lookup, ModBlockTags.FLUES, path -> path.endsWith("_flue"));
         addByPathPredicate(lookup, ModBlockTags.BRICKS, path -> path.endsWith("bricks"));
         addByPathPredicate(lookup, ModBlockTags.FLOWER_BOXES, path -> path.endsWith("_flower_box"));
+        addByPathPredicate(lookup, ModBlockTags.CONCRETE_BARRIERS, path -> path.endsWith("_concrete_barrier"));
 
         addByPathModPredicate(lookup, BlockTags.SLABS, path -> path.endsWith("_slab") || path.endsWith("_panel") || path.startsWith("drain_cover"));
         addByPathModPredicate(lookup, BlockTags.STAIRS, path -> path.endsWith("_stairs"));
@@ -106,6 +107,7 @@ public class BlockTagGen extends BlockTagsProvider {
         addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_BRICKS, path -> path.contains("concrete_bricks"));
         addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_CRACKED_BRICKS, path -> path.contains("concrete_cracked_bricks"));
         addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_PILLARS, path -> path.contains("concrete_pillar"));
+        addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_BARRIERS, path -> path.contains("concrete_barrier"));
         addByPathModPredicate(lookup, ModBlockTags.COLORED_REINFORCED_CONCRETE, path -> path.contains("reinforced_concrete"));
         addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_WALLS, path -> path.contains("concrete_wall"));
         addByPathModPredicate(lookup, ModBlockTags.COLORED_CONCRETE_STAIRS, path -> path.contains("concrete_stairs"));

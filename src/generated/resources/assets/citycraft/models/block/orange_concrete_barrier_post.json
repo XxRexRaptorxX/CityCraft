@@ -1,0 +1,6 @@
+{
+  "parent": "citycraft:block/step_barrier_post",
+  "textures": {
+    "texture": "minecraft:block/orange_concrete"
+  }
+}
