@@ -31,34 +31,47 @@ repositories {
 
 dependencies {
     //JEI
-    compileOnly ("mezz.jei:jei-${minecraft_version}.1-common-api:${jei_version}")
-    compileOnly ("mezz.jei:jei-${minecraft_version}.1-neoforge-api:${jei_version}")
-    runtimeOnly ("mezz.jei:jei-${minecraft_version}.1-neoforge:${jei_version}")
+    compileOnly ("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+    compileOnly ("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
+    runtimeOnly ("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
+
     //JEED
     runtimeOnly ("curse.maven:jeed-532286:${jeed_version}")
+
     //JADE
     implementation "maven.modrinth:jade:${jade_version}+neoforge"
+
     //IMMERSIVE ENGINEERING
-    //runtimeOnly ("curse.maven:ie-231951:${immersive_engineering_version}")
+    runtimeOnly ("curse.maven:ie-231951:${immersive_engineering_version}")
+
     //IMMERSIVE PETROLEUM
     //runtimeOnly ("curse.maven:ip-268250:${immersive_petroleum_version}")
+
     //MORE MCMETA
     //runtimeOnly ("curse.maven:moremcmeta-442169:${moremcmeta_version}")
     //runtimeOnly ("curse.maven:moremcmetaemissive-880880:${moremcmeta_emissive_version}")
+
     //MEKANISM
     runtimeOnly ("curse.maven:mekanism-268560:${mekanism_version}")
+
     //ENERGIZED_POWER
     runtimeOnly ("curse.maven:energizedpower-782147:${energized_power_version}")
+
     //Moonlight Lib
-    //runtimeOnly ("curse.maven:moonlight-499980:${moonlight_version}")
+    runtimeOnly ("curse.maven:moonlight-499980:${moonlight_version}")
+
     //Supplementaries
-    //runtimeOnly ("curse.maven:supplementaries-412082:${supplementaries_version}")
+    runtimeOnly ("curse.maven:supplementaries-412082:${supplementaries_version}")
+
     //Shimmer
     //runtimeOnly ("curse.maven:shimmer-627824:${shimmer_version}")
+
     //Continuity
     //runtimeOnly ("curse.maven:continuity-531351:${continuity_version}")
+
     //CTM
     runtimeOnly ("curse.maven:ctm-267602:${ctm_version}")
+
     //Lost Cities
     runtimeOnly ("curse.maven:lostcities-269024:${lost_cities_version}")
 }
