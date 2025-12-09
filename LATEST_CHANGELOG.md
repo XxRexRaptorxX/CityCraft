@@ -1,4 +1,8 @@
-# [v.2.11.1 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.11.1-dev1...v.2.11.1-dev4)
+# [v.2.11.1 for MC 1.21, 1.21.1](https://github.com/XxRexRaptorxX/CityCraft/compare/v.2.11.1-dev1...v.2.11.1-dev5)
+
+## ✨ Features
+
+- additional item- and blocktags added ([4162cec](https://github.com/XxRexRaptorxX/CityCraft/commit/4162cecf8ab69d86d875afcd661a719b65c8644b))
 
 ## 🔧 Bug Fixes
 
