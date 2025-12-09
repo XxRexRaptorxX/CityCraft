@@ -55,6 +55,9 @@ public class ModBlockTags {
     public static final TagKey<Block> GABION_FENCES = createBlockTag("c", "fences/gabion");
     public static final TagKey<Block> THIN_FENCES = createBlockTag("c", "fences/thin");
     public static final TagKey<Block> CONCRETE_BARRIERS = createBlockTag("c", "barriers/concrete");
+    public static final TagKey<Block> CONCRETE_WALLS = createBlockTag("c", "walls/concrete");
+    public static final TagKey<Block> BRICK_WALLS = createBlockTag("c", "walls/bricks");
+
 
     public static TagKey<Block> createBlockTag(String id, String name) {
         return BlockTags.create(ResourceLocation.fromNamespaceAndPath(id, name));

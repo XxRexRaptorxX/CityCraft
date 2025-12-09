@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -48,6 +49,9 @@ public class BlockTagGen extends BlockTagsProvider {
                 .add(ModBlocks.YELLOW_BUMPER_SLAB.get());
 
         tag(ModBlockTags.CHIMNEYS_BOOSTER).addTags(BlockTags.FIRE, BlockTags.CAMPFIRES, Tags.Blocks.PLAYER_WORKSTATIONS_FURNACES);
+
+        tag(ModBlockTags.CONCRETE_WALLS).addTag(ModBlockTags.COLORED_CONCRETE_WALLS);
+        tag(ModBlockTags.BRICK_WALLS).addTag(ModBlockTags.COLORED_BRICK_WALLS).add(Blocks.BRICK_WALL);
 
         addByPathModPredicate(lookup, Tags.Blocks.DYED_BLACK, path -> (path.contains("black")));
         addByPathModPredicate(lookup, Tags.Blocks.DYED_WHITE, path -> (path.contains("white")));

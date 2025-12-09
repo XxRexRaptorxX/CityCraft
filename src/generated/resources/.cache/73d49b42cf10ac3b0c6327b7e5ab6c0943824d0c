@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-09T22:01:07.9245688	Tags for minecraft:item mod id citycraft
+// 1.21.1	2025-12-09T22:37:08.4910866	Tags for minecraft:item mod id citycraft
 7c9bb93a1fc8f0739b2d217b188507e005114f2d data/citycraft/tags/item/asphalt.json
 b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/item/asphalt_slabs_with_markings.json
 47f60bc7f566d7e79607e77d2ab1f24026498c88 data/citycraft/tags/item/asphalt_with_markings.json
@@ -69,6 +69,8 @@ e75df62d905bef5fac01f4028f8e92b2aafbc1e3 data/c/tags/item/fence_gates/iron.json
 6b4dd4696f847bfd85f2ba3687b7de7199715670 data/c/tags/item/rods.json
 bb93087f00d50be8f986165711a25f22f976998c data/c/tags/item/rods/iron.json
 e5f4ffd4d95a4b566b06cd7001b5413cd34b094e data/c/tags/item/signs/wood.json
+4abb6c2227ab326d9d97cc3cc679c27dcb323fb2 data/c/tags/item/walls/bricks.json
+03693683cc9367551da0c55418664910e8ec72ab data/c/tags/item/walls/concrete.json
 704a5caea37c07627bfb0db3c150a03bab5a922e data/minecraft/tags/item/buttons.json
 b6bad468f2095888018ed1b07350b14284ae4ac9 data/minecraft/tags/item/coals.json
 94ba0098c5aced5815411f47a64a017f29885004 data/minecraft/tags/item/fences.json

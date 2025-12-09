@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-09T21:55:58.7152127	Tags for minecraft:block mod id citycraft
+// 1.21.1	2025-12-09T22:37:08.502057	Tags for minecraft:block mod id citycraft
 661b44d584785e996f41d8ac960a9c771fe513d1 data/car/tags/block/drivable_blocks.json
 7c9bb93a1fc8f0739b2d217b188507e005114f2d data/citycraft/tags/block/asphalt.json
 b44f3efe835d77ea6e3f742b9569d658f9544ae8 data/citycraft/tags/block/asphalt_slabs_with_markings.json
@@ -67,6 +67,8 @@ d9cd63c835bf840b3b23e862dd81fedbf2c19431 data/c/tags/block/lamps.json
 3eec0bb7da17ebdf3ba5daf533c6be314e192265 data/c/tags/block/poles/iron.json
 7c18a5550bf07548ca739e5170507d8c8901d205 data/c/tags/block/posts/stone.json
 8b449db082f6636b47c874b791db44aad34274ce data/c/tags/block/traffic_barrier.json
+4abb6c2227ab326d9d97cc3cc679c27dcb323fb2 data/c/tags/block/walls/bricks.json
+03693683cc9367551da0c55418664910e8ec72ab data/c/tags/block/walls/concrete.json
 704a5caea37c07627bfb0db3c150a03bab5a922e data/minecraft/tags/block/buttons.json
 5f048439d2eeb07829518743dc3495f1510d745d data/minecraft/tags/block/climbable.json
 c3e803c1cd648e7c3d5df826202d237a54f98e5f data/minecraft/tags/block/dead_bush_may_place_on.json

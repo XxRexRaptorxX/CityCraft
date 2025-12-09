@@ -22,6 +22,7 @@ public class ModItemTags {
     public static final TagKey<Item> IRON_POLES = createItemTag("c", "poles/iron");
     public static final TagKey<Item> STONE_POSTS = createItemTag("c", "posts/stone");
     public static final TagKey<Item> CONCRETE_WALLS = createItemTag("c", "walls/concrete");
+    public static final TagKey<Item> BRICK_WALLS = createItemTag("c", "walls/bricks");
     public static final TagKey<Item> CONCRETE_BARRIERS = createItemTag("c", "barriers/concrete");
     public static final TagKey<Item> ASPHALT = createItemTag(References.MODID, "asphalt");
     public static final TagKey<Item> BLANK_ASPHALT = createItemTag(References.MODID, "blank_asphalt");
