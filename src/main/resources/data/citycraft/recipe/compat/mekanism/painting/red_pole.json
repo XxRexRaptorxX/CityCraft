@@ -8,12 +8,12 @@
   "type": "mekanism:painting",
   "chemical_input": {
     "amount": 32,
-    "pigment": "mekanism:red"
+    "chemical": "mekanism:red"
   },
   "item_input": {
     "type": "neoforge:difference",
     "base": {
-      "tag": "c:poles"
+      "tag": "c:poles/iron"
     },
     "subtracted": {
       "item": "citycraft:red_pole"
@@ -21,5 +21,6 @@
   },
   "output": {
     "id": "citycraft:red_pole"
-  }
+  },
+  "per_tick_usage": false
 }

@@ -8,12 +8,12 @@
   "type": "mekanism:painting",
   "chemical_input": {
     "amount": 32,
-    "pigment": "mekanism:yellow"
+    "chemical": "mekanism:yellow"
   },
   "item_input": {
     "type": "neoforge:difference",
     "base": {
-      "tag": "c:posts"
+      "tag": "c:posts/stone"
     },
     "subtracted": {
       "item": "citycraft:yellow_post"
@@ -21,5 +21,6 @@
   },
   "output": {
     "id": "citycraft:yellow_post"
-  }
+  },
+  "per_tick_usage": false
 }

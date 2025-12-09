@@ -8,7 +8,7 @@
   "type": "mekanism:painting",
   "chemical_input": {
     "amount": 32,
-    "pigment": "mekanism:purple"
+    "chemical": "mekanism:purple"
   },
   "item_input": {
     "type": "neoforge:difference",
@@ -21,5 +21,6 @@
   },
   "output": {
     "id": "citycraft:purple_concrete_wall"
-  }
+  },
+  "per_tick_usage": false
 }
