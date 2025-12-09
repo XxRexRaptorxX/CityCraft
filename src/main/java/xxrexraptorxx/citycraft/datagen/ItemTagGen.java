@@ -107,6 +107,7 @@ public class ItemTagGen extends ItemTagsProvider {
         tag(Tags.Items.DYES).addTag(ModItemTags.createItemTag("c", "dyes/mix"));
         tag(ModItemTags.createItemTag("c", "dusts/asphalt")).add(ModItems.ASPHALT_MIXTURE.get());
         tag(Tags.Items.DUSTS).addTag(ModItemTags.createItemTag("c", "dusts/asphalt"));
+        tag(ModItemTags.createItemTag("c", "asphalt")).addTag(ModItemTags.ASPHALT);
         tag(ItemTags.COALS).add(ModItems.COAL_COKE.get());
         tag(ModItemTags.IRON_RODS).add(ModItems.IRON_ROD.get());
         tag(Tags.Items.RODS).addTag(ModItemTags.IRON_RODS);
