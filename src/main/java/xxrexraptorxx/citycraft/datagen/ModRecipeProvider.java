@@ -837,8 +837,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, reinforcedBlock, 1).requires(powderBlock).requires(Items.IRON_BARS).requires(Tags.Items.BUCKETS_WATER)
                     .unlockedBy("has_" + powderBlock, has(powderBlock)).group("reinforced_concrete_with_bucket").save(output);
 
-            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, polishedBlock, 4).pattern("##").pattern("##").define('#', polishedBlock)
-                    .unlockedBy(getHasName(polishedBlock), has(polishedBlock)).save(output);
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, polishedBlock, 4).pattern("##").pattern("##").define('#', baseBlock)
+                    .unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
             ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, bricksBlock, 4).pattern("##").pattern("##").define('#', baseBlock)
                     .unlockedBy(getHasName(baseBlock), has(baseBlock)).save(output);
             ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, pillarBlock, 2).pattern("#").pattern("#").define('#', baseBlock)

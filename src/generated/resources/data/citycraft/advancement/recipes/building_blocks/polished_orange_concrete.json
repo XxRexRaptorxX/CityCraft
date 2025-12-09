@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polished_orange_concrete": {
+    "has_orange_concrete": {
       "conditions": {
         "items": [
           {
-            "items": "citycraft:polished_orange_concrete"
+            "items": "minecraft:orange_concrete"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_polished_orange_concrete"
+      "has_orange_concrete"
     ]
   ],
   "rewards": {
