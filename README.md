@@ -59,7 +59,7 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 ## 🗃️ Dependencies
 
 ### Supported:
-- **The Lost Cities**
+- **The Lost Cities** [≥ MC 1.21]
   - Generates cities with the new CityCraft blocks
   - [CurseForge][cf_lc] | [Modrinth][mr_lc]
 - **Immersive Engineering**
@@ -77,7 +77,7 @@ This mod expands the game with vanilla friendly streets, signs and other decorat
 - **MoreMcmeta Emissive Textures**
     - Enables the emissive textures of the mod
     - [CurseForge][cf_mcmeta] | [Modrinth][mr_mcmeta]
-- **Shimmer**
+- **Shimmer** [≥ MC 1.21]
     - Enables colored lightning
     - [CurseForge][cf_shimmer] | [Modrinth][mr_shimmer]
 - **Just Enough Effect Descriptions (JEED)**
