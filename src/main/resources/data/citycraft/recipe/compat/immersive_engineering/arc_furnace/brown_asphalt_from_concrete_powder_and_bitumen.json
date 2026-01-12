@@ -21,7 +21,7 @@
       "tag": "c:bitumen"
     },
     {
-      "item": "minecraft:water_bucket"
+      "tag": "c:buckets/water"
     }
   ],
   "energy": 50000,
