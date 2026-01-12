@@ -1,30 +1,40 @@
+// v.1.0
+// ========================================
+// PROJECT REPOSITORIES AND DEPENDENCIES
+// ========================================
 
 repositories {
-    maven {
-        // location of the maven that hosts JEI files since January 2023
+    mavenLocal()
+
+    maven { // JEI
         name = "Jared's maven"
         url = "https://maven.blamejared.com/"
     }
-    maven {
-        // location of a maven mirror for JEI files, as a fallback
+
+    maven { // JEI fallback
         name = "ModMaven"
         url = "https://modmaven.dev"
     }
-    maven {
-        // location of the cursemaven
-        url 'https://www.cursemaven.com'
+
+    maven { // Curseforge
+        url "https://cursemaven.com"
         content {
             includeGroup "curse.maven"
         }
     }
-    maven {
-        // location of the modrinthmaven
-        url = "https://api.modrinth.com/maven"
+
+    maven { // REI
+        url "https://maven.shedaniel.me/"
     }
 
+    maven { // EMI
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/"
+    }
 
-    flatDir {
-        dir 'libs'
+    maven { // Curios
+        name = "Illusive Soulworks maven"
+        url = "https://maven.theillusivec4.top/"
     }
 }
 
@@ -39,13 +49,13 @@ dependencies {
     runtimeOnly ("curse.maven:jeed-532286:${jeed_version}")
 
     //JADE
-    implementation "maven.modrinth:jade:${jade_version}+neoforge"
+    implementation "curse.maven:jade-324717:${jade_version}"
 
     //IMMERSIVE ENGINEERING
     runtimeOnly ("curse.maven:ie-231951:${immersive_engineering_version}")
 
     //IMMERSIVE PETROLEUM
-    //runtimeOnly ("curse.maven:ip-268250:${immersive_petroleum_version}")
+    runtimeOnly ("curse.maven:ip-268250:${immersive_petroleum_version}")
 
     //MORE MCMETA
     //runtimeOnly ("curse.maven:moremcmeta-442169:${moremcmeta_version}")
